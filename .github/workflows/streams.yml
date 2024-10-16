@@ -25,13 +25,16 @@ jobs:
         run: |
             pwd
             cd ./core/platforms/
-            python3 twitch.py hadhramauttv1 > ../../streams/hadhramaut.m3u8
+            python3 twitch.py hadramout1 > ../../streams/hadhramaut.m3u8
             python3 twitch.py libyaonetv > ../../streams/libyaonetv.m3u8
             python3 twitch.py tv47kenya > ../../streams/tv47kenya.m3u8
             python3 twitch.py alrassoulchannel > ../../streams/alrassoul.m3u8
             python3 twitch.py ntvickakanj > ../../streams/ntvickakanj.m3u8
             python3 dailymotion.py x2j7kha > ../../streams/euronewsgr.m3u8
             python3 twitch.py elnueve_ok > ../../streams/elnueve.m3u8
+            python3 twitch.py mrtvnewslive > ../../streams/mrtvnews.m3u8
+            python3 twitch.py livestreamingmrtv > ../../streams/mrtv.m3u8
+            python3 twitch.py mitvlivestream > ../../streams/mitv.m3u8
             
       - name: git add
         run: |
