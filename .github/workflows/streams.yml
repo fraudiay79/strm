@@ -37,6 +37,8 @@ jobs:
         run: |
           git add -A
           ls -la 
+          git commit -m "initial commit"
+          git push origin main
           
       - name: commit & push
         run: |
