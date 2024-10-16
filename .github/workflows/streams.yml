@@ -92,4 +92,4 @@ jobs:
       - name: commit & push
         run: |
           git commit -m "streams updated"
-          git push
+          git push -f origin master
