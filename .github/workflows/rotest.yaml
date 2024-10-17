@@ -1,8 +1,8 @@
-name: Run Script Every 6 Hours
+name: Run Script Every Hour
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Run every 6 hours
+    - cron: '0 */1 * * *'  # Run every hour
   workflow_dispatch:      # Enable manual triggering
 
 jobs:
