@@ -99,6 +99,8 @@ jobs:
         env:
          GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}  # Use the stored PAT secret
         run: |
+          git config --local user.email "fraudiay@gmail.com"
+          git config --local user.name "fraudiay79"
           git add streams/rotanaclip.m3u8 streams/rotanacinemaksa.m3u8 streams/rotanacinema.m3u8 streams/rotanakhaleejiya.m3u8 streams/rotanaclassic.m3u8 streams/rotanadrama.m3u8 streams/rotanacomedy.m3u8 streams/rotanalbc.m3u8 streams/rotanarisala.m3u8 
           git commit -m "rotana updates"
           git push -f origin master
