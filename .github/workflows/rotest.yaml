@@ -92,15 +92,7 @@ jobs:
           git commit -m "initial commit"
           git push origin main
           
-      - name: Pull changes from remote
-        run: git pull origin main
-
-      - name: Commit and Push Changes
-        env:
-         GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}  # Use the stored PAT secret
+      - name: commit & push
         run: |
-          git config --local user.email "fraudiay@gmail.com"
-          git config --local user.name "fraudiay79"
-          git add streams/rotanaclip.m3u8 streams/rotanacinemaksa.m3u8 streams/rotanacinema.m3u8 streams/rotanakhaleejiya.m3u8 streams/rotanaclassic.m3u8 streams/rotanadrama.m3u8 streams/rotanacomedy.m3u8 streams/rotanalbc.m3u8 streams/rotanarisala.m3u8 
-          git commit -m "rotana updates"
+          git commit -m "streams updated"
           git push -f origin master
