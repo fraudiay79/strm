@@ -19,7 +19,7 @@ if response.status_code == 200:
     
     if match:
         data_jwt_value = match.group(1)
-        live_url_main = f"https://dist7.tvmi.mt/{data_jwt_value}/live/2/0/index.m3u8"
+        live_url_main = f"https://dist9.tvmi.mt/{data_jwt_value}/live/2/0/index.m3u8"
         print(live_url_main)
     else:
         print("https://Live URL not found in the content.")
