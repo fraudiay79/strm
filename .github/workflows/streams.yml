@@ -1,4 +1,4 @@
-name: grabbing streams
+name: streams
 
 on:
   schedule:
@@ -55,16 +55,14 @@ jobs:
             python3 tvmsport.py > ../../streams/tvmsport.m3u8
             python3 k12.py > ../../streams/keshet12.m3u8
             
-    #  - name: git add
-    #    run: |
-    #      git add -A
-    #      ls -la 
-    #      git commit -m "initial commit"
-    #      git push origin main
+      - name: git add
+        run: |
+          git add -A
+          ls -la 
+          git commit -m "initial commit"
+          git push origin main
           
       - name: commit & push
         run: |
-          git add -A
-          ls -la
           git commit -m "streams updated"
           git push -f origin master
