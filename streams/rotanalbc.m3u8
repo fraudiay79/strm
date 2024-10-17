@@ -1,1 +1,4 @@
-https://live.kwikmotion.com/rlbclive/rlbc.smil/playlist.m3u8?hdnts=exp=1729190386~acl=/rlbclive/rlbc.smil/*~hmac=8e95c062cb2e04f3d02be211fde9a8fd33e4f7bac1d4c950825d831549661a7a
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=1408768,RESOLUTION=1920x1080,CODECS=avc1.42c028,mp4a.40.2,CLOSED-CAPTIONS=NONE
+https://live.kwikmotion.com/rlbclive/rlbc.smil/playlist.m3u8?hdnts=exp=1729192656~acl=/rlbclive/rlbc.smil/*~hmac=a5bbea933c8adfb5fdbde4f9b9858009477e967d0dfed1715be62766099a42e4
