@@ -1,0 +1,99 @@
+name: Run Script Every 6 Hours
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Run every 6 hours
+  workflow_dispatch:      # Enable manual triggering
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4
+        
+      - name: Create ar Folder
+        run: mkdir -p ar  
+
+      - name: Pull Changes from Remote
+        run: git pull origin main        
+
+      - name: Run Script and Generate M3U8 for rotana_Clip
+        run: |
+         python_output=$(python core/platforms/rotclip.py)
+         echo "$python_output" >> streams/rotanaclip.m3u8  
+
+      - name: Run Script and Generate M3U8 for rotana_CinemaKSA
+        run: |
+         python_output=$(python core/platforms/rotcinemaksa.py)
+         echo "$python_output" >> streams/rotanacinemaksa.m3u8            
+
+      - name: Run Script and Generate M3U8 for rotana_CinemaMasr
+        run: |
+         python_output=$(python core/platforms/rotcinema.py)
+         echo "$python_output" >> streams/rotanacinema.m3u8                       
+
+      - name: Run Script and Generate M3U8 for rotana_KhaleejiyaKSA
+        run: |
+         python_output=$(python core/platforms/rotkhaleejiya.py)
+         echo "$python_output" >> streams/rotanakhaleejiya.m3u8                
+
+      - name: Run Script and Generate M3U8 for rotana_Classic
+        run: |
+         python_output=$(python core/platforms/rotclassic.py)
+         echo "$python_output" >> streams/rotanaclassic.m3u8       
+
+      - name: Run Script and Generate M3U8 for rotana_Drama
+        run: |
+         python_output=$(python core/platforms/rotdrama.py)
+         echo "$python_output" >> streams/rotanadrama.m3u8                  
+
+      - name: Run Script and Generate M3U8 for rotana_Comedy
+        run: |
+         python_output=$(python core/platforms/rotcomedy.py)
+         echo "$python_output" >> streams/rotanacomedy.m3u8               
+
+      - name: Run Script and Generate M3U8 for rotana_LBC
+        run: |
+         python_output=$(python core/platforms/rotlbc.py)
+         echo "$python_output" >> streams/rotanalbc.m3u8               
+
+      - name: Run Script and Generate M3U8 for rotana_Risala
+        run: |
+         python_output=$(python core/platforms/rotrisala.py)
+         echo "$python_output" >> streams/rotanarisala.m3u8            
+
+      #- name: Run Script and Generate M3U8 for rotana_Kids
+      #  run: |
+      #    id="rotana_CinemaMasr"
+      #    id2="rotana-cinemamasr"
+      #    curl_output=$(curl -s "https://rotana.net/en/channels#/live/rotana_CinemaMasr" | grep -oE "https:\\\/\\\/hiplayer.hibridcdn.net\\\/l\\\/rotana-cinemamasr" | sed 's/\\\//\//g' | grep -oE 'https?://[^'\''"]+' | sed 's/CinemaMasr/Kids/g; s/439/441/g; s/Cinema Masr/Kids/g; s/cinemamasr/kids/g' | grep -oE 'https?://[^'\''"]+' | xargs -I {} curl -s "{}" | grep -oP "(?<=o=\[)[^\]]+(?=])" | tr -d "'," | base64 -d | grep -o '"streamUrl":\s*"[^"]*"' | awk -F '"' '{print $4}' | sed 's/playlist\.m3u8/rotana\/kids_720p\/chunks.m3u8/g' | head -n 1)
+      #    echo "#EXTM3U" > ar/rotanakids.m3u8
+      #    echo "#EXT-X-VERSION:7" >> ar/rotanakids.m3u8
+      #    echo "#EXT-X-INDEPENDENT-SEGMENTS" >> ar/rotanakids.m3u8
+      #    echo "#EXT-X-STREAM-INF:BANDWIDTH=8000000,CODECS=\"avc1.4d402a,mp4a.40.2\",RESOLUTION=1920x1080,FRAME-RATE=50,AUDIO=\"audio-mp4a.40.2\",CLOSED-CAPTIONS=NONE" >> ar/rotanakids.m3u8
+      #    echo "$curl_output" >> ar/rotanakids.m3u8
+
+      - name: Pull changes from remote
+        run: git pull origin main
+
+      - name: Commit and Push Changes
+        env:
+         GITHUB_TOKEN: ${{ secrets.ROTANA_TOKEN }}  # Use the stored PAT secret
+        run: |
+          git config --local user.email "no@no.no"
+          git config --local user.name "no"
+          git add streams/rotanaclip.m3u8 streams/rotanacinemaksa.m3u8 streams/rotanacinema.m3u8 streams/rotanakhaleejiya.m3u8 streams/rotanaclassic.m3u8 streams/rotanadrama.m3u8 streams/rotanacomedy.m3u8 streams/rotanalbc.m3u8 streams/rotanarisala.m3u8 
+          git commit -m "rotana updates"
+          git push origin master
