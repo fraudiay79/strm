@@ -49,6 +49,8 @@ jobs:
             python3 dailymotion.py x7va0xb > ../../streams/nessma.m3u8
             python3 dailymotion.py x7ooijz > ../../streams/elhiwartn.m3u8
             python3 dailymotion.py x84eirw > ../../streams/atb.m3u8
+            python3 dailymotion.py x5gv5rr > ../../streams/c8.m3u8
+            python3 twitch.py elbaladtv > ../../streams/elbaladtv.m3u8
             
             
       - name: git add
