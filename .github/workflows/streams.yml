@@ -36,6 +36,18 @@ jobs:
             python3 twitch.py mrtvnewslive > ../../streams/mrtvnews.m3u8
             python3 twitch.py livestreamingmrtv > ../../streams/mrtv.m3u8
             python3 twitch.py mitvlivestream > ../../streams/mitv.m3u8
+            python3 twitch.py paraguaytvhd > ../../streams/paraguaytv.m3u8
+            python3 twitch.py abcnewsal > ../../streams/abcnewsal.m3u8
+            python3 dailymotion.py x7x4dgx > ../../streams/willax.m3u8
+            python3 dailymotion.py x84nwne > ../../streams/niletv.m3u8
+            python3 dailymotion.py x8lr1r8 > ../../streams/nileint.m3u8
+            python3 dailymotion.py x8n6e4h > ../../streams/maspero.m3u8
+            python3 dailymotion.py x856hbh > ../../streams/ertu1.m3u8
+            python3 dailymotion.py x8n6dm7 > ../../streams/ertu2.m3u8
+            python3 dailymotion.py x84nun4 > ../../streams/masriya.m3u8
+            python3 dailymotion.py x8n6e3a > ../../streams/niledrama.m3u8
+            python3 dailymotion.py x7va0xb > ../../streams/nessma.m3u8
+            python3 dailymotion.py x7ooijz > ../../streams/elhiwartn.m3u8
             
       - name: git add
         run: |
