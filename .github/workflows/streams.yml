@@ -2,7 +2,7 @@ name: grabbing streams
 
 on:
   schedule:
-    - cron: '0 */4 * * *'
+    - cron: '0 */2 * * *'
   
   
   workflow_dispatch:
@@ -52,7 +52,9 @@ jobs:
             python3 dailymotion.py x5gv5rr > ../../streams/c8.m3u8
             python3 dailymotion.py x5gv5v0 > ../../streams/cstar.m3u8
             python3 twitch.py elbaladtv > ../../streams/elbaladtv.m3u8
-            
+            python3 tvm.py > ../../streams/tvm.m3u8
+            python3 tvmnews.py > ../../streams/tvmnews.m3u8
+            python3 tvmsport.py > ../../streams/tvmsport.m3u8
             
       - name: git add
         run: |
