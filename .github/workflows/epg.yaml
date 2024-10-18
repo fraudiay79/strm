@@ -2,6 +2,7 @@ name: Update EPG
 on:
   schedule:
     - cron: "0 */12 * * *"
+    workflow_dispatch:      # Enable manual triggering
 
 jobs:
   Update-EPG:
