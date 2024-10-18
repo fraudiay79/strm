@@ -6,10 +6,6 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --days=3 --maxConnections=10
 
-# Sjonvarp EPG
-
-npm run grab -- --site=sjonvarp.is --output=../epg/epg-sjonvarp-is.xml --days=3 --maxConnections=10
-
 # Compress EPG xml files
 cd ../epg/
 
