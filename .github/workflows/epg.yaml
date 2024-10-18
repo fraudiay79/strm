@@ -20,7 +20,7 @@ jobs:
          path: iptv-org-epg
 
       - name: update EPG
-        run: sh epg/epg-pt.sh
+        run: sh epg/epg-is.sh
 
       - name: config
         run: |
