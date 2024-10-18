@@ -121,10 +121,11 @@ jobs:
         run: |
           git add -A
           ls -la 
-          git commit -m "initial commit"
-          git push origin main
+          #git commit -m "initial commit"
+          #git push origin main
           
       - name: commit & push
         run: |
+          git pull
           git commit -m "streams updated"
-          git push -f origin master
+          git push
