@@ -2,13 +2,17 @@
 
 cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
+# AD EPG
+
+npm run grab -- --site=andorradifusio.ad --output=../epg/epg-ad.xml --days=7 --maxConnections=2
+
 # IS EPG
 
 npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --days=3 --maxConnections=10
 
 # PT EPG
 
-npm run grab -- --channels=../epg/pt.channels.xml --output=../epg/epg-pt.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/pt.channels.xml --output=../epg/epg-pt.xml --days=3 --maxConnections=10
 
 # Compress EPG xml files
 cd ../epg/
