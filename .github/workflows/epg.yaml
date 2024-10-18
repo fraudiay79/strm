@@ -1,8 +1,9 @@
 name: Update EPG
+
 on:
   schedule:
-    - cron: "0 */12 * * *"
-    workflow_dispatch:      # Enable manual triggering
+    - cron: '0 */24 * * *'
+  workflow_dispatch:
 
 jobs:
   Update-EPG:
