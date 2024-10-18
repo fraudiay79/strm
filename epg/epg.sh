@@ -4,7 +4,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # AD EPG
 
-npm run grab -- --site=andorradifusio.ad --output=../epg/epg-ad.xml --days=7 --maxConnections=2
+npm run grab -- --site=andorradifusio.ad --output=../epg/epg-ad.xml --days=3 --maxConnections=2
 
 # IS EPG
 
