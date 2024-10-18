@@ -1,4 +1,4 @@
-name: Update EPG
+name: update EPG
 
 on:
   schedule:
@@ -20,7 +20,7 @@ jobs:
          path: iptv-org-epg
 
       - name: update EPG
-        run: sh epg/epg-is.sh
+        run: sh epg/epg.sh
 
       - name: config
         run: |
@@ -31,5 +31,5 @@ jobs:
         run: |
           git pull
           cd epg && git add -A
-          git commit -m "Update EPG"
+          git commit -m "update EPG"
           git push origin main
