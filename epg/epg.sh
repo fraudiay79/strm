@@ -4,19 +4,19 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # AD EPG
 
-npm run grab -- --site=andorradifusio.ad --output=../epg/epg-ad.xml --days=3 --maxConnections=2
+#npm run grab -- --site=andorradifusio.ad --output=../epg/epg-ad.xml --days=3 --maxConnections=2
 
 # AT EPG
 
-npm run grab -- --channels=../epg/at.channels.xml --output=../epg/epg-at.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/at.channels.xml --output=../epg/epg-at.xml --days=3 --maxConnections=10
 
 # AU EPG
 
-npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --days=3 --maxConnections=10
 
 # BEIN EPG
 
-npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
 
 # CZ EPG
 
@@ -28,7 +28,11 @@ npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml
 
 # DK EPG
 
-#npm run grab -- --site=allente.dk --output=../epg/epg-dk.xml --days=3 --maxConnections=10
+npm run grab -- --site=allente.dk --output=../epg/epg-dk.xml --days=3 --maxConnections=10
+
+# DZ EPG
+
+#npm run grab -- --channels=../epg/dz.channels.xml --output=../epg/epg-dz.xml --days=3 --maxConnections=10
 
 # FR EPG
 
@@ -56,7 +60,7 @@ npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml
 
 # IE EPG
 
-npm run grab -- --channels=../epg/ie.channels.xml --output=../epg/epg-ie.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/ie.channels.xml --output=../epg/epg-ie.xml --days=3 --maxConnections=10
 
 # IN EPG
 
@@ -73,6 +77,10 @@ npm run grab -- --channels=../epg/ie.channels.xml --output=../epg/epg-ie.xml --d
 # JP EPG
 
 #npm run grab -- --site=tvguide.myjcom.jp --output=../epg/epg-jp.xml --days=3 --maxConnections=2
+
+# MA EPG
+
+npm run grab -- --channels=../epg/ma.channels.xml --output=../epg/epg-ma.xml --days=3 --maxConnections=10
 
 # MK EPG
 
@@ -96,7 +104,7 @@ npm run grab -- --channels=../epg/ie.channels.xml --output=../epg/epg-ie.xml --d
 
 # NZ EPG
 
-npm run grab -- --channels=../epg/nz.channels.xml --output=../epg/epg-nz.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/nz.channels.xml --output=../epg/epg-nz.xml --days=3 --maxConnections=10
 
 # PL EPG
 
@@ -140,7 +148,7 @@ npm run grab -- --channels=../epg/nz.channels.xml --output=../epg/epg-nz.xml --d
 
 # ZA EPG
 
-npm run grab -- --channels=../epg/za.channels.xml --output=../epg/epg-za.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/za.channels.xml --output=../epg/epg-za.xml --days=3 --maxConnections=10
 
 
 # Compress EPG xml files
