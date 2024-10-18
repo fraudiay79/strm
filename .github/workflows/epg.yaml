@@ -30,6 +30,6 @@ jobs:
       - name: commit
         run: |
           git pull
-          cd EPG && git add .
+          cd epg && git add -A
           git commit -m "Update EPG"
           git push origin main
