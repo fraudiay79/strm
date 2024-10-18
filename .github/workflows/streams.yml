@@ -65,5 +65,6 @@ jobs:
           
       - name: commit & push
         run: |
+          git pull
           git commit -m "streams updated"
-          git push -f origin master
+          git push
