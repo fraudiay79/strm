@@ -82,6 +82,7 @@
   <channel site="directv.com" lang="en" xmltv_id="CartoonNetworkEast.us" site_id="296#296">Cartoon Network</channel>
   <channel site="directv.com" lang="en" xmltv_id="CartoonNetworkWest.us" site_id="297#8193">Cartoon Network West</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="CBSEast.us" site_id="cbs--eastern/1225">CBS - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKMGDT1.us" site_id="cbs-wkmg-orlando-fl/2492">CBS (WKMG) Orlando, FL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="CBSMountain.us" site_id="cbs--mountain/9906">CBS - Mountain</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="CBSWest.us" site_id="cbs--pacific/9907">CBS - Pacific</channel>
   <channel site="directv.com" lang="en" xmltv_id="CBSSportsNetwork.us" site_id="221#2613">CBS Sports Network</channel>
@@ -100,12 +101,15 @@
   <channel site="directv.com" lang="en" xmltv_id="ComedyTV.us" site_id="382#8445">Comedy TV HD</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Comet.us" site_id="comet-tv/16811">Comet TV</channel>
   <channel site="directv.com" lang="en" xmltv_id="CookingChannel.us" site_id="232#232">Cooking Channel</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="Create.us" site_id="create/16401">Create</channel>
   <channel site="directv.com" lang="en" xmltv_id="CrimePlusInvestigation.us" site_id="571#4257">Crime &amp; Investigation HD</channel>
   <channel site="directv.com" lang="en" xmltv_id="CSPAN.us" site_id="350#350">CSPAN</channel>
   <channel site="directv.com" lang="en" xmltv_id="CSPAN2.us" site_id="351#351">CSPAN 2</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="CSPAN3.us" site_id="cspan-3-hd/8834">C-SPAN 3 HD</channel>
   <channel site="directv.com" lang="en" xmltv_id="CTN.us" site_id="376#3144">Christian Television Net</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="CWEast.us" site_id="cw--network-eastern/1231">CW - Network Eastern</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="CWWest.us" site_id="cw--network-pacific/4411">CW - Network Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WKCFDT1.us" site_id="cw-wkcf-orlando-fl/2515">CW (WKCF) Orlando, FL</channel>
   <channel site="directv.com" lang="en" xmltv_id="DaystarTV.us" site_id="369#369">Daystar</channel>
   <channel site="directv.com" lang="en" xmltv_id="DestinationAmerica.us" site_id="286#286">Destination America</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="DiscoveryChannelEast.us" site_id="discovery-channel-us--eastern-feed/649">Discovery Channel (US) - Eastern Feed</channel>
@@ -135,6 +139,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="FoodNetworkEast.us" site_id="food-network-usa--eastern-feed/1054">Food Network USA - Eastern Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="FoodNetworkWest.us" site_id="food-network-usa--pacific-feed/2032">Food Network USA - Pacific Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="FoxEast.us" site_id="fox--eastern/1229">FOX - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WOFLDT1.us" site_id="fox-wofl-orlando-fl/2491">FOX (WOFL) Orlando, FL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="FoxWest.us" site_id="fox--pacific/4409">FOX - Pacific</channel>
   <channel site="directv.com" lang="en" xmltv_id="FoxBusinessNetwork.us" site_id="359#3142">Fox Business Network</channel>
   <channel site="directv.com" lang="en" xmltv_id="FoxNewsChannel.us" site_id="360#360">FOX News Channel</channel>
@@ -236,6 +241,7 @@
   <channel site="directv.com" lang="en" xmltv_id="NationalGeographicWildEast.us" site_id="283#3098">Nat Geo WILD</channel>
   <channel site="directv.com" lang="en" xmltv_id="NBATV.us" site_id="216#601">NBA TV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="NBCMountain.us" site_id="nbc--mountain/9913">NBC - Mountain</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WESHDT1.us" site_id="nbc-wesh-winter-park-fl/2490">NBC (WESH) Daytona Beach, FL</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="NBCEast.us" site_id="nbc--network-eastern/1227">NBC - Network Eastern</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="NBCWest.us" site_id="nbc--network-pacific/4410">NBC - Network Pacific</channel>
   <channel site="directv.com" lang="en" xmltv_id="NBCSportsBayArea.us" site_id="696#2696">NBC Sports Bay Area</channel>
@@ -266,7 +272,8 @@
   <channel site="directv.com" lang="en" xmltv_id="OWNWest.us" site_id="279#8854">OWN West</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="OxygenEast.us" site_id="oxygen--eastern-feed/659">Oxygen - Eastern Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="OxygenWest.us" site_id="oxygen--pacific-feed/1321">Oxygen - Pacific Feed</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ParamountNetworkEast.us" site_id="241#325">Paramount Network</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ParamountNetworkEast.us" site_id="spike-usa--eastern-feed/1030">Paramount Network USA - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ParamountNetworkWest.us" site_id="spike-usa--pacific-feed/1199">Paramount Network USA - Pacific Feed</channel>
   <channel site="directv.com" lang="en" xmltv_id="PBSEast.us" site_id="389#384">PBSNET</channel>
   <channel site="directv.com" lang="en" xmltv_id="PBSKids.us" site_id="288#2363">PBS Kids</channel>
   <channel site="directv.com" lang="en" xmltv_id="PenthouseTV.us" site_id="595#3143">Penthouse TV</channel>
@@ -289,15 +296,24 @@
   <channel site="directv.com" lang="en" xmltv_id="SECNetwork.us" site_id="611#4003">SEC Network</channel>
   <channel site="directv.com" lang="en" xmltv_id="ShopHQ.us" site_id="316#1371">Shop HQ</channel>
   <channel site="directv.com" lang="en" xmltv_id="ShopLC.us" site_id="226#226">Shop LC</channel>
-  <channel site="directv.com" lang="en" xmltv_id="Showtime2East.us" site_id="547#538">SHOWTIME 2</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ShowtimeEast.us" site_id="545#537">Showtime (E)</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ShowtimeExtremeEast.us" site_id="549#542">Showtime Extreme</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ShowtimeFamilyZoneEast.us" site_id="552#3705">Showtime FamilyZone</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ShowtimeNextEast.us" site_id="551#3782">Showtime Next HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ShowtimeShowcaseEast.us" site_id="550#4224">Showtime Showcase HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ShowtimeWest.us" site_id="546#540">Showtime (W)</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ShoxBetEast.us" site_id="548#4401">SHOxBET</channel>
-  <channel site="directv.com" lang="en" xmltv_id="SmithsonianChannelEast.us" site_id="570#8391">Smithsonian Channel HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeEast.us" site_id="showtime--eastern-feed/665">Showtime - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="Showtime2East.us" site_id="showtime-2--eastern/1387">Showtime 2 - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="Showtime2West.us" site_id="showtime-2--pacific/2596">Showtime 2 - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeShowcaseEast.us" site_id="showtime-beyond--eastern/2271">Showtime Showcase - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeShowcaseWest.us" site_id="showtime-beyond--pacific/2585">Showtime Showcase - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeExtremeEast.us" site_id="showtime-extreme--eastern/1615">Showtime Extreme - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeExtremeWest.us" site_id="showtime-extreme--pacific/2584">Showtime Extreme - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeFamilyZoneEast.us" site_id="showtime-family-zone--eastern/1956">Showtime Family Zone - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeFamilyZoneWest.us" site_id="showtime-family-zone--pacific/2599">Showtime Family Zone - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeNextEast.us" site_id="showtime-next--eastern/2272">Showtime Next - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeNextWest.us" site_id="showtime-next--pacific/2597">Showtime Next - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShoXBETEast.us" site_id="showtime-showcase--eastern/2077">SHOXBET - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShoXBETWest.us" site_id="showtime-showcase--pacific/2583">SHOXBET - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeWest.us" site_id="showtime-west-hd/10735">Showtime West HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeWomenEast.us" site_id="showtime-women--eastern/2273">Showtime Women - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeWomenWest.us" site_id="showtime-women--pacific/2598">Showtime Women - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="Smile.us" site_id="smile/5275">Smile</channel>
+  <channel site="directv.com" lang="en" xmltv_id="SmithsonianChannel.us" site_id="570#8391">Smithsonian Channel HD</channel>
   <channel site="directv.com" lang="en" xmltv_id="SonyMovies.us" site_id="568#2184">Sony Movies</channel>
   <channel site="directv.com" lang="en" xmltv_id="SoYummy.us" site_id="563#4308">So Yummy</channel>
   <channel site="directv.com" lang="en" xmltv_id="SpectrumSportsNet.us" site_id="691#1189">Spectrum SportsNet</channel>
@@ -307,23 +323,36 @@
   <channel site="directv.com" lang="en" xmltv_id="StadiumCollegeSportsAtlantic.us" site_id="608#2617">Stadium College Sports Atlantic</channel>
   <channel site="directv.com" lang="en" xmltv_id="StadiumCollegeSportsCentral.us" site_id="608#2623">Stadium College Sports Central</channel>
   <channel site="directv.com" lang="en" xmltv_id="StadiumCollegeSportsPacific.us" site_id="608#2626">Stadium College Sports Pacific</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzCinemaEast.us" site_id="531#3784">STARZ Cinema HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzComedyEast.us" site_id="528#8247">STARZ Comedy HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEast.us" site_id="525#520">STARZ East</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEdgeEast.us" site_id="529#522">STARZ Edge</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreActionEast.us" site_id="541#532">STARZ Encore Action</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreBlackEast.us" site_id="540#531">STARZ Encore Black</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreClassicEast.us" site_id="537#528">STARZ Encore Classic</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreEast.us" site_id="535#526">STARZ Encore</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreFamilyEast.us" site_id="542#533">STARZ Encore Family</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreSuspenseEast.us" site_id="539#530">STARZ Encore Suspense</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreWest.us" site_id="536#527">STARZ Encore West</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzEncoreWesternsEast.us" site_id="538#529">STARZ Encore Westerns</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzInBlackEast.us" site_id="530#523">STARZ in Black</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzKidsFamilyEast.us" site_id="527#8257">STARZ Kids &amp; Family HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="StarzWest.us" site_id="526#521">STARZ West</channel>
-  <channel site="directv.com" lang="en" xmltv_id="SundanceTVEast.us" site_id="239#549">SundanceTV</channel>
-  <channel site="directv.com" lang="en" xmltv_id="SyfyEast.us" site_id="244#244">SYFY</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEast.us" site_id="starz--eastern/583">Starz - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzWest.us" site_id="starz--pacific/1217">Starz - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzComedyEast.us" site_id="starz-comedy--eastern/4223">Starz Comedy - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzComedyWest.us" site_id="starz-comedy--pacific/4224">Starz Comedy - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEdgeEast.us" site_id="starz-edge--eastern/2120">Starz Edge - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEdgeWest.us" site_id="starz-edge--pacific/2678">Starz Edge - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreEast.us" site_id="starz-encore--eastern/667">Starz Encore - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreWest.us" site_id="starz-encore--pacific/1218">Starz Encore - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreActionEast.us" site_id="starz-encore-action--eastern/2078">Starz Encore Action - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreActionWest.us" site_id="starz-encore-action--pacific/2079">Starz Encore Action - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreBlackEast.us" site_id="starz-encore-black--eastern/4206">Starz Encore Black - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreBlackWest.us" site_id="starz-encore-black--pacific/4222">Starz Encore Black - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreClassicEast.us" site_id="starz-encore-classics--eastern/2080">Starz Encore Classic - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreClassicWest.us" site_id="starz-encore-classics--pacific/2081">Starz Encore Classic - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreFamilyEast.us" site_id="starz-encore-family--eastern/2128">Starz Encore Family - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreFamilyWest.us" site_id="starz-encore-family--pacific/2676">Starz Encore Family - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreEast.us" site_id="starz-encore-hd--eastern/6083">Starz Encore HD - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreWest.us" site_id="starz-encore-hd--pacific/13464">Starz Encore HD - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreSuspenseEast.us" site_id="starz-encore-suspense--eastern/1958">Starz Encore Suspense - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreSuspenseWest.us" site_id="starz-encore-suspense--pacific/2084">Starz Encore Suspense - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreWesternsEast.us" site_id="starz-encore-westerns--eastern/1959">Starz Encore Westerns - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreWesternsWest.us" site_id="starz-encore-westerns--pacific/2085">Starz Encore Westerns - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzInBlackEast.us" site_id="starz-in-black--eastern/1957">Starz In Black - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzInBlackWest.us" site_id="starz-in-black--pacific/2679">Starz In Black - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzKidsFamilyEast.us" site_id="starz-kids--family--eastern/1194">Starz Kids &amp; Family - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="StarzKidsFamilyWest.us" site_id="starz-kids--family--pacific/1219">Starz Kids &amp; Family - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="SundanceTVEast.us" site_id="sundancetv-usa--east/1848">SundanceTV USA - East</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="SundanceTVWest.us" site_id="sundancetv-usa--west/4169">SundanceTV USA - West</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="SyfyEast.us" site_id="syfy--eastern-feed/596">Syfy - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="SyfyWest.us" site_id="syfy--pacific-feed/1207">Syfy - Pacific Feed</channel>
   <channel site="directv.com" lang="en" xmltv_id="Tastemade.us" site_id="235#484">Tastemade</channel>
   <channel site="directv.com" lang="en" xmltv_id="TBSEast.us" site_id="247#247">TBS</channel>
   <channel site="directv.com" lang="en" xmltv_id="TBSWest.us" site_id="247#2603">TBS West HD</channel>
@@ -338,22 +367,30 @@
   <channel site="directv.com" lang="en" xmltv_id="TheMovieChannelXtraEast.us" site_id="555#3785">The Movie Channel Xtra HD</channel>
   <channel site="directv.com" lang="en" xmltv_id="TheWeatherChannel.us" site_id="362#362">The Weather Channel</channel>
   <channel site="directv.com" lang="en" xmltv_id="ThrillerMaxEast.us" site_id="522#4068">ThrillerMAX HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="TLCEast.us" site_id="280#280">TLC</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TLCEast.us" site_id="tlc-usa--eastern/5005">TLC USA - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TLCWest.us" site_id="tlc-usa--pacific/1205">TLC USA - Pacific</channel>
   <channel site="directv.com" lang="en" xmltv_id="TNTEast.us" site_id="245#245">TNT</channel>
   <channel site="directv.com" lang="en" xmltv_id="TNTWest.us" site_id="245#2602">TNT West HD</channel>
   <channel site="directv.com" lang="en" xmltv_id="TravelChannelEast.us" site_id="277#233">Travel Channel</channel>
-  <channel site="directv.com" lang="en" xmltv_id="truTVEast.us" site_id="246#203">truTV</channel>
-  <channel site="directv.com" lang="en" xmltv_id="TVLandEast.us" site_id="304#301">TV Land</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="truTVEast.us" site_id="trutv-usa--eastern/333">truTV USA - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="truTVWest.us" site_id="trutv-usa--pacific/1263">truTV USA - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TVLandEast.us" site_id="tv-land--eastern/1252">TV Land - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TVLandWest.us" site_id="tv-land--pacific/210">TV Land - Pacific</channel>
   <channel site="directv.com" lang="en" xmltv_id="TVOne.us" site_id="328#1512">TV One HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="UniversalKidsEast.us" site_id="295#295">Universal Kids</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Unbeaten.us" site_id="Plex/all#5e20b730f2f8d5003d739db7-633239caa6615514fb78ecf3">Unbeaten</channel>
+  <channel site="directv.com" lang="en" xmltv_id="UniversalKids.us" site_id="295#295">Universal Kids</channel>
   <channel site="directv.com" lang="en" xmltv_id="UpTV.us" site_id="338#3511">UPTV</channel>
   <channel site="directv.com" lang="en" xmltv_id="USANetworkEast.us" site_id="242#242">USA Network</channel>
-  <channel site="directv.com" lang="en" xmltv_id="VH1East.us" site_id="335#335">VH1</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="USANetworkWest.us" site_id="usa-network--pacific/2144">USA Network - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="VH1East.us" site_id="vh1--eastern-feed/663">VH1 - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="VH1West.us" site_id="vh1--pacific-feed/1270">VH1 - Pacific Feed</channel>
   <channel site="directv.com" lang="en" xmltv_id="VICETV.us" site_id="271#271">VICE</channel>
   <channel site="directv.com" lang="en" xmltv_id="VividTV.us" site_id="598#598">Vivid TV</channel>
   <channel site="directv.com" lang="en" xmltv_id="WABCDT1.us" site_id="396#386">WABC (New York) ABC East</channel>
   <channel site="directv.com" lang="en" xmltv_id="WCBSDT1.us" site_id="390#380">WCBS (New York) CBS East</channel>
-  <channel site="directv.com" lang="en" xmltv_id="WeTVEast.us" site_id="260#260">WE tv</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WeatherNation.us" site_id="weathernation/13501">WeatherNation</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WeTVEast.us" site_id="we-womens-entertainment--eastern/664">WE (Women's Entertainment) - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="WeTVWest.us" site_id="we-womens-entertainment--pacific/4171">WE (Women's Entertainment) - Pacific</channel>
   <channel site="directv.com" lang="en" xmltv_id="WNBCDT1.us" site_id="392#382">WNBC (New York) NBC East</channel>
   <channel site="directv.com" lang="en" xmltv_id="WNYWDT1.us" site_id="398#388">WNYW (New York) FOX East</channel>
   <channel site="directv.com" lang="en" xmltv_id="WorldHarvestTV.us" site_id="367#321">World Harvest Television</channel>
@@ -381,8 +418,13 @@
   <channel site="directv.com" lang="es" xmltv_id="TelemundoWest.us" site_id="407#2545">Telemundo West</channel>
   <channel site="directv.com" lang="es" xmltv_id="TUDN.us" site_id="464#2021">TUDN</channel>
   <channel site="directv.com" lang="es" xmltv_id="TyCSportsNorthAmerica.ar" site_id="469#5451">TyC Sports</channel>
-  <channel site="directv.com" lang="es" xmltv_id="UniMasWest.us" site_id="408#5003">UniMas SD West</channel>
-  <channel site="directv.com" lang="es" xmltv_id="UnivisionEast.us" site_id="402#402">Univision East</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UniMasEast.us" site_id="unimas--network-eastern/10775">UniMás - Network Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UniMasWest.us" site_id="unimas--network-pacific/17006">UniMás - Network Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UnivisionEast.us" site_id="univision--eastern-feed/1305">Univision - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="UnivisionWest.us" site_id="univision--pacific-feed/1306">Univision - Pacific Feed</channel>
   <channel site="directv.com" lang="es" xmltv_id="UnivisionTlnovelas.us" site_id="454#3757">Univision telenovelas</channel>
-  <channel site="directv.com" lang="es" xmltv_id="UnivisionWest.us" site_id="403#5539">Univision West</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ScrippsNews.us" site_id="scripps-news/5999">Scripps News</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TBD.us" site_id="tbd-tv/31478">TBD TV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TheGrioTV.us" site_id="the-grio-eastern-feed/32034">The Grio - Eastern Feed</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="TheNest.us" site_id="the-nest/14118">The Nest</channel>
 </channels>
