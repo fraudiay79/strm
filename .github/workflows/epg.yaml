@@ -13,11 +13,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
         
-    #  - name: checkout iptv-org/epg repo
-    #    uses: actions/checkout@v4
-    #    with:
-    #     repository: iptv-org/epg
-    #     path: iptv-org-epg
+      - name: checkout iptv-org/epg repo
+        uses: actions/checkout@v4
+        with:
+         repository: iptv-org/epg
+         path: iptv-org-epg
 
       - name: update EPG
         run: sh epg/epg-pt.sh
@@ -30,6 +30,6 @@ jobs:
       - name: commit
         run: |
           git pull
-          cd epg && git add epg-rytec-pt.xml.xz
+          cd EPG && git add .
           git commit -m "Update EPG"
           git push origin main
