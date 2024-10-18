@@ -11,8 +11,9 @@ npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --d
 npm run grab -- --site=sjonvarp.is --output=../epg/epg-sjonvarp-is.xml --days=3 --maxConnections=10
 
 # Compress EPG xml files
+cd ../epg/
 
-xz -k -f -9 epg*.xml && gzip -k -f -9 epg*.xml
+gzip -k -f -9 epg*.xml
 
 # Remove EPG xml files
 
