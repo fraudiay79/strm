@@ -30,6 +30,6 @@ jobs:
       - name: commit
         run: |
           git pull
-          cd epg && git add .
+          cd epg && git add epg-rytec-pt.xml.xz
           git commit -m "Update EPG"
           git push origin main
