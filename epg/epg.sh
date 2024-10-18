@@ -28,11 +28,11 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # DK EPG
 
-npm run grab -- --site=allente.dk --output=../epg/epg-dk.xml --days=3 --maxConnections=10
+#npm run grab -- --site=allente.dk --output=../epg/epg-dk.xml --days=3 --maxConnections=10
 
 # DZ EPG
 
-#npm run grab -- --channels=../epg/dz.channels.xml --output=../epg/epg-dz.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/dz.channels.xml --output=../epg/epg-dz.xml --days=3 --maxConnections=10
 
 # FR EPG
 
