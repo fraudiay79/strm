@@ -15,12 +15,12 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="ITV3.uk" site_id="1065/itv3">ITV3</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="ITV4.uk" site_id="1174/itv4">ITV4</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="ITVBe.uk" site_id="1900/itvbe">ITVBe</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="MTV.ie" site_id="1986/mtv-ireland">MTV Ireland</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="MUTV.uk" site_id="1896/mutv-hd">MUTV HD</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="MTV.ie" site_id="1986/mtv-ireland">MTV</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="MUTV.uk" site_id="1896/mutv-hd">MUTV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="OireachtasTV.ie" site_id="1947/oireachtas-tv">Oireachtas TV</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="PremierSports1.ie" site_id="2282/premier-sports-1-roi-hd">Premier Sports 1 ROI HD</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="PremierSports2.ie" site_id="2283/premier-sports-2-roi-hd">Premier Sports 2 ROI HD</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="RTE2.ie" site_id="1648/rte2-hd">RTE2 HD</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="PremierSports1.ie" site_id="2282/premier-sports-1-roi-hd">Premier Sports 1</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="PremierSports2.ie" site_id="2283/premier-sports-2-roi-hd">Premier Sports 2</channel>
+  <channel site="tvireland.ie" lang="en" xmltv_id="RTE2.ie" site_id="1648/rte2-hd">RTE2</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="RTEjr.ie" site_id="1649/rte-jr">RTE Jr</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="RTENews.ie" site_id="1650/rte-news">RTE News</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="RTEOne.ie" site_id="1856/rte-one-hd">RTE One HD</channel>
@@ -29,7 +29,6 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="SkySportsF1.uk" site_id="1670/sky-sports-f1">Sky Sports F1</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkySportsFootball.uk" site_id="2086/sky-sports-football">Sky Sports Football</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkySportsGolf.uk" site_id="437/sky-sports-golf">Sky Sports Golf</channel>
-  <channel site="tvireland.ie" lang="en" xmltv_id="SkySportsGolfHD.uk" site_id="1567/sky-sports-golf-hd">Sky Sports Golf HD</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkySportsMainEvent.uk" site_id="431/sky-sports-main-event">Sky Sports Main Event</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkySportsMix.uk" site_id="2033/sky-sports-mix">Sky Sports Mix</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="SkySportsNews.uk" site_id="231/sky-sports-news">Sky Sports News</channel>
@@ -41,6 +40,7 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="TNTSports2.uk" site_id="1806/tnt-sports-2">TNT Sports 2</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="TNTSports3.uk" site_id="1952/tnt-sports-3">TNT Sports 3</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="TNTSports4.uk" site_id="1492/tnt-sports-4">TNT Sports 4</channel>
+  <channel site="entertainment.ie" lang="en" xmltv_id="UTV.uk" site_id="utv">UTV</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaFour.ie" site_id="2388/virgin-media-four">Virgin Media Four</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaMore.ie" site_id="2378/virgin-media-more">Virgin Media More</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaOne.ie" site_id="84/virgin-media-one">Virgin Media One</channel>
