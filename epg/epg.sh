@@ -22,6 +22,10 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
 
+# BG EPG
+
+#npm run grab -- --site=vivacom.bg --output=../epg/epg-bg.xml --days=3 --maxConnections=10
+
 # CZ EPG
 
 #npm run grab -- --site=mujtvprogram.cz --output=../epg/epg-cz.xml --days=3 --maxConnections=10
