@@ -54,6 +54,10 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --site=programme-tv.net --output=../epg/epg-fr.xml --days=3 --maxConnections=10
 
+# ES EPG
+
+#npm run grab -- --channels=../epg/es.channels.xml --output=../epg/epg-es.xml --days=3 --maxConnections=10
+
 # FI EPG
 
 #npm run grab -- --channels=../epg/fi.channels.xml --output=../epg/epg-fi.xml --days=3 --maxConnections=10
