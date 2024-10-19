@@ -30,6 +30,14 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --channels=../epg/br.channels.xml --output=../epg/epg-br.xml --days=3 --maxConnections=10
 
+# CN EPG
+
+#npm run grab -- --site=tv.cctv.com --output=../epg/epg-cn.xml --days=3 --maxConnections=10
+
+# CU EPG
+
+#npm run grab -- --site=tvcubana.icrt.cu --output=../epg/epg-cu.xml --days=3 --maxConnections=10
+
 # CZ EPG
 
 #npm run grab -- --site=mujtvprogram.cz --output=../epg/epg-cz.xml --days=3 --maxConnections=10
