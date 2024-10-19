@@ -104,7 +104,7 @@ npm run grab -- --channels=../epg/dz.channels.xml --output=../epg/epg-dz.xml --d
 
 # MA EPG
 
-npm run grab -- --channels=../epg/ma.channels.xml --output=../epg/epg-ma.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/ma.channels.xml --output=../epg/epg-ma.xml --days=3 --maxConnections=10
 
 # MK EPG
 
