@@ -26,6 +26,10 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --site=vivacom.bg --output=../epg/epg-bg.xml --days=3 --maxConnections=10
 
+# BR EPG
+
+#npm run grab -- --channels=../epg/br.channels.xml --output=../epg/epg-br.xml --days=3 --maxConnections=10
+
 # CZ EPG
 
 #npm run grab -- --site=mujtvprogram.cz --output=../epg/epg-cz.xml --days=3 --maxConnections=10
@@ -61,6 +65,10 @@ npm run grab -- --channels=../epg/dz.channels.xml --output=../epg/epg-dz.xml --d
 # GR EPG
 
 #npm run grab -- --channels=../epg/gr.channels.xml --output=../epg/epg-gr.xml --days=3 --maxConnections=10
+
+# HR EPG
+
+#npm run grab -- --site=maxtv.hrvatskitelekom.hr --output=../epg/epg-hr.xml --days=3 --maxConnections=10
 
 # HU EPG
 
