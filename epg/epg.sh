@@ -14,6 +14,10 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --days=3 --maxConnections=10
 
+# BE EPG
+
+#npm run grab -- --channels=../epg/be.channels.xml --output=../epg/epg-be.xml --days=3 --maxConnections=10
+
 # BEIN EPG
 
 #npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
@@ -145,6 +149,10 @@ npm run grab -- --channels=../epg/ma.channels.xml --output=../epg/epg-ma.xml --d
 # UY EPG
 
 #npm run grab -- --site=programacion.tcc.com.uy --output=../epg/epg-uy.xml --days=3 --maxConnections=10
+
+# XK EPG
+
+#npm run grab -- --channels=../epg/xk.channels.xml --output=../epg/epg-xk.xml --days=3 --maxConnections=10
 
 # ZA EPG
 
