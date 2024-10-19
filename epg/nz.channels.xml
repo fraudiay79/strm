@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.150">Star Plus Hindi</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.160">TFC</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.203">SonLife</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.421">RadioNZ National</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.422">RadioNZ Concert</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.600">Sky Sport Pop-Up 1</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.601">Sky Sport Pop-Up 2</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="" site_id="SkyGo/epg#sky.64">Trackside Premier</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="AlJazeeraEnglish.qa" site_id="SkyGo/epg#sky.90">Al Jazeera</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="SkyGo/epg#sky.76">Animal Planet</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BBCEarth.nz" site_id="SkyGo/epg#sky.74">BBC Earth</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BBCNewsAsiaPacific.uk" site_id="SkyGo/epg#sky.89">BBC World News</channel>
@@ -26,7 +17,7 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="CountryTV.nz" site_id="SkyGo/epg#sky.81">Country TV</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="SkyGo/epg#sky.71">CI</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="DaystarTV.us" site_id="SkyGo/epg#sky.202">Daystar</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryChannel.nz" site_id="SkyGo/epg#sky.70">Discovery</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryChannel.nz" site_id="SkyGo/epg#sky.70">Discovery Channel</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryTurbo.nz" site_id="SkyGo/epg#sky.75">Discovery Turbo</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="eden.nz" site_id="SkyGo/epg#sky.13">eden</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="edenPlus1.nz" site_id="SkyGo/epg#sky.505">eden+1</channel>
@@ -34,11 +25,10 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN2.au" site_id="SkyGo/epg#sky.61">ESPN2</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="FaceTV.nz" site_id="SkyGo/epg#sky.83">Face TV</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Firstlight.nz" site_id="SkyGo/epg#sky.206">Firstlight</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxNewsChannel.us" site_id="SkyGo/epg#sky.88">Fox News</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="HGTV.nz" site_id="SkyGo/epg#sky.21">HGTV</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="History.au" site_id="SkyGo/epg#sky.73">HISTORY</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="HopeChannelNewZealand.nz" site_id="SkyGo/epg#sky.204">Hope Channel</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="SkyGo/epg#sky.18">ID</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="History.au" site_id="SkyGo/epg#sky.73">History</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="HopeChannel.nz" site_id="SkyGo/epg#sky.204">Hope Channel</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="SkyGo/epg#sky.18">Investigation Discovery</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="JONES.nz" site_id="SkyGo/epg#sky.8">Jones</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="JONEStoo.nz" site_id="SkyGo/epg#sky.208">Jones! too</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Living.nz" site_id="SkyGo/epg#sky.17">Living</channel>
@@ -50,6 +40,8 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="NickMusic.au" site_id="SkyGo/epg#sky.100">Nick Music</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="ParliamentTV.nz" site_id="SkyGo/epg#sky.86">Parliament TV</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Rialto.nz" site_id="SkyGo/epg#sky.39">Rialto</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="RNZNational.nz" site_id="SkyGo/epg#sky.421">RadioNZ National</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="RNZConcert.nz" site_id="SkyGo/epg#sky.422">RadioNZ Concert</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Rush.nz" site_id="SkyGo/epg#sky.24">Rush</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="ShineTV.nz" site_id="SkyGo/epg#sky.201">Shine TV</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Sky5.nz" site_id="SkyGo/epg#sky.5">Sky 5</channel>
