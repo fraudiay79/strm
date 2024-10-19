@@ -50,10 +50,6 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --site=allente.dk --output=../epg/epg-dk.xml --days=3 --maxConnections=10
 
-# DZ EPG
-
-npm run grab -- --channels=../epg/dz.channels.xml --output=../epg/epg-dz.xml --days=3 --maxConnections=10
-
 # FR EPG
 
 #npm run grab -- --site=programme-tv.net --output=../epg/epg-fr.xml --days=3 --maxConnections=10
@@ -102,9 +98,9 @@ npm run grab -- --channels=../epg/dz.channels.xml --output=../epg/epg-dz.xml --d
 
 #npm run grab -- --site=tvguide.myjcom.jp --output=../epg/epg-jp.xml --days=3 --maxConnections=2
 
-# MA EPG
+# MENA EPG
 
-#npm run grab -- --channels=../epg/ma.channels.xml --output=../epg/epg-ma.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/mena.channels.xml --output=../epg/epg-mena.xml --days=3 --maxConnections=10
 
 # MK EPG
 
