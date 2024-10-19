@@ -20,7 +20,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # BEIN EPG
 
-#npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
 
 # BG EPG
 
