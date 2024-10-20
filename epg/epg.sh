@@ -30,6 +30,10 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --channels=../epg/br.channels.xml --output=../epg/epg-br.xml --days=3 --maxConnections=10
 
+# CA EPG
+
+npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=3 --maxConnections=10
+
 # CN EPG
 
 #npm run grab -- --site=tv.cctv.com --output=../epg/epg-cn.xml --days=3 --maxConnections=10
