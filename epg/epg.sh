@@ -12,7 +12,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # AU EPG
 
-#npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --days=3 --maxConnections=10
 
 # BE EPG
 
@@ -32,7 +32,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # CA EPG
 
-npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=3 --maxConnections=10
 
 # CN EPG
 
@@ -168,7 +168,7 @@ npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --d
 
 # US EPG
 
-npm run grab -- --channels=../epg/us.channels.xml --output=../epg/epg-us.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/us.channels.xml --output=../epg/epg-us.xml --days=3 --maxConnections=10
 
 # UY EPG
 
