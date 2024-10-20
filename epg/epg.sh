@@ -20,7 +20,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # BEIN EPG
 
-npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml --days=3 --maxConnections=10
 
 # BG EPG
 
@@ -104,7 +104,7 @@ npm run grab -- --channels=../epg/bein.channels.xml --output=../epg/epg-bein.xml
 
 # MENA EPG
 
-npm run grab -- --channels=../epg/mena.channels.xml --output=../epg/epg-mena.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/mena.channels.xml --output=../epg/epg-mena.xml --days=3 --maxConnections=10
 
 # MK EPG
 
@@ -164,7 +164,7 @@ npm run grab -- --channels=../epg/mena.channels.xml --output=../epg/epg-mena.xml
 
 # US EPG
 
-#npm run grab -- --channels=../epg/us.channels.xml --output=../epg/epg-us.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/us.channels.xml --output=../epg/epg-us.xml --days=3 --maxConnections=10
 
 # UY EPG
 
