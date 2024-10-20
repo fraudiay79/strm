@@ -32,7 +32,7 @@ npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --d
 
 # CA EPG
 
-#npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=3 --maxConnections=10
 
 # CN EPG
 
