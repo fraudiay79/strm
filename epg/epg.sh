@@ -12,7 +12,8 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # AU EPG
 
-npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --days=3 --maxConnections=10
+npm run grab -- --site=foxtel.com.au --output=../epg/epg-au.xml --days=3 --maxConnections=10
 
 # BE EPG
 
@@ -32,7 +33,7 @@ npm run grab -- --channels=../epg/au.channels.xml --output=../epg/epg-au.xml --d
 
 # CA EPG
 
-npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=3 --maxConnections=10
 
 # CN EPG
 
@@ -96,7 +97,7 @@ npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --d
 
 # IS EPG
 
-#npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --days=3 --maxConnections=10
 
 # IT EPG
 
