@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="directv.com" lang="en" xmltv_id="5StarMaxEast.us" site_id="520#3324">5StarMAX HD</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ABCCentral.us" site_id="abc--central/9910">ABC - Central</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ABCEast.us" site_id="abc--eastern/1224">ABC - Eastern</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ABCMountain.us" site_id="abc--mountain/9911">ABC - Mountain</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ABCWest.us" site_id="abc--pacific/4407">ABC - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="5StarMaxEast.us" site_id="5-star-max--eastern/636">5 Star Max - Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="5StarMaxWest.us" site_id="5-star-max--pacific/2627">5 Star Max - Pacific</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ABCCentral.us" site_id="abc--central/9910">ABC Central</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ABCEast.us" site_id="abc--eastern/1224">ABC Eastern</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ABCMountain.us" site_id="abc--mountain/9911">ABC Mountain</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ABCWest.us" site_id="abc--pacific/4407">ABC Pacific</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ABCNewsLive.us" site_id="abc-news-live/36224">ABC News Live</channel>
-  <channel site="directv.com" lang="en" xmltv_id="ACCNetwork.us" site_id="612#3911">ACC Network HD</channel>
-  <channel site="directv.com" lang="en" xmltv_id="AccuWeather.us" site_id="361#6067">AccuWeather HD</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ACCNetwork.us" site_id="acc-network/33964">ACC Network</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="AccuWeather.us" site_id="accuweather-hd/7335">AccuWeather</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ActionMaxEast.us" site_id="actionmax--eastern/1377">ActionMax - Eastern</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ActionMaxWest.us" site_id="actionmax--pacific/2582">ActionMax - Pacific</channel>
-  <channel site="directv.com" lang="en" xmltv_id="AEEast.us" site_id="265#265">A&amp;E</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="AEEast.us" site_id="ae-us--eastern-feed/2">A&amp;E US - Eastern Feed</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="AEWest.us" site_id="ae-us--pacific-feed/1202">A&amp;E US - Pacific Feed</channel>
   <channel site="directv.com" lang="en" xmltv_id="AltitudeSports.us" site_id="681#2681">Altitude Sports</channel>
   <channel site="directv.com" lang="en" xmltv_id="AMCEast.us" site_id="254#254">AMC</channel>
