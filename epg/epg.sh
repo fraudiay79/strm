@@ -97,7 +97,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # IS EPG
 
-npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --days=3 --maxConnections=10
 
 # IT EPG
 
@@ -134,6 +134,10 @@ npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --d
 # NZ EPG
 
 #npm run grab -- --channels=../epg/nz.channels.xml --output=../epg/epg-nz.xml --days=3 --maxConnections=10
+
+# PK EPG
+
+npm run grab -- --channels=../epg/pk.channels.xml --output=../epg/epg-pk.xml --days=3 --maxConnections=10
 
 # PL EPG
 
@@ -177,7 +181,7 @@ npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --d
 
 # XK EPG
 
-#npm run grab -- --channels=../epg/xk.channels.xml --output=../epg/epg-xk.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/xk.channels.xml --output=../epg/epg-xk.xml --days=3 --maxConnections=10
 
 # ZA EPG
 
