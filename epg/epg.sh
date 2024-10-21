@@ -169,7 +169,7 @@ npm run grab -- --channels=../epg/is.channels.xml --output=../epg/epg-is.xml --d
 
 # US EPG
 
-npm run grab -- --channels=../epg/us1.channels.xml --output=../epg/epg-us.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/us.channels.xml --output=../epg/epg-us.xml --days=3 --maxConnections=10
 
 # UY EPG
 
