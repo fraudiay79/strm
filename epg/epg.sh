@@ -37,7 +37,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # CN EPG
 
-#npm run grab -- --site=tv.cctv.com --output=../epg/epg-cn.xml --days=3 --maxConnections=10
+npm run grab -- --site=tv.cctv.com --output=../epg/epg-cn.xml --days=3 --maxConnections=10
 
 # CU EPG
 
@@ -137,15 +137,15 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # PK EPG
 
-npm run grab -- --channels=../epg/pk.channels.xml --output=../epg/epg-pk.xml --days=3 --maxConnections=10
+#npm run grab -- --channels=../epg/pk.channels.xml --output=../epg/epg-pk.xml --days=3 --maxConnections=10
 
 # PL EPG
 
-#npm run grab -- --site=programtv.onet.pl --output=../epg/epg-pl.xml --days=3 --maxConnections=10
+npm run grab -- --site=programtv.onet.pl --output=../epg/epg-pl.xml --days=3 --maxConnections=3
 
 # PT EPG
 
-#npm run grab -- --channels=../epg/pt.channels.xml --output=../epg/epg-pt.xml --days=3 --maxConnections=10
+npm run grab -- --channels=../epg/pt.channels.xml --output=../epg/epg-pt.xml --days=3 --maxConnections=3
 
 # RO EPG
 
