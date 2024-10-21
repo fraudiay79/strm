@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   <channel site="dstv.com" lang="en" xmltv_id="1KZNTV.za" site_id="zaf#261">1 KZN</channel>
-  <channel site="dstv.com" lang="en" xmltv_id="1Magic.za" site_id="zaf#103">1 Magic HD</channel>
-  <channel site="dstv.com" lang="en" xmltv_id="AfricaMagicEpic.za" site_id="zaf#152">Africa Magic Epic</channel>
-  <channel site="dstv.com" lang="en" xmltv_id="AfricaMagicUrban.za" site_id="zaf#153">Africa Magic Urban</channel>
-  <channel site="dstv.com" lang="en" xmltv_id="AfricaMagicFamily.za" site_id="zaf#154">Africa Magic Family</channel>
+  <channel site="dstv.com" lang="en" xmltv_id="1Magic.za" site_id="zaf#103">1 Magic HD</channel
   <channel site="dstv.com" lang="en" xmltv_id="Africanews.fr" site_id="zaf#417">Africanews</channel>
   <channel site="dstv.com" lang="en" xmltv_id="BBCEarthAfrica.uk" site_id="zaf#184">BBC Earth</channel>
   <channel site="dstv.com" lang="en" xmltv_id="BBCLifestyle.za" site_id="zaf#174">BBC Lifestyle</channel>
@@ -32,6 +29,7 @@
   <channel site="dstv.com" lang="en" xmltv_id="FoodNetwork.za" site_id="zaf#175">Food Network</channel>
   <channel site="dstv.com" lang="en" xmltv_id="GINXEsportsTV.uk" site_id="zaf#127">Ginx eSports</channel>
   <channel site="dstv.com" lang="en" xmltv_id="HGTV.za" site_id="zaf#177">HGTV</channel>
+  <channel site="dstv.com" lang="en" xmltv_id="HilaalTV.za" site_id="zmb#347">Hilaal TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="History.za" site_id="zaf#186">History</channel>
   <channel site="dstv.com" lang="en" xmltv_id="Ignition.za" site_id="zaf#189">IGNITION</channel>
   <channel site="dstv.com" lang="en" xmltv_id="InvestigationDiscovery.za" site_id="zaf#171">Investigation Discovery</channel>
@@ -42,6 +40,7 @@
   <channel site="dstv.com" lang="en" xmltv_id="kykNETNOU.za" site_id="zaf#146">KyKNet Nou</channel>
   <channel site="dstv.com" lang="en" xmltv_id="LTV.ls" site_id="zaf#292">Lesotho TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="Me.za" site_id="zaf#115">ME Channel</channel>
+  <channel site="startimestv.com" lang="en" xmltv_id="MindsetLearn.za" site_id="349">Mindset Learn</channel>
   <channel site="dstv.com" lang="en" xmltv_id="Mnet.za" site_id="zaf#101">M-Net</channel>
   <channel site="dstv.com" lang="en" xmltv_id="MNetMovies1.za" site_id="zaf#104">M-Net Movies 1</channel>
   <channel site="dstv.com" lang="en" xmltv_id="MNetMovies2.za" site_id="zaf#106">M-Net Movies 2</channel>
@@ -93,6 +92,7 @@
   <channel site="dstv.com" lang="en" xmltv_id="SuperSportVariety3.za" site_id="zaf#208">SuperSport Variety 3</channel>
   <channel site="dstv.com" lang="en" xmltv_id="SuperSportVariety4.za" site_id="zaf#209">SuperSport Variety 4</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TheHomeChannel.za" site_id="zaf#176">The Home Channel</channel>
+  <channel site="dstv.com" lang="en" xmltv_id="TBNAfrica.za" site_id="nga#343">TBN</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TLC.za" site_id="zaf#135">TLC</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TLNovelas.za" site_id="zaf#133">TLNovelas</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TNTAfrica.za" site_id="zaf#137">TNT Africa</channel>
@@ -100,11 +100,14 @@
   <channel site="dstv.com" lang="en" xmltv_id="TraceUrban.fr" site_id="zaf#325">TRACE URBAN HD</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TravelChannel.za" site_id="zaf#179">Travel Channel</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TshwaneTV.za" site_id="zaf#262">Tshwane TV</channel>
+  <channel site="startimestv.com" lang="en" xmltv_id="TVBRICSAfrica.za" site_id="1236625992">BRICS TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TV5MondeAfrique.fr" site_id="zaf#437">TV5 Monde Afrique</channel>
   <channel site="dstv.com" lang="en" xmltv_id="UKTV,za" site_id="zaf#134">UKTV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="UniversalTV.za" site_id="zaf#117">Universal TV</channel>
   <channel site="dstv.com" lang="af" xmltv_id="VIA.za" site_id="zaf#147">VIA HD</channel>
   <channel site="dstv.com" lang="en" xmltv_id="WildEarth.za" site_id="zaf#183">Wild Earth</channel>
+  <channel site="startimestv.com" lang="en" xmltv_id="WSport.za" site_id="1296220504">W-Sport</channel>
   <channel site="dstv.com" lang="en" xmltv_id="WWE.za" site_id="zaf#236">WWE</channel>
+  <channel site="startimestv.com" lang="en" xmltv_id="ZeeOne.za" site_id="1023102509">Zee One</channel>
   <channel site="dstv.com" lang="en" xmltv_id="ZeeZonke.za" site_id="zaf#169">Zee Zonke</channel>
 </channels>
