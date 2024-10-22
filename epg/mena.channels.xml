@@ -24,8 +24,8 @@
   <channel site="sat.tv" lang="ar" xmltv_id="JeelDZ.dz" site_id="1#72#جيل دي زاد">Jeel DZ</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="SamiraTV.dz" site_id="1#38#سميرة">Samira TV</channel>
   #Bahrain
-  <channel site="sat.tv" lang="ar" xmltv_id="BahrainTV.bh" site_id="1#38#البحرين تي في">Bahrain TV</channel>
-  <channel site="sat.tv" lang="en" xmltv_id="BahrainInternational.bh" site_id="1#35#Bahrain International">Bahrain International</channel>
+  <channel site="elcinema.com" lang="ar" xmltv_id="BahrainTV.bh" site_id="1368">Bahrain TV</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="BahrainInternational.bh" site_id="us#5034781559/bahrain-international-hdtv">Bahrain International</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlMaaref.bh" site_id="1#44#المعارف">Al Maaref</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="LuaLua.bh" site_id="1#44#اللؤلؤة">LuaLua</channel>
   #Egypt
@@ -45,7 +45,7 @@
   <channel site="sat.tv" lang="ar" xmltv_id="CBCSofra.eg" site_id="1#38#سي بي سي سفرة">CBC Sofra</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="DMC.eg" site_id="1#38#دي ام سي">DMC</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="DMCDrama.eg" site_id="1#38#دي ام سي دراما">DMC Drama</channel>
-  <channel site="tvtv.us" lang="en" xmltv_id="Dream2.eg" site_id="60324">Dream 2</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="Dream2.eg" site_id="DREAM2">Dream 2</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="ElMehwarChannel.eg" site_id="1#38#المحور تي في">المحور تي في</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlMasriyah.eg" site_id="1#35#المصرية">Al Masriyah</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="ERTU1.eg" site_id="1#38#المصرية الأولى">المصرية الأولى</channel>
@@ -54,9 +54,9 @@
   <channel site="sat.tv" lang="ar" xmltv_id="Mazzika.eg" site_id="1#50#مزيكا">Mazzika</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="MBCMasr.eg" site_id="1#68#ام بي سي مصر">MBC Masr</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="MBCMasr2.eg" site_id="1#68#ام بي سي مصر 2">MBC Masr 2</channel>
-  <channel site="tvtv.us" lang="en" xmltv_id="MelodyAflam.eg" site_id="90639">Melody Aflam</channel>
-  <channel site="tvtv.us" lang="en" xmltv_id="MelodyDrama.eg" site_id="10465">Melody Drama</channel>
-  <channel site="tvtv.us" lang="en" xmltv_id="MelodyHits.eg" site_id="10471">Melody Hits</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="MelodyAflam.eg" site_id="us#4414842749/melody-aflam-dish">Melody Aflam</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="MelodyDrama.eg" site_id="us#69044660/melody-drama">Melody Drama</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="MelodyHits.eg" site_id="us#69044659/melody-hits">Melody Hits</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Mekameleen.eg" site_id="1#50#مكملين">Mekameleen</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="MixBelAraby.eg" site_id="1#49#ميكس بالعربي تي في">Mix Bel Araby</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="NileTV.eg" site_id="1#35#نايل تي في">Nile TV</channel>
