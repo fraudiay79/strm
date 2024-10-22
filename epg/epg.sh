@@ -28,7 +28,7 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 # BR EPG
 
-npm run grab -- --site=meuguia.tv --output=../epg/epg-br.xml --days=2 --maxConnections=10
+npm run grab -- --channels=sites/mi.tv/mi.tv_br.channels.xml --output=../epg/epg-br.xml --days=2 --maxConnections=10
 #npm run grab -- --channels=../epg/br.channels.xml --output=../epg/epg-br.xml --days=2 --maxConnections=10
 
 # CA EPG
