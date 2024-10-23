@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="4Music.uk" site_id="1438/4music">4Music</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="4seven.uk" site_id="1684/4seven">4seven</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="5Action.uk" site_id="2141/5action">5Action</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="5SELECT.uk" site_id="1859/5select">5SELECT</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="5STAR.uk" site_id="1289/5star">5STAR</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="5USA.uk" site_id="1290/5usa">5USA</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="alibi.uk" site_id="154/alibi">Alibi</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="alibi.uk" site_id="154/alibi">alibi</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="AnimalPlanet.uk" site_id="168/animal-planet">Animal Planet</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="AyozatTV.uk" site_id="1990/ayozat-tv">Ayozat TV</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="BabyTV.uk" site_id="1761/baby-tv">Baby TV</channel>
@@ -22,7 +21,7 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="BBCTwoNorthernIreland.uk" site_id="19/bbc-two-northern-ireland">BBC Two Northern Ireland</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="BBCTwoWales.uk" site_id="21/bbc-two-wales">BBC Two Wales</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Blaze.uk" site_id="2041/blaze">Blaze</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="BloombergTVEuropeHD.uk" site_id="2059/bloomberg-hd">Bloomberg HD</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="BloombergTV.uk" site_id="2059/bloomberg-hd">Bloomberg TV</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Boomerang.uk" site_id="215/boomerang">Boomerang</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Cartoonito.uk" site_id="1357/cartoonito">Cartoonito</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="CartoonNetwork.uk" site_id="102/cartoon-network">Cartoon Network</channel>
@@ -46,17 +45,14 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="DiscoveryTurbo.uk" site_id="153/discovery-turbo">Discovery Turbo</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="DMAX.uk" site_id="1405/dmax">DMAX</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Drama.uk" site_id="1798/drama">Drama</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="EEntertainment.uk" site_id="934/e-entertainment">E!</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="E4.uk" site_id="605/e4">E4</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="E4Extra.uk" site_id="914/e4-extra">E4 Extra</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="EarthxTV.us" site_id="2385/earthx-tv">Earthx TV</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Eden.uk" site_id="993/eden">Eden</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Euronews.uk" site_id="1867/euronews">euronews</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Eurosport1.uk" site_id="275/eurosport-1">Eurosport 1</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Eurosport2.uk" site_id="1076/eurosport-2">Eurosport 2</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Film4.uk" site_id="220/film4">Film4</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="FoodNetwork.uk" site_id="1523/food-network">Food Network</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="Foodxp.uk" site_id="2272/foodxp">Foodxp</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="France24.uk" site_id="1760/france-24-english">France 24 English</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="GBNews.uk" site_id="2339/gb-news">GB News</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="GOLD.uk" site_id="134/gold">GOLD</channel>
@@ -140,7 +136,7 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkyReplay.uk" site_id="919/sky-replay">Sky Replay</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkySciFi.uk" site_id="161/sky-sci-fi">Sky Sci-Fi</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkyShowcase.uk" site_id="222/sky-showcase">Sky Showcase</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="SkySportsArena.uk" site_id="2088/sky-sports-arena">Sky Sports Arena</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="SkySportsPlus.uk" site_id="2088/sky-sports-arena">Sky Sports+</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkySportsCricket.uk" site_id="433/sky-sports-cricket">Sky Sports Cricket</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkySportsF1.uk" site_id="1670/sky-sports-f1">Sky Sports F1</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkySportsFootball.uk" site_id="2086/sky-sports-football">Sky Sports Football</channel>
@@ -153,16 +149,8 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkySportsRacing.uk" site_id="747/sky-sports-racing">Sky Sports Racing</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="SkyWitness.uk" site_id="122/sky-witness">Sky Witness</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="STV.uk" site_id="1572/stv-hd">STV</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkBirmingham.uk" site_id="2051/talkbirmingham">TalkBirmingham</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkBristol.uk" site_id="1943/talkbristol">TalkBristol</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkCardiff.uk" site_id="1945/talkcardiff">TalkCardiff</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkingPicturesTV.uk" site_id="1946/talking-pictures-tv">Talking Pictures TV</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkLeeds.uk" site_id="1942/talkleeds">TalkLeeds</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkLiverpool.uk" site_id="2052/talkliverpool">TalkLiverpool</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkNorthWales.uk" site_id="2443/talknorthwales">TalkNorthWales</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkTeesside.uk" site_id="2444/talkteesside">TalkTeesside</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkTV.uk" site_id="2377/talk-tv-hd">Talk TV</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TalkTyneWear.uk" site_id="1944/talktynewear">TalkTyne&amp;Wear</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TG4.ie" site_id="83/tg4">TG4</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Thats60s.uk" site_id="2384/thats-60s">That&apos;s 60s</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Thats70s.uk" site_id="2442/thats-christmas">That&apos;s Christmas</channel>
@@ -185,13 +173,11 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports10.uk" site_id="1960/tnt-sports-10">TNT Sports 10</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSportsUltimate.uk" site_id="1954/tnt-sports-ultimate">TNT Sports Ultimate</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TogetherTV.uk" site_id="1288/together-tv">Together TV</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TraceVault.uk" site_id="1902/trace-vault">Trace Vault</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Travelxp.in" site_id="2140/travelxp">Travelxp</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TrueCrime.uk" site_id="1512/cbs-reality">True Crime</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="UTV.uk" site_id="39/utv">UTV</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="ViaplaySports1HD.uk" site_id="1638/viaplay-sports-1-hd">Viaplay Sports 1 HD</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="ViaplaySports2HD.uk" site_id="2270/viaplay-sports-2-hd">Viaplay Sports 2 HD</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="ViaplayXtraHD.uk" site_id="2138/viaplay-xtra-hd">Viaplay Xtra HD</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="PremierSports1.uk" site_id="1638/viaplay-sports-1-hd">Premier Sports 1</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="PremierSports2.uk" site_id="2270/viaplay-sports-2-hd">Premier Sports 2</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="W.uk" site_id="1441/w">W</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="WildEarth.uk" site_id="2396/wildearth">WildEarth</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Yesterday.uk" site_id="908/yesterday">Yesterday</channel>
