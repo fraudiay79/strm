@@ -38,6 +38,10 @@ npm run grab -- --channels=../epg/br.channels.xml --output=../epg/epg-br.xml --d
 
 npm run grab -- --channels=../epg/ca.channels.xml --output=../epg/epg-ca.xml --days=2 --maxConnections=10
 
+# CH EPG
+
+npm run grab -- --channels=../epg/ch.channels.xml --output=../epg/epg-ch.xml --days=2 --maxConnections=10
+
 # CN EPG
 
 npm run grab -- --site=tv.cctv.com --output=../epg/epg-cn.xml --days=2 --maxConnections=10
