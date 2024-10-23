@@ -6,9 +6,7 @@
   <channel site="tv.blue.ch" lang="de" xmltv_id="6Plus.ch" site_id="1469">6+</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="7PlusNickSchweiz.ch" site_id="289">7+ / Nickelodeon</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="AlpenlandTV.ch" site_id="18">Alpenland TV</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="AnimalPlanet.de" site_id="20">Animal Planet D</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="ArcadiaTV.li" site_id="1950">ARCADIA world TV</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="arte.de" site_id="27">Arte Deutsch</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="AnimalPlanet.ch" site_id="20">Animal Planet D</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="AuftankenTV.ch" site_id="1216">Auftanken TV</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="BlueAction.ch" site_id="591">blue Action</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="BlueEvent1.ch" site_id="1282">blue Music D 1</channel>
@@ -19,21 +17,21 @@
   <channel site="tv.blue.ch" lang="de" xmltv_id="BlueZoomD.ch" site_id="1221">blue Zoom D</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="BlueZoomF.ch" site_id="420">blue Zoom F</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="BodenseeTV.ch" site_id="49">Bodensee TV</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="" site_id="661">blue Sport Event 1</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="BlueSportEvent1.ch" site_id="661">blue Sport Event 1</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="Eurosport1.de" site_id="167">Eurosport 1 D</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="Eurosport2.de" site_id="170">Eurosport 2 D</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="" site_id="422">blue Sport Event 2</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="" site_id="663">blue Sport 1 Live</channel>  
-  <channel site="tv.blue.ch" lang="de" xmltv_id="" site_id="511">blue Sport 2 Live</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="" site_id="512">blue Sport 3 Live</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="" site_id="513">blue Sport 4 Live</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="" site_id="514">blue Sport 5 Live</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="BlueSportEvent2.ch" site_id="422">blue Sport Event 2</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="BlueSport1Live.ch" site_id="663">blue Sport 1 Live</channel>  
+  <channel site="tv.blue.ch" lang="de" xmltv_id="BlueSport2Live.ch" site_id="511">blue Sport 2 Live</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="BlueSport3Live.ch" site_id="512">blue Sport 3 Live</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="BlueSport4Live.ch" site_id="513">blue Sport 4 Live</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="BlueSport5Live.ch" site_id="514">blue Sport 5 Live</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="GameTV.ch" site_id="1224">Game TV</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="kabeleinsSchweiz.ch" site_id="226">Kabel eins</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="HelvetiaOneTV.ch" site_id="1040">Helvetia One TV</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="Kanal9.ch" site_id="227">Kanal 9</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="LolyTV.ch" site_id="1027">Loly TV</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="MarcoPoloTV.de" site_id="1801">Marco Polo</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="MarcoPoloTV.ch" site_id="1801">Marco Polo</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="Musig24TV.ch" site_id="275">musig24</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="ProSiebenSchweiz.ch" site_id="322">ProSieben</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="PulsAcht.ch" site_id="325">Puls 8</channel>
@@ -46,7 +44,6 @@
   <channel site="tv.blue.ch" lang="de" xmltv_id="SRFinfo.ch" site_id="400">SRF info</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="SRFzwei.ch" site_id="401">SRF zwei</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="StarTV.ch" site_id="405">Star TV</channel>
-  <channel site="tv.blue.ch" lang="de" xmltv_id="StingrayClassica.ca" site_id="102">Stingray Classica D</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="Sudostschweiz.ch" site_id="621">TV Südostschweiz</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="Swiss1.ch" site_id="1223">SWISS1</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="SwissSportTV.ch" site_id="1601">Swiss Sport TV</channel>
@@ -69,14 +66,14 @@
   <channel site="tv.blue.ch" lang="de" xmltv_id="TVO.ch" site_id="641">TVO</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="TVOberwallis.ch" site_id="628">TV Oberwallis</channel>
   <channel site="tv.blue.ch" lang="de" xmltv_id="TVRheintal.ch" site_id="630">TV Rheintal</channel>
-  <channel site="tv.blue.ch" lang="en" xmltv_id="" site_id="1722">MySports EDGE</channel>  
+  <channel site="tv.blue.ch" lang="en" xmltv_id="MySportsEDGE.ch" site_id="1722">MySports EDGE</channel>  
   <channel site="tv.blue.ch" lang="fr" xmltv_id="6terSwitzerland.ch" site_id="9">6ter</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="AjoieTV.ch" site_id="1456">Ajoie TV</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="Canal9.ch" site_id="72">Canal 9</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="CanalAlphaJU.ch" site_id="73">Canal Alpha JU</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="CanalAlphaNE.ch" site_id="74">Canal Alpha NE</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="LemanBleu.ch" site_id="244">Léman Bleu Télévision</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="LFMTV.ch" site_id="246">CARAC 3</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="Carac3.ch" site_id="246">CARAC3</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="M6.ch" site_id="249">M6</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="MaxTV.ch" site_id="253">Max TV</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="MySports2French.ch" site_id="1558">MySports 2 F</channel>
@@ -88,20 +85,20 @@
   <channel site="tv.blue.ch" lang="fr" xmltv_id="MySports8French.ch" site_id="1564">MySports 8 F</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="MySports9French.ch" site_id="1565">MySports 9 F</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="MySportsOneFrench.ch" site_id="1557">MySports Un</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="NationalGeographic.fr" site_id="279">National Geographic F</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="OneTV.ch" site_id="301">CARAC 2</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="RougeTV.ch" site_id="355">CARAC 1</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="NationalGeographic.ch" site_id="279">National Geographic F</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="Carac2.ch" site_id="301">CARAC2</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="Carac1.ch" site_id="355">CARAC1</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="RTS1.ch" site_id="369">RTS 1</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="RTS2.ch" site_id="367">RTS 2</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="TeleSwizz.ch" site_id="41">Teleswizz</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="TF1Switzerland.ch" site_id="601">TF1</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="TFXSwitzerland.ch" site_id="295">TFX</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="TF1.ch" site_id="601">TF1</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="TFX.ch" site_id="295">TFX</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="TVM3.ch" site_id="640">TVM3</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="TVOnex.ch" site_id="1331">TV Onex</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="TVSuissePlus.ch" site_id="1082">CARAC 4</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="Carac4.ch" site_id="1082">CARAC4</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="UshuaiaTV.fr" site_id="644">Ushuaia TV</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="VernierVisions.ch" site_id="1467">Vernier Visions</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="W9Switzerland.ch" site_id="653">W9</channel>
+  <channel site="tv.blue.ch" lang="fr" xmltv_id="W9.ch" site_id="653">W9</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="WarnerTV.fr" site_id="1329">Warner TV</channel>
   <channel site="tv.blue.ch" lang="it" xmltv_id="RSILa1.ch" site_id="356">RSI La 1</channel>
   <channel site="tv.blue.ch" lang="it" xmltv_id="RSILa2.ch" site_id="357">RSI LA 2</channel>
