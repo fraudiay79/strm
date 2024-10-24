@@ -209,6 +209,7 @@ cd ../epg/
 cat epg*.xml > all.xml
 
 gzip -k -f -9 all.xml
+gzip -k -f -9 epg*.xml
 
 # Remove EPG xml files
 
