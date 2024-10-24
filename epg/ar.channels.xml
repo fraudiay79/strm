@@ -15,8 +15,6 @@
   <channel site="mi.tv" lang="es" xmltv_id="BloombergTV.us" site_id="ar#bloomberg">Bloomberg</channel>
   <channel site="mi.tv" lang="es" xmltv_id="C5N.ar" site_id="ar#c5n">C5N</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Cartoonito.ar" site_id="ar#boomerang-cartoon">Cartoonito</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal4.uy" site_id="ar#canal-4-montecarlo">Canal 4 Montecarlo</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal5.uy" site_id="ar#tv-nacional-uruguay">TV Nacional Uruguay</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Canal10Cordoba.ar" site_id="ar#canal-10-de-cordoba">Canal 10</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Canal20VillaMaria.ar" site_id="ar#canal-c20-villa-maria">Canal 20</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Canal26.ar" site_id="ar#26-tv">Canal 26</channel>
@@ -145,16 +143,18 @@
   <channel site="mi.tv" lang="es" xmltv_id="truTV.ar" site_id="ar#tru-tv">truTV</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TurismoVisionArgentina.ar" site_id="ar#turismo-vision-argentina">Turismo Visión Argentina</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TV5MondeLatinAmerica.fr" site_id="ar#tv-5">TV5Monde Amérique Latine</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TVCiudad.uy" site_id="ar#teveciudad">TV Ciudad</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TVEInternacionalAmerica.es" site_id="ar#tve">TVE</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TVPublica.ar" site_id="ar#canal-7-capital">TV Pública</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TyCSports.ar" site_id="ar#tyc-sports">TyC Sports</channel>
   <channel site="mi.tv" lang="es" xmltv_id="TyCSports2.ar" site_id="ar#tyc-alternativa">TyC Sports 2</channel>
   <channel site="mi.tv" lang="es" xmltv_id="UniversalTV.ar" site_id="ar#universal-channel">Universal TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="UruguayNaturalTV.uy" site_id="ar#uruguay-natural-uruguay">Uruguay Natural TV</channel>
+  <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalCinema.ar" site_id="453">Universal Cinema</channel>
+  <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalComedy.ar" site_id="455">Universal Comedy</channel>
+  <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalCrime.ar" site_id="456">Universal Crime</channel>
+  <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalPremiere.ar" site_id="452">Universal Premiere</channel>
+  <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalReality.ar" site_id="454">Universal Reality</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Venus.ar" site_id="ar#venus">Venus</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Viajar.es" site_id="ar#viajar">Viajar</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Volver.ar" site_id="ar#volver">Volver</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="VTV.uy" site_id="ar#vtv">VTV</channel>
   <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.ar" site_id="ar#warner-channel">Warner TV</channel>
 </channels>
