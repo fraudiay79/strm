@@ -6,6 +6,10 @@ cd /home/runner/work/strm/strm/iptv-org-epg && npm install
 
 #npm run grab -- --channels=../epg/afr.channels.xml --output=../epg/epg-afr.xml --days=2 --maxConnections=10
 
+# AL EPG
+
+#npm run grab -- --channels=../epg/al.channels.xml --output=../epg/epg-al.xml --days=2 --maxConnections=10
+
 # AR EPG
 
 #npm run grab -- --channels=../epg/ar.channels.xml --output=../epg/epg-ar.xml --days=2 --maxConnections=10
@@ -188,7 +192,7 @@ npm run grab -- --channels=../epg/mt.channels.xml --output=../epg/epg-mt.xml --d
 
 # UY EPG
 
-#npm run grab -- --site=programacion.tcc.com.uy --output=../epg/epg-uy.xml --days=2 --maxConnections=10
+#npm run grab -- --channels=../epg/uy.channels.xml --output=../epg/epg-uy.xml --days=2 --maxConnections=10
 
 # XK EPG
 
@@ -208,10 +212,10 @@ cd ../epg/
 
 #cat epg*.xml > all.xml
 
-tar cvzf epg.tar.gz epg*.xml
+#tar cvzf epg.tar.gz epg*.xml
 
 #gzip -k -f -9 all.xml
-#gzip -k -f -9 epg*.xml
+gzip -k -f -9 epg*.xml
 
 # Remove EPG xml files
 
