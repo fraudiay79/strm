@@ -43,9 +43,9 @@ def playlist_text(url):
 
 def main():
     config_file = open(sys.argv[1], "r", encoding="utf-8")
-    config = json.load(config_file)
+    myvideoaz = json.load(config_file)
     for site in config:
-        site_path = os.path.join(os.getcwd(), site["slug"])
+        site_path = os.path.join(site["slug"])
         os.makedirs(site_path, exist_ok=True)
         for channel in tqdm(site["channels"]):
             channel_file_path = os.path.join(site_path, slugify(channel["name"].lower()) + ".m3u8")
@@ -77,4 +77,4 @@ def main():
                 
 
 if __name__=="__main__": 
-    main() 
+    main()
