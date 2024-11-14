@@ -141,6 +141,11 @@
             "url": "https://www.atv.com.tr/canli-yayin"
         },
         {
+            "name": "Al Rai",
+            "slug": "alrai",
+            "url": "https://www.alraimedia.com/live"
+        },
+        {
             "name": "Saudia TV",
             "slug": "saudiatv",
             "url": "https://www.aloula.sa/en/live/saudiatv"
@@ -161,11 +166,6 @@
             "url": "https://www.dailymotion.com/video/x7x4dgx"
         },
         {
-            "name": "TV Kayseri",
-            "slug": "tvkayseri",
-            "url": "https://www.twitch.tv/tvkayseri"
-        },
-        {
             "name": "ATB (BO)",
             "slug": "atb",
             "url": "https://www.dailymotion.com/video/x84eirw"
@@ -174,11 +174,6 @@
             "name": "C8",
             "slug": "c8",
             "url": "https://www.dailymotion.com/video/x5gv5rr"
-        },
-        {
-            "name": "C Star",
-            "slug": "cstar",
-            "url": "https://www.dailymotion.com/video/x5gv5v0"
         },
         {
             "name": "VTV (VE)",
