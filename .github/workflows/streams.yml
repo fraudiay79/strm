@@ -32,7 +32,6 @@ jobs:
             pwd
             cd ./platforms/
             python myvideoaz.py myvideoaz.json
-            python streams.py streams.json
       - name: commit and push files
         run: |
           git config --local user.email "action@github.com"
