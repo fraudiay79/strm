@@ -32,11 +32,11 @@ jobs:
             pwd
             cd ./platforms/
             python myvideoaz.py myvideoaz.json
+            python streams.py streams.json
       - name: commit and push files
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          cd links
+          git config --local user.email ""
+          git config --local user.name "Stream Ninja 🥷🏽"
           git add -A
           git commit -m "updated streams"
           git push
