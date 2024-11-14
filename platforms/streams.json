@@ -11,6 +11,16 @@
             "url": "https://www.twitch.tv/hadramout1"
         },
         {
+            "name": "SBS Plus",
+            "slug": "sbsplus",
+            "url": "https://www.sbs.co.kr/live/S03"
+        },
+        {
+            "name": "STV",
+            "slug": "stvscotland",
+            "url": "https://player.stv.tv/live/stv"
+        },
+        {
             "name": "Olympics",
             "slug": "olympics",
             "url": "https://olympics.com/en/live/"
@@ -198,7 +208,12 @@
         {
             "name": "Paraguay TV",
             "slug": "paraguaytv",
-            "url": "https://www.twitch.tv/paraguaytvhd"
+            "url": "https://www.twitch.tv/paraguaytv_streaming"
+        }
+        {
+            "name": "VTV 1",
+            "slug": "vtv1",
+            "url": "https://vtvgo.vn/xem-truc-tuyen-kenh-vtv1-1.html"
         }
     ]
 }
