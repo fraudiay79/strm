@@ -26,17 +26,17 @@ def info_to_text(stream_info, url):
 def main():
     # Loading config file
     f = open(sys.argv[1], "r")
-    yayinlar = json.load(f)
+    streams = json.load(f)
 
     # Getting output options and creating folders
-    folder_name = yayinlar["output"]["folder"]
-    master_folder_name = yayinlar["output"]["masterFolder"]
-    current_dir = os.getcwd()
+    folder_name = streams["output"]["folder"]
+    master_folder_name = streams["output"]["masterFolder"]
+    current_dir = os.chdir("/")
     root_folder = os.path.join(current_dir, folder_name)
     master_folder = os.path.join(root_folder, master_folder_name)
     os.makedirs(master_folder, exist_ok=True)
 
-    channels = yayinlar["channels"]
+    channels = streams["channels"]
     for channel in channels:
         # Get streams and playlists
         try:
