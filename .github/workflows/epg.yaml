@@ -1,0 +1,34 @@
+name: Update EPG
+on:
+  schedule:
+    - cron: "0 */24 * * *"
+  workflow_dispatch:
+
+jobs:
+  Update-EPG:
+    runs-on: ubuntu-latest
+    steps:
+    
+      - name: checkout
+        uses: actions/checkout@v4
+        
+      - name: checkout fraudiay79/epg repo
+        uses: actions/checkout@v4
+        with:
+         repository: fraudiay79/epg
+         path: fraudiay79-epg
+
+      - name: update EPG
+        run: sh epg/epg_main.sh
+
+      - name: setup git config
+        run: |
+          git config user.name "🧟 Brainz"
+          git config user.email "<>"
+
+      - name: commit
+        run: |
+          git pull
+          cd epg && git add .
+          git commit -m "Update EPG"
+          git push
