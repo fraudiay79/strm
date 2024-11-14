@@ -31,7 +31,7 @@ def main():
     # Getting output options and creating folders
     folder_name = streams["output"]["folder"]
     master_folder_name = streams["output"]["masterFolder"]
-    current_dir = os.chdir("/")
+    current_dir = os.getcwd()
     root_folder = os.path.join(current_dir, folder_name)
     master_folder = os.path.join(root_folder, master_folder_name)
     os.makedirs(master_folder, exist_ok=True)
