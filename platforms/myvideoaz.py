@@ -44,7 +44,7 @@ def playlist_text(url):
 def main():
     config_file = open(sys.argv[1], "r", encoding="utf-8")
     myvideoaz = json.load(config_file)
-    for site in config:
+    for site in myvideoaz:
         site_path = os.path.join(site["slug"])
         os.makedirs(site_path, exist_ok=True)
         for channel in tqdm(site["channels"]):
