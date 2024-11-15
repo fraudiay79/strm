@@ -11,14 +11,9 @@
             "url": "https://www.twitch.tv/hadramout1"
         },
         {
-            "name": "SBS Plus",
-            "slug": "sbsplus",
-            "url": "https://www.sbs.co.kr/live/S03"
-        },
-        {
             "name": "STV",
             "slug": "stvscotland",
-            "url": "https://player.stv.tv/live/stv"
+            "url": "https://player.api.stv.tv/v1/streams/stv/"
         },
         {
             "name": "Olympics",
