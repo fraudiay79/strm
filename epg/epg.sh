@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/runner/work/m3u8/m3u8/fraudiay79-epg && npm install
+cd /home/runner/work/strm/strm/fraudiay79-epg && npm install
 
 # AFR EPG
 
