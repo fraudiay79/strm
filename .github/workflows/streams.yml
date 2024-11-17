@@ -27,12 +27,14 @@ jobs:
           cd ./platforms/
           
           pip3 install -r requirements.txt
+          pip3 install beautifulsoup4
       - name: execute py script 
         run:  |
             pwd
             cd ./platforms/
             python myvideoaz.py myvideoaz.json
             python streams.py streams.json
+            python3 royanews.py > ../links/royanews.m3u8
       - name: commit and push files
         run: |
           git config --local user.email ""
