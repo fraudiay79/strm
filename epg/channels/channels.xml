@@ -4792,11 +4792,12 @@
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="Wanasah.sa" site_id="414449">Wanasah</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="ZadTV.sa" site_id="1#68#زاد">Zad TV</channel>
   #Senegal
-  <channel site="startimestv.com" lang="en" xmltv_id="2STV.sn" site_id="463">2STV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="2STV.sn" site_id="sn#180122">2STV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="OuestTV.sn" site_id="529518219">Ouest TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="RTS1.sn" site_id="483">RTS1</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="SenTV.sn" site_id="101495683">Sen TV</channel>
-  <channel site="chaines-tv.orange.fr" lang="fr" xmltv_id="SunuYeuf.sn" site_id="2908">Sunu Yeuf</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="RTS1.sn" site_id="sn#180076">RTS 1</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="RTS2.sn" site_id="sn#180666">RTS 2</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="SenTV.sn" site_id="sn#180377">Sen TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="SunuYeuf.sn" site_id="sn#180710">Sunu Yeuf</channel>
   #Serbia
   <channel site="mts.rs" lang="sr" xmltv_id="24Kitchen.rs" site_id="264#624">24Kitchen</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="360TuneBox.nl" site_id="480#606">360 Tune box</channel>
@@ -5921,7 +5922,9 @@
   <channel site="tv.trueid.net" lang="th" xmltv_id="WhiteChannel.th" site_id="white-channel-hd">ไวท์แชนแนล</channel>
   <channel site="tv.trueid.net" lang="th" xmltv_id="WorkpointTV.th" site_id="workpointtv">เวิร์คพอยท์ ทีวี</channel>
   #Togo
+  <channel site="canalplus.com" lang="fr" xmltv_id="TVT.tg" site_id="tg#180272">TV Togo</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="NWCinema.tg" site_id="10536415">NW Cinema</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="SOSDocteurTV.tg" site_id="tg#180976">SOS Docteur TV</channel>
   #Türkiye
   <channel site="dsmart.com.tr" lang="tr" xmltv_id="24Kitchen.tr" site_id="53#58d29bb0eefad3db9c60627b">24Kitchen</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="24TV.tr" site_id="105">24</channel>
