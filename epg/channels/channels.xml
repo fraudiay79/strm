@@ -1822,7 +1822,7 @@
   <channel site="programme-tv.net" lang="fr" xmltv_id="EEntertainment.fr" site_id="e-141">E!</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Equidia.fr" site_id="equidia-59">Equidia</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Eurochannel.uk" site_id="eurochannel-236">Eurochannel</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="EuronewsFrench.fr" site_id="euronews-62">euronews Français</channel>
+  <channel site="programme-tv.net" lang="fr" xmltv_id="EuronewsFrench.fr" site_id="euronews-62">euronews</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Eurosport1.fr" site_id="eurosport-1-5">Eurosport 1</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Eurosport2.fr" site_id="eurosport-2-63">Eurosport 2</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv-358">Fashion TV</channel>
@@ -1979,7 +1979,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="DMAX.de" site_id="429">DMAX</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="emsTVLingen.de" site_id="4380">ems TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="eSports1.de" site_id="191">eSports1</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="EuronewsGerman.fr" site_id="482">euronews Deutsch</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="EuronewsGerman.fr" site_id="482">euronews</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Eurosport1.de" site_id="389">Eurosport 1</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Eurosport2.de" site_id="18">Eurosport 2</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="FrankenFernsehen.de" site_id="238">Franken Fernsehen</channel>
@@ -2827,7 +2827,7 @@
   <channel site="superguidatv.it" lang="it" xmltv_id="DiscoveryScience.it" site_id="discovery-science-hd/sky-doc-e-lifestyle/93">Discovery Science</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="DMAX.it" site_id="dmax/256">DMAX</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="DonnaTV.it" site_id="donnatv/464">DonnaTV</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="EuronewsItalian.fr" site_id="euronews/sky-news/117">euronews Italiano</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="EuronewsItalian.fr" site_id="euronews/sky-news/117">euronews</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="Eurosport1.it" site_id="eurosport-hd/sky-sport/45">Eurosport 1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="Eurosport2.it" site_id="eurosport-2hd/sky-sport/46">Eurosport 2</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="Focus.it" site_id="focus/249">Focus</channel>
@@ -3688,6 +3688,7 @@
   <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSport4.nl" site_id="ziggosport4">Ziggo Sport 4</channel>
   <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSport5.nl" site_id="ziggosport5">Ziggo Sport 5</channel>
   <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSport6.nl" site_id="ziggosport6">Ziggo Sport 6</channel>
+  <channel site="ziggogo.tv" lang="nl" xmltv_id="ZiggoTV.nl" site_id="NL_000013_019327">Ziggo TV</channel>
   #New Zealand
   <channel site="sky.co.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="76">Animal Planet</channel>
   <channel site="sky.co.nz" lang="en" xmltv_id="BBCEarth.nz" site_id="74">BBC Earth</channel>
@@ -4274,7 +4275,7 @@
   <channel site="nostv.pt" lang="pt" xmltv_id="CubavisionInternacional.cu" site_id="121">Cubavisión Internacional</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="MTV.pt" site_id="377">MTV Portugal</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="ClubbingTV.fr" site_id="CLUBHD">Clubbing TV</channel>
-  <channel site="nostv.pt" lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="25">euronews Português</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="25">euronews</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="FashionTVEurope.fr" site_id="47">FTV</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="GaliciaTVEuropa.es" site_id="54">TV Galicia</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Gametoon.nl" site_id="GAMET">Gametoon</channel>
@@ -5542,7 +5543,7 @@
   <channel site="movistarplus.es" lang="es" xmltv_id="ETB2.es" site_id="ETB2">ETB 2</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="ETB3.es" site_id="ETB3">ETB 3</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="ETBBasque.es" site_id="ETB">EITB Basque</channel>
-  <channel site="movistarplus.es" lang="es" xmltv_id="EuronewsSpanish.fr" site_id="ENW">euronews Español</channel>
+  <channel site="movistarplus.es" lang="es" xmltv_id="EuronewsSpanish.fr" site_id="ENW">euronews</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="Eurosport1.es" site_id="ESP">Eurosport 1</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="Eurosport2.es" site_id="ESP2">Eurosport 2</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="EWTN.es" site_id="EWTN">EWTN</channel>
@@ -6232,7 +6233,7 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="E4.uk" site_id="605/e4">E4</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="E4Extra.uk" site_id="914/e4-extra">E4 Extra</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Eden.uk" site_id="993/eden">Eden</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="1867/euronews">euronews English</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="EuronewsEnglish.fr" site_id="1867/euronews">euronews</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Eurosport1.uk" site_id="275/eurosport-1">Eurosport 1</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Eurosport2.uk" site_id="1076/eurosport-2">Eurosport 2</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Film4.uk" site_id="220/film4">Film4</channel>
@@ -6842,7 +6843,7 @@
   <channel site="dstv.com" lang="fr" xmltv_id="CGTNFrench.cn" site_id="nga#449">CGTN Français</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="DWArabic.de" site_id="2#53#۔DW الإنجليزية">DW Arabic</channel>
   <channel site="mi.tv" lang="es" xmltv_id="DWEspanol.de" site_id="co#deutsche-welle-amerika">DW Español</channel>
-  <channel site="teliatv.ee" lang="en" xmltv_id="EuronewsRussian.fr" site_id="en#1286">euronews Русский</channel>
+  <channel site="teliatv.ee" lang="en" xmltv_id="EuronewsRussian.fr" site_id="en#1286">euronews</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="France24Arabic.fr" site_id="1#49#فرانس 24 عربي">France 24 Arabic</channel>
   <channel site="mi.tv" lang="es" xmltv_id="HispanTV.ir" site_id="ar#hispan-tv">HispanTV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="i24NEWSArabic.il" site_id="1#33#آي24 نيوز">i24NEWS عربى</channel>
