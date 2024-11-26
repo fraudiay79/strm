@@ -911,11 +911,14 @@
   <channel site="startimestv.com" lang="en" xmltv_id="RTB.bf" site_id="101603964">RTB</channel>
   #Cameroon
   <channel site="startimestv.com" lang="en" xmltv_id="AfriqueMedia.cm" site_id="565">Afrique Média</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="BalafonTV.cm" site_id="526885591">Balafon TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="BalafonTV.cm" site_id="cm#180115">Balafon TV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="Bnews1.cm" site_id="2070096276">Bnews1</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="Canal2Movies.cm" site_id="711">Canal 2 Movies</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="CRTV.cm" site_id="647">CRTV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="Vision4.cm" site_id="528860993">Vision 4</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="Canal2Movies.cm" site_id="cm#180671">Canal 2 Movies</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="Canal2International.cm" site_id="cm#180172">Canal 2 Int'l</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="CRTV.cm" site_id="cm#180010">CRTV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="CRTVNews.cm" site_id="cm#180668">CRTV News</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="CRTVSport.cm" site_id="cm#180717">CRTV Sport</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="Vision4.cm" site_id="cm#180388">Vision 4</channel>
   #Canada
   <channel site="tvpassport.com" lang="en" xmltv_id="ABCSpark.ca" site_id="abc-spark/10281">ABC Spark</channel>
   <channel site="tvpassport.com" lang="fr" xmltv_id="addikTV.ca" site_id="addik-tv/2033">Addik TV</channel>
@@ -1086,7 +1089,9 @@
   #Central African Republic
   <channel site="startimestv.com" lang="en" xmltv_id="TVCentrafricaine.cf" site_id="603">TV Centrafricaine</channel>
   #Chad
-  <channel site="startimestv.com" lang="en" xmltv_id="TeleTchad.td" site_id="2076094407">Télé Tchad</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="TChad24.ci" site_id="td#180146">Tchad 24</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="TeleTchad.td" site_id="td#180275">Télé Tchad</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="TchadInfos.ci" site_id="td#180079">Tchad Infos</channel>
   #Chile
   <channel site="mi.tv" lang="es" xmltv_id="13C.cl" site_id="cl#canal-13-c">13C</channel>
   <channel site="mi.tv" lang="es" xmltv_id="24Horas.cl" site_id="cl#tvn-24-h">24 Horas</channel>
@@ -1225,16 +1230,18 @@
   <channel site="startimestv.com" lang="en" xmltv_id="DRTV.cg" site_id="646">DRTV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="TeleCongo.cg" site_id="2147044057">TeleCongo</channel>
   #Côte d'Ivoire
-  <channel site="startimestv.com" lang="en" xmltv_id="BenieTV.ci" site_id="623">Benie TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="Business24.ci" site_id="622">Business24</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="EcclesiaTV.ci" site_id="105632607">Ecclesia TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="LMTV.ci" site_id="470">LMTV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="APlusIvoire.ci" site_id="ci#180681">A+ Ivoire</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="BenieTV.ci" site_id="ci#180325">Benie TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="Business24.ci" site_id="ci#180390">Business24</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="EcclesiaTV.ci" site_id="ci#180974">Ecclesia TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="LMTV.ci" site_id="ci#180323">LMTV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="PassionNovelas.ci" site_id="1023196140">Passion Novelas</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="RTI1.ci" site_id="564">RTI1</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="RTI2.ci" site_id="574">RTI2</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="RTILa3.ci" site_id="526733059">La3</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="RTI1.ci" site_id="ci#180171">RTI 1</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="RTI2.ci" site_id="ci#180666">RTS 2</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="RTILa3.ci" site_id="ci#180761">La3</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="NovelasTV.ci" site_id="ci#180689">Novelas TV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="SourceAfricaTV.ci" site_id="716">Source Africa TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="TVAlBayane.ci" site_id="106187231">TV Al Bayane</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="TVAlBayane.ci" site_id="ci#180776">TV Al Bayane</channel>
   #Croatia
   <channel site="maxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="24Kitchen.hr" site_id="316">24Kitchen</channel>
   <channel site="maxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport1.hr" site_id="444">Arenasport 1</channel>
@@ -3424,10 +3431,10 @@
   #Malawi
   <channel site="startimestv.com" lang="en" xmltv_id="TimesTV.mw" site_id="369">Times TV</channel>
   #Mali
-  <channel site="startimestv.com" lang="en" xmltv_id="AfricableTV.ml" site_id="465">Africable</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="CheriflaTV.ml" site_id="527353882">Cherifla TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="ORTM1.ml" site_id="473">ORTM</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="ORTM2.ml" site_id="527000026">ORTM 2</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="AfricableTV.ml" site_id="ml#180166">Africable</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="CheriflaTV.ml" site_id="ml#180669">Cherifla TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="ORTM1.ml" site_id="ml#180069">ORTM1</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="ORTM2.ml" site_id="ml#180397">ORTM2</channel>
   #Malta
   <channel site="tvmi.mt" lang="mt" xmltv_id="TVM.mt" site_id="2">TVM</channel>
   <channel site="tvmi.mt" lang="mt" xmltv_id="TVMnewsPlus.mt" site_id="3">TVMnews+</channel>
@@ -3447,7 +3454,10 @@
   <channel site="melita.com" lang="en" xmltv_id="TSN7.mt" site_id="3e27b252-a70f-467c-8384-712a83762688">TSN7</channel>
   <channel site="melita.com" lang="en" xmltv_id="TSN8.mt" site_id="7de33233-5eec-4418-8928-1c6f9fc21f8c">TSN8</channel>
   #Mauritania
+  <channel site="canalplus.com" lang="fr" xmltv_id="Elmouritaniya.mr" site_id="ml#180384">Elmouritaniya</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Barlemania.mr" site_id="1#33#البرلمانية الموريطانية تي في">Barlemania</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="ChinguitTV.mr" site_id="mr#180126">Chinguit TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="ElwataniyaTV.mr" site_id="mr#180127">Elwataniya TV</channel>
   #Mexico
   <channel site="mi.tv" lang="es" xmltv_id="adn40.mx" site_id="mx#proyecto-40">adn40</channel>
   <channel site="mi.tv" lang="es" xmltv_id="AdultSwim.mx" site_id="mx#tru-tv">[adult swim]</channel>
