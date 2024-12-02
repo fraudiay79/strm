@@ -276,6 +276,29 @@
   <channel site="mi.tv" lang="es" xmltv_id="Viajar.es" site_id="ar#viajar">Viajar</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Volver.ar" site_id="ar#volver">Volver</channel>
   <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.ar" site_id="ar#warner-channel">Warner TV</channel>
+  #Armenia
+  <channel site="iptvx.one" lang="hy" xmltv_id="5TV.am" site_id="5-am">5 TV (Армения) • 5TV</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ArmeniaTV.am" site_id="armenia-tv">Армения ТВ</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ArmNews.am" site_id="armnews">ArmNews (Армения)</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ARTN.am" site_id="artn-am">ARTN</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ATV.am" site_id="atv-armenia">ATV Армения</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ATVBazmocTV.am" site_id="atv-bazmoc">ATV Bazmoc TV • Բազմոց tv</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ATVFilmzone.am" site_id="atv-filmzone">ATV Filmzone • ՖՒԼՄԶՈՆ</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ATVKinoman.am" site_id="atv-kinoman">ATV Kinoman • ԿԻՆՈՄԱՆ</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="YerkirMedia.am" site_id="erkir-media">Еркир Медия (Армения) • Yerkir Media • Երկիր Մեդիա</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="FastSports1.am" site_id="fast-sport-1-am">Fast Sports 1</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="FastSports2.am" site_id="fast-sport-2-am">Fast Sports 2</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="FastSports.am" site_id="fast-sport-am">Fast Sports</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="Armenia1.am" site_id="h1-am">Armenia 1 • H1 (Армения)</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="Armenia2.am" site_id="h2-am">Armenia 2 • H2 (Армения)</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="KentronTV.am" site_id="kentron-tv">Kentron TV • Kentron TV HD • Կենտրոն հեռուստատեսություն</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="NorHayastanTV.am" site_id="nor-hayastan">Nor Hayastan (Армения) • Նոր Հայաստան</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantKids.am" site_id="shant-kids-hd">Шант Kids HD • Shant Kids HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantMusic.am" site_id="shant-music-hd">Шант Music HD • Shant Music HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantPremium.am" site_id="shant-premium-hd">Шант Premium HD • Shant Premium HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantSerial.am" site_id="shant-serial-hd">Шант Serial HD • Shant Serial HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="SONGTVArmenia.am" site_id="song-tv">Song TV Armenia • Song TV Армения • MTV.AM</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="TBN.am" site_id="tbn-armenia">TBN Armenia</channel>
   #Australia
   <channel site="i.mjh.nz" lang="en" xmltv_id="10Bold.au" site_id="au/Sydney/epg#mjh-10bold-nsw">10 Bold</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="10Peach.au" site_id="au/Sydney/epg#mjh-10peach-nsw">10 Peach</channel>
@@ -414,6 +437,14 @@
   <channel site="sky.de" lang="de" xmltv_id="SkySportAustria7.at" site_id="885">Sky Sport Austria 7</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="VOX.at" site_id="vox">VOX</channel>
   <channel site="tv.magenta.at" lang="de" xmltv_id="W24.at" site_id="206969384250">W24</channel>
+  #Azerbaijan
+  <channel site="iptvx.one" lang="az" xmltv_id="AzTV.az" site_id="aztv">AzTV</channel>
+  <channel site="iptvx.one" lang="az" xmltv_id="CBC.az" site_id="cbc-az">CBC • CBC AZ</channel>
+  <channel site="iptvx.one" lang="az" xmltv_id="CBCSport.az" site_id="cbc-sport">CBC Sport • CBC Sport HD</channel>
+  <channel site="iptvx.one" lang="az" xmltv_id="IctimaiTV.az" site_id="ictimai-tv">Ictimai • Ictimai TV • İctimai TV</channel>
+  <channel site="iptvx.one" lang="az" xmltv_id="IdmanTV.az" site_id="idman">Idman • Idman TV</channel>
+  <channel site="iptvx.one" lang="az" xmltv_id="MedeniyyetTV.az" site_id="medeniyyet">Medeniyyet TV • Mədəniyyət TV</channel>
+  <channel site="iptvx.one" lang="az" xmltv_id="XezerTV.az" site_id="xezer">Xezer • Xəzər TV • Xəzər • Xezer TV</channel>
   #Bahamas
   <channel site="rev.bs" lang="en" xmltv_id="BCNTV.bs" site_id="660">BCN TV</channel>
   <channel site="rev.bs" lang="en" xmltv_id="CalaClassics.bs" site_id="358">Cala Classics</channel>
@@ -2381,11 +2412,11 @@
   <channel site="awilime.com" lang="hu" xmltv_id="ViasatNature.hu" site_id="viasat_nature">Viasat Nature</channel>
   <channel site="awilime.com" lang="hu" xmltv_id="Zenebutik.hu" site_id="zenebutik">Zenebutik</channel>
   #Iceland
-  <channel site="sjonvarp.is" lang="is" xmltv_id="RUV2.is" site_id="RUVI">RÚV Íþróttir</channel>
+  <channel site="novatv.is" lang="is" xmltv_id="RUV2.is" site_id="64a1209e_2F3486c">RÚV 2</channel>
   <channel site="sjonvarp.is" lang="is" xmltv_id="RUV.is" site_id="RUV">RÚV</channel>
   <channel site="sjonvarp.is" lang="is" xmltv_id="SiminnSport2.is" site_id="S1SPORT2">Síminn Sport 2</channel>
   <channel site="sjonvarp.is" lang="is" xmltv_id="SiminnSport.is" site_id="S1SPORT">Síminn Sport</channel>
-  <channel site="sjonvarp.is" lang="is" xmltv_id="SjonvarpSimans.is" site_id="S1">Sjónvarp Símans</channel>
+  <channel site="novatv.is" lang="is" xmltv_id="SjonvarpSimans.is" site_id="20ca7c07_2F3486c">Sjónvarp Símans</channel>
   <channel site="stod2.is" lang="is" xmltv_id="Stod2.is" site_id="stod2">Stöð 2</channel>
   <channel site="stod2.is" lang="is" xmltv_id="Stod2Fjolskylda.is" site_id="stod3">Stöð 2 Fjölskylda</channel>
   <channel site="stod2.is" lang="is" xmltv_id="Stod2Sport.is" site_id="sport">Stöð 2 Sport</channel>
@@ -6850,31 +6881,39 @@
   <channel site="bein.com" lang="en" xmltv_id="StarWorld.qa" site_id="entertainment#19">Star World</channel>
   <channel site="bein.com" lang="en" xmltv_id="TravelChannel.qa" site_id="entertainment#15">Travel Channel</channel>
   #OSN
-  <channel site="elcinema.com" lang="ar" xmltv_id="AlfaSeries.ae" site_id="1161">Series</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="AlfaSeriesPlus2.ae" site_id="1186">Series+2</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="AlSafwa.ae" site_id="1160">Al Safwa</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="AlYawm.ae" site_id="1162">Al Yawm</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="Cinema1.ae" site_id="1150">Cinema 1</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="Cinema2.ae" site_id="1231">Cinema 2</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="AlfaSeriesPlus2.ae" site_id="SE2">Series +2</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="AlfaSeries.ae" site_id="SER">Series</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="AlSafwa.ae" site_id="SAF">Al Safwa</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="AlYawm.ae" site_id="YAW">Al Yawm</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="Cinema1.ae" site_id="CM1">Cinema 1</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="Cinema2.ae" site_id="CM2">Cinema 2</channel>
   <channel site="elcinema.com" lang="ar" xmltv_id="DisneyChannel.ae" site_id="1277">Disney Channel</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="Fann.ae" site_id="1150">Fann</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNComedy.ae" site_id="1257">OSN TV Comedy</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNCrime.ae" site_id="1395">OSN TV Crime</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNKids.ae" site_id="1232">OSN TV Kids</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNNow.ae" site_id="1396">OSN TV Now</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNOne.ae" site_id="1393">OSN TV One</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNMoviesAction.ae" site_id="1211">OSN TV Movies Action</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNMoviesComedy.ae" site_id="1231">OSN TV Movies Comedy</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNMoviesFamily.ae" site_id="1392">OSN TV Movies Family</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNMoviesHollywood.ae" site_id="1391">OSN TV Movies Hollywood</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNMoviesPremiere.ae" site_id="1213">OSN TV Movies Premiere</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNShowcase.ae" site_id="1394">OSN TV Showcase</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNYahala.ae" site_id="1205">OSN TV Yahala</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNYahalaAflam.ae" site_id="1285">OSN TV Yahala Aflam</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="OSNYahalaBilArabi.ae" site_id="1390">OSN TV Yahala Bil Arabi</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="Fann.ae" site_id="FAN">Fann</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="Nickelodeon.ae" site_id="NIC">Nickelodeon</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="NickJr.ae" site_id="NJR">Nick Jr.</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="Nicktoons.ae" site_id="NKT">NickToons</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNComedy.ae" site_id="OCO">OSNtv Comedy</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNKids.ae" site_id="OMK">OSNtv Kids</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNKidzone.ae" site_id="KDZ">OSNtv Kidzone</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNMezze.ae" site_id="OMZ">OSNtv Mezze</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNMoviesAction.ae" site_id="AHD">OSNtv Movies Action</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNMoviesHollywood.ae" site_id="OPR">OSNtv Movies Hollywood</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNMoviesPremiere.ae" site_id="OM1">OSNtv Movies Premiere</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNNews.ae" site_id="ONS">OSNtv News</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNShowcase.ae" site_id="OFH">OSNtv Showcase</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNCrime.ae" site_id="OBG">OSNtv Crime</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNMoviesHorror.ae" site_id="OCM">OSNtv Movies Horror</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNMoviesFamily.ae" site_id="OFM">OSNtv Movies Family</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNNow.ae" site_id="OLH">OSNtv Now</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNMoviesComedy.ae" site_id="OMC">OSNtv Movies Comedy</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNShowcaseClassics.ae" site_id="OST">OSNtv Showcase Classics</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNOne.ae" site_id="OTO">OSNtv One</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNYahala.ae" site_id="OYH">OSNtv Yahala</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNYahalaAflam.ae" site_id="OYC">OSNtv Yahala Aflam</channel>
+  <channel site="osn.com" lang="ar" xmltv_id="OSNYahalaBilArabi.ae" site_id="OYA">OSNtv Yahala Bil Arabi</channel>
   <channel site="elcinema.com" lang="ar" xmltv_id="StarMovies.ae" site_id="1212">Star Movies</channel>
   <channel site="elcinema.com" lang="ar" xmltv_id="StarWorld.ae" site_id="1329">Star World</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="TLC.ae" site_id="1276">TLC</channel>  
+  <channel site="osn.com" lang="ar" xmltv_id="TLC.ae" site_id="TLC">TLC</channel> 
   #News
   <channel site="sat.tv" lang="ar" xmltv_id="AlHurra.us" site_id="1#43#الحرة">Al Hurra</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="BBCArabic.uk" site_id="1#45#بي بي سي عربي">BBC Arabic</channel>
