@@ -2833,11 +2833,32 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaThree.ie" site_id="1929/virgin-media-three">Virgin Media Three</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaTwo.ie" site_id="1209/virgin-media-two">Virgin Media Two</channel>
   #Israel
-  <channel site="9tv.co.il" lang="ru" xmltv_id="Channel9.il" site_id="#">9 канал</channel>
-  <channel site="kan.org.il" lang="ar" xmltv_id="Makan33.il" site_id="2">مكان</channel>
-  <channel site="kan.org.il" lang="he" xmltv_id="Kan11.il" site_id="1">כאן 11</channel>
-  <channel site="kan.org.il" lang="he" xmltv_id="KanEducational.il" site_id="19">חינוכית</channel>
-  <channel site="mako.co.il" lang="he" xmltv_id="Keshet12.il" site_id="#">קשת 12</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportGold.il" site_id="5sport-gold-il">5Sport Gold • 5Sport Gold HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportLive.il" site_id="5sport-live-il">5Sport Live • 5Sport Live HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportPlus.il" site_id="5sport-plus-il">5Sport Plus • 5Sport Plus HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportStars.il" site_id="5sport-stars-il">5Sport Stars • 5Sport Stars HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Kan11.il" site_id="channel-11-il">Channel 11 IL • Кан 11 HD • כאן 11</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Keshet12.il" site_id="channel-12-il">Channel 12 IL • Кешет HD • קשת 12</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Channel13.il" site_id="channel-13-il">Channel 13 IL • Решет HD • ערוץ 13</channel>
+  <channel site="iptvx.one" lang="ru" xmltv_id="Channel9.il" site_id="9kanal-israel">9 канал Израиль • 9 канал</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="One2.il" site_id="one2-il">ONE2 • ONE2 HD • One 2</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="One.il" site_id="one-il">ONE • ONE HD • One</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesDrama.il" site_id="yes1">Yes 1 • Yes 1 HD • yes Movies Drama • yes Movies Drama HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesAction.il" site_id="yes2">Yes 2 • Yes 2 HD • yes Movies Action • yes Movies Action HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesComedy.il" site_id="yes3">Yes 3 • Yes 3 HD • yes Movies Comedy • yes Movies Comedy HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesIsraeliCinema.il" site_id="yes4">Yes 4 • Yes 4 HD • yes Israeli Cinema • yes Israeli Cinema HD • yes Израильское кино • yes Израильское кино HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesTVAction.il" site_id="yes-action">yes Action • yes Action HD • yes TV Action • yes TV Action HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesBollywood.il" site_id="yes-bollywood">yes Bollywood • yes Bollywood HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesTVComedy.il" site_id="yes-comedy">yes Comedy • yes Comedy HD • yes TV Comedy • yes TV Comedy HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesDocu.il" site_id="yes-doku">yes Docu • Yes Доку</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesTVDrama.il" site_id="yes-drama">yes Drama • yes Drama HD • yes TV Drama • yes TV Drama HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesKids.il" site_id="yes-movies-kids">yes Movies Kids • yes Movies Kids HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport1.il" site_id="yes-sport-1">Yes Sport 1 • Yes Sport 1 HD • Sport 1 • ספּוֹרט 1</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport2.il" site_id="yes-sport-2">Yes Sport 2 • Yes Sport 2 HD • Sport 2 • ספּוֹרט 2</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport3.il" site_id="yes-sport-3">Yes Sport 3 • Yes Sport 3 HD • Sport 3 • ספּוֹרט 3</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport4.il" site_id="yes-sport-4">Yes Sport 4 • Yes Sport 4 HD • Sport 4 • ספּוֹרט 4</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5Sport.il" site_id="yes-sport-5">5Sport • 5Sport HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5Sport4K.il" site_id="yes-sport-5-4k">5Sport 4K</channel>
   #Italy
   <channel site="superguidatv.it" lang="it" xmltv_id="7Gold.it" site_id="italia-7-gold/310">Italia 7 Gold</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="20.it" site_id="20/443">20</channel>
@@ -3585,6 +3606,25 @@
   <channel site="mi.tv" lang="es" xmltv_id="UniversalTV.mx" site_id="mx#universal-channel">Universal TV</channel>
   <channel site="mi.tv" lang="es" xmltv_id="USANetwork.mx" site_id="mx#fox-sy-fy">USA Network</channel>
   <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.mx" site_id="mx#warner">Warner TV</channel>
+  #Moldova
+  <channel site="iptvx.one" lang="ru" xmltv_id="AgroTV.md" site_id="agro-tv-md">Agro TV Moldova</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="Canal2.md" site_id="canal-2">Canal 2 • Canal 2 MD</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="Canal3.md" site_id="canal-3">Canal 3 • Canal 3 MD</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="Canal5.md" site_id="canal-5">Canal 5 • Canal 5 MD</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="Cinema1.md" site_id="cinema1-md">Cinema 1 MD • Cinema 1 Молдова • Cinema 1</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="JurnalTV.md" site_id="jurnaltv">Jurnal TV</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="Moldova1.md" site_id="moldova-1">Moldova 1</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="Moldova2.md" site_id="moldova-2">Moldova 2</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="N4.md" site_id="n4">N4</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="NextTV.md" site_id="next-tv">Next TV</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="NorocTV.md" site_id="noroc-tv-md">Noroc TV Moldova • Noroc TV MD</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="OrizontTV.md" site_id="orizonttv-ro">Orizont TV • Orizont TV RO • Orizont TV HD</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="ProTVChisinau.md" site_id="pro-tv-md">ProTV Moldova • ProTV Chișinău</channel>
+  <channel site="iptvx.one" lang="ru" xmltv_id="RenTV.md" site_id="rentv-md">РенТВ Молдова • Рен ТВ Молдова</channel>
+  <channel site="iptvx.one" lang="ru" xmltv_id="TSV.md" site_id="tcb">ТСВ</channel>
+  <channel site="iptvx.one" lang="ru" xmltv_id="ExclusivTV.md" site_id="tnt-bravo-moldova">ТНТ Bravo (Молдова) • ТНТ Exclusiv TV • Exclusiv TV</channel>
+  <channel site="iptvx.one" lang="ro" xmltv_id="TV8.md" site_id="tv8-md">TV8 Moldova • TV8 MD • TV8</channel>
+  <channel site="iptvx.one" lang="ru" xmltv_id="TVC21.md" site_id="tvc-21">TVC 21</channel>
   #Mongolia
   <channel site="zuragt.mn" lang="mn" xmltv_id="AsianBox.mn" site_id="asianbox">AsianBox</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="BloombergTVMongolia.mn" site_id="Bloomberg_TV_Mongolia">Bloomberg TV</channel>
