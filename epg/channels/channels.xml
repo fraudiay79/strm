@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   #Afghanistan
-  <channel site="arianaafgtv.com" lang="en" xmltv_id="ArianaAfghanistanTV.us" site_id="#">Ariana Afghanistan TV</channel>
+  <channel site="arianaafgtv.com" lang="en" xmltv_id="ArianaAfghanistanTV.af" site_id="#">Ariana Afghanistan TV</channel>
   <channel site="arianatelevision.com" lang="en" xmltv_id="ATNNational.af" site_id="#">ATN</channel>
   #Albania
   <channel site="tvprofil.com" lang="hr" xmltv_id="3Plus.al" site_id="al/programacioni#3-plus">Tring 3+</channel>
@@ -3613,7 +3613,6 @@
   <channel site="mi.tv" lang="es" xmltv_id="Cinecanal.mx" site_id="mx#cinecanal">Cinecanal</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Cinemax.mx" site_id="mx#cinemax">Cinemax</channel>
   <channel site="mi.tv" lang="es" xmltv_id="CineMexicano.mx" site_id="mx#tvc-cine-mexicano-cmc">Cine Mexicano</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CNNenEspanol.us" site_id="mx#cnn-en-espanol">CNN en Español</channel>
   <channel site="mi.tv" lang="es" xmltv_id="ComedyCentral.mx" site_id="mx#comedy-central">Comedy Central</channel>
   <channel site="mi.tv" lang="es" xmltv_id="DePelicula.mx" site_id="mx#de-pelicula-hd">De Película</channel>
   <channel site="mi.tv" lang="es" xmltv_id="DiscoveryChannel.mx" site_id="mx#discovery-channel">Discovery Channel</channel>
@@ -6255,17 +6254,17 @@
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="Tivi6.tr" site_id="3719">TİVİ 6</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TLC.tr" site_id="1754">TLC</channel>
   <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT4K.tr" site_id="174#59dcbee1cfef0b4d80a49650">TRT 4K</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRT1.tr" site_id="15">TRT 1</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRT2.tr" site_id="1957">TRT 2</channel>
-  <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT3.tr" site_id="93#58d29bb0eefad3db9c606231">TRT 3</channel>
+  <channel site="iptvx.one" lang="tr" xmltv_id="TRT1.tr" site_id="trt-1-hd">TRT 1 HD • TRT 1</channel>
+  <channel site="iptvx.one" lang="tr" xmltv_id="TRT2.tr" site_id="trt-2-hd">TRT 2 HD • TRT 2</channel>
+  <channel site="iptvx.one" lang="tr" xmltv_id="TRT3.tr" site_id="trt-3-hd">TRT 3 HD • TRT Spor • TRT Spor HD</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTArabi.tr" site_id="307">TRT Arabi</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTAvaz.tr" site_id="195">TRT Avaz</channel>
+  <channel site="iptvx.one" lang="tr" xmltv_id="TRTAvaz.tr" site_id="trt-avaz">TRT Avaz • TRT Avaz HD</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTBelgesel.tr" site_id="285">TRT Belgesel</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTCocuk.tr" site_id="18">TRT Çocuk</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTEBAIlkokul.tr" site_id="2057">TRT EBA TV İlkokul</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTEBALise.tr" site_id="2064">TRT EBA TV Lise</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTEBAOrtaokul.tr" site_id="2060">TRT EBA TV Ortaokul</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTHaber.tr" site_id="16">TRT Haber</channel>
+  <channel site="iptvx.one" lang="tr" xmltv_id="TRTHaber.tr" site_id="trt-haber-hd">TRT Haber HD</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTKurdi.tr" site_id="187">TRT Kurdî</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTMuzik.tr" site_id="291">TRT Müzik</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTSpor.tr" site_id="392">TRT Spor</channel>
@@ -6329,32 +6328,36 @@
   <channel site="startimestv.com" lang="en" xmltv_id="WBSTV.ug" site_id="309">WBS</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="WestNileTV.ug" site_id="1513739659">West Nile TV</channel>
   #Ukraine
-  <channel site="cgates.lt" lang="uk" xmltv_id="1Plus1.ua" site_id="1plus1">1+1</channel>
-  <channel site="nostv.pt" lang="uk" xmltv_id="1Plus1International.ua" site_id="24">1+1 International</channel>
-  <channel site="cgates.lt" lang="uk" xmltv_id="Bolt.ua" site_id="bolt">Bolt</channel>
-  <channel site="cgates.lt" lang="uk" xmltv_id="Dacha.ua" site_id="dacha">Дача</channel>
-  <channel site="web.magentatv.de" lang="uk" xmltv_id="EspresoTV.ua" site_id="5602">Еспресо</channel>
-  <channel site="cgates.lt" lang="uk" xmltv_id="FilmUADrama.ua" site_id="film-ua-drama">Film.UA Drama</channel>
-  <channel site="horizon.tv" lang="uk" xmltv_id="FREEDOM.ua" site_id="10190">FreeДОМ</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="ICTV.ua" site_id="ICTV">ICTV</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="ICTV2.ua" site_id="ICTV2">ICTV 2</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="Inter.ua" site_id="Inter">Інтер</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="InterPlus.ua" site_id="Inter+Plus">Інтер+</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="K1.ua" site_id="K1">K1</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="K2.ua" site_id="K2">K2</channel>
-  <channel site="cgates.lt" lang="uk" xmltv_id="KusKus.ua" site_id="kus-kus">Кус-Кус</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="KvartalTV.ua" site_id="Kvartal+TV">Квартал ТВ</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="M1.ua" site_id="M1+%28ua%29">M1</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="M2.ua" site_id="M2+%28ua%29">M2</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="NTN.ua" site_id="NTN+HD">НТН</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="Priamyi.ua" site_id="Pryamyy">Прямий</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="Rada.ua" site_id="Rada">Рада</channel>
-  <channel site="cgates.lt" lang="uk" xmltv_id="StarCinema.ua" site_id="star-cinema">Star Cinema</channel>
-  <channel site="cgates.lt" lang="uk" xmltv_id="StarFamily.ua" site_id="star-family">Star Family</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="TET.ua" site_id="TET">TET</channel>
-  <channel site="tv.lv" lang="uk" xmltv_id="Unian.ua" site_id="unian">Униан</channel>
-  <channel site="meo.pt" lang="uk" xmltv_id="XSport.ua" site_id="XSPORT">X-Sport</channel>
-  <channel site="m.tv.sms.cz" lang="uk" xmltv_id="XSportPlus.ua" site_id="X+Sport%2B">X-Sport+</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="1Plus1.ua" site_id="1plus1">1+1 • 1+1 HD • 1+1 Марафон • 1+1 Марафон HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="1Plus1International.ua" site_id="1plus1-int">1+1 International • 1+1 Int • 1+1 International HD • 1+1 Международный • 1+1 Международный HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="Bolt.ua" site_id="bolt">Bolt • Bolt HD • Bolt Украина • Bolt HD Украина</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="Dacha.ua" site_id="dacha">Дача • Дача HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="EspresoTV.ua" site_id="espreso-tv">Еспресо TV • Еспресо TV HD • Еспресо • Еспресо HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="FilmUADrama.ua" site_id="filmua-drama">FilmUADrama Drama • FilmUADrama Drama HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="Pershyi.ua" site_id="ua-pershy">UA:Перший • UA: Перший • Суспільне • Суспільне ТБ • UA: Перший Digital • UA:Перший Digital • UA:Перший (спутник)</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="FreeDOM.ua" site_id="ua-tv">FreeДОМ • FreeDOM • UATV • UA:TV • UA: TV</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="ICTV.ua" site_id="ictv-ua">ICTV</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="ICTV2.ua" site_id="ictv-ukraine">ICTV2 • ICTV Ukraine</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="InterPlus.ua" site_id="inter-plus-ua">Iнтер+ • Интер+</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="Inter.ua" site_id="inter-ua">Iнтер • Интер</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="K1.ua" site_id="k1-ua">К1 • К1 HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="K2.ua" site_id="k2-ua">К2 • К2 HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="KusKus.ua" site_id="kus-kus">Кус-кус</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="KvartalTV.ua" site_id="kvartal-tv">Квартал ТВ • Квартал • Kvartal • Kvartal TV</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="M1.ua" site_id="m1-ua">М1 • М1 Украина • М1 Україна</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="M2.ua" site_id="m2-ua">М2 • М2 Украина • М2 Україна</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="NTN.ua" site_id="ntn-ua">НТН • НТН HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="Priamyi.ua" site_id="priamyj">Прямий • Прямий HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="Rada.ua" site_id="rada-ua">Рада • Рада HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="StarCinema.ua" site_id="star-cinema-ua">Star Cinema UA • Star Cinema HD UA</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="StarFamily.ua" site_id="star-family-ua">Star Family UA • Star Family HD UA</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="SuspilneKultura.ua" site_id="kultura-ua">Суспільне Культура • UA:Культура • UA: Культура</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="SuspilneNovyny.ua" site_id="suspilne-noviny-ua">Суспільне Новини</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="SuspilneSport.ua" site_id="suspilne-sport-ua">Суспільне Спорт</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="TET.ua" site_id="tet-ua">ТЕТ • ТЕТ HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="Unian.ua" site_id="unian-tv">Унiан • Униан • Униан ТВ • Унiан ТБ</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="XSportPlus.ua" site_id="xsport-plus-ua">Xsport+ • Xsport+ HD</channel>
+  <channel site="iptvx.one" lang="uk" xmltv_id="XSport.ua" site_id="xsport-ua">Xsport • Xsport HD</channel>
   #UAE
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="AlArabiya.ae" site_id="387286">Al Arabiya</channel>
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="AlArabiyaBusiness.ae" site_id="1003218">Al Arabiya Business</channel>
@@ -6588,11 +6591,11 @@
   <channel site="streamingtvguides.com" lang="en" xmltv_id="AMC.us" site_id="AMCHD">AMC</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="AMCPlus.us" site_id="AMCPLUS">AMC+</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="AmericanHeroesChannel.us" site_id="AHCHD">American Heroes Channel</channel> 
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="AnimalPlanet.us" site_id="APLHD">Animal Planet</channel>  
-  <channel site="tvguide.com" lang="en" xmltv_id="AntennaTV.us" site_id="9100001138#9233017019">Antenna TV</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="AnimalPlanet.us" site_id="APLHD">Animal Planet</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="AntennaTV.us" site_id="70248">Antenna TV</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="Aspire.us" site_id="ASPRE">ASPiRE</channel> 
   <channel site="streamingtvguides.com" lang="en" xmltv_id="AWE.us" site_id="AWEHD">AWE</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="AXSTV.us" site_id="AXTVSD">AXS TV</channel>
+  <channel site="tvtv.us" lang="en" xmltv_id="AXSTV.us" site_id="92053">AXS TV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="BabyFirst.us" site_id="baby-first-tv-hd/16414">BabyFirst</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="BBCAmerica.us" site_id="BBCAHD">BBC America</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports3.us" site_id="90E69FC7-AA8C-40F2-B35F-EBD174495F76">beIN Sports 3</channel>
@@ -6609,7 +6612,7 @@
   <channel site="streamingtvguides.com" lang="en" xmltv_id="BigTenNetwork.us" site_id="BIG10HD">Big Ten Network</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Biz-TV.us" site_id="biz-tv/10755">Biz-TV</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="BloombergTV.us" site_id="BLOOMHD">Bloomberg TV</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="Boomerang.us" site_id="DTV:Boom:298">Boomerang</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="Boomerang.us" site_id="21883">Boomerang</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Bounce.us" site_id="bounce--network/14312">Bounce</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="Bravo.us" site_id="BRAVOHD">Bravo</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="BYUTV.us" site_id="BYUTV">BYU-TV</channel>
@@ -6628,18 +6631,12 @@
   <channel site="flixed.io" lang="es" xmltv_id="CineSony.us" site_id="76408">Sony Cine</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="Circle.us" site_id="CIRCLE">Circle</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CleoTV.us" site_id="CLEO">Cleo TV</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="CMT.us" site_id="TIKI:CMT">CMT</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="CNBC.us" site_id="TIKI:CNBC">CNBC</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="CNBCWorld.us" site_id="DTV:CNBW:357">CNBC World</channel> 
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="CMT.us" site_id="CMTVHD">CMT</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="CNBC.us" site_id="CNBCHD">CNBC</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="CNBCWorld.us" site_id="26849">CNBC World</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CNN.us" site_id="CNNHD">CNN</channel>
   <channel site="streamingtvguides.com" lang="es" xmltv_id="CNNenEspanol.us" site_id="CNNE">CNN en Español</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="CNNInternational.us" site_id="cnn-international-north-america/3008">CNN International</channel>    
-  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsBayArea.us" site_id="comcast-sportsnet-bay-area-hd/6305">NBC Sports Bay Area</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsCalifornia.us" site_id="comcast-sportsnet-california/2836">NBC Sports California</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsChicago.us" site_id="comcast-sportsnet-chicago-hd/6409">NBC Sports Chicago</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsBoston.us" site_id="comcast-sportsnet-new-england-hd/4534">NBC Sports Boston</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsNorthwest.us" site_id="comcast-sportsnet-northwest/4747">NBC Sports NorthWest</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="NBCSportsPhiladelphia.us" site_id="comcast-sportsnet-philadelphia-hd/6413">NBC Sports Philadelphia</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="CNNInternational.us" site_id="cnn-international-north-america/3008">CNN International</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="ComedyCentral.us" site_id="CCHD">Comedy Central</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Comet.us" site_id="comet-tv/16811">Comet</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CookingChannel.us" site_id="COOKHD">Cooking Channel</channel>
@@ -6834,7 +6831,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzComedy.us" site_id="starz-comedy--eastern/4223">Starz Comedy</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEdge.us" site_id="starz-edge--eastern/2120">Starz Edge</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncore.us" site_id="starz-encore--eastern/667">Starz Encore</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreAction.us" site_id="starz-encore-action--eastern/2078">Starz Encore Action</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="StarzEncoreAction.us" site_id="SZEAHD">Starz Encore Action</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreBlack.us" site_id="starz-encore-black--eastern/4206">Starz Encore Black</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreClassic.us" site_id="starz-encore-classics--eastern/2080">Starz Encore Classic</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreFamily.us" site_id="starz-encore-family--eastern/2128">Starz Encore Family</channel>
