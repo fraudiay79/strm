@@ -2859,6 +2859,7 @@
   <channel site="iptvx.one" lang="he" xmltv_id="Sport4.il" site_id="yes-sport-4">Yes Sport 4 • Yes Sport 4 HD • Sport 4 • ספּוֹרט 4</channel>
   <channel site="iptvx.one" lang="he" xmltv_id="5Sport.il" site_id="yes-sport-5">5Sport • 5Sport HD</channel>
   <channel site="iptvx.one" lang="he" xmltv_id="5Sport4K.il" site_id="yes-sport-5-4k">5Sport 4K</channel>
+  <channel site="i24news.tv" lang="he" xmltv_id="i24NEWSHebrew.il" site_id="he#world">I24NEWS עִברִית</channel>
   #Italy
   <channel site="superguidatv.it" lang="it" xmltv_id="7Gold.it" site_id="italia-7-gold/310">Italia 7 Gold</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="20.it" site_id="20/443">20</channel>
@@ -3740,14 +3741,18 @@
   <channel site="zuragt.mn" lang="mn" xmltv_id="TV25.mn" site_id="mn25">MN25</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="UBS.mn" site_id="ubs-1">UBS-1</channel>
   #Montenegro
-  <channel site="tvprofil.com" lang="me" xmltv_id="TVCG1.me" site_id="al/programacioni#tvcg1">РТЦГ 1</channel>
-  <channel site="tvprofil.com" lang="me" xmltv_id="TVCG2.me" site_id="al/programacioni#tvcg2">РТЦГ 2</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG1.me" site_id="357126696327">RTCG 1 • РТЦГ 1</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG2.me" site_id="357129256090">RTCG 2 • РТЦГ 2</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG3.me" site_id="357130280088">Parlamentarni Kanal • РТЦГ 3</channel>
   <channel site="tv2go.t-2.net" lang="me" xmltv_id="TVCGMNE.me" site_id="109">РТЦГ MNE</channel>
-  <channel site="mtel.ba" lang="me" xmltv_id="AdriaTV.me" site_id="046#40">Adria TV</channel>
-  <channel site="tvprofil.com" lang="me" xmltv_id="NovaM.me" site_id="al/programacioni#nova-m">Nova M</channel>
-  <channel site="tvprofil.com" lang="me" xmltv_id="PinkM.me" site_id="al/programacioni#pink-m">Pink M</channel>
-  <channel site="tvprofil.com" lang="me" xmltv_id="Prva.me" site_id="al/programacioni#prva-tv-cg">Prva</channel>
-  <channel site="tv2go.t-2.net" lang="me" xmltv_id="TVVijesti.me" site_id="1000775">Vijesti</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="Vijesti.me" site_id="357130280091">Vijesti</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="PrvaM.me" site_id="357130792083">Prva M</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="NovaM.me" site_id="357130792085">Nova M</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="AdriaTV.me" site_id="357131304057">Adria TV</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="PinkM.me" site_id="359181864255">Pink M</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="AdriaticSport1.me" site_id="357140008407">Adriatic Sport 1</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="AdriaticSport2.me" site_id="357142568065">Adriatic Sport 2</channel>
+  <channel site="tv.magenta.me" lang="me" xmltv_id="AdriaticSport3.me" site_id="357142568066">Adriatic Sport 3</channel>
   #Morocco
   <channel site="snrt.ma" lang="ar" xmltv_id="AlAoula.ma" site_id="1208">Al Aoula</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="2MMonde.ma" site_id="1#38#2M وطني">2M Monde</channel>
@@ -3758,7 +3763,7 @@
   <channel site="snrt.ma" lang="ar" xmltv_id="Athaqafia.ma" site_id="4071">Athaqafia</channel>
   <channel site="snrt.ma" lang="ar" xmltv_id="Tamazight.ma" site_id="4075">Tamazight</channel>
   <channel site="snrt.ma" lang="ar" xmltv_id="Laayoune.ma" site_id="4069">Laâyoune</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="ChadaTV.ma" site_id="1#49#شدى">Chada TV</channel>
+  <channel site="chada.ma" lang="fr" xmltv_id="ChadaTV.ma" site_id="1">Chada TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="M24.ma" site_id="1#40#م 24 المغربية">M24</channel>
   <channel site="sat.tv" lang="en" xmltv_id="Medi1TV.ma" site_id="1#48#Medi 1 TV">Medi1TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlOnsTV.ma" site_id="1#48#الأنس">Al Ons</channel>
