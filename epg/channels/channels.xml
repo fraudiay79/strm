@@ -2462,9 +2462,12 @@
   #Iceland
   <channel site="novatv.is" lang="is" xmltv_id="RUV2.is" site_id="64a1209e_2F3486c">RÚV 2</channel>
   <channel site="sjonvarp.is" lang="is" xmltv_id="RUV.is" site_id="RUV">RÚV</channel>
-  <channel site="sjonvarp.is" lang="is" xmltv_id="SiminnSport2.is" site_id="S1SPORT2">Síminn Sport 2</channel>
-  <channel site="sjonvarp.is" lang="is" xmltv_id="SiminnSport.is" site_id="S1SPORT">Síminn Sport</channel>
-  <channel site="novatv.is" lang="is" xmltv_id="SjonvarpSimans.is" site_id="20ca7c07_2F3486c">Sjónvarp Símans</channel>
+  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport.is" site_id="46888998">Síminn Sport</channel>
+  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport2.is" site_id="46888999">Síminn Sport 2</channel>
+  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport3.is" site_id="46890006">Síminn Sport 3</channel>
+  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport4.is" site_id="46890007">Síminn Sport 4</channel>
+  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport5.is" site_id="46889000">Síminn Sport 5</channel>
+  <channel site="siminn.is" lang="is" xmltv_id="SjonvarpSimans.is" site_id="22759594">Sjónvarp Símans</channel>
   <channel site="stod2.is" lang="is" xmltv_id="Stod2.is" site_id="stod2">Stöð 2</channel>
   <channel site="stod2.is" lang="is" xmltv_id="Stod2Fjolskylda.is" site_id="stod3">Stöð 2 Fjölskylda</channel>
   <channel site="stod2.is" lang="is" xmltv_id="Stod2Sport.is" site_id="sport">Stöð 2 Sport</channel>
