@@ -2879,67 +2879,32 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaThree.ie" site_id="1929/virgin-media-three">Virgin Media Three</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaTwo.ie" site_id="1209/virgin-media-two">Virgin Media Two</channel>
   #Israel
-  <channel site="raspberrytv.net" lang="he" xmltv_id="5Sport.il" site_id="sport5-hd-il">5Sport</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="5Plus.il" site_id="yes-sport5-plus-il-hd">5Plus</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="5Gold.il" site_id="sport5-gold-il">5Gold</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="5Live.il" site_id="sport5-plus-live-hd-il">5Live</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="5Stars.il" site_id="sport5-stars-il-hd">5Stars</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="5Sport4K.il" site_id="sport5-il-4k">5Sport 4K</channel>
-  <channel site="raspberrytv.net" lang="ru" xmltv_id="Channel9.il" site_id="9-kanal-hd-il">9 канал</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Channel13.il" site_id="13-kanal-il">ערוץ 13</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Channel24.il" site_id="channel24-il-hd">24 החדש</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="DesignChannel.il" site_id="the-design-channel-il-hd">ערוץ העיצוב</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="EgoTotal.il" site_id="ego-total-il">ערוץ אגו</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="FoodChannel.il" site_id="the-food-channel-il">ערוץ האוכל</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Foody.il" site_id="foody-il-hd">Foody</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="GoodLife.il" site_id="good-life-il">החיים הטובים</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HealthChannel.il" site_id="health-il">ערוץ בריאות</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="History.il" site_id="history-il">היסטוריה</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HomePlus.il" site_id="home-plus-il">בית+</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Hop.il" site_id="hop-childhood-il">הופ!</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOT3.il" site_id="hot3-hd-il">HOT3</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOT8.il" site_id="hot-8-il-hd">HOT8</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTComedy.il" site_id="hot-comedy-central-il-hd">HOT Comedy</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTcinema1.il" site_id="hot-cinema1-il">HOT cinema 1</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTcinema2.il" site_id="hot-cinema2-il">HOT cinema 2</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTcinema3.il" site_id="hot-cinema3-il">HOT cinema 3</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTcinema4.il" site_id="hot-cinema4-il">HOT cinema 4</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTcinemaFamily.il" site_id="cinema-family-il-hd">HOT cinema Family</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTEntertainment.il" site_id="entertainment-il">HOT Entertainment</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTHBO.il" site_id="hot-hbo-il">HOT HBO</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HOTSenior.il" site_id="hot-senior-il-hd">HOT Senior</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="HumorChannel.il" site_id="humor-channel-il-hd">Humor Channel</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Kan11.il" site_id="11-kanal-il">כאן 11</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="KanEducational.il" site_id="kan23-il">כאן חינוכית</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Keshet12.il" site_id="12-kanal-il">קשת 12</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Now14.il" site_id="14-kanal-il">עכשיו 14</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="One.il" site_id="one-hd-il">One</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="One2.il" site_id="one2-hd-il">One 2</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="OneDoco.il" site_id="one-doco-il-hd">One Doco</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport1.il" site_id="sport1-hd-il">ספורט 1</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport2.il" site_id="sport2-hd-il">ספורט 2</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport3.il" site_id="sport3-hd-il">ספורט 3</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport4.il" site_id="sport4-hd-il">ספורט 4</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="TurkishDrama2.il" site_id="turkish-dramas2-il-hd">ערוץ הדרמות הטורקיות 2</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="TurkishDrama3.il" site_id="turkish-dramas3-il-hd">ערוץ הדרמות הטורקיות 3</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="TurkishDramaPlus.il" site_id="turkish-dramas-plus-il">ערוץ הדרמות הטורקיות+</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Viva.il" site_id="viva-il">ויוה</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="VivaPremium.il" site_id="viva-premium-il-hd">ויוה פרימיום</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="VivaPlus.il" site_id="viva-plus-il">ויוה+</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="VivaVintage.il" site_id="viva-vintage-il">ויוה וינטג'</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoni.il" site_id="yamtihoni-il">הערוץ הים תיכוני<</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoni2.il" site_id="yam-tichoni2-il-hd">הערוץ הים תיכוני 2</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoniPlus.il" site_id="yam-tichoni-plus-hd">הערוץ הים תיכוני+</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesDocu.il" site_id="yes-docu-il-hd">yes דוקו</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesIsraeliCinema.il" site_id="yes-israel-il">yes קולנוע ישראלי</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesDrama.il" site_id="yes-movies-drama-il-hd">yes Movies Drama</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesAction.il" site_id="yes-movies-action-hd-il">yes Movies Action</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesComedy.il" site_id="yes-movies-comedy-il">yes Movies Comedy</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesKids.il" site_id="yes-movies-kids-hd-il">yes Movies Kids</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesTVDrama.il" site_id="yes-drama-hd-il">yes TV Drama</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesTVAction.il" site_id="yes-action-hd-il">yes TV Action</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="yesTVComedy.il" site_id="yes-comedy-hd-il">yes TV Comedy</channel>
-  <channel site="raspberrytv.net" lang="he" xmltv_id="Zoom.il" site_id="zoom-il">Zoom</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportGold.il" site_id="5sport-gold-il">5Sport Gold • 5Sport Gold HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportLive.il" site_id="5sport-live-il">5Sport Live • 5Sport Live HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportPlus.il" site_id="5sport-plus-il">5Sport Plus • 5Sport Plus HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5SportStars.il" site_id="5sport-stars-il">5Sport Stars • 5Sport Stars HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Kan11.il" site_id="channel-11-il">Channel 11 IL • Кан 11 HD • כאן 11</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Keshet12.il" site_id="channel-12-il">Channel 12 IL • Кешет HD • קשת 12</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Channel13.il" site_id="channel-13-il">Channel 13 IL • Решет HD • ערוץ 13</channel>
+  <channel site="iptvx.one" lang="ru" xmltv_id="Channel9.il" site_id="9kanal-israel">9 канал Израиль • 9 канал</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="One2.il" site_id="one2-il">ONE2 • ONE2 HD • One 2</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="One.il" site_id="one-il">ONE • ONE HD • One</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesDrama.il" site_id="yes1">Yes 1 • Yes 1 HD • yes Movies Drama • yes Movies Drama HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesAction.il" site_id="yes2">Yes 2 • Yes 2 HD • yes Movies Action • yes Movies Action HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesComedy.il" site_id="yes3">Yes 3 • Yes 3 HD • yes Movies Comedy • yes Movies Comedy HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesIsraeliCinema.il" site_id="yes4">Yes 4 • Yes 4 HD • yes Israeli Cinema • yes Israeli Cinema HD • yes Израильское кино • yes Израильское кино HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesTVAction.il" site_id="yes-action">yes Action • yes Action HD • yes TV Action • yes TV Action HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesBollywood.il" site_id="yes-bollywood">yes Bollywood • yes Bollywood HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesTVComedy.il" site_id="yes-comedy">yes Comedy • yes Comedy HD • yes TV Comedy • yes TV Comedy HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesDocu.il" site_id="yes-doku">yes Docu • Yes Доку</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesTVDrama.il" site_id="yes-drama">yes Drama • yes Drama HD • yes TV Drama • yes TV Drama HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="yesMoviesKids.il" site_id="yes-movies-kids">yes Movies Kids • yes Movies Kids HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport1.il" site_id="yes-sport-1">Yes Sport 1 • Yes Sport 1 HD • Sport 1 • ספּוֹרט 1</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport2.il" site_id="yes-sport-2">Yes Sport 2 • Yes Sport 2 HD • Sport 2 • ספּוֹרט 2</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport3.il" site_id="yes-sport-3">Yes Sport 3 • Yes Sport 3 HD • Sport 3 • ספּוֹרט 3</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="Sport4.il" site_id="yes-sport-4">Yes Sport 4 • Yes Sport 4 HD • Sport 4 • ספּוֹרט 4</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5Sport.il" site_id="yes-sport-5">5Sport • 5Sport HD</channel>
+  <channel site="iptvx.one" lang="he" xmltv_id="5Sport4K.il" site_id="yes-sport-5-4k">5Sport 4K</channel>
   <channel site="i24news.tv" lang="he" xmltv_id="i24NEWSHebrew.il" site_id="he#world">I24NEWS עִברִית</channel>
   #Italy
   <channel site="superguidatv.it" lang="it" xmltv_id="7Gold.it" site_id="italia-7-gold/310">Italia 7 Gold</channel>
@@ -7278,4 +7243,5 @@
   <channel site="tvprofil.com" lang="sq" xmltv_id="XBizarre.al" site_id="al/programacioni#tring-bizarre">X-Bizarre</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="XBungaBunga.al" site_id="al/programacioni#tring-bunga-bunga">X-BungaBunga</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="XDesire.al" site_id="al/programacioni#tring-desire">X-Desire</channel>
+  <channel site="programme-tv.net" lang="fr" xmltv_id="XXL.fr" site_id="xxl-135">XXL</channel>
 </channels>
