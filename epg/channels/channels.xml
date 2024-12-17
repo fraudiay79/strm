@@ -1979,12 +1979,12 @@
   <channel site="programme-tv.net" lang="fr" xmltv_id="TraceSportStars.fr" site_id="trace-sport-stars-197">Trace Sport Stars</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TraceUrban.fr" site_id="trace-urban-127">Trace Urban</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Trek.fr" site_id="trek-269">Trek</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="TiVi5Monde.fr" site_id="613">TiVi5 Monde</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="TiVi5Monde.fr" site_id="gh#180545">TiVi5 Monde</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TV5Monde.fr" site_id="tv5monde-128">TV5Monde</channel>
-  <channel site="dstv.com" lang="en" xmltv_id="TV5MondeAfrica.fr" site_id="nga#437">TV5Monde Afrique</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="TV5MondeAfrica.fr" site_id="gn#180105">TV5Monde Afrique</channel>
   <channel site="ziggogo.tv" lang="en" xmltv_id="TV5MondeEurope.fr" site_id="NL_000045_019354">TV5Monde Europe</channel>
   <channel site="rev.bs" lang="en" xmltv_id="TV5MondeUSA.fr" site_id="677">TV5Monde États-Unis</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="TV5MondeStyle.fr" site_id="256985539">TV5Monde Style</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="TV5MondeStyle.fr" site_id="us#4461114408/tv5-monde-style-sling">TV5Monde Style</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TV7Bordeaux.fr" site_id="tv7-bordeaux-382">TV7 Bordeaux</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TV8MontBlanc.fr" site_id="8-mont-blanc-385">8 Mont-Blanc</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TVBreizh.fr" site_id="tvbreizh-129">TvBreizh</channel>
@@ -2117,7 +2117,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="MarcoPoloTV.de" site_id="5295">Marco Polo TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="MDF1.de" site_id="4888">MDF.1</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="MDRFernsehen.de" site_id="370">MDR-Fernsehen</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="MoreThanSportsTV.de" site_id="5078">More Than Sports TV</channel>
+  <channel site="tv.blue.ch" lang="de" xmltv_id="MoreThanSportsTV.de" site_id="1254">More Than Sports TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Motorvision.de" site_id="604">Motorvision+</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="MTV.de" site_id="28">MTV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="MunchenTV.de" site_id="241">münchen.tv</channel>
@@ -2361,9 +2361,10 @@
   <channel site="mi.tv" lang="es" xmltv_id="Televisiete.gt" site_id="gt#televisiete">Televisiete</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Trecevision.gt" site_id="gt#trecevision-canal-13">Trecevisión</channel>
   #Guinea
-  <channel site="startimestv.com" lang="en" xmltv_id="CISTV.gn" site_id="101804400">CIS TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="EspaceTV.gn" site_id="527196385">Espace TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="RTG1.gn" site_id="480">RTG 1</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="CISTV.gn" site_id="gn#180602">CIS TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="EspaceTV.gn" site_id="gn#180425">Espace TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="RTG1.gn" site_id="gn#180202">RTG 1</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="RTG2.gn" site_id="gn#180017">RTG 2</channel>
   #Honduras
   <channel site="mi.tv" lang="es" xmltv_id="AlfaOmegaVision.hn" site_id="hn#alfa-omega-vision">Alfa &amp; Omega Vision</channel>
   <channel site="mi.tv" lang="es" xmltv_id="DTV.hn" site_id="hn#dtv">DTV</channel>
@@ -3695,10 +3696,10 @@
   <channel site="melita.com" lang="en" xmltv_id="TSN7.mt" site_id="3e27b252-a70f-467c-8384-712a83762688">TSN7</channel>
   <channel site="melita.com" lang="en" xmltv_id="TSN8.mt" site_id="7de33233-5eec-4418-8928-1c6f9fc21f8c">TSN8</channel>
   #Mauritania
-  <channel site="canalplus.com" lang="fr" xmltv_id="Elmouritaniya.mr" site_id="ml#180384">Elmouritaniya</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="Elmouritania.mr" site_id="ml#180384">Elmouritaniya</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Barlemania.mr" site_id="1#33#البرلمانية الموريطانية تي في">Barlemania</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="ChinguitTV.mr" site_id="mr#180126">Chinguit TV</channel>
-  <channel site="canalplus.com" lang="fr" xmltv_id="ElwataniyaTV.mr" site_id="mr#180127">Elwataniya TV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="Elwataniya.mr" site_id="mr#180127">El Watania</channel>
   #Mexico
   <channel site="mi.tv" lang="es" xmltv_id="adn40.mx" site_id="mx#proyecto-40">adn40</channel>
   <channel site="mi.tv" lang="es" xmltv_id="AdultSwim.mx" site_id="mx#tru-tv">[adult swim]</channel>
@@ -6842,17 +6843,17 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="MagnoliaNetwork.us" site_id="do-it-yourself-network-usa--east/622">Magnolia Network</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="MarqueeSportsNetwork.us" site_id="MARQ">Marquee Sports Network</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="MASN.us" site_id="MASNHD">MASN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MAVTV.us" site_id="mavtv-usa/6610">MAVTV</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MAVTV.us" site_id="61036">MAVTV</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="MeTV.us" site_id="METVN">MeTV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MGMPlus.us" site_id="epix-hd--east/7610">MGM+</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="epix-drive-in/11487">MGM+ Drive-in</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MGMPlusMarquee.us" site_id="epix-hits-hd/11616">MGM+ Marquee</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MGMPlusHits.us" site_id="epix2--east/11485">MGM+ Hits</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MGMPlus.us" site_id="65687">MGM+</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="103828">MGM+ Drive-in</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MGMPlusMarquee.us" site_id="74073">MGM+ Marquee</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MGMPlusHits.us" site_id="67929">MGM+ Hits</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MilitaryHistory.us" site_id="military-history/5271">Military History</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MLBNetwork.us" site_id="mlb-network/6178">MLB Network</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="MLBStrikeZone.us" site_id="MLBSZHD">MLB Network Strike Zone</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MoreMax.us" site_id="moremax-eastern/634">MoreMax</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MotorTrend.us" site_id="velocity/2143">MotorTrend</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MotorTrend.us" site_id="31046">MotorTrend</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MovieMax.us" site_id="moviemax-max-6--east/1653">MovieMax</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="MoviePlex.us" site_id="MPLEX">MoviePlex</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Movies.us" site_id="movies/11047">Movies!</channel>
@@ -6860,14 +6861,14 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="MSG2.us" site_id="msg-2/31490">MSG 2</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MSGPlus.us" site_id="msg-plus-hd/4792">MSG+</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MSNBC.us" site_id="msnbc-usa-hd/6995">MSNBC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MTV.us" site_id="mtv-usa--eastern-feed/656">MTV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MTV2.us" site_id="mtv-2--east/1515">MTV 2</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MTVClassic.us" site_id="mtv-classic--east/2093">MTV Classic</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="MTVLive.us" site_id="mtv-live/6080">MTV Live</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MTV.us" site_id="10986">MTV</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MTV2.us" site_id="16361">MTV 2</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MTVClassic.us" site_id="22561">MTV Classic</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="MTVLive.us" site_id="49141">MTV Live</channel>
   <channel site="tvguide.com" lang="en" xmltv_id="MTVTres.us" site_id="9100001138#9233013814">MTV Tr3s</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="MyNetworkTV.us" site_id="mnt-wwor-new-york-ny/1612">MyNetworkTV</channel>
   <channel site="streamingtvguides.com" lang="es" xmltv_id="NASATV.us" site_id="DTV:NASA:352">NASA TV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="NationalGeographic.us" site_id="national-geographic-us--eastern/657">National Geographic</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="NationalGeographic.us" site_id="24959">National Geographic</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="NatGeoMundo.us" site_id="us#69040267/nat-geo-mundo">Nat Geo Mundo</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="NationalGeographicWild.us" site_id="national-geographic-wild/7537">National Geographic Wild</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="NBATV.us" site_id="nba-tv-usa/3116">NBA TV</channel>
@@ -6875,7 +6876,7 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="NBCWest.us" site_id="nbc-knbc-los-angeles-ca/2588">NBC (West)</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="NBCLX.us" site_id="150#99991651">NBC LX Home</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="NBCSN.us" site_id="NBCSNHD">NBCSN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="NBCUniverso.us" site_id="nbc-universo-hd--eastern/16418">NBC Universo</channel>
+  <channel site="flixed.io" lang="es" xmltv_id="NBCUniverso.us" site_id="91588">NBC Universo</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="NBCNewsNOW.us" site_id="0#99991247">NBC News NOW</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="NECN.us" site_id="NESNHD">NECN</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="NESN.us" site_id="NESNPL">NESN</channel>
@@ -6919,13 +6920,14 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="SECNetwork.us" site_id="sec-network/13711">SEC Network</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ShopHQ.us" site_id="evine/1523">ShopHQ</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ShopLC.us" site_id="shop-lc/36273">Shop LC</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="Showtime.us" site_id="showtime--eastern-feed/665">Showtime</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="Showtime2.us" site_id="showtime-2--eastern/1387">Showtime 2</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeShowcase.us" site_id="showtime-beyond--eastern/2271">Showtime Showcase</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeExtreme.us" site_id="showtime-extreme--eastern/1615">Showtime Extreme</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeFamilyZone.us" site_id="showtime-family-zone--eastern/1956">Showtime Family Zone</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeNext.us" site_id="showtime-next--eastern/2272">Showtime Next</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="SHOxBET.us" site_id="showtime-showcase--eastern/2077">SHOxBET</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="Showtime.us" site_id="11115">Showtime</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="Showtime2.us" site_id="11116">Showtime 2</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="ShowtimeExtreme.us" site_id="18086">Showtime Extreme</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="ShowtimeFamilyZone.us" site_id="103892">Showtime Family Zone</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="ShowtimeNext.us" site_id="68342">Showtime Next</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="ShowtimeShowcase.us" site_id="16153">Showtime Showcase</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="SHOxBET.us" site_id="20622">SHOxBET</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="ShowtimeWomen.us" site_id="68338">Showtime Women</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ShowtimeWomen.us" site_id="showtime-women--eastern/2273">Showtime Women</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Smile.us" site_id="smile/5275">Smile</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Smithsonian.us" site_id="smithsonian-channel-usa/4679">Smithsonian</channel>
@@ -6937,18 +6939,19 @@
   <channel site="tvpassport.com" lang="en" xmltv_id="SonLife.us" site_id="sonlife-network/9388">SonLife Network</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="SportsNetNewYork.us.us" site_id="sny-sportsnet-new-york-hd/4713">SportsNet New York</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="Stadium.us" site_id="STADIUM">Stadium</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="Starz.us" site_id="starz--eastern/583">Starz</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="StarzComedy.us" site_id="starz-comedy--eastern/4223">Starz Comedy</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEdge.us" site_id="starz-edge--eastern/2120">Starz Edge</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncore.us" site_id="starz-encore--eastern/667">Starz Encore</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="StarzCinema.us" site_id="67236">Starz Cinema</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="StarzComedy.us" site_id="57569">Starz Comedy</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="Starz.us" site_id="12719">Starz</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="StarzEdge.us" site_id="16311">Starz Edge</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="StarzEncoreClassic.us" site_id="14764">Starz Encore Classic</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="StarzEncore.us" site_id="10178">Starz Encore</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="StarzInBlack.us" site_id="16833">Starz in Black</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="StarzKidsFamily.us" site_id="19635">Starz Kids &amp; Family</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="StarzEncoreAction.us" site_id="SZEAHD">Starz Encore Action</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreBlack.us" site_id="starz-encore-black--eastern/4206">Starz Encore Black</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreClassic.us" site_id="starz-encore-classics--eastern/2080">Starz Encore Classic</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreFamily.us" site_id="starz-encore-family--eastern/2128">Starz Encore Family</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreSuspense.us" site_id="starz-encore-suspense--eastern/1958">Starz Encore Suspense</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="StarzEncoreWesterns.us" site_id="starz-encore-westerns--eastern/1959">Starz Encore Westerns</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="StarzInBlack.us" site_id="starz-in-black--eastern/1957">Starz In Black</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="StarzKidsFamily.us" site_id="starz-kids--family--eastern/1194">Starz Kids &amp; Family</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="SundanceTV.us" site_id="sundancetv-usa--east/1848">SundanceTV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="Syfy.us" site_id="syfy-hd--eastern-feed/5643">Syfy</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="TBD.us" site_id="tbd-tv/31478">TBD</channel>
@@ -6960,8 +6963,8 @@
   <channel site="tvpassport.com" lang="es" xmltv_id="TelemundoEast.us" site_id="telemundo--eastern-feed/1521">Telemundo (East)</channel>
   <channel site="tvpassport.com" lang="es" xmltv_id="TelemundoWest.us" site_id="telemundo--pacific-feed/2013">Telemundo (West)</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="TennisChannel.us" site_id="the-tennis-channel/2269">Tennis Channel</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="TheMovieChannel.us" site_id="tmc-us--eastern-feed/666">The Movie Channel</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="TheMovieChannelXtra.us" site_id="tmc-xtra--eastern/4350">The Movie Channel Extra</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="TheMovieChannel.us" site_id="11160">The Movie Channel</channel>
+  <channel site="flixed.io" lang="en" xmltv_id="TheMovieChannelXtra.us" site_id="17663">The Movie Channel Extra</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="ThrillerMax.us" site_id="thrillermax--east/1652">ThrillerMax</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="TLC.us" site_id="tlc-usa--eastern/5005">TLC</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="TNT.us" site_id="tnt--eastern-feed/347">TNT</channel>
