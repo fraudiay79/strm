@@ -12,11 +12,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4
         
-      - name: checkout fraudiay79/epg repo
+      - name: checkout fraudiay79/epg-grab repo
         uses: actions/checkout@v4
         with:
-         repository: fraudiay79/epg
-         path: fraudiay79-epg
+         repository: fraudiay79/epg-grab
+         path: fraudiay79-epg-grab
 
       - name: update EPG
         run: sh epg/epg_main.sh
