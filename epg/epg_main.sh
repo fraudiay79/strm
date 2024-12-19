@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd /home/runner/work/strm/strm/fraudiay79-epg && npm install
+cd /home/runner/work/strm/strm/fraudiay79-epg-grab && npm install
 
 # EPG
 
