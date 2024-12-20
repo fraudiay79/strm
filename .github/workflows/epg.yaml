@@ -5,29 +5,32 @@ on:
   workflow_dispatch:
 
 jobs:
-  Update-EPG:
+  run_script:
     runs-on: ubuntu-latest
+
     steps:
-    
-      - name: checkout
-        uses: actions/checkout@v4
-        
-      - name: checkout fraudiay79/epg-grab repo
-        uses: actions/checkout@v4
-        with:
-         repository: fraudiay79/epg-grab
-         path: fraudiay79-epg-grab
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-      - name: update EPG
-        run: sh epg/epg_main.sh
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
 
-      - name: setup git config
-        run: |
-          git config user.name "🧟 Brainz"
-          git config user.email "<>"
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+           node-version: 18
 
-      - name: commit
-        run: |
+    - name: npm grab epg
+      run: |
+          npm install
+          npm run grab -- --channels=../epg/channels/channels.xml --gzip --output=../epg/epg-channels.xml.gz --days=2 --maxConnections=20 --timeout=90000
+   
+    - name: Commit changes
+      run: |
+          git config --local user.email "🧟 Brainz"
+          git config --local user.name "<>"
           git add -f epg/epg-channels.xml.gz
           git commit -m "updated epg"
           git push
