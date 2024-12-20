@@ -43,7 +43,7 @@ module.exports = {
     const formattedDate = date.format('YYYY-MM-DD');
     return `https://tvinfo.uz/${channel.site_id}?date=${formattedDate}`;
   },
-  async parser({ content, date }) {
+  parser: function({ content, date }) {
     const items = parseItems(content);
     const programs = [];
     let previousTime = null;
