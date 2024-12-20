@@ -31,7 +31,7 @@ jobs:
           #npm run grab --- --site=tv.magenta.mk --maxConnections=20 --gzip --output=guides/tv.magenta.mk.xml --days=1 --timeout=90000
           #npm run grab --- --site=propg.net --maxConnections=20 --gzip --output=guides/propg.net.xml --days=2 --timeout=90000
           #npm run grab --- --site=hot.net.il --maxConnections=20 --gzip --output=guides/hot.net.il.xml --days=2 --timeout=90000
-          npm run grab --- --site=go3.tv --maxConnections=20 --output=guides/got3.tv --days=1 --timeout=90000
+          npm run grab --- --site=tvinfo.uz --maxConnections=20 --output=guides/got3.tv --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
