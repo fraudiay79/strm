@@ -18,10 +18,8 @@ jobs:
          repository: fraudiay79/epg-grab
          path: fraudiay79-epg-grab
 
-      - name: npm grab epg
-        run: |
-          npm install
-          npm run grab --- --channels=../epg/channels/channels.xml --gzip --output=../epg/epg-channels.xml.gz --days=2 --maxConnections=20 --timeout=90000
+      - name: update EPG
+        run: sh epg/epg_main.sh
 
       - name: setup git config
         run: |
