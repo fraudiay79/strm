@@ -25,12 +25,12 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --channels=../epg/channels/channels.xml --gzip --output=../epg/epg-channels.xml.gz --days=2 --maxConnections=20 --timeout=90000
+          npm run grab -- --channels=../epg/channels/channels.xml --gzip --output=../epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
    
     - name: Commit changes
       run: |
-          git config --local user.email "🧟 Brainz"
-          git config --local user.name "<>"
+          git config user.name "🧟 Brainz"
+          git config user.email "<>"
           git add -f epg/epg-channels.xml.gz
           git commit -m "updated epg"
           git push
