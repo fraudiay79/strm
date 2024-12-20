@@ -21,10 +21,9 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    const formattedDate = date.format('YYYY-MM-DD');
-    return `https://tvinfo.uz/${channel.site_id}?date=${formattedDate}`
+    return `https://tvinfo.uz/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
   },
-  async parser({ content, date }) {
+  parser: function ({ content, date }) {
     const $ = cheerio.load(content);
     const programs = [];
     let previousTime = null
