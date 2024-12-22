@@ -25,7 +25,7 @@ function parseTitle($item) {
 
 function parseItems(content) {
   const $ = cheerio.load(content);
-  return $('div.flex.text-sm').toArray();
+  return $('div.flex.text-sm').map((i, el) => $(el)).toArray();
 }
 
 module.exports = {
@@ -48,8 +48,7 @@ module.exports = {
     const programs = [];
     let previousTime = null;
 
-    items.forEach((element) => {
-      const $item = cheerio.load(element);
+    items.forEach(($item) => {
       const start = parseStart($item, date);
       const title = parseTitle($item);
 
