@@ -49,7 +49,7 @@ module.exports = {
     let previousTime = null;
 
     items.forEach((element) => {
-      const $item = cheerio(element);
+      const $item = cheerio.load(element);
       const start = parseStart($item, date);
       const title = parseTitle($item);
 
