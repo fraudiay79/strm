@@ -6365,28 +6365,29 @@
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="Tivi6.tr" site_id="3719">TİVİ 6</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TLC.tr" site_id="1754">TLC</channel>
   <channel site="dsmart.com.tr" lang="tr" xmltv_id="TRT4K.tr" site_id="174#59dcbee1cfef0b4d80a49650">TRT 4K</channel>
-  <channel site="iptvx.one" lang="tr" xmltv_id="TRT1.tr" site_id="trt-1-hd">TRT 1 HD • TRT 1</channel>
-  <channel site="iptvx.one" lang="tr" xmltv_id="TRT2.tr" site_id="trt-2-hd">TRT 2 HD • TRT 2</channel>
-  <channel site="iptvx.one" lang="tr" xmltv_id="TRT3.tr" site_id="trt-3-hd">TRT 3 HD • TRT Spor • TRT Spor HD</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTArabi.tr" site_id="307">TRT Arabi</channel>
-  <channel site="iptvx.one" lang="tr" xmltv_id="TRTAvaz.tr" site_id="trt-avaz">TRT Avaz • TRT Avaz HD</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTBelgesel.tr" site_id="285">TRT Belgesel</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTCocuk.tr" site_id="18">TRT Çocuk</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRT1.tr" site_id="trt1-hd/144">TRT 1 HD • TRT 1</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRT2.tr" site_id="trt-2-hd/83">TRT 2 HD • TRT 2</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRT3.tr" site_id="trt-3/116">TRT 3 HD • TRT Spor • TRT Spor HD</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTArabi.tr" site_id="trt-arabi/76">TRT Arabi</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTAvaz.tr" site_id="trt-avaz/193">TRT Avaz</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTBelgesel.tr" site_id="trt-belgesel-hd/21">TRT Belgesel</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTCocuk.tr" site_id="trt-cocuk-hd/99">TRT Çocuk</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTDiyanetCocuk.tr" site_id="trt-diyanet-cocuk/4319">TRT Diyanet Çocuk</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTHaber.tr" site_id="trt-haber-hd/30">TRT Haber</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTKurdi.tr" site_id="trt-kurdi/10">TRT Kurdî</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTMuzik.tr" site_id="trt-muzik/159">TRT Müzik</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTSpor.tr" site_id="trt-spor-hd/31">TRT Spor</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTSporYildiz.tr" site_id="trt-spor-yildiz/205">TRT Spor Yıldız</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTTurk.tr" site_id="trt-turk/156">TRT Türk</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TRTWorld.tr" site_id="trt-world-hd/38">TRT World</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTEBAIlkokul.tr" site_id="2057">TRT EBA TV İlkokul</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTEBALise.tr" site_id="2064">TRT EBA TV Lise</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTEBAOrtaokul.tr" site_id="2060">TRT EBA TV Ortaokul</channel>
-  <channel site="iptvx.one" lang="tr" xmltv_id="TRTHaber.tr" site_id="trt-haber-hd">TRT Haber HD</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTKurdi.tr" site_id="187">TRT Kurdî</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTMuzik.tr" site_id="291">TRT Müzik</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTSpor.tr" site_id="392">TRT Spor</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTSporYildiz.tr" site_id="2021">TRT Spor Yıldız</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTTurk.tr" site_id="114">TRT Türk</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TRTWorld.tr" site_id="1758">TRT World</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TV100.tr" site_id="2000">TV 100</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TV4.tr" site_id="3688">TV4</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TV8.tr" site_id="24">TV 8</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TV8.tr" site_id="tv8-hd/134">TV8</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TV85.tr" site_id="tv85-hd/188">TV8,5</channel>
+  <channel site="tvplus.com.tr" lang="tr" xmltv_id="TV100.tr" site_id="tv100/179">TV100</channel>
   <channel site="tv.blue.ch" lang="tr" xmltv_id="TV8International.tr" site_id="638">TV8 Int.</channel>
-  <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TV85.tr" site_id="1849">TV 8,5</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="TVNET.tr" site_id="1419">Tv Net</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="UlkeTV.tr" site_id="125">Ülke TV</channel>
   <channel site="turksatkablo.com.tr" lang="tr" xmltv_id="UlusalKanal.tr" site_id="50">Ulusal Kanal</channel>
