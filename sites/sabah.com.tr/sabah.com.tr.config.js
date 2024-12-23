@@ -29,13 +29,14 @@ module.exports = {
       const time = $(element).find('span').first().text().trim();
       const title = $(element).find('span').last().text().trim();
 
-      const startTime = dayjs(`${date} ${time}`, 'YYYY-MM-DD HH:mm').toISOString();
+      // Ensure the date and time strings are correctly formatted
+      const startTime = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', 'Asia/Istanbul').toISOString();
       let endTime = null;
 
       if (programs.length > 0) {
         const previousProgram = programs[programs.length - 1];
         previousProgram.stop = startTime;
-        endTime = dayjs(startTime).add(1, 'hour').toISOString(); // Assuming each program lasts 1 hour
+        endTime = dayjs.tz(startTime).add(1, 'hour').toISOString(); // Assuming each program lasts 1 hour
       }
 
       programs.push({
@@ -54,7 +55,7 @@ module.exports = {
     return programs;
   },
   async channels() {
-    const response = await axios.get(`https://www.sabah.com.tr/yayin-akisi/star-tv`, {
+    const response = await axios.get('https://www.sabah.com.tr/yayin-akisi/star-tv', {
       headers: {
         'Accept-Encoding': 'gzip, deflate, br, zstd'
       }
@@ -63,18 +64,19 @@ module.exports = {
     const channels = [];
 
     $('div.sliderWrapper.tv-category ul.items li').each((index, element) => {
-    const $element = $(element);
-    const name = $element.find('img').attr('alt');
-    const site_id = $element.find('a').attr('href').split('/').pop();
-    const logo = $element.find('img').attr('src');
+      const $element = $(element);
+      const name = $element.find('img').attr('alt');
+      const site_id = $element.find('a').attr('href').split('/').pop();
+      const logo = $element.find('img').attr('src');
 
-    channels.push({
-      lang: 'tr',
-      name: name,
-      site_id: site_id
+      channels.push({
+        lang: 'tr',
+        name: name,
+        site_id: site_id,
+        logo: logo
+      });
     });
-  });
 
-  return channels;
-}
+    return channels;
+  }
 };
