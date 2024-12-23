@@ -1,4 +1,3 @@
-const axios = require('axios');
 const cheerio = require('cheerio');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
@@ -66,7 +65,7 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
-    return data.activeLeagues.map(item => {
+    return data.data.activeLeagues.map(item => {
       return {
         lang: 'tr',
         site_id: item.rewriteId,
