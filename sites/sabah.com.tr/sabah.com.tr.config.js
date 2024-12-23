@@ -54,7 +54,7 @@ module.exports = {
     return programs;
   },
   async channels() {
-    const response = await axios.get(`https://www.sabah.com.tr/yayin-akisi`, {
+    const response = await axios.get(`https://www.sabah.com.tr/yayin-akisi/star-tv`, {
       headers: {
         'Accept-Encoding': 'gzip, deflate, br, zstd'
       }
@@ -71,8 +71,7 @@ module.exports = {
     channels.push({
       lang: 'tr',
       name: name,
-      site_id: site_id,
-      logo: logo
+      site_id: site_id
     });
   });
 
