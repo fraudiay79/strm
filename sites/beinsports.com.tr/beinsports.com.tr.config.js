@@ -1,3 +1,4 @@
+const axios = require('axios');
 const cheerio = require('cheerio');
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
@@ -8,6 +9,7 @@ dayjs.extend(timezone);
 
 module.exports = {
   site: 'beinsports.com.tr',
+  channels: 'beinsports.com.tr.channels.xml',
   days: 7, // Adjust the number of days as needed
   request: {
     cache: {
@@ -57,22 +59,5 @@ module.exports = {
     });
 
     return programs;
-  },
-  async channels() {
-    const axios = require('axios')
-    const data = await axios
-      .get(`https://beinsports.com.tr/_next/data/487/tr-TR/yayin-akisi/bein-sports-haber/pazartesi.json`)
-      .then(r => r.data)
-      .catch(console.log)
-
-    return data.data.activeLeagues.map(item => {
-      return {
-        lang: 'tr',
-        site_id: item.rewriteId,
-        name: item.channelId
-      }
-    })
-
-    return channels
   }
-};
+}
