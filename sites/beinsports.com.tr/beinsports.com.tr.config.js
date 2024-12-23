@@ -60,25 +60,20 @@ module.exports = {
     return programs;
   },
   async channels() {
-    const response = await axios.get('https://beinsports.com.tr/yayin-akisi/', {
-      headers: {
-        'Accept-Encoding': 'gzip, deflate, br'
-      }
-    });
-    const $ = cheerio.load(response.data);
-    const channels = [];
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://beinsports.com.tr/_next/data/487/tr-TR/yayin-akisi/bein-sports-haber/pazartesi.json`)
+      .then(r => r.data)
+      .catch(console.log)
 
-    $('h3.grow.leading-tight').each((index, element) => {
-      const siteId = $(element).find('a').attr('href').match(/https:\/\/beinsports\.com\.tr\/(.*)/)[1];
-      const name = $(element).text().trim();
-
-      channels.push({
+    return data.activeLeagues.map(item => {
+      return {
         lang: 'tr',
-        name: name,
-        site_id: siteId
-      });
-    });
+        site_id: item.rewriteId,
+        name: item.channelId
+      }
+    })
 
-    return channels;
+    return channels
   }
 };
