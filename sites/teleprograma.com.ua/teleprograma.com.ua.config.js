@@ -63,17 +63,20 @@ module.exports = {
 
     $('.tv-grid__item').each((index, element) => {
       const name = $(element).find('.tv-channel-title__text').text().trim();
-      const siteId = $(element).find('.tv-channel-title__link').attr('href').split('/').pop();
-      const logo = $(element).find('.b-tv-image__picture').css('background-image').replace(/url\(|\)/g, '');
+      const linkElement = $(element).find('.tv-channel-title__link');
+      if (linkElement.length > 0) {
+        const siteId = linkElement.attr('href').split('/').filter(Boolean).pop();
+        const logo = $(element).find('.b-tv-image__picture').css('background-image').replace(/url\(|\)/g, '');
 
-      channels.push({
-        lang: 'uk',
-        name: name,
-        site_id: siteId,
-        logo: logo.startsWith('//') ? `https:${logo}` : logo
-      });
+        channels.push({
+          lang: 'uk',
+          name: name,
+          site_id: siteId,
+          logo: logo.startsWith('//') ? `https:${logo}` : logo
+        });
+      }
     });
 
     return channels;
   }
-}
+};
