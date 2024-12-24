@@ -13,6 +13,7 @@ dayjs.extend(customParseFormat);
 module.exports = {
   site: 'ipko.tv',
   timezone: 'Europe/Belgrade',
+  days: 5,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -33,71 +34,40 @@ module.exports = {
       'Connection': 'keep-alive'
     }
   },
-  url(channel, start, end) {
-    const url = "https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData";
-    const postdata = JSON.stringify({
-      ch_ext_id: channel,
-      from: start,
-      to: end
-    });
-    return { url, postdata };
+  url({ channel, date }) {
+    return "https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData";
   },
-  parser: function ({ data }) {
-    const epg = {
-      days: [],
-      channels: []
-    };
+  async fetchEpg({ channel, date }) {
+    const response = await axios.post(this.url({ channel, date }), {
+      ch_ext_id: channel.site_id,
+      from: date.startOf('day').unix(),
+      to: date.endOf('day').unix()
+    }, {
+      headers: this.request.headers,
+      referrerPolicy: "same-origin"
+    });
 
-    // Parse days
-    if (Array.isArray(data.days)) {
-      data.days.forEach(day => {
-        epg.days.push({
-          start: day.start,
-          end: day.end,
-          dayString: day.day_string
-        });
-      });
-    }
+    return response.data;
+  },
+  parser: function ({ content }) {
+    const programs = [];
 
-    // Parse channels
-    if (Array.isArray(data.channels)) {
-      data.channels.forEach(channel => {
-        const parsedChannel = {
-          channelId: channel.channel_id,
-          channelLogo: channel.channel_logo,
-          channelName: channel.channel_name,
-          shows: []
-        };
+    const data = JSON.parse(content);
+    data.shows.forEach(show => {
+      const start = dayjs.unix(show.show_start).utc();
+      const stop = dayjs.unix(show.show_end).utc();
+      const programData = {
+        title: show.title,
+        description: show.summary || 'No description available',
+        start: start.toISOString(),
+        stop: stop.toISOString(),
+        thumbnail: show.thumbnail
+      };
 
-        // Parse shows for each channel
-        if (Array.isArray(channel.shows)) {
-          channel.shows.forEach(show => {
-            parsedChannel.shows.push({
-              title: String(show.title),
-              showStart: show.show_start,
-              showEnd: show.show_end,
-              timestamp: String(show.timestamp),
-              showId: String(show.show_id),
-              thumbnail: String(show.thumbnail),
-              category: Array.isArray(show.category) ? show.category.map(String) : [],
-              genre: Array.isArray(show.genre) ? show.genre.map(String) : [],
-              channelId: String(show.channel_id),
-              isAdult: !!show.is_adult,
-              isLive: !!show.is_live,
-              year: show.year ? String(show.year) : null,
-              pg: String(show.pg),
-              hasMore: !!show.has_more,
-              originalTitle: String(show.original_title),
-              uniqueId: String(show.unique_id)
-            });
-          });
-        }
+      programs.push(programData);
+    });
 
-        epg.channels.push(parsedChannel);
-      });
-    }
-
-    return epg;
+    return programs;
   },
   async channels() {
     const response = await axios.post('https://stargate.ipko.tv/api/titan.tv.WebEpg/ZapList', JSON.stringify({ includeRadioStations: true }), {
