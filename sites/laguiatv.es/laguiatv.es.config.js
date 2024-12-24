@@ -30,9 +30,7 @@ module.exports = {
       title: event.name,
       start: dayjs(event.startDate).toISOString(),
       stop: dayjs(event.endDate).toISOString(),
-      description: event.description,
-      url: event.url,
-      location: event.location.name
+      description: event.description
     }))
 
     return programs
@@ -55,8 +53,7 @@ module.exports = {
       channels.push({
         lang: 'es',
         name: name,
-        site_id: site_id,
-        logo: logo
+        site_id: site_id
       })
     })
 
