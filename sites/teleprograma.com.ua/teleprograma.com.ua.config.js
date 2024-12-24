@@ -65,15 +65,18 @@ module.exports = {
       const name = $(element).find('.tv-channel-title__text').text().trim();
       const linkElement = $(element).find('.tv-channel-title__link');
       if (linkElement.length > 0) {
-        const siteId = linkElement.attr('href').split('/').filter(Boolean).pop();
-        const logo = $(element).find('.b-tv-image__picture').css('background-image').replace(/url\(|\)/g, '');
+        const href = linkElement.attr('href');
+        if (href) {
+          const siteId = href.split('/').filter(Boolean).pop();
+          const logo = $(element).find('.b-tv-image__picture').css('background-image').replace(/url\(|\)/g, '');
 
-        channels.push({
-          lang: 'uk',
-          name: name,
-          site_id: siteId,
-          logo: logo.startsWith('//') ? `https:${logo}` : logo
-        });
+          channels.push({
+            lang: 'uk',
+            name: name,
+            site_id: siteId,
+            logo: logo.startsWith('//') ? `https:${logo}` : logo
+          });
+        }
       }
     });
 
