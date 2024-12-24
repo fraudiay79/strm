@@ -29,9 +29,10 @@ module.exports = {
     $('.b-tv-channel-schedule__items .b-tv-channel-schedule__item').each((index, element) => {
       const time = $(element).find('.tv-event__time_single').text().trim();
       const title = $(element).find('.tv-event__title-inner').text().trim();
+      const dateTimeString = `${date.format('YYYY-MM-DD')} ${time}`;
 
       try {
-        const startTime = dayjs.tz(`${date} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString();
+        const startTime = dayjs.tz(dateTimeString, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString();
         let endTime = dayjs(startTime).add(1, 'hour').toISOString(); // Assuming each program lasts 1 hour
 
         if (programs.length > 0) {
@@ -45,7 +46,7 @@ module.exports = {
           stop: endTime
         });
       } catch (error) {
-        console.error(`Failed to parse time for program "${title}" on ${date} at ${time}`);
+        console.error(`Failed to parse time for program "${title}" on ${dateTimeString}`);
       }
     });
 
