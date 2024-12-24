@@ -30,39 +30,31 @@ module.exports = {
 
     $('#schedule_container').each((index, container) => {
       let previousEndTime = null
-      let startTime = null
-      let title = ''
+      let program = { title: '', start: '', stop: '' }
 
       $(container).children().each((i, elem) => {
-        if ($(elem).hasClass('pasttime')) {
-          const timeString = $(elem).text().trim()
-          const startTimeString = `${formattedDate} ${timeString}`
-          startTime = dayjs.tz(startTimeString, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
+        if ($(elem).hasClass('pasttime') || $(elem).hasClass('onair') || $(elem).hasClass('time')) {
+          const timeString = parseTimeContent($, $(elem).contents())
+          const startTime = dayjs.tz(`${formattedDate} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
 
-          if (previousEndTime) {
-            programs[programs.length - 1].stop = startTime
+          if (program.title && program.start) {
+            program.stop = startTime
+            programs.push(program)
+            program = { title: '', start: startTime, stop: '' }
+          } else {
+            program.start = startTime
           }
 
           previousEndTime = startTime
-
-          if (title) {
-            programs.push({
-              title,
-              start: startTime,
-              stop: '' // Temporary stop time
-            })
-          }
-        } else if ($(elem).hasClass('pastprname2')) {
-          title = $(elem).text().trim()
+        } else if ($(elem).hasClass('pastprname2') || $(elem).hasClass('prname2')) {
+          program.title = $(elem).text().trim()
         }
       })
 
       // Set stop time for the last program in the container (assuming it ends after 1 hour)
-      if (previousEndTime) {
-        const lastProgram = programs[programs.length - 1]
-        if (lastProgram) {
-          lastProgram.stop = dayjs(previousEndTime).add(1, 'hour').toISOString()
-        }
+      if (program.start) {
+        program.stop = dayjs(program.start).add(1, 'hour').toISOString()
+        programs.push(program)
       }
     })
 
@@ -93,4 +85,22 @@ module.exports = {
 
     return channels
   }
+}
+
+function parseTimeContent($, timeHtml) {
+  const mapping = {
+    "/pic/zn.gif": "0"
+  }
+
+  let timeString = ""
+  timeHtml.each((index, elem) => {
+    if (elem.type === "text") {
+      timeString += $(elem).text()
+    } else if (elem.type === "tag" && elem.name === "img") {
+      const src = $(elem).attr("src")
+      timeString += mapping[src] || ""
+    }
+  })
+
+  return timeString
 }
