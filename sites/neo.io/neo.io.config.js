@@ -31,7 +31,7 @@ module.exports = {
   },
   url({ req, start, end, channel, show }) {
     if (req === '1') {
-      return 'https://stargate.telekom.si/api/titan.tv.WebEpg/ZapList';
+      return 'https://stargate.telekom.si/api/titan.tv.WebEpg/EpgFilter';
     } else if (req === '2') {
       return 'https://stargate.telekom.si/api/titan.tv.ContentService/EpgContentDetails';
     } else if (req === '3') {
@@ -50,11 +50,26 @@ module.exports = {
       const cookie = response.headers['set-cookie'][0].split(';')[0];
 
       const postdata2 = JSON.stringify({ ch_ext_id: channel, from: start, to: end });
-      const response2 = await axios.post('https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData', postdata2, {
+      const response2 = await axios.post('https://stargate.telekom.si/api/titan.tv.WebEpg/EpgFilter', postdata2, {
         headers: { ...this.request.headers, 'Cookie': cookie }
       });
 
-      return response2.data;
+      const data = response2.data;
+
+      const programs = data.channels.flatMap(channel => 
+        channel.shows.map(show => ({
+          title: show.title,
+          start: dayjs.unix(show.show_start).toISOString(),
+          stop: dayjs.unix(show.show_end).toISOString(),
+          description: show.description,
+          category: show.category.join(', '),
+          genre: show.genre.join(', '),
+          thumbnail: show.thumbnail,
+          channel: channel.channel_name
+        }))
+      );
+
+      return programs;
     } else if (req === '2') {
       const postdata = JSON.stringify({ show_id: show, timeshift: 0 });
       const response = await axios.post(this.url({ req }), postdata, {
