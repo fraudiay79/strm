@@ -1,7 +1,7 @@
-const axios = require('axios');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
+const axios = require('axios')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -15,26 +15,25 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     },
     headers: {
-      'Accept-Encoding': 'gzip, deflate, br'
+      'Accept-Encoding': 'gzip, deflate, br, zstd'
     }
   },
   url({ date }) {
-    const formattedDate = dayjs(date).format('YYYY-MM-DD');
-    return `https://spored.a1.si/api/epg/channels?startDate=${formattedDate}&endDate=${formattedDate}`;
+    return `https://spored.a1.si/api/epg/channels?startDate=${date.format('YYYY-MM-DD')}&endDate=${date.format('YYYY-MM-DD')}`
   },
-  async parser({ content }) {
-    const data = JSON.parse(content);
+  parser: function ({ content }) {
+    const data = JSON.parse(content)
     const programs = data.flatMap(channel => 
       channel.schedules.flatMap(schedule => 
         schedule.programs.map(program => ({
           title: program.title,
           start: dayjs(`${schedule.schedule} ${program.startTime}`, 'YYYY-MM-DD HH:mm').toISOString(),
-          stop: dayjs(`${schedule.schedule} ${program.startTime}`, 'YYYY-MM-DD HH:mm').add(30, 'minutes').toISOString(), // Assuming each program is 30 minutes
+          stop: dayjs(`${schedule.schedule} ${program.startTime}`, 'YYYY-MM-DD HH:mm').add(60, 'minutes').toISOString(), // Assuming each program is 60 minutes
         }))
       )
-    );
+    )
 
-    return programs;
+    return programs
   },
   async channels() {
     const response = await axios.get('https://spored.a1.si/api/epg/channels', {
@@ -43,15 +42,14 @@ module.exports = {
         startDate: dayjs().format('YYYY-MM-DD'),
         endDate: dayjs().format('YYYY-MM-DD')
       }
-    });
+    })
 
-    const data = response.data;
+    const data = response.data
 
     return data.map(channel => ({
       lang: 'sl',
       name: channel.name,
-      site_id: channel.id,
-      logo: `https://spored.a1.si${channel.thumbnailUri}`
-    }));
+      site_id: channel.id
+    }))
   }
-};
+}
