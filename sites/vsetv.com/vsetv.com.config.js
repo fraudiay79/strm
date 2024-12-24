@@ -20,7 +20,7 @@ module.exports = {
     }
   },
   url({ channel }) {
-    return `http://www.vsetv.com/schedule_${channel.site_id}_week.html`
+    return `http://www.vsetv.com/schedule_package_uabase_day_${date.format('YYYY-MM-DD')}.html`
   },
   parser: function ({ content, date }) {
     const $ = cheerio.load(content)
