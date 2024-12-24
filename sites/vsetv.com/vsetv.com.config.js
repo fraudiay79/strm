@@ -48,7 +48,7 @@ module.exports = {
 
           previousEndTime = startTime
         } else if ($(elem).hasClass('pastprname2')) {
-          const title = $(elem).text().match(/"[^"]*"/) ? $(elem).text().match(/"[^"]*"/)[0] : $(elem).text().trim()
+          const title = $(elem).text().match(/"[^"]*"/) ? $(elem).text().match(/"[^"]*"/)[0]
           programs[programs.length - 1].title = title
         }
       })
