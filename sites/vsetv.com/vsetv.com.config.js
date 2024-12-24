@@ -32,7 +32,7 @@ module.exports = {
 
       $(container).children().each((i, elem) => {
         if ($(elem).hasClass('time')) {
-          const timeString = parseTime($(elem).contents())
+          const timeString = parseTime($, $(elem).contents())
           const startTime = dayjs.tz(`${formattedDate} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
 
           if (previousEndTime) {
@@ -87,7 +87,7 @@ module.exports = {
   }
 }
 
-function parseTime(timeHtml) {
+function parseTime($, timeHtml) {
   // Define the mapping for the image sources
   const mapping = {
     "/pic/j8.gif": "0",
