@@ -42,7 +42,7 @@ module.exports = {
     });
     return { url, postdata };
   },
-  parseEpg(data) {
+  parser({ data }) {
     const epg = {
       days: [],
       channels: []
