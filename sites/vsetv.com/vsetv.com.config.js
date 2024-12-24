@@ -30,31 +30,31 @@ module.exports = {
 
     $('#schedule_container').each((index, container) => {
       let previousEndTime = null
-      let program = { title: '', start: '', stop: '' }
+      let startTime = null
+      let title = ''
 
       $(container).children().each((i, elem) => {
         if ($(elem).hasClass('pasttime')) {
           const timeString = $(elem).text().trim()
-          const startTime = dayjs.tz(`${formattedDate} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
+          startTime = dayjs.tz(`${formattedDate} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
 
           if (previousEndTime) {
-            program.stop = startTime
-            programs.push(program)
-            program = { title: '', start: startTime, stop: '' }
-          } else {
-            program.start = startTime
+            programs[programs.length - 1].stop = startTime
           }
 
           previousEndTime = startTime
         } else if ($(elem).hasClass('pastprname2')) {
-          program.title = $(elem).text().trim()
+          title = $(elem).text().trim()
         }
       })
 
       // Set stop time for the last program in the container (assuming it ends after 1 hour)
       if (previousEndTime) {
-        program.stop = dayjs(previousEndTime).add(1, 'hour').toISOString()
-        programs.push(program)
+        programs.push({
+          title: title,
+          start: startTime,
+          stop: dayjs(previousEndTime).add(1, 'hour').toISOString()
+        })
       }
     })
 
