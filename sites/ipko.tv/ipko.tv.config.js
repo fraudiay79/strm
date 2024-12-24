@@ -42,54 +42,60 @@ module.exports = {
     });
     return { url, postdata };
   },
-  parser({ data }) {
+  parser: function ({ data }) {
     const epg = {
       days: [],
       channels: []
     };
 
     // Parse days
-    data.days.forEach(day => {
-      epg.days.push({
-        start: day.start,
-        end: day.end,
-        dayString: day.day_string
-      });
-    });
-
-    // Parse channels
-    data.channels.forEach(channel => {
-      const parsedChannel = {
-        channelId: channel.channel_id,
-        channelLogo: channel.channel_logo,
-        channelName: channel.channel_name,
-        shows: []
-      };
-
-      // Parse shows for each channel
-      channel.shows.forEach(show => {
-        parsedChannel.shows.push({
-          title: show.title,
-          showStart: show.show_start,
-          showEnd: show.show_end,
-          timestamp: show.timestamp,
-          showId: show.show_id,
-          thumbnail: show.thumbnail,
-          category: show.category,
-          genre: show.genre,
-          channelId: show.channel_id,
-          isAdult: show.is_adult,
-          isLive: show.is_live,
-          year: show.year,
-          pg: show.pg,
-          hasMore: show.has_more,
-          originalTitle: show.original_title,
-          uniqueId: show.unique_id
+    if (Array.isArray(data.days)) {
+      data.days.forEach(day => {
+        epg.days.push({
+          start: day.start,
+          end: day.end,
+          dayString: day.day_string
         });
       });
+    }
 
-      epg.channels.push(parsedChannel);
-    });
+    // Parse channels
+    if (Array.isArray(data.channels)) {
+      data.channels.forEach(channel => {
+        const parsedChannel = {
+          channelId: channel.channel_id,
+          channelLogo: channel.channel_logo,
+          channelName: channel.channel_name,
+          shows: []
+        };
+
+        // Parse shows for each channel
+        if (Array.isArray(channel.shows)) {
+          channel.shows.forEach(show => {
+            parsedChannel.shows.push({
+              title: String(show.title),
+              showStart: show.show_start,
+              showEnd: show.show_end,
+              timestamp: String(show.timestamp),
+              showId: String(show.show_id),
+              thumbnail: String(show.thumbnail),
+              category: Array.isArray(show.category) ? show.category.map(String) : [],
+              genre: Array.isArray(show.genre) ? show.genre.map(String) : [],
+              channelId: String(show.channel_id),
+              isAdult: !!show.is_adult,
+              isLive: !!show.is_live,
+              year: show.year ? String(show.year) : null,
+              pg: String(show.pg),
+              hasMore: !!show.has_more,
+              originalTitle: String(show.original_title),
+              uniqueId: String(show.unique_id)
+            });
+          });
+        }
+
+        epg.channels.push(parsedChannel);
+      });
+    }
 
     return epg;
   },
@@ -102,9 +108,9 @@ module.exports = {
 
     return data.map(item => ({
       lang: 'sq',
-      name: item.channel.title,
-      site_id: item.channel.id,
-      logo: item.channel.logo
+      name: String(item.channel.title),
+      site_id: String(item.channel.id),
+      logo: String(item.channel.logo)
     }));
   }
 };
