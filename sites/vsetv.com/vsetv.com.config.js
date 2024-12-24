@@ -20,7 +20,8 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    return `http://www.vsetv.com/schedule_${channel.site_id}_day_${date.format('YYYY-MM-DD')}.html`
+    const formattedDate = dayjs(date).format('YYYY-MM-DD');
+    return `http://www.vsetv.com/schedule_${channel.site_id}_day_${formattedDate}.html`
   },
   parser: function ({ content, date }) {
     const $ = cheerio.load(content)
@@ -31,8 +32,8 @@ module.exports = {
       let previousEndTime = null
 
       $(container).children().each((i, elem) => {
-        if ($(elem).hasClass('time')) {
-          const timeString = parseTime($, $(elem).contents())
+        if ($(elem).hasClass('pasttime')) {
+          const timeString = $(elem).text().trim()
           const startTime = dayjs.tz(`${formattedDate} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
 
           if (previousEndTime) {
@@ -46,7 +47,7 @@ module.exports = {
           })
 
           previousEndTime = startTime
-        } else if ($(elem).hasClass('prname2')) {
+        } else if ($(elem).hasClass('pastprname2')) {
           const title = $(elem).text().trim() || $(elem).find('a').text().trim()
           programs[programs.length - 1].title = title
         }
@@ -85,24 +86,4 @@ module.exports = {
 
     return channels
   }
-}
-
-function parseTime($, timeHtml) {
-  // Define the mapping for the image sources
-  const mapping = {
-    "/pic/j8.gif": "0",
-    "/pic/p7.gif": "5"
-  }
-
-  let timeString = ""
-  timeHtml.each((index, elem) => {
-    if (elem.type === "text") {
-      timeString += $(elem).text()
-    } else if (elem.type === "tag" && elem.name === "img") {
-      const src = $(elem).attr("src")
-      timeString += mapping[src] || ""
-    }
-  })
-
-  return timeString
 }
