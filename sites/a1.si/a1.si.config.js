@@ -3,8 +3,8 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 
-dayjs.extend(utc);
-dayjs.extend(timezone);
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'a1.si',
@@ -15,23 +15,30 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     },
     headers: {
-      'Accept-Encoding': 'gzip, deflate, br, zstd'
+      'Accept-Encoding': 'gzip, deflate, br'
     }
   },
   url({ date }) {
     return `https://spored.a1.si/api/epg/channels?startDate=${date.format('YYYY-MM-DD')}&endDate=${date.format('YYYY-MM-DD')}`
   },
-  parser: function ({ content }) {
+  async parser({ content }) {
     const data = JSON.parse(content)
-    const programs = data.flatMap(channel => 
-      channel.schedules.flatMap(schedule => 
-        schedule.programs.map(program => ({
-          title: program.title,
-          start: dayjs(`${schedule.schedule} ${program.startTime}`, 'YYYY-MM-DD HH:mm').toISOString(),
-          stop: dayjs(`${schedule.schedule} ${program.startTime}`, 'YYYY-MM-DD HH:mm').add(60, 'minutes').toISOString(), // Assuming each program is 60 minutes
-        }))
-      )
-    )
+    const programs = [];
+
+    data.forEach(channel => {
+      channel.schedules.forEach(schedule => {
+        schedule.programs.forEach(program => {
+          const startTime = dayjs(`${schedule.schedule} ${program.startTime}`, 'YYYY-MM-DD HH:mm').toISOString()
+          const stopTime = dayjs(startTime).add(30, 'minutes').toISOString() // Assuming each program is 30 minutes
+
+          programs.push({
+            title: program.title,
+            start: startTime,
+            stop: stopTime
+          })
+        })
+      })
+    })
 
     return programs
   },
@@ -49,7 +56,8 @@ module.exports = {
     return data.map(channel => ({
       lang: 'sl',
       name: channel.name,
-      site_id: channel.id
+      site_id: channel.id,
+      logo: `https://spored.a1.si${channel.thumbnailUri}`
     }))
   }
 }
