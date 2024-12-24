@@ -24,15 +24,15 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- laguiatv.es
+          #npm test --- neo.io
           #npm run channels:parse --- --config=./sites/canalplus.com/canalplus.com.config.js --output=./sites/canalplus.com/canalplus.com_mu.channels.xml --set=country:mu
           #npm run grab --- --channels=../sites/canalplus.com/canalplus.com_cm.channels.xml--maxConnections=20 --gzip --output=guides/propg.net.xml --days=2 --timeout=90000
-          #npm run channels:parse --- --config=./sites/laguiatv.es/laguiatv.es.config.js --output=./sites/laguiatv.es/laguiatv.es.channels.xml
-          #npm run channels:parse --- --config=./sites/laguiatv.es/laguiatv.es.config.js --output=./sites/laguiatv.es/laguiatv.es.channels.xml
+          #npm run channels:parse --- --config=./sites/neo.io/neo.io.config.js --output=./sites/neo.io/neo.io.channels.xml
+          npm run channels:parse --- --config=./sites/neo.io/neo.io.config.js --output=./sites/neo.io/neo.io.channels.xml
           #npm run grab --- --site=tv.magenta.mk --maxConnections=20 --gzip --output=guides/tv.magenta.mk.xml --days=1 --timeout=90000
           #npm run grab --- --site=propg.net --maxConnections=20 --gzip --output=guides/propg.net.xml --days=2 --timeout=90000
           #npm run grab --- --site=hot.net.il --maxConnections=20 --gzip --output=guides/hot.net.il.xml --days=2 --timeout=90000
-          npm run grab --- --site=laguiatv.es --maxConnections=20 --output=guides/laguiatv.es.xml --days=1 --timeout=90000
+          #npm run grab --- --site=neo.io --maxConnections=20 --output=guides/neo.io.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
@@ -41,7 +41,7 @@ jobs:
         #git add -f sites/canalplus.com/canalplus.com_mu.channels.xml
         #git add -f guides/tv.magenta.mk.xml
         #git add -f guides/hot.net.il.xml
-        git add -f guides/laguiatv.es.xml
-        #git add -f sites/laguiatv.es/laguiatv.es.channels.xml
+        #git add -f guides/neo.io.xml
+        git add -f sites/neo.io/neo.io.channels.xml
         git commit -m "Update xml"
         git push
