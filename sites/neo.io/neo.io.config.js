@@ -78,9 +78,9 @@ module.exports = {
       headers: this.request.headers
     });
 
-    return response.data.channels.map(channel => ({
+    return response.data.channel.map(channel => ({
       lang: 'sl',
-      name: channel.name,
+      name: channel.title,
       site_id: channel.id
     }));
   }
