@@ -19,7 +19,7 @@ module.exports = {
       'Accept-Encoding': 'gzip, deflate'
     }
   },
-  url({ channel }) {
+  url({ channel, date }) {
     return `http://www.vsetv.com/schedule_${channel.site_id}_day_${date.format('YYYY-MM-DD')}.html`
   },
   parser: function ({ content, date }) {
