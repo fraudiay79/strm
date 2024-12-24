@@ -36,13 +36,22 @@ module.exports = {
       $(container).children().each((i, elem) => {
         if ($(elem).hasClass('pasttime')) {
           const timeString = $(elem).text().trim()
-          startTime = dayjs.tz(`${formattedDate} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
+          const startTimeString = `${formattedDate} ${timeString}`
+          startTime = dayjs.tz(startTimeString, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
 
           if (previousEndTime) {
             programs[programs.length - 1].stop = startTime
           }
 
           previousEndTime = startTime
+
+          if (title) {
+            programs.push({
+              title,
+              start: startTime,
+              stop: '' // Temporary stop time
+            })
+          }
         } else if ($(elem).hasClass('pastprname2')) {
           title = $(elem).text().trim()
         }
@@ -50,11 +59,10 @@ module.exports = {
 
       // Set stop time for the last program in the container (assuming it ends after 1 hour)
       if (previousEndTime) {
-        programs.push({
-          title: title,
-          start: startTime,
-          stop: dayjs(previousEndTime).add(1, 'hour').toISOString()
-        })
+        const lastProgram = programs[programs.length - 1]
+        if (lastProgram) {
+          lastProgram.stop = dayjs(previousEndTime).add(1, 'hour').toISOString()
+        }
       }
     })
 
@@ -77,7 +85,7 @@ module.exports = {
       if (siteId && siteId !== 'package_no' && name && name !== '--выберите каналы--' && name !== '--каналы по регионам--' && name !== '--каналы по операторам--' && name !== '--отдельные каналы--') {
         channels.push({
           lang: 'uk',
-          name: name,
+          name,
           site_id: siteId
         })
       }
