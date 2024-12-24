@@ -20,7 +20,7 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    const formattedDate = dayjs(date).format('YYYY-MM-DD');
+    const formattedDate = dayjs(date).format('YYYY-MM-DD')
     return `http://www.vsetv.com/schedule_${channel.site_id}_day_${formattedDate}.html`
   },
   parser: function ({ content, date }) {
@@ -30,6 +30,7 @@ module.exports = {
 
     $('#schedule_container').each((index, container) => {
       let previousEndTime = null
+      let program = { title: '', start: '', stop: '' }
 
       $(container).children().each((i, elem) => {
         if ($(elem).hasClass('pasttime')) {
@@ -37,25 +38,23 @@ module.exports = {
           const startTime = dayjs.tz(`${formattedDate} ${timeString}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString()
 
           if (previousEndTime) {
-            programs[programs.length - 1].stop = startTime
+            program.stop = startTime
+            programs.push(program)
+            program = { title: '', start: startTime, stop: '' }
+          } else {
+            program.start = startTime
           }
-
-          programs.push({
-            title: '',
-            start: startTime,
-            stop: '' // Will be updated when the next program's start time is found
-          })
 
           previousEndTime = startTime
         } else if ($(elem).hasClass('pastprname2')) {
-          const title = $(elem).text().trim()
-          programs[programs.length - 1].title = title
+          program.title = $(elem).text().trim()
         }
       })
 
       // Set stop time for the last program in the container (assuming it ends after 1 hour)
       if (previousEndTime) {
-        programs[programs.length - 1].stop = dayjs(previousEndTime).add(1, 'hour').toISOString()
+        program.stop = dayjs(previousEndTime).add(1, 'hour').toISOString()
+        programs.push(program)
       }
     })
 
