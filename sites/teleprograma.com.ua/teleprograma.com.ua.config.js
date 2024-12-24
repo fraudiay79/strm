@@ -9,6 +9,7 @@ dayjs.extend(timezone);
 
 module.exports = {
   site: 'teleprograma.com.ua',
+  channels: 'teleprograma.com.ua.channels.xml',
   timezone: 'Europe/Kiev',
   request: {
     cache: {
