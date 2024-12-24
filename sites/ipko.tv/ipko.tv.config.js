@@ -1,132 +1,110 @@
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-const fetch = require('node-fetch')
-const { upperCase } = require('lodash')
+const axios = require('axios');
+const dayjs = require('dayjs');
+const utc = require('dayjs/plugin/utc');
+const timezone = require('dayjs/plugin/timezone');
+const customParseFormat = require('dayjs/plugin/customParseFormat');
+const fetch = require('node-fetch');
+const { upperCase } = require('lodash');
 
-let X_CSRFTOKEN
-let COOKIE
-const cookiesToExtract = ['JSESSIONID', 'CSESSIONID', 'CSRFSESSION']
-const extractedCookies = {}
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+dayjs.extend(utc);
+dayjs.extend(timezone);
+dayjs.extend(customParseFormat);
 
 module.exports = {
   site: 'ipko.tv',
-  days: 5,
+  timezone: 'Europe/Belgrade',
   request: {
-    method: 'POST',
-    headers: function () {
-      return setHeaders()
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
     },
-  },
-  url() {
-    return `https://stargate.ipko.tv/api/titan.tv.WebEpg/EpgFilter`
-  },
-  parser: function ({ content }) {
-    let programs = []
-    const items = parseItems(content)
-
-    items.forEach(item => {
-        //const start = dayjs.utc(item.asset.startTime)
-        //const stop = dayjs.utc(item.asset.endTime)
-      programs.push({
-        title: item.shows.title,
-        image: item.shows.thumbnail,
-        start: dayjs.unix(item.shows.show_start),
-        stop: dayjs.unix(item.shows.show_end)
-      })
-    })
-    return programs;
-  },
-  
-  async channels() {
-    const axios = require('axios')
-    const data = await axios
-      .get(`https://stargate.ipko.tv/api/titan.tv.WebEpg/EpgFilter`)
-      .then(r => r.data)
-      .catch(console.log)
-    return data.channels.map(item => {
-      return {
-        lang: 'sq',
-        name: item.channel_name,
-        site_id: item.channel_id
-      }
-    })
-  }
-}
-
-
-function parseItems(content) {
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data.channels)) return []
-
-  return data.channels
-}
-
-// Function to try to fetch COOKIE and X_CSRFTOKEN
-function fetchCookieAndToken() {
-  return fetch(
-    'https://stargate.ipko.tv/api/titan.tv.WebEpg/EpgFilter',
-    {
-      headers: {
-        accept: 'application/json, text/plain, */*',
-        'content-type': 'application/json',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-site',
-        'x-requested-with': 'XMLHttpRequest',
-        Origin: 'https://ipko.tv',
-        'Referrer-Policy': 'strict-origin-when-cross-origin'
-      },
-      body: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}',
-      method: 'POST'
-    }
-  )
-    .then(response => {
-      // Check if the response status is OK (2xx)
-      if (!response.ok) {
-        throw new Error('HTTP request failed')
-      }
-
-      // Extract the set-cookie header
-      const setCookieHeader = response.headers.raw()['set-cookie']
-
-      // Extract the cookies specified in cookiesToExtract
-      cookiesToExtract.forEach(cookieName => {
-        const regex = new RegExp(`${cookieName}=(.+?)(;|$)`)
-        const match = setCookieHeader.find(header => regex.test(header))
-
-        if (match) {
-          const cookieValue = regex.exec(match)[1]
-          extractedCookies[cookieName] = cookieValue
-        }
-      })
-
-      return response.json()
-    })
-    .then(data => {
-      if (data.csrfToken) {
-        X_CSRFTOKEN = data.csrfToken
-        COOKIE = `JSESSIONID=${extractedCookies.JSESSIONID}; CSESSIONID=${extractedCookies.CSESSIONID}; CSRFSESSION=${extractedCookies.CSRFSESSION}; JSESSIONID=${extractedCookies.JSESSIONID};`
-      } else {
-        console.log('csrfToken not found in the response.')
-      }
-    })
-    .catch(error => {
-      console.error(error)
-    })
-}
-
-function setHeaders() {
-  return fetchCookieAndToken().then(() => {
-    return {
-      X_CSRFTOKEN: X_CSRFTOKEN,
+    headers: {
+      'Host': 'stargate.ipko.tv',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
+      'Accept': 'application/json, text/plain, */*',
+      'Accept-Language': 'nl,en-US;q=0.7,en;q=0.3',
       'Content-Type': 'application/json',
-      Cookie: COOKIE
+      'X-AppLayout': '1',
+      'x-language': 'sq',
+      'Origin': 'https://ipko.tv',
+      'Sec-Fetch-Dest': 'empty',
+      'Sec-Fetch-Mode': 'cors',
+      'Sec-Fetch-Site': 'cross-site',
+      'Sec-GPC': '1',
+      'Connection': 'keep-alive'
     }
-  })
-}
+  },
+  url(channel, start, end) {
+    const url = "https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData";
+    const postdata = JSON.stringify({
+      ch_ext_id: channel,
+      from: start,
+      to: end
+    });
+    return { url, postdata };
+  },
+  parseEpg(data) {
+    const epg = {
+      days: [],
+      channels: []
+    };
+
+    // Parse days
+    data.days.forEach(day => {
+      epg.days.push({
+        start: day.start,
+        end: day.end,
+        dayString: day.day_string
+      });
+    });
+
+    // Parse channels
+    data.channels.forEach(channel => {
+      const parsedChannel = {
+        channelId: channel.channel_id,
+        channelLogo: channel.channel_logo,
+        channelName: channel.channel_name,
+        shows: []
+      };
+
+      // Parse shows for each channel
+      channel.shows.forEach(show => {
+        parsedChannel.shows.push({
+          title: show.title,
+          showStart: show.show_start,
+          showEnd: show.show_end,
+          timestamp: show.timestamp,
+          showId: show.show_id,
+          thumbnail: show.thumbnail,
+          category: show.category,
+          genre: show.genre,
+          channelId: show.channel_id,
+          isAdult: show.is_adult,
+          isLive: show.is_live,
+          year: show.year,
+          pg: show.pg,
+          hasMore: show.has_more,
+          originalTitle: show.original_title,
+          uniqueId: show.unique_id
+        });
+      });
+
+      epg.channels.push(parsedChannel);
+    });
+
+    return epg;
+  },
+  async channels() {
+    const response = await axios.post('https://stargate.ipko.tv/api/titan.tv.WebEpg/ZapList', JSON.stringify({ includeRadioStations: true }), {
+      headers: this.request.headers
+    });
+
+    const data = response.data.data;
+
+    return data.map(item => ({
+      lang: 'sq',
+      name: item.channel.title,
+      site_id: item.channel.id,
+      logo: item.channel.logo
+    }));
+  }
+};
