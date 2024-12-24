@@ -9,7 +9,6 @@ dayjs.extend(timezone);
 
 module.exports = {
   site: 'teleprograma.com.ua',
-  channels: 'teleprograma.com.ua.channels.xml',
   timezone: 'Europe/Kiev',
   request: {
     cache: {
@@ -30,19 +29,24 @@ module.exports = {
     $('.b-tv-channel-schedule__items .b-tv-channel-schedule__item').each((index, element) => {
       const time = $(element).find('.tv-event__time_single').text().trim();
       const title = $(element).find('.tv-event__title-inner').text().trim();
-      const startTime = dayjs.tz(`${date} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString();
-      let endTime = dayjs(startTime).add(1, 'hour').toISOString(); // Assuming each program lasts 1 hour
 
-      if (programs.length > 0) {
-        const previousProgram = programs[programs.length - 1];
-        previousProgram.stop = startTime;
+      try {
+        const startTime = dayjs.tz(`${date} ${time}`, 'YYYY-MM-DD HH:mm', 'Europe/Kiev').toISOString();
+        let endTime = dayjs(startTime).add(1, 'hour').toISOString(); // Assuming each program lasts 1 hour
+
+        if (programs.length > 0) {
+          const previousProgram = programs[programs.length - 1];
+          previousProgram.stop = startTime;
+        }
+
+        programs.push({
+          title,
+          start: startTime,
+          stop: endTime
+        });
+      } catch (error) {
+        console.error(`Failed to parse time for program "${title}" on ${date} at ${time}`);
       }
-
-      programs.push({
-        title,
-        start: startTime,
-        stop: endTime
-      });
     });
 
     // Set stop time for the last program
