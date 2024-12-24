@@ -34,17 +34,20 @@ module.exports = {
       'Connection': 'keep-alive'
     }
   },
-  url({ channel, date }) {
-    return "https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData";
+  url({ date, channel }) {
+    return {
+      url: "https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData",
+      data: JSON.stringify({
+        ch_ext_id: channel.site_id,
+        from: date.startOf('day').unix(),
+        to: date.endOf('day').unix()
+      })
+    };
   },
   async fetchEpg({ channel, date }) {
-    const response = await axios.post(this.url({ channel, date }), {
-      ch_ext_id: channel.site_id,
-      from: date.startOf('day').unix(),
-      to: date.endOf('day').unix()
-    }, {
-      headers: this.request.headers,
-      referrerPolicy: "same-origin"
+    const { url, data } = this.url({ channel, date });
+    const response = await axios.post(url, data, {
+      headers: this.headers
     });
 
     return response.data;
