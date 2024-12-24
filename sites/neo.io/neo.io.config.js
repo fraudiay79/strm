@@ -78,10 +78,13 @@ module.exports = {
       headers: this.request.headers
     });
 
-    return response.data.channel.map(channel => ({
+    const data = response.data.data;
+
+    return data.map(item => ({
       lang: 'sl',
-      name: channel.title,
-      site_id: channel.id
+      name: item.channel.title,
+      site_id: item.channel.id,
+      logo: item.channel.logo
     }));
   }
 };
