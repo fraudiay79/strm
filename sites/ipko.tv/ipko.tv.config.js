@@ -38,9 +38,9 @@ module.exports = {
     return {
       url: "https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData",
       data: JSON.stringify({
-        ch_ext_id: $channel.site_id,
-        from: $date.startOf('day').unix(),
-        to: $date.endOf('day').unix()
+        ch_ext_id: channel.site_id,
+        from: date.startOf('day').unix(),
+        to: date.endOf('day').unix()
       })
     };
   },
