@@ -35,8 +35,7 @@ module.exports = {
 	  const todayEpoch = date.startOf('day').utc().valueOf()
 	  const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
       params.append(
-        JSON.stringify({ch_ext_id: `${channel.site_id}`, from: `${todayEpoch}`, to: `${nextDayEpoch}`]
-        })
+        JSON.stringify({ch_ext_id: `${channel.site_id}`, from: `${todayEpoch}`, to: `${nextDayEpoch}`})
       )
 
       return params
