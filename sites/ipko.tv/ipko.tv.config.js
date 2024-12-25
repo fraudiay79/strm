@@ -32,10 +32,10 @@ module.exports = {
     },
     data({ channel, date }) {
       const params = new URLSearchParams()
-	  const todayEpoch = date.startOf('day').utc().valueOf()
-	  const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
+      const todayEpoch = date.startOf('day').utc().valueOf()
+      const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
       params.append(
-        JSON.stringify({ ch_ext_id: ipko-promo, from: 1735102800, to: 1735189199})
+        JSON.stringify({ ch_ext_id: 'ipko-promo', from: 1735102800, to: 1735189199})
       )
 
       return params
