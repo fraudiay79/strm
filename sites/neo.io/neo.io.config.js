@@ -1,18 +1,20 @@
-const axios = require('axios');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
+const axios = require('axios')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-dayjs.extend(utc);
-dayjs.extend(timezone);
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'neo.io',
   timezone: 'Europe/Ljubljana',
+  days: 5,
+  url: 'https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData',
   request: {
-    cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
-    },
+    method: 'POST',
     headers: {
       'Host': 'stargate.telekom.si',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
@@ -27,66 +29,33 @@ module.exports = {
       'Sec-Fetch-Site': 'cross-site',
       'Sec-GPC': '1',
       'Connection': 'keep-alive'
+    },
+    data({ channel, date }) {
+      const todayEpoch = date.startOf('day').unix();
+      const nextDayEpoch = date.add(1, 'day').startOf('day').unix();
+      return JSON.stringify({
+        ch_ext_id: channel.site_id,
+        from: todayEpoch,
+        to: nextDayEpoch
+      })
     }
   },
-  url({ req, start, end, channel, show }) {
-    if (req === '1') {
-      return 'https://stargate.telekom.si/api/titan.tv.WebEpg/EpgFilter';
-    } else if (req === '2') {
-      return 'https://stargate.telekom.si/api/titan.tv.ContentService/EpgContentDetails';
-    } else if (req === '3') {
-      return 'https://stargate.telekom.si/api/titan.tv.WebEpg/ZapList';
-    } else {
-      throw new Error('Invalid request type');
-    }
-  },
-  async parser({ content, req, channel, start, end, show, cookie }) {
-    if (req === '1') {
-      const postdata = JSON.stringify({ includeRadioStations: true });
-      const response = await axios.post(this.url({ req }), postdata, {
-        headers: this.request.headers
-      });
-
-      const cookie = response.headers['set-cookie'][0].split(';')[0];
-
-      const postdata2 = JSON.stringify({ ch_ext_id: channel, from: start, to: end });
-      const response2 = await axios.post('https://stargate.telekom.si/api/titan.tv.WebEpg/EpgFilter', postdata2, {
-        headers: { ...this.request.headers, 'Cookie': cookie }
-      });
-
-      const data = response2.data;
-
-      const programs = data.channels.flatMap(channel => 
-        channel.shows.map(show => ({
-          title: show.title,
-          start: dayjs.unix(show.show_start).toISOString(),
-          stop: dayjs.unix(show.show_end).toISOString(),
-          description: show.description,
-          category: show.category.join(', '),
-          genre: show.genre.join(', '),
-          thumbnail: show.thumbnail,
-          channel: channel.channel_name
-        }))
-      );
-
-      return programs;
-    } else if (req === '2') {
-      const postdata = JSON.stringify({ show_id: show, timeshift: 0 });
-      const response = await axios.post(this.url({ req }), postdata, {
-        headers: { ...this.request.headers, 'Cookie': cookie }
-      });
-
-      return response.data;
-    } else if (req === '3') {
-      const postdata = JSON.stringify({ includeRadioStations: true });
-      const response = await axios.post(this.url({ req }), postdata, {
-        headers: this.request.headers
-      });
-
-      return response.data;
-    } else {
-      throw new Error('Invalid request type');
-    }
+  parser: function ({ content }) {
+    const programs = [];
+    const data = JSON.parse(content);
+    data.shows.forEach(show => {
+      const start = dayjs.unix(show.show_start).utc();
+      const stop = dayjs.unix(show.show_end).utc();
+      const programData = {
+        title: show.title,
+        description: show.summary || 'No description available',
+        start: start.toISOString(),
+        stop: stop.toISOString(),
+        thumbnail: show.thumbnail
+      }
+      programs.push(programData)
+    })
+    return programs
   },
   async channels() {
     const response = await axios.post('https://stargate.telekom.si/api/titan.tv.WebEpg/ZapList', JSON.stringify({ includeRadioStations: true }), {
@@ -94,12 +63,11 @@ module.exports = {
     });
 
     const data = response.data.data;
-
     return data.map(item => ({
-      lang: 'sl',
-      name: item.channel.title,
-      site_id: item.channel.id,
-      logo: item.channel.logo
-    }));
+      lang: 'sq',
+      name: String(item.channel.title),
+      site_id: String(item.channel.id),
+      //logo: String(item.channel.logo)
+    }))
   }
-};
+}
