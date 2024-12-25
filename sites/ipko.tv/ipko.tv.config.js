@@ -67,7 +67,7 @@ module.exports = {
       lang: 'sq',
       name: String(item.channel.title),
       site_id: String(item.channel.id),
-      logo: String(item.channel.logo)
+      //logo: String(item.channel.logo)
     }))
   }
 }
