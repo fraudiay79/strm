@@ -31,23 +31,21 @@ module.exports = {
       'Connection': 'keep-alive'
     },
     data({ channel, date }) {
-      const params = new URLSearchParams()
-      const todayEpoch = date.startOf('day').utc().valueOf()
-      const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
-      params.append(
-        JSON.stringify({ ch_ext_id: 'ipko-promo', from: 1735102800, to: 1735189199})
-      )
-
-      return params
+      const todayEpoch = date.startOf('day').unix();
+      const nextDayEpoch = date.add(1, 'day').startOf('day').unix();
+      return JSON.stringify({
+        ch_ext_id: channel.site_id,
+        from: todayEpoch,
+        to: nextDayEpoch
+      })
     }
   },
   parser: function ({ content }) {
-    const programs = []
-
-    const data = JSON.parse(content)
+    const programs = [];
+    const data = JSON.parse(content);
     data.shows.forEach(show => {
-      const start = dayjs.unix(show.show_start).utc()
-      const stop = dayjs.unix(show.show_end).utc()
+      const start = dayjs.unix(show.show_start).utc();
+      const stop = dayjs.unix(show.show_end).utc();
       const programData = {
         title: show.title,
         description: show.summary || 'No description available',
@@ -55,19 +53,16 @@ module.exports = {
         stop: stop.toISOString(),
         thumbnail: show.thumbnail
       }
-
       programs.push(programData)
     })
-
     return programs
   },
   async channels() {
     const response = await axios.post('https://stargate.ipko.tv/api/titan.tv.WebEpg/ZapList', JSON.stringify({ includeRadioStations: true }), {
       headers: this.request.headers
-    })
+    });
 
     const data = response.data.data;
-
     return data.map(item => ({
       lang: 'sq',
       name: String(item.channel.title),
