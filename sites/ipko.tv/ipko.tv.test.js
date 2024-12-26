@@ -13,7 +13,7 @@ const channel = {
 };
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toMatchObject({
+  expect(url({ date, channel })).toBe({
     url: 'https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData',
     data: '{"ch_ext_id":"ipko-promo","from":1637107200,"to":1637193600}'
   });
@@ -80,7 +80,7 @@ it('can parse response', () => {
     ]
   }`;
   
-  const result = parser({ content, channel }).map(p => {
+  const result = parser({ content }).map(p => {
     p.start = p.start.toJSON();
     p.stop = p.stop.toJSON();
     return p;
