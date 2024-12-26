@@ -83,8 +83,8 @@ it('can parse response', () => {
   }`;
 
   const result = parser({ content, channel }).map(p => {
-    p.start = dayjs.unix(p.start).toISOString();
-    p.stop = dayjs.unix(p.stop).toISOString();
+    p.start = dayjs.unix(p.show_start).toISOString();
+    p.stop = dayjs.unix(p.show_end).toISOString();
     return p;
   });
 
