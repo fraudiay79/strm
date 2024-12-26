@@ -1,19 +1,19 @@
 const { parser, url } = require('./ipko.tv.config.js')
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
-dayjs.extend(customParseFormat);
-dayjs.extend(utc);
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+dayjs.extend(customParseFormat)
+dayjs.extend(utc)
 
-const date = dayjs.utc('2024-12-24', 'YYYY-MM-DD').startOf('day');
+const date = dayjs.utc('2024-12-24', 'YYYY-MM-DD').startOf('day')
 const channel = {
   site_id: 'ipko-promo',
   xmltv_id: 'IPKOPROMO'
-};
+}
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe('https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData');
-});
+  expect(url({ date, channel })).toBe('https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData')
+})
 
 it('can parse response', () => {
   const content = `
@@ -74,13 +74,13 @@ it('can parse response', () => {
         "original_title": "IPKO Promo"
       }
     ]
-  }`;
+  }`
 
   const result = parser({ content, channel }).map(p => {
-    p.start = p.start;
-    p.stop = p.stop;
-    return p;
-  });
+    p.start = p.start
+    p.stop = p.stop
+    return p
+  })
 
   expect(result).toMatchObject([
     {
@@ -104,12 +104,12 @@ it('can parse response', () => {
       stop: "2024-12-24T10:00:00.000Z",
       thumbnail: "https://vimg.ipko.tv/mtcms/18/2/1/1821cc68-a9bf-4733-b1af-9a5d80163b78.jpg"
     }
-  ]);
-});
+  ])
+})
 
 it('can handle empty guide', () => {
   const result = parser({
     content: '{"shows":[]}'
-  });
+  })
   expect(result).toMatchObject([]);
-});
+})
