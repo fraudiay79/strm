@@ -1,19 +1,19 @@
-const { parser, url } = require('./neo.io.config.js'); // Adjust the path to your module
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
-dayjs.extend(customParseFormat);
-dayjs.extend(utc);
+const { parser, url } = require('./neo.io.config.js')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+dayjs.extend(customParseFormat)
+dayjs.extend(utc)
 
-const date = dayjs.utc('2024-12-26', 'YYYY-MM-DD').startOf('day');
+const date = dayjs.utc('2024-12-26', 'YYYY-MM-DD').startOf('day')
 const channel = {
   site_id: 'tv-slo-1',
   xmltv_id: 'TVSLO1.si'
-};
+}
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe('https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData');
-});
+  expect(url({ date, channel })).toBe('https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData')
+})
 
 it('can parse response', () => {
   const content = `
@@ -80,7 +80,7 @@ it('can parse response', () => {
             "original_title": "Dobro jutro"
         }
     ]
-  }`;
+  }`
 
   const result = parser({ content, channel }).map(p => {
     p.start = p.start
@@ -110,12 +110,12 @@ it('can parse response', () => {
       stop: "2024-12-26T09:05:00.000Z",
       thumbnail: "https://ngimg.siol.tv/sioltv/mtcmsprod/e1/2/d/e12d8eb4-693a-43d3-89d4-fd96dade9f0f.jpg"
     }
-  ]);
-});
+  ])
+})
 
 it('can handle empty guide', () => {
   const result = parser({
     content: '{"shows":[]}'
-  });
-  expect(result).toMatchObject([]);
-});
+  })
+  expect(result).toMatchObject([])
+})
