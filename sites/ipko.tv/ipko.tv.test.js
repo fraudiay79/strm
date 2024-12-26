@@ -77,6 +77,8 @@ it('can parse response', () => {
   }`;
 
   const result = parser({ content, channel }).map(p => {
+    p.start = new Date(p.start).toJSON()
+    p.stop = new Date(p.stop).toJSON()
     return p;
   });
 
