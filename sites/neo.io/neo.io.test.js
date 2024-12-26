@@ -1,19 +1,19 @@
-const { parser, url } = require('./neo.io.config.js')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
-dayjs.extend(customParseFormat)
-dayjs.extend(utc)
+const { parser, url } = require('./neo.io.config.js'); // Adjust the path to your module
+const dayjs = require('dayjs');
+const utc = require('dayjs/plugin/utc');
+const customParseFormat = require('dayjs/plugin/customParseFormat');
+dayjs.extend(customParseFormat);
+dayjs.extend(utc);
 
-const date = dayjs.utc('2024-12-26', 'YYYY-MM-DD').startOf('day')
+const date = dayjs.utc('2024-12-26', 'YYYY-MM-DD').startOf('day');
 const channel = {
   site_id: 'tv-slo-1',
   xmltv_id: 'TVSLO1.si'
-}
+};
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe('https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData')
-})
+  expect(url({ date, channel })).toBe('https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData');
+});
 
 it('can parse response', () => {
   const content = `
@@ -80,42 +80,42 @@ it('can parse response', () => {
             "original_title": "Dobro jutro"
         }
     ]
-  }`
+  }`;
 
   const result = parser({ content, channel }).map(p => {
-    p.start = p.start
-    p.stop = p.stop
-    return p
-  })
+    p.start = p.start.toISOString();
+    p.stop = p.stop.toISOString();
+    return p;
+  });
 
   expect(result).toMatchObject([
     {
       title: "Napovedujemo",
-      description: "Vabilo k ogledu na\u0161ih oddaj.",
-      start: "2024-12-26T04:00:00.000Z",
-      stop: "2024-12-26T06:00:00.000Z",
+      description: "Vabilo k ogledu naših oddaj.",
+      start: "2024-12-26T05:05:00.000Z",
+      stop: "2024-12-26T06:50:00.000Z",
       thumbnail: "https://ngimg.siol.tv/sioltv/mtcmsprod/52/0/0/5200d01a-fe5f-487e-835a-274e77227a6b.jpg"
     },
     {
-      title: "S0E0 - Hrabri zaj\u010dki: Prvi sneg",
-      description: "Hrabri zaj\u010dki so prispeli v borov gozd in izkusili prvi sneg. Bob in Bu \u0161e nikoli nista videla snega. Mami kuha koren\u010dkov kakav, Bu in Bob pa kmalu spoznata novega prijatelja, losa Danija.",
-      start: "2024-12-26T06:00:00.000Z",
-      stop: "2024-12-26T08:00:00.000Z",
+      title: "S0E0 - Hrabri zajčki: Prvi sneg",
+      description: "Hrabri zajčki so prispeli v borov gozd in izkusili prvi sneg. Bob in Bu še nikoli nista videla snega. Mami kuha korenčkov kakav, Bu in Bob pa kmalu spoznata novega prijatelja, losa Danija.",
+      start: "2024-12-26T06:50:00.000Z",
+      stop: "2024-12-26T07:00:00.000Z",
       thumbnail: "https://ngimg.siol.tv/sioltv/mtcmsprod/d6/4/5/d6456f4a-4f0a-4825-90c1-1749abd59688.jpg"
     },
     {
       title: "Dobro jutro",
-      description: "Oddaja Dobro jutro poleg informativnih in zabavnih vsebin podaja koristne nasvete o najrazli\u010dnej\u0161ih tematikah iz vsakdanjega \u017eivljenja.",
-      start: "2024-12-26T08:00:00.000Z",
-      stop: "2024-12-26T10:00:00.000Z",
+      description: "Oddaja Dobro jutro poleg informativnih in zabavnih vsebin podaja koristne nasvete o najrazličnejših tematikah iz vsakdanjega življenja.",
+      start: "2024-12-26T07:00:00.000Z",
+      stop: "2024-12-26T10:05:00.000Z",
       thumbnail: "https://ngimg.siol.tv/sioltv/mtcmsprod/e1/2/d/e12d8eb4-693a-43d3-89d4-fd96dade9f0f.jpg"
     }
-  ])
-})
+  ]);
+});
 
 it('can handle empty guide', () => {
   const result = parser({
     content: '{"shows":[]}'
   });
   expect(result).toMatchObject([]);
-})
+});
