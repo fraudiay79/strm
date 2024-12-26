@@ -12,7 +12,7 @@ module.exports = {
   site: 'neo.io',
   timezone: 'Europe/Ljubljana',
   days: 5,
-  url: 'https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData',
+  url({ date, channel }) { return 'https://stargate.telekom.si/api/titan.tv.WebEpg/GetWebEpgData' },
   request: {
     method: 'POST',
     headers: {
