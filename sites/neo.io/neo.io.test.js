@@ -33,14 +33,14 @@ it('can parse response', () => {
                 "napovednik"
             ],
             "year": 0,
-            "summary": "Vabilo k ogledu na\u0161ih oddaj.",
+            "summary": "Vabilo k ogledu naših oddaj.",
             "categories": "Ostalo",
             "stb_only": false,
             "is_live": false,
             "original_title": "Napovedujemo"
         },
         {
-            "title": "S0E0 - Hrabri zaj\u010dki: Prvi sneg",
+            "title": "S0E0 - Hrabri zajčki: Prvi sneg",
             "show_start": 1735192200,
             "show_end": 1735192800,
             "timestamp": "6:50 - 7:00",
@@ -53,8 +53,8 @@ it('can parse response', () => {
                 "risanka"
             ],
             "year": 2020,
-            "summary": "Hrabri zaj\u010dki so prispeli v borov gozd in izkusili prvi sneg. Bob in Bu \u0161e nikoli nista videla snega. Mami kuha koren\u010dkov kakav, Bu in Bob pa kmalu spoznata novega prijatelja, losa Danija.",
-            "categories": "Otro\u0161ki/Mladinski",
+            "summary": "Hrabri zajčki so prispeli v borov gozd in izkusili prvi sneg. Bob in Bu še nikoli nista videla snega. Mami kuha korenčkov kakav, Bu in Bob pa kmalu spoznata novega prijatelja, losa Danija.",
+            "categories": "Otroški/Mladinski",
             "stb_only": false,
             "is_live": false,
             "original_title": "S0E0 - Brave Bunnies"
@@ -73,7 +73,7 @@ it('can parse response', () => {
                 "zabavna oddaja"
             ],
             "year": 2024,
-            "summary": "Oddaja Dobro jutro poleg informativnih in zabavnih vsebin podaja koristne nasvete o najrazli\u010dnej\u0161ih tematikah iz vsakdanjega \u017eivljenja.",
+            "summary": "Oddaja Dobro jutro poleg informativnih in zabavnih vsebin podaja koristne nasvete o najrazličnejših tematikah iz vsakdanjega življenja.",
             "categories": "Razvedrilni program",
             "stb_only": false,
             "is_live": false,
@@ -82,7 +82,11 @@ it('can parse response', () => {
     ]
   }`;
 
-  const result = parser({ content, channel });
+  const result = parser({ content, channel }).map(p => {
+    p.start = dayjs(p.start).toISOString();
+    p.stop = dayjs(p.stop).toISOString();
+    return p;
+  });
 
   expect(result).toMatchObject([
     {
