@@ -12,7 +12,7 @@ const channel = {
 };
 
 it('can generate valid url', () => {
-  expect(url({ date, channel })).toBe('https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData');
+  expect(url()).toBe('https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData');
 });
 
 it('can parse response', () => {
