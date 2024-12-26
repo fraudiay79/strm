@@ -1,4 +1,4 @@
-const { parser, url } = require('./path/to/your/module'); // Adjust the path to your module
+const { parser, url } = require('./chada.ma.config.js'); // Adjust the path to your module
 const axios = require('axios');
 const dayjs = require('dayjs');
 const cheerio = require('cheerio');
