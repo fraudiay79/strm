@@ -8,12 +8,6 @@ https://www.ipko.tv/tv-guide
 npm run grab --- --site=ipko.tv
 ```
 
-### Update channel list
-
-```sh
-npm run channels:parse --- --config=./sites/ipko.tv/ipko.tv.config.js --output=./sites/ipko.tv/ipko.tv.channels.xml
-```
-
 ### Test
 
 ```sh
