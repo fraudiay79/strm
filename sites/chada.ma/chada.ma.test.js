@@ -1,4 +1,4 @@
-const { parser, url } = require('./chada.ma.config.js'); // Adjust the path to your module
+const { parser, url } = require('./path/to/your/module'); // Adjust the path to your module
 const axios = require('axios');
 const dayjs = require('dayjs');
 const cheerio = require('cheerio');
@@ -37,8 +37,8 @@ it('can parse response', () => {
   const content = mockHtmlContent;
 
   const result = parser({ content }).map(p => {
-    p.start = dayjs(p.start).toISOString();
-    p.stop = dayjs(p.stop).toISOString();
+    p.start = dayjs(p.start).tz('Africa/Casablanca').format('YYYY-MM-DDTHH:mm:ssZ');
+    p.stop = dayjs(p.stop).tz('Africa/Casablanca').format('YYYY-MM-DDTHH:mm:ssZ');
     return p;
   });
 
