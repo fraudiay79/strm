@@ -12,7 +12,7 @@ module.exports = {
   site: 'ipko.tv',
   timezone: 'Europe/Belgrade',
   days: 5,
-  url: 'https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData',
+  url({ date, channel }) { return 'https://stargate.ipko.tv/api/titan.tv.WebEpg/GetWebEpgData' },
   request: {
     method: 'POST',
     headers: {
