@@ -82,11 +82,7 @@ it('can parse response', () => {
     ]
   }`;
 
-  const result = parser({ content, channel }).map(p => {
-    p.start = p.start
-    p.stop = p.stop
-    return p
-  })
+  const result = parser({ content, channel });
 
   expect(result).toMatchObject([
     {
