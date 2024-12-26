@@ -1,4 +1,4 @@
-const { parser, url } = require('./ipko.tv.config.js'); // Adjust the path to your module
+const { parser, url } = require('./ipko.tv.config.js')
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
@@ -77,6 +77,8 @@ it('can parse response', () => {
   }`;
 
   const result = parser({ content, channel }).map(p => {
+    p.start = p.start.toJSON();
+    p.stop = p.stop.toJSON();
     return p;
   });
 
@@ -84,11 +86,24 @@ it('can parse response', () => {
     {
       title: "IPKO Promo",
       description: "No description available",
-      start: "2024-12-24T08:00:00.000Z",
-      stop: "2024-12-24T10:00:00.000Z",
+      start: "2024-11-23T04:00:00.000Z",
+      stop: "2024-11-23T06:00:00.000Z",
       thumbnail: "https://vimg.ipko.tv/mtcms/18/2/1/1821cc68-a9bf-4733-b1af-9a5d80163b78.jpg"
     },
-    // additional parsed objects...
+    {
+      title: "IPKO Promo",
+      description: "No description available",
+      start: "2024-11-23T06:00:00.000Z",
+      stop: "2024-11-23T08:00:00.000Z",
+      thumbnail: "https://vimg.ipko.tv/mtcms/18/2/1/1821cc68-a9bf-4733-b1af-9a5d80163b78.jpg"
+    },
+    {
+      title: "IPKO Promo",
+      description: "No description available",
+      start: "2024-11-23T08:00:00.000Z",
+      stop: "2024-11-23T10:00:00.000Z",
+      thumbnail: "https://vimg.ipko.tv/mtcms/18/2/1/1821cc68-a9bf-4733-b1af-9a5d80163b78.jpg"
+    }
   ]);
 });
 
