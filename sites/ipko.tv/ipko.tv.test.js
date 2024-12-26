@@ -1,11 +1,11 @@
-const { parser, url } = require('./path/to/your/module'); // Adjust the path to your module
+const { parser, url } = require('./ipko.tv.config.js'); // Adjust the path to your module
 const dayjs = require('dayjs');
 const utc = require('dayjs/plugin/utc');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
 dayjs.extend(customParseFormat);
 dayjs.extend(utc);
 
-const date = dayjs.utc('2021-11-17', 'YYYY-MM-DD').startOf('day');
+const date = dayjs.utc('2024-12-24', 'YYYY-MM-DD').startOf('day');
 const channel = {
   site_id: 'ipko-promo',
   xmltv_id: 'IPKOPROMO'
