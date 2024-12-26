@@ -1,6 +1,6 @@
 # ipko.tv
 
-https://www.ipko.tv/tv-guide/
+https://www.ipko.tv/tv-guide
 
 ### Download the guide
 
