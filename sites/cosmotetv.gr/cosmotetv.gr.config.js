@@ -9,7 +9,7 @@ dayjs.extend(timezone)
 
 module.exports = {
   site: 'cosmotetv.gr',
-  days: 2,
+  days: 5,
   request: {
     method: 'GET',
     headers: {
@@ -33,20 +33,20 @@ module.exports = {
   parser: function ({ date, content }) {
     let programs = []
     const data = JSON.parse(content)
-	data.channels.forEach(channel => {
+    data.channels.forEach(channel => {
       channel.items.forEach(item => {
-      const start = dayjs(item.startTime).utc().toISOString()
-      const stop = dayjs(item.endTime).utc().toISOString
-      programs.push({
-        title: item.title,
-		description: item.description || 'No description available',
-        category: item.qoe.genre,
-		image: item.thumbnails.standard
-        start,
-        stop
+        const start = dayjs(item.startTime).utc().toISOString()
+        const stop = dayjs(item.endTime).utc().toISOString()
+        programs.push({
+          title: item.title,
+          description: item.description || 'No description available',
+          category: item.qoe.genre,
+          image: item.thumbnails.standard,
+          start,
+          stop
+        })
       })
     })
-
     return programs
   },
   async channels() {
@@ -61,7 +61,7 @@ module.exports = {
         lang: 'el',
         site_id: item.callSign,
         name: item.title,
-		logo: item.logos.square
+        logo: item.logos.square
       }
     })
   }
