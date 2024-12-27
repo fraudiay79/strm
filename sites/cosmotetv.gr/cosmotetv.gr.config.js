@@ -11,6 +11,9 @@ module.exports = {
   site: 'cosmotetv.gr',
   days: 5,
   request: {
+    cache: {
+      ttl: 60 * 60 * 1000 // 1 hour
+    },
     method: 'GET',
     headers: {
       'referer': 'https://www.cosmotetv.gr/',
@@ -28,7 +31,7 @@ module.exports = {
     const todayEpoch = date.startOf('day').utc().valueOf()
     // Get the epoch timestamp for the next day
     const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
-    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${todayEpoch}&to=${nextDayEpoch}&callSigns=${channel.site_id}`
+    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${todayEpoch}&to=${nextDayEpoch}&callSigns=${channel.site_id}&endingIncludedInRange=false`
   },
   parser: function ({ date, content }) {
     let programs = []
