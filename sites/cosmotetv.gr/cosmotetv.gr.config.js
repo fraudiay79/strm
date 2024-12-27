@@ -49,7 +49,7 @@ module.exports = {
     })
     return programs
   },
-  async function channels() {
+  async channels() {
   const axios = require('axios');
   try {
     const response = await axios.get('https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/channels/all/el');
