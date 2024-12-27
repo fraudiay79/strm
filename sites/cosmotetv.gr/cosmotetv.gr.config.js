@@ -35,7 +35,7 @@ module.exports = {
     const todayEpoch = date.startOf('day').utc().valueOf()
     // Get the epoch timestamp for the next day
     const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
-    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${todayEpoch}&to=${nextDayEpoch}&callSigns=${channel.site_id}&endingIncludedInRange=false`
+    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=1735250400&to=1735336799&callSigns=${channel.site_id}&endingIncludedInRange=false`
   },
   parser: function ({ date, content }) {
     let programs = []
