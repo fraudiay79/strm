@@ -31,11 +31,9 @@ module.exports = {
     }
   },
   url: function ({date, channel}) {
-    // Get the epoch timestamp
-    const todayEpoch = date.startOf('day').utc().valueOf()
-    // Get the epoch timestamp for the next day
-    const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
-    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${todayEpoch}&to=${nextDayEpoch}&callSigns=${channel.site_id}&endingIncludedInRange=false`
+    const startOfDay = dayjs(date).startOf('day').utc().unix()
+    const endOfDay = dayjs(date).endOf('day').utc().unix()
+    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${startOfDay}&to=${endOfDay}&callSigns=${channel.site_id}&endingIncludedInRange=false`
   },
   parser: function ({ date, content }) {
     let programs = []
