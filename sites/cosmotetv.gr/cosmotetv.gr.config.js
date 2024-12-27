@@ -21,7 +21,8 @@ module.exports = {
       'Sec-Fetch-Dest': 'empty',
       'Sec-Fetch-Mode': 'cors',
       'Sec-Fetch-Site': 'cross-site'
-    },
+    }
+  },
   url: function ({date, channel}) {
     // Get the epoch timestamp
     const todayEpoch = date.startOf('day').utc().valueOf()
