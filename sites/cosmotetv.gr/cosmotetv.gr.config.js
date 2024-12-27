@@ -1,0 +1,67 @@
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+const timezone = require('dayjs/plugin/timezone')
+
+dayjs.extend(utc)
+dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
+
+module.exports = {
+  site: 'cosmotetv.gr',
+  days: 2,
+  request: {
+    method: 'GET',
+    headers: {
+      'referer': 'https://www.cosmotetv.gr/',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+      'Accept': '*/*',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'Origin': 'https://www.cosmotetv.gr',
+      'Sec-Fetch-Dest': 'empty',
+      'Sec-Fetch-Mode': 'cors',
+      'Sec-Fetch-Site': 'cross-site'
+    },
+  url: function ({date, channel}) {
+    // Get the epoch timestamp
+    const todayEpoch = date.startOf('day').utc().valueOf()
+    // Get the epoch timestamp for the next day
+    const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
+    return `https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/listings/el?from=${todayEpoch}&to=${nextDayEpoch}&callSigns=${channel.site_id}`
+  },
+  parser: function ({ date, content }) {
+    let programs = []
+    const data = JSON.parse(content)
+	data.channels.forEach(channel => {
+      channel.items.forEach(item => {
+      const start = dayjs(item.startTime).utc().toISOString()
+      const stop = dayjs(item.endTime).utc().toISOString
+      programs.push({
+        title: item.title,
+		description: item.description || 'No description available',
+        category: item.qoe.genre,
+		image: item.thumbnails.standard
+        start,
+        stop
+      })
+    })
+
+    return programs
+  },
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/channels/all/el`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.channels.map(item => {
+      return {
+        lang: 'el',
+        site_id: item.callSign,
+        name: item.title,
+		logo: item.logos.square
+      }
+    })
+  }
+}
