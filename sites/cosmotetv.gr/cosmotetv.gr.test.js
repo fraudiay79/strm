@@ -66,8 +66,8 @@ it('can parse response', () => {
   expect(result).toMatchObject([
     {
       title: "Τι Λέει ο Νόμος",
-      description: "Description 2",
-      category: "νημερωτική εκπομπή. Συζήτηση με τους εισηγητές των κομμάτων για το νομοθετικό έργο.",
+      description: "νημερωτική εκπομπή. Συζήτηση με τους εισηγητές των κομμάτων για το νομοθετικό έργο.",
+      category: "Special",
       image: "https://gr-ermou-prod-cache05.static.cdn.cosmotetvott.gr/ote-prod/70/280/040029714812000800_1734415727199.jpg",
       start: "2024-12-26T23:00:00.000Z",
       stop: "2024-12-27T00:00:00.000Z"
