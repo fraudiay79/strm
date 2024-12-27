@@ -49,18 +49,27 @@ module.exports = {
     })
     return programs
   },
-  async channels() {
-    const axios = require('axios')
-    const data = await axios
-      .get(`https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/channels/all/el`)
-      .then(r => r.data)
-      .catch(console.log)
+  async function channels() {
+  const axios = require('axios');
+  try {
+    const response = await axios.get('https://mwapi-prod.cosmotetvott.gr/api/v3.4/epg/channels/all/el');
+    const data = response.data;
 
-    return data.channels.map(item => ({
+    if (data && data.channels) {
+      return data.channels.map(item => ({
         lang: 'el',
         site_id: item.callSign,
         name: item.title,
         logo: item.logos.square
-    }))
+      }));
+    } else {
+      console.error('Unexpected response structure:', data);
+      return [];
+    }
+  } catch (error) {
+    console.error('Error fetching channel data:', error);
+    return [];
   }
+}
+
 }
