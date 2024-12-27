@@ -14,7 +14,7 @@ module.exports = {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
     },
-    method: 'GET',
+    //method: 'GET',
     headers: {
       'referer': 'https://www.cosmotetv.gr/',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
