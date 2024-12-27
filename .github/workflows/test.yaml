@@ -24,7 +24,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm test --- chada.ma
+          npm test --- elcinema.com
           #npm run channels:parse --- --config=./sites/chada.ma/chada.ma.config.js --output=./sites/chada.ma/chada.ma.channels.xml
           #npm run grab --- --site=chada.ma --maxConnections=20 --output=guides/chada.ma.xml --days=1 --timeout=90000
    
