@@ -56,13 +56,11 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
-    return data.channels.map(item => {
-      return {
+    return data.channels.map(item => ({
         lang: 'el',
         site_id: item.callSign,
         name: item.title,
         logo: item.logos.square
-      }
-    })
+    }))
   }
 }
