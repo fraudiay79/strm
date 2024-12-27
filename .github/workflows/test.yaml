@@ -24,15 +24,15 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- elcinema.com
+          npm test --- cosmotetv.gr
           #npm run channels:parse --- --config=./sites/cosmotetv.gr/cosmotetv.gr.config.js --output=./sites/cosmotetv.gr/cosmotetv.gr.channels.xml
-          npm run grab --- --site=cosmotetv.gr --maxConnections=20 --output=guides/cosmotetv.gr.xml --days=1 --timeout=90000
+          #npm run grab --- --site=cosmotetv.gr --maxConnections=20 --output=guides/cosmotetv.gr.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/cosmotetv.gr.xml
+        #git add -f guides/cosmotetv.gr.xml
         #git add -f sites/cosmotetv.gr/cosmotetv.gr.channels.xml
         git commit -m "Update xml"
         git push
