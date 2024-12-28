@@ -32,6 +32,7 @@ module.exports = {
       'Sec-Fetch-Mode': 'navigate',
       'Sec-Fetch-Site': 'same-origin'
     }
+  },
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
 
