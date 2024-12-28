@@ -23,7 +23,6 @@ module.exports = {
       'Accept': '*/*',
       'Accept-Language': 'en-US,en;q=0.9',
       'Accept-Encoding': 'gzip, deflate, br, zstd',
-      'Cookie': 'usprivacy=1N--; _gid=GA1.2.1059592218.1735355009; _gat=1; _elcinema-web_session=dEtqdGVIcWVNZWVtcnhyYmFRdEp5NkUrMmxkQm9LWCtacHpYTWtJVlZuUVl5am03Z2IvTmFTTlZLVkJDZHBOU1hsYnJzSWk5Um5JSzRXV1NVVDQyemN3S2MxUFArOG5Pc3Z0Q1VjZjJERGRwRXJsTGFqS0lBSlYxK2srTWtFL2tqN1pDcjBRd3dURUxrNEd1a0lyZ3lnPT0tLWpYRU9FRUZ4RTkxc2t2dHJpdEFKZ1E9PQ%3D%3D--87ca8c3f05a221d2871a65f90c4a6f479d8ecc3c; _ga_CMH7Z5CYPN=GS1.1.1735355009.2.1.1735355026.43.0.0; _ga=GA1.1.1193925520.1734110321',
       'Sec-Ch-Ua': '"Not.A/Brand";v="24", "Chromium";v="131", "Google Chrome";v="131"',
       'Sec-Ch-Ua-Mobile': '?0',
       'Sec-Fetch-User': '?1',
