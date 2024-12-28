@@ -26,13 +26,13 @@ jobs:
           npm install
           #npm test --- cosmotetv.gr
           #npm run channels:parse --- --config=./sites/cosmotetv.gr/cosmotetv.gr.config.js --output=./sites/cosmotetv.gr/cosmotetv.gr.channels.xml
-          npm run grab --- --site=elcinema.com --maxConnections=20 --lang=en --output=guides/elcinema.com.xml --days=1 --timeout=90000
+          npm run grab --- --site=tv.trueid.net --maxConnections=20 --lang=en --output=guides/tv.trueid.net.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/elcinema.com.xml
+        git add -f guides/tv.trueid.net.xml
         #git add -f sites/cosmotetv.gr/cosmotetv.gr.channels.xml
         git commit -m "Update xml"
         git push
