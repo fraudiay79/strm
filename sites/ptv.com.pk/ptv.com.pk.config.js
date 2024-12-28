@@ -61,8 +61,11 @@ module.exports = {
   },
   parser: function ({ content, date }) {
     let programs = [];
-    
+
     try {
+      if (content.trim().startsWith('<')) {
+        throw new Error('Received HTML instead of JSON');
+      }
       const items = JSON.parse(content);
       items.forEach(item => {
         const start = parseProgramTime(item.programTime);
