@@ -30,13 +30,21 @@ def create_m3u8_file(m3u8_url, channel_name):
         print(f"No m3u8 URL found for channel {channel_name}")
         return
 
-    # Create the M3U8 file with the extracted link
-    file_name = f"{channel_name}.m3u8"
-    m3u_content = '#EXTM3U\n'
-    m3u_content += f'#EXTINF:-1, {channel_name}\n{m3u8_url}\n'
+    # Example M3U8 content structure
+    example_m3u8_content = f"""#EXTM3U
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1360000,BANDWIDTH=1710000,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS="avc1.4d001e,mp4a.40.2",CLOSED-CAPTIONS=NONE
+{m3u8_url}
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2420000,BANDWIDTH=3020000,RESOLUTION=854x480,FRAME-RATE=25.000,CODECS="avc1.4d001e,mp4a.40.2",CLOSED-CAPTIONS=NONE
+{m3u8_url}
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=4300000,BANDWIDTH=5380000,RESOLUTION=1280x720,FRAME-RATE=25.000,CODECS="avc1.4d001f,mp4a.40.2",CLOSED-CAPTIONS=NONE
+{m3u8_url}
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=6410000,BANDWIDTH=8010000,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.4d0028,mp4a.40.2",CLOSED-CAPTIONS=NONE
+{m3u8_url}
+"""
 
+    file_name = f"{channel_name}.m3u8"
     with codecs.open(file_name, "w", "utf-8") as file:
-        file.write(m3u_content)
+        file.write(example_m3u8_content)
     print(f"M3U8 file '{file_name}' created with the link: {m3u8_url}")
 
 # Read channel information from the JSON file
