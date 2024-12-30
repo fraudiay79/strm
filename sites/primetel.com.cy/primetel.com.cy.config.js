@@ -20,7 +20,7 @@ module.exports = {
       'X-Requested-With': 'XMLHttpRequest'
     }
   }
-  url: function ({ date, channel }) {
+  url: function ({ date }) {
     const daysOfWeek = {
       1: '1',
       2: '2',
