@@ -10,7 +10,7 @@ dayjs.extend(customParseFormat);
 
 module.exports = {
   site: 'primetel.com.cy',
-  days: 7, // maxdays=7
+  days: 7,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -19,10 +19,20 @@ module.exports = {
       'Accept-Encoding': 'gzip, deflate',
       'X-Requested-With': 'XMLHttpRequest'
     }
-  },
-  url({ date }) {
-    const formattedDate = date.add(2, 'days').format('YYYY-MM-DD');
-    return `https://primetel.com.cy/tv_guide_json/tv${formattedDate}.json`;
+  }
+  url: function ({ date, channel }) {
+    const daysOfWeek = {
+      1: '1',
+      2: '2',
+      3: '3',
+      4: '4',
+      5: '5',
+      6: '6',
+      7: '7'
+    }
+    const day = date.day()
+
+    return `https://primetel.com.cy/tv_guide_json/tv${daysOfWeek[day]}.json`
   },
   async parser({ content, channel }) {
     const shows = [];
@@ -72,7 +82,7 @@ module.exports = {
     return shows;
   },
   async channels() {
-    const url = `https://primetel.com.cy/tv_guide_json/tv${dayjs().format('YYYY-MM-DD')}.json`;
+    const url = `https://primetel.com.cy/tv_guide_json/tv${daysOfWeek[day]}.json`;
     const response = await axios.get(url, {
       headers: {
         'Accept-Encoding': 'gzip, deflate',
