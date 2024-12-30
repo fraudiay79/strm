@@ -25,14 +25,14 @@ jobs:
       run: |
           npm install
           #npm test --- kolla.tv
-          npm run channels:parse --- --config=./sites/kolla.tv/kolla.tv.config.js --output=./sites/kolla.tv/kolla.tv.channels.xml
-          #npm run grab --- --site=ptv.com.pk --maxConnections=20 --output=guides/ptv.com.pk.xml --days=1 --timeout=90000
+          #npm run channels:parse --- --config=./sites/kolla.tv/kolla.tv.config.js --output=./sites/kolla.tv/kolla.tv.channels.xml
+          npm run grab --- --site=prosto.tv --maxConnections=20 --output=guides/prosto.tv.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        #git add -f guides/ptv.com.pk.xml
-        git add -f sites/kolla.tv/kolla.tv.channels.xml
+        git add -f guides/prosto.tv.xml
+        #git add -f sites/kolla.tv/kolla.tv.channels.xml
         git commit -m "Update xml"
         git push
