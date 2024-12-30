@@ -32,7 +32,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python mediabay.py mediabay.json
+            python mediabay.py
       - name: commit and push files
         run: |
           git config --local user.email ""
