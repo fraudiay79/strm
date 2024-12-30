@@ -16,7 +16,7 @@ def extract_m3u8_url(channel_name):
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
         'Accept': 'application/json',
         'Accept-Encoding': 'gzip, deflate, br, zstd',
-		'Cookie': '_ga=GA1.1.1151399358.1734108649; _fbp=fb.1.1734108648923.42978377352479572; _ym_uid=1692727402762493332; _ym_d=1734108650; _ga_PDV69TQ9S4=GS1.1.1735576265.5.0.1735576265.60.0.0; SERVERID=app5; PHPSESSID=udb3fqmmv3gmu624rkj5aqnons; _ym_isad=1',
+        'Cookie': '_ga=GA1.1.1151399358.1734108649; _fbp=fb.1.1734108648923.42978377352479572; _ym_uid=1692727402762493332; _ym_d=1734108650; _ga_PDV69TQ9S4=GS1.1.1735576265.5.0.1735576265.60.0.0; SERVERID=app5; PHPSESSID=udb3fqmmv3gmu624rkj5aqnons; _ym_isad=1',
         'Connection': 'keep-alive'
     }
     try:
