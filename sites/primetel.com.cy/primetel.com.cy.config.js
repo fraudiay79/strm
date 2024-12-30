@@ -34,7 +34,7 @@ module.exports = {
 
     return `https://primetel.com.cy/tv_guide_json/tv${daysOfWeek[day]}.json`
   },
-  async parser({ content, channel }) {
+  parser: function ({ date, content }) {
     const shows = [];
     let data;
 
