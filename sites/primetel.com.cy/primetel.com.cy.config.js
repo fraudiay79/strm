@@ -25,52 +25,54 @@ module.exports = {
     return `https://primetel.com.cy/tv_guide_json/tv${dayOfWeek}.json`;
   },
   parser: function ({ date, content, channel }) {
-    const shows = [];
-    let data;
+  const shows = [];
+  let data;
 
-    try {
-      if (content.trim().length === 0) {
-        throw new Error('Empty response content');
-      }
-
-      if (!isJSON(content)) {
-        throw new Error('Response is not in JSON format');
-      }
-
-      data = JSON.parse(content);
-    } catch (error) {
-      console.error('Error parsing JSON:', error);
-      return shows; // Return empty shows array if parsing fails
+  try {
+    if (content.trim().length === 0) {
+      throw new Error('Empty response content');
     }
 
-    data.forEach(epg => {
-      if (epg.id === channel.site_id) {
-        epg.pr.forEach(pr => {
-          const show = {
-            title: pr.title || '',
-            start: dayjs.utc(pr.starting).toISOString(),
-            stop: dayjs.utc(pr.ending).toISOString(),
-            description: pr.ld || 'No description available'
-          };
-          if (pr.ld) {
-            const seasonEpisodeMatch = pr.ld.match(/Season#(\d+)Episode#(\d+)/);
-            if (seasonEpisodeMatch) {
-              show.episode = `S${seasonEpisodeMatch[1]}E${seasonEpisodeMatch[2]}`;
-              show.description = show.description.replace(/Season#\d+Episode#\d+/, '').trim();
-            }
-            const synopsisMatch = pr.ld.match(/.*?Synopsis:/);
-            if (synopsisMatch) {
-              show.subtitle = pr.ld.split('Synopsis:')[0].trim();
-              show.description = pr.ld.split('Synopsis:')[1].trim();
-            }
-          }
-          shows.push(show);
-        });
-      }
-    });
+    if (!isJSON(content)) {
+      throw new Error('Response is not in JSON format');
+    }
 
-    return shows;
-  },
+    data = JSON.parse(content);
+  } catch (error) {
+    console.error('Error parsing JSON:', error);
+    return shows; // Return empty shows array if parsing fails
+  }
+
+  const channels = Object.values(data);
+  channels.forEach(epg => {
+    if (epg.id === parseInt(channel.site_id)) {
+      epg.pr.forEach(pr => {
+        const show = {
+          title: pr.title || '',
+          start: dayjs.utc(pr.starting).toISOString(),
+          stop: dayjs.utc(pr.ending).toISOString(),
+          description: pr.description || 'No description available'
+        };
+
+        if (pr.description) {
+          const seasonEpisodeMatch = pr.description.match(/Season#(\d+)Episode#(\d+)/);
+          if (seasonEpisodeMatch) {
+            show.episode = `S${seasonEpisodeMatch[1]}E${seasonEpisodeMatch[2]}`;
+            show.description = show.description.replace(/Season#\d+Episode#\d+/, '').trim();
+          }
+          const synopsisMatch = pr.description.match(/.*?Synopsis:/);
+          if (synopsisMatch) {
+            show.subtitle = pr.description.split('Synopsis:')[0].trim();
+            show.description = pr.description.split('Synopsis:')[1].trim();
+          }
+        }
+        shows.push(show);
+      });
+    }
+  });
+
+  return shows;
+},
   async channels() {
     const url = `https://primetel.com.cy/tv_guide_json/tv1.json`;
     try {
