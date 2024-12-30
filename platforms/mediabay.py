@@ -1,9 +1,14 @@
 import urllib.request
 import json
 import codecs
+import os
 
 # JSON file containing channel information
 json_file = 'mediabay.json'
+
+# Create the 'links' directory if it doesn't exist
+output_dir = 'links'
+os.makedirs(output_dir, exist_ok=True)
 
 def extract_m3u8_url(channel_name):
     api_url = f"https://api.mediabay.tv/v2/channels/thread/{channel_name}"
@@ -14,16 +19,34 @@ def extract_m3u8_url(channel_name):
 
         # Extract the m3u8 URL from the JSON response
         m3u8_url = data.get('data', [])[0].get('threadAddress', '')
-
-        if m3u8_url:
-            return m3u8_url
-        else:
+        if not m3u8_url:
             print(f"m3u8 URL not found for channel: {channel_name}")
             return None
+
+        # Modify URL based on bandwidth
+        if 'playlist.m3u8' in m3u8_url:
+            # Example data includes bandwidth information
+            bandwidth = determine_bandwidth(data.get('data', [])[0])
+
+            if bandwidth == 1710000:
+                m3u8_url = m3u8_url.replace('playlist.m3u8', 'tracks-v4a1/mono.m3u8')
+            elif bandwidth == 3020000:
+                m3u8_url = m3u8_url.replace('playlist.m3u8', 'tracks-v3a1/mono.m3u8')
+            elif bandwidth == 5380000:
+                m3u8_url = m3u8_url.replace('playlist.m3u8', 'tracks-v2a1/mono.m3u8')
+            elif bandwidth == 8010000:
+                m3u8_url = m3u8_url.replace('playlist.m3u8', 'tracks-v1a1/mono.m3u8')
+
+        return m3u8_url
 
     except Exception as e:
         print(f"An error occurred while fetching channel {channel_name}: {e}")
         return None
+
+def determine_bandwidth(data):
+    # This function should be adapted based on how bandwidth is determined in the response data
+    # Assuming the data structure contains bandwidth information like this
+    return data.get('bandwidth', None)
 
 def create_m3u8_file(m3u8_url, channel_name):
     if not m3u8_url:
@@ -42,7 +65,7 @@ def create_m3u8_file(m3u8_url, channel_name):
 {m3u8_url}
 """
 
-    file_name = f"{channel_name}.m3u8"
+    file_name = os.path.join(output_dir, f"{channel_name}.m3u8")
     with codecs.open(file_name, "w", "utf-8") as file:
         file.write(example_m3u8_content)
     print(f"M3U8 file '{file_name}' created with the link: {m3u8_url}")
