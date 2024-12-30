@@ -1,0 +1,294 @@
+[
+    {
+        "name": "MediaBay",
+        "slug": "links",
+		    "url": "https://api.mediabay.tv/v2/channels/thread/CHANNEL_NAME",
+        "method": "GET",
+        "pattern": "<source.*?src=\"(.*?)\"",
+        "expire_duration": "1D",
+        "mode": "variant",
+        "output_filter": "token",
+        "headers": {},
+        "channels": [
+            {
+                "name": "NRBTV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "420"
+                    }
+                ]
+            },
+            {
+                "name": "Радио Русская Реклама",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "472"
+                    }
+                ]
+            },
+            {
+                "name": "Arezo TV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "569"
+                    }
+                ]
+            },
+            {
+                "name": "TOLO TV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "576"
+                    }
+                ]
+            },
+            {
+                "name": "TOLO News",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "577"
+                    }
+                ]
+            },
+            {
+                "name": "Noor TV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "588"
+                    }
+                ]
+            },
+            {
+                "name": "ATV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "606"
+                    }
+                ]
+            },
+            {
+                "name": "Real TV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "475"
+                    }
+                ]
+            },
+            {
+                "name": "ARB",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "571"
+                    }
+                ]
+            },
+            {
+                "name": "ARB 24",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "572"
+                    }
+                ]
+            },
+            {
+                "name": "AzTV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "114"
+                    }
+                ]
+            },
+            {
+                "name": "Ictimai TV",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "90"
+                    }
+                ]
+            },
+            {
+                "name": "Xezer",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "104"
+                    }
+                ]
+            },
+            {
+                "name": "Medeniyyet",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "90"
+                    }
+                ]
+            },
+            {
+                "name": "ATV (Azad Azerbaycan TV)",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "86"
+                    }
+                ]
+            },
+            {
+                "name": "CBC",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "154"
+                    }
+                ]
+            },
+            {
+                "name": "Музыка (KG)",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "560"
+                    }
+                ]
+            },
+            {
+                "name": "Илим Билим",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "611"
+                    }
+                ]
+            },
+            {
+                "name": "Ала-тоо 24",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "621"
+                    }
+                ]
+            },
+            {
+                "name": "Пирамида",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "655"
+                    }
+                ]
+            },
+            {
+                "name": "Ош Пирим",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "697"
+                    }
+                ]
+            },
+            {
+                "name": "ЭЛ ТР Кыргызстан",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "162"
+                    }
+                ]
+            },
+            {
+                "name": "Хабар 24",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "439"
+                    }
+                ]
+            },
+            {
+                "name": "Новое телевидение (Караганда)",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "467"
+                    }
+                ]
+            },
+            {
+                "name": "Казахские фильмы",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "545"
+                    }
+                ]
+            },
+            {
+                "name": "Jibek Joly",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "682"
+                    }
+                ]
+            },
+            {
+                "name": "Muzzone",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "702"
+                    }
+                ]
+            },
+            {
+                "name": "Атамекен",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "407"
+                    }
+                ]
+            },
+            {
+                "name": "Таджикская Музыка",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "495"
+                    }
+                ]
+            },
+            {
+                "name": "Таджикские фильмы",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "544"
+                    }
+                ]
+            },
+            {
+                "name": "Varzish",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "596"
+                    }
+                ]
+            }
+        ]
+    }
+]
