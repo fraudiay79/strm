@@ -18,26 +18,26 @@ def extract_m3u8_url(channel_name):
         if m3u8_url:
             return m3u8_url
         else:
-            print("m3u8 URL not found")
+            print(f"m3u8 URL not found for channel: {channel_name}")
             return None
 
     except Exception as e:
-        print(f"An error occurred: {e}")
+        print(f"An error occurred while fetching channel {channel_name}: {e}")
         return None
 
-def create_m3u8_file(channel_info, file_name="tv.m3u8"):
-    m3u_content = '#EXTM3U\n'
-    
-    for channel in channel_info:
-        channel_name = channel['variables'][0]['value']
-        m3u8_url = extract_m3u8_url(channel_name)
+def create_m3u8_file(m3u8_url, channel_name):
+    if not m3u8_url:
+        print(f"No m3u8 URL found for channel {channel_name}")
+        return
 
-        if m3u8_url:
-            m3u_content += f'#EXTINF:-1, {channel["name"]}\n{m3u8_url}\n'
+    # Create the M3U8 file with the extracted link
+    file_name = f"{channel_name}.m3u8"
+    m3u_content = '#EXTM3U\n'
+    m3u_content += f'#EXTINF:-1, {channel_name}\n{m3u8_url}\n'
 
     with codecs.open(file_name, "w", "utf-8") as file:
         file.write(m3u_content)
-    print(f"M3U8 file '{file_name}' created with the extracted links")
+    print(f"M3U8 file '{file_name}' created with the link: {m3u8_url}")
 
 # Read channel information from the JSON file
 with open(json_file, 'r') as file:
@@ -45,5 +45,8 @@ with open(json_file, 'r') as file:
 
 channels = channel_data[0]['channels']
 
-# Create the M3U8 file
-create_m3u8_file(channels)
+# Create an M3U8 file for each channel
+for channel in channels:
+    channel_name = channel['variables'][0]['value']
+    m3u8_url = extract_m3u8_url(channel_name)
+    create_m3u8_file(m3u8_url, channel_name)
