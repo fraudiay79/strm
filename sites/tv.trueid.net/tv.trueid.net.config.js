@@ -1,7 +1,9 @@
+const cheerio = require('cheerio')
 const axios = require('axios')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const debug = require('debug')('site:tv.trueid.net')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
