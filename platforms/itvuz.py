@@ -1,4 +1,4 @@
-import urllib.request, json, codecs
+import urllib.request, json, codecs, os
 
 output_dir = 'itvuz'
 os.makedirs(output_dir, exist_ok=True)
