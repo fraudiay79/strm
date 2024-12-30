@@ -24,15 +24,15 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- prosto.tv
-          npm run channels:parse --- --config=./sites/prosto.tv/prosto.tv.config.js --output=./sites/prosto.tv/prosto.tv.channels.xml
-          #npm run grab --- --site=prosto.tv --maxConnections=20 --output=guides/prosto.tv.xml --days=1 --timeout=90000
+          #npm test --- tv.trueid.net
+          #npm run channels:parse --- --config=./sites/tv.trueid.net/tv.trueid.net.config.js --output=./sites/tv.trueid.net/tv.trueid.net.channels.xml
+          npm run grab --- --site=tv.trueid.net --maxConnections=20 --output=guides/tv.trueid.net.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        #git add -f guides/prosto.tv.xml
-        git add -f sites/prosto.tv/prosto.tv.channels.xml
+        git add -f guides/tv.trueid.net.xml
+        #git add -f sites/tv.trueid.net/tv.trueid.net.channels.xml
         git commit -m "Update xml"
         git push
