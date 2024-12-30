@@ -21,7 +21,7 @@ module.exports = {
       'Accept': '*/*',
       'Accept-Language': 'en-US,en;q=0.9',
       'Accept-Encoding': 'gzip, deflate, br, zstd',
-	    'Device': 'web',
+      'Device': 'web',
       'Origin': 'https://prosto.tv',
       'Sec-Ch-Ua': '"Not.A/Brand";v="24", "Chromium";v="131", "Google Chrome";v="131"',
       'Sec-Ch-Ua-Mobile': '?0',
@@ -37,26 +37,26 @@ module.exports = {
     return `https://api-prosto-player.prosto.tv/v1/programs/channels/${channel.site_id}?from=${startOfDay}&to=${endOfDay}`
   },
   parser: function ({ date, content }) {
-  let programs = [];
-  try {
-    const data = JSON.parse(content);
-    if (data && data.data) {
-      data.data.forEach(item => {
-        const start = dayjs.unix(item.timeStart).utc().toISOString();
-        const stop = dayjs.unix(item.timeStop).utc().toISOString();
-        programs.push({
-          title: item.title,
-          start,
-          stop
-        });
-      });
+    let programs = [];
+    try {
+      const data = JSON.parse(content);
+      if (data && data.data) {
+        data.data.forEach(item => {
+          const start = dayjs.unix(item.timeStart).utc().toISOString();
+          const stop = dayjs.unix(item.timeStop).utc().toISOString();
+          programs.push({
+            title: item.title,
+            start,
+            stop
+          })
+        })
+      }
+    } catch (error) {
+      console.error("Error parsing content:", error)
     }
-  } catch (error) {
-    console.error("Error parsing content:", error);
-  }
 
-  return programs;
-},
+    return programs
+  },
   async channels() {
     const axios = require('axios')
     try {
