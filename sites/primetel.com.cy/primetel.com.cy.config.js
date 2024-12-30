@@ -19,7 +19,7 @@ module.exports = {
       'Accept-Encoding': 'gzip, deflate',
       'X-Requested-With': 'XMLHttpRequest'
     }
-  }
+  },
   url: function ({ date }) {
     const daysOfWeek = {
       1: '1',
