@@ -3,12 +3,24 @@ const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
 
+const channelsUrl = 'https://tv.trueid.net/th-th'
+
 module.exports = {
   delay: 1000,
   site: 'tv.trueid.net',
-  days: 1,
-  url({ channel }) {
-    return `https://tv.trueid.net/_next/data/9d13441bf2f87fe680d62c50845f1037632855a3/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
+  days: 2,
+  request: {
+    cache: {
+      ttl: 24 * 60 * 60 * 1000 // 1 day
+    }
+  },
+  async url({ channel }) {
+    if (module.exports.buildId === undefined) {
+      module.exports.buildId = await module.exports.fetchBuildId()
+      debug('Got build id', module.exports.buildId)
+    }
+    const channelId = channel.site_id.replace('/', '--')
+    return `https://tv.trueid.net/_next/data/${module.exports.buildId}/th-${channel.lang}.json?channelSlug=${channel.site_id}&path=${channel.site_id}`
   },
   parser({ content, channel }) {
     const programs = []
@@ -48,6 +60,20 @@ module.exports = {
           name: item.title
         }
       })
+  },
+  async fetchBuildId() {
+    const data = await axios
+      .get(channelsUrl)
+      .then(r => r.data)
+      .catch(console.error)
+
+    if (data) {
+      const $ = cheerio.load(data)
+      const nextData = JSON.parse($('#__NEXT_DATA__').text())
+      return nextData?.buildId || null
+    } else {
+      return null
+    }
   }
 }
 
