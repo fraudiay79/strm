@@ -37,22 +37,26 @@ module.exports = {
     return `https://api-prosto-player.prosto.tv/v1/programs/channels/${channel.site_id}?from=${startOfDay}&to=${endOfDay}`
   },
   parser: function ({ date, content }) {
-    let programs = []
-    const data = JSON.parse(content)
-    data.channels.forEach(channel => {
-      channel.items.forEach(item => {
-        const start = dayjs(item.timeStart).utc().toISOString()
-        const stop = dayjs(item.timeStop).utc().toISOString()
+  let programs = [];
+  try {
+    const data = JSON.parse(content);
+    if (data && data.data) {
+      data.data.forEach(item => {
+        const start = dayjs.unix(item.timeStart).utc().toISOString();
+        const stop = dayjs.unix(item.timeStop).utc().toISOString();
         programs.push({
           title: item.title,
           start,
           stop
-        })
-      })
-    })
+        });
+      });
+    }
+  } catch (error) {
+    console.error("Error parsing content:", error);
+  }
 
-    return programs
-  },
+  return programs;
+},
   async channels() {
     const axios = require('axios')
     try {
