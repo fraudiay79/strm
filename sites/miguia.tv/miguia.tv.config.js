@@ -16,30 +16,28 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    const todayEpoch = date.startOf('day').unix();
-    const nextDayEpoch = date.add(1, 'day').startOf('day').unix();
-    return `https://api.miguia.tv/1/es/channel/${channel.site_id}.json?from=${todayEpoch}&to=${nextDayEpoch}`
+    return `https://api.miguia.tv/1/es/channel/${channel.site_id}.json`
   },
   parser: function ({ content }) {
     const programs = []
 
-    const data = JSON.parse(content);
+    const data = JSON.parse(content)
     data.data.forEach(item => {
-        const start = dayjs.unix(item[9]).utc();
-        const stop = dayjs.unix(item[10]).utc();
+        const start = dayjs.unix(item[9]).utc()
+        const stop = dayjs.unix(item[10]).utc()
         const programData = {
             title: item[4],
-			subTitle: item[5],
+	    subTitle: item[5],
             description: item[6],
-			image: item[8],
+	    image: item[8],
             start,
             stop
-        };
+        }
 
-        programs.push(programData);
-    });
+        programs.push(programData)
+    })
 
-    return programs;
+    return programs
 },
   async channels() {
     const axios = require('axios')
