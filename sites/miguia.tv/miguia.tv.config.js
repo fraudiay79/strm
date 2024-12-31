@@ -15,7 +15,7 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url({ channel, date }) {
+  url({ channel }) {
     return `https://api.miguia.tv/1/es/channel/${channel.site_id}.json`
   },
   parser: function ({ content }) {
