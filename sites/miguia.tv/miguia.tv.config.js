@@ -15,8 +15,10 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url({ channel }) {
-    return `https://api.miguia.tv/1/es/channel/${channel.site_id}.json`
+  url({ channel, date }) {
+    const todayEpoch = date.startOf('day').unix();
+    const nextDayEpoch = date.add(1, 'day').startOf('day').unix();
+    return `https://api.miguia.tv/1/es/channel/${channel.site_id}.json?from=${todayEpoch}&to=${nextDayEpoch}`
   },
   parser: function ({ content }) {
     const programs = []
