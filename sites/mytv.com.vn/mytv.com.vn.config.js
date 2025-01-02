@@ -1,11 +1,12 @@
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
+const dayjs = require('dayjs');
+const utc = require('dayjs/plugin/utc');
+const timezone = require('dayjs/plugin/timezone');
+const customParseFormat = require('dayjs/plugin/customParseFormat');
+const axios = require('axios');
 
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+dayjs.extend(utc);
+dayjs.extend(timezone);
+dayjs.extend(customParseFormat);
 
 module.exports = {
   site: 'mytv.com.vn',
@@ -16,43 +17,47 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    return `https://apigw.mytv.vn/api/v1/channel/${channel.site_id}/schedule?date=${date.format('YYYY-MM-DD')}&uuid=0c00475c-d5ec-4166-bd56-24fdc053fa1a`
+    return `https://apigw.mytv.vn/api/v1/channel/${channel.site_id}/schedule?date=${date.format('YYYY-MM-DD')}&uuid=0c00475c-d5ec-4166-bd56-24fdc053fa1a`;
   },
   parser: function ({ content, date }) {
-    const programs = []
-    const data = JSON.parse(content)
-    data.schedule.forEach(program => {
-      const start = parseTime(program.time, date)
-      const stop = start.add(30, 'm')
-      const programData = {
-        title: program.title.trim(),
-        description: 'No description available',
-        start,
-        stop
-      }
+    const programs = [];
+    const data = JSON.parse(content);
 
-      programs.push(programData)
-    })
+    if (data.schedule && Array.isArray(data.schedule)) {
+      data.schedule.forEach(program => {
+        const start = parseTime(program.time, date);
+        const stop = start.add(30, 'm');
+        const programData = {
+          title: program.title.trim(),
+          description: 'No description available',
+          start,
+          stop
+        };
 
-    return programs
+        programs.push(programData);
+      });
+    } else {
+      console.error('Error: data.schedule is not an array or is undefined');
+    }
+
+    return programs;
   },
   async channels() {
-    const axios = require('axios')
     try {
-      const response = await axios.get(`https://apigw.mytv.vn/api/v1/channel?cate_id=undefined&uuid=28aa97a6-019d-44c2-bd18-3a44304f9926`)
+      const response = await axios.get('https://apigw.mytv.vn/api/v1/channel?cate_id=undefined&uuid=28aa97a6-019d-44c2-bd18-3a44304f9926');
       return response.data.data.map(item => {
         return {
           lang: 'vi',
           name: item.channel_name,
           site_id: item.id
-        }
-      })
+        };
+      });
     } catch (error) {
-      console.error('Error fetching channels:', error)
-      return []
+      console.error('Error fetching channels:', error);
+      return [];
     }
   }
-}
+};
 
 function parseTime(timeString, date) {
   const [hours, minutes] = timeString.split(':').map(Number);
