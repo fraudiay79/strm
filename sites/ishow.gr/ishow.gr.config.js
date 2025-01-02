@@ -19,8 +19,17 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    const dayOfWeek = date.day();
-    return `https://www.ishow.gr/ShowTodayChannelProgramm.asp?cid=${channel.site_id}&gotoDay=${dayOfWeek}`;
+    const daysOfWeek = {
+      0: '0',
+      1: '1',
+      2: '2',
+      3: '3',
+      4: '4',
+      5: '5',
+      6: '6'
+    }
+    const day = date.day()
+    return `https://www.ishow.gr/ShowTodayChannelProgramm.asp?cid=${channel.site_id}&gotoDay=${daysOfWeek[day]}`;
   },
   parser: function({ content, date }) {
     const programs = [];
