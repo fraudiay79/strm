@@ -40,7 +40,7 @@ module.exports = {
     const axios = require('axios')
     try {
       const response = await axios.get(`https://apigw.mytv.vn/api/v1/channel?cate_id=undefined&uuid=28aa97a6-019d-44c2-bd18-3a44304f9926`)
-      return response.data.items.map(item => {
+      return response.data.data.map(item => {
         return {
           lang: 'vi',
           name: item.channel_name,
