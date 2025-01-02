@@ -23,8 +23,8 @@ module.exports = {
     const programs = [];
     const data = JSON.parse(content);
 
-    if (data.schedule && Array.isArray(data.schedule)) {
-      data.schedule.forEach(program => {
+    if (data.data && Array.isArray(data.data.schedule)) {
+      data.data.schedule.forEach(program => {
         const start = parseTime(program.time, date);
         const stop = start.add(30, 'm');
         const programData = {
@@ -37,7 +37,7 @@ module.exports = {
         programs.push(programData);
       });
     } else {
-      console.error('Error: data.schedule is not an array or is undefined');
+      console.error('Error: data.data.schedule is not an array or is undefined');
     }
 
     return programs;
