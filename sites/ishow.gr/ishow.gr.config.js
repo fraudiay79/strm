@@ -24,10 +24,11 @@ module.exports = {
   },
   parser: function({ content, date }) {
     const programs = [];
-    const items = parseItems(content);
-    items.forEach(item => {
+    const $ = cheerio.load(content);
+    const items = $('tr.progTr');
+    items.each((i, item) => {
       const prev = programs[programs.length - 1];
-      const $item = cheerio.load(item);
+      const $item = $(item);
       let start = parseStart($item, date);
       if (prev) {
         if (start.isBefore(prev.start)) {
@@ -38,8 +39,8 @@ module.exports = {
       }
       const stop = start.add(30, 'm');
       programs.push({
-        title: $item('.grandTitle a').text(),
-        description: $item('.subTitle').text(),
+        title: $item.find('.grandTitle a').text(),
+        description: $item.find('.subTitle').text(),
         category: $item.attr('class').match(/genre\d+/g).join(', '),
         start: start.format('YYYY-MM-DDTHH:mm:ss'),
         stop: stop.format('YYYY-MM-DDTHH:mm:ss')
