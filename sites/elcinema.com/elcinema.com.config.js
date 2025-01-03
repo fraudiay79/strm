@@ -9,29 +9,14 @@ dayjs.extend(customParseFormat)
 dayjs.extend(timezone)
 dayjs.extend(utc)
 
+const headers = {
+  'User-Agent':
+'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 OPR/115.0.0.0' }
+
 module.exports = {
   site: 'elcinema.com',
   days: 2,
-  request: {
-    cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
-    },
-    method: 'GET',
-    headers: {
-      'referer': 'https://elcinema.com/en/tvguide/',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
-      'Accept': '*/*',
-      'Accept-Language': 'en-US,en;q=0.9',
-      'Accept-Encoding': 'gzip, deflate, br, zstd',
-      'Sec-Ch-Ua': '"Not.A/Brand";v="24", "Chromium";v="131", "Google Chrome";v="131"',
-      'Sec-Ch-Ua-Mobile': '?0',
-      'Sec-Fetch-User': '?1',
-      'Sec-Ch-Ua-Platform': '"Windows"',
-      'Sec-Fetch-Dest': 'document',
-      'Sec-Fetch-Mode': 'navigate',
-      'Sec-Fetch-Site': 'same-origin'
-    }
-  },
+  request: { headers },
   url({ channel }) {
     const lang = channel.lang === 'en' ? 'en/' : '/'
 
