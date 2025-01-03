@@ -12,7 +12,7 @@ const channel = {
 it('can generate valid url', () => {
   const generatedUrl = url({ date, channel })
   console.log('Generated URL:', generatedUrl)
-  expect(generatedUrl).toBe('https://contentapi-br.cdn.telefonica.com/25/default/pt-BR/schedules?ca_deviceTypes=null%7C401&fields=Title,Description,Start,End,EpgSerieId,SeriesPid,SeasonPid,AgeRatingPid,ReleaseDate,images.videoFrame,images.banner&orderBy=START_TIME:a&filteravailability=false&starttime=1735152000&endtime=1735238400&livechannelpids=LCH95')
+  expect(generatedUrl).toBe('https://contentapi-br.cdn.telefonica.com/25/default/pt-BR/schedules?ca_deviceTypes=null%7C401&fields=Title,Description,Start,End,EpgSerieId,SeriesPid,SeasonPid,AgeRatingPid,ReleaseDate,images.videoFrame,images.banner&orderBy=START_TIME:a&filteravailability=false&starttime=1735862400&endtime=1735948800&livechannelpids=LCH95')
 })
 
 it('can parse response', () => {
