@@ -43,14 +43,12 @@ it('can parse response', () => {
   expect(result).toMatchObject([
     {
       title: "Força de Mulher",
-      start: "2025-01-03T12:00:00.000Z",
-      stop: "2025-01-03T12:45:00.000Z",
-      date: "2017-01-01T12:00:00.000Z",
+      start: "2025-01-03T00:00:00.000Z",
+      stop: "2025-01-03T00:45:00.000Z",
+      date: "2017-01-01T00:00:00.000Z",
       description: "Bahar, uma jovem viúva que trabalha incansavelmente para dar uma vida melhor aos seus filhos, deve enfrentar seus fantasmas do passado e transformar a dor em força para seguir adiante e encontrar o amor.",
-      season: "1",
-      episode: "1",
       icon: {
-        src: "http://media.gvp.telefonica.com/storageArea0/IMAGES/00/20/46/20461304_404101FB47B253E1.jpg"
+        src: "https://spotlight-br.cdn.telefonica.com/customer/v1/source?image=http%3A%2F%2Fmedia.gvp.telefonica.com%2FstorageArea0%2FIMAGES%2F00%2F20%2F46%2F20461304_404101FB47B253E1.jpg&width=455&height=256&resize=CROP&format=JPEG"
       }
     }
   ])
