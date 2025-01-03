@@ -4,7 +4,7 @@
   <channel site="arianaafgtv.com" lang="en" xmltv_id="ArianaAfghanistanTV.af" site_id="#">Ariana Afghanistan TV</channel>
   <channel site="arianatelevision.com" lang="en" xmltv_id="ATNNational.af" site_id="#">ATN</channel>
   #Albania
-  <channel site="tvprofil.com" lang="hr" xmltv_id="3Plus.al" site_id="al/programacioni#3-plus">Tring 3+ • 3+</channel>
+  <channel site="tvprofil.com" lang="hr" xmltv_id="3Plus.al" site_id="al/programacioni#3-plus">Tring 3+</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="ABCNews.al" site_id="al/programacioni#abc-news">ABC News</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="ApollonTV.al" site_id="al/programacioni#apollon-tv">Apollon TV</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="AnimalPlanet.al" site_id="al/programacioni#discovery-animal">Animal Planet</channel>
@@ -278,8 +278,8 @@
   <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.ar" site_id="ar#warner-channel">Warner TV</channel>
   #Armenia
   <channel site="iptvx.one" lang="hy" xmltv_id="5TV.am" site_id="5-am">5 TV (Армения) • 5TV</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ArmeniaTV.am" site_id="armenia-tv">Армения ТВ • Armenia TV</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ArmNews.am" site_id="armnews">ArmNews (Армения) • ArmNews</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ArmeniaTV.am" site_id="armenia-tv">Армения ТВ</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ArmNews.am" site_id="armnews">ArmNews (Армения)</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ARTN.am" site_id="artn-am">ARTN</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ATV.am" site_id="atv-armenia">ATV Армения</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ATVBazmocTV.am" site_id="atv-bazmoc">ATV Bazmoc TV • Բազմոց tv</channel>
@@ -293,10 +293,10 @@
   <channel site="iptvx.one" lang="hy" xmltv_id="Armenia2.am" site_id="h2-am">Armenia 2 • H2 (Армения)</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="KentronTV.am" site_id="kentron-tv">Kentron TV • Kentron TV HD • Կենտրոն հեռուստատեսություն</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="NorHayastanTV.am" site_id="nor-hayastan">Nor Hayastan (Армения) • Նոր Հայաստան</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantKids.am" site_id="shant-kids-hd">Шант Kids • Shant Kids</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantMusic.am" site_id="shant-music-hd">Шант Music • Shant Music</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantPremium.am" site_id="shant-premium-hd">Шант Premium • Shant Premium</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantSerial.am" site_id="shant-serial-hd">Шант Serial • Shant Serial</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantKids.am" site_id="shant-kids-hd">Шант Kids HD • Shant Kids HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantMusic.am" site_id="shant-music-hd">Шант Music HD • Shant Music HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantPremium.am" site_id="shant-premium-hd">Шант Premium HD • Shant Premium HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantSerial.am" site_id="shant-serial-hd">Шант Serial HD • Shant Serial HD</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="SONGTVArmenia.am" site_id="song-tv">Song TV Armenia • Song TV Армения • MTV.AM</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="TBN.am" site_id="tbn-armenia">TBN Armenia</channel>
   #Australia
@@ -4205,21 +4205,20 @@
   <channel site="sat.tv" lang="ar" xmltv_id="FalastiniTV.ps" site_id="1#49#فلسطيني">Falastini TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Falestinona.ps" site_id="1#37#فلسطيننا">Falestinona</channel>
   #Pakistan
-  <channel site="ontvtonight.com" lang="en" xmltv_id="AajEntertainment.pk" site_id="us#3641874346/aaj-entertainment">Aaj Entertainment</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYDigitalUSA.pk" site_id="us#335041720/ary-digital">ARY Digital USA</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYNews.pk" site_id="us#295630272/ary-news">ARY News</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYMusik.pk" site_id="us#1216053813/ary-musik">ARY Musik</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYQtv.pk" site_id="us#295630292/ary-qtv">ARY Qtv</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYZauq.pk" site_id="us#69044358/atn-ary-zauq">ARY Zauq</channel>
-  <channel site="tv24.co.uk" lang="en" xmltv_id="DunyaNews.pk" site_id="dunya-news">Dunya News</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ExpressEntertainment.pk" site_id="us#4169462004/express-entertainment">Express Entertainment</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ExpressNews.pk" site_id="us#69044276/express-news">Express Entertainment</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="GeoNews.pk" site_id="us#295630264/geo-news">Geo News</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="GeoTV.pk" site_id="us#4169429700/geo-tv">Geo TV</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="HumSitaray.pk" site_id="us#4169429699/hum-sitaray">Hum Sitaray</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="HumTV.pk" site_id="us#69044281/hum-tv">Hum TV</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="HumMasala.pk" site_id="us#4377269562/hum">Hum Masala</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="PTVGlobal.pk" site_id="us#295630262/ptv-global">PTV Global</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="AajEntertainment.pk" site_id="AAJENT">Aaj Entertainment</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYDigitalUSA.pk" site_id="ARYDI">ARY Digital USA</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYNews.pk" site_id="ARYNEWS">ARY News</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYMusik.pk" site_id="MUSIK">ARY Musik</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYQTV.pk" site_id="QTVPAK">ARY QTV</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYZauq.pk" site_id="ARYZAUQ">ARY Zauq</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="DunyaNews.pk" site_id="DUNYA">Dunya News</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="ExpressNews.pk" site_id="EXPNW">Express News</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="GeoNews.pk" site_id="GEONWS">Geo News</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="GeoTV.pk" site_id="GEOTV">Geo TV</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="HumSitaray.pk" site_id="HUMST">Hum Sitaray</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="HumTV.pk" site_id="HUMTV">Hum TV</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="HumMasala.pk" site_id="MASALA">Hum Masala</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="PTVGlobal.pk" site_id="PTVGLB">PTV Global</channel>
   <channel site="ptv.com.pk" lang="en" xmltv_id="PTVWorld.pk" site_id="1">PTV World</channel>
   <channel site="ptv.com.pk" lang="en" xmltv_id="PTVSports.pk" site_id="2">PTV Sports</channel>
   <channel site="ptv.com.pk" lang="en" xmltv_id="PTVHome.pk" site_id="3">PTV Home</channel>
