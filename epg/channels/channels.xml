@@ -4,7 +4,7 @@
   <channel site="arianaafgtv.com" lang="en" xmltv_id="ArianaAfghanistanTV.af" site_id="#">Ariana Afghanistan TV</channel>
   <channel site="arianatelevision.com" lang="en" xmltv_id="ATNNational.af" site_id="#">ATN</channel>
   #Albania
-  <channel site="tvprofil.com" lang="hr" xmltv_id="3Plus.al" site_id="al/programacioni#3-plus">Tring 3+</channel>
+  <channel site="tvprofil.com" lang="hr" xmltv_id="3Plus.al" site_id="al/programacioni#3-plus">Tring 3+ • 3+</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="ABCNews.al" site_id="al/programacioni#abc-news">ABC News</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="ApollonTV.al" site_id="al/programacioni#apollon-tv">Apollon TV</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="AnimalPlanet.al" site_id="al/programacioni#discovery-animal">Animal Planet</channel>
@@ -278,8 +278,8 @@
   <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.ar" site_id="ar#warner-channel">Warner TV</channel>
   #Armenia
   <channel site="iptvx.one" lang="hy" xmltv_id="5TV.am" site_id="5-am">5 TV (Армения) • 5TV</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ArmeniaTV.am" site_id="armenia-tv">Армения ТВ</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ArmNews.am" site_id="armnews">ArmNews (Армения)</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ArmeniaTV.am" site_id="armenia-tv">Армения ТВ • Armenia TV</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ArmNews.am" site_id="armnews">ArmNews (Армения) • ArmNews</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ARTN.am" site_id="artn-am">ARTN</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ATV.am" site_id="atv-armenia">ATV Армения</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ATVBazmocTV.am" site_id="atv-bazmoc">ATV Bazmoc TV • Բազմոց tv</channel>
@@ -293,10 +293,10 @@
   <channel site="iptvx.one" lang="hy" xmltv_id="Armenia2.am" site_id="h2-am">Armenia 2 • H2 (Армения)</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="KentronTV.am" site_id="kentron-tv">Kentron TV • Kentron TV HD • Կենտրոն հեռուստատեսություն</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="NorHayastanTV.am" site_id="nor-hayastan">Nor Hayastan (Армения) • Նոր Հայաստան</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantKids.am" site_id="shant-kids-hd">Шант Kids HD • Shant Kids HD</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantMusic.am" site_id="shant-music-hd">Шант Music HD • Shant Music HD</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantPremium.am" site_id="shant-premium-hd">Шант Premium HD • Shant Premium HD</channel>
-  <channel site="iptvx.one" lang="hy" xmltv_id="ShantSerial.am" site_id="shant-serial-hd">Шант Serial HD • Shant Serial HD</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantKids.am" site_id="shant-kids-hd">Шант Kids • Shant Kids</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantMusic.am" site_id="shant-music-hd">Шант Music • Shant Music</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantPremium.am" site_id="shant-premium-hd">Шант Premium • Shant Premium</channel>
+  <channel site="iptvx.one" lang="hy" xmltv_id="ShantSerial.am" site_id="shant-serial-hd">Шант Serial • Shant Serial</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="SONGTVArmenia.am" site_id="song-tv">Song TV Armenia • Song TV Армения • MTV.AM</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="TBN.am" site_id="tbn-armenia">TBN Armenia</channel>
   #Australia
@@ -748,10 +748,6 @@
   <channel site="mi.tv" lang="pt" xmltv_id="SBT.br" site_id="br#sbt">SBT</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="SESCTV.br" site_id="br#sesctv">Sesctv</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="SICTV.br" site_id="br#sic-tv">SIC TV</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="SexZone.br" site_id="br#sex-zone">Sex Zone</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="SexPrivé.br" site_id="br#sexprive-brasileirinhas">SexPrivé</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="Sextreme.br" site_id="br#sextreme-brazil">Sextreme Brazil</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="SexyHot.br" site_id="br#sexy-hot">Sexy Hot</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="SmithsonianChannel.br" site_id="br#canal-smithsonian-hd">Canal Smithsonian</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="SonyChannel.br" site_id="br#sony">Sony Channel</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="Space.br" site_id="br#space">Space</channel>
@@ -838,7 +834,6 @@
   <channel site="mi.tv" lang="pt" xmltv_id="TVVerdesMares.br" site_id="br#tv-verdes-mares-1">TV Verdes Mares</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="UniversalTV.br" site_id="br#universal">Universal</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="UnivespTV.br" site_id="br#univesp-tv">Univesp TV</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="VenusBrasil.br" site_id="br#venus-tv-sd">Venus</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="Viva.br" site_id="br#viva-hd">Viva</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="WarnerChannel.br" site_id="br#warner-channel">Warner Channel</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="WooHoo.br" site_id="br#woohoo">WooHoo</channel>
@@ -1503,7 +1498,6 @@
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV80s.uk" site_id="106">MTV 80s</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV90s.uk" site_id="158">MTV 90s</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTVHitsEurope.uk" site_id="159">MTV Hits</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayClassica.ca" site_id="233">Stingray Classica</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayCMusic.ca" site_id="110">Stingray CMusic</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayiConcerts.ca" site_id="234">Stingray iConcerts</channel>
   <channel site="mujtvprogram.cz" lang="sk" xmltv_id="Spectrum.sk" site_id="189">Spectrum</channel>
@@ -1958,7 +1952,6 @@
   <channel site="programme-tv.net" lang="fr" xmltv_id="ScienceVieTV.fr" site_id="science-vie-tv-58">Science &amp; Vie TV</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Seasons.fr" site_id="seasons-111">Seasons</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="SerieClub.fr" site_id="serieclub-18">Série Club</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="StingrayDJAZZ.ca" site_id="stingray-djazz-361">Stingray Djazz</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Syfy.fr" site_id="syfy-110">Syfy</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TCMCinema.fr" site_id="tcm-cinema-113">TCM Cinéma</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TebeoTV.fr" site_id="tebeo-5504">Tébéo</channel>
@@ -2907,11 +2900,16 @@
   <channel site="raspberrytv.net" lang="he" xmltv_id="5Live.il" site_id="sport5-plus-live-hd-il">5Live</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="5Stars.il" site_id="sport5-stars-il-hd">5Stars</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="5Sport4K.il" site_id="sport5-il-4k">5Sport 4K</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="Bollywood.il" site_id="PT02">Bollywood</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="Bollyshow.il" site_id="CH68">Bollyshow</channel>
   <channel site="raspberrytv.net" lang="ru" xmltv_id="Channel9.il" site_id="9-kanal-hd-il">9 канал</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Channel13.il" site_id="13-kanal-il">ערוץ 13</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Channel24.il" site_id="channel24-il-hd">24 החדש</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="DesignChannel.il" site_id="the-design-channel-il-hd">ערוץ העיצוב</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="EEntertainment.il" site_id="TV10">E!</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="EgoTotal.il" site_id="ego-total-il">ערוץ אגו</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="Eurosport1.il" site_id="PT39">Eurosport 1</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="Eurosport2.il" site_id="CH33">Eurosport 2</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="FoodChannel.il" site_id="the-food-channel-il">ערוץ האוכל</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Foody.il" site_id="foody-il-hd">Foody</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="GoodLife.il" site_id="good-life-il">החיים הטובים</channel>
@@ -2931,9 +2929,11 @@
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOTHBO.il" site_id="hot-hbo-il">HOT HBO</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOTSenior.il" site_id="hot-senior-il-hd">HOT Senior</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HumorChannel.il" site_id="humor-channel-il-hd">Humor Channel</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="InvestigationDiscovery.il" site_id="CH27">Investigation Discovery</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Kan11.il" site_id="11-kanal-il">כאן 11</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="KanEducational.il" site_id="kan23-il">כאן חינוכית</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Keshet12.il" site_id="12-kanal-il">קשת 12</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="MusicIL.il" site_id="CH79">ערוץ האח הגדול</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Now14.il" site_id="14-kanal-il">עכשיו 14</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="One.il" site_id="one-hd-il">One</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="One2.il" site_id="one2-hd-il">One 2</channel>
@@ -2949,6 +2949,8 @@
   <channel site="raspberrytv.net" lang="he" xmltv_id="VivaPremium.il" site_id="viva-premium-il-hd">ויוה פרימיום</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="VivaPlus.il" site_id="viva-plus-il">ויוה+</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="VivaVintage.il" site_id="viva-vintage-il">ויוה וינטג'</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="WallaPlus.il" site_id="CN06">Walla +</channel>
+  <channel site="yes.co.il" lang="he" xmltv_id="Yaldut.il" site_id="PT46">ילדות ישראלית</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoni.il" site_id="yamtihoni-il">הערוץ הים תיכוני</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoni2.il" site_id="yam-tichoni2-il-hd">הערוץ הים תיכוני 2</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoniPlus.il" site_id="yam-tichoni-plus-hd">הערוץ הים תיכוני+</channel>
@@ -3370,7 +3372,7 @@
   <channel site="startimestv.com" lang="en" xmltv_id="PPPTV.ke" site_id="1381958532">PPP TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TV47.ke" site_id="ken#268">TV47</channel>
   #Kosovo
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="RTK1.xk" site_id="358">RTK 1</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="RTK1.xk" site_id="rtk-1">RTK 1</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="RTK2.xk" site_id="rtk-2">RTK 2</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="RTK3.xk" site_id="rtk-3">RTK 3</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="RTK4.xk" site_id="rtk-4">RTK 4</channel>
@@ -3383,19 +3385,19 @@
   <channel site="ipko.tv" lang="sq" xmltv_id="Kino1.xk" site_id="kino-1">Kino 1</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="Kino2.xk" site_id="kino-2">Kino 2</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="Kino3.xk" site_id="kino-3">Kino 3</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="KlanKosova.xk" site_id="231">Klan Kosova</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="Kohavision.xk" site_id="234">KTV</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="KlanKosova.xk" site_id="klan-kosova">Klan Kosova</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="Kohavision.xk" site_id="ktv">KTV</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="KSport1.xk" site_id="k-sport-1">K-Sport 1</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="KSport2.xk" site_id="k-sport-2">K-Sport 2</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="KSport3.xk" site_id="k-sport-3">K-Sport 3</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="KSport4.xk" site_id="k-sport-4">K-Sport 4</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="RTV21.xk" site_id="370">RTV 21</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="RTV21.xk" site_id="rtv-21">RTV 21</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="21Junior.xk" site_id="21-junior">21 Junior</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="21Mix.xk" site_id="21-mix">21 Mix</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="21Plus.xk" site_id="21-plus">21 Plus</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="21Popullore.xk" site_id="21-popullore">21 Popullore</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="RTVBesa.xk" site_id="tv-besa">TV Besa</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="RTVDukagjini.xk" site_id="1446">RTV Dukagjini</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="RTVDukagjini.xk" site_id="tv-dukagjini">TV Dukagjini</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="Sport1.xk" site_id="sport-1">Sport 1</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="Sport2.xk" site_id="sport-2">Sport 2</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="Sport3.xk" site_id="sport-3">Sport 3</channel>
@@ -3403,10 +3405,10 @@
   <channel site="ipko.tv" lang="sq" xmltv_id="Sport5.xk" site_id="sport-5">Sport 5</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="Sport6.xk" site_id="sport-6">Sport 6</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="SyriVision.xk" site_id="tv-syri-vision">Syri Vision</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="T7.xk" site_id="1689">T7</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="TVArta.xk" site_id="1896">Arta News</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="Teve1.xk" site_id="2052">tëvë 1</channel>
-  <channel site="tv.blue.ch" lang="sq" xmltv_id="ZicoTV.rs" site_id="1679">Zico TV</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="T7.xk" site_id="t7">T7</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="TVArta.xk" site_id="tv-arta">TV Arta</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="Teve1.xk" site_id="teve-1">tëvë 1</channel>
+  <channel site="ipko.tv" lang="sr" xmltv_id="ZicoTV.rs" site_id="zico-tv">Zico TV</channel>
   #Kuwait
   <channel site="sat.tv" lang="ar" xmltv_id="KTVArabe.kw" site_id="1#40#العربي ۔ الكويتية">KTV Al Arabe</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="KTVAlQurain.kw" site_id="1#40#القرآن الكريم الكويت">KTV Al Qurain</channel>
@@ -3443,8 +3445,8 @@
   <channel site="tv.lv" lang="lv" xmltv_id="LTV1.lv" site_id="ltv1">LTV1</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="LTV7.lv" site_id="ltv7">LTV7</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="ReTV.lv" site_id="retv">ReTV</channel>
-  <channel site="cgates.lt" lang="lt" xmltv_id="SuperBaltik.lv" site_id="super-baltik-hd">Super Baltik</channel>
-  <channel site="cgates.lt" lang="lt" xmltv_id="SuperPlus.lv" site_id="super-plius-hd">Super+</channel>
+  <channel site="go3.tv" lang="ru" xmltv_id="SuperBaltic.lv" site_id="6342971">Super Baltic</channel>
+  <channel site="go3.tv" lang="ru" xmltv_id="SuperPlus.lv" site_id="6342375">Super+</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="TravelChannel.lv" site_id="travel-channel">Travel Channel</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="TV3.lv" site_id="tv3-1">TV3</channel>
   <channel site="tv.lv" lang="lv" xmltv_id="TV3Life.lv" site_id="tv3-life">TV3 Life</channel>
@@ -3521,7 +3523,7 @@
   <channel site="tv.lv" lang="lv" xmltv_id="Smartzone.lt" site_id="smartzone-baltic-lithuania">Smartzone</channel>
   <channel site="cgates.lt" lang="lt" xmltv_id="Sport1.lt" site_id="sport-1-hd">Sport 1</channel>
   <channel site="cgates.lt" lang="lt" xmltv_id="TLC.lt" site_id="tlc">TLC</channel>
-  <channel site="cgates.lt" lang="lt" xmltv_id="TV1.lt" site_id="tv1-hd">TV1 HD</channel>
+  <channel site="cgates.lt" lang="lt" xmltv_id="TV1.lt" site_id="tv1-hd">TV1</channel>
   <channel site="cgates.lt" lang="lt" xmltv_id="TV3.lt" site_id="tv3-hd">TV3</channel>
   <channel site="cgates.lt" lang="lt" xmltv_id="TV6.lt" site_id="tv6-hd">TV6</channel>
   <channel site="cgates.lt" lang="lt" xmltv_id="TV8.lt" site_id="tv8-hd">TV8</channel>
@@ -3851,7 +3853,7 @@
   <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG1.me" site_id="357126696327">RTCG 1 • РТЦГ 1</channel>
   <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG2.me" site_id="357129256090">RTCG 2 • РТЦГ 2</channel>
   <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG3.me" site_id="357130280088">Parlamentarni Kanal • РТЦГ 3</channel>
-  <channel site="tv2go.t-2.net" lang="me" xmltv_id="TVCGMNE.me" site_id="109">РТЦГ MNE</channel>
+  <channel site="tv2go.t-2.net" lang="me" xmltv_id="RTCGMNE.me" site_id="109">RTCG MNE • РТЦГ MNE</channel>
   <channel site="tv.magenta.me" lang="me" xmltv_id="Vijesti.me" site_id="357130280091">Vijesti</channel>
   <channel site="tv.magenta.me" lang="me" xmltv_id="PrvaM.me" site_id="357130792083">Prva M</channel>
   <channel site="tv.magenta.me" lang="me" xmltv_id="NovaM.me" site_id="357130792085">Nova M</channel>
@@ -4205,20 +4207,21 @@
   <channel site="sat.tv" lang="ar" xmltv_id="FalastiniTV.ps" site_id="1#49#فلسطيني">Falastini TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Falestinona.ps" site_id="1#37#فلسطيننا">Falestinona</channel>
   #Pakistan
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="AajEntertainment.pk" site_id="AAJENT">Aaj Entertainment</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYDigitalUSA.pk" site_id="ARYDI">ARY Digital USA</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYNews.pk" site_id="ARYNEWS">ARY News</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYMusik.pk" site_id="MUSIK">ARY Musik</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYQTV.pk" site_id="QTVPAK">ARY QTV</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="ARYZauq.pk" site_id="ARYZAUQ">ARY Zauq</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="DunyaNews.pk" site_id="DUNYA">Dunya News</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="ExpressNews.pk" site_id="EXPNW">Express News</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="GeoNews.pk" site_id="GEONWS">Geo News</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="GeoTV.pk" site_id="GEOTV">Geo TV</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="HumSitaray.pk" site_id="HUMST">Hum Sitaray</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="HumTV.pk" site_id="HUMTV">Hum TV</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="HumMasala.pk" site_id="MASALA">Hum Masala</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="PTVGlobal.pk" site_id="PTVGLB">PTV Global</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="AajEntertainment.pk" site_id="us#3641874346/aaj-entertainment">Aaj Entertainment</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYDigitalUSA.pk" site_id="us#335041720/ary-digital">ARY Digital USA</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYNews.pk" site_id="us#295630272/ary-news">ARY News</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYMusik.pk" site_id="us#1216053813/ary-musik">ARY Musik</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYQtv.pk" site_id="us#295630292/ary-qtv">ARY Qtv</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="ARYZauq.pk" site_id="us#69044358/atn-ary-zauq">ARY Zauq</channel>
+  <channel site="tv24.co.uk" lang="en" xmltv_id="DunyaNews.pk" site_id="dunya-news">Dunya News</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="ExpressEntertainment.pk" site_id="us#4169462004/express-entertainment">Express Entertainment</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="ExpressNews.pk" site_id="us#69044276/express-news">Express Entertainment</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="GeoNews.pk" site_id="us#295630264/geo-news">Geo News</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="GeoTV.pk" site_id="us#4169429700/geo-tv">Geo TV</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="HumSitaray.pk" site_id="us#4169429699/hum-sitaray">Hum Sitaray</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="HumTV.pk" site_id="us#69044281/hum-tv">Hum TV</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="HumMasala.pk" site_id="us#4377269562/hum">Hum Masala</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="PTVGlobal.pk" site_id="us#295630262/ptv-global">PTV Global</channel>
   <channel site="ptv.com.pk" lang="en" xmltv_id="PTVWorld.pk" site_id="1">PTV World</channel>
   <channel site="ptv.com.pk" lang="en" xmltv_id="PTVSports.pk" site_id="2">PTV Sports</channel>
   <channel site="ptv.com.pk" lang="en" xmltv_id="PTVHome.pk" site_id="3">PTV Home</channel>
@@ -4846,7 +4849,6 @@
   <channel site="iptvx.one" lang="ru" xmltv_id="Arsenal.ru" site_id="arsenaltv">Арсенал • Арсенал ТВ • Арсенал HD</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Avto24.ru" site_id="avto24">Авто24 • Авто 24 • Авто24 HD • Авто 24 HD</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="AutoPlus.ru" site_id="avto-plus">Авто Плюс • Авто Плюс HD</channel>
-  <channel site="tv.mail.ru" lang="ru" xmltv_id="BigAsia.ru" site_id="2303">Большая Азия</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="BigPlanet.ru" site_id="big-planet">Big Planet • Big Planet HD</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="black.ru" site_id="sony-turbo">.black • .black HD • Sony Turbo</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Blokbuster.ru" site_id="blokbaster">Блокбастер</channel>
@@ -5424,9 +5426,6 @@
   <channel site="starhubtvplus.com" lang="en" xmltv_id="HubVVDrama.sg" site_id="ce5ca9b4-9dca-412f-ac30-252144c124e3">Hub VVDrama</channel>
   <channel site="mewatch.sg" lang="en" xmltv_id="meWATCHLIVE1.sg" site_id="97073">LIVE 1</channel>
   <channel site="mewatch.sg" lang="en" xmltv_id="meWATCHLIVE2.sg" site_id="97078">LIVE 2</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Now70s.uk" site_id="158964">NOW 70s</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="Now80s.uk" site_id="158965">NOW 80s</channel>
-  <channel site="mewatch.sg" lang="en" xmltv_id="NOWRock.uk" site_id="158963">NOW Rock</channel>
   <channel site="mewatch.sg" lang="en" xmltv_id="oktolidays.sg" site_id="186574">oktolidays</channel>
   <channel site="mewatch.sg" lang="en" xmltv_id="ROCKAction.sg" site_id="227349">ROCK Action</channel>
   <channel site="mewatch.sg" lang="en" xmltv_id="ROCKEntertainment.sg" site_id="227348">ROCK Entertainment</channel>
@@ -5871,7 +5870,7 @@
   <channel site="orangetv.es" lang="es" xmltv_id="Eurosport2.es" site_id="11059">Eurosport 2</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="EWTN.es" site_id="EWTN">EWTN</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="FactoriadeFiccion.es" site_id="1032">Factoría de Ficción</channel>
-  <channel site="movistarplus.es" lang="es" xmltv_id="France24Espanol.fr" site_id="FRANCE">France 24 Español</channel>
+  <channel site="movistarplus.es" lang="es" xmltv_id="France24Espanol.fr" site_id="FRANCE">France 24 Español • France 24</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="StarChannel.es" site_id="11001">Star Channel</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="FutbolReplay.es" site_id="FUTREP">Canal Fútbol Replay</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="GaliciaTVEuropa.es" site_id="2052">TVG -TV Galicia</channel>
@@ -5956,9 +5955,7 @@
   <channel site="orangetv.es" lang="es" xmltv_id="SevillaFCTV.es" site_id="2081">Sevilla FC TV</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="SolMusica.es" site_id="11119">Sol Música</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Somos.es" site_id="11029">Somos</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="StingrayClassica.ca" site_id="12003">Classica</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="StingrayFestival4K.ca" site_id="11060">Festival 4K</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="StingrayDJAZZ.ca" site_id="12004">Djazz</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="StingrayiConcerts.ca" site_id="12002">iConcerts</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="SundanceTV.es" site_id="11052">Sundance TV</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Syfy.es" site_id="11004">SYFY</channel>
@@ -6575,7 +6572,7 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Eurosport2.uk" site_id="1076/eurosport-2">Eurosport 2</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Film4.uk" site_id="220/film4">Film4</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="FoodNetwork.uk" site_id="1523/food-network">Food Network</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="France24English.fr" site_id="1760/france-24-english">France 24 English</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="France24English.fr" site_id="1760/france-24-english">France 24 English • France 24</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="GBNews.uk" site_id="2339/gb-news">GB News</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="GOLD.uk" site_id="134/gold">GOLD</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="GREATaction.uk" site_id="1431/great-action">GREAT! action</channel>
@@ -7214,7 +7211,7 @@
   <channel site="sat.tv" lang="ar" xmltv_id="DWArabic.de" site_id="2#53#۔DW الإنجليزية">DW Arabic</channel>
   <channel site="mi.tv" lang="es" xmltv_id="DWEspanol.de" site_id="co#deutsche-welle-amerika">DW Español</channel>
   <channel site="teliatv.ee" lang="en" xmltv_id="EuronewsRussian.fr" site_id="en#1286">euronews</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="France24Arabic.fr" site_id="1#49#فرانس 24 عربي">France 24 Arabic</channel>
+  <channel site="sat.tv" lang="ar" xmltv_id="France24Arabic.fr" site_id="1#49#فرانس 24 عربي">France 24 Arabic • France 24</channel>
   <channel site="mi.tv" lang="es" xmltv_id="HispanTV.ir" site_id="ar#hispan-tv">HispanTV</channel>
   <channel site="i24news.tv" lang="ar" xmltv_id="i24NEWSArabic.il" site_id="ar">I24NEWS عربى</channel>
   #<channel site="sat.tv" lang="ar" xmltv_id="i24NEWSArabic.il" site_id="1#33#آي24 نيوز">i24NEWS عربى</channel>
@@ -7306,6 +7303,8 @@
   <channel site="iptvx.one" lang="ru" xmltv_id="Russiannight.ru" site_id="russkaya-noch">Русская ночь • Русская ночь HD</channel>
   <channel site="ziggogo.tv" lang="en" xmltv_id="SecretCircle.nl" site_id="NL_000170_019515">Secret Circle</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="Sexation.si" site_id="1000408">Sexation</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="SexZone.br" site_id="br#sex-zone">Sex Zone</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="SexPrive.br" site_id="br#sexprive-brasileirinhas">SexPrivé</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="Sextreme.br" site_id="br#sextreme-brazil">Sextreme</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="SexyHot.br" site_id="br#sexy-hot">Sexy Hot</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Shalun.ru" site_id="shalun">Шалун • Шалун HD</channel>
@@ -7314,6 +7313,7 @@
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SuperONE.hu" site_id="1000342">SuperONE</channel>
   <channel site="m.tv.sms.cz" lang="en" xmltv_id="TrueAmateurs.uk" site_id="True+Amateurs">True Amateurs</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Venus.ar" site_id="ar#venus">Venus</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="VenusBrasil.br" site_id="br#venus-tv-sd">Venus</channel>
   <channel site="maxtv.hrvatskitelekom.hr" lang="en" xmltv_id="VividRed.us" site_id="761">Vivid Red</channel>
   <channel site="maxtv.hrvatskitelekom.hr" lang="en" xmltv_id="VividTouch.uk" site_id="762">Vivid Touch</channel>
   <channel site="maxtv.hrvatskitelekom.hr" lang="en" xmltv_id="VividTVEurope.uk" site_id="715">Vivid TV</channel>
