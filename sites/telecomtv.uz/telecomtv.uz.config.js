@@ -1,6 +1,6 @@
 const axios = require('axios');
 const dayjs = require('dayjs');
-const fetch = require('node-fetch');
+const doFetch = require('@ntlab/sfetch');
 
 const url = 'https://telecomtv.uz/uz/channels';
 
@@ -64,7 +64,7 @@ module.exports = {
 
 async function getTvAssetToken(url) {
   try {
-    const response = await fetch(url);
+    const response = await doFetch(url);
     const html = await response.text();
 
     const regex = /window\.__INITIAL_STATE__\s*=\s*({.*?});/;
