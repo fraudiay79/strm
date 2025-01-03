@@ -1,12 +1,31 @@
-const { url, parser } = require('./stod2.is.config.js')
+const { parser, url } = require('./stod2.is.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+const timezone = require('dayjs/plugin/timezone')
+const axios = require('axios')
+
 dayjs.extend(utc)
+dayjs.extend(customParseFormat)
+dayjs.extend(timezone)
+
+jest.mock('axios')
 
 const date = dayjs.utc('2025-01-03', 'YYYY-MM-DD').startOf('day')
-const channel = {
-  site_id: 'stod2',
-  xmltv_id: 'Stod2.is'
+const channel = { site_id: 'stod2', xmltv_id: 'Stod2.is' }
+
+const mockEpgData = {
+  "Content": [
+    {
+      "isltitill": "Heimsókn",
+      "undirtitill": "Telma Borgþórsdóttir",
+      "lysing": "Frábærir þættir með Sindra Sindrasyni sem lítur inn hjá íslenskum fagurkerum. Heimilin eru jafn ólík og þau eru mörg en eiga það þó eitt sameiginlegt að vera sett saman af alúð og smekklegheitum. Sindri hefur líka einstakt lag á að ná fram því besta í viðmælendum sínum.",
+      "adalhlutverk": "",
+      "leikstjori": "",
+      "upphaf": "2025-01-03T08:00:00Z",
+      "slott": 15
+    }
+  ]
 }
 
 it('can generate valid url', () => {
@@ -16,24 +35,10 @@ it('can generate valid url', () => {
 })
 
 it('can parse response', () => {
-  const content = `
-  {
-    [
-        {
-            "isltitill": "Heimsókn",
-            "undirtitill": "Telma Borgþórsdóttir",
-            "lysing": "",
-            "adalhlutverk": "",
-            "leikstjori": "",
-            "upphaf": "2025-01-03T08:00:00Z",
-            "slott": 15
-        }
-    ]
-  }`
-
+  const content = JSON.stringify(mockEpgData)
   const result = parser({ content }).map(p => {
-    p.start = p.start.toISOString()
-    p.stop = p.stop.toISOString()
+    p.start = dayjs(p.start).toISOString()
+    p.stop = dayjs(p.stop).toISOString()
     return p
   })
 
@@ -41,7 +46,7 @@ it('can parse response', () => {
     {
       title: "Heimsókn",
       sub_title: "Telma Borgþórsdóttir",
-      description: "",
+      description: "Frábærir þættir með Sindra Sindrasyni sem lítur inn hjá íslenskum fagurkerum. Heimilin eru jafn ólík og þau eru mörg en eiga það þó eitt sameiginlegt að vera sett saman af alúð og smekklegheitum. Sindri hefur líka einstakt lag á að ná fram því besta í viðmælendum sínum.",
       actors: "",
       directors: "",
       start: "2025-01-03T08:00:00.000Z",
@@ -51,8 +56,6 @@ it('can parse response', () => {
 })
 
 it('can handle empty guide', () => {
-  const result = parser({
-    content: '{"Content":[]}'
-  })
+  const result = parser({ content: '{"Content":[]}' })
   expect(result).toMatchObject([])
 })
