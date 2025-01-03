@@ -49,8 +49,8 @@ it('can parse response', () => {
       description: "Frábærir þættir með Sindra Sindrasyni sem lítur inn hjá íslenskum fagurkerum. Heimilin eru jafn ólík og þau eru mörg en eiga það þó eitt sameiginlegt að vera sett saman af alúð og smekklegheitum. Sindri hefur líka einstakt lag á að ná fram því besta í viðmælendum sínum.",
       actors: "",
       directors: "",
-      start: "2025-01-03T08:00:00.000Z",
-      stop: "2025-01-03T08:15:00.000Z"
+      start: "2025-01-03T08:00:00Z",
+      stop: "2025-01-03T08:15:00Z"
     }
   ])
 })
