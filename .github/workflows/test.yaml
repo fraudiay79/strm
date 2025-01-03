@@ -24,15 +24,15 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm test --- mts.rs
+          #npm test --- mts.rs
           #npm run channels:parse --- --config=./sites/mts.rs/mts.rs.config.js --output=./sites/mts.rs/mts.rs.channels.xml
-          #npm run grab --- --site=mts.rs --maxConnections=20 --output=guides/mts.rs.xml --days=1 --timeout=90000
+          npm run grab --- --site=mts.rs --maxConnections=20 --output=guides/mts.rs.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        #git add -f guides/mts.rs.xml
+        git add -f guides/mts.rs.xml
         #git add -f sites/mts.rs/mts.rs.channels.xml
         git commit -m "Update xml"
         git push
