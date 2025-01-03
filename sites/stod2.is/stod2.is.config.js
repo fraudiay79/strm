@@ -2,7 +2,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const axios = require('axios')
 
-dayjs.extend(utc);
+dayjs.extend(utc)
 
 module.exports = {
   site: 'stod2.is',
@@ -25,7 +25,7 @@ module.exports = {
       return []
     }
 
-    const programs = [];
+    const programs = []
 
     if (data && Array.isArray(data)) {
       data.forEach(item => {
@@ -39,8 +39,8 @@ module.exports = {
           description: item.lysing,
           actors: item.adalhlutverk,
           directors: item.leikstjori,
-          start,
-          stop
+          start: start.toISOString,
+          stop: stop.toISOString
         })
       })
     }
@@ -48,22 +48,21 @@ module.exports = {
     return programs
   },
   async channels() {
-    try {
-      const response = await axios.get('https://api.stod2.is/dagskra/api');
-      if (!response.data.channels) {
-        console.error('Error: No channels data found')
-        return []
+  try {
+    const response = await axios.get('https://api.stod2.is/dagskra/api')
+    if (!response.data || !Array.isArray(response.data)) {
+      console.error('Error: No channels data found')
+      return []
       }
-      return response.data.channels.map(item => {
-        return {
-          lang: 'is',
-          name: item.nafn, // Assuming 'nafn' is the name of the channel
-          site_id: item.id
+    return response.data.map(item => {
+      return {
+        lang: 'is',
+        site_id: item
         }
       })
     } catch (error) {
-      console.error('Error fetching channels:', error)
-      return []
+    console.error('Error fetching channels:', error)
+    return []
     }
   }
 }
