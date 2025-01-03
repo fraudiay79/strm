@@ -20,12 +20,12 @@ jobs:
     - name: Set up Node
       uses: actions/setup-node@v4
       with:
-           node-version: 22
+           node-version: 18
 
     - name: npm grab epg
       run: |
           npm install
-          npm run grab --- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
+          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
    
     - name: Commit changes
       run: |
