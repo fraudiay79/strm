@@ -15,14 +15,14 @@ const date = dayjs.utc('2025-01-03', 'YYYY-MM-DD').startOf('day')
 const channel = { site_id: 'stod2', xmltv_id: 'Stod2.is' }
 
 const mockEpgData = {
-  "Content":[
+  "Content": [
     {
       "isltitill": "Heimsókn",
       "undirtitill": "Telma Borgþórsdóttir",
       "lysing": "Frábærir þættir með Sindra Sindrasyni sem lítur inn hjá íslenskum fagurkerum. Heimilin eru jafn ólík og þau eru mörg en eiga það þó eitt sameiginlegt að vera sett saman af alúð og smekklegheitum. Sindri hefur líka einstakt lag á að ná fram því besta í viðmælendum sínum.",
       "adalhlutverk": "",
       "leikstjori": "",
-      "upphaf": "2025-01-03T08:00:00Z",
+      "upphaf": 1735891200, // Unix timestamp for "2025-01-03T08:00:00Z"
       "slott": 15
     }
   ]
@@ -37,8 +37,8 @@ it('can generate valid url', () => {
 it('can parse response', () => {
   const content = JSON.stringify(mockEpgData)
   const result = parser({ content }).map(p => {
-    p.start = dayjs(p.start).toISOString()
-    p.stop = dayjs(p.stop).toISOString()
+    p.start = p.start.toISOString()
+    p.stop = p.stop.toISOString()
     return p
   })
 
@@ -49,8 +49,8 @@ it('can parse response', () => {
       description: "Frábærir þættir með Sindra Sindrasyni sem lítur inn hjá íslenskum fagurkerum. Heimilin eru jafn ólík og þau eru mörg en eiga það þó eitt sameiginlegt að vera sett saman af alúð og smekklegheitum. Sindri hefur líka einstakt lag á að ná fram því besta í viðmælendum sínum.",
       actors: "",
       directors: "",
-      start: "2025-01-03T08:00:00Z",
-      stop: "2025-01-03T08:15:00Z"
+      start: "2025-01-03T08:00:00.000Z",
+      stop: "2025-01-03T08:15:00.000Z"
     }
   ])
 })
