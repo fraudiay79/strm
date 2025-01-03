@@ -20,8 +20,6 @@ const mockEpgData = {
       "isltitill": "Heimsókn",
       "undirtitill": "Telma Borgþórsdóttir",
       "lysing": "Frábærir þættir með Sindra Sindrasyni sem lítur inn hjá íslenskum fagurkerum. Heimilin eru jafn ólík og þau eru mörg en eiga það þó eitt sameiginlegt að vera sett saman af alúð og smekklegheitum. Sindri hefur líka einstakt lag á að ná fram því besta í viðmælendum sínum.",
-      "adalhlutverk": "",
-      "leikstjori": "",
       "upphaf": "2025-01-03T08:00:00Z",
       "slott": 15
     }
@@ -48,8 +46,6 @@ describe('stod2.is.config.js', () => {
         title: "Heimsókn",
         sub_title: "Telma Borgþórsdóttir",
         description: "Frábærir þættir með Sindra Sindrasyni sem lítur inn hjá íslenskum fagurkerum. Heimilin eru jafn ólík og þau eru mörg en eiga það þó eitt sameiginlegt að vera sett saman af alúð og smekklegheitum. Sindri hefur líka einstakt lag á að ná fram því besta í viðmælendum sínum.",
-        actors: "",
-        directors: "",
         start: "2025-01-03T08:00:00.000Z",
         stop: "2025-01-03T08:15:00.000Z"
       }
