@@ -20,14 +20,14 @@ it('can parse response', () => {
   {
     "Content": [
         {
-            "Title": "T1 EP1 - Sample Show",
-            "Description": "This is a sample show.",
-            "Start": 1735152000,
-            "End": 1735155600,
-            "ReleaseDate": 1735152000,
+            "Title": "Força de Mulher",
+            "Description": "Bahar, uma jovem viúva que trabalha incansavelmente para dar uma vida melhor aos seus filhos, deve enfrentar seus fantasmas do passado e transformar a dor em força para seguir adiante e encontrar o amor.",
+            "Start": 1735862400,
+            "End": 1735865100,
+            "ReleaseDate": 1483228800,
             "Images": {
                 "VideoFrame": [
-                    { "Url": "https://example.com/image.jpg" }
+                    { "Url": "http://media.gvp.telefonica.com/storageArea0/IMAGES/00/20/46/20461304_404101FB47B253E1.jpg" }
                 ]
             }
         }
@@ -42,16 +42,15 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      title: "T1",
-      sub_title: "Sample Show",
-      start: "2024-12-26T00:00:00.000Z",
-      stop: "2024-12-26T01:00:00.000Z",
-      date: "2024-12-26T00:00:00.000Z",
-      description: "This is a sample show.",
+      title: "Força de Mulher",
+      start: "2025-01-03T12:00:00.000Z",
+      stop: "2025-01-03T12:45:00.000Z",
+      date: "2017-01-01T12:00:00.000Z",
+      description: "Bahar, uma jovem viúva que trabalha incansavelmente para dar uma vida melhor aos seus filhos, deve enfrentar seus fantasmas do passado e transformar a dor em força para seguir adiante e encontrar o amor.",
       season: "1",
       episode: "1",
       icon: {
-        src: "https://spotlight-br.cdn.telefonica.com/customer/v1/source?image=https%3A%2F%2Fexample.com%2Fimage.jpg&width=455&height=256&resize=CROP&format=JPEG"
+        src: "http://media.gvp.telefonica.com/storageArea0/IMAGES/00/20/46/20461304_404101FB47B253E1.jpg"
       }
     }
   ])
