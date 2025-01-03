@@ -14,7 +14,7 @@ const channel = {
 it('can generate valid url', () => {
   const generatedUrl = url({ date, channel })
   console.log('Generated URL:', generatedUrl)
-  expect(generatedUrl).toBe('https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=1735880400000&endTimeEpoch=1735966799000&language=1&channelIds=561066')
+  expect(generatedUrl).toBe('https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=1735862400000&endTimeEpoch=1735948800000&language=1&channelIds=561066')
 })
 
 it('can parse response', () => {
