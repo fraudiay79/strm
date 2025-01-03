@@ -18,7 +18,7 @@ it('can generate valid url', () => {
 it('can parse response', () => {
   const content = `
   {
-    "Content": [
+    [
         {
             "isltitill": "Heimsókn",
             "undirtitill": "Telma Borgþórsdóttir",
