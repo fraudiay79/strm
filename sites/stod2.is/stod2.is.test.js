@@ -15,7 +15,7 @@ const date = dayjs.utc('2025-01-03', 'YYYY-MM-DD').startOf('day')
 const channel = { site_id: 'stod2', xmltv_id: 'Stod2.is' }
 
 const mockEpgData = {
-  "Content": [
+  [
     {
       "isltitill": "Heimsókn",
       "undirtitill": "Telma Borgþórsdóttir",
