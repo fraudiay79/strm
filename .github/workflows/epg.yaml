@@ -1,0 +1,36 @@
+name: update epg
+on:
+  schedule:
+    - cron: "0 */24 * * *"
+  workflow_dispatch:
+
+jobs:
+  run_script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Set up Node
+      uses: actions/setup-node@v4
+      with:
+           node-version: 18
+
+    - name: npm grab epg
+      run: |
+          npm install
+          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=25 --timeout=90000
+          
+    - name: Commit changes
+      run: |
+          git config user.name "🧟 Brainz"
+          git config user.email "<>"
+          git add -f epg/epg-channels.xml.gz
+          git commit -m "updated epg"
+          git push -f origin main

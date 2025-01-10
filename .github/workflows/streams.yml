@@ -1,0 +1,44 @@
+name: run streams.py
+
+on:
+  schedule:
+    - cron: '0 */2 * * *' # Runs in every 2 hours
+  pull_request:
+      branches:
+        - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+            python-version: '3.x' 
+            
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          
+          pwd
+          cd ./platforms/
+          
+          pip3 install -r requirements.txt
+          pip3 install beautifulsoup4
+      - name: execute py script 
+        run:  |
+            pwd
+            cd ./platforms/
+            python myvideoaz.py myvideoaz.json
+            python streams.py streams.json
+            python3 royanews.py > links/royanews.m3u8
+      - name: commit and push files
+        run: |
+          git config --local user.email ""
+          git config --local user.name "Stream Ninja 🥷🏽"
+          git add -A
+          git commit -m "updated streams"
+          git push
