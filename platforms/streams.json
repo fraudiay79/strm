@@ -1,0 +1,224 @@
+{
+    "output": {
+        "folder": "links",
+        "bestFolder": "best",
+        "masterFolder": ""
+    },
+    "channels": [
+        {
+            "name": "Hadhramaut",
+            "slug": "hadhramaut",
+            "url": "https://www.twitch.tv/hadramout1"
+        },
+        {
+            "name": "STV",
+            "slug": "stvscotland",
+            "url": "https://player.api.stv.tv/v1/streams/stv/"
+        },
+        {
+            "name": "Olympics",
+            "slug": "olympics",
+            "url": "https://olympics.com/en/live/"
+        },
+        {
+            "name": "ATV (KW)",
+            "slug": "atvkw",
+            "url": "https://vimeo.com/event/4459995"
+        },
+        {
+            "name": "Lulua",
+            "slug": "lulua",
+            "url": "https://vimeo.com/event/1117458"
+        },
+        {
+            "name": "GBC TV",
+            "slug": "gbctv",
+            "url": "https://api.new.livestream.com/accounts/14143407/events/9828641/"
+        },
+        {
+            "name": "TVM",
+            "slug": "tvm",
+            "url": "https://tvmi.mt/live/2"
+        },
+        {
+            "name": "Al Wasat",
+            "slug": "wasat",
+            "url": "https://alwasat.ly/live"
+        },
+        {
+            "name": "Souryana",
+            "slug": "souryana",
+            "url": "https://ok.ru/video/4242578808438"
+        },
+        {
+            "name": "ABC News (AL)",
+            "slug": "abcnewsal",
+            "url": "https://www.twitch.tv/abcnewsal"
+        },
+        {
+            "name": "Euro Star",
+            "slug": "eurostar",
+            "url": "https://eurostartv.com.tr/canli-izle"
+        },
+        {
+            "name": "NOW",
+            "slug": "nowtr",
+            "url": "https://www.nowtv.com.tr/canli-yayin"
+        },
+        {
+            "name": "Maspero Zaman",
+            "slug": "maspero",
+            "url": "https://www.dailymotion.com/video/x8n6e4h"
+        },
+        {
+            "name": "Nile TV",
+            "slug": "niletv",
+            "url": "https://www.dailymotion.com/video/x84nwne"
+        },
+        {
+            "name": "Nile Int'l",
+            "slug": "nileint",
+            "url": "https://www.dailymotion.com/video/x8lr1r8"
+        },
+        {
+            "name": "ERTU 1",
+            "slug": "ertu1",
+            "url": "https://www.dailymotion.com/video/x856hbh"
+        },
+        {
+            "name": "ERTU 2",
+            "slug": "ertu2",
+            "url": "https://www.dailymotion.com/video/x8n6dm7"
+        },
+        {
+            "name": "Masriya",
+            "slug": "masriya",
+            "url": "https://www.dailymotion.com/video/x84nun4"
+        },
+        {
+            "name": "Nile Drama",
+            "slug": "niledrama",
+            "url": "https://www.dailymotion.com/video/x8n6e3a"
+        },
+        {
+            "name": "Sada El Balad",
+            "slug": "elbaladtv",
+            "url": "https://www.twitch.tv/elbaladtv"
+        },
+        {
+            "name": "El Hiwar Ettounsi",
+            "slug": "elhiwartn",
+            "url": "https://www.dailymotion.com/video/x7ooijz"
+        },
+        {
+            "name": "MRTV",
+            "slug": "mrtv",
+            "url": "https://www.twitch.tv/livestreamingmrtv"
+        },
+        {
+            "name": "MITV",
+            "slug": "mitv",
+            "url": "https://www.twitch.tv/mitvlivestream"
+        },
+        {
+            "name": "MRT News",
+            "slug": "mrtnews",
+            "url": "https://www.twitch.tv/mrtvnewslive"
+        },
+        {
+            "name": "El Nueve",
+            "slug": "elnueve",
+            "url": "https://www.twitch.tv/elnueve_ok"
+        },
+        {
+            "name": "Al Rassoul",
+            "slug": "alrassoul",
+            "url": "https://www.twitch.tv/alrassoulchannel"
+        },
+        {
+            "name": "Show Max",
+            "slug": "showmax",
+            "url": "http://showmax.com.tr/canliyayin"
+        },
+        {
+            "name": "ATV",
+            "slug": "atv",
+            "url": "https://www.atv.com.tr/canli-yayin"
+        },
+        {
+            "name": "Al Rai",
+            "slug": "alrai",
+            "url": "https://www.alraimedia.com/live"
+        },
+        {
+            "name": "Saudia TV",
+            "slug": "saudiatv",
+            "url": "https://www.aloula.sa/en/live/saudiatv"
+        },
+        {
+            "name": "Show Türk",
+            "slug": "showturk",
+            "url": "https://www.showturk.com.tr/canli-yayin/showturk"
+        },
+        {
+            "name": "TV47",
+            "slug": "tv47kenya",
+            "url": "https://www.twitch.tv/tv47kenya"
+        },
+        {
+            "name": "Willax",
+            "slug": "willax",
+            "url": "https://www.dailymotion.com/video/x7x4dgx"
+        },
+        {
+            "name": "ATB (BO)",
+            "slug": "atb",
+            "url": "https://www.dailymotion.com/video/x84eirw"
+        },
+        {
+            "name": "C8",
+            "slug": "c8",
+            "url": "https://www.dailymotion.com/video/x5gv5rr"
+        },
+        {
+            "name": "VTV (VE)",
+            "slug": "vtv",
+            "url": "https://www.dailymotion.com/video/x930kre"
+        },
+        {
+            "name": "Teletuya",
+            "slug": "teletuya",
+            "url": "https://www.dailymotion.com/video/x8z1nnq"
+        },
+        {
+            "name": "MRT Sat 1",
+            "slug": "mrtsat1",
+            "url": "https://play.mrt.com.mk/live/45"
+        },
+        {
+            "name": "MRT Sat 2",
+            "slug": "mrtsat2",
+            "url": "https://play.mrt.com.mk/live/46"
+        },
+        {
+            "name": "Paraguay TV",
+            "slug": "paraguaytv",
+            "url": "https://www.twitch.tv/paraguaytv_streaming"
+        },
+        {
+            "name": "TV47 Kenya",
+            "slug": "tv47kenya",
+            "url": "https://www.twitch.tv/tv47kenya"
+        },
+        {
+            "name": "TC Televisión",
+            "slug": "tctelevision",
+            "url": "https://www.dailymotion.com/video/x84cxl0"
+        },
+        {
+            "name": "VTV 1",
+            "slug": "vtv1",
+            "url": "https://vtvgo.vn/xem-truc-tuyen-kenh-vtv1"
+        }
+    ]
+}

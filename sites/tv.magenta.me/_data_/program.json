@@ -1,0 +1,82 @@
+{
+    "id": "tva-SHW131326",
+    "name": "Male žene",
+    "episodes_count": null,
+    "seasons_count": 1,
+    "poster_image_url": "https://tv-me-prod.yo-digital.com/prod/images/1422/800/id-131326.jpg",
+    "is_live": true,
+    "show_type": "TVShow",
+    "release_year": 2017,
+    "end_year": null,
+    "ratings": "12",
+    "is_adult": false,
+    "trailer": [],
+    "details": {
+        "description": "Temeljena na istoimenom romanu Louise May Alcott iz 1868., trodijelna miniserija MALE ŽENE prati sestre March - Meg (Willa Fitzgerald), Jo (Maya Hawke), Beth (Annes Elwy) i Amy (Kathryn Newton) - na njihovu putovanju od djetinjstva do zrelosti. Uz pomoć svoje majke Marmee (Emily Watson), a dok im se otac bori u Američkom građanskom ratu, djevojke polako uče što znači biti mlada žena - od rodnih uloga do sestrinskog rivalstva, prve ljubavi, gubitka i braka. Emily Watson igra obiteljskog matrijarha Marmee, a Angela Lansbury njihovu imućnu, mrzovoljnu tetu. Michael Gambon kao susjed Marchevih te Jonah Hauer-King kao njegov unuk Laurie, zaokružuju glumačku postavu.",
+        "metadata": [
+            {
+                "name": "Žanrovi",
+                "value": "Drama",
+                "type": "GENRES"
+            }
+        ]
+    },
+    "locale": "",
+    "last_updated": "1733780808000",
+    "seasons": [
+        {
+            "id": "606643240284",
+            "name": "Season 99131326",
+            "number": 99131326,
+            "episodes_count": 1,
+            "add_season_prefix": false,
+            "display_name": "Emisija"
+        }
+    ],
+    "roles": [
+        {
+            "role_name": "Glumi",
+            "person_id": "10115482",
+            "person_name": "Maya Hawke",
+            "image_url": "https://tv-me-prod.yo-digital.com/prod/images/cast/548/728/10115482_1.jpg"
+        },
+        {
+            "role_name": "Glumi",
+            "person_id": "10048743",
+            "person_name": "Kathryn Newton",
+            "image_url": "https://tv-me-prod.yo-digital.com/prod/images/cast/548/728/10048743_2.jpg"
+        },
+        {
+            "role_name": "Glumi",
+            "person_id": "10000837",
+            "person_name": "Dylan Baker",
+            "image_url": "https://tv-me-prod.yo-digital.com/prod/images/cast/548/728/10000837.jpg"
+        },
+        {
+            "role_name": "Glumi",
+            "person_id": "10115483",
+            "person_name": "Willa Fitzgerald",
+            "image_url": "https://tv-me-prod.yo-digital.com/prod/images/cast/548/728/10115483.jpg"
+        },
+        {
+            "role_name": "Glumi",
+            "person_id": "10115484",
+            "person_name": "Annes Elwy",
+            "image_url": "https://tv-me-prod.yo-digital.com/prod/images/cast/548/728/10115484.jpg"
+        },
+        {
+            "role_name": "Glumi",
+            "person_id": "10000568",
+            "person_name": "Emily Watson",
+            "image_url": "https://tv-me-prod.yo-digital.com/prod/images/cast/548/728/10000568.jpg"
+        },
+        {
+            "role_name": "Režija",
+            "person_id": "10115485",
+            "person_name": "Vanessa Caswill",
+            "image_url": null
+        }
+    ],
+    "cache_ttl": null,
+    "data_source": "CTS"
+}
