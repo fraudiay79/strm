@@ -148,30 +148,25 @@ module.exports = {
 }
 
 function parseStartStop(date, time) {
-  const [s, e] = time.split(' - ')
-  const start = parseTime(date, s)
-  let stop = parseTime(date, e)
+  const [s, e] = time.split(' - ');
+  console.log(`Parsing time range: ${s} to ${e}`);
+  const start = parseTime(date, s);
+  let stop = parseTime(date, e);
   if (stop.isBefore(start)) {
-    stop = stop.add(1, 'd')
+    stop = stop.add(1, 'd');
   }
-
-  return [start, stop]
+  console.log(`Parsed times: start = ${start.format('YYYY-MM-DD H:mm a')}, stop = ${stop.format('YYYY-MM-DD H:mm a')}`);
+  return [start, stop];
 }
 
 function parseTime(date, time) {
-  try {
-    const parsedTime = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD H:mm a', tz);
-    if (!parsedTime.isValid()) {
-      throw new Error(`Invalid time value: ${time}`);
-    }
-    return parsedTime;
-  } catch (error) {
-    console.error(`Failed to parse time: ${time}`, error);
-    // Handle the error or return a default value
-    return dayjs.tz(`${date.format('YYYY-MM-DD')} 00:00`, 'YYYY-MM-DD H:mm a', tz);
+  console.log(`Parsing time: ${time} on date: ${date.format('YYYY-MM-DD')}`);
+  const parsedTime = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD H:mm a', tz);
+  if (!parsedTime.isValid()) {
+    console.error(`Invalid time value: ${time}`);
   }
+  return parsedTime;
 }
-
 
 function parseText($item) {
   let text = $item.text()
