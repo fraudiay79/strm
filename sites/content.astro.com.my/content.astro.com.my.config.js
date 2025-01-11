@@ -22,7 +22,7 @@ module.exports = {
       const details = await loadProgramDetails(item)
       programs.push({
         title: details.title,
-        sub_title: item.subtitles,
+        sub_title: item.subtitles || null,
         description: details.longSynopsis || details.shortSynopsis,
         actors: parseList(details.cast),
         directors: parseList(details.director),
