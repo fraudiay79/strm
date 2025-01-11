@@ -446,13 +446,26 @@
   <channel site="iptvx.one" lang="az" xmltv_id="IdmanTV.az" site_id="idman">Idman • Idman TV</channel>
   <channel site="iptvx.one" lang="az" xmltv_id="MedeniyyetTV.az" site_id="medeniyyet">Medeniyyet TV • Mədəniyyət TV</channel>
   <channel site="iptvx.one" lang="az" xmltv_id="XezerTV.az" site_id="xezer">Xezer • Xəzər TV • Xəzər • Xezer TV</channel>
+  #Bahamas
+  <channel site="rev.bs" lang="en" xmltv_id="BCNTV.bs" site_id="660">BCN TV</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="CalaClassics.bs" site_id="358">Cala Classics</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="CalaWeather.bs" site_id="412">Cala Weather</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="IslandLuckTV.bs" site_id="224">Island Luck TV</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="JCNChannel14.bs" site_id="214">JCN Channel 14</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="OurTV.bs" site_id="212">Our TV</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="ParliamentaryChannel.bs" site_id="420">Parliamentary Channel</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="ZNSTV.bs" site_id="211">ZNS TV</channel>
   #Bahrain
   <channel site="elcinema.com" lang="ar" xmltv_id="BahrainTV.bh" site_id="1368">Bahrain TV</channel>
   <channel site="sat.tv" lang="en" xmltv_id="BahrainInternational.bh" site_id="1#35#Bahrain International">Bahrain International</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlMaaref.bh" site_id="1#44#المعارف">Al Maaref</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="LuaLua.bh" site_id="1#44#اللؤلؤة">LuaLua</channel>
   #Barbados
-  <channel site="ontvtonight.com" lang="en" xmltv_id="CaribVision.bb" site_id="us#69028620/caribvision">CaribVision</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="CaribVision.bb" site_id="271">CaribVision</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="GoneViralMusic.bb" site_id="282">Gone Viral Music</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="GoneViralTV.bb" site_id="285">Gone Viral TV</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="GoneViralVogue.bb" site_id="284">Gone Viral Vogue</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="GoneViralXtreme.bb" site_id="283">Gone Viral X-treme</channel>
   #Belarus
   <channel site="iptvx.one" lang="be" xmltv_id="Belarus1.by" site_id="belarus1">Беларусь 1 HD • Беларусь 1</channel>
   <channel site="iptvx.one" lang="be" xmltv_id="Belarus2.by" site_id="belarus2">Беларусь 2 HD • Беларусь 2</channel>
@@ -1978,8 +1991,8 @@
   <channel site="programme-tv.net" lang="fr" xmltv_id="TV5Monde.fr" site_id="tv5monde-128">TV5Monde</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="TV5MondeAfrica.fr" site_id="gn#180105">TV5Monde Afrique</channel>
   <channel site="ziggogo.tv" lang="en" xmltv_id="TV5MondeEurope.fr" site_id="NL_000045_019354">TV5Monde Europe</channel>
-  <channel site="ontvtonight.com" lang="fr" xmltv_id="TV5MondeUSA.fr" site_id="us#69021397/tv5-monde-usa">TV5Monde États-Unis</channel>
-  <channel site="ontvtonight.com" lang="fr" xmltv_id="TV5MondeStyle.fr" site_id="us#4461114408/tv5-monde-style-sling">TV5Monde Style</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="TV5MondeUSA.fr" site_id="677">TV5Monde États-Unis</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="TV5MondeStyle.fr" site_id="us#4461114408/tv5-monde-style-sling">TV5Monde Style</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TV7Bordeaux.fr" site_id="tv7-bordeaux-382">TV7 Bordeaux</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TV8MontBlanc.fr" site_id="8-mont-blanc-385">8 Mont-Blanc</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TVBreizh.fr" site_id="tvbreizh-129">TvBreizh</channel>
@@ -2967,109 +2980,125 @@
   <channel site="raspberrytv.net" lang="he" xmltv_id="Zoom.il" site_id="zoom-il">Zoom</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="i24NEWSHebrew.il" site_id="i24-il">i24NEWS עִברִית</channel>
   #Italy
-  <channel site="guida.tv" lang="it" xmltv_id="7Gold.it" site_id="55717668/7-gold">Italia 7 Gold</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="20.it" site_id="77688384/mediaset-20">20</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="7Gold.it" site_id="italia-7-gold/310">Italia 7 Gold</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="20.it" site_id="20/443">20</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="ACISportTV.it" site_id="aci-sport-tv/sky-sport/599">ACI Sport Tv</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="AlmaTV.it" site_id="65767765/alma">Alma TV</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="AlmaTV.it" site_id="alma-tv/583">Alma TV</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="BabyTV.it" site_id="baby-tv/sky-bambini/151">Baby TV</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="Blaze.it" site_id="blaze/sky-intrattenimento/429">Blaze</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Boing.it" site_id="66797378/boing">Boing</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Boomerang.it" site_id="79797766/sky-italian-boomerang">Boomerang</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="CacciaePesca.it" site_id="67656767/caccia">Caccia e Pesca</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Canale5.it" site_id="676773/canale-5">Canale 5</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Cartoonito.it" site_id="67658284/cartoonito">Cartoonito</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="CartoonNetwork.it" site_id="73846765/cartoon-network-italy">Cartoon Network</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Cielo.it" site_id="677679/cielo">Cielo</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Cine34.it" site_id="67735152/cine34">Cine34</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="ClassCNBC.it" site_id="67786667/class-cnbc">Class CNBC</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Boing.it" site_id="boing/195">Boing</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="BoingPlus.it" site_id="boing-plus/577">Boing Plus</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Boomerang.it" site_id="boomerang/sky-bambini/137">Boomerang</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="BoomerangPlus1.it" site_id="boomerang-1/sky-bambini/138">Boomerang + 1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="CacciaePesca.it" site_id="caccia-e-pesca/sky-sport/60">Caccia e Pesca</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Canale5.it" site_id="canale-5/187">Canale 5</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Cartoonito.it" site_id="cartoonito/196">Cartoonito</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="CartoonNetwork.it" site_id="cartoon-network/sky-bambini/212">Cartoon Network</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="CartoonNetworkPlus1.it" site_id="cn-1-/sky-bambini/136">Cartoon Network +1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Cielo.it" site_id="cielo/239">Cielo</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Cine34.it" site_id="cine34/574">Cine34</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="ClassCNBC.it" site_id="class-cnbc/sky-news/113">Class CNBC</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="ClassicaHD.it" site_id="classica-hd/sky-intrattenimento/288">Classica HD</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="ComedyCentral.it" site_id="73846767/comedy-central">Comedy Central</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="CrimePlusInvestigation.it" site_id="67827373/crimeinvestigation">Crime+Investigation</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="ComedyCentral.it" site_id="comedy-central/sky-intrattenimento/15">Comedy Central</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="CrimePlusInvestigation.it" site_id="crime-inv/sky-intrattenimento/10">Crime+Investigation</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="DAZN1.it" site_id="dazn/dazn/459">DAZN 1</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="DeAJunior.it" site_id="68696574/dea-junior">DeA Junior</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="DeAKids.it" site_id="68696575/dea-kids">DeA Kids</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="DeAJunior.it" site_id="dea-junior/sky-bambini/150">DeA Junior</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="DeAKids.it" site_id="deakids/sky-bambini/129">DeAKids</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="DeAKidsPlus1.it" site_id="deakids1/sky-bambini/130">DeAKids +1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="DeejayTV.it" site_id="deejay-tv/162">Deejay TV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="DiscoveryChannel.it" site_id="68736773/discovery-channel-i">Discovery Channel</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="DiscoveryChannel.it" site_id="discovery-channel-hd/sky-doc-e-lifestyle/89">Discovery Channel</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="DiscoveryChannelPlus1.it" site_id="discovery-ch-1/sky-doc-e-lifestyle/90">Discovery Channel +1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="DiscoveryScience.it" site_id="discovery-science-hd/sky-doc-e-lifestyle/93">Discovery Science</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="DMAX.it" site_id="68776588/dmax-italia">DMAX</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="DonnaTV.it" site_id="68797878/donna-tv">DonnaTV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="EuronewsItalian.fr" site_id="83495451/euronews">euronews</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Eurosport1.it" site_id="698573/eurosport-italia">Eurosport 1</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Eurosport2.it" site_id="69857350/eurosport-2-italia">Eurosport 2</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Focus.it" site_id="70797384/focus">Focus</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="FoodNetwork.it" site_id="70787384/food-network">Food Network</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Frisbee.it" site_id="73708273/frisbee">Frisbee</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="GamberoRossoChannel.it" site_id="71657766/sky-italian-gambero-rosso-hd">Gambero Rosso</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Giallo.it" site_id="71737979/giallo">Giallo</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="DMAX.it" site_id="dmax/256">DMAX</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="DonnaTV.it" site_id="donnatv/464">DonnaTV</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="EuronewsItalian.fr" site_id="euronews/sky-news/117">euronews</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Eurosport1.it" site_id="eurosport-hd/sky-sport/45">Eurosport 1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Eurosport2.it" site_id="eurosport-2hd/sky-sport/46">Eurosport 2</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Focus.it" site_id="focus/249">Focus</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="FoodNetwork.it" site_id="foodnetwork/431">FoodNetwork</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Frisbee.it" site_id="frisbee/246">Frisbee</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="GamberoRossoChannel.it" site_id="gambero-rosso-hd/sky-doc-e-lifestyle/100">Gambero Rosso</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Giallo.it" site_id="giallo/244">Giallo</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="GM24.it" site_id="gm24/576">GM24</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="HGTV.it" site_id="72717384/hgtv-it">HGTV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="History.it" site_id="72738373/history">History</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="HGTV.it" site_id="hgtv-homegarden/575">HGTV</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="History.it" site_id="history-hd/sky-doc-e-lifestyle/95">History</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="HistoryPlus1.it" site_id="history-1/sky-doc-e-lifestyle/96">History +1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="HorseTVHD.it" site_id="horse-tv-hd/sky-sport/51">Horse TV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="InterTV.it" site_id="73788469/inter-tv">Inter TV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Iris.it" site_id="73827383/iris">Iris</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Italia1.it" site_id="737349/italia-1">Italia 1</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Italia2.it" site_id="737350/italia-2">Italia 2</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="K2.it" site_id="75507384/k2">K2</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="La5.it" site_id="76655373/la-5">La 5</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="LA7.it" site_id="766555/la-7">La7</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="LA7d.it" site_id="76655568/la7d">La7d</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="InterTV.it" site_id="inter-tv-hd/sky-sport/57">Inter TV</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Iris.it" site_id="iris/192">Iris</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Italia1.it" site_id="italia-1/188">Italia 1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Italia2.it" site_id="italia-2/191">Italia 2</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="K2.it" site_id="k2/245">K2</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="La5.it" site_id="la-5/190">La 5</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="LA7.it" site_id="la7/253">La7</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="LA7d.it" site_id="la7d/254">La7d</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="LazioStyleChannel.it" site_id="lazio-style-channel/sky-sport/58">Lazio Style Channel</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="MediasetExtra.it" site_id="77686988/mediaset-extra">Mediaset Extra</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="MilanTV.it" site_id="77738486/milan-tv">Milan TV</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="MediasetExtra.it" site_id="mediaset-extra/194">Mediaset Extra</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="MilanTV.it" site_id="milan-tv/sky-sport/55">Milan TV</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="MotorTrend.it" site_id="motor-trend-hd/444">MotorTrend</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="MTV.it" site_id="mtv/sky-intrattenimento/298">MTV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="MTVMusic.it" site_id="73778477/mtv-music">MTV Music</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="MTVMusic.it" site_id="mtv-music/sky-musica/251">MTV Music</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="NationalGeographic.it" site_id="national-geo-hd/sky-doc-e-lifestyle/91">National Geographic</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="NationalGeographicPlus1.it" site_id="nationalgeo-1/sky-doc-e-lifestyle/92">National Geographic +1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="NationalGeographicWild.it" site_id="national-geographic-wild/sky-doc-e-lifestyle/97">National Geographic Wild</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Nickelodeon.it" site_id="73847873/nickelodeon">Nickelodeon</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="NickJr.it" site_id="73847874/nick-jr">Nick Jr.</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Nove.it" site_id="68748486/nove">Nove</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="PescaeCaccia.it" site_id="80698367/pesca">Pesca e Caccia</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="NationalGeographicWildPlus1.it" site_id="nat-geo-wild-1/sky-doc-e-lifestyle/98">National Geographic Wild +1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Nickelodeon.it" site_id="nickelodeon/sky-bambini/133">Nickelodeon</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="NickelodeonPlus1.it" site_id="nickelodeon-1/sky-bambini/134">Nickelodeon + 1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="NickJr.it" site_id="nick-junior/sky-bambini/131">Nick Junior</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="NickJrPlus1.it" site_id="nick-jr1/sky-bambini/132">Nick Jr+1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Nove.it" site_id="nove/238">Nove</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="PescaeCaccia.it" site_id="pesca-e-caccia/sky-sport/61">Pesca e Caccia</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="PremiumAction.it" site_id="premium-action/premium/205">Premium Action</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCinema1.it" site_id="premium-cinema-1/premium/445">Premium Cinema 1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCinema2.it" site_id="premium-cinema-2/premium/447">Premium Cinema 2</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCinema3.it" site_id="premium-cinema-3/premium/448">Premium Cinema 3</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCrime.it" site_id="premium-crime/premium/202">Premium Crime</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="PremiumStories.it" site_id="premium-stories/premium/204">Premium Stories</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="QVC.it" site_id="qvc/242">QVC</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="R101TV.it" site_id="r101/463">R101</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="Radio105TV.it" site_id="radio-105/460">Radio 105</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="RadiofrecciaHD.it" site_id="radio-freccia/sky-musica/590">Radio Freccia</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="RadioItaliaTV.it" site_id="radio-italia-tv/165">Radio Italia Tv</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="RadioMonteCarloTV.it" site_id="radio-monte-carlo/462">Radio Monte Carlo</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RadioNorbaTV.it" site_id="82658486/radionorba-tv">Radionorba TV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Rai1.it" site_id="826573/rai-1">Rai 1</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Rai2.it" site_id="826550/rai-2">Rai 2</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Rai3.it" site_id="826551/rai-3">Rai 3</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Rai4.it" site_id="826552/rai-4">Rai 4</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Rai5.it" site_id="826553/rai-5">Rai 5</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiGulp.it" site_id="82657185/rai-gulp">Rai Gulp</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiMovie.it" site_id="82657377/rai-movie">Rai Movie</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiNews24.it" site_id="825078/rai-24-news">Rai News 24</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiPremium.it" site_id="82657380/rai-premium">Rai Premium</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiScuola.it" site_id="82696849/rai-scuola">Rai Scuola</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiSport.it" site_id="82658350/rai-sport-hd">Rai Sport</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RadioNorbaTV.it" site_id="radionorba-tv/sky-musica/166">Radionorba TV</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Rai1.it" site_id="rai-1/217">Rai 1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Rai2.it" site_id="rai-2/218">Rai 2</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Rai3.it" site_id="rai-3/219">Rai 3</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Rai4.it" site_id="rai-4/220">Rai 4</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Rai5.it" site_id="rai-5/221">Rai 5</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiGulp.it" site_id="rai-gulp/228">Rai Gulp</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiMovie.it" site_id="rai-movie/229">Rai Movie</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiNews24.it" site_id="rainews24/222">Rai News 24</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiPremium.it" site_id="rai-premium/225">Rai Premium</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiScuola.it" site_id="rai-scuola/230">Rai Scuola</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiSport.it" site_id="raisport/sky-sport/600">Rai Sport</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="RaiSportHD.it" site_id="rai-sport-hd/223">Rai Sport+</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiStoria.it" site_id="82738384/rai-storia">Rai Storia</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RaiYoyo.it" site_id="82898979/rai-yoyo">Rai Yoyo</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RealTime.it" site_id="82847384/real-time">Real Time</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Rete4.it" site_id="738252/rete-4">Rete 4</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="RTL1025TV.it" site_id="82847673/rtl-1025">RTL 102.5 TV</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SanMarinoRTV.sm" site_id="83776578/sky-italian-san-marino-rtv">SMtv San Marino</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyArte.it" site_id="83756572/sky-arte-hdtv">Sky Arte</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyAtlantic.it" site_id="83756584/sky-atlantic-hdtv">Sky Atlantic</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaAction.it" site_id="83756765/sky-cinema-action">Sky Cinema Action</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaCollection.it" site_id="83677976/sky-cinema-collection">Sky Cinema Collection</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaComedy.it" site_id="83676779/sky-cinema-comedy">Sky Cinema Comedy</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaDrama.it" site_id="83756882/sky-cinema-drama">Sky Cinema Drama</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaDue.it" site_id="83676885/sky-cinema-due">Sky Cinema Due</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiStoria.it" site_id="rai-storia/226">Rai Storia</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RaiYoyo.it" site_id="rai-yoyo/227">Rai Yoyo</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RealTime.it" site_id="real-time/255">Real Time</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Rete4.it" site_id="rete-4/189">Rete 4</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RSILa1.ch" site_id="la-1/rsi/231">La 1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RSILa2.ch" site_id="la-2/rsi/232">La 2</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="RTL1025TV.it" site_id="rtl-1025-tv/243">RTL 102.5 TV</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SanMarinoRTV.sm" site_id="smtv-san-marino/sky-news/116">SMtv San Marino</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyArte.it" site_id="sky-arte-hd/sky-intrattenimento/11">Sky Arte</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyAtlantic.it" site_id="sky-atlantic-hd/sky-intrattenimento/3">Sky Atlantic</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyAtlanticPlus1.it" site_id="sky-atlantic-1/sky-intrattenimento/287">Sky Atlantic +1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaAction.it" site_id="sky-cinema-action-hd/sky-cinema/467">Sky Cinema Action</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaCollection.it" site_id="sky-cinema-collection-hd/sky-cinema/466">Sky Cinema Collection</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaComedy.it" site_id="sky-cinema-comedy-hd/sky-cinema/82">Sky Cinema Comedy</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaDrama.it" site_id="sky-cinema-drama-hd/sky-cinema/470">Sky Cinema Drama</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaDue.it" site_id="sky-cinema-due-hd/sky-cinema/465">Sky Cinema Due</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaDuePlus24.it" site_id="sky-cinema-due-24/sky-cinema/582">Sky Cinema Due +24</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaFamily.it" site_id="83757065/sky-cinema-family">Sky Cinema Family</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaRomance.it" site_id="83758279/sky-cinema-romance">Sky Cinema Romance</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaSuspense.it" site_id="83758385/sky-cinema-suspense">Sky Cinema Suspense</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyCinemaUno.it" site_id="83756785/sky-cinema-uno">Sky Cinema Uno</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaFamily.it" site_id="sky-cinema-family-hd/sky-cinema/79">Sky Cinema Family</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaRomance.it" site_id="sky-cinema-romance-hd/sky-cinema/469">Sky Cinema Romance</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaSuspense.it" site_id="sky-cinema-suspense-hd/sky-cinema/468">Sky Cinema Suspense</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaUno.it" site_id="sky-cinema-uno-hd/sky-cinema/75">Sky Cinema Uno</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyCinemaUnoPlus24.it" site_id="sky-cinema-uno-24/sky-cinema/578">Sky Cinema Uno +24</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyDocumentaries.it" site_id="sky-documentaries-hd/sky-doc-e-lifestyle/595">Sky Documentaries</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyDocumentariesPlus1.it" site_id="sky-documentaries-1-hd/sky-doc-e-lifestyle/596">Sky Documentaries +1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyInvestigation.it" site_id="sky-investigation-hd/sky-intrattenimento/593">Sky Investigation</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyInvestigationPlus1.it" site_id="sky-investigation-1-hd/sky-intrattenimento/594">Sky Investigation +1</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyMeteo24.it" site_id="sky-meteo24/sky-news/109">Sky Meteo24</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyNature.it" site_id="sky-nature-hd/sky-doc-e-lifestyle/597">Sky Nature</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila1.it" site_id="primafila-1/sky-primafila/168">Primafila 1</channel>
@@ -3078,16 +3107,17 @@
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila4.it" site_id="primafila-4/sky-primafila/171">Primafila 4</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila5.it" site_id="primafila-5/sky-primafila/172">Primafila 5</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySerie.it" site_id="sky-serie-hd/sky-intrattenimento/591">Sky Serie</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkySport24.it" site_id="83758380/sky-sport-24">Sky Sport 24</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySeriePlus1.it" site_id="sky-serie-1-hd/sky-intrattenimento/592">Sky Serie +1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySport24.it" site_id="sky-sport24/sky-sport/36">Sky Sport 24</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySportAction.it" site_id="sky-sport-action-hd/sky-sport/573">Sky Sport Action</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySportArena.it" site_id="sky-sport-arena/sky-sport/38">Sky Sport Arena</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySportCalcio.it" site_id="sky-sport-calcio/sky-sport/572">Sky Sport Calcio</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkySportF1.it" site_id="83837049/sky-sport-f1">Sky Sport F1</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkySportFootball.it" site_id="83757079/sky-sport-football">Sky Sport Football</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkySportMotoGP.it" site_id="83777180/sky-moto-gp">Sky Sport MotoGP</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkySportNBA.it" site_id="83757866/sky-sport-nba">Sky Sport NBA</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkySportTennis.it" site_id="66487167/sky-sport-tennis">Sky Sport Tennis</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkySportUno.it" site_id="83838085/sky-sport-uno">Sky Sport Uno</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportF1.it" site_id="sky-sport-f1-hd/sky-sport/43">Sky Sport F1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportFootball.it" site_id="sky-sport-football-hd/sky-sport/39">Sky Sport Football</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportMotoGP.it" site_id="sky-sport-motogp/sky-sport/44">Sky Sport MotoGP</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportNBA.it" site_id="sky-sport-nba/sky-sport/40">Sky Sport NBA</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportTennis.it" site_id="sky-sport-tennis-hd/sky-sport/598">Sky Sport Tennis</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportUno.it" site_id="sky-sport-uno/sky-sport/37">Sky Sport Uno</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySport251.it" site_id="sky-sport-251/sky-sport/584">Sky Sport 251</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySport252.it" site_id="sky-sport-252/sky-sport/585">Sky Sport 252</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySport253.it" site_id="sky-sport-253/sky-sport/586">Sky Sport 253</channel>
@@ -3099,27 +3129,27 @@
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySport259.it" site_id="sky-sport-259/sky-sport/65">Sky Sport 259</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySport260.it" site_id="sky-sport-260/sky-sport/67">Sky Sport 260</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="SkySport261.it" site_id="sky-sport-261/sky-sport/62">Sky Sport 261</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyTG24.it" site_id="83495456/sky-tg24">Sky TG24</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SkyUno.it" site_id="83758578/sky-uno">Sky Uno</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Sportitalia.it" site_id="83807384/sport-italia">Sportitalia</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="Super.it" site_id="73838580/super">Super!</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="SuperTennis.it" site_id="83847273/super-tennis-hd">Super Tennis</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyTG24.it" site_id="sky-tg24/240">Sky TG24</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyUno.it" site_id="sky-uno-hd/sky-intrattenimento/1">Sky Uno</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SkyUnoPlus1.it" site_id="sky-uno-1hd/sky-intrattenimento/2">Sky Uno +1</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Sportitalia.it" site_id="sportitalia/54">Sportitalia</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="Super.it" site_id="super/247">Super!</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="SuperTennis.it" site_id="supertennis/250">SuperTennis</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="TGCom24.it" site_id="tgcom24/197">Tgcom24</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="TGNorba24.it" site_id="tg-norba24/sky-news/114">TG Norba24</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="TopCalcio24.it" site_id="73845048/tv-2000">Top Calcio 24</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="TopCalcio24.it" site_id="top-calcio-24/304">Top Calcio 24</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="TopCrime.it" site_id="top-crime/193">Top Crime</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="TRMh24.it" site_id="trm-h24/sky-news/296">TRM h24</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="TV8.it" site_id="778473/tv8">TV8</channel>
-  <channel site="guida.tv" lang="it" xmltv_id="TV2000.it" site_id="73845048/tv-2000">TV2000</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="TV8.it" site_id="tv8/237">TV8</channel>
+  <channel site="superguidatv.it" lang="it" xmltv_id="TV2000.it" site_id="tv2000/241">TV2000</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="Twentyseven.it" site_id="twenty-seven/601">Twenty Seven</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="VirginRadioTV.it" site_id="virgin-radio/461">Virgin Radio</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="WarnerTV.it" site_id="warner-tv/1344181813">Warner TV</channel>
   #Jamaica
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ESPNCaribbean.jm" site_id="us#69034944/espn-caribbean">ESPN</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="ESPN2Caribbean.jm" site_id="us#69029844/espn2-caribbean">ESPN 2</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="FlowSports.jm" site_id="us#1864921428/flow-sports-caribbean">Flow Sports</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="SportsMax.jm" site_id="sportsmax/9959">SportsMax</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="SportsMax2.jm" site_id="us#663196076/sportsmax-2">SportsMax 2</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="ESPNCaribbean.jm" site_id="700">ESPN</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="ESPN2Caribbean.jm" site_id="705">ESPN 2</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="SportsMax.jm" site_id="735">SportsMax</channel>
+  <channel site="rev.bs" lang="en" xmltv_id="SportsMax2.jm" site_id="745">SportsMax 2</channel>
   #Japan
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="AnimalPlanet.jp" site_id="120_186_65406">アニマルプラネット</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="Animax.jp" site_id="120_149_65406">アニマックス</channel>
@@ -6702,7 +6732,7 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="Create.us" site_id="us#69024961/wuft-create">Create</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="CrimePlusInvestigation.us" site_id="us#69027688/crime-and-investigation-network">Crime &amp; Investigation Network</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN.us" site_id="CSPAN">C-SPAN</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN2.us" site_id="CSPN2HD">C-SPAN 2</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="CSPAN2.us" site_id="us#4217285277/c-span2">C-SPAN 2</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN3.us" site_id="CSPN3HD">C-SPAN 3</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="CW.us" site_id="us#69041710/wkcf">CW (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Dabl.us" site_id="us#7703165031/wcbs-dabl">Dabl</channel>
