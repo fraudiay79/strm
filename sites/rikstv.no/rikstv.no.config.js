@@ -6,7 +6,7 @@ dayjs.extend(utc)
 
 module.exports = {
   site: 'rikstv.no',
-  days: 7,
+  days: 3,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -42,8 +42,8 @@ module.exports = {
           actors: item.actors,
           directors: item.director || item.directors,
           icon: item.imagePackUri,
-          start,
-          stop
+          start: start.toISOString,
+          stop: stop.toISOString
         })
       })
     }
