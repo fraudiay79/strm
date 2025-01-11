@@ -21,14 +21,28 @@ module.exports = {
   parser: function ({ content }) {
     const programs = []
 
-    const data = JSON.parse(content);
+    const data = JSON.parse(content)
     data.programs.forEach(program => {
-    const localizedData = program.asset.localized.find(loc => loc.locale === 'is') || program.asset.localized[0]; // default to first if 'is' locale not found
+    const localizedData = program.asset.localized.find(loc => loc.locale === 'is') || program.asset.localized[0] // default to first if 'is' locale not found
     const start = dayjs.utc(program.asset.startTime)
     const stop = dayjs.utc(program.asset.endTime)
+    const actors = program.asset.participants
+      .filter(participant => participant.function === 'Actor')
+      .slice(0, 3)
+      .map(actor => actor.name)
+    const director = program.asset.participants
+      .find(participant => participant.function === 'Director')?.name
+    const icon = localizedData.images.find(image => image.orientation === 'LANDSCAPE')?.url || 'No landscape image available'
+    const episode = program.asset.episode
+    const season = program.asset.season
     const programData = {
       title: localizedData.title,
-      description: localizedData.longDescription || localizedData.extendedDescription || 'No description available',
+      description: localizedData.description || localizedData.longDescription || localizedData.extendedDescription || localizedData.shortDescription || 'No description available',
+      icon,
+      actors,
+      director,
+      season,
+      episode,
       start,
       stop
     }
