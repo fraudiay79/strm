@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- digiturk.com.tr
-          #npm run channels:parse --- --config=./sites/digiturk.com.tr/digiturk.com.tr.config.js --output=./sites/digiturk.com.tr/digiturk.com.tr.channels.xml
+          #npm test --- rikstv.no
+          npm run channels:parse --- --config=./sites/rikstv.no/rikstv.no.config.js --output=./sites/rikstv.no/rikstv.no.channels.xml
           #npm run grab -- --channels=./epg/channels/ie.channels.xml --output=guides/epg-ie.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=novatv.is --maxConnections=20 --output=guides/novatv.is.xml --days=1 --timeout=90000
+          #npm run grab --- --site=rikstv.no --maxConnections=20 --output=guides/rikstv.no.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/novatv.is.xml
-        #git add -f sites/digiturk.com.tr/digiturk.com.tr.channels.xml
+        #git add -f guides/rikstv.no.xml
+        git add -f sites/rikstv.no/rikstv.no.channels.xml
         git commit -m "Update xml"
         git push -f origin main
