@@ -29,8 +29,8 @@ module.exports = {
     if (data && Array.isArray(data)) {
       data.forEach(item => {
         if (!item) return
-        const start = dayjs.utc(item.broadcastedTime)
-        const stop = dayjs.utc(item.broadcastedTimeEnd)
+        //const start = dayjs.utc(item.broadcastedTime)
+        //const stop = dayjs.utc(item.broadcastedTimeEnd)
 
         programs.push({
           title: item.seriesName,
@@ -42,8 +42,8 @@ module.exports = {
           actors: item.actors,
           directors: item.director || item.directors,
           icon: item.imagePackUri,
-          start: start.toISOString,
-          stop: stop.toISOString
+          start: item.broadcastedTime,
+          stop: item.broadcastedTimeEnd
         })
       })
     }
