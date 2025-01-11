@@ -24,8 +24,8 @@ module.exports = {
     const data = JSON.parse(content)
     data.programs.forEach(program => {
     const localizedData = program.asset.localized.find(loc => loc.locale === 'is') || program.asset.localized[0] // default to first if 'is' locale not found
-    const start = dayjs.utc(program.asset.startTime)
-    const stop = dayjs.utc(program.asset.endTime)
+    const start = dayjs.utc(program.startTime)
+    const stop = dayjs.utc(program.endTime)
     const actors = program.asset.participants
       .filter(participant => participant.function === 'Actor')
       .slice(0, 3)
