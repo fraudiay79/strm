@@ -159,8 +159,19 @@ function parseStartStop(date, time) {
 }
 
 function parseTime(date, time) {
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD H:mm a', tz)
+  try {
+    const parsedTime = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD H:mm a', tz);
+    if (!parsedTime.isValid()) {
+      throw new Error(`Invalid time value: ${time}`);
+    }
+    return parsedTime;
+  } catch (error) {
+    console.error(`Failed to parse time: ${time}`, error);
+    // Handle the error or return a default value
+    return dayjs.tz(`${date.format('YYYY-MM-DD')} 00:00`, 'YYYY-MM-DD H:mm a', tz);
+  }
 }
+
 
 function parseText($item) {
   let text = $item.text()
