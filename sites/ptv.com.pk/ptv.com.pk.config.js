@@ -63,24 +63,26 @@ module.exports = {
     let programs = [];
 
     try {
-      if (content.trim().startsWith('<')) {
-        throw new Error('Received HTML instead of JSON');
-      }
+      // Check if the content is valid JSON
       const items = JSON.parse(content);
-      items.forEach(item => {
-        const start = parseProgramTime(item.programTime);
-        const stop = calculateStopTime(start);
-        programs.push({
-          title: toProperCase(item.programName),
-          description: item.descr || 'No description available',
-          start,
-          stop
+      if (Array.isArray(items)) {
+        items.forEach(item => {
+          const start = parseProgramTime(item.programTime);
+          const stop = calculateStopTime(start);
+          programs.push({
+            title: toProperCase(item.programName),
+            description: item.descr || 'No description available',
+            start,
+            stop
+          });
         });
-      });
+      } else {
+        throw new Error('Parsed content is not an array');
+      }
     } catch (error) {
       console.error("Error parsing content:", error);
     }
 
     return programs;
   }
-}
+};
