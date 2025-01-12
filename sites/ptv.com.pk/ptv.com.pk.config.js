@@ -57,7 +57,7 @@ module.exports = {
       6: 'Sunday'
     };
     const day = date.day();
-    return `http://ptv.com.pk/getShowTvGuide?channel=${channel.site_id}&nameofday=${daysOfWeek[day]}`;
+    return `https://ptv.com.pk/tvguidemaster?channelid=${channel.site_id}&nameofday=${daysOfWeek[day]}`;
   },
   parser: function ({ content, date }) {
     let programs = [];
@@ -83,4 +83,4 @@ module.exports = {
 
     return programs;
   }
-};
+}
