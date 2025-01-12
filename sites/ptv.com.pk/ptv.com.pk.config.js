@@ -1,45 +1,45 @@
 // Disable TLS validation (use cautiously)
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
 
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-dayjs.extend(utc);
-dayjs.extend(timezone);
-dayjs.extend(customParseFormat);
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 function convertStringToDate(dateString) {
-    const parsedDate = dayjs(dateString, 'YYYYMMDDHHmmss');
-    const date = parsedDate.format('YYYY-MM-DD');
-    return date;
+    const parsedDate = dayjs(dateString, 'YYYYMMDDHHmmss')
+    const date = parsedDate.format('YYYY-MM-DD')
+    return date
 }
 
 function parseProgramTime(timeStr) {
-  const timeZone = 'Asia/Karachi';
+  const timeZone = 'Asia/Karachi'
 
-  if (timeStr.includes('am') || timeStr.includes('pm') || timeStr.includes('AM') || timeStr.includes('PM')) {
-    return dayjs.tz(timeStr, 'hh.mm a', timeZone).format('YYYY-MM-DDTHH:mm:ssZ');
+  if (/am|pm|AM|PM/.test(timeStr)) {
+    return dayjs.tz(timeStr, 'hh.mm a', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
   } else if (timeStr.includes(':')) {
-    return dayjs.tz(timeStr, 'h:mm A', timeZone).format('YYYY-MM-DDTHH:mm:ssZ');
-  } else if (timeStr.length === 4) {
-    return dayjs.tz(timeStr, 'HHmm', timeZone).format('YYYY-MM-DDTHH:mm:ssZ');
-  } else if (timeStr.includes('PST') || timeStr.includes('UK') || timeStr.includes('USA')) {
-    const times = timeStr.split(',').map(t => t.trim());
-    return times.map(t => dayjs.tz(t, 'HHmmZZ', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')).join(', ');
+    return dayjs.tz(timeStr, 'HH:mm', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+  } else if (timeStr.length === 4 && /^\d{4}$/.test(timeStr)) {
+    return dayjs.tz(timeStr, 'HHmm', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+  } else if (/PST|UK|USA/.test(timeStr)) {
+    const times = timeStr.split(',').map(t => t.trim())
+    return times.map(t => dayjs.tz(t, 'HHmmZZ', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')).join(', ')
   } else {
-    return 'Invalid time format';
+    return 'Invalid time format'
   }
 }
 
 function calculateStopTime(start) {
-  const timeZone = 'Asia/Karachi';
-  return dayjs.tz(start, 'YYYY-MM-DDTHH:mm:ssZ', timeZone).add(1, 'hour').format('YYYY-MM-DDTHH:mm:ssZ');
+  const timeZone = 'Asia/Karachi'
+  return dayjs.tz(start, 'YYYY-MM-DDTHH:mm:ssZ', timeZone).add(1, 'hour').format('YYYY-MM-DDTHH:mm:ssZ')
 }
 
 function toProperCase(str) {
-  return str.toLowerCase().replace(/\b\w/g, char => char.toUpperCase());
+  return str.toLowerCase().replace(/\b\w/g, char => char.toUpperCase())
 }
 
 module.exports = {
@@ -47,42 +47,32 @@ module.exports = {
   channels: 'ptv.com.pk.channels.xml',
   days: 2,
   url: function ({ date, channel }) {
-    const daysOfWeek = {
-      0: 'Monday',
-      1: 'Tuesday',
-      2: 'Wednesday',
-      3: 'Thursday',
-      4: 'Friday',
-      5: 'Saturday',
-      6: 'Sunday'
-    };
+    const daysOfWeek = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
     const day = date.day();
-    return `https://ptv.com.pk/tvguidemaster?channelid=${channel.site_id}&nameofday=${daysOfWeek[day]}`;
+    return `https://ptv.com.pk/tvguidemaster?channelid=${channel.site_id}&dayofweek=${daysOfWeek[day]}`
   },
   parser: function ({ content, date }) {
-    let programs = [];
+    let programs = []
 
     try {
-      // Check if the content is valid JSON
-      const items = JSON.parse(content);
-      if (Array.isArray(items)) {
-        items.forEach(item => {
-          const start = parseProgramTime(item.programTime);
-          const stop = calculateStopTime(start);
-          programs.push({
-            title: toProperCase(item.programName),
-            description: item.descr || 'No description available',
-            start,
-            stop
-          });
-        });
-      } else {
-        throw new Error('Parsed content is not an array');
+      if (content.trim().startsWith('<')) {
+        throw new Error('Received HTML instead of JSON')
       }
+      const items = JSON.parse(content)
+      items.forEach(item => {
+        const start = parseProgramTime(item.programTime)
+        const stop = calculateStopTime(start)
+        programs.push({
+          title: toProperCase(item.programName),
+          description: item.descr || 'No description available',
+          start,
+          stop
+        })
+      })
     } catch (error) {
-      console.error("Error parsing content:", error);
+      console.error("Error parsing content:", error.message)
     }
 
-    return programs;
+    return programs
   }
-};
+}
