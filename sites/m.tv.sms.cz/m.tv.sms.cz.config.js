@@ -1,3 +1,6 @@
+// Disable TLS validation (use cautiously)
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
+
 const cheerio = require('cheerio')
 const iconv = require('iconv-lite')
 const { DateTime } = require('luxon')
