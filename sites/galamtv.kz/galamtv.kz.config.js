@@ -18,10 +18,7 @@ module.exports = {
             ttl: 60 * 60 * 1000 // 1 hour
         }
     },
-    url({
-        channel,
-        date
-    }) {
+    url({ channel, date }) {
         const todayEpoch = date.startOf('day').utc().valueOf()
         const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
         return `https://galam.server-api.lfstrm.tv/channels/${channel.site_id}/programs?period=${todayEpoch}:${nextDayEpoch}&app.version=3.5.12`
