@@ -16,15 +16,10 @@ module.exports = {
     const items = parseItems(content, channel)
     items.forEach(item => {
       if (!item.details) return
-      const start = dayjs(item.time)
-      const stop = start.add(item.details.duration, 'm')
+      const start = dayjs(item.started_at)
+      const stop = dayjs(item.ended_at)
       programs.push({
         title: item.title,
-        category: item.details.categories,
-        description: item.details.description,
-        image: item.details.image,
-        season: parseSeason(item),
-        episode: parseEpisode(item),
         start,
         stop
       })
@@ -47,19 +42,4 @@ module.exports = {
       }
     })
   }
-}
-
-function parseItems(content, channel) {
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data.channels)) return []
-  const channelData = data.channels.find(i => i.id === channel.site_id)
-
-  return channelData && Array.isArray(channelData.events) ? channelData.events : []
-}
-
-function parseSeason(item) {
-  return item.details.season || null
-}
-function parseEpisode(item) {
-  return item.details.episode || null
 }
