@@ -71,34 +71,41 @@ module.exports = {
         return shows
     },
     async channels() {
-        const url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=2025-01-13T05%3A00:00Z&end=2025-01-14T05%3A00:00Z&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100';
+        const url = 'https://catalog-service-cdn.api.pldt.firstlight.ai/catalog/storefront/2DB25A6A-7F9C-4ACE-9DFA-B63E7264BAA9/7C5DC10D-980E-4373-8D2F-A5015FB7834E/containers?policy_evaluate=false&pageNumber=1&pageSize=100&reg=row&dt=web&client=pldt-cignal-web'
         const response = await axios.get(url, {
             headers: {
                 'Accept-Encoding': 'gzip, deflate, br'
             }
         })
 
-        const parsedData = response.data
-        const data = parsedData.data
+        const {
+            data: parsedData
+        } = response
+        const {
+            data
+        } = parsedData
         const channels = []
 
         // Ensure data is an array
         if (!Array.isArray(data)) {
-            console.error('Data is not an array:', data)
+            console.error('Data is not an array:', data);
             return channels
         }
 
         data.forEach(item => {
-            item.airing.forEach(airing => {
-                channels.push({
-                    lang: 'en',
-                    name: airing.ch.acs ? airing.ch.acs.replace(/_/g, ' ') : 'Unknown',
-                    site_id: airing.ch.cs
+            if (Array.isArray(item.data)) {
+                item.data.forEach(data => {
+                    channels.push({
+                        lang: 'en',
+                        name: data.lon[0]?.n, // Extracting the name from the 'lon' array
+                        site_id: data.cs
+                    })
                 })
-            })
+            } else {
+                console.error('Nested data is not an array:', item.data)
+            }
         })
 
         return channels
     }
-
 }
