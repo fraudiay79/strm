@@ -20,10 +20,10 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    const start = date.format('YYYY-MM-DD');
-    const end = date.add(1, 'day').format('YYYY-MM-DD');
-    return `https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}Z&end=${end}Z&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100`;
-  },
+    const start = date.format('YYYY-MM-DD[T]HH:mm:ss[Z]')
+    const end = date.add(1, 'day').format('YYYY-MM-DD[T]HH:mm:ss[Z]')
+    return `https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100`
+},
   async parser({ content, channel }) {
     const shows = [];
     let data;
