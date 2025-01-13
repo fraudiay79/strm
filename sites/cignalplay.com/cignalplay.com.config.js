@@ -22,7 +22,7 @@ module.exports = {
   url({ channel, date }) {
     const start = date.format('YYYY-MM-DD[T]HH:mm:ss[Z]')
     const end = date.add(1, 'day').format('YYYY-MM-DD[T]HH:mm:ss[Z]')
-    return `https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web`
+    return `https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100`
 },
   async parser({ content, channel }) {
   const shows = []
@@ -65,7 +65,7 @@ module.exports = {
   return shows
 },
   async channels() {
-    const url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web'
+    const url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100'
     const response = await axios.get(url, {
       headers: {
         'Accept-Encoding': 'gzip, deflate, br'
