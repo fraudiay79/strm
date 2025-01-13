@@ -26,16 +26,25 @@ module.exports = {
 },
   async parser({ content, channel }) {
   const shows = [];
-  let data;
+  let parsedData;
 
   try {
     if (content.trim().length === 0) {
       throw new Error('Empty response content');
     }
-    data = JSON.parse(content);
+    parsedData = JSON.parse(content);
   } catch (error) {
     console.error('Error parsing JSON:', error);
     return shows; // Return empty shows array if parsing fails
+  }
+
+  // Access the 'data' key in the parsed JSON
+  const data = parsedData.data;
+
+  // Ensure data is an array
+  if (!Array.isArray(data)) {
+    console.error('Data is not an array:', data);
+    return shows;
   }
 
   data.forEach(item => {
