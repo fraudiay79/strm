@@ -2801,9 +2801,6 @@
   <channel site="mncvision.id" lang="en" xmltv_id="GalaxyPremium.id" site_id="12">Galaxy Premium</channel>
   <channel site="cubmu.com" lang="id" xmltv_id="GTV.id" site_id="4028c68574537fcd0174be52f87b58f2">GTV</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="HistoryAsia.us" site_id="206">History</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="HITS.sg" site_id="hits">HITS</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="HITSMovies.sg" site_id="hitsmovies">HITS Movies</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="HITSNow.sg" site_id="hitsnow">HITS Now</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="IDXChannel.id" site_id="100">IDX</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="IMC.id" site_id="14">IMC</channel>
   <channel site="tivie.id" lang="id" xmltv_id="Indosiar.id" site_id="indosiar">Indosiar</channel>
@@ -4222,35 +4219,54 @@
   <channel site="mysky.com.ph" lang="en" xmltv_id="A2Z.ph" site_id="323">A2Z</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="ANC.ph" site_id="27">ANC</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="AsianFoodNetwork.sg" site_id="22">Asian Food Network</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="AXN.ph" site_id="axn">AXN</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="BBCEarthAsia.uk" site_id="bbcearth_hd">BBC Earth</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="beINSports1.ph" site_id="204">beIN Sports 1</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="beINSports2.ph" site_id="205">beIN Sports 2</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="beINSports3.ph" site_id="206">beIN Sports 3</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="Bilyonaryo.ph" site_id="bilyonaryoch">Bilyonaryo</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="BuKo.ph" site_id="buko">BuKo</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="CartoonNetwork.ph" site_id="43">Cartoon Network</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="CCM.hk" site_id="97">Celestial Classic Movies</channel>
   <channel site="clickthecity.com" lang="en" xmltv_id="CelestialMoviesPinoy.hk" site_id="181">Celestial Movies Pinoy</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="CinemaOne.ph" site_id="56">Cinema One</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="CineMo.ph" site_id="7">CINEMO!</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="DaVinciAsia.de" site_id="299">Da Vinci</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="DepEdTV.ph" site_id="depedchannel">DepEd TV</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="DiscoveryChannel.ph" site_id="discovery">Discovery Channel</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="DreamWorks.ph" site_id="250">DreamWorks</channel>
   <channel site="clickthecity.com" lang="en" xmltv_id="GMATV.ph" site_id="2">GMA</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="GMALife.ph" site_id="us#69033240/gma-life-tv">GMA Life</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="GMANews.ph" site_id="us#69045922/gma-news-tv">GMA News</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="GMAPinoy.ph" site_id="us#69027006/gma-pinoy-tv-east">GMA Pinoy</channel>
   <channel site="clickthecity.com" lang="en" xmltv_id="GTV.ph" site_id="143">GTV</channel>
-  <channel site="clickthecity.com" lang="en" xmltv_id="IBC13.ph" site_id="7">IBC 13</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="HITSNow.sg" site_id="cg_hitsnow">HITS Now</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="IBC13.ph" site_id="ibc13">IBC 13</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="JeepneyTV.ph" site_id="9">Jeepney TV</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="KapamilyaChannel.ph" site_id="8">Kapamilya Channel</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="KIX.hk" site_id="63">KIX</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="KnowledgeChannel.ph" site_id="5">Knowledge Channel</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="Lifetime.ph" site_id="lifetime">Lifetime</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="MediaPilipinasTV.ph" site_id="cg_mptv">Media Pilipinas TV</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="MetroChannel.ph" site_id="287">Metro Channel</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="MoonbugKids.ph" site_id="moonbug_kids">Moonbug Kids</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="Myx.ph" site_id="23">Myx</channel>
   <channel site="clickthecity.com" lang="en" xmltv_id="Net25.ph" site_id="133">Net 25</channel>
-  <channel site="mysky.com.ph" lang="en" xmltv_id="OneSports.ph" site_id="309">One Sports</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="OneNews.ph" site_id="onenews_hd">One News</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="OnePH.ph" site_id="oneph">One PH</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="OneSports.ph" site_id="onesports">One Sports</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="OneSportsPlus.ph" site_id="onesportsplus_hd">One Sports+</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="PBARush.ph" site_id="pbarush_hd">PBA Rush</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="PBO.ph" site_id="60">PBO</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="PremierFootball.ph" site_id="322">Premier Football</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="PremierSports2.ph" site_id="326">Premier Sports 2</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="PremierSports.ph" site_id="140">Premier Sports</channel>
-  <channel site="clickthecity.com" lang="en" xmltv_id="PTV.ph" site_id="4">PTV</channel>
-  <channel site="mysky.com.ph" lang="en" xmltv_id="SPOTV2.kr" site_id="32">SPOTV 2</channel>
-  <channel site="mysky.com.ph" lang="en" xmltv_id="SPOTV.kr" site_id="31">SPOTV</channel>
-  <channel site="mysky.com.ph" lang="en" xmltv_id="TagalizedMovieChannel.ph" site_id="80">TMC</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="PTV4.ph" site_id="nbn4">PTV 4</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="RPTV.ph" site_id="rptv">RPTV</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="SariSari.ph" site_id="sari_sari">Sari Sari</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="SPOTV.id" site_id="SPOTV_HD">SPOTV</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="SPOTV2.id" site_id="SPOTV_HD2">SPOTV 2</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="TagalizedMovieChannel.ph" site_id="cg_tagalogmovie">Tagalized Movie Channel</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="TAPActionFlix.ph" site_id="78">TAP Action Flix</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="TAPEdge.ph" site_id="325">TAP Edge</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="TAPMovies.ph" site_id="55">TAP Movies</channel>
@@ -4259,10 +4275,16 @@
   <channel site="mysky.com.ph" lang="en" xmltv_id="TechStorm.sg" site_id="301">Tech Storm</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="Thrill.hk" site_id="107">Thrill</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="TLCSoutheastAsia.sg" site_id="62">TLC</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="TravelChannel.ph" site_id="travel_channel">Travel Channel</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="TrueFMTV.ph" site_id="truefmtv">True FM TV</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="TV5.ph" site_id="10">TV5</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="TVBSAsia.tw" site_id="144">TVBS Asia</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="TVBSNews.tw" site_id="304">TVBS News</channel>
-  <channel site="clickthecity.com" lang="en" xmltv_id="VivaCinema.ph" site_id="155">VIVA Cinema</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="TVMaria.ph" site_id="tvmaria_prd">TV Maria</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="tvNPremium.ph" site_id="cg_tvnpre">tvN Premium</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="TVUP.ph" site_id="tvup_prd">TV UP</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="UAAPVarsityChannel.ph" site_id="uaap_varsity">UAAP Varsity Channel</channel>
+  <channel site="cignalplay.com" lang="en" xmltv_id="VivaCinema.ph" site_id="viva">Viva Cinema</channel>
   #Poland
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="4FunDance.pl" site_id="4fun-fit-dance-244">4FUN DANCE</channel>
   <channel site="programtv.onet.pl" lang="pl" xmltv_id="4FunTV.pl" site_id="4fun-tv-269">4FUN.TV</channel>
