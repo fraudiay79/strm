@@ -1,11 +1,17 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 const doFetch = require('@ntlab/sfetch')
 
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
-    site: 'galamtv.kz',
-    channels: 'galamtv.kz.channels.xml',
+    site: 'galamtv.kz',,
+    timezone: 'Asia/Almaty',
     days: 2,
     request: {
         cache: {
@@ -20,9 +26,7 @@ module.exports = {
         const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
         return `https://galam.server-api.lfstrm.tv/channels/${channel.site_id}/programs?period=${todayEpoch}:${nextDayEpoch}&app.version=3.5.12`
     },
-    parser: function({
-        content
-    }) {
+    parser: function({ content }) {
         let programs = []
         const data = JSON.parse(content)
         const programsData = data.programs || []
@@ -33,14 +37,14 @@ module.exports = {
 
             programs.push({
                 title: program.metaInfo.title,
-                description: program.metaInfo.description || '',
-                image: program.mediaInfo.thumbnails.url,
+                description: program.metaInfo.description,
+                image: program.mediaInfo.thumbnails[0].url,
                 start,
                 stop
             })
         })
 
-        return programs;
+        return programs
     },
     async channels() {
         const data = await axios
