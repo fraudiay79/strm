@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- cignalplay.com
-          #npm run channels:parse --- --config=./sites/cignalplay.com/cignalplay.com.config.js --output=./sites/cignalplay.com/cignalplay.com.channels.xml
+          #npm test --- galamtv.kz
+          #npm run channels:parse --- --config=./sites/galamtv.kz/galamtv.kz.config.js --output=./sites/galamtv.kz/galamtv.kz.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=cignalplay.com --maxConnections=20 --output=guides/cignalplay.com.xml --days=1 --timeout=90000
+          npm run grab --- --site=galamtv.kz --maxConnections=20 --output=guides/galamtv.kz.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/cignalplay.com.xml
-        #git add -f sites/cignalplay.com/cignalplay.com.channels.xml
+        git add -f guides/galamtv.kz.xml
+        #git add -f sites/galamtv.kz/galamtv.kz.channels.xml
         git commit -m "Update xml"
         git push -f origin main
