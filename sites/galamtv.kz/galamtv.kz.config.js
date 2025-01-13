@@ -13,15 +13,22 @@ module.exports = {
     site: 'galamtv.kz',
     timezone: 'Asia/Almaty',
     days: 2,
-    //request: {
-    //    cache: {
-    //        ttl: 60 * 60 * 1000 // 1 hour
-    //    }
-    //},
+    request: {
+        cache: {
+            ttl: 60 * 60 * 1000 // 1 hour
+        },
+        method: 'GET',
+        headers: {
+            Referer: 'https://galamtv.kz/',
+            Origin: 'https://galamtv.kz',
+            Accept: '*/*',
+            'Accept-Encoding': 'gzip, deflate, br, zstd',
+        }
+    },
     url({ channel, date }) {
         const todayEpoch = date.startOf('day').utc().valueOf()
         const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
-        return `https://galam.server-api.lfstrm.tv/channels/${channel.site_id}/programs?period=${todayEpoch}:${nextDayEpoch}&app.version=3.5.12`
+        return `https://galam.server-api.lfstrm.tv/channels/${channel.site_id}/programs?period=${todayEpoch}:${nextDayEpoch}`
     },
     parser: function({ content }) {
         let programs = []
@@ -45,7 +52,7 @@ module.exports = {
     },
     async channels() {
         const data = await axios
-            .get(`https://galam.server-api.lfstrm.tv/channels-now?app.version=3.3.7`)
+            .get(`https://galam.server-api.lfstrm.tv/channels-now`)
             .then(r => r.data)
             .catch(console.log)
 
