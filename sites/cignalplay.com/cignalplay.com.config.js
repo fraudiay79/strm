@@ -1,12 +1,12 @@
-const axios = require('axios');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
+const axios = require('axios')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-dayjs.extend(utc);
-dayjs.extend(timezone);
-dayjs.extend(customParseFormat);
+dayjs.extend(utc)
+dayjs.extend(timezone)
+dayjs.extend(customParseFormat)
 
 module.exports = {
   site: 'cignalplay.com',
@@ -22,29 +22,29 @@ module.exports = {
   url({ channel, date }) {
     const start = date.format('YYYY-MM-DD[T]HH:mm:ss[Z]')
     const end = date.add(1, 'day').format('YYYY-MM-DD[T]HH:mm:ss[Z]')
-    return `https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100`
+    return `https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web`
 },
   async parser({ content, channel }) {
-  const shows = [];
-  let parsedData;
+  const shows = []
+  let parsedData
 
   try {
     if (content.trim().length === 0) {
-      throw new Error('Empty response content');
+      throw new Error('Empty response content')
     }
-    parsedData = JSON.parse(content);
+    parsedData = JSON.parse(content)
   } catch (error) {
-    console.error('Error parsing JSON:', error);
+    console.error('Error parsing JSON:', error)
     return shows; // Return empty shows array if parsing fails
   }
 
   // Access the 'data' key in the parsed JSON
-  const data = parsedData.data;
+  const data = parsedData.data
 
   // Ensure data is an array
   if (!Array.isArray(data)) {
-    console.error('Data is not an array:', data);
-    return shows;
+    console.error('Data is not an array:', data)
+    return shows
   }
 
   data.forEach(item => {
@@ -56,33 +56,33 @@ module.exports = {
           category: airing.genre || '',
           start: dayjs(airing.sc_st_dt).utc().format(),
           stop: dayjs(airing.sc_ed_dt).utc().format()
-        };
-        shows.push(show);
-      });
+        }
+        shows.push(show)
+      })
     }
-  });
+  })
 
-  return shows;
+  return shows
 },
   async channels() {
-    const url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=2023-01-01T00:00:00Z&end=2023-01-02T00:00:00Z&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100';
+    const url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=${start}&end=${end}&reg=ph&dt=all&client=pldt-cignal-web'
     const response = await axios.get(url, {
       headers: {
         'Accept-Encoding': 'gzip, deflate, br'
       }
-    });
+    })
 
-    const data = response.data;
-    const channels = [];
+    const data = response.data
+    const channels = []
 
     data.forEach(item => {
       channels.push({
         lang: 'en',
         name: item.ch.acs ? item.ch.acs.replace(/_/g, ' ') : 'Unknown',
-        site_id: item.cid
-      });
-    });
+        site_id: item.cs
+      })
+    })
 
-    return channels;
+    return channels
   }
-};
+}
