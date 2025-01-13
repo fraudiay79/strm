@@ -10,7 +10,7 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
 module.exports = {
-    site: 'galamtv.kz',,
+    site: 'galamtv.kz',
     timezone: 'Asia/Almaty',
     days: 2,
     request: {
