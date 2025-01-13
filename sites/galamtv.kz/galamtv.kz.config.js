@@ -14,9 +14,6 @@ module.exports = {
     timezone: 'Asia/Almaty',
     days: 2,
     request: {
-        cache: {
-            ttl: 60 * 60 * 1000 // 1 hour
-        },
         method: 'GET',
         headers: {
             Referer: 'https://galamtv.kz/',
