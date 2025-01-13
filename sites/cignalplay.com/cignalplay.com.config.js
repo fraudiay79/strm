@@ -48,7 +48,7 @@ module.exports = {
   }
 
   data.forEach(item => {
-    if (item.ch.ex_id === channel.site_id) {
+    if (item.cs === channel.site_id) {
       item.airing.forEach(airing => {
         const show = {
           title: airing.pgm.lon[0].n || '',
