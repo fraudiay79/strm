@@ -3,7 +3,6 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -48,17 +47,18 @@ module.exports = {
         return programs
     },
     async channels() {
-        const data = await axios
-            .get(`https://galam.server-api.lfstrm.tv/channels-now`)
-            .then(r => r.data)
-            .catch(console.log)
-
-        return data.channels.map(item => {
-            return {
-                lang: 'kk',
-                site_id: item.channels.id,
-                name: item.channels.info.metaInfo.title
-            }
-        })
+        try {
+            const response = await axios.get(`https://galam.server-api.lfstrm.tv/channels-now`)
+            return response.data.channels.map(item => {
+                return {
+                    lang: 'kk',
+                    site_id: item.channels.id,
+                    name: item.channels.info.metaInfo.title
+                }
+            })
+        } catch (error) {
+            console.error('Error fetching channels:', error)
+            return []
+        }
     }
 }
