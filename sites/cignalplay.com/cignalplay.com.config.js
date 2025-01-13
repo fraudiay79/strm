@@ -65,24 +65,34 @@ module.exports = {
   return shows
 },
   async channels() {
-    const url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=2025-01-13T05%3A00:00Z&end=2025-01-14T05%3A00:00Z&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100'
-    const response = await axios.get(url, {
-      headers: {
-        'Accept-Encoding': 'gzip, deflate, br'
-      }
-    })
+  const url = 'https://live-data-store-cdn.api.pldt.firstlight.ai/content/epg?start=2025-01-13T05%3A00:00Z&end=2025-01-14T05%3A00:00Z&reg=ph&dt=all&client=pldt-cignal-web&pageNumber=1&pageSize=100';
+  const response = await axios.get(url, {
+    headers: {
+      'Accept-Encoding': 'gzip, deflate, br'
+    }
+  });
 
-    const data = response.data
-    const channels = []
+  const parsedData = response.data;
+  const data = parsedData.data;
+  const channels = [];
 
-    data.forEach(item => {
+  // Ensure data is an array
+  if (!Array.isArray(data)) {
+    console.error('Data is not an array:', data);
+    return channels;
+  }
+
+  data.forEach(item => {
+    item.airing.forEach(airing => {
       channels.push({
         lang: 'en',
-        name: item.ch.acs ? item.ch.acs.replace(/_/g, ' ') : 'Unknown',
-        site_id: item.cs
-      })
-    })
+        name: airing.ch.acs ? airing.ch.acs.replace(/_/g, ' ') : 'Unknown',
+        site_id: airing.ch.cs
+      });
+    });
+  });
 
-    return channels
-  }
+  return channels;
+}
+
 }
