@@ -48,14 +48,14 @@ module.exports = {
   }
 
   data.forEach(item => {
-    if (item.cid === channel.site_id) {
+    if (item.ch.ex_id === channel.site_id) {
       item.airing.forEach(airing => {
         const show = {
           title: airing.pgm.lon[0].n || '',
-          startTime: dayjs(airing.sc_st_dt).utc().format(),
-          endTime: dayjs(airing.sc_ed_dt).utc().format(),
           description: airing.pgm.lod[0].n || 'No description available',
-          category: airing.genre || ''
+          category: airing.genre || '',
+          start: dayjs(airing.sc_st_dt).utc().format(),
+          stop: dayjs(airing.sc_ed_dt).utc().format()
         };
         shows.push(show);
       });
