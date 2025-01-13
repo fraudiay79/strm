@@ -13,11 +13,11 @@ module.exports = {
     site: 'galamtv.kz',
     timezone: 'Asia/Almaty',
     days: 2,
-    request: {
-        cache: {
-            ttl: 60 * 60 * 1000 // 1 hour
-        }
-    },
+    //request: {
+    //    cache: {
+    //        ttl: 60 * 60 * 1000 // 1 hour
+    //    }
+    //},
     url({ channel, date }) {
         const todayEpoch = date.startOf('day').utc().valueOf()
         const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
