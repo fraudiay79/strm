@@ -19,15 +19,21 @@ module.exports = {
     const data = JSON.parse(content)
     if (!data.ch_programme) return programs
 
-    data.ch_programme.forEach(item => {
+    data.ch_programme.forEach((item, index) => {
       if (!item.title || !item.start) return
-      const start = dayjs.utc(item.start, 'DD-MM-YYYY HH:mm')
-      const stop = start.add(1, 'hour')
-
+      const start = dayjs(item.start, 'DD-MM-YYYY HH:mm')
+      let stop
+      if (index < data.ch_programme.length - 1) {
+        const nextStart = dayjs(data.ch_programme[index + 1].start, 'DD-MM-YYYY HH:mm')
+        stop = nextStart.subtract(1, 'minute')
+      } else {
+        stop = start.add(1, 'hour')
+      }
+      
       programs.push({
         title: item.title,
         description: item.description,
-        category: item.category,
+        category: item.category || null,
         start,
         stop,
       })
@@ -49,7 +55,6 @@ module.exports = {
       })
     } catch (error) {
       console.error('Error fetching channels:', error)
-      // Consider returning a default value or throwing an error
     }
   }
 }
