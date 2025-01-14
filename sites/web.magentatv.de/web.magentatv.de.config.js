@@ -5,7 +5,7 @@ const customParseFormat = require('dayjs/plugin/customParseFormat')
 const { upperCase } = require('lodash')
 
 let X_CSRFTOKEN
-let COOKIE
+let Cookie
 const cookiesToExtract = ['JSESSIONID', 'CSESSIONID', 'CSRFSESSION']
 
 dayjs.extend(utc)
@@ -17,10 +17,9 @@ module.exports = {
   url: 'https://api.prod.sngtv.magentatv.de/EPG/JSON/PlayBillList',
   request: {
     method: 'POST',
-    headers: function () {
-      return setHeaders()
+    async headers() {
+      return await setHeaders()
     },
-
     data({ channel, date }) {
       return {
         count: -1,
@@ -28,7 +27,8 @@ module.exports = {
         offset: 0,
         properties: [
           {
-            include: 'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
+            include:
+              'endtime,genres,id,name,starttime,channelid,pictures,introduce,subName,seasonNum,subNum,cast,country,producedate,externalIds',
             name: 'playbill'
           }
         ],
@@ -39,8 +39,8 @@ module.exports = {
       }
     }
   },
-  parser: function ({ content }) {
-    let programs = []
+  parser({ content }) {
+    const programs = []
     const items = parseItems(content)
     items.forEach(item => {
       programs.push({
@@ -111,15 +111,15 @@ function parseCategory(item) {
 }
 
 function parseDirectors(item) {
-  if (!item.cast || !item.cast.director) return [];
+  if (!item.cast || !item.cast.director) return []
   return item.cast.director
     .replace('und', ',')
     .split(',')
-    .map(i => i.trim());
+    .map(i => i.trim())
 }
 
 function parseProducers(item) {
-  if (!item.cast || !item.cast.producer) return [];
+  if (!item.cast || !item.cast.producer) return []
   return item.cast.producer
     .replace('und', ',')
     .split(',')
@@ -127,7 +127,7 @@ function parseProducers(item) {
 }
 
 function parseAdapters(item) {
-  if (!item.cast || !item.cast.adaptor) return [];
+  if (!item.cast || !item.cast.adaptor) return []
   return item.cast.adaptor
     .replace('und', ',')
     .split(',')
@@ -136,7 +136,7 @@ function parseAdapters(item) {
 
 function parseUrls(item) {
   // currently only a imdb id is returned by the api, thus we can construct the url here
-  if (!item.externalIds) return [];
+  if (!item.externalIds) return []
   return JSON.parse(item.externalIds)
     .filter(externalId => externalId.type === 'imdb' && externalId.id)
     .map(externalId => ({ system: 'imdb', value: `https://www.imdb.com/title/${externalId.id}` }))
@@ -165,23 +165,13 @@ function parseItems(content) {
 
 async function fetchCookieAndToken() {
   // Only fetch the cookies and csrfToken if they are not already set
-  if (X_CSRFTOKEN && COOKIE) {
+  if (X_CSRFTOKEN && Cookie) {
     return
   }
 
   try {
     const response = await axios.request({
       url: 'https://api.prod.sngtv.magentatv.de/EPG/JSON/Authenticate',
-      headers: {
-        accept: 'application/json, text/javascript, */*; q=0.01',
-        'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
-        'sec-fetch-dest': 'empty',
-        'sec-fetch-mode': 'cors',
-        'sec-fetch-site': 'same-origin',
-        'x-requested-with': 'XMLHttpRequest',
-        Referer: 'https://web.magentatv.de/',
-        'Referrer-Policy': 'strict-origin-when-cross-origin'
-      },
       params: {
         SID: 'firstup',
         T: 'Windows_chrome_118'
@@ -190,10 +180,9 @@ async function fetchCookieAndToken() {
       data: '{"terminalid":"00:00:00:00:00:00","mac":"00:00:00:00:00:00","terminaltype":"WEBTV","utcEnable":1,"timezone":"Etc/GMT0","userType":3,"terminalvendor":"Unknown"}',
     })
 
-
     // Extract the cookies specified in cookiesToExtract
     const setCookieHeader = response.headers['set-cookie'] || []
-    let extractedCookies = []
+    const extractedCookies = []
     cookiesToExtract.forEach(cookieName => {
       const regex = new RegExp(`${cookieName}=(.+?)(;|$)`)
       const match = setCookieHeader.find(header => regex.test(header))
@@ -204,7 +193,6 @@ async function fetchCookieAndToken() {
       }
     })
 
-
     // check if we recieved a csrfToken only then store the values
     if (!response.data.csrfToken) {
       console.log('csrfToken not found in the response.')
@@ -212,19 +200,15 @@ async function fetchCookieAndToken() {
     }
 
     X_CSRFTOKEN = response.data.csrfToken
-    COOKIE = extractedCookies.join(' ')
+    Cookie = extractedCookies.join(' ')
 
   } catch(error) {
     console.error(error)
   }
 }
 
-function setHeaders() {
-  return fetchCookieAndToken().then(() => {
-    return {
-      X_CSRFTOKEN: X_CSRFTOKEN,
-      'Content-Type': 'application/json',
-      Cookie: COOKIE
-    }
-  })
+async function setHeaders() {
+  await fetchCookieAndToken()
+
+  return { X_CSRFTOKEN, Cookie }
 }
