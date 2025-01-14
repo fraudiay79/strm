@@ -23,7 +23,7 @@ module.exports = {
 
     programsData.forEach(item => {
       const start = dayjs.tz(item.started_at, 'Asia/Tehran') 
-      const start = dayjs.tz(item.ended_at, 'Asia/Tehran')
+      const stop = dayjs.tz(item.ended_at, 'Asia/Tehran')
 
       programs.push({
         title: item.title,
