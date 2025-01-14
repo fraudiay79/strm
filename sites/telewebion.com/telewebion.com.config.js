@@ -11,10 +11,10 @@ module.exports = {
   url({ channel, date }) {
     return `https://gateway.telewebion.com/kandoo/channel/getChannelEpisodesByDate/?ChannelDescriptor=${channel.site_id}&FromDate=${date.startOf('day').format('YYYY-MM-DDTHH:mm:ss')}&ToDate=${date.endOf('day').format('YYYY-MM-DDTHH:mm:ss')}&IsClip=false&First=24&Offset=0`
   },
-  parser({ content }) {
+  parser: function ({ content }) {
     let programs = []
-    const items = parseItems(content, channel)
-    items.forEach(item => {
+    const data = JSON.parse(content)
+    data.items.forEach(item => {
       if (!item.details) return
       const start = dayjs(item.started_at)
       const stop = dayjs(item.ended_at)
