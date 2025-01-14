@@ -42,8 +42,8 @@ module.exports = {
           category: item.flokkur,
           actors: item.adalhlutverk,
           directors: item.leikstjori,
-          start: start.toISOString,
-          stop: stop.toISOString
+          start,
+          stop
         })
       })
     }
