@@ -33,7 +33,7 @@ module.exports = {
     })
 
     return programs
-  }
+  },
   async channels() {
     const axios = require('axios')
     const data = await axios
