@@ -1,21 +1,21 @@
-const { parser, url, channels } = require('./rikstv.no.config.js');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
+const { parser, url } = require('./rikstv.no.config.js')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-dayjs.extend(customParseFormat);
-dayjs.extend(utc);
+dayjs.extend(customParseFormat)
+dayjs.extend(utc)
 
-const date = dayjs.utc('2025-01-14', 'YYYY-MM-DD').startOf('d');
+const date = dayjs.utc('2025-01-14', 'YYYY-MM-DD').startOf('d')
 const channel = {
   site_id: '47',
   xmltv_id: 'NRK1.no'
-};
+}
 
 describe('rikstv.no Module Tests', () => {
   it('can generate valid url', () => {
-    expect(url({ date, channel })).toBe(`https://play.rikstv.no/api/content-search/1/channel/${channel.site_id}/epg/${date.format('YYYY-MM-DD')}`);
-  });
+    expect(url({ date, channel })).toBe(`https://play.rikstv.no/api/content-search/1/channel/${channel.site_id}/epg/${date.format('YYYY-MM-DD')}`)
+  })
 
   it('can parse response', () => {
     const content = JSON.stringify([
@@ -32,13 +32,13 @@ describe('rikstv.no Module Tests', () => {
         broadcastedTime: '2025-01-13T23:00:00Z',
         broadcastedTimeEnd: '2025-01-13T23:55:00Z'
       }
-    ]);
+    ])
 
-    const result = parser({ content, channel }).map(p => {
-      p.start = p.start.toJSON();
-      p.stop = p.stop.toJSON();
-      return p;
-    });
+    const result = parser({ content }).map(p => {
+      p.start = p.start.toJSON()
+      p.stop = p.stop.toJSON()
+      return p
+    })
 
     expect(result).toMatchObject([
       {
@@ -54,13 +54,13 @@ describe('rikstv.no Module Tests', () => {
         start: '2025-01-13T23:00:00.000Z',
         stop: '2025-01-13T23:55:00.000Z'
       }
-    ]);
-  });
+    ])
+  })
 
   it('can handle empty guide', () => {
     const result = parser({
       content: '[]'
-    });
-    expect(result).toMatchObject([]);
-  });
-});
+    })
+    expect(result).toMatchObject([])
+  })
+})
