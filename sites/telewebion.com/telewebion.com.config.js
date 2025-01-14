@@ -1,4 +1,5 @@
 const dayjs = require('dayjs')
+require('dayjs/locale/fa')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 
@@ -18,22 +19,23 @@ module.exports = {
   },
   parser: function ({ content }) {
     let programs = [];
-    const data = JSON.parse(content)
-    const programsData = data.body.queryChannel.episodes || []
+    const data = JSON.parse(content);
+    
+    data.body.queryChannel.forEach(channel => {
+        channel.episodes.forEach(item => {
+            const start = dayjs.tz(item.started_at, 'Asia/Tehran');
+            const stop = dayjs.tz(item.ended_at, 'Asia/Tehran');
 
-    programsData.forEach(item => {
-      const start = dayjs.tz(item.started_at, 'Asia/Tehran') 
-      const stop = dayjs.tz(item.ended_at, 'Asia/Tehran')
+            programs.push({
+                title: item.title,
+                start,
+                stop
+            });
+        });
+    });
 
-      programs.push({
-        title: item.title,
-        start,
-        stop
-      })
-    })
-
-    return programs
-  },
+    return programs;
+},
   async channels() {
     const axios = require('axios')
     const data = await axios
