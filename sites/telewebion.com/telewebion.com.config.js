@@ -23,13 +23,13 @@ module.exports = {
     
     data.body.queryChannel.forEach(channel => {
         channel.episodes.forEach(item => {
-            const start = dayjs.tz(item.started_at, 'Asia/Tehran');
-            const stop = dayjs.tz(item.ended_at, 'Asia/Tehran');
+            //const start = dayjs.tz(item.started_at, 'Asia/Tehran');
+            //const stop = dayjs.tz(item.ended_at, 'Asia/Tehran');
 
             programs.push({
                 title: item.title,
-                start,
-                stop
+                start: item.started_at,
+                stop: item.ended_at
             });
         });
     });
