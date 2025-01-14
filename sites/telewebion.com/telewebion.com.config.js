@@ -14,14 +14,15 @@ module.exports = {
   parser: function ({ content }) {
     let programs = []
     const data = JSON.parse(content)
-    data.items.forEach(item => {
-      if (!item.details) return
-      const start = dayjs(item.started_at)
-      const stop = dayjs(item.ended_at)
-      programs.push({
-        title: item.title,
-        start,
-        stop
+    data.body.queryChannel.forEach(channel => {
+        channel.episodes.forEach(item => {
+            const start = dayjs(item.started_at);
+            const stop = dayjs(item.ended_at);
+
+            programs.push({
+                title: item.title,
+                start,
+                stop
       })
     })
 
