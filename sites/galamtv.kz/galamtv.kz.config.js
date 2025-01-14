@@ -23,7 +23,7 @@ module.exports = {
     },
     url({ channel, date }) {
         const todayEpoch = date.startOf('day').unix()
-        const nextDayEpoch = todayEpoch.add(1, 'day').unix()
+        const nextDayEpoch = date.add(1, 'day').startOf('day').unix()
         return `https://galam.server-api.lfstrm.tv/channels/${channel.site_id}/programs?period=${todayEpoch}:${nextDayEpoch}`
     },
     parser: function({ content }) {
