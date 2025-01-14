@@ -19,18 +19,27 @@ module.exports = {
   },
   parser: function ({ content }) {
     let programs = []
-    const data = JSON.parse(content)
-    
-    data.body.queryChannel.forEach(channel => {
-        channel.episodes.forEach(item => {
-            
-            programs.push({
+    try {
+      const data = JSON.parse(content)
+
+      if (data.body && data.body.queryChannel) {
+        data.body.queryChannel.forEach(channel => {
+          channel.episodes.forEach(item => {
+            if (item.program && item.started_at && item.ended_at) {
+              programs.push({
                 title: item.program.title,
                 start: dayjs.tz(item.started_at, 'Asia/Tehran'),
                 stop: dayjs.tz(item.ended_at, 'Asia/Tehran')
-            })
+              })
+            }
+          })
         })
-    })
+      } else {
+        console.error("Invalid data structure: 'body.queryChannel' missing.")
+      }
+    } catch (error) {
+      console.error("Error parsing content:", error)
+    }
 
     return programs
 },
