@@ -3,8 +3,7 @@ const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
 const axios = require('axios');
-const https = require('https')
-const agent = new https.Agent({ rejectUnauthorized: false });
+const httpsAgent = new https.Agent({ rejectUnauthorized: false })
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -61,7 +60,7 @@ module.exports = {
     return data.content.channels.map(item => {
       return {
         lang: 'sv',
-        site_id: item.id,
+        site_id: item.friendlyUrl,
         name: item.name
       }
     })
