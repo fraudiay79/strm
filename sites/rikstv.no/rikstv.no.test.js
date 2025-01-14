@@ -35,8 +35,8 @@ describe('rikstv.no Module Tests', () => {
     ])
 
     const result = parser({ content }).map(p => {
-      p.start = p.start.toJSON()
-      p.stop = p.stop.toJSON()
+      p.start = dayjs(p.start).toISOString()
+      p.stop = dayjs(p.stop).toISOString()
       return p
     })
 
