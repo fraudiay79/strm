@@ -47,7 +47,7 @@ module.exports = {
       const start = dayjs.unix(show.show_start).utc();
       const stop = dayjs.unix(show.show_end).utc();
       const programData = {
-        title: show.title,
+        title: toProperCase(show.title),
         description: show.summary || 'No description available',
         start: start.toISOString(),
         stop: stop.toISOString(),
