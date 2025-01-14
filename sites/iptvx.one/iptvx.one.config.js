@@ -55,7 +55,6 @@ module.exports = {
       })
     } catch (error) {
       console.error('Error fetching channels:', error)
-      // Consider returning a default value or throwing an error
     }
   }
 }
