@@ -47,8 +47,8 @@ it('can parse response', () => {
 
   expect(result).toMatchObject([
     {
-      start: '2022-08-22T07:10:00.000Z',
-      stop: '2022-08-22T07:30:00.000Z',
+      start: '2025-01-10T01:00:00.000Z',
+      stop: '2025-01-10T01:05:00.000Z',
       title: 'Гимн',
       description: 'Государственный гимн Республики Казахстан',
       image: 'http://galam.server-img.lfstrm.tv:80/image/aHR0cDovL2dhbGFtLmltZy1vcmlnaW5hbHMubGZzdHJtLnR2OjgwL3R2aW1hZ2VzL3RodW1iL2YyNWFmYWY2ZDkzYjU5YjdkMjBiZDNiODhiZjg4NWI0X29yaWcuanBn',
