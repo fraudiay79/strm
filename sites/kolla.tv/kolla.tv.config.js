@@ -50,18 +50,18 @@ module.exports = {
     return programs;
   },
   async channels() {
-    try {
-      const response = await axios.get('https://www.kolla.tv/api/es/channels/listWithPrograms?page=0&day=0&active=true');
-      const data = response.data;
-      const channels = data.channels.map(channel => ({
-	    lang: 'sv',
-        site_id: channel.friendlyUrl,
-        name: channel.name
-      }));
-      return channels;
-    } catch (error) {
-      console.error('Error fetching channel data:', error);
-      return [];
-    }
+  try {
+    const response = await axios.get('https://www.kolla.tv/api/es/channels/listWithPrograms?page=0&day=0&active=true');
+    const data = response.data;
+    const channels = data.content.channels.map(channel => ({
+      lang: 'sv',
+      site_id: channel.id,
+      name: channel.name
+    }));
+    return channels;
+  } catch (error) {
+    console.error('Error fetching channel data:', error);
+    return [];
   }
+}
 };
