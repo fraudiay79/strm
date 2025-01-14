@@ -1,4 +1,9 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'telewebion.com',
@@ -13,23 +18,22 @@ module.exports = {
   },
   parser: function ({ content }) {
     let programs = [];
-    const data = JSON.parse(content);
+    const data = JSON.parse(content)
+    const programsData = data.body.queryChannel.episodes || []
 
-    data.body.queryChannel.forEach(channel => {
-        channel.episodes.forEach(item => {
-            const start = dayjs(item.started_at);
-            const stop = dayjs(item.ended_at);
+    programsData.forEach(item => {
+      const start = dayjs.tz(item.started_at, 'Asia/Tehran') 
+      const start = dayjs.tz(item.ended_at, 'Asia/Tehran')
 
-            programs.push({
-                title: item.title,
-                start,
-                stop
-            });
-        });
-    });
+      programs.push({
+        title: item.title,
+        start,
+        stop
+      })
+    })
 
-    return programs;
-  },
+    return programs
+  }
   async channels() {
     const axios = require('axios')
     const data = await axios
