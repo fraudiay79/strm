@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- kolla.tv
-          npm run channels:parse --- --config=./sites/kolla.tv/kolla.tv.config.js --output=./sites/kolla.tv/kolla.tv.channels.xml
+          #npm test --- snrt.ma
+          #npm run channels:parse --- --config=./sites/snrt.ma/snrt.ma.config.js --output=./sites/snrt.ma/snrt.ma.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          #npm run grab --- --site=kolla.tv --maxConnections=20 --output=guides/kolla.tv.xml --days=1 --timeout=90000
+          npm run grab --- --site=snrt.ma --maxConnections=20 --output=guides/snrt.ma.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        #git add -f guides/kolla.tv.xml
-        git add -f sites/kolla.tv/kolla.tv.channels.xml
+        git add -f guides/snrt.ma.xml
+        #git add -f sites/snrt.ma/snrt.ma.channels.xml
         git commit -m "Update xml"
         git push -f origin main
