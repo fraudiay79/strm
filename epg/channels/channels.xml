@@ -2881,6 +2881,19 @@
   <channel site="sat.tv" lang="ar" xmltv_id="KarbalaTV.iq" site_id="1#37#كربلاء">Karbala TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="MBCIraq.iq" site_id="1#38#ام بي سي العراق">MBC Iraq</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="UTV.iq" site_id="1#33#نيو تي في">UTV</channel>
+  #Iran
+  <channel site="telewebion.com" lang="fa" xmltv_id="IRIB1.ir" site_id="tv1">IRIB1 • شبکه 1</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="IRIB2.ir" site_id="tv2">IRIB2 • شبکه 2</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="IRIB3.ir" site_id="tv3">IRIB3 • شبکه 3</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="IRIB4.ir" site_id="tv4">IRIB4 • شبکه 4</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="IRINN.ir" site_id="irinn">IRINN • خبر</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="IRINN2.ir" site_id="irinn2">IRINN2 • خبر 2</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="Mostanad.ir" site_id="mostanad">Mostanad • مستند</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="Nasim.ir" site_id="nasim">Nasim • نسیم</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="Pooya.ir" site_id="pooya">Pooya • پویا</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="QuranTV.ir" site_id="quran">Quran • قرآن</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="Sepehr.ir" site_id="sepehr">Sepehr • سپهر</channel>
+  <channel site="telewebion.com" lang="fa" xmltv_id="Varzesh.ir" site_id="varzesh">Varzesh • ورزش</channel>
   #Ireland
   <channel site="tvireland.ie" lang="en" xmltv_id="Cula4.ie" site_id="2425/cula4">Cula4</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="OireachtasTV.ie" site_id="1947/oireachtas-tv">Oireachtas TV</channel>
@@ -3273,43 +3286,46 @@
   <channel site="sat.tv" lang="ar" xmltv_id="ToyorAlJannah.jo" site_id="1#41#طيور الجنة">Toyor Al-Jannah</channel>
   #Kazakhstan
   <channel site="iptvx.one" lang="kk" xmltv_id="5Kanal.kz" site_id="5kanal-karaganda">5 канал Караганда • 5 канал KZ</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="Channel7.kz" site_id="7kanal-kz">7 канал KZ • 7 канал Казахстан</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="31Kanal.kz" site_id="31-kanal-kz">31 канал Казахстан • 31 канал KZ</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="Channel7.kz" site_id="559d1ebb78d72701950089d5">7 канал KZ • 7 канал Казахстан</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="31Kanal.kz" site_id="642cb168aa0f504df48a14ed">31 канал Казахстан • 31 канал KZ</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="AbaiTV.kz" site_id="abaitv">Abai TV</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="AigakTV.kz" site_id="aifak-kz">Айғак • Айғақ</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="AlmatyTV.kz" site_id="almaty">Алматы • Almaty TV</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="AlmatyTV.kz" site_id="559d1dcb78d72701950089d2">Алматы • Almaty TV</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Altai.kz" site_id="altai-kz">Altai</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Aqjaiyq.kz" site_id="aqjaiyq">Aqjaiyq</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Aqtobe.kz" site_id="aqtobe">Aqtobe • Aqtóbe</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="AstanaTV.kz" site_id="astana">Астана • Astana</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="AstanaTV.kz" site_id="642cb1e6aa0f504df48a14f8">Астана • Astana</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="AsylArna.kz" site_id="asyl-arna">Асыл Арна • Asyl Arna</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="AtamekenBusiness.kz" site_id="atameken-business">Atameken Business • Atameken Business Channel</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="AtamekenBusiness.kz" site_id="59f2f908a12e9e27dc8a5977">Atameken Business • Atameken Business Channel</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Atyray.kz" site_id="atyray">Atyray • Atyraý</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="Balapan.kz" site_id="balapan">Balapan</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="CaspianNews.kz" site_id="caspian-news">Caspian News • Caspian News HD</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="Balapan.kz" site_id="636e55468a8f73bae8244f47">Balapan</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="CaspianNews.kz" site_id="642cb423aa0f504df48a1514">Caspian News • Caspian News HD</channel>
+  <channel site="galamtv.kz" lang="ru" xmltv_id="ChannelOneEurasia.kz" site_id="559d416078d7270195008a66">Первый канал Евразия</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="CNLAmerica.kz" site_id="cnl-amerika">GNC Америка • CNL Америка</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="CNLEurope.kz" site_id="cnl-eu">GNC Европа • CNL Европа</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="ElArna.kz" site_id="el-arna">El Arna • Ел Арна</channel>
+  <channel site="iptvx.one" lang="kk" xmltv_id="ElArna.kz" site_id="59f2faa4a12e9e27dc8a5978">El Arna • Ел Арна</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Ertis.kz" site_id="ertis">Ertis</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="GakkuTV.kz" site_id="gakku">Gakku • Gakku Media</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="HalykArna.kz" site_id="halyk-arna">Халык Арна</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="HitTV.kz" site_id="hit-tv">Hit TV</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="InHockey.kz" site_id="inhockey-kz">InHockey • InHockey HD • InHockey KZ • InHockey HD KZ</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="InSport.kz" site_id="insport-kz">InSport HD • InSport • InSport KZ • InSport HD KZ</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="HitTV.kz" site_id="559d208e78d72701950089f4">Hit TV</channel>
+  <channel site="iptvx.one" lang="kk" xmltv_id="InHockey.kz" site_id="inhockey-kz">INHOCKEY • INHOCKEY HD • INHOCKEY KZ • INHOCKEY HD KZ</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="INSPORT.kz" site_id="6675767c0e9f3f6e3ae2c2df">INSPORT HD • INSPORT • INSPORT KZ • INSPORT HD KZ</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="IrbisTV.kz" site_id="irbis">Ирбис • Irbis</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="JibekJoly.kz" site_id="kazakh-tv">Kazakh TV • Jibek Joly • QazaqTV</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="Qazaqstan.kz" site_id="kazakhstan">Казахстан • Qazaqstan</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="JibekJoly.kz" site_id="559d41b978d7270195008a67">Kazakh TV • Jibek Joly • QazaqTV</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="Qazaqstan.kz" site_id="636e54cf8a8f73bae8244f41">Казахстан • Qazaqstan</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="QazSport.kz" site_id="kazsport">KAZsport • КазСпорт • QazSport</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Kinoboevik.kz" site_id="kinoboevik-kz">КиноБоевик KZ • КиноБоевик HD KZ</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Kokshe.kz" site_id="kokshe">Kokshe • Kókshe</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Koktem.kz" site_id="koktem-kz">Köktem • Көктем</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="KTK.kz" site_id="ktk-kz">КТК</channel>
+  <channel site="iptvx.one" lang="kk" xmltv_id="KTK.kz" site_id="6050cd449037e65d03dfbfb8">КТК</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Mangystay.kz" site_id="mangystay">Mangystay • Mańǵystaý</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Mir.kz" site_id="mir-kz">Мир KZ • Мир</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="MirovoeKino.kz" site_id="mirovoe-kino-kz">Мировое Кино KZ • Мировое Кино HD KZ</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="MunaraTV.kz" site_id="65f2f54aee18d69ad327e734">Munara TV</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="MuzLife.kz" site_id="muzlife">MuzLife</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="MuzzOne.kz" site_id="muzzone">MuzzOne</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="NTK.kz" site_id="ntk-kz">НТК</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="Novoetelevidenie.kz" site_id="559d224e78d7270195008a15">Новое Телевидение</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="NTK.kz" site_id="642cb25caa0f504df48a1502">НТК</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Ontustik.kz" site_id="ontustik">Ontustik • Ontústik</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="OtyrarTV.kz" site_id="otyrar-tv">Отырар TV</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="QKinoAlem.kz" site_id="q-kino-alem">QAlem 2HD • Q Kino Alem</channel>
@@ -3331,13 +3347,15 @@
   <channel site="iptvx.one" lang="kk" xmltv_id="Show.kz" site_id="show-kz">Show KZ • Show HD KZ</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="SportPlus.kz" site_id="sport-plus-kz">Sport+ Qazaqstan • Sport+ KZ</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Taraz24.kz" site_id="taraz24-kz">Тараз 24 • Taraz 24</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="TDK42.kz" site_id="tdk-42">ТДК 42 • ТДК-42</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="TDK42.kz" site_id="57bb6e7c4e2e6775aedaa772">ТДК 42 • ТДК-42</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="TNT.kz" site_id="tnt-kz">ТНТ KZ</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="TuranTV.kz" site_id="5c659fb2a46eaa398e8fd690">Turan TV</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Turkistan.kz" site_id="turkistan">Turkistan • Туркестан</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="YourTV.kz" site_id="tvoyo-tv-kz">Твоё ТВ Казахстан</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="YourTV.kz" site_id="57bb6e6c4e2e6775aedaa771">Твоё ТВ Казахстан</channel>
   <channel site="iptvx.one" lang="kk" xmltv_id="Ulytau.kz" site_id="ulytau-kz">Ulytau</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="Khabar.kz" site_id="xabar">Хабар</channel>
-  <channel site="iptvx.one" lang="kk" xmltv_id="24KZ.kz" site_id="xabar24">Хабар 24 • 24KZ</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="Zhetisu.kz" site_id="571a017c4e2e6750a693cc3b">Жетысу</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="Khabar.kz" site_id="559d1f1278d72701950089d8">Хабар</channel>
+  <channel site="galamtv.kz" lang="kk" xmltv_id="24KZ.kz" site_id="559d1ec678d72701950089d6">Хабар 24 • 24KZ</channel>
   #Kenya
   <channel site="startimestv.com" lang="en" xmltv_id="3StonesTV.ke" site_id="464">3 Stones TV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="BorderTV.ke" site_id="642">Border TV</channel>
@@ -4095,7 +4113,6 @@
   <channel site="allente.no" lang="no" xmltv_id="History2.no" site_id="1004">History 2</channel>
   <channel site="allente.no" lang="no" xmltv_id="Hits.no" site_id="1091">Hits</channel>
   <channel site="allente.no" lang="no" xmltv_id="InvestigationDiscovery.no" site_id="1011">Investigation Discovery</channel>
-  <channel site="allente.no" lang="no" xmltv_id="MAX.no" site_id="533">MAX</channel>
   <channel site="allente.no" lang="en" xmltv_id="MTV00s.uk" site_id="0246">MTV 00's</channel>
   <channel site="allente.no" lang="en" xmltv_id="MTV80s.uk" site_id="604">MTV 80's</channel>
   <channel site="allente.no" lang="no" xmltv_id="MTVGlobal.uk" site_id="0080">MTV</channel>
@@ -4103,9 +4120,13 @@
   <channel site="allente.no" lang="no" xmltv_id="Nickelodeon.no" site_id="0086">Nickelodeon</channel>
   <channel site="allente.no" lang="no" xmltv_id="NickJr.no" site_id="0088">Nick Jr.</channel>
   <channel site="allente.no" lang="no" xmltv_id="Nicktoons.no" site_id="570">Nicktoons</channel>
+  <channel site="rikstv.no" lang="no" xmltv_id="NorwayLive.no" site_id="283">Norway Live</channel>
   <channel site="allente.no" lang="no" xmltv_id="NRK1.no" site_id="0090">NRK 1</channel>
   <channel site="allente.no" lang="no" xmltv_id="NRK2.no" site_id="0288">NRK 2</channel>
   <channel site="allente.no" lang="no" xmltv_id="NRK3.no" site_id="0289">NRK 3</channel>
+  <channel site="rikstv.no" lang="no" xmltv_id="NRK1Tegnsprak.no" site_id="48">NRK1 Tegnspråk</channel>
+  <channel site="allente.no" lang="no" xmltv_id="REX.no" site_id="533">REX</channel>
+  <channel site="rikstv.no" lang="no" xmltv_id="RikstotoDirekte.no" site_id="628">Rikstoto Direkte</channel>
   <channel site="allente.no" lang="no" xmltv_id="Stars.no" site_id="1090">Stars</channel>
   <channel site="allente.no" lang="no" xmltv_id="SkyShowtime1.no" site_id="1002">SkyShowtime 1</channel>
   <channel site="allente.no" lang="no" xmltv_id="SkyShowtime2.no" site_id="1001">SkyShowtime 2</channel>
@@ -4129,6 +4150,7 @@
   <channel site="allente.no" lang="no" xmltv_id="ViasatExplore.no" site_id="0358">Viasat Explore</channel>
   <channel site="allente.no" lang="no" xmltv_id="ViasatHistory.no" site_id="0357">Viasat History</channel>
   <channel site="allente.no" lang="no" xmltv_id="ViasatNature.no" site_id="0356">Viasat Nature</channel>
+  <channel site="rikstv.no" lang="no" xmltv_id="VisjonNorge.no" site_id="72">Visjon Norge</channel>
   <channel site="allente.no" lang="no" xmltv_id="VGTV.no" site_id="1034">VG TV</channel>
   <channel site="allente.no" lang="no" xmltv_id="VOX.no" site_id="535">VOX</channel>
   <channel site="allente.no" lang="no" xmltv_id="VSeries.no" site_id="0320">V Series</channel>
