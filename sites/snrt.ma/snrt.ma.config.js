@@ -89,10 +89,12 @@ function parseTitle($item) {
 }
 
 async function parseDescription($item) {
+  const baseUrl = 'https://www.snrt.ma'; // Base URL of the website
   const link = $item.find('.grille-content a').attr('href');
   if (link) {
+    const fullUrl = link.startsWith('http') ? link : `${baseUrl}${link}`;
     try {
-      const response = await axios.get(link);
+      const response = await axios.get(fullUrl);
       const $ = cheerio.load(response.data);
       const description = $('.program-description-sm').text().trim();
       return description;
