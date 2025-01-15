@@ -4,7 +4,7 @@ const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
 const axios = require('axios');
-const url = require('url')
+const url = require('url');
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
