@@ -6,7 +6,6 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const cheerio = require('cheerio')
-const moment = require('moment')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -64,7 +63,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
-    const parsedDate = moment(date, 'ddd MMM DD YYYY HH:mm:ss [GMT]ZZ (z)')
+    const parsedDate = dayjs(date, 'ddd MMM DD YYYY HH:mm:ss [GMT]ZZ (z)')
     const day = parsedDate.day()
     const dayName = daysOfWeek[day]
     return `https://ptv.com.pk/tvguidemaster?channelid=${channel.site_id}&dayofweek=${dayName}&date=${parsedDate.format('ddd MMM DD YYYY HH:mm:ss [GMT]ZZ (z)')}`
