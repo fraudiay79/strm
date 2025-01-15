@@ -92,7 +92,7 @@ function parseTitle($item) {
 async function parseDescription($item) {
   const baseUrl = 'https://www.snrt.ma'; // Base URL of the website
   const link = $item.find('.grille-content a').attr('href');
-  if (link) {
+  if (link && link !== 'javascript:void(0)') {
     const fullUrl = url.resolve(baseUrl, link);
     try {
       const response = await axios.get(fullUrl);
@@ -104,7 +104,7 @@ async function parseDescription($item) {
       return '';
     }
   }
-  return '';
+  return null;
 }
 
 function parseImage($item) {
