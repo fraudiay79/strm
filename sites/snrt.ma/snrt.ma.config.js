@@ -4,6 +4,7 @@ const utc = require('dayjs/plugin/utc');
 const timezone = require('dayjs/plugin/timezone');
 const customParseFormat = require('dayjs/plugin/customParseFormat');
 const axios = require('axios');
+const url = require('url')
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
@@ -92,7 +93,7 @@ async function parseDescription($item) {
   const baseUrl = 'https://www.snrt.ma'; // Base URL of the website
   const link = $item.find('.grille-content a').attr('href');
   if (link) {
-    const fullUrl = link.startsWith('http') ? link : `${baseUrl}${link}`;
+    const fullUrl = url.resolve(baseUrl, link);
     try {
       const response = await axios.get(fullUrl);
       const $ = cheerio.load(response.data);
