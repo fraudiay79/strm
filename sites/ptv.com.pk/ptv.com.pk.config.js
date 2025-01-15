@@ -61,6 +61,9 @@ module.exports = {
   site: 'ptv.com.pk',
   channels: 'ptv.com.pk.channels.xml',
   days: 2,
+  request: {
+    method: 'GET',
+  },
   url: function ({ date, channel }) {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
     const parsedDate = dayjs(date, 'ddd MMM DD YYYY HH:mm:ss [GMT]ZZ (z)')
