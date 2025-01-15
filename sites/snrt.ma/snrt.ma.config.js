@@ -85,7 +85,7 @@ function parseTitle($item) {
   return $item.find('.program-title-sm').text().trim()
 }
 
-function parseDescription($item) {
+async function parseDescription($item) {
     const link = $item.find('.grille-content a').attr('href')
     if (link) {
         try {
