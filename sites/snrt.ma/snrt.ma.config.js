@@ -37,9 +37,9 @@ module.exports = {
         start
       };
     }));
-    
+
     programs.filter(item => item.start).sort((a, b) => a.start - b.start);
-    
+
     // fill start-stop
     for (let i = 0; i < programs.length; i++) {
       if (i < programs.length - 1) {
@@ -89,22 +89,27 @@ function parseTitle($item) {
   return $item.find('.program-title-sm').text().trim();
 }
 
-async function parseDescription($item) {
+function parseDescription($item) {
   const baseUrl = 'https://www.snrt.ma'; // Base URL of the website
   const link = $item.find('.grille-content a').attr('href');
-  if (link && link !== 'javascript:void(0)') {
-    const fullUrl = url.resolve(baseUrl, link);
-    try {
-      const response = await axios.get(fullUrl);
-      const $ = cheerio.load(response.data);
-      const description = $('.program-description-sm').text().trim();
-      return description;
-    } catch (error) {
-      console.error('Error fetching the description:', error);
-      return '';
+  
+  return new Promise((resolve, reject) => {
+    if (link && link !== 'javascript:void(0)') {
+      const fullUrl = url.resolve(baseUrl, link);
+      axios.get(fullUrl)
+        .then(response => {
+          const $ = cheerio.load(response.data);
+          const description = $('.program-description-sm').text().trim();
+          resolve(description);
+        })
+        .catch(error => {
+          console.error('Error fetching the description:', error);
+          resolve('');
+        });
+    } else {
+      resolve(null);
     }
-  }
-  return null;
+  });
 }
 
 function parseImage($item) {
