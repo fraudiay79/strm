@@ -26,9 +26,11 @@ module.exports = {
     const programs = items.map(item => {
       const $item = $(item)
       const start = parseStart($item)
+      const description = await parseDescription($item)
       return {
         title: parseTitle($item),
-        description: parseDescription($item),
+        description,
+        image: parseImage($item),
         category: parseCategory($item),
         start
       }
@@ -84,7 +86,24 @@ function parseTitle($item) {
 }
 
 function parseDescription($item) {
-  return $item.find('.program-description-sm').text().trim()
+    const link = $item.find('.grille-content a').attr('href')
+    if (link) {
+        try {
+            const response = await axios.get(link)
+            const $ = cheerio.load(response.data)
+            const description = $('.program-description-sm').text().trim()
+            return description
+        } catch (error) {
+            console.error('Error fetching the description:', error)
+            return ''
+        }
+    }
+    return ''
+}
+
+function parseImage($item) {
+    const imgSrc = $item.find('img.img-fluid').attr('src');
+    return imgSrc ? imgSrc.trim() : '';
 }
 
 function parseCategory($item) {
