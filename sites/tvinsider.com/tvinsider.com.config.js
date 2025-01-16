@@ -1,64 +1,97 @@
-const axios = require('axios')
-const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
 const cheerio = require('cheerio')
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+const axios = require('axios')
+const { DateTime } = require('luxon')
 
 module.exports = {
   site: 'tvinsider.com',
-  channels: 'tvinsider.com.channels.xml',
-  days: 14, // maxdays=5
-  request: {
-    cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
-    },
-    headers: {
-      'Accept-Encoding': 'gzip, deflate, br, zstd'
-    }
-  },
+  days: 2,
   url({ channel }) {
-    return `https://www.tvinsider.com/network/${channel.site_id}schedule/`
+    return `https://www.tvinsider.com/network/${channel.site_id}/schedule/`
   },
-  parser: function ({ content, date }) {
-    const $ = cheerio.load(content)
+  parser({ content, date }) {
     const programs = []
-    let previousEndTime = null
+    const items = parseItems(content, date)
+    items.forEach(item => {
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      let start = parseStart($item, date)
+      if (!start) return
+      if (prev) {
+        prev.stop = start
+      }
+      const stop = start.plus({ minute: 30 })
 
-    $('a.show-upcoming.live').each((index, element) => {
-      const $element = $(element)
-      const time = $element.find('time').text().trim()
-      const startTime = dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD hh:mm A', 'America/New_York').format()
-      const endTime = previousEndTime ? dayjs(previousEndTime).add(1, 'hour').utc().format() : dayjs.tz(startTime).add(1, 'hour').format()
-      const title = $element.find('h3').text().trim()
-      const seriesInfo = $element.find('h4').text().trim().match(/(.*) • (\d{4})/)
-      const category = seriesInfo ? seriesInfo[1] : null
-      const year = seriesInfo ? seriesInfo[2] : null
-      const episodeTitle = $element.find('h5').text().trim()
-      const seasonEpisodeInfo = $element.find('h6').text().trim().match(/Season (\d+) • Episode (\d+)/)
-      const season = seasonEpisodeInfo ? seasonEpisodeInfo[1] : null
-      const episode = seasonEpisodeInfo ? seasonEpisodeInfo[2] : null
-      const description = $element.find('p').text().trim()
-
-    programs.push({
-      title,
-      description,
-      category,
-      year,
-      episodeTitle,
-      season,
-      episode,
-      start: startTime,
-      stop: endTime
+      programs.push({
+        title: parseTitle($item),
+        description: parseDescription($item),
+        category: parseCategory($item),
+        date: parseDate($item),
+        start,
+        stop
+      })
     })
 
-    previousEndTime = endTime
-  })
+    return programs
+  },
+  async channels() {
+    const html = await axios
+      .get('https://www.tvinsider.com/network/5-star-max/')
+      .then(r => r.data)
+      .catch(console.log)
+    const $ = cheerio.load(html)
+    const items = $('body > main > section > select > option').toArray()
 
-  return programs
+    const channels = []
+    items.forEach(item => {
+      const name = $(item).text().trim()
+      const path = $(item).attr('value')
+      if (!path) return
+      const [, , site_id] = path.split('/') || [null, null, null]
+      if (!site_id) return
+
+      channels.push({
+        lang: 'en',
+        site_id,
+        name
+      })
+    })
+
+    return channels
+  }
 }
+
+function parseTitle($item) {
+  return $item('h3').text().trim()
+}
+
+function parseDescription($item) {
+  return $item('p').text().trim()
+}
+
+function parseCategory($item) {
+  const [category] = $item('h4').text().trim().split(' • ')
+
+  return category
+}
+
+function parseDate($item) {
+  const [, date] = $item('h4').text().trim().split(' • ')
+
+  return date
+}
+
+function parseStart($item, date) {
+  let time = $item('time').text().trim()
+  time = `${date.format('YYYY-MM-DD')} ${time}`
+
+  return DateTime.fromFormat(time, 'yyyy-MM-dd t', { zone: 'America/New_York' }).toUTC()
+}
+
+function parseItems(content, date) {
+  const $ = cheerio.load(content)
+
+  return $(`#${date.format('MM-DD-YYYY')}`)
+    .next()
+    .find('a')
+    .toArray()
 }
