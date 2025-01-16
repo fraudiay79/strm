@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- chada.ma
-          #npm run channels:parse --- --config=./sites/chada.ma/chada.ma.config.js --output=./sites/chada.ma/chada.ma.channels.xml
+          #npm test --- tv.sfr.fr
+          #npm run channels:parse --- --config=./sites/tv.sfr.fr/tv.sfr.fr.config.js --output=./sites/tv.sfr.fr/tv.sfr.fr.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=chada.ma --maxConnections=20 --output=guides/chada.ma.xml --days=1 --timeout=90000
+          npm run grab --- --site=tv.sfr.fr --maxConnections=20 --output=guides/tv.sfr.fr.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/chada.ma.xml
-        #git add -f sites/chada.ma/chada.ma.channels.xml
+        git add -f guides/tv.sfr.fr.xml
+        #git add -f sites/tv.sfr.fr/tv.sfr.fr.channels.xml
         git commit -m "Update xml"
         git push -f origin main
