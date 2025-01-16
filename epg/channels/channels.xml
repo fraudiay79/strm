@@ -96,8 +96,8 @@
   <channel site="tvprofil.com" lang="sq" xmltv_id="ZjarrTV.al" site_id="al/programacioni#zjarr-tv">Zjarr TV</channel>
   #Algeria
   <channel site="sat.tv" lang="ar" xmltv_id="Algerie.dz" site_id="1#33#الجزيرة">Algérie 1</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="CanalAlgerie.dz" site_id="1#38#الجزائر تي في">Canal Algérie</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="Algerie3.dz" site_id="1#38#الجزائرية الثالثة">Algérie 3</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalAlgerie.dz" site_id="346">Canal Algérie</channel>
+  <channel site="tv.sfr.fr" lang="ar" xmltv_id="Algerie3.dz" site_id="1654">Algérie 3</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Algerie4.dz" site_id="1#38#الجزائرية الرابعة">Algérie 4</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Algerie5.dz" site_id="1#38#الجزائرية الخامسة">Algérie 5</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="Algerie6.dz" site_id="1#38#الجزائرية السادسة">Algérie 6</channel>
@@ -106,12 +106,12 @@
   <channel site="sat.tv" lang="en" xmltv_id="AlAnisTV.dz" site_id="1#50#Al Anis TV">Al Anis TV</channel>
   <channel site="sat.tv" lang="en" xmltv_id="AL24News.dz" site_id="1#33#Al 24 News">AL24 News</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlMagharibia.dz" site_id="1#37#المغاربية">AlMagharibia TV</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="BahiaTV.dz" site_id="1#38#باهية">Bahia TV</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="BerbereTV.fr" site_id="1#33#بربري">Berbère TV</channel>
+  <channel site="tv.sfr.fr" lang="ar" xmltv_id="BahiaTV.dz" site_id="3727">Bahia TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BerbereTV.fr" site_id="574">Berbère TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="ElDjazairN1.dz" site_id="1#33#الجزائر رقم 1 ۔">El Djazair N°1</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="EchoroukTV.dz" site_id="1#38#الشروق">Echorouk TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="EchoroukNews.dz" site_id="1#38#الشروق الإخبارية">Echorouk News</channel>
-  <channel site="sat.tv" lang="en" xmltv_id="ElBiladTV.dz" site_id="1#72#Bilad">El Bilad</channel>
+  <channel site="tv.sfr.fr" lang="en" xmltv_id="ElBiladTV.dz" site_id="2957">El Bilad</channel>
   <channel site="sat.tv" lang="en" xmltv_id="ElHayat.dz" site_id="1#33#El Hayat TV">El Hayat</channel>
   <channel site="sat.tv" lang="en" xmltv_id="ElHeddaf.dz" site_id="1#68#Al Heddaf TV">El Heddaf</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="EnnaharTV.dz" site_id="1#38#النهار تي في">Ennahar TV</channel>
@@ -1254,7 +1254,7 @@
   <channel site="mi.tv" lang="es" xmltv_id="WinSports.co" site_id="co#win-sports-hd">Win Sports</channel>
   #Congo
   <channel site="startimestv.com" lang="en" xmltv_id="DRTV.cg" site_id="646">DRTV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="TeleCongo.cg" site_id="2147044057">TeleCongo</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TeleCongo.cg" site_id="858">TeleCongo</channel>
   #Côte d'Ivoire
   <channel site="canalplus.com" lang="fr" xmltv_id="APlusIvoire.ci" site_id="ci#180681">A+ Ivoire</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="BenieTV.ci" site_id="ci#180325">Benie TV</channel>
@@ -1495,7 +1495,6 @@
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="FashionTVCzechSlovak.fr.fr" site_id="119">Fashion TV</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="FastFunBox.nl" site_id="404">Fast&amp;FunBox</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="FightBox.nl" site_id="301">FightBox</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="GINXEsportsTV.uk" site_id="376">Ginx eSports TV</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV00s.uk" site_id="66">MTV 00s</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV80s.uk" site_id="106">MTV 80s</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="MTV90s.uk" site_id="158">MTV 90s</channel>
@@ -1807,192 +1806,190 @@
   <channel site="telsu.fi" lang="fi" xmltv_id="YleTV2.fi" site_id="yle2">Yle TV2</channel>
   <channel site="telsu.fi" lang="fi" xmltv_id="YleTeemaFem.fi" site_id="ylefem">Yle Teema &amp; Fem</channel>
   #France
-  <channel site="programme-tv.net" lang="fr" xmltv_id="6ter.fr" site_id="6ter-202">6ter</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="13emeRue.fr" site_id="13eme-rue-26">13ème Rue</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="20MinutesTV.fr" site_id="20-minutes-tv-161">20' TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="AB1.fr" site_id="ab-1-31">AB1</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="AB3.be" site_id="ab-3-138">AB3</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Action.fr" site_id="action-32">Action</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Africa24.fr" site_id="africa-24-6510">Africa 24</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Animaux.fr" site_id="animaux-33">Animaux</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="APlus.fr" site_id="aplus-international-france-383">A+ International France</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="arte.fr" site_id="arte-337">Arte</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Automotolachaine.fr" site_id="automoto-89">Automoto</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="6ter.fr" site_id="1403">6ter</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="13emeRue.fr" site_id="2">13ème Rue</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="20MinutesTV.fr" site_id="701">20' TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="AB1.fr" site_id="5">AB1</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Action.fr" site_id="10">Action</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Africa24.fr" site_id="561">Africa 24</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Animaux.fr" site_id="11">Animaux</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="APlus.fr" site_id="1990">A+</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="arte.fr" site_id="111">Arte</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Automotolachaine.fr" site_id="15">Automoto</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="BabyTV.fr" site_id="baby-tv-229">Baby TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BBlack.fr" site_id="bblack-359">BBlack</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSports1.fr" site_id="bein-sports-1-183">beIN Sports 1</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSports2.fr" site_id="bein-sports-2-184">beIN Sports 2</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSports3.fr" site_id="bein-sports-3-265">beIN Sports 3</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSportsMax4.fr" site_id="bein-sports-max-4-300">beIN Sports Max 4</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSportsMax5.fr" site_id="bein-sports-max-5-301">beIN Sports Max 5</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSportsMax6.fr" site_id="bein-sports-max-6-302">beIN Sports Max 6</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSportsMax7.fr" site_id="bein-sports-max-7-303">beIN Sports Max 7</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSportsMax8.fr" site_id="bein-sports-max-8-304">beIN Sports Max 8</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSportsMax9.fr" site_id="bein-sports-max-9-306">beIN Sports Max 9</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="beINSportsMax10.fr" site_id="bein-sports-max-10-305">beIN Sports Max 10</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BET.fr" site_id="bet-299">BET</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BFMTV.fr" site_id="bfmtv-25">BFMTV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BFMAlsace.fr" site_id="bfm-alsace-366">BFM Alsace</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BFMBusiness.fr" site_id="bfm-business-232">BFM Business</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BFMGrandLille.fr" site_id="bfm-grand-lille-367">BFM Grand Lille</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BFMLyon.fr" site_id="bfm-lyon-metropole-364">BFM Lyon Métropole</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BFMNormandie.fr" site_id="la-chaine-normande-6509">BFM Normandie</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="BFMParisIledeFrance.fr" site_id="bfm-paris-379">BFM Paris</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BblackClassik.fr" site_id="1307">Bblack! Classik</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSports1.fr" site_id="1290">beIN Sports 1</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSports2.fr" site_id="1304">beIN Sports 2</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSports3.fr" site_id="1335">beIN Sports 3</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax4.fr" site_id="1336">beIN Sports Max 4</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax5.fr" site_id="1337">beIN Sports Max 5</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax6.fr" site_id="1338">beIN Sports Max 6</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax7.fr" site_id="1339">beIN Sports Max 7</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax8.fr" site_id="1340">beIN Sports Max 8</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax9.fr" site_id="1341">beIN Sports Max 9</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax10.fr" site_id="1342">beIN Sports Max 10</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BET.fr" site_id="1960">BET</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMTV.fr" site_id="481">BFMTV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMAlsace.fr" site_id="3460">BFM Alsace</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMBusiness.fr" site_id="1073">BFM Business</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMGrandLille.fr" site_id="930">BFM Grand Lille</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMGrandLittoral.fr" site_id="2317">BFM Grand Littoral</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMLyon.fr" site_id="116">BFM Lyon Métropole</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMNormandie.fr" site_id="3557">BFM Normandie</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMParisIledeFrance.fr" site_id="1077">BFM Paris</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="BOneTV.cd" site_id="b-one-339">B.One</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Boomerang.fr" site_id="boomerang-34">Boomerang</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="C8.fr" site_id="c8-4">C8</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Canal32.fr" site_id="canal-32-390">Canal 32</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalJ.fr" site_id="canal-j-40">Canal J</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlus.fr" site_id="canalplus-2">Canal+</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusBoxOffice.fr" site_id="canalplus-box-office-11522">Canal+ Box Office</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Boomerang.fr" site_id="321">Boomerang</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="C8.fr" site_id="445">C8</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Canal32.fr" site_id="534">Canal 32</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalJ.fr" site_id="32">Canal J</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlus.fr" site_id="34">Canal+</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlusBoxOffice.fr" site_id="3779">Canal+ Box Office</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusCinema.fr" site_id="canalplus-cinema-35">Canal+ Cinéma</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusDocs.fr" site_id="canalplus-docs-9501">Canal+ Docs</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusFoot.fr" site_id="canalplus-foot-11508">Canal+ Foot</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusFormula1.fr" site_id="canalplus-formula-1-10503">Canal+ Formula 1</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusGrandEcran.fr" site_id="canalplus-grand-ecran-11504">Canal+ Grand Ecran</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusKids.fr" site_id="canalplus-kids-11505">Canal+ Kids</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusLigue1.fr" site_id="canalplus-ligue-1-10504">Canal+ Ligue 1</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusMotoGP.fr" site_id="canalplus-moto-gp-10505">Canal+ MotoGP</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusPremierLeague.fr" site_id="canalplus-premier-league-10506">Canal+ Premier League</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlusDocs.fr" site_id="3347">Canal+ Docs</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlusFoot.fr" site_id="3501">Canal+ Foot</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlusGrandEcran.fr" site_id="3349">Canal+ Grand Ecran</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlusKids.fr" site_id="3348">Canal+ Kids</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusSeries.fr" site_id="canalplus-series-227">Canal+ Séries</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusSport.fr" site_id="canalplus-sport-37">Canal+ Sport</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusSport360.fr" site_id="canalplus-sport-360-11509">Canal+ Sport 360</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CanalPlusTop14.fr" site_id="canalplus-top-14-10507">Canal+ Top 14</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Cartoonito.fr" site_id="cartoonito-11510">Cartoonito</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CartoonNetwork.fr" site_id="cartoon-network-41">Cartoon Network</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="ChassePeche.fr" site_id="chasse-et-peche-42">Chasse et pêche</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Cherie25.fr" site_id="cherie-25-206">Chérie 25</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CinePlusClassic.fr" site_id="cineplus-classic-44">Ciné+ Classic</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CinePlusClub.fr" site_id="cineplus-club-43">Ciné+ Club</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CinePlusEmotion.fr" site_id="cineplus-emotion-45">Ciné+ Emotion</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CinePlusFamiz.fr" site_id="cineplus-famiz-46">Ciné+ Famiz</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CinePlusFrisson.fr" site_id="cineplus-frisson-47">Ciné+ Frisson</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlusSport360.fr" site_id="3504">Canal+ Sport 360</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Cartoonito.fr" site_id="3738">Cartoonito</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CartoonNetwork.fr" site_id="36">Cartoon Network</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ChassePeche.fr" site_id="38">Chasse et pêche</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Cherie25.fr" site_id="1399">Chérie 25</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CinePlusClassic.fr" site_id="287">Ciné+ Classic</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CinePlusEmotion.fr" site_id="283">Ciné+ Emotion</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CinePlusFamily.fr" site_id="401">Ciné+ Family</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CinePlusFestival.fr" site_id="285">Ciné+ Festival</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CinePlusFrisson.fr" site_id="284">Ciné+ Frisson</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="DemainTV.fr" site_id="demain-tv-53">Demain TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CNews.fr" site_id="cnews-30">CNews</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CNews.fr" site_id="226">CNews</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="ComediePlus.fr" site_id="comedieplus-27">Comédie+</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="ComedyCentral.fr" site_id="comedy-central-472">Comedy Central</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CrimeDistrict.fr" site_id="crime-district-363">Crime District</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="CStar.fr" site_id="cstar-28">CStar</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="DiscoveryChannel.fr" site_id="discovery-channel-54">Discovery Channel</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ComedyCentral.fr" site_id="2752">Comedy Central</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CrimeDistrict.fr" site_id="2037">Crime District</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="CStar.fr" site_id="458">CStar</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="DiscoveryChannel.fr" site_id="400">Discovery Channel</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="DiscoveryScience.fr" site_id="discovery-science-200">Discovery Science</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="DisneyChannel.fr" site_id="disney-channel-57">Disney Channel</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="DisneyJunior.fr" site_id="disney-junior-166">Disney Junior</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="EEntertainment.fr" site_id="e-141">E!</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Equidia.fr" site_id="equidia-59">Equidia</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="DisneyChannel.fr" site_id="58">Disney Channel</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="DisneyJunior.fr" site_id="300">Disney Junior</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="EEntertainment.fr" site_id="405">E!</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Equidia.fr" site_id="64">Equidia</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Eurochannel.uk" site_id="eurochannel-236">Eurochannel</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="EuronewsFrench.fr" site_id="euronews-62">euronews</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Eurosport1.fr" site_id="eurosport-1-5">Eurosport 1</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Eurosport2.fr" site_id="eurosport-2-63">Eurosport 2</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv-358">Fashion TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="France2.fr" site_id="france-2-6">France 2</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="France3.fr" site_id="france-3-7">France 3</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="France3.fr" site_id="france-3-paris-ile-de-france-293">France 3</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="France4.fr" site_id="france-4-8">France 4</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="France5.fr" site_id="france-5-9">France 5</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="France24.fr" site_id="france-24-142">France 24</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Franceinfo.fr" site_id="franceinfo-307">Franceinfo</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="GameOne.fr" site_id="game-one-71">Game One</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="GINXEsportsTV.uk" site_id="ginx-352">Ginx</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="GolfPlus.fr" site_id="golfplus-189">Golf+</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="EuronewsFrench.fr" site_id="140">euronews</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Eurosport1.fr" site_id="76">Eurosport 1</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Eurosport2.fr" site_id="439">Eurosport 2</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="FashionTVEurope.fr" site_id="357">Fashion TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="France2.fr" site_id="4">France 2</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="France3.fr" site_id="80">France 3</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="France4.fr" site_id="78">France 4</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="France5.fr" site_id="47">France 5</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="France24.fr" site_id="529">France 24</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Franceinfo.fr" site_id="2111">franceinfo:</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="GameOne.fr" site_id="87">Game One</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="GolfPlus.fr" site_id="1295">Golf+</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Gong.fr" site_id="gong-355">Gong</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="GongMax.fr" site_id="gong-max-350">Gong Max</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Gulli.fr" site_id="gulli-29">Gulli</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="HistoireTV.fr" site_id="histoire-tv-72">Histoire TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="i24NEWSFrench.il" site_id="i24news-243">i24NEWS Français</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Gulli.fr" site_id="482">Gulli</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="HistoireTV.fr" site_id="88">Histoire TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="i24NEWSFrench.il" site_id="781">i24NEWS Français</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="InfosportPlus.fr" site_id="infosportplus-74">Infosport+</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="JOne.fr" site_id="j-one-387">J-One</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="KTO.fr" site_id="kto-68">KTO</channel>
-  <channel site="tv.blue.ch" lang="fr" xmltv_id="LaChaineMeteo.fr" site_id="1760">La Chaîne Météo</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="LCI.fr" site_id="lci-la-chaine-info-78">LCI</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="LCP.fr" site_id="la-chaine-parlementaire-11">LCP</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="LEquipe.fr" site_id="lequipe-204">L&apos;Equipe</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="LMTVSarthe.fr" site_id="lm-tv-sarthe-376">LM TV Sarthe</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="M6.fr" site_id="m6-12">M6</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="M6Music.fr" site_id="m6-music-80">M6 Music</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Mangas.fr" site_id="mangas-82">Mangas</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MaritimaTV.fr" site_id="maritima-tv-6507">Maritima TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MCM.fr" site_id="mcm-87">MCM</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="InvestigationDiscovery.fr" site_id="2184">Investigation Discovery</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="JOne.fr" site_id="1585">J-One</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="KTO.fr" site_id="110">KTO</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="LaChaineMeteo.fr" site_id="124">La Chaîne Météo</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="LCI.fr" site_id="112">LCI</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="LCP.fr" site_id="234">LCP</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="LEquipe.fr" site_id="1401">L&apos;Equipe</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="LMtvSarthe.fr" site_id="535">LMtv Sarthe</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="M6.fr" site_id="118">M6</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="M6Music.fr" site_id="453">M6 Music</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MaisonTravauxTV.fr" site_id="3360">Maison &amp; Travaux TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Mangas.fr" site_id="6">Mangas</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MaritimaTV.fr" site_id="3386">Maritima TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MCM.fr" site_id="121">MCM</channel>
   <channel site="tv.blue.ch" lang="fr" xmltv_id="MCMTop.fr" site_id="255">MCM Top</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Melody.fr" site_id="melody-179">Melody</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MensUPTV.fr" site_id="mens-up-6502">Men&apos;s UP</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Mezzo.fr" site_id="mezzo-88">Mezzo</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MezzoLive.fr" site_id="mezzo-live-hd-311">Mezzo Live</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MirabelleTV.fr" site_id="mirabelle-tv-239">Mirabelle TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MosaikCristal.fr" site_id="mosaik-cristal-8501">Mosaïk Cristal</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MTV.fr" site_id="mtv-96">MTV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MTV80s.uk" site_id="vh1-classic-356">MTV 80s</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MTV90s.uk" site_id="mtv-rocks-91">MTV 90s</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MTV00s.uk" site_id="vh1-133">MTV 00s</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MTVHits.fr" site_id="mtv-hits-france-273">MTV Hits</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="MyZenTV.fr" site_id="myzen-tv-381">MyZen.tv</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NationalGeographic.fr" site_id="national-geographic-98">National Geographic</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NationalGeographicWild.fr" site_id="nat-geo-wild-207">National Geographic Wild</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NauticalChannel.it" site_id="nautical-channel-109">Nautical Channel</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Nickelodeon.fr" site_id="nickelodeon-99">Nickelodéon</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NickelodeonJunior.fr" site_id="nickelodeon-junior-199">Nickelodeon Junior</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NickelodeonTeen.fr" site_id="nickelodeon-teen-384">Nickelodéon Teen</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NollywoodTV.fr" site_id="nollywood-tv-348">Nollywood TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NovelasTV.fr" site_id="novelas-tv-400">Novelas TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NRJ12.fr" site_id="nrj-12-13">NRJ 12</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="NRJHits.fr" site_id="nrj-hits-167">NRJ Hits</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="OCS.fr" site_id="cineplus-premier-3">OCS</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="OLTV.fr" site_id="oltv-101">OLTV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="ParamountChannel.fr" site_id="paramount-channel-226">Paramount Channel</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="ParisPremiere.fr" site_id="paris-premiere-15">Paris Première</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Melody.fr" site_id="265">Melody</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MensUPTV.fr" site_id="1452">Men&apos;s UP</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Mezzo.fr" site_id="125">Mezzo</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MezzoLive.fr" site_id="907">Mezzo Live</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MirabelleTV.fr" site_id="1045">Mirabelle TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MosaikCristal.fr" site_id="1700">Mosaïk Cristal</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MTV.fr" site_id="128">MTV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MTVHits.fr" site_id="2006">MTV Hits</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="MyZenTV.fr" site_id="829">MyZen.tv</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NationalGeographic.fr" site_id="243">National Geographic</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NationalGeographicWild.fr" site_id="719">National Geographic Wild</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Nickelodeon.fr" site_id="473">Nickelodéon</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NickelodeonJunior.fr" site_id="888">Nickelodeon Junior</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NickelodeonTeen.fr" site_id="1746">Nickelodéon Teen</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NollywoodTV.fr" site_id="1461">Nollywood TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NovelasTV.fr" site_id="3769">Novelas TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NRJ12.fr" site_id="444">NRJ 12</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="NRJHits.fr" site_id="605">NRJ Hits</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="OCS.fr" site_id="282">OCS</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="OLTV.fr" site_id="463">OLTV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ParamountChannel.fr" site_id="1562">Paramount Channel</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ParisPremiere.fr" site_id="145">Paris Première</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="PiwiPlus.fr" site_id="piwiplus-104">Piwi+</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="PlanetePlus.fr" site_id="planeteplus-16">Planète+</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="PlanetePlusAventure.fr" site_id="planeteplus-aventure-experience-105">Planète+ Aventure</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="PlanetePlusCrime.fr" site_id="planeteplus-crime-investigation-151">Planète+ Crime</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="PolarPlus.fr" site_id="polarplus-401">Polar+</channel>  
-  <channel site="programme-tv.net" lang="fr" xmltv_id="PublicSenat2424.fr" site_id="public-senat-2424-6511">Public Sénat 24/24</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="RFMTV.fr" site_id="rfm-tv-85">RFM TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="RMCDecouverte.fr" site_id="rmc-decouverte-205">RMC Découverte</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="RMCSport1.fr" site_id="rmc-sport-1-452">RMC Sport 1</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="RMCSport2.fr" site_id="rmc-sport-2-453">RMC Sport 2</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="RMCStory.fr" site_id="rmc-story-203">RMC Story</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="RTL9.fr" site_id="rtl-9-17">RTL 9</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="ScienceVieTV.fr" site_id="science-vie-tv-58">Science &amp; Vie TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Seasons.fr" site_id="seasons-111">Seasons</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="SerieClub.fr" site_id="serieclub-18">Série Club</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Syfy.fr" site_id="syfy-110">Syfy</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TCMCinema.fr" site_id="tcm-cinema-113">TCM Cinéma</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TebeoTV.fr" site_id="tebeo-5504">Tébéo</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TeleGrenoble.fr" site_id="tele-grenoble-isere-396">Télé Grenoble Isère</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Telenantes.fr" site_id="telenantes-373">Télénantes</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="PublicSenat2424.fr" site_id="2013">Public Sénat 24/24</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="RFMTV.fr" site_id="241">RFM TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="RMCDecouverte.fr" site_id="1400">RMC Découverte</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="RMCSport1.fr" site_id="2665">RMC Sport 1</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="RMCSport2.fr" site_id="2666">RMC Sport 2</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="RMCStory.fr" site_id="1402">RMC Story</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="RTL9.fr" site_id="115">RTL 9</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ScienceVieTV.fr" site_id="63">Science &amp; Vie TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Seasons.fr" site_id="173">Seasons</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="SerieClub.fr" site_id="49">Série Club</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="SportenFrance.fr" site_id="2837">Sport en France</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Syfy.fr" site_id="479">Syfy</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TCMCinema.fr" site_id="185">TCM Cinéma</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TebeoTV.fr" site_id="1321">Tébéo</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TeleGrenoble.fr" site_id="537">Télé Grenoble Isère</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Telenantes.fr" site_id="491">Télénantes</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TeletoonPlus.fr" site_id="teletoonplus-131">TéléToon+</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Teva.fr" site_id="teva-23">Téva</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TF1.fr" site_id="tf1-19">TF1</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TF1SeriesFilms.fr" site_id="tf1-series-films-201">TF1 Séries Films</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TFX.fr" site_id="tfx-14">TFX</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TiJi.fr" site_id="tiji-115">Tiji</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TMC.fr" site_id="tmc-21">TMC</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Teva.fr" site_id="191">Téva</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TF1.fr" site_id="192">TF1</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TF1SeriesFilms.fr" site_id="1404">TF1 Séries Films</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TFX.fr" site_id="446">TFX</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TiJi.fr" site_id="229">Tiji</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TLC.fr" site_id="1374">TLC</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TMC.fr" site_id="195">TMC</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TTNTV.fr" site_id="tntv-france-6503">TNTV France</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="Toonami.fr" site_id="toonami-338">Toonami</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="ToutelHistoire.fr" site_id="toute-lhistoire-117">Toute l&apos;histoire</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TraceAfrica.fr" site_id="trace-africa-347">Trace Africa</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TraceCaribbean.fr" site_id="trace-tropical-395">Trace Caribbean</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TopSanteTV.fr" site_id="3106">Top Santé TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ToutelHistoire.fr" site_id="7">Toute l&apos;histoire</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TraceAfrica.fr" site_id="1179">Trace Africa</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TraceCaribbean.fr" site_id="753">Trace Caribbean</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TraceGospel.fr" site_id="2022">Trace Gospel</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TraceSportStars.fr" site_id="trace-sport-stars-197">Trace Sport Stars</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TraceUrban.fr" site_id="trace-urban-127">Trace Urban</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Trek.fr" site_id="trek-269">Trek</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TraceToca.fr" site_id="1948">Trace Toca</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TraceUrban.fr" site_id="325">Trace Urban</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Trek.fr" site_id="1776">Trek</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVMonaco.mc" site_id="3786">TVMonaco</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="TiVi5Monde.fr" site_id="gh#180545">TiVi5 Monde</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TV5Monde.fr" site_id="tv5monde-128">TV5Monde</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TV5Monde.fr" site_id="205">TV5Monde</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="TV5MondeAfrica.fr" site_id="gn#180105">TV5Monde Afrique</channel>
   <channel site="ziggogo.tv" lang="en" xmltv_id="TV5MondeEurope.fr" site_id="NL_000045_019354">TV5Monde Europe</channel>
   <channel site="ontvtonight.com" lang="fr" xmltv_id="TV5MondeUSA.fr" site_id="us#69021397/tv5-monde-usa">TV5Monde États-Unis</channel>
   <channel site="ontvtonight.com" lang="fr" xmltv_id="TV5MondeStyle.fr" site_id="us#4461114408/tv5-monde-style-sling">TV5Monde Style</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TV7Bordeaux.fr" site_id="tv7-bordeaux-382">TV7 Bordeaux</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TV8MontBlanc.fr" site_id="8-mont-blanc-385">8 Mont-Blanc</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TVBreizh.fr" site_id="tvbreizh-129">TvBreizh</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TVPI.fr" site_id="tvpi-6508">TVPI</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TV7Bordeaux.fr" site_id="273">TV7 Bordeaux</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TV8MontBlanc.fr" site_id="421">8 Mont-Blanc</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVBreizh.fr" site_id="225">TvBreizh</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVPI.fr" site_id="2275">TVPI</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TVSud.fr" site_id="tvsud-montpellier-344">TVSud</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="TVTours.fr" site_id="tv-tours-393">TV Tours</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="UshuaiaTV.fr" site_id="ushuaia-tv-132">Ushuaïa TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="VosgesTV.fr" site_id="vosges-television-343">Vosges TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="W9.fr" site_id="w9-24">W9</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="WarnerTV.fr" site_id="warner-tv-403">Warner TV</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="Weo.fr" site_id="weo-394">Weo</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVTours.fr" site_id="540">TV Tours</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="UshuaiaTV.fr" site_id="451">Ushuaïa TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="VosgesTV.fr" site_id="1095">Vosges TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="W9.fr" site_id="119">W9</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="WarnerTV.fr" site_id="2334">Warner TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="WarnerTVNext.fr" site_id="2040">Warner TV Next</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Weo.fr" site_id="809">Weo</channel>
   #Gabon
-  <channel site="startimestv.com" lang="en" xmltv_id="Gabon1ere.ga" site_id="2059390409">Gabon 1ère</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Gabon1ere.ga" site_id="985">Gabon 1ère</channel>
   #Georgia
   <channel site="magticom.ge" lang="ka" xmltv_id="1TV.ge" site_id="3">პირველი არხი</channel>
   <channel site="magticom.ge" lang="ka" xmltv_id="2TV.ge" site_id="167">პირველი არხი/ტელესკოლა</channel>
@@ -3854,8 +3851,9 @@
   <channel site="snrt.ma" lang="ar" xmltv_id="Laayoune.ma" site_id="4069">Laâyoune</channel>
   <channel site="chada.ma" lang="fr" xmltv_id="ChadaTV.ma" site_id="1">Chada TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="M24.ma" site_id="1#40#م 24 المغربية">M24</channel>
-  <channel site="sat.tv" lang="en" xmltv_id="Medi1TV.ma" site_id="1#48#Medi 1 TV">Medi1TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="Medi1TV.ma" site_id="665">Medi1TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlOnsTV.ma" site_id="1#48#الأنس">Al Ons</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TeleMaroc.ma" site_id="3380">Télé Maroc</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="TV5MondeMaghrebOrient.fr" site_id="1#33#تي في 5 المغرب">TV5Monde Maghreb-Orient</channel>
   #Mozambique
   <channel site="startimestv.com" lang="en" xmltv_id="EcoTV.mz" site_id="529">EcoTV</channel>
@@ -4738,7 +4736,6 @@
   <channel site="programetv.ro" lang="en" xmltv_id="FastFunBox.nl" site_id="funbox-uhd">Fast&amp;FunBox</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="Galaxy4.hu" site_id="galaxy4">Galaxy4</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="Gametoon.nl" site_id="gametoon-hd">Gametoon</channel>
-  <channel site="programetv.ro" lang="ro" xmltv_id="GINXEsportsTV.uk" site_id="ginx-esports-tv">GINX Esports TV</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="HappyChannel.ro" site_id="happy-channel">Happy Channel</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="HBO.ro" site_id="hbo">HBO</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="HBO2.ro" site_id="hbo-2">HBO 2</channel>
@@ -5508,7 +5505,6 @@
   <channel site="dstv.com" lang="en" xmltv_id="ESPN.za" site_id="zaf#218">ESPN</channel>
   <channel site="dstv.com" lang="en" xmltv_id="ESPN2.za" site_id="zaf#219">ESPN 2</channel>
   <channel site="dstv.com" lang="en" xmltv_id="FoodNetwork.za" site_id="zaf#175">Food Network</channel>
-  <channel site="dstv.com" lang="en" xmltv_id="GINXEsportsTV.uk" site_id="zaf#127">Ginx eSports</channel>
   <channel site="dstv.com" lang="en" xmltv_id="HGTV.za" site_id="zaf#177">HGTV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="HilaalTV.za" site_id="zmb#347">Hilaal TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="History.za" site_id="zaf#186">History</channel>
@@ -7259,9 +7255,9 @@
   <channel site="mtel.ba" lang="en" xmltv_id="BrazzersTVEurope.us" site_id="191#300">Brazzers TV Europe</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Candy.ru" site_id="candy">Candy • Candy 3D HD • Candy HD</channel>
   <channel site="webtv.delta.nl" lang="en" xmltv_id="Desire.uk" site_id="10059">Desire</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DorcelTV.fr" site_id="533">Dorcel TV</channel>
-  <channel site="mujtvprogram.cz" lang="en" xmltv_id="DorcelXXX.fr" site_id="761">Dorcel XXX</channel>
-  <channel site="canalplus.com" lang="fr" xmltv_id="DorcelTVAfrica.fr" site_id="cm#180702">Dorcel TV Africa</channel>
+  <channel site="tv.sfr.fr" lang="en" xmltv_id="DorcelTV.fr" site_id="560">Dorcel TV</channel>
+  <channel site="tv.sfr.fr" lang="en" xmltv_id="DorcelXXX.fr" site_id="1474">Dorcel XXX</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="DorcelTVAfrica.fr" site_id="2838">Dorcel TV Africa</channel>
   <channel site="tv.post.lu" lang="en" xmltv_id="DuskTV.nl" site_id="c906fca0-7000-11e9-915f-ab32be3854aa">Dusk!</channel>
   <channel site="mtel.ba" lang="en" xmltv_id="EroX.nl" site_id="900#175">EroX</channel>
   <channel site="mtel.ba" lang="en" xmltv_id="EroXXX.nl" site_id="901#177">EroXXX</channel>
@@ -7294,7 +7290,7 @@
   <channel site="mtel.ba" lang="bs" xmltv_id="Erotic6.rs" site_id="907#188">Pink Erotic 6</channel>
   <channel site="mtel.ba" lang="en" xmltv_id="Erotic7.rs" site_id="908#189">Pink Erotic 7</channel>
   <channel site="mtel.ba" lang="en" xmltv_id="Erotic8.rs" site_id="909#191">Pink Erotic 8</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="PinkTV.fr" site_id="pink-tv-103">Pink TV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="PinkTV.fr" site_id="406">Pink TV</channel>
   <channel site="tv.post.lu" lang="fr" xmltv_id="PinkX.fr" site_id="7718b020-81d3-11e9-b43b-9d7b168e6372">Pink-X</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="PlayboyTV.us" site_id="PLAYBOY">Playboy</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="PlayboyTV.br" site_id="br#playboy-hd">PlayBoy TV Brasil</channel>
@@ -7327,5 +7323,5 @@
   <channel site="tvprofil.com" lang="sq" xmltv_id="XBizarre.al" site_id="al/programacioni#tring-bizarre">X-Bizarre</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="XBungaBunga.al" site_id="al/programacioni#tring-bunga-bunga">X-BungaBunga</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="XDesire.al" site_id="al/programacioni#tring-desire">X-Desire</channel>
-  <channel site="programme-tv.net" lang="fr" xmltv_id="XXL.fr" site_id="xxl-135">XXL</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="XXL.fr" site_id="218">XXL</channel>
 </channels>
