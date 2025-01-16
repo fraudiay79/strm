@@ -522,15 +522,13 @@
   <channel site="telenet.tv" lang="nl" xmltv_id="VTM3.be" site_id="vitaya">VTM 3</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="VTM4.be" site_id="acht">VTM 4</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="VTMGold.be" site_id="caz2">VTM Gold</channel>
-  <channel site="telenet.tv" lang="nl" xmltv_id="VTMNonStop.be" site_id="vtmkzoom">VTM Non-Stop 90s</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="VTMLife.be" site_id="vtmkzoom">VTM Life</channel>
   #Bolivia
   <channel site="reportv.com.ar" lang="es" xmltv_id="ATB.bo" site_id="748">ATB</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="BoliviaTV.bo" site_id="4055">Bolivia TV</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="Bolivision.bo" site_id="416">Bolivisión</channel>
-  <channel site="comteco.com.bo" lang="es" xmltv_id="CadenaA.bo" site_id="Cadena A (36)">Cadena A</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="PAT.bo" site_id="745">PAT</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="RedUno.bo" site_id="367">Red Uno</channel>
-  <channel site="comteco.com.bo" lang="es" xmltv_id="RTP.bo" site_id="RTP Red Nacional">RTP</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="TVU.bo" site_id="1870">TVU</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="UnitelSantaCruz.bo" site_id="6340">Unitel</channel>
   #Bosnia
@@ -931,7 +929,6 @@
   <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatExplore.bg" site_id="91">Viasat Explore</channel>
   <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatHistory.bg" site_id="7">Viasat History</channel>
   <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatNature.bg" site_id="168">Viasat Nature</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="FashionTVEurope.fr" site_id="233">Fashion TV</channel>
   <channel site="tv.dir.bg" lang="en" xmltv_id="FightBox.nl" site_id="280">FightBox</channel>
   <channel site="tv.dir.bg" lang="en" xmltv_id="MTVHits.uk" site_id="251">MTV Hits</channel>
   <channel site="tv.dir.bg" lang="en" xmltv_id="TraceSportStars.fr" site_id="300">Trace Sport Stars</channel>
@@ -1002,7 +999,6 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="DisneyJunior.ca" site_id="ca#1978065938/disney-junior-canada-hd">Disney Junior</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="DisneyXD.ca" site_id="ca#1978073827/disney-xd-canada-hd">Disney XD</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="DocumentaryChannel.ca" site_id="ca#69039969/documentary-canada-hdtv">Documentary Channel</channel>
-  <channel site="tvpassport.com" lang="fr" xmltv_id="DorcelTV.ca" site_id="vivid-tv-canada-francais/8519">Dorcel TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="DTour.ca" site_id="ca#677111315/dtour-hdtv">DTOUR</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="EEntertainment.ca" site_id="ca#69047132/e-entertainment-television-canada">E!</channel>
   <channel site="ontvtonight.com" lang="fr" xmltv_id="ElleFictions.ca" site_id="ca#69038664/elle-fictions-hdtv">Elle Fictions</channel>
@@ -1046,7 +1042,6 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="MeteoMedia.ca" site_id="ca#69048836/meteo-media">MétéoMédia</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MovieTime.ca" site_id="ca#69021270/movietime">MovieTime</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MTV.ca" site_id="ca#69036054/music-television-canada">MTV</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="MTV2.ca" site_id="ca#69021400/mtv2">MTV 2</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Much.ca" site_id="ca#69034772/much">Much Music</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="NationalGeographic.ca" site_id="ca#69021280/national-geographic-channel-canada">National Geographic</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="NationalGeographicWild.ca" site_id="ca#69046050/natgeo-wild-canada">National Geographic Wild</channel>
@@ -1058,8 +1053,6 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="OMNI2.ca" site_id="ca#69026134/omni2-hdtv">OMNI.2</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="OUTtv.ca" site_id="ca#294021730/out-tv-hdtv">OUTtv</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="OWN.ca" site_id="ca#69039508/the-oprah-winfrey-network-canada-hdtv">OWN</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="PenthouseTV.ca" site_id="penthouse-tv-canada/5894">Penthouse TV</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="RedHotTV.ca" site_id="red-hot-tv/3627">Red Hot TV</channel>
   <channel site="ontvtonight.com" lang="fr" xmltv_id="Prise2.ca" site_id="ca#69027737/prise-2">Prise 2</channel>
   <channel site="ontvtonight.com" lang="fr" xmltv_id="QUB.ca" site_id="ca#69037513/yoopa-hdtv">QUB</channel>
   <channel site="ontvtonight.com" lang="fr" xmltv_id="RDS.ca" site_id="ca#69047536/reseau-des-sports">RDS</channel>
@@ -1103,7 +1096,6 @@
   <channel site="ontvtonight.com" lang="fr" xmltv_id="TVASports3.ca" site_id="ca#1463718945/tva-sports-3-hdtv">TVA Sports 3</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="CICADT.ca" site_id="ca#69023705/tvontario">TVO</channel>
   <channel site="ontvtonight.com" lang="fr" xmltv_id="Unis.ca" site_id="ca#1169929349/unis-tv">Unis TV</channel>
-  <channel site="ontvtonight.com" lang="fr" xmltv_id="Vrak.ca" site_id="ca#69046928/vrak-tv">Vrak</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="VisionTV.ca" site_id="ca#69023757/vision-tv-canada">Vision TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="WildBrainTV.ca" site_id="ca#69040328/wildbrain-tv-hd-east">WildBrainTV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="WildTV.ca" site_id="ca#69025927/wild-television-network">Wild TV</channel>
@@ -2062,8 +2054,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="Bild.de" site_id="5077">BILD</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="BonGusto.de" site_id="117">BonGusto</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Boomerang.de" site_id="148">Cartoonito</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="BRFernsehenNord.de" site_id="175">BR Fernsehen Nord</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="BRFernsehenSud.de" site_id="407">BR Fernsehen Süd</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="BRFernsehen.de" site_id="175">BR Fernsehen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Cartoonito.de" site_id="3843">Cartoonito</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="CartoonNetwork.de" site_id="126">Cartoon Network</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Channel21.de" site_id="5176">Channel 21</channel>
@@ -2102,7 +2093,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="kabeleinsDoku.de" site_id="573">kabel eins Doku</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="KiKA.de" site_id="387">KiKA</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="KinoweltTV.de" site_id="137">KinoweltTV</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="KTV.at" site_id="487">K-TV</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="KTV.de" site_id="487">K-TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Lausitzwelle.de" site_id="4727">Lausitzwelle</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="LTV.de" site_id="578">L-TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="MagentaSport.de" site_id="5075">Magenta Sport</channel>
@@ -2123,7 +2114,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="NiederbayernTV.de" site_id="174">Niederbayern TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Nitro.de" site_id="395">NITRO</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="NRWision.de" site_id="3750">NRWision</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="ntv.de" site_id="376">n-tv</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="n-tv.de" site_id="376">n-tv</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="OberpfalzTV.de" site_id="141">Oberpfalz TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="OFTV.de" site_id="546">OF-TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="OK4.de" site_id="3045">OK4</channel>
@@ -2138,7 +2129,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="ProSiebenMaxx.de" site_id="396">ProSieben MAXX</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="QVC.de" site_id="446">QVC</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RadioBremenFernsehen.de" site_id="368">Radio Bremen TV</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="rbbFernsehen.de" site_id="384">rbb fernsehen</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="rbbFernsehen.de" site_id="384">rbb Fernsehen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RedBullTV.at" site_id="5027">Red Bull TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RennsteigTV.de" site_id="2609">Rennsteig.TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="RFH.de" site_id="4723">RFH Regionalfernsehen Harz</channel>
@@ -2161,7 +2152,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="SalveTV.de" site_id="3073">salve.tv</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SAT1.de" site_id="381">SAT.1</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SAT1emotions.de" site_id="224">SAT.1 emotions</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SAT1Gold.de" site_id="338">SAT.1 GOLD</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="SAT1Gold.de" site_id="338">SAT.1 Gold</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SAT1NRW.de" site_id="251">SAT.1 Nordrhein-Westfalen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="sixx.de" site_id="380">sixx</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyAtlantic.de" site_id="264">Sky Atlantic</channel>
@@ -2209,11 +2200,11 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkySportBundesliga8.de" site_id="219">Sky Sport Bundesliga 8</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkySportBundesliga9.de" site_id="237">Sky Sport Bundesliga 9</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkySportBundesliga10.de" site_id="5557">Sky Sport Bundesliga 10</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SonnenklarTV.de" site_id="486">sonnenklar.TV</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="sonnenklarTV.de" site_id="486">sonnenklar.TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SpiegelGeschichte.de" site_id="4406">Spiegel Geschichte</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Sport1.de" site_id="401">Sport1</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Sport1Plus.de" site_id="44">Sport1+</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SportdigitalFUSSBALL.de" site_id="194">Sportdigital FUSSBALL</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="SportdigitalFUSSBALL.de" site_id="194">Sportdigital Fußball</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SRFernsehen.de" site_id="379">SR Fernsehen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Studio47.de" site_id="2616">Studio 47</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SWRFernsehen.de" site_id="398">SWR Fernsehen</channel>
@@ -2224,7 +2215,7 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="TLC.de" site_id="383">TLC</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="TOGGOplus.de" site_id="601">TOGGO plus</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="TVA.de" site_id="171">TVA Ostbayern</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="TVBerlin.de" site_id="599">tv.berlin</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="tvberlin.de" site_id="599">tv.berlin</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="TVIngolstadt.de" site_id="173">tv.ingolstadt</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="TVMainfranken.de" site_id="156">TV Mainfranken</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="TVMittelrhein.de" site_id="581">TV Mittelrhein</channel>
@@ -2364,115 +2355,116 @@
   <channel site="mi.tv" lang="es" xmltv_id="Televicentro.hn" site_id="hn#canal-5">Canal 5</channel>
   <channel site="mi.tv" lang="es" xmltv_id="VTV.hn" site_id="hn#vica-vtv">VTV</channel>
   #Hungary
-  <channel site="awilime.com" lang="hu" xmltv_id="AMC.hu" site_id="amc">AMC</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="AnimalPlanet.hu" site_id="animal_planet_hd">Animal Planet</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Arena4.hu" site_id="arena4">Arena4</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ATV.hu" site_id="atv">ATV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ATVSpirit.hu" site_id="atv_spirit">ATV Spirit</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="AXN.hu" site_id="axn">AXN</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="AMC.hu" site_id="AMC">AMC</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="AnimalPlanet.hu" site_id="ANIMALPLANETHD">Animal Planet</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Arena4.hu" site_id="ARENA4">Arena4</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ATV.hu" site_id="ATV">ATV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ATVSpirit.hu" site_id="ATVSPIRIT">ATV Spirit</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="AXN.hu" site_id="AXN">AXN</channel>
   <channel site="awilime.com" lang="hu" xmltv_id="BudapestEuropaTV.hu" site_id="budapest_europa_tv">Budapest Európa TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="CartoonNetwork.hu" site_id="cartoon_network">Cartoon Network</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Cartoonito.hu" site_id="cartoonito">Cartoonito</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Cinemax.hu" site_id="cinemax">Cinemax</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Cinemax2.hu" site_id="cinemax_2">Cinemax 2</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ComedyCentral.hu" site_id="comedy_central">Comedy Central</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="CartoonNetwork.hu" site_id="CARTOON">Cartoon Network</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Cartoonito.hu" site_id="CARTOONITO">Cartoonito</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Cinemax.hu" site_id="CINEMAX">Cinemax</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Cinemax2.hu" site_id="CINEMAX2">Cinemax 2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ComedyCentral.hu" site_id="COMEDY">Comedy Central</channel>
   <channel site="awilime.com" lang="hu" xmltv_id="ComedyCentralFamily.hu" site_id="comedy_central_family">Comedy Central Family</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="CoolTV.hu" site_id="cool">Cool TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="D1TV.hu" site_id="d1_tv">D1 TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="DikhTV hu" site_id="dikh_tv">Dikh TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="DiscoveryChannel.hu" site_id="discovery_channel">Discovery Channel</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="DisneyChannel.hu" site_id="disney_csatorna">Disney Channel</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="DuckTV.hu" site_id="duck_tv_hd">ducktv</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="CoolTV.hu" site_id="COOL">Cool TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="D1TV.hu" site_id="D1">D1 TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="DikhTV hu" site_id="DIKHTV">Dikh TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="DiscoveryChannel.hu" site_id="DISCOVERYCHANNEL">Discovery Channel</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="DisneyChannel.hu" site_id="DISNEY">Disney Channel</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="DuckTV.hu" site_id="DUCKTV">ducktv</channel>
   <channel site="awilime.com" lang="hu" xmltv_id="DuckTVPlus.hu" site_id="duck_tv_plus">ducktv+</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Duna.hu" site_id="duna_televizio">Duna</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="DunaWorld.hu" site_id="duna_world">Duna World</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="EpicDrama.hu" site_id="epic_drama">Epic Drama</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Eurosport1.hu" site_id="eurosport_1">Eurosport 1</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Eurosport2.hu" site_id="eurosport_2">Eurosport 2</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Bonum.hu" site_id="ewtn">Bonum</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmPlus.hu" site_id="film">Film+</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Film4.hu" site_id="film4">Film4</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmCafe.hu" site_id="film_cafe">Film Café</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmMania.hu" site_id="film_mania">Film Mánia</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmBox.hu" site_id="filmbox">FilmBox</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmBoxExtra.hu" site_id="filmbox_extra_hd">FilmBox Extra</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmBoxFamily.hu" site_id="filmbox_family">FilmBox Family</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmBoxPremium.hu" site_id="filmbox_premium">FilmBox Prémium</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FilmBoxStars.hu" site_id="filmbox_stars">FilmBox Stars</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Duna.hu" site_id="DUNA">Duna</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="DunaWorld.hu" site_id="DUNAWORLD">Duna World</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="EpicDrama.hu" site_id="EPICDRAMA">Epic Drama</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="EuronewsHungary.hu" site_id="EURONEWS">euronews</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Eurosport1.hu" site_id="EUROSPORT">Eurosport 1</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Eurosport2.hu" site_id="EUROSPORT2">Eurosport 2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Bonum.hu" site_id="BONUMTV">Bonum</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmPlus.hu" site_id="FILMPLUSSZ">Film+</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Film4.hu" site_id="FILM4">Film4</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmCafe.hu" site_id="FILMCAFE">Film Café</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmMania.hu" site_id="FILMMANIA">Film Mánia</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmBox.hu" site_id="FILMBOX">FilmBox</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmBoxExtra.hu" site_id="FILMBOXHD">FilmBox Extra</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmBoxFamily.hu" site_id="FILMBOXFAMILY">FilmBox Family</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmBoxPremium.hu" site_id="FILMBOXPREMIUM">FilmBox Prémium</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FilmBoxStars.hu" site_id="FILMBOXSTARS">FilmBox Stars</channel>
   <channel site="awilime.com" lang="hu" xmltv_id="FishingandHunting.hu" site_id="fishing_and_hunting">Fishing and Hunting</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="FoodNetwork.hu" site_id="food_network">Food Network</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Galaxy4.hu" site_id="galaxy4">Galaxy4</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Hatoscsatorna.hu" site_id="hatoscsatorna">Hatoscsatorna</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="HBO.hu" site_id="hbo">HBO</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="HBO2.hu" site_id="hbo_2">HBO 2</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="HBO3.hu" site_id="hbo_3">HBO 3</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="HGTV.hu" site_id="hgtv_home_and_garden">HGTV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="HirTV.hu" site_id="hir_tv">Hír TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="History.hu" site_id="history">History</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="InvestigationDiscovery.hu" site_id="id_investigation_discovery">Investigation Discovery</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="IzauraTV.hu" site_id="izaura_tv">Izaura TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="JazzTV.hu" site_id="jazz_tv">Jazz TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="JimJam.hu" site_id="jim_jam">JimJam</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="JockyTV.hu" site_id="jocky_tv">Jocky TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="KolyokKlub.hu" site_id="kolyok_klub">Kölyök Klub</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="LifeTV.hu" site_id="lifetv">LifeTVnapiheti</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="M1.hu" site_id="m1">M1</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="M2.hu" site_id="m2">M2</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="M4Sport.hu" site_id="m4_sport">M4 Sport</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="M4SportPlus.hu" site_id="m4_sport_plusz">M4 Sport+</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="M5.hu" site_id="m5">M5</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="MagyarMoziTV.hu" site_id="magyar_mozi_tv">Magyar Mozi TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Match4.hu" site_id="match4">Match4napiheti</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Max4.hu" site_id="max4">Max4napiheti</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Minimax.hu" site_id="minimax">Minimaxnapiheti</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="MoziPlus.hu" site_id="mozi">Mozi+</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="MoziKlub.hu" site_id="mozi_klub">Mozi Klub</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Moziverzum.hu" site_id="moziverzum">Moziverzum</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="MTVGlobal.uk" site_id="mtv_european">MTV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="MuzsikaTV.hu" site_id="muzsika_tv">Muzsika TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="NationalGeographic.hu" site_id="national_geographic_hd">National Geographic</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="NationalGeographicWild.hu" site_id="national_geographic_wild">National Geographic Wild</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="NickJr.hu" site_id="nick_jr">Nick Jr.</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Nickelodeon.hu" site_id="nickelodeon">Nickelodeon</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Nicktoons.hu" site_id="nicktoons">Nicktoons</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="OzoneTV.hu" site_id="ozonetv">OzoneTV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ParamountNetwork.hu" site_id="paramount_network">Paramount Network</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="PaxTV.hu" site_id="pax_tv">Pax TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Prime.hu" site_id="prime">Prime</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="RTL.hu" site_id="rtl">RTL</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="RTLGold.hu" site_id="rtl_gold">RTL Gold</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="RTLHarom.hu" site_id="rtl_harom">RTL Három</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="RTLKetto.hu" site_id="rtl_ketto">RTL Kettő</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="RTLOtthon.hu" site_id="rtl_otthon">RTL Otthon</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="SlagerTV.hu" site_id="slager_tv">Sláger TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="SorozatPlus.hu" site_id="sorozat">Sorozat+</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="SorozatKlub.hu" site_id="sorozat_klub">Sorozat Klub</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Spektrum.hu" site_id="spektrum_hd">Spektrum</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="SpektrumHome.hu" site_id="spektrum_home">Spektrum Home</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Spiler1.hu" site_id="spiler1_tv">Spíler1 TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Spiler2.hu" site_id="spiler2_tv">Spíler2 TV</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Sport1.hu" site_id="sport_1">Sport 1</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Sport2.hu" site_id="sport_2">Sport 2</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Story4.hu" site_id="story4">Story4</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="SuperTV2.hu" site_id="supertv2">Super TV2</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TeenNick.hu" site_id="teennick">TeenNick</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TLC.hu" site_id="tlc">TLC</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TravelChannel.hu" site_id="travel_channel">Travel Channel</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TV2.hu" site_id="tv2">TV2napiheti</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TV2Comedy.hu" site_id="tv2_comedy">TV2 Comedy</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TV2Kids.hu" site_id="tv2_kids">TV2 Kids</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TV2Klub.hu" site_id="tv2_klub">TV2 Klub</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TV2Sef.hu" site_id="tv2_sef">TV2 Séf</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TV4.hu" site_id="tv4">TV4napiheti</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="TVPaprika.hu" site_id="tv_paprika">TV Paprika</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Viasat2.hu" site_id="viasat_2">Viasat 2</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Viasat3.hu" site_id="viasat_3">Viasat 3</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Viasat6.hu" site_id="viasat_6">Viasat 6</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ViasatExplore.hu" site_id="viasat_explore">Viasat Explore</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ViasatFilm.hu" site_id="viasat_film">Viasat Film</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ViasatHistory.hu" site_id="viasat_history">Viasat History</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="ViasatNature.hu" site_id="viasat_nature">Viasat Nature</channel>
-  <channel site="awilime.com" lang="hu" xmltv_id="Zenebutik.hu" site_id="zenebutik">Zenebutik</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="FoodNetwork.hu" site_id="FOODNETWORK">Food Network</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Galaxy4.hu" site_id="GALAXY4">Galaxy4</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Hatoscsatorna.hu" site_id="HATOSCSATORNA">Hatoscsatorna</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="HBO.hu" site_id="HBO">HBO</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="HBO2.hu" site_id="HBO2">HBO 2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="HBO3.hu" site_id="HBO3">HBO 3</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="HGTV.hu" site_id="HGTV">HGTV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="HirTV.hu" site_id="HIRTV">Hír TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="History.hu" site_id="THEHISTORYCHANNEL">History</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="InvestigationDiscovery.hu" site_id="DISCOVERYID">Investigation Discovery</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="IzauraTV.hu" site_id="IZAURATV">Izaura TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="JazzTV.hu" site_id="JAZZTV">Jazz TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="JimJam.hu" site_id="JIMJAM">JimJam</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="JockyTV.hu" site_id="JOCKYTV">Jocky TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="KolyokKlub.hu" site_id="KOLYOKKLUB">Kölyök Klub</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="LifeTV.hu" site_id="LIFETV">LifeTVnapiheti</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="M1.hu" site_id="M1HD">M1</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="M2.hu" site_id="M2HD">M2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="M4Sport.hu" site_id="M4">M4 Sport</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="M4SportPlus.hu" site_id="M4_SPORT_PLUSZ">M4 Sport+</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="M5.hu" site_id="M5">M5</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="MagyarMoziTV.hu" site_id="MAGYARMOZITV">Magyar Mozi TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Match4.hu" site_id="MATCH4">Match4napiheti</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Max4.hu" site_id="MAX4">Max4napiheti</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Minimax.hu" site_id="MINIMAX">Minimaxnapiheti</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="MoziPlus.hu" site_id="MOZIPLUSZ">Mozi+</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="MoziKlub.hu" site_id="MOZIKLUB">Mozi Klub</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Moziverzum.hu" site_id="MOZIVERZUM">Moziverzum</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="MTVGlobal.uk" site_id="MTVEURO">MTV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="MuzsikaTV.hu" site_id="MUZSIKA">Muzsika TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="NationalGeographic.hu" site_id="NATGEOHD">National Geographic</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="NationalGeographicWild.hu" site_id="NATIONALGEOWILD">National Geographic Wild</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="NickJr.hu" site_id="NICK_JR">Nick Jr.</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Nickelodeon.hu" site_id="NICKELODEON">Nickelodeon</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Nicktoons.hu" site_id="NICKTOONS">Nicktoons</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="OzoneTV.hu" site_id="OZONETV">OzoneTV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ParamountNetwork.hu" site_id="PARAMOUNT_NETWORK">Paramount Network</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="PaxTV.hu" site_id="PAXTV">Pax TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Prime.hu" site_id="PRIME">Prime</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="RTL.hu" site_id="RTL">RTL</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLGold.hu" site_id="RTLGOLD">RTL Gold</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLHarom.hu" site_id="RTL_HAROM">RTL Három</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLKetto.hu" site_id="RTL_KETTO">RTL Kettő</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLOtthon.hu" site_id="RTLOTTHON">RTL Otthon</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="SlagerTV.hu" site_id="SLAGERTV">Sláger TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="SorozatPlus.hu" site_id="SOROZATPLUSSZ">Sorozat+</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="SorozatKlub.hu" site_id="SOROZATKLUB">Sorozat Klub</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Spektrum.hu" site_id="SPEKTRUM">Spektrum</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="SpektrumHome.hu" site_id="SPEKTRUMHOME">Spektrum Home</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Spiler1.hu" site_id="SPILER1TV">Spíler1 TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Spiler2.hu" site_id="SPILER2TV">Spíler2 TV</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Sport1.hu" site_id="SPORT1">Sport 1</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Sport2.hu" site_id="SPORT2">Sport 2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Story4.hu" site_id="STORY4">Story4</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="SuperTV2.hu" site_id="SUPERTV2">Super TV2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TeenNick.hu" site_id="TEENNICK">TeenNick</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TLC.hu" site_id="TLC">TLC</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TravelChannel.hu" site_id="TRAVELCHANNELHD">Travel Channel</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TV2.hu" site_id="TV2">TV2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TV2Comedy.hu" site_id="TV2COMEDY">TV2 Comedy</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TV2Kids.hu" site_id="TV2_KIDS">TV2 Kids</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TV2Klub.hu" site_id="TV2KLUB">TV2 Klub</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TV2Sef.hu" site_id="TV2SEF">TV2 Séf</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TV4.hu" site_id="TV4">TV4</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="TVPaprika.hu" site_id="TVPAPRIKA">TV Paprika</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Viasat2.hu" site_id="VIASAT2">Viasat 2</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Viasat3.hu" site_id="VIASAT3">Viasat 3</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Viasat6.hu" site_id="VIASAT6">Viasat 6</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ViasatExplore.hu" site_id="VIASATEXPLORE">Viasat Explore</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ViasatFilm.hu" site_id="VIASAT_FILM">Viasat Film</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ViasatHistory.hu" site_id="VIASATHISTORY">Viasat History</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="ViasatNature.hu" site_id="VIASATNATURE">Viasat Nature</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="Zenebutik.hu" site_id="ZENEBUTIK">Zenebutik</channel>
   #Iceland
   <channel site="novatv.is" lang="is" xmltv_id="Althingi.is" site_id="bb5a5095_2F3486c">Alþingi</channel>
   <channel site="novatv.is" lang="is" xmltv_id="RUV2.is" site_id="64a1209e_2F3486c">RÚV 2</channel>
@@ -4064,7 +4056,6 @@
   <channel site="startimestv.com" lang="en" xmltv_id="LibertyTV.ng" site_id="237">Liberty TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="MiTV.ng" site_id="nga#255">MiTV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="Nigbati.ng" site_id="1235400314">Nigbati TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="NigezieXtreme.ng" site_id="201">Nigezie Xtreme</channel>
   <channel site="dstv.com" lang="en" xmltv_id="NTA2.ng" site_id="nga#369">NTA 2</channel>
   <channel site="dstv.com" lang="en" xmltv_id="NTAInternational.ng" site_id="nga#251">NTA I</channel>
   <channel site="dstv.com" lang="en" xmltv_id="NTANews24.ng" site_id="nga#419">NTA News 24</channel>
@@ -4091,7 +4082,7 @@
   <channel site="dstv.com" lang="en" xmltv_id="TrybeTV.ng" site_id="zmb#195">Trybe</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="TVC.ng" site_id="210">TVC</channel>
   <channel site="dstv.com" lang="en" xmltv_id="TVCNews.ng" site_id="nga#418">TVC News</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="VoxAfrica.uk" site_id="502">Vox Africa</channel>
+  <channel site="canalplus.com" lang="en" xmltv_id="VoxAfrica.uk" site_id="ga#180193">Vox Africa</channel>
   <channel site="dstv.com" lang="en" xmltv_id="WapTV.ng" site_id="nga#262">WAP TV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="WazobiaTV.ng" site_id="230">Wazobia TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="WazobiaMax.ng" site_id="nga#259">Wazobia Max</channel>
@@ -4561,6 +4552,7 @@
   <channel site="nostv.pt" lang="pt" xmltv_id="NickJr.pt" site_id="444">Nick Jr.</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="DisneyJunior.pt" site_id="673">Disney Junior</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="BabyTV.pt" site_id="448">Baby TV</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="SportTVPlus.pt" site_id="417">Sport TV+</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="SportTV1.pt" site_id="137">Sport TV 1</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="SportTV2.pt" site_id="187">Sport TV 2</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="SportTV3.pt" site_id="188">Sport TV 3</channel>
@@ -4593,8 +4585,6 @@
   <channel site="nostv.pt" lang="pt" xmltv_id="MTV.pt" site_id="377">MTV Portugal</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="ClubbingTV.fr" site_id="CLUBHD">Clubbing TV</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="EuronewsPortuguese.fr" site_id="25">euronews</channel>
-  <channel site="nostv.pt" lang="pt" xmltv_id="FashionTVEurope.fr" site_id="47">FTV</channel>
-  <channel site="nostv.pt" lang="pt" xmltv_id="GaliciaTVEuropa.es" site_id="54">TV Galicia</channel>
   <channel site="meo.pt" lang="pt" xmltv_id="Gametoon.nl" site_id="GAMET">Gametoon</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="Motorvision.de" site_id="354">Motorvision</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="Canal180.pt" site_id="58">Canal 180</channel>
@@ -4612,7 +4602,7 @@
   <channel site="nostv.pt" lang="pt" xmltv_id="FoodNetwork.pt" site_id="62">Food Network</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="GloboNow.pt" site_id="111">Globo News</channel>
   <channel site="nostv.pt" lang="en" xmltv_id="HorseTV.it" site_id="680">Horse TV</channel>
-  <channel site="nostv.pt" lang="pt" xmltv_id="InvestigationDiscoveryEurope.us" site_id="530">Investigation Discovery</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="InvestigationDiscovery.pt" site_id="530">Investigação Discovery</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="KuriakosTV.pt" site_id="426">Kuriakos TV</channel>
   <channel site="nostv.pt" lang="fr" xmltv_id="M6.fr" site_id="37">M6</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="MCMPop.fr" site_id="368">MCM Pop</channel>
@@ -4630,8 +4620,7 @@
   <channel site="nostv.pt" lang="pt" xmltv_id="TravelChannelEMEA.uk" site_id="100">Travel Channel</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="TravelChannelHD.uk" site_id="70">Travel Channel HD</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="TVCancaoNova.pt" site_id="142">Canção Nova</channel>
-  <channel site="nostv.pt" lang="es" xmltv_id="TVEInternacionalEuropeAsia.es" site_id="48">TVEi</channel>
-  <channel site="nostv.pt" lang="pt" xmltv_id="TVRInternational.ro" site_id="123">TVR Internacional</channel>
+  <channel site="nostv.pt" lang="es" xmltv_id="TVEInternacional.es" site_id="48">TVEi</channel>
   <channel site="nostv.pt" lang="en" xmltv_id="WSport.za" site_id="701">W-Sport</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="ZapViva.ao" site_id="538">ZAP Viva</channel>
   <channel site="rtp.pt" lang="pt" xmltv_id="RTPiAmerica.pt" site_id="rja#5">RTP Internacional América</channel>
@@ -5299,11 +5288,8 @@
   <channel site="mts.rs" lang="bs" xmltv_id="ToxicTV.rs" site_id="116#655">Toxic TV</channel>
   <channel site="mts.rs" lang="bs" xmltv_id="ToxicFolk.rs" site_id="469#817">Toxic Folk</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="ToxicRap.rs" site_id="475#757">Toxic Rap</channel>
-  <channel site="mts.rs" lang="en" xmltv_id="TravelChannelEMEA.uk" site_id="272#160">Travel Channel</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="TurizamTV.rs" site_id="271#507">Turizam + TV</channel>
   <channel site="mts.rs" lang="sh" xmltv_id="TV101.rs" site_id="504#759">RTV 101</channel>
-  <channel site="mts.rs" lang="sr" xmltv_id="TV4S.rs" site_id="560#614">TV 4S</channel>
-  <channel site="mts.rs" lang="sr" xmltv_id="TV5Uzice.rs" site_id="591#488">TV 5 Užice</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="TVApatin.rs" site_id="531#524">TV Apatin</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="TVAS.rs" site_id="578#432">TV AS</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="TVBacka.rs" site_id="525#495">TV Bačka</channel>
@@ -5867,7 +5853,7 @@
   <channel site="movistarplus.es" lang="es" xmltv_id="France24Espanol.fr" site_id="FRANCE">France 24 Español • France 24</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="StarChannel.es" site_id="11001">Star Channel</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="GaliciaTVEuropa.es" site_id="2052">TVG -TV Galicia</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="GOLPLAY.es" site_id="11031">GOL PLAY</channel>
+  <channel site="orangetv.es" lang="es" xmltv_id="GOLPlay.es" site_id="11031">GOL Play</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Historia.es" site_id="11019">Historia</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="IB3.es" site_id="2013">IB3</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="IberaliaTV.es" site_id="IBERAL">Iberalia TV</channel>
@@ -5916,7 +5902,6 @@
   <channel site="movistarplus.es" lang="es" xmltv_id="MovistarPlus.es" site_id="MPLUS">Movistar Plus+</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="MovistarPlus2.es" site_id="MPLUS2">Movistar Plus+ 2</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="MovistarVamos.es" site_id="VAMOSD">M+ Vamos</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="MTV00s.uk" site_id="1026">MTV 00s</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="MTVLive.us" site_id="11051">MTV Live</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="MTV.es" site_id="11050">MTV España</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="NationalGeographic.es" site_id="11017">National Geographic</channel>
@@ -5939,7 +5924,7 @@
   <channel site="orangetv.es" lang="es" xmltv_id="StingrayFestival4K.ca" site_id="11060">Festival 4K</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="StingrayiConcerts.ca" site_id="12002">iConcerts</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="SundanceTV.es" site_id="11052">Sundance TV</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="Syfy.es" site_id="11004">SYFY</channel>
+  <channel site="orangetv.es" lang="es" xmltv_id="Syfy.es" site_id="11004">Syfy</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TCM.es" site_id="11012">TCM</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Telecinco.es" site_id="1013">Telecinco</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Teledeporte.es" site_id="1063">Teledeporte</channel>
@@ -5948,7 +5933,7 @@
   <channel site="movistarplus.es" lang="es" xmltv_id="TelevisionCanaria.es" site_id="CANAR">TV Canaria</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Ten.es" site_id="12054">Ten</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TPA7.es" site_id="2009">TPA</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="Trece.es" site_id="1017">TR3CE</channel>
+  <channel site="orangetv.es" lang="es" xmltv_id="Trece.es" site_id="1017">Tr3ce</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TV3.es" site_id="2008">TV3</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TV3CAT.es" site_id="1036">TV3 CAT</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TVG2.es" site_id="2053">TVG 2</channel>
@@ -7246,7 +7231,7 @@
   <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel5.rs" site_id="921#380">Adult 5</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel6.rs" site_id="922#381">Adult 6</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel7.rs" site_id="923#382">Adult 7</channel>
-  <channel site="webtv.delta.nl" lang="en" xmltv_id="BabesTV.us" site_id="91">Babes TV</channel>
+  <channel site="horizon.tv" lang="en" xmltv_id="BabesTV.us" site_id="10187">Babes TV</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BalkanErotic.si" site_id="1000645">Balkan Erotic</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="BangU.us" site_id="BANGU">Bang U</channel>
   <channel site="vivacom.bg" lang="bg" xmltv_id="BarelyLegalTV.us" site_id="22#Barely Legal">Barely Legal TV</channel>
@@ -7292,7 +7277,7 @@
   <channel site="mtel.ba" lang="en" xmltv_id="Erotic8.rs" site_id="909#191">Pink Erotic 8</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="PinkTV.fr" site_id="406">Pink TV</channel>
   <channel site="tv.post.lu" lang="fr" xmltv_id="PinkX.fr" site_id="7718b020-81d3-11e9-b43b-9d7b168e6372">Pink-X</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="PlayboyTV.us" site_id="PLAYBOY">Playboy</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="PlayboyTV.us" site_id="PLAYBOY">Playboy TV</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="PlayboyTV.br" site_id="br#playboy-hd">PlayBoy TV Brasil</channel>
   <channel site="ziggogo.tv" lang="en" xmltv_id="PlayboyTVEurope.us" site_id="NL_000217_019123">Playboy TV Europe</channel>
   <channel site="siba.com.co" lang="es" xmltv_id="PlayboyTVLatino.us" site_id="556">Playboy TV Latino</channel>
@@ -7300,6 +7285,7 @@
   <channel site="startimestv.com" lang="en" xmltv_id="PornHubTV.us" site_id="348886941">PornHub TV</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="PrivateTV.nl" site_id="74">Private TV</channel>
   <channel site="mtel.ba" lang="en" xmltv_id="RealityKingsTV.us" site_id="915#374">Realty Kings TV</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="RedHotTV.ca" site_id="red-hot-tv/3627">Red Hot TV</channel>
   <channel site="tv.post.lu" lang="en" xmltv_id="RedlightHD.nl" site_id="764dd660-7009-11e9-a762-3be38d7f533c">Redlight</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="RedLips.ru" site_id="redlips">Red Lips • Red Lips HD</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Russiannight.ru" site_id="russkaya-noch">Русская ночь • Русская ночь HD</channel>
@@ -7312,7 +7298,7 @@
   <channel site="iptvx.one" lang="ru" xmltv_id="Shalun.ru" site_id="shalun">Шалун • Шалун HD</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Silk.ru" site_id="sholk">Шелк • Шёлк</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="SirinaTV.gr" site_id="sirinatv">Sirina</channel>
-  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="SuperONE.hu" site_id="1000342">SuperONE</channel>
+  <channel site="tvmustra.hu" lang="hu" xmltv_id="SuperONE.hu" site_id="SUPERONEHD">SuperONE</channel>
   <channel site="m.tv.sms.cz" lang="en" xmltv_id="TrueAmateurs.uk" site_id="True+Amateurs">True Amateurs</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Venus.ar" site_id="ar#venus">Venus</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="VenusBrasil.br" site_id="br#venus-tv-sd">Venus</channel>
