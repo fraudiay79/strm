@@ -82,17 +82,31 @@ async function loadProgramDetails($item) {
 
   // Find the JSON-LD script containing the data
   const script = $('script[type="application/ld+json"]').html()
+  if (!script) return Promise.resolve({})
   const jsonData = JSON.parse(script)
 
+  // Ensure jsonData contains the expected structure
+  const imageUrl = jsonData.image ? jsonData.image.url : null;
+  const actors = jsonData.workPerformed && jsonData.workPerformed.director
+    ? jsonData.workPerformed.director.map(director => director.name)
+    : []
+  const description = jsonData.description || null
+  const category = jsonData.workPerformed ? jsonData.workPerformed.genre : null
+  const subTitle = jsonData.name || null
+  const season = jsonData.workPerformed && jsonData.workPerformed.partOfSeason
+    ? jsonData.workPerformed.partOfSeason.seasonNumber
+    : null
+  const episode = jsonData.workPerformed ? jsonData.workPerformed.episodeNumber : null
+
   return Promise.resolve({
-    icon: jsonData.image.url,
+    icon: $('img').attr('src'),
     actors: $('ul.cast li.header:contains("Obsada:")').nextAll().slice(0, 3).map((i, el) => $(el).text().trim()).get(),
-    director: jsonData.workPerformed.director.map(director => director.name),
-    description: jsonData.description,
-    category: jsonData.workPerformed.genre,
-    sub_title: jsonData.name,
-    season: jsonData.workPerformed.partOfSeason ? jsonData.workPerformed.partOfSeason.seasonNumber : null,
-    episode: jsonData.workPerformed.episodeNumber
+    director: $('ul.cast li.header:contains("Reżyseria:")').next().text().trim(),
+    description: description,
+    category: category,
+    sub_title: subTitle,
+    season: season,
+    episode: episode
   })
 }
 
