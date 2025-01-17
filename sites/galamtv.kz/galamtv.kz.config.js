@@ -38,7 +38,7 @@ module.exports = {
             programs.push({
                 title: program.metaInfo.title,
                 description: program.metaInfo.description,
-                image: program.mediaInfo.thumbnails[0].url,
+                icon: program.mediaInfo.thumbnails[0].url,
                 start,
                 stop
             })
