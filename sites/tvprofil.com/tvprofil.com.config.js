@@ -25,9 +25,9 @@ module.exports = {
       const start = parseStart($item)
       const duration = parseDuration($item)
       const stop = start.add(duration, 's')
-      const image = parseImage($item)
+      const icon = parseImage($item)
 
-      programs.push({ title, category, start, stop, image })
+      programs.push({ title, category, start, stop, icon })
     })
 
     return programs
