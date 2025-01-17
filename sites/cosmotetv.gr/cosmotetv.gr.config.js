@@ -47,7 +47,7 @@ module.exports = {
           title: item.title,
           description: item.description || 'No description available',
           category: item.qoe.genre,
-          image: item.thumbnails.standard,
+          icon: item.thumbnails.standard,
           start,
           stop
         })
