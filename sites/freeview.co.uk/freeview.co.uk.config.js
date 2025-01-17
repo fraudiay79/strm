@@ -24,7 +24,7 @@ module.exports = {
       programs.push({
         title: item.main_title,
         subtitle: item.secondary_title,
-        image: parseImage(item),
+        icon: parseImage(item),
         start,
         stop
       })
