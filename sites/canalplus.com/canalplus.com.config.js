@@ -32,7 +32,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: parseDescription(info),
-        image: parseImage(info),
+        icon: parseImage(info),
         actors: parseCast(info, 'Avec :'),
         director: parseCast(info, 'De :'),
         writer: parseCast(info, 'Scénario :'),
