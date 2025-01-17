@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- awilime.com
-          #npm run channels:parse --- --config=./sites/awilime.com/awilime.com.config.js --output=./sites/awilime.com/awilime.com.channels.xml
+          #npm test --- tvprofil.com
+          npm run channels:parse --- --config=./sites/tvprofil.com/tvprofil.com.config.js --output=./sites/tvprofil.com/tvprofil.com.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=snrt.ma --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          #npm run grab --- --site=snrt.ma --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/allente.no.xml
-        #git add -f sites/awilime.com/awilime.com.channels.xml
+        #git add -f guides/allente.no.xml
+        git add -f sites/tvprofil.com/tvprofil.com.channels.xml
         git commit -m "Update xml"
         git push -f origin main
