@@ -24,7 +24,7 @@ module.exports = {
         subtitle: item.subTitle || null,
         category: item.genre,
         description: item.longSynopsis,
-        images: item.images.map(img => img.url),
+        icon: item.images.map(img => img.url),
         season: item.seasonNumber || null,
         episode: item.episodeNumber || null
       })
