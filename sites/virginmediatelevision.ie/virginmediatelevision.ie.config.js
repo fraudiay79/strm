@@ -33,7 +33,7 @@ module.exports = {
         title: parseTitle($item),
         description: parseDescription($item),
         sub_title: parseSubTitle($item),
-        image: parseImage($item),
+        icon: parseImage($item),
         start,
         stop
       })
