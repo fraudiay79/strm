@@ -34,7 +34,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.desc,
-        image: item.boxCoverImage,
+        icon: item.boxCoverImage,
         catchup: item.id,
         start: parseStart(item),
         stop: parseStop(item)
