@@ -73,7 +73,7 @@ module.exports = {
 async function loadProgramDetails($item) {
   const programId = $item('a').attr('href')
   const data = await axios
-    .get(`https://programtv.onet.pl/${programId}`)
+    .get(`https://programtv.onet.pl${programId}`)
     .then(r => r.data)
     .catch(console.error)
   if (!data) return Promise.resolve({})
