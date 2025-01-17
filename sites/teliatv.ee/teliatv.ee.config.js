@@ -18,7 +18,7 @@ module.exports = {
     items.forEach(item => {
       programs.push({
         title: item.name,
-        image: parseImage(item),
+        icon: parseImage(item),
         start: dayjs(item.startAt),
         stop: dayjs(item.endAt)
       })
