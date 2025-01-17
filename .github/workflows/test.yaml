@@ -27,7 +27,7 @@ jobs:
           #npm test --- awilime.com
           #npm run channels:parse --- --config=./sites/awilime.com/awilime.com.config.js --output=./sites/awilime.com/awilime.com.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=allente.no --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run grab --- --site=snrt.ma --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
