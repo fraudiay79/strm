@@ -29,7 +29,7 @@ module.exports = {
       programs.push({
         title: item.showname,
         description: item.episode_num ? item.description + ' E' + item.episode_num : item.description,
-        image: 'https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/' + item.episodePoster,
+        icon: 'https://jiotvimages.cdn.jio.com/dare_images/shows/700/-/' + item.episodePoster,
         start: parseStart(item),
         stop: parseStop(item)
       })
