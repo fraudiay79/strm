@@ -35,7 +35,7 @@ module.exports = {
       programs.push({
         title: item.Title,
         description: parseDescription(details),
-        image: parseImage(details),
+        icon: parseImage(details),
         category: parseCategory(details),
         start: parseTime(item.StartTime, channel),
         stop: parseTime(item.EndTime, channel)
