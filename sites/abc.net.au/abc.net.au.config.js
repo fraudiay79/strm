@@ -33,7 +33,7 @@ module.exports = {
         season: parseSeason(item),
         episode: parseEpisode(item),
         rating: parseRating(item),
-        image: parseImage(item),
+        icon: parseImage(item),
         start: parseTime(item.start_time),
         stop: parseTime(item.end_time)
       })
