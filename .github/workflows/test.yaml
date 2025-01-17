@@ -27,7 +27,7 @@ jobs:
           #npm test --- tv.movistar.com.pe
           #npm run channels:parse --- --config=./sites/tv.movistar.com.pe/tv.movistar.com.pe.config.js --output=./sites/tv.movistar.com.pe/tv.movistar.com.pe.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=tv.movistar.com.pe --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run grab --- --site=programtv.onet.pl --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
