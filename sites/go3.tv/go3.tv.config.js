@@ -39,8 +39,7 @@ module.exports = {
       start: dayjs(program.since).format('YYYY-MM-DDTHH:mm:ssZ'),
       stop: dayjs(program.till).format('YYYY-MM-DDTHH:mm:ssZ'),
       category: program.genres.map(genre => genre.name),
-      icon: program.images,
-      category: program.mainCategory ? program.mainCategory.title : 'No main category'
+      icon: program.images.android_tv.miniUrl
     }))
   },
   async channels() {
