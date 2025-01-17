@@ -24,7 +24,7 @@ module.exports = {
         date: data?.year,
         categories: parseCategories(item),
         rating: parseRating(data),
-        images: parseImages(item),
+        icon: parseImages(item),
         directors: parseCast(data, 'director'),
         actors: parseCast(data, 'actors'),
         start: dayjs(data?.start),
