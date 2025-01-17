@@ -59,7 +59,7 @@ module.exports = {
         description: parseDescription(detail),
         date: parseDate(item),
         category: parseCategory(item),
-        image: detail.poster_image_url,
+        icon: detail.poster_image_url,
         season: parseSeason(item),
         episode: parseEpisode(item),
         start: parseStart(item),
