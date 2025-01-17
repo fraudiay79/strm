@@ -18,7 +18,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: item.shortSynopsis,
-        image: parseImage(item),
+        icon: parseImage(item),
         category: item.tags,
         season: item.season,
         episode: item.episode,
