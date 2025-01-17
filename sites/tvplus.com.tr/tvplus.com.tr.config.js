@@ -48,7 +48,7 @@ module.exports = {
                 title: schedule.name,
                 description: schedule.introduce,
                 category: schedule.genres,
-                image: schedule.picture,
+                icon: schedule.picture,
                 season: season ? parseInt(season) : null,
                 episode: episode ? parseInt(episode) : null,
                 start: dayjs.utc(schedule.starttime),
