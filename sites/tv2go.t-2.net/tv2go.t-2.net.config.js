@@ -47,7 +47,7 @@ const config = {
         title: item.name,
         category: parseCategory(item),
         description: parseDescription(item),
-        image: parseImage(item),
+        icon: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
