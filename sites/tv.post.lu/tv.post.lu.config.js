@@ -15,7 +15,7 @@ module.exports = {
         title: item.title,
         description: item.description,
         category: item.program_type,
-        image: item.image_url,
+        icon: item.image_url,
         start: dayjs.unix(item.tsStart),
         stop: dayjs.unix(item.tsEnd)
       })
