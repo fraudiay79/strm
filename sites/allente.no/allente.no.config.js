@@ -22,7 +22,7 @@ module.exports = {
         title: item.title,
         category: item.details.categories,
         description: item.details.description,
-        image: item.details.image,
+        icon: item.details.image,
         season: parseSeason(item),
         episode: parseEpisode(item),
         start,
