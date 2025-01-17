@@ -6,7 +6,7 @@ module.exports = {
   site: 'awilime.com',
   days: 2,
   url({ channel, date }) {
-    return `https://www.awilime.com/tv/musor/${channel.site_id}/${date.format('YYYY_MM_DD')}`
+    return `https://www.awilime.com/tv/napi_musor/${channel.site_id}/${date.format('YYYY_MM_DD')}`
   },
   parser({ content, date }) {
     const programs = []
