@@ -21,6 +21,8 @@ module.exports = {
           description: item.description,
           session: item.seasonNumber,
           episode: item.episodeNumber,
+          icon: parseIcon(item.productPoster),
+          category: item.genre,
           start: dayjs.tz(item.actualFrom, 'Asia/Riyadh').toISOString(),
           stop: dayjs.tz(item.actualTo, 'Asia/Riyadh').toISOString()
         }
@@ -56,6 +58,10 @@ module.exports = {
 
     return channels
   }
+}
+
+function parseIcon(url) {
+  return url.split('?')[0]
 }
 
 function parseItems(content, channel) {
