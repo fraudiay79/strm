@@ -1,11 +1,11 @@
-const axios = require('axios');
-const dayjs = require('dayjs');
-const utc = require('dayjs/plugin/utc');
-const timezone = require('dayjs/plugin/timezone');
-const cheerio = require('cheerio');
+const axios = require('axios')
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const cheerio = require('cheerio')
 
-dayjs.extend(utc);
-dayjs.extend(timezone);
+dayjs.extend(utc)
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'yes.co.il',
@@ -27,19 +27,19 @@ module.exports = {
   },
   urldateFormat: 'YYYY-MM-DD',
   url({ channel, date }) {
-    const formattedDate = dayjs(date).format(this.urldateFormat);
-    return `https://svc.yes.co.il/api/content/broadcast-schedule/channels/${channel.site_id}?date=${formattedDate}&ignorePastItems=true`;
+    const formattedDate = dayjs(date).format(this.urldateFormat)
+    return `https://svc.yes.co.il/api/content/broadcast-schedule/channels/${channel.site_id}?date=${formattedDate}&ignorePastItems=true`
   },
   async parser({ content }) {
-    const data = JSON.parse(content);
-    const programs = [];
+    const data = JSON.parse(content)
+    const programs = []
     
     data.items.forEach(item => {
-      const start = dayjs(item.starts).toISOString();
-      const stop = dayjs(item.ends).toISOString();
-      const title = item.title;
-      const description = item.description;
-      const icon = item.imageUrl;
+      const start = dayjs(item.starts).toISOString()
+      const stop = dayjs(item.ends).toISOString()
+      const title = item.title
+      const description = item.description
+      const icon = item.imageUrl
 
       programs.push({
         start,
@@ -47,10 +47,10 @@ module.exports = {
         title,
         description,
         icon
-      });
-    });
+      })
+    })
 
-    return programs;
+    return programs
   },
   async channels() {
     const response = await axios.get('https://svc.yes.co.il/api/content/broadcast-schedule/channels?page=0&pageSize=200', {
@@ -59,10 +59,10 @@ module.exports = {
         'Origin': 'https://www.yes.co.il',
         'Accept-Encoding': 'gzip, deflate, br'
       }
-    });
+    })
 
     const data = response.data;
-    const channels = [];
+    const channels = []
 
     data.items.forEach(item => {
       channels.push({
@@ -70,9 +70,9 @@ module.exports = {
         name: item.channelName.replace('|', '’'),
         site_id: item.channelId,
         logo: `https://www.yes.co.il${item.imageUrl}`
-      });
-    });
+      })
+    })
 
-    return channels;
+    return channels
   }
-};
+}
