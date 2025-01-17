@@ -29,13 +29,13 @@ module.exports = {
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
-      const image = parseImage($item)
+      const icon = parseImage($item)
       const category = parseCategory($item)
       const start = parseStart($item, date)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'ms')
 
-      programs.push({ title, image, category, start, stop })
+      programs.push({ title, icon, category, start, stop })
     })
 
     return programs
