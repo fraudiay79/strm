@@ -52,7 +52,7 @@ module.exports = {
         subTitle: item.serie_title,
         description: item.description,
         category: item.genres,
-        image: item.pictures?.map(img => img.url),
+        icon: item.pictures?.map(img => img.url),
         season: season(item.serie_title),
         episode: item.episode_number,
         rating: item.rating,
