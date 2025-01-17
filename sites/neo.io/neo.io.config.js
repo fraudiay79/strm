@@ -51,7 +51,7 @@ module.exports = {
         description: show.summary || 'No description available',
         start: start.toISOString(),
         stop: stop.toISOString(),
-        thumbnail: show.thumbnail
+        icon: show.thumbnail
       }
       programs.push(programData)
     })
