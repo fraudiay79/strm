@@ -31,11 +31,11 @@ module.exports = {
       const titleElement = $(element).next('div').next('h3')
       const title = titleElement.text().trim()
       const description = titleElement.next('div').text().trim() || 'No description available'
-      const image = $(element).next('div').find('img.programthumb').attr('src')
+      const icon = $(element).next('div').find('img.programthumb').attr('src')
       programs.push({
         title,
         description,
-        image,
+        icon,
         start,
         stop
       })
