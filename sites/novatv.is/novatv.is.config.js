@@ -32,13 +32,13 @@ module.exports = {
       .map(actor => actor.name)
     const director = program.asset.participants
       .find(participant => participant.function === 'Director')?.name
-    const image = localizedData.images.find(image => image.orientation === 'LANDSCAPE')?.url || null
+    const icon = localizedData.images.find(image => image.orientation === 'LANDSCAPE')?.url || null
     const episode = program.asset.episode
     const season = program.asset.season
     const programData = {
       title: localizedData.title,
       description: localizedData.description || localizedData.longDescription || localizedData.extendedDescription || localizedData.shortDescription || null,
-      image,
+      icon,
       actors,
       director,
       season,
