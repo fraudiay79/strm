@@ -37,7 +37,7 @@ module.exports = {
           description: item.Metadata?.Description,
           season: item.Metadata?.Season,
           episode: item.Metadata?.Episode,
-          image: item.Images
+          icon: item.Images
             ? `https://mage.stream.nos.pt/v1/nostv_mage/Images?sourceUri=${item.Images[0].Url}&profile=ott_1_452x340&client_id=${headers['X-Apikey']}`
             : null,
           start: dayjs.utc(item.UtcDateTimeStart),
