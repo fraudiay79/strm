@@ -39,9 +39,9 @@ module.exports = {
       start: dayjs(program.since).format('YYYY-MM-DDTHH:mm:ssZ'),
       stop: dayjs(program.till).format('YYYY-MM-DDTHH:mm:ssZ'),
       genres: program.genres.map(genre => genre.name),
-      images: program.images,
-      mainCategory: program.mainCategory ? program.mainCategory.title : 'No main category',
-      live: program.live ? program.live.title : 'No live information available'
+      icon: program.images,
+      category: program.mainCategory ? program.mainCategory.title : 'No main category'
+      //live: program.live ? program.live.title : 'No live information available'
     }));
   },
   async channels() {
