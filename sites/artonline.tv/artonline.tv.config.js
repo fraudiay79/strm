@@ -33,14 +33,14 @@ module.exports = {
     if (!content) return programs
     const items = JSON.parse(content)
     items.forEach(item => {
-      const image = parseImage(item)
+      const icon = parseImage(item)
       const start = parseStart(item)
       const duration = parseDuration(item)
       const stop = start.add(duration, 's')
       programs.push({
         title: item.title,
         description: item.description,
-        image,
+        icon,
         start,
         stop
       })
