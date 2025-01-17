@@ -33,7 +33,7 @@ module.exports = {
       programs.push({
         title: item.title,
         description: parseDescription(item, channel.lang),
-        image: parseImage(item),
+        icon: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
