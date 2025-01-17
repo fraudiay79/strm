@@ -18,7 +18,7 @@ module.exports = {
         title: item.title,
         description: item.description_long,
         category: item.categorystring,
-        image: item.image,
+        icon: item.image,
         start,
         stop
       })
