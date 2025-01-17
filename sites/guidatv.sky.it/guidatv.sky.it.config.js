@@ -24,7 +24,7 @@ module.exports = {
         start: parseStart(item),
         stop: parseStop(item),
         url: parseURL(item),
-        image: parseImage(item)
+        icon: parseImage(item)
       })
     })
 
