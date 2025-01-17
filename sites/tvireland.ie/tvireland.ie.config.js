@@ -63,7 +63,7 @@ module.exports = {
           const title = parseText($('.inner-heading.sub h2'))
           const subTitle = parseText($('.tab-pane > h5 > strong'))
           const description = parseText($('.tab-pane > .tvbody > p'))
-          const image = $('.program-media-image img').attr('src')
+          const icon = $('.program-media-image img').attr('src')
           const category = $('.schedule-attributes-genres span').toArray()
             .map(el => $(el).text()).slice(0, 3)
           const casts = $('.single-cast-head:not([id])').toArray()
@@ -90,7 +90,7 @@ module.exports = {
             title,
             subTitle,
             description,
-            image,
+            icon,
             category,
             season,
             episode,
