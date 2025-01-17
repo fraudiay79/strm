@@ -33,7 +33,7 @@ module.exports = {
         title: parseTitle($item),
         description: details.description,
         actors: details.actors,
-        image: details.image,
+        icon: details.image,
         category: details.category,
         sub_title: details.sub_title,
         season: details.season,
