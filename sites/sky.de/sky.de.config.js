@@ -30,7 +30,7 @@ module.exports = {
         stop: dayjs(item.bedt),
         season: item.sn,
         episode: item.en,
-        image: item.pu ? `http://sky.de${item.pu}` : null
+        icon: item.pu ? `http://sky.de${item.pu}` : null
       })
     })
 
