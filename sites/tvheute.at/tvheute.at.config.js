@@ -16,7 +16,7 @@ module.exports = {
       programs.push({
         title: parseTitle(item),
         description: parseDescription(item),
-        image: parseImage(item),
+        icon: parseImage(item),
         category: parseCategory(item),
         start: parseStart(item).toJSON(),
         stop: parseStop(item).toJSON()
