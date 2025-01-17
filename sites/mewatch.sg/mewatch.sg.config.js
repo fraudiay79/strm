@@ -27,7 +27,7 @@ module.exports = {
       programs.push({
         title: info.title,
         description: info.description,
-        image: info.images.tile,
+        icon: info.images.tile,
         episode: info.episodeNumber,
         season: info.seasonNumber,
         start: parseStart(item),
