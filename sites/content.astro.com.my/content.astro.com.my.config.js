@@ -26,7 +26,7 @@ module.exports = {
         description: details.longSynopsis || details.shortSynopsis,
         actors: parseList(details.cast),
         directors: parseList(details.director),
-        image: details.imageUrl,
+        icon: details.imageUrl,
         rating: parseRating(details),
         categories: parseCategories(details),
         episode: parseEpisode(item),
