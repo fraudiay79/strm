@@ -45,7 +45,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         category: parseCategory($item),
-        image: details.image,
+        icon: details.image,
         description: details.description,
         directors: details.directors,
         actors: details.actors,
