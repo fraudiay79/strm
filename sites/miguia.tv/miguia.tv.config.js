@@ -29,7 +29,7 @@ module.exports = {
             title: item[4],
 	    subTitle: item[5],
             description: item[6],
-	    image: item[8],
+	    icon: item[8],
             start,
             stop
         }
