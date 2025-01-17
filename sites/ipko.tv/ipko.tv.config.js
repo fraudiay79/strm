@@ -47,7 +47,7 @@ module.exports = {
       const start = dayjs.unix(show.show_start).utc();
       const stop = dayjs.unix(show.show_end).utc();
       const programData = {
-        title: toProperCase(show.title),
+        title: show.title,
         description: show.summary || 'No description available',
         start: start.toISOString(),
         stop: stop.toISOString(),
@@ -67,7 +67,7 @@ module.exports = {
       lang: 'sq',
       name: String(item.channel.title),
       site_id: String(item.channel.id),
-      //logo: String(item.channel.logo)
+      icon: String(item.channel.logo)
     }))
   }
 }
