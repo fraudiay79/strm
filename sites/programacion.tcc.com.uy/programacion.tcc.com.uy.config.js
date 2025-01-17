@@ -28,7 +28,7 @@ module.exports = {
         date: item.year,
         season: item.season_number,
         episode: item.episode_number,
-        image: parseImage(item),
+        icon: parseImage(item),
         start: parseStart(item),
         stop: parseStop(item)
       })
