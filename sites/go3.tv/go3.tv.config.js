@@ -39,7 +39,7 @@ module.exports = {
       start: dayjs(program.since).format('YYYY-MM-DDTHH:mm:ssZ'),
       stop: dayjs(program.till).format('YYYY-MM-DDTHH:mm:ssZ'),
       category: program.genres.map(genre => genre.name),
-      icon: program.images.16x9.miniUrl && program.images.pc.miniUrl && program.images.android_tv.miniUrl && program.images.smart_tv.miniUrl
+      icon: program.images && program.images.android_tv && program.images.android_tv.length > 0 ? program.images.android_tv[0].miniUrl : ''
     }))
   },
   async channels() {
