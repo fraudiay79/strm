@@ -61,7 +61,8 @@ module.exports = {
 }
 
 function parseIcon(url) {
-  return url.split('?')[0]
+  const regex = /(\?.*)$/;
+  return url.replace(regex, '');
 }
 
 function parseItems(content, channel) {
