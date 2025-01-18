@@ -61,6 +61,9 @@ module.exports = {
 }
 
 function parseIcon(url) {
+  if (!url) {
+    return null; // or you can return an empty string or handle it however you prefer
+  }
   const regex = /(\?.*)$/;
   return url.replace(regex, '');
 }
