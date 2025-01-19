@@ -24,6 +24,9 @@ module.exports = {
     const programs = [];
     try {
       const data = JSON.parse(content);
+      if (!Array.isArray(data)) {
+        throw new Error('Parsed data is not an array.');
+      }
       data.forEach(item => {
         programs.push({
           title: item.title,
