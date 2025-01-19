@@ -13,7 +13,7 @@ module.exports = {
   site: 'telemach.me',
   days: 10,
   url({ channel, date }) {
-    return `https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=${date.format('YYYY-MM-DDTHH:mm:ssZ')}&toTime=${date.add(10, 'days').format('YYYY-MM-DDTHH:mm:ssZ')}&communityId=5&languageId=10001&cid=${channel.site_id}`;
+    return `https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=${date.format('YYYY-MM-DD')}T00:00:00-05:00&toTime=${date.add(1, 'days').format('YYYY-MM-DD')}T23:59:59-05:00&communityId=5&languageId=10001&cid=${channel.site_id}`;
   },
   request: {
     headers: {
