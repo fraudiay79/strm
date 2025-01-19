@@ -21,30 +21,31 @@ module.exports = {
     }
   },
   parser: function ({ content }) {
-    const programs = [];
-    try {
-      const data = JSON.parse(content);
-      if (!Array.isArray(data)) {
-        throw new Error('Parsed data is not an array.');
-      }
-      data.forEach(item => {
-        programs.push({
-          title: item.title,
-          description: item.shortDescription,
-          categories: item.categories || null,
-          icon: parseImages(item),
-          season: item.seasonNumber || null,
-          episode: item.episodeNumber || null,
-          start: item.startTime,
-          stop: item.endTime
+  const programs = [];
+  try {
+    const data = JSON.parse(content);
+    for (const channelId in data) {
+      if (Array.isArray(data[channelId])) {
+        data[channelId].forEach(item => {
+          programs.push({
+            title: item.title,
+            description: item.shortDescription,
+            categories: item.categories || null,
+            icon: parseImages(item),
+            season: item.seasonNumber || null,
+            episode: item.episodeNumber || null,
+            start: item.startTime,
+            stop: item.endTime
+          });
         });
-      });
-    } catch (error) {
-      console.error('Error parsing content:', error);
+      }
     }
+  } catch (error) {
+    console.error('Error parsing content:', error);
+  }
 
-    return programs;
-  },
+  return programs;
+},
   async channels() {
     try {
       const response = await axios.get('https://api-web.ug-be.cdn.united.cloud/v1/public/channels?channelType=TV&communityId=5&languageId=10001&imageSize=L', {
