@@ -74,8 +74,8 @@ function parseCategory(details) {
   return details ? details.playbillDetail.genres.genreName : null
 }
 
-async function loadProgramDetails(item) {
-  const url = `https://epg.cyta.com.cy/api/mediacatalog/fetchEpgDetails?language=1&id=${item.ID}`
+async function loadProgramDetails(epg) {
+  const url = `https://epg.cyta.com.cy/api/mediacatalog/fetchEpgDetails?language=1&id=${epg.ID}`
 
   return axios
     .get(url)
