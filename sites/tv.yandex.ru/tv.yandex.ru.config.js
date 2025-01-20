@@ -98,15 +98,15 @@ async function loadProgramDetails($item) {
   const jsonData = JSON.parse(scriptContent.split('window.__INITIAL_STATE__ =')[1].split(';')[0].trim())
 
   // Ensure jsonData contains the expected structure
-  const title = jsonData.meta?.title || null
-  const start = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.start || null 
-  const stop = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.finish || null
-  const imageUrl = jsonData.gallery?.[0]?.sizes?.['200']?.src ? `https:${jsonData.gallery[0].sizes['200'].src}` || null
-  const actors = jsonData.personsMap?.actor ? jsonData.personsMap.actor.slice(0, 3)
-  const director = jsonData.personsMap?.director || null
-  const description = jsonData.meta?.description || null
-  const category = jsonData.meta?.type?.name || null
-  const subTitle = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.title || null
+  const title = jsonData.meta?.title
+  const start = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.start
+  const stop = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.finish
+  const imageUrl = jsonData.gallery?.[0]?.sizes?.['200']?.src
+  const actors = jsonData.personsMap.actor.slice(0, 3)
+  const director = jsonData.personsMap?.director
+  const description = jsonData.meta?.description
+  const category = jsonData.meta?.type?.name
+  const subTitle = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.title
 
   return Promise.resolve({
     icon: imageUrl,
