@@ -2,6 +2,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const axios = require('axios')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -22,27 +23,30 @@ module.exports = {
     const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
     return `https://epg.cyta.com.cy/api/mediacatalog/fetchEpg?startTimeEpoch=${todayEpoch}&endTimeEpoch=${nextDayEpoch}&language=1&channelIds=${channel.site_id}`
   },
-  parser: function ({ content }) {
+  parser: async function ({ content }) {
     const data = JSON.parse(content)
     const programs = []
 
-    data.channelEpgs.forEach(channel => {
-      channel.epgPlayables.forEach(epg => {
+    for (const channel of data.channelEpgs) {
+      for (const epg of channel.epgPlayables) {
         const start = new Date(epg.startTime).toISOString()
         const stop = new Date(epg.endTime).toISOString()
+        const details = await loadProgramDetails(epg)
 
         programs.push({
           title: epg.name,
+          description: parseDescription(details),
+          icon: parseImage(details),
+          category: parseCategory(details),
           start,
           stop
         })
-      })
-    })
+      }
+    }
 
     return programs
   },
   async channels() {
-    const axios = require('axios')
     const data = await axios
       .get('https://epg.cyta.com.cy/api/mediacatalog/fetchChannels?language=1')
       .then(r => r.data)
@@ -56,4 +60,25 @@ module.exports = {
       }
     })
   }
+}
+
+function parseDescription(details) {
+  return details ? details.playbillDetail.introduce : null
+}
+
+function parseImage(details) {
+  return details ? details.playbillDetail.picture.icons : null
+}
+
+function parseCategory(details) {
+  return details ? details.playbillDetail.genres.genreName : null
+}
+
+async function loadProgramDetails(item) {
+  const url = `https://epg.cyta.com.cy/api/mediacatalog/fetchEpgDetails?language=1&id=${item.ID}`
+
+  return axios
+    .get(url)
+    .then(r => r.data)
+    .catch(console.error)
 }
