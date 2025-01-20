@@ -63,22 +63,28 @@ module.exports = {
 }
 
 function parseDescription(details) {
-  return details ? details.playbillDetail.introduce : null
+  return details && details.playbillDetail ? details.playbillDetail.introduce : null
 }
 
 function parseImage(details) {
-  return details ? details.playbillDetail.picture.icons : null
+  return details && details.playbillDetail && details.playbillDetail.picture 
+    ? details.playbillDetail.picture.icons 
+    : null
 }
 
 function parseCategory(details) {
-  return details ? details.playbillDetail.genres.genreName : null
+  return details && details.playbillDetail && details.playbillDetail.genres.length > 0 
+    ? details.playbillDetail.genres[0].genreName 
+    : null
 }
 
 async function loadProgramDetails(epg) {
   const url = `https://epg.cyta.com.cy/api/mediacatalog/fetchEpgDetails?language=1&id=${epg.id}`
 
-  return axios
-    .get(url)
-    .then(r => r.data)
-    .catch(console.error)
+  try {
+    const response = await axios.get(url)
+    return response.data
+  } catch (error) {
+    console.error(`Error fetching program details: ${error.message}`)
+  }
 }
