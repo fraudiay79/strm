@@ -6,6 +6,13 @@ const BASIC_TOKEN =
 
 let session;
 
+const countries = {
+      ba: { communityId: '12', languageId: '59', lang: 'bs' },
+      me: { communityId: '5', languageId: '10001', lang: 'cnr' },
+      rs: { communityId: '1', languageId: '404', lang: 'sr' },
+      si: { communityId: '8', languageId: '386', lang: 'sl' }
+    }
+
 module.exports = {
   site: 'telemach.me',
   days: 3,
@@ -57,14 +64,6 @@ module.exports = {
     }
   },
   async channels() {
-    const countries = {
-      ba: { communityId: '12', languageId: '59', lang: 'bs' },
-      hr: { communityId: 'sk_hr', languageId: '181', lang: 'hr' },
-      me: { communityId: '5', languageId: '10001', lang: 'cnr' },
-      rs: { communityId: '1', languageId: '404', lang: 'sr' },
-      si: { communityId: '8', languageId: '386', lang: 'sl' }
-    };
-
     const session = await loadSessionDetails();
     if (!session || !session.access_token) return null;
 
