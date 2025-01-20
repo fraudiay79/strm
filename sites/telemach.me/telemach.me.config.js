@@ -67,7 +67,7 @@ module.exports = {
   async channels() {
     const countries = {
       ba: { communityId: '12', languageId: '59', lang: 'bs' },
-      hr: { communityId: '7', languageId: '181', lang: 'hr' },
+      hr: { communityId: '9', languageId: '181', lang: 'hr' },
       me: { communityId: '5', languageId: '10001', lang: 'cnr' },
       rs: { communityId: '1', languageId: '404', lang: 'sr' },
       si: { communityId: '8', languageId: '386', lang: 'sl' }
