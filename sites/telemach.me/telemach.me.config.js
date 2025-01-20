@@ -10,13 +10,21 @@ module.exports = {
   site: 'telemach.me',
   days: 3,
   url({ channel, date }) {
-    return `https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=${date.format(
-      'YYYY-MM-DDTHH:mm:ss-00:00'
-    )}&toTime=${date
-      .add(1, 'days')
-      .subtract(1, 's')
-      .format('YYYY-MM-DDTHH:mm:ss-00:00')}&cid=${channel.site_id}`
-  },
+  const countries = [
+    { communityId: '12', languageId: '59', lang: 'bs' },
+    { communityId: '5', languageId: '10001', lang: 'cnr' },
+    { communityId: '1', languageId: '404', lang: 'sr' },
+    { communityId: '8', languageId: '386', lang: 'sl' }
+  ];
+
+  for (const config of countries) {
+    if (config.lang === channel.lang) {
+      return `https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=${date.format('YYYY-MM-DDTHH:mm:ss-00:00')}&toTime=${date.add(1, 'days').subtract(1, 's').format('YYYY-MM-DDTHH:mm:ss-00:00')}&communityId=${config.communityId}&languageId=${config.languageId}&cid=${channel.site_id}`;
+    }
+  }
+
+  throw new Error(`No configuration found for site ID: ${channel.site_id} or language: ${channel.lang}`);
+},
   request: {
     async headers() {
       if (!session) {
