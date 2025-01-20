@@ -2323,8 +2323,8 @@
   <channel site="cosmotetv.gr" lang="el" xmltv_id="EEntertainment.gr" site_id="ehd">E!</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="TV100.gr" site_id="tv100">TV100</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="ERTWorld.gr" site_id="ertworld">ERT World</channel>
-  <channel site="novasports.gr" lang="el" xmltv_id="Eurosport1.gr" site_id="Eurosport 1 HD">Eurosport 1</channel>
-  <channel site="novasports.gr" lang="el" xmltv_id="Eurosport2.gr" site_id="Eurosport 2 HD">Eurosport 2</channel>
+  <channel site="nova.gr" lang="el" xmltv_id="Eurosport1.gr" site_id="29">Eurosport 1</channel>
+  <channel site="nova.gr" lang="el" xmltv_id="Eurosport2.gr" site_id="31">Eurosport 2</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="VouliTV.gr" site_id="vouli">ΒΟΥΛΗ</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="KritiTV.gr" site_id="krititv">ΚΡΗΤΗ TV</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="LuxeTV.lu" site_id="luxetvhd">Luxe TV HD</channel>
@@ -2332,6 +2332,11 @@
   <channel site="cosmotetv.gr" lang="el" xmltv_id="Mega.gr" site_id="megahd">MEGA HD</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="MTVGlobal.uk" site_id="mtveurope">MTV Europe</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="NationalGeographicWild.gr" site_id="nat-geo-wild-hd">National Geographic Wild</channel>
+  <channel site="nova.gr" lang="el" xmltv_id="Novalife.gr" site_id="14">Novalife</channel>
+  <channel site="nova.gr" lang="el" xmltv_id="Novacinema1.gr" site_id="18">Novacinema1</channel>
+  <channel site="nova.gr" lang="el" xmltv_id="Novacinema2.gr" site_id="19">Novacinema2</channel>
+  <channel site="nova.gr" lang="el" xmltv_id="Novacinema3.gr" site_id="20">Novacinema3</channel>
+  <channel site="nova.gr" lang="el" xmltv_id="Novacinema4.gr" site_id="21">Novacinema4</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="Novasports1.gr" site_id="nova1">Novasports 1</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="Novasports2.gr" site_id="nova2">Novasports 2</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="Novasports3.gr" site_id="nova3">Novasports 3</channel>
@@ -5337,20 +5342,20 @@
   <channel site="mts.rs" lang="sr" xmltv_id="SATTV.rs" site_id="599#437">SAT TV</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="SciFi.rs" site_id="241#280">Sci Fi</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="SremskaTV.rs" site_id="543#411">Sremska TV</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub.rs" site_id="al/programacioni#sport-klub-hd">SportKlub</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub1.rs" site_id="al/programacioni#sport-klub">SportKlub 1</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub2.rs" site_id="al/programacioni#sportklub-plus-rs">SportKlub 2</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub3.rs" site_id="al/programacioni#sportklub-plus-prime-srbija">SportKlub 3</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub4.rs" site_id="al/programacioni#sport-klub-4">SportKlub 4</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub5.rs" site_id="al/programacioni#sport-klub-5">SportKlub 5</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub6.rs" site_id="al/programacioni#sport-klub-6">SportKlub 6</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub7.rs" site_id="al/programacioni#sport-klub-7">SportKlub 7</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub8.rs" site_id="al/programacioni#sport-klub-8">SportKlub 8</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub9.rs" site_id="al/programacioni#sport-klub-9">SportKlub 9</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlub10.rs" site_id="al/programacioni#sport-klub-10">SportKlub 10</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlubFight.rs" site_id="al/programacioni#fightchannel">SportKlub Fight</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlubGolf.rs" site_id="al/programacioni#golf-klub">SportKlub Golf</channel>
-  <channel site="tvprofil.com" lang="sr" xmltv_id="SportKlubeSports.rs" site_id="al/programacioni#sk-esports">SportKlub eSports</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub.rs" site_id="18">SportKlub</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub1.rs" site_id="66">SportKlub 1</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub2.rs" site_id="67">SportKlub 2</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub3.rs" site_id="68">SportKlub 3</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub4.rs" site_id="69">SportKlub 4</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub5.rs" site_id="70">SportKlub 5</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub6.rs" site_id="71">SportKlub 6</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub7.rs" site_id="74">SportKlub 7</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub8.rs" site_id="75">SportKlub 8</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub9.rs" site_id="76">SportKlub 9</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlub10.rs" site_id="77">SportKlub 10</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlubFight.rs" site_id="1504">SportKlub Fight</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlubGolf.rs" site_id="73">SportKlub Golf</channel
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="SportKlubeSports.rs" site_id="687">SportKlub eSports</channel>
   <channel site="mts.rs" lang="bs" xmltv_id="SOSKanalPlus.rs" site_id="318#66">SOS Kanal Plus</channel>
   <channel site="mts.rs" lang="bs" xmltv_id="StudioB.rs" site_id="115#304">Studio B</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="SuperDPlus.rs" site_id="609#784">Super D+</channel>
@@ -5454,7 +5459,7 @@
   <channel site="mts.rs" lang="sr" xmltv_id="ZonaPlus.rs" site_id="612#460">TV Zona+</channel>
   <channel site="mts.rs" lang="bs" xmltv_id="ZvezdaTV.rs" site_id="322#645">Zvezda TV</channel>
   #Singapore
-  <channel site="mewatch.sg" lang="en" xmltv_id="AnimaxAsia.sg" site_id="242030">Animax</channel>
+  <channel site="starhubtvplus.com" lang="en" xmltv_id="AnimaxAsia.sg" site_id="71278e7f-bdd5-43ac-b3ca-01d6fad180f5">Animax</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports1.sg" site_id="12efa598-4bae-4d64-afc0-a4e7340de74e">beIN Sports 1</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports2.sg" site_id="dceea37a-621c-4ba5-a818-68ec6154e538">beIN Sports 2</channel>
   <channel site="starhubtvplus.com" lang="en" xmltv_id="beINSports3.sg" site_id="df4507d8-292d-4036-b14e-b8343360dcaa">beIN Sports 3</channel>
@@ -5497,7 +5502,6 @@
   <channel site="mewatch.sg" lang="en" xmltv_id="Vasantham.sg" site_id="97096">Vasantham</channel>
   #Slovenia
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="ATMTV.si" site_id="1000001">ATM Kranjska Gora</channel>
-  <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BalkanEroticHD.si" site_id="1000645">Balkan Erotic</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BKTV.si" site_id="1000265">BK TV</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BoomTV.si" site_id="124">Aktual TV</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BRIO.si" site_id="1000368">BRIO</channel>
