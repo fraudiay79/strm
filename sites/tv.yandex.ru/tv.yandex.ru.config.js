@@ -1,310 +1,141 @@
 const dayjs = require('dayjs')
-const debug = require('debug')('site:tv.yandex.ru')
-
-// enable to fetch guide description but its take a longer time
-const detailedGuide = true
-const nworker = 10
-
-// update this data by heading to https://tv.yandex.ru and change the values accordingly
-const cookies = {
-  i: 'dkim62pClrWWC4CShVQYMpVw1ELNVw4XJdL/lzT4E2r05IgcST1GtCA4ho/UyGgW2AO4qftDfZzGX2OHqCzwY7GUkpM=',
-  spravka: 'dD0xNzMyNjgzMTEwO2k9MTgwLjI0OC41OS40MDtEPTkyOUM2MkQ0Mzc3OUNBMUFCNzg3NTIyMEQ4OEJBMEVBMzQ2RUNGNUU5Q0FEQUM5RUVDMTFCNjc1ODA2MThEQTQ3RTY3RTUyRUNBRDdBMTY2OTY1MjMzRDU1QjNGMTc1MDA0NDM3MjBGMUNGQTM5RjA3OUQwRjE2MzQxMUNFOTgxQ0E0RjNGRjRGODNCMEM1QjlGNTg5RkI4NDk0NEM2QjNDQUQ5NkJGRTBFNTVCQ0Y1OTEzMEY0O3U9MTczMjY4MzExMDY3MTA1MzIzNDtoPTA1YWJmMTY0ZmI2MGViNTBhMDUwZWUwMThmYWNiYjhm',
-  yandexuid: '1197179041732383499',
-  yashr: '4682342911732383504',
-  yuidss: '1197179041732383499',
-  user_display: 930,
-}
-const headers = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Safari/537.36 OPR/114.0.0.0',
-}
-const caches = {}
+const axios = require('axios')
+const cheerio = require('cheerio')
+const { DateTime } = require('luxon')
 
 module.exports = {
+  delay: 5000,
   site: 'tv.yandex.ru',
-  days: 2,
-  url({ date }) {
-    return getUrl(date)
-  },
-  request: {
-    cache: {
-      ttl: 3600000 // 1 hour
-    },
-    headers: getHeaders()
-  },
-  async parser({ content, date, channel }) {
-    const programs = []
-    const events = []
+  days: 3,
+  url: function ({ date, channel }) {
+    const currDate = DateTime.now().toUTC().startOf('day')
+    const day = date.diff(currDate, 'd')
 
-    if (content && parseContent(content, date, true)) {
-      const cacheid = date.format('YYYY-MM-DD')
-      if (!caches[cacheid]) {
-        debug(`Please wait while fetching schedules for ${cacheid}`)
-        caches[cacheid] = await fetchSchedules({ date, content })
+    return `https://tv.yandex.ru/channel/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
+  },
+  parser: async function ({ content, date }) {
+    const programs = []
+    const items = parseItems(content)
+    for (const item of items) {
+      const prev = programs[programs.length - 1]
+      const $item = cheerio.load(item)
+      let start = parseStart($item, date)
+      if (prev) {
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
+        }
+        prev.stop = start
       }
-      if (detailedGuide) {
-        await fetchPrograms({ schedules: caches[cacheid], date, channel })
-      }
-      caches[cacheid].forEach(schedule => {
-        schedule.events
-          .filter(event => event.channelFamilyId == channel.site_id && date.isSame(event.start, 'day'))
-          .forEach(event => {
-            if (events.indexOf(event.id) < 0) {
-              events.push(event.id)
-              programs.push({
-                title: event.title,
-                description: event.program.description,
-                category: event.program.type.name,
-                start: dayjs(event.start),
-                stop: dayjs(event.finish)
-              })
-            }
-          })
+      const stop = start.plus({ hours: 1 })
+      const details = await loadProgramDetails($item)
+      programs.push({
+        title: details.description,
+        description: details.description,
+        actors: details.actors,
+        director: details.director,
+        icon: details.icon,
+        category: details.category,
+        sub_title: details.sub_title,
+        start: details.description,
+        stop: details.description
       })
     }
 
     return programs
   },
   async channels() {
-    const channels = []
-    const included = []
-    const schedules = await fetchSchedules({ date: dayjs() })
-    schedules.forEach(schedule => {
-      if (schedule.channel && included.indexOf(schedule.channel.familyId) < 0) {
-        included.push(schedule.channel.familyId)
-        channels.push({
-          lang: 'ru',
-          site_id: schedule.channel.familyId.toString(),
-          name: schedule.channel.title
-        })
+    const countries = {
+      ba: { communityId: '12', languageId: '59', lang: 'bs' },
+      me: { communityId: '5', languageId: '10001', lang: 'cnr' },
+      rs: { communityId: '1', languageId: '404', lang: 'sr' },
+      si: { communityId: '8', languageId: '386', lang: 'sl' }
+    }
+    const session = await loadSessionDetails()
+    if (!session || !session.access_token) return null
+
+    let channels = []
+    for (let country in countries) {
+      const config = countries[country]
+      const lang = config.lang
+
+      try {
+        const data = await axios.get(
+          `https://api-web.ug-be.cdn.united.cloud/v1/public/channels?channelType=TV&communityId=${config.communityId}&languageId=${config.languageId}&imageSize=L`,
+          {
+            headers: {
+              Authorization: `Bearer ${session.access_token}`
+            }
+          }
+        )
+
+        const channelData = data.data.map(item => ({
+          lang,
+          site_id: item.id,
+          name: item.name
+        }))
+
+        channels = [...channels, ...channelData]
+      } catch (error) {
+        console.error(`Error fetching channels for ${country}:`, error)
       }
-    })
+    }
 
     return channels
   }
 }
 
-async function fetchSchedules({ date, content = null }) {
-  const schedules = []
-  const queues = []
-  const fetches = []
-  const url = getUrl(date)
+async function loadProgramDetails($item) {
+  const programId = $item('a').attr('href')
+  const data = await axios
+    .get(`https://tv.yandex.ru/${programId}`)
+    .then(r => r.data)
+    .catch(console.error)
+  if (!data) return Promise.resolve({})
 
-  let mainApi
-  // parse content as schedules and add to queue if more requests is needed
-  const f = (data, src) => {
-    if (src) {
-      fetches.push(src)
-    }
-    const [q, s] = parseContent(data, date)
-    if (!mainApi) {
-      mainApi = true
-      if (caches.region) {
-        queues.push(getUrl(date, caches.region))
-      }
-    }
-    for (const url of q) {
-      if (fetches.indexOf(url) < 0) {
-        queues.push(url)
-      }
-    }
-    schedules.push(...s)
-  }
-  // is main html already fetched?
-  if (content) {
-    f(content)
-  } else {
-    queues.push(url)
-  }
-  // fetch all queues
-  await doFetch(queues, url, f)
+  const $ = cheerio.load(data)
 
-  return schedules
-}
+  // Extract the JSON data from window.__INITIAL_STATE__
+  const scriptContent = $('script').filter((i, el) => $(el).html().includes('window.__INITIAL_STATE__ =')).html()
+  if (!scriptContent) return Promise.resolve({})
+  const jsonData = JSON.parse(scriptContent.split('window.__INITIAL_STATE__ =')[1].split(';')[0].trim())
 
-async function fetchPrograms({ schedules, date, channel }) {
-  const queues = []
-  schedules
-    .filter(schedule => schedule.channel.familyId == channel.site_id)
-    .forEach(schedule => {
-      queues.push(
-        ...schedule.events
-          .filter(event => date.isSame(event.start, 'day'))
-          .map(event => getUrl(null, caches.region, null, event))
-      )
-    })
-  await doFetch(queues, getUrl(date), content => {
-    // is it a program?
-    if (content?.program) {
-      let updated = false
-      schedules.forEach(schedule => {
-        schedule.events.forEach(event => {
-          if (event.channelFamilyId === content.channelFamilyId && event.id === content.id) {
-            Object.assign(event, content)
-            updated = true
-            return true
-          }
-        })
-        if (updated) {
-          return true
-        }
-      })
-    }
+  // Ensure jsonData contains the expected structure
+  const title = jsonData.meta?.title : null
+  const start = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.start : null 
+  const stop = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.finish : null
+  const imageUrl = jsonData.gallery?.[0]?.sizes?.['200']?.src ? `https:${jsonData.gallery[0].sizes['200'].src}` : null
+  const actors = jsonData.personsMap?.actor ? jsonData.personsMap.actor.slice(0, 3) : null
+  const director = jsonData.personsMap?.director : null
+  const description = jsonData.meta?.description : null
+  const category = jsonData.meta?.type?.name : null
+  const subTitle = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.title : null
+
+  return Promise.resolve({
+    icon: imageUrl,
+    actors: actors,
+    director: director,
+    description: description,
+    category: category,
+    sub_title: subTitle,
+    start: start,
+    stop: stop
   })
 }
 
-async function doFetch(queues, referer, cb) {
-  if (queues.length) {
-    const workers = []
-    let n = Math.min(nworker, queues.length)
-    while (workers.length < n) {
-      const worker = () => {
-        if (queues.length) {
-          const url = queues.shift()
-          debug(`Fetching ${url}`)
-          const data = {
-            'Origin': 'https://tv.yandex.ru',
-          }
-          if (referer) {
-            data['Referer'] = referer
-          }
-          if (url.indexOf('api') > 0) {
-            data['X-Requested-With'] = 'XMLHttpRequest'
-          }
-          const headers = getHeaders(data)
-          doRequest(url, { headers })
-            .then(res => {
-              cb(res, url)
-              worker()
-            })
-        } else {
-          workers.splice(workers.indexOf(worker), 1)
-        }
-      }
-      workers.push(worker)
-      worker()
-    }
-    await new Promise(resolve => {
-      const interval = setInterval(() => {
-        if (workers.length === 0) {
-          clearInterval(interval)
-          resolve()
-        }
-      }, 500)
-    })
-  }
+function parseStart($item, date) {
+  const timeString = $item('.channel-schedule__time').text()
+  const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
+
+  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH:mm', { zone: 'Europe/Moscow' }).toUTC()
 }
 
-async function doRequest(url, params) {
-  const axios = require('axios')
-  const content = await axios
-    .get(url, params)
-    .then(response => {
-      parseCookies(response.headers)
-      return response.data
-    })
-    .catch(err => console.error(err.message))
-
-  return content
+function parseTitle($item) {
+  return $item('.channel-schedule__text').text().trim()
 }
 
-function parseContent(content, date, checkOnly = false) {
-  const queues = []
-  const schedules = []
-  let valid = false
-  if (content) {
-    if (Buffer.isBuffer(content)) {
-      content = content.toString()
-    }
-    // got captcha, its look like our cookies has expired
-    if (content?.type === 'captcha' || (typeof content === 'string' && content.match(/SmartCaptcha/))) {
-      throw new Error('Got captcha, please goto https://tv.yandex.ru and update cookies!')
-    }
-    if (typeof content === 'object') {
-      let items
-      if (content.schedule) {
-        // fetch next request based on schedule map
-        if (Array.isArray(content.schedule.scheduleMap)) {
-          queues.push(...content.schedule.scheduleMap.map(m => getUrl(date, caches.region, m)))
-        }
-        // find some schedules?
-        if (Array.isArray(content.schedule.schedules)) {
-          items = content.schedule.schedules
-        }
-      }
-      // find another schedules?
-      if (Array.isArray(content.schedules)) {
-        items = content.schedules
-      }
-      // add programs
-      if (items && items.length) {
-        schedules.push(...getSchedules(items))
-      }
-    } else {
-      // prepare headers for next http request
-      const [, region] = content.match(/region: '(\d+)'/i) || [null, null]
-      const [, initialSk] = content.match(/window.__INITIAL_SK__ = (.*);/i) || [null, null]
-      const [, sessionId] = content.match(/window.__USER_SESSION_ID__ = "(.*)";/i) || [null, null]
-      const tvSk = initialSk ? JSON.parse(initialSk) : {}
-      if (region) {
-        caches.region = region
-      }
-      if (tvSk.key) {
-        headers['X-Tv-Sk'] = tvSk.key
-      }
-      if (sessionId) {
-        headers['X-User-Session-Id'] = sessionId
-      }
-      if (checkOnly && region && tvSk.key && sessionId) {
-        valid = true;
-      }
-    }
-  }
+function parseItems(content) {
+  const $ = cheerio.load(content)
 
-  return checkOnly ? valid :  [queues, schedules]
-}
-
-function parseCookies(headers) {
-  if (Array.isArray(headers['set-cookie'])) {
-    headers['set-cookie']
-      .forEach(cookie => {
-        const [key, value] = cookie.split('; ')[0].split('=')
-        if (cookies[key] !== value) {
-          cookies[key] = value
-          debug(`Update cookie ${key}=${value}`)
-        }
-      })
-  }
-}
-
-function getSchedules(schedules) {
-  return schedules.filter(schedule => schedule.events.length);
-}
-
-function getHeaders(data = {}) {
-  return Object.assign({}, headers, {
-    Cookie: Object.keys(cookies).map(cookie => `${cookie}=${cookies[cookie]}`).join('; ')
-  }, data)
-}
-
-function getUrl(date, region = null, page = null, event = null) {
-  let url = 'https://tv.yandex.ru/'
-  if (region) {
-    url += `api/${region}`
-  }
-  if (page && page.id !== undefined) {
-    url += `${url.endsWith('/') ? '' : '/'}main/chunk?page=${page.id}`
-  }
-  if (event && event.id !== undefined) {
-    url += `${url.endsWith('/') ? '' : '/'}event?eventId=${event.id}&programCoId=`
-  }
-  if (date) {
-    url += `${url.indexOf('?') < 0 ? '?' : '&'}date=${date.format('YYYY-MM-DD')}${!page ? '&grid=all' : ''}&period=all-day`
-  }
-  if (page && page.id !== undefined && page.offset !== undefined) {
-    url += `${url.indexOf('?') < 0 ? '?' : '&'}offset=${page.offset}`
-  }
-  if (page && page.id !== undefined && page.limit !== undefined) {
-    url += `${url.indexOf('?') < 0 ? '?' : '&'}limit=${page.limit}`
-  }
-  return url
+  return $('#channelTV > section > div.emissions > ul > li').toArray()
 }
