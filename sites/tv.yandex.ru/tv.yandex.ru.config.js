@@ -37,8 +37,8 @@ module.exports = {
         icon: details.icon,
         category: details.category,
         sub_title: details.sub_title,
-        start: details.description,
-        stop: details.description
+        start: details.start,
+        stop: details.stop
       })
     }
 
