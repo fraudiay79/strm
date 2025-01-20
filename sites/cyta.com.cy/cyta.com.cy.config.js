@@ -75,7 +75,7 @@ function parseCategory(details) {
 }
 
 async function loadProgramDetails(epg) {
-  const url = `https://epg.cyta.com.cy/api/mediacatalog/fetchEpgDetails?language=1&id=${epg.ID}`
+  const url = `https://epg.cyta.com.cy/api/mediacatalog/fetchEpgDetails?language=1&id=${epg.id}`
 
   return axios
     .get(url)
