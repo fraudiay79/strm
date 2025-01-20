@@ -17,6 +17,9 @@ module.exports = {
       si: { communityId: '8', languageId: '386', lang: 'sl' }
     }
     const config = countries[channel.site_id]
+      if (!config) {
+        throw new Error(`No configuration found for site ID: ${channel.site_id}`)
+      }
     return `https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=${date.format(
       'YYYY-MM-DDTHH:mm:ss-00:00'
     )}&toTime=${date
