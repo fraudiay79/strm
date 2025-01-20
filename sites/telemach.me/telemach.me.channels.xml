@@ -51,6 +51,7 @@
   <channel site="telemach.me" lang="bs" xmltv_id="" site_id="658">NTV</channel>
   <channel site="telemach.me" lang="bs" xmltv_id="" site_id="675">Izvorna TV</channel>
   <channel site="telemach.me" lang="bs" xmltv_id="" site_id="745">RTL 2 HR HD</channel>
+  <channel site="telemach.me" lang="bs" xmltv_id="" site_id="745">RTL 2 HR HD</channel>
   <channel site="telemach.me" lang="bs" xmltv_id="" site_id="748">O Kanal HD</channel>
   <channel site="telemach.me" lang="bs" xmltv_id="" site_id="850">RTV7</channel>
   <channel site="telemach.me" lang="bs" xmltv_id="" site_id="853">RTV BIR HD</channel>
@@ -729,7 +730,9 @@
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="311">Kabel 1</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="312">3SAT HD</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="314">CGTN</channel>
+  <channel site="telemach.me" lang="sl" xmltv_id="" site_id="314">CGTN</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="315">France 2 HD</channel>
+  <channel site="telemach.me" lang="sl" xmltv_id="" site_id="316">France 24 HD</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="316">France 24 HD</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="321">Best TV</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="322">TV Veseljak Golica HD</channel>
@@ -790,6 +793,7 @@
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="407">Alsat Macedonia</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="408">Vizion +</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="444">K::CN Svet +3 (W2)</channel>
+  <channel site="telemach.me" lang="sl" xmltv_id="" site_id="444">K::CN Svet +3 (W2)</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="551">Mreza TV</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="628">TV3 HD</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="629">Planet Eva HD</channel>
@@ -809,7 +813,6 @@
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="682">TV Ormož</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="686">PeTV</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="729">Eurosport 1 HD (SI)</channel>
-  <channel site="telemach.me" lang="sl" xmltv_id="" site_id="745">RTL 2 HR HD</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="780">Medvode TV</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="781">Mediaset Italia</channel>
   <channel site="telemach.me" lang="sl" xmltv_id="" site_id="782">Tržič TV HD</channel>
@@ -1013,10 +1016,7 @@
   <channel site="telemach.me" lang="sr" xmltv_id="" site_id="203">M1 (SR)</channel>
   <channel site="telemach.me" lang="sr" xmltv_id="" site_id="204">M2 (SR)</channel>
   <channel site="telemach.me" lang="sr" xmltv_id="" site_id="205">M5 (SR)</channel>
-  <channel site="telemach.me" lang="sr" xmltv_id="" site_id="314">CGTN</channel>
-  <channel site="telemach.me" lang="sr" xmltv_id="" site_id="316">France 24 HD</channel>
   <channel site="telemach.me" lang="sr" xmltv_id="" site_id="324">K::CN Music 2 (SR)</channel>
-  <channel site="telemach.me" lang="sr" xmltv_id="" site_id="444">K::CN Svet +3 (W2)</channel>
   <channel site="telemach.me" lang="sr" xmltv_id="" site_id="665">RTS 1 HD</channel>
   <channel site="telemach.me" lang="sr" xmltv_id="" site_id="666">RTS 2 HD</channel>
   <channel site="telemach.me" lang="sr" xmltv_id="" site_id="673">TV Santos</channel>
