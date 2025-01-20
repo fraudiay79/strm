@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- epg.unitedgroup
-          npm run channels:parse --- --config=./sites/epg.unitedgroup/epg.unitedgroup.config.js --output=./sites/epg.unitedgroup/epg.unitedgroup.channels.xml
+          #npm test --- tv.yandex.ru
+          #npm run channels:parse --- --config=./sites/tv.yandex.ru/tv.yandex.ru.config.js --output=./sites/tv.yandex.ru/tv.yandex.ru.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          #npm run grab --- --site=epg.unitedgroup --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run grab --- --site=tv.yandex.ru --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        #git add -f guides/allente.no.xml
-        git add -f sites/epg.unitedgroup/epg.unitedgroup.channels.xml
+        git add -f guides/allente.no.xml
+        #git add -f sites/tv.yandex.ru/tv.yandex.ru.channels.xml
         git commit -m "Update xml"
         git push -f origin main
