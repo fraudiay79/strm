@@ -8,9 +8,6 @@ module.exports = {
   site: 'tv.yandex.ru',
   days: 3,
   url: function ({ date, channel }) {
-    const currDate = DateTime.now().toUTC().startOf('day')
-    const day = date.diff(currDate, 'd')
-
     return `https://tv.yandex.ru/channel/${channel.site_id}?date=${date.format('YYYY-MM-DD')}`
   },
   parser: async function ({ content, date }) {
@@ -105,7 +102,7 @@ async function loadProgramDetails($item) {
   const start = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.start || null 
   const stop = jsonData.program?.schedules[0]?.schedule?.Сегодня?.items[0]?.finish || null
   const imageUrl = jsonData.gallery?.[0]?.sizes?.['200']?.src ? `https:${jsonData.gallery[0].sizes['200'].src}` || null
-  const actors = jsonData.personsMap?.actor ? jsonData.personsMap.actor.slice(0, 3) || null
+  const actors = jsonData.personsMap?.actor ? jsonData.personsMap.actor.slice(0, 3)
   const director = jsonData.personsMap?.director || null
   const description = jsonData.meta?.description || null
   const category = jsonData.meta?.type?.name || null
