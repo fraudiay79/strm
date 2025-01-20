@@ -6,30 +6,29 @@ const BASIC_TOKEN =
 
 let session;
 
-const countries = {
+module.exports = {
+  site: 'telemach.me',
+  days: 3,
+  url({ channel, date }) {
+    const countries = {
       ba: { communityId: '12', languageId: '59', lang: 'bs' },
       me: { communityId: '5', languageId: '10001', lang: 'cnr' },
       rs: { communityId: '1', languageId: '404', lang: 'sr' },
       si: { communityId: '8', languageId: '386', lang: 'sl' }
     }
-
-module.exports = {
-  site: 'telemach.me',
-  days: 3,
-  url({ channel, date }) {
-    const config = countries[channel.site_id];
+    const config = countries[country]
     return `https://api-web.ug-be.cdn.united.cloud/v1/public/events/epg?fromTime=${date.format(
       'YYYY-MM-DDTHH:mm:ss-00:00'
     )}&toTime=${date
       .add(1, 'days')
       .subtract(1, 's')
-      .format('YYYY-MM-DDTHH:mm:ss-00:00')}&communityId=${config.communityId}&languageId=${config.languageId}&cid=${channel.site_id}`;
+      .format('YYYY-MM-DDTHH:mm:ss-00:00')}&communityId=${config.communityId}&languageId=${config.languageId}&cid=${channel.site_id}`
   },
   request: {
     async headers() {
       if (!session) {
         session = await loadSessionDetails();
-        if (!session || !session.access_token) return null;
+        if (!session || !session.access_token) return null
       }
 
       return {
@@ -64,6 +63,12 @@ module.exports = {
     }
   },
   async channels() {
+    const countries = {
+      ba: { communityId: '12', languageId: '59', lang: 'bs' },
+      me: { communityId: '5', languageId: '10001', lang: 'cnr' },
+      rs: { communityId: '1', languageId: '404', lang: 'sr' },
+      si: { communityId: '8', languageId: '386', lang: 'sl' }
+    }
     const session = await loadSessionDetails();
     if (!session || !session.access_token) return null;
 
