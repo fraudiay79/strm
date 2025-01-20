@@ -87,7 +87,7 @@ function parseImage(item) {
 function loadSessionDetails() {
   return axios
     .post(
-      'https://api-web.nettv.cdn.united.cloud/oauth/tokengrant_type=client_credentials',
+      'https://api-web.nettv.cdn.united.cloud/oauth/token?grant_type=client_credentials',
       {},
       {
         headers: {
