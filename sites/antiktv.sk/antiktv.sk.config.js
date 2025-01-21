@@ -61,5 +61,6 @@ module.exports = {
           site_id: channel.id_content
         }
     })
+    }
   }
 }
