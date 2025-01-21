@@ -48,23 +48,26 @@ module.exports = {
 
   return programs
 },
-  async channels() {
-    const data = await axios
-      .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=2025-01-23&isAjax=true`)
-      .then(r => r.data)
-      .catch(console.log)
-    
-    if (data && data.filters && data.filters.initArray && data.filters.initArray.channels) {
-      const channelsObject = data.filters.initArray.channels
-      const channelsArray = Object.keys(channelsObject).map(key => channelsObject[key])
+  async function channels() {
+  const axios = require('axios')
+  const data = await axios
+    .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${dayjs().format('YYYY-MM-DD')}&isAjax=true`)
+    .then(r => r.data)
+    .catch(console.log)
 
-      return channelsArray.map(channel => {
-        return {
-          lang: 'sk',
-          name: channel.name,
-          site_id: channel.id_content
-        }
+  if (data && data.filters && data.filters.initArray && data.filters.initArray.channels) {
+    const channelsObject = data.filters.initArray.channels
+    const channelsArray = Object.keys(channelsObject).map(key => channelsObject[key])
+
+    return channelsArray.map(item => {
+      return {
+        lang: 'sk',
+        site_id: item.id_content,
+        name: item.name
+      }
     })
-    }
+  } else {
+    throw new Error('Unexpected response structure')
   }
+}
 }
