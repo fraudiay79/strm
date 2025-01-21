@@ -55,19 +55,12 @@ module.exports = {
     .then(r => r.data)
     .catch(console.log)
 
-  if (data && data.filters && data.filters.initArray && data.filters.initArray.channels) {
-    const channelsObject = data.filters.initArray.channels
-    const channelsArray = Object.keys(channelsObject).map(key => channelsObject[key])
-
-    return channelsArray.map(item => {
-      return {
-        lang: 'sk',
-        site_id: item.id_content,
-        name: item.name
-      }
+  return data?.data?.filters?.initArray?.channels.map(item => {
+        return {
+            lang: 'no',
+            site_id: item.id,
+            name: item.name
+        }
     })
-  } else {
-    throw new Error('Unexpected response structure')
-  }
 }
 }
