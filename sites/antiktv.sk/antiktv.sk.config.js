@@ -51,7 +51,7 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
-    return data.filters.initArray.channels.map(channel => {
+    return data.filters.channels.map(channel => {
         return {
           lang: 'sk',
           name: channel.name,
