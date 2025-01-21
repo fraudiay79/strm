@@ -24,10 +24,11 @@ module.exports = {
     const programs = []
 
     const data = JSON.parse(content).data
-    Object.keys(data).forEach(date => {
-      Object.values(data[date]).forEach(channelData => {
-      channelData.epg.forEach(item => {
-        const programData = {
+  Object.keys(data).forEach(date => {
+    Object.values(data[date]).forEach(channelData => {
+      if (channelData && channelData.epg) {
+        channelData.epg.forEach(item => {
+          const programData = {
             title: item.Title,
             subtitle: item.Subtitle || null,
             description: item.Description || null,
@@ -39,11 +40,14 @@ module.exports = {
 
           programs.push(programData)
         })
-      })
+      } else {
+        console.warn('Missing EPG data for channel:', channelData)
+      }
     })
+  })
 
-    return programs
-  },
+  return programs
+},
   async channels() {
     const data = await axios
       .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=2025-01-23&isAjax=true`)
