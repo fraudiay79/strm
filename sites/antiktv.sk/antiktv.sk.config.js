@@ -48,9 +48,9 @@ module.exports = {
 
   return programs
 },
-  async function channels() {
-  const axios = require('axios')
-  const data = await axios
+  async channels() {
+    let channels = []
+    const data = await axios
     .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${dayjs().format('YYYY-MM-DD')}&isAjax=true`)
     .then(r => r.data)
     .catch(console.log)
