@@ -51,7 +51,10 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
-    return data.filters.channels.map(channel => {
+    const channelsObject = data.filters.initArray.channels
+    const channelsArray = Object.keys(channelsObject).map(key => channelsObject[key])
+
+    return channelsArray.map(channel => {
         return {
           lang: 'sk',
           name: channel.name,
