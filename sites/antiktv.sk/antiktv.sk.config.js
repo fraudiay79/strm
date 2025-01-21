@@ -44,21 +44,19 @@ module.exports = {
 
     return programs
   },
-  async channels(date) {
-    try {
-      const formattedDate = dayjs(date).format('YYYY-MM-DD')
-      const response = await axios.get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=2025-01-23&isAjax=true`)
-      const data = response.data
-      return Object.values(data.filters.initArray.channels).map(channel => {
+  async channels() {
+    const axios = require('axios')
+    const data = await axios
+      .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=2025-01-23&isAjax=true`)
+      .then(r => r.data)
+      .catch(console.log)
+
+    return data.filters.initArray.channels.map(channel => {
         return {
           lang: 'sk',
           name: channel.name,
           site_id: channel.id_content
         }
-      })
-    } catch (error) {
-      console.error('Error fetching channels:', error)
-      return []
-    }
+    })
   }
 }
