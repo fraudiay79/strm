@@ -24,16 +24,16 @@ module.exports = {
     const programs = []
 
     const data = JSON.parse(content).data
-  Object.keys(data).forEach(date => {
-    Object.values(data[date]).forEach(channelData => {
+    Object.keys(data).forEach(date => {
+      Object.values(data[date]).forEach(channelData => {
       if (channelData && channelData.epg) {
         channelData.epg.forEach(item => {
           const programData = {
             title: item.Title,
-            subtitle: item.Subtitle || null,
-            description: item.Description || null,
-            icon: item.Icon || null,
-            category: item.Genres || [],
+            subtitle: item.Subtitle,
+            description: item.Description,
+            //icon: item.Icon,
+            //category: item.Genres,
             start: dayjs.tz(item.Start, 'Europe/Prague'),
             stop: dayjs.tz(item.Stop, 'Europe/Prague')
           }
