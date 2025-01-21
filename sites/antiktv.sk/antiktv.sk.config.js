@@ -55,10 +55,12 @@ module.exports = {
     .then(r => r.data)
     .catch(console.log)
 
-  return data?.data?.filters?.initArray?.channels.map(item => {
+  const channelsArray = Object.values(data?.data?.filters?.initArray?.channels || {})
+
+    return channelsArray.map(item => {
         return {
-            lang: 'no',
-            site_id: item.id,
+            lang: 'sk',
+            site_id: item.id_content,
             name: item.name
         }
     })
