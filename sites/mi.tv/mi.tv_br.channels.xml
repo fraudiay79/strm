@@ -606,10 +606,10 @@
   <channel site="mi.tv" lang="pt" xmltv_id="CNNBrasil.br" site_id="br#cnn-brasil">CNN Brasil</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="CNNInternationalAsiaPacific.hk" site_id="br#cnn-international-hd">CNN International HD</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="ComedyCentral.br" site_id="br#comedy-central">Comedy Central</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="ConmebolTV1.br" site_id="br#conmebol-tv-1">Conmebol TV 1</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="ConmebolTV2.br" site_id="br#conmebol-tv-2">Conmebol TV 2</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="ConmebolTV3.br" site_id="br#conmebol-tv-3">Conmebol TV 3</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="ConmebolTV4.br" site_id="br#conmebol-tv-4">Conmebol TV 4</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="" site_id="br#conmebol-tv-1">Conmebol TV 1</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="" site_id="br#conmebol-tv-2">Conmebol TV 2</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="" site_id="br#conmebol-tv-3">Conmebol TV 3</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="" site_id="br#conmebol-tv-4">Conmebol TV 4</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="Curta.br" site_id="br#curta">Curta!</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="DiscoveryChannel.br" site_id="br#discovery">Discovery</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="DiscoveryHomeHealth.br" site_id="br#discovery-home-health">Discovery Home &amp; Health</channel>
@@ -781,7 +781,7 @@
   <channel site="mi.tv" lang="pt" xmltv_id="TVCidadeVerdeCuiaba.br" site_id="br#tv-cidade-verde-hd">TV Cidade Verde HD</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVClube.br" site_id="br#tv-clube">TV Clube</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVCorreio.br" site_id="br#tv-correio">TV Correio</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="TVCulturaNacional.br" site_id="br#cultura">Cultura</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="" site_id="br#cultura">Cultura</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVDiario.br" site_id="br#tv-diario">TV Diário</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVDifusoraSaoLuis.br" site_id="br#tv-difusora-s-o-luis">TV Difusora São Luís</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVEBahia.br" site_id="br#tve-bahia">TVE Bahia</channel>
@@ -802,7 +802,7 @@
   <channel site="mi.tv" lang="pt" xmltv_id="TVJornalCaruaru.br" site_id="br#tv-jornal">TV Jornal</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVJustica.br" site_id="br#tv-justica-1">TV JUSTIÇA</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVLiberal.br" site_id="br#globo-belem-liberal">Globo Belém Liberal</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="TVNovoTempoBrasil.br" site_id="br#tv-novo-tempo">TV Novo Tempo</channel>
+  <channel site="mi.tv" lang="pt" xmltv_id="TVNovoTempo.br" site_id="br#tv-novo-tempo">TV Novo Tempo</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVPajucara.br" site_id="br#tv-pajucara">TV Pajuçara</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVPampa.br" site_id="br#tv-pampa-hd">TV Pampa HD</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="TVParanaiba.br" site_id="br#tv-paranaiba-hd">TV Paranaíba HD</channel>
