@@ -50,11 +50,12 @@ module.exports = {
       .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=2025-01-23&isAjax=true`)
       .then(r => r.data)
       .catch(console.log)
+    
+    if (data && data.filters && data.filters.initArray && data.filters.initArray.channels) {
+      const channelsObject = data.filters.initArray.channels
+      const channelsArray = Object.keys(channelsObject).map(key => channelsObject[key])
 
-    const channelsObject = data.filters.initArray.channels
-    const channelsArray = Object.keys(channelsObject).map(key => channelsObject[key])
-
-    return channelsArray.map(channel => {
+      return channelsArray.map(channel => {
         return {
           lang: 'sk',
           name: channel.name,
