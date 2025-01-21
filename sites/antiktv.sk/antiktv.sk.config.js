@@ -17,49 +17,48 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    const formattedDate = dayjs(date).format('YYYY-MM-DD')
-    return `https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${formattedDate}&options[filters][channels][]=${channel.site_id}&isAjax=true`
+    return `https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${dayjs().format('YYYY-MM-DD')}&options[filters][channels][]=${channel.site_id}&isAjax=true`
   },
   parser: function ({ content }) {
-  let programs = []
-  const data = JSON.parse(content)
+    let programs = []
+    const data = JSON.parse(content)
 
-  for (const date in data.data) {
-    if (Array.isArray(data.data[date])) {
-      data.data[date].forEach(channelData => {
-        channelData.epg.forEach(item => {
-          const start = dayjs(item.Start).utc().toISOString()
-          const stop = dayjs(item.Stop).utc().toISOString()
-          programs.push({
-            title: item.Title,
-            description: item.Description || 'No description available',
-            category: item.Genres.join(', '),
-            icon: item.Icon,
-            start,
-            stop
+    for (const date in data.data) {
+      if (Array.isArray(data.data[date])) {
+        data.data[date].forEach(channelData => {
+          channelData.epg.forEach(item => {
+            const start = dayjs(item.Start).utc().toISOString()
+            const stop = dayjs(item.Stop).utc().toISOString()
+            programs.push({
+              title: item.Title,
+              description: item.Description || 'No description available',
+              category: item.Genres.join(', ') || null,
+              icon: item.Icon,
+              start,
+              stop
+            })
           })
         })
-      })
+      }
     }
-  }
 
-  return programs
-},
+    return programs
+  },
   async channels() {
     let channels = []
     const data = await axios
-    .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${dayjs().format('YYYY-MM-DD')}&isAjax=true`)
-    .then(r => r.data)
-    .catch(console.log)
+      .get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${dayjs().format('YYYY-MM-DD')}&isAjax=true`)
+      .then(r => r.data)
+      .catch(console.log)
 
-  const channelsArray = Object.values(data?.data?.filters?.initArray?.channels || {})
+    const channelsArray = Object.values(data?.data?.filters?.initArray?.channels || {})
 
     return channelsArray.map(item => {
-        return {
-            lang: 'sk',
-            site_id: item.id_content,
-            name: item.name
-        }
+      return {
+        lang: 'sk',
+        site_id: item.id_content,
+        name: item.name
+      }
     })
-}
+  }
 }
