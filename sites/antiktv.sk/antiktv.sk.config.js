@@ -47,7 +47,7 @@ module.exports = {
   async channels(date) {
     try {
       const formattedDate = dayjs(date).format('YYYY-MM-DD')
-      const response = await axios.get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${formattedDate}&isAjax=true`)
+      const response = await axios.get(`https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=2025-01-23&isAjax=true`)
       const data = response.data
       return Object.values(data.filters.initArray.channels).map(channel => {
         return {
