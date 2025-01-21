@@ -25,9 +25,9 @@ module.exports = {
 
     const data = JSON.parse(content).data
     Object.keys(data).forEach(date => {
-      data[date].forEach(channel => {
-        channel.epg.forEach(item => {
-          const programData = {
+      Object.values(data[date]).forEach(channelData => {
+      channelData.epg.forEach(item => {
+        const programData = {
             title: item.Title,
             subtitle: item.Subtitle || null,
             description: item.Description || null,
