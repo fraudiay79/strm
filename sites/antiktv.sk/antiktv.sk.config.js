@@ -21,32 +21,25 @@ module.exports = {
     return `https://antiktv.sk/en/epg/epg/?action=getEpgList&options[day]=${formattedDate}&options[filters][channels][]=${channel.site_id}&isAjax=true`
   },
   parser: function ({ content }) {
-    const programs = []
-
-    const data = JSON.parse(content).data
-    Object.keys(data).forEach(date => {
-      Object.values(data[date]).forEach(channelData => {
-      if (channelData && channelData.epg) {
-        channelData.epg.forEach(item => {
-          const programData = {
-            title: item.Title,
-            subtitle: item.Subtitle,
-            description: item.Description,
-            //icon: item.Icon,
-            //category: item.Genres,
-            start: dayjs.tz(item.Start, 'Europe/Prague'),
-            stop: dayjs.tz(item.Stop, 'Europe/Prague')
-          }
-
-          programs.push(programData)
-        })
-      } else {
-        console.warn('Missing EPG data for channel:', channelData)
-      }
-    })
-  })
-
-  return programs
+  let programs = [];
+  const data = JSON.parse(content);
+  Object.keys(data.data).forEach(date => {
+    data.data[date].forEach(channelData => {
+      channelData.epg.forEach(item => {
+        const start = dayjs(item.Start).utc().toISOString();
+        const stop = dayjs(item.Stop).utc().toISOString();
+        programs.push({
+          title: item.Title,
+          description: item.Description || 'No description available',
+          category: item.Genres.join(', '),
+          icon: item.Icon,
+          start,
+          stop
+        });
+      });
+    });
+  });
+  return programs;
 },
   async channels() {
     let channels = []
