@@ -65,19 +65,31 @@ module.exports = {
   },
   async channels() {
     try {
-      const response = await axios.get('https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=0')
-      const html = response.data
-      const $ = cheerio.load(html)
+      const urls = [
+        'https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=0',
+        'https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=60',
+        'https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=120',
+        'https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=180',
+        'https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=240'
+      ]
+      
+      const requests = urls.map(url => axios.get(url))
+      const responses = await Promise.all(requests)
       
       const channels = []
-
-      $('.channel-header').each((index, element) => {
-        const name = $(element).find('.link--inherit').text().trim()
-        const site_id = $(element).find('[data-favorite]').attr('data-favorite')
+      
+      responses.forEach(response => {
+        const html = response.data
+        const $ = cheerio.load(html)
         
-        if (name && site_id) {
-          channels.push({ lang: 'ru', name, site_id })
-        }
+        $('.channel-header').each((index, element) => {
+          const name = $(element).find('.link--inherit').text().trim()
+          const site_id = $(element).find('[data-favorite]').attr('data-favorite')
+          
+          if (name && site_id) {
+            channels.push({ lang: 'ru', name, site_id })
+          }
+        })
       })
       
       return channels
