@@ -5,7 +5,6 @@ const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 const cheerio = require('cheerio')
 
-// Extend dayjs with plugins
 dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
@@ -14,7 +13,7 @@ const tz = 'Europe/Moscow'
 
 module.exports = {
   site: 'ntvplus.ru',
-  days: 7, // maxdays=7
+  days: 7,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -25,7 +24,7 @@ module.exports = {
   },
   url({ channel, date }) {
     const formattedDate = date.format('DD.MM.YYYY')
-    return `https://ntvplus.ru/tv/ajax/tv?genre=all&date=${formattedDate}&tz=0&search=&channel=${channel.site_id}&offset=0`
+    return `https://ntvplus.ru/tv/ajax/tv?date=${formattedDate}&channel=${channel.site_id}`
   },
   async parser({ content, channel, date }) {
     const [$, items] = parseItems(content)
