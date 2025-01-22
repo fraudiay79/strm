@@ -32,7 +32,7 @@ module.exports = {
     const programs = await Promise.all(
       items.map(async item => {
         const $item = $(item)
-        const start = parseStart($item)
+        const start = parseStart($item, date)
         const details = await loadProgramDetails($item)
         
         return {
@@ -99,14 +99,10 @@ module.exports = {
   }
 }
 
-function parseStart($item) {
-  const dateMatch = $item.attr('class').match(/\d{8}/)
-  if (dateMatch) {
-    const date = dateMatch[0]
-    const time = $item.find('.tv-schedule--item-time').text().trim()
-    if (time) {
-      return dayjs.tz(`${date} ${time.replace('H', ':')}`, 'YYYYMMDD HH:mm', tz)
-    }
+function parseStart($item, date) {
+  const time = $item.find('.tv-schedule--item-time').text().trim()
+  if (time) {
+    return dayjs.tz(`${date.format('YYYYMMDD')} ${time}`, 'YYYYMMDD HH:mm', tz)
   }
 }
 
