@@ -70,7 +70,7 @@ module.exports = {
   async channels() {
     const data = await axios
       .get(
-        'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel?channelMap_id=&includeVirtualChannels=false&natco_key=l2lyvGVbUm2EKJE96ImQgcc8PKMZWtbE&app_language=hr&natco_code=hr',
+        'https://tv-hr-prod.yo-digital.com/hr-bifrost/epg/channel?channelMap_id=&includeVirtualChannels=true&natco_key=l2lyvGVbUm2EKJE96ImQgcc8PKMZWtbE&app_language=hr&natco_code=hr',
         module.exports.request
       )
       .then(r => r.data)
