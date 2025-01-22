@@ -67,7 +67,7 @@ module.exports = {
   },
   async channels() {
     try {
-      const offsets = [0, 60, 120, 180, 240]
+      const offset = [0, 60, 120, 180, 240]
       const urls = offsets.map(offset => `https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=${offset}`)
       
       const requests = urls.map(url => axios.get(url))
