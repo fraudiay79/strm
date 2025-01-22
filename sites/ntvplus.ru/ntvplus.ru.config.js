@@ -25,11 +25,9 @@ module.exports = {
   },
   url({ channel, date }) {
     const formattedDate = date.format('DD.MM.YYYY')
-    const [offset] = channel.site_id.split('#')
-    return `https://ntvplus.ru/tv/ajax/tv?genre=all&date=${formattedDate}&tz=0&search=&channel=${channel.site_id}&offset=${offset}`
+    return `https://ntvplus.ru/tv/ajax/tv?genre=all&date=${formattedDate}&tz=0&search=&channel=${channel.site_id}&offset=0`
   },
   async parser({ content, channel, date }) {
-    const [offset] = channel.site_id.split('#')
     const [$, items] = parseItems(content)
     const programs = await Promise.all(
       items.map(async item => {
@@ -81,7 +79,7 @@ module.exports = {
         
         $('.channel-header').each((index, element) => {
           const name = $(element).find('.link--inherit').text().trim()
-          const site_id = `${offset}#${$(element).find('[data-favorite]').attr('data-favorite')}`
+          const site_id = $(element).find('[data-favorite]').attr('data-favorite')}
           
           if (name && site_id) {
             channels.push({ lang: 'ru', name, site_id })
