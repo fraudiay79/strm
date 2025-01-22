@@ -64,38 +64,27 @@ module.exports = {
     return validPrograms.filter(p => p.start && p.start.isSame(date, 'd'))
   },
   async channels() {
-    let html = await axios
-      .get('https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=0')
-      .then(r => r.data)
-      .catch(console.log)
+    try {
+      const response = await axios.get('https://ntvplus.ru/tv/ajax/tv?genre=all&date=now&tz=0&search=&channel=&offset=0')
+      const html = response.data
+      const $ = cheerio.load(html)
+      
+      const channels = []
 
-    let $ = cheerio.load(html)
-    const nums = $('li')
-      .toArray()
-      .map(item => $(item).data('channel'))
-
-    html = await axios
-      .get('https://ntvplus.ru/', {
-        headers: {
-          Cookie: `selectedChannels=${nums.join(',')}`
+      $('.channel-header').each((index, element) => {
+        const name = $(element).find('.link--inherit').text().trim()
+        const site_id = $(element).find('[data-favorite]').attr('data-favorite')
+        
+        if (name && site_id) {
+          channels.push({ lang: 'ru', name, site_id })
         }
       })
-      .then(r => r.data)
-      .catch(console.log)
-
-    $ = cheerio.load(html)
-    const items = $('li.c').toArray()
-
-    return items.map(item => {
-      const name = $(item).find('.link--inherit').text().trim() || ''
-      const site_id = $(item).find('[data-favorite]').data('favorite') || ''
-
-      return {
-        lang: 'ru',
-        site_id,
-        name
-      }
-    })
+      
+      return channels
+    } catch (error) {
+      console.error('Error fetching channel data:', error)
+      return []
+    }
   }
 }
 
