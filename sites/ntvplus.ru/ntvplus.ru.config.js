@@ -39,29 +39,29 @@ module.exports = {
           title: details.title || '',
           sub_title: details.sub_title || '',
           description: details.description || '',
-          //category: details.category || '',
+          category: details.category || '',
           actors: details.actors || [],
           director: details.director || '',
-          //season: details.season || '',
-          //episode: details.episode || '',
+          season: details.season || '',
+          episode: details.episode || '',
           icon: details.icon || '',
           start
         }
       })
     )
 
-    programs.filter(item => item.start).sort((a, b) => a.start - b.start)
+    const validPrograms = programs.filter(item => item.start).sort((a, b) => a.start - b.start)
 
     // Fill start-stop
-    for (let i = 0; i < programs.length; i++) {
-      if (i < programs.length - 1) {
-        programs[i].stop = programs[i + 1].start
+    for (let i = 0; i < validPrograms.length; i++) {
+      if (i < validPrograms.length - 1) {
+        validPrograms[i].stop = validPrograms[i + 1].start
       } else {
-        programs[i].stop = dayjs.tz(`${date.add(1, 'd').format('YYYY-MM-DD')} 00:00`, 'YYYY-MM-DD HH:mm', tz)
+        validPrograms[i].stop = dayjs.tz(`${date.add(1, 'd').format('YYYY-MM-DD')} 00:00`, 'YYYY-MM-DD HH:mm', tz)
       }
     }
 
-    return programs.filter(p => p.start.isSame(date, 'd'))
+    return validPrograms.filter(p => p.start && p.start.isSame(date, 'd'))
   },
   async channels() {
     let html = await axios
@@ -137,10 +137,10 @@ async function loadProgramDetails($item) {
       .text()
       .trim() || '',
     description: $('.program--text').text().trim() || '',
-    //category: $('.program--fields-key:contains("Тип")').next().text().trim() || '',
+    category: $('.program--fields-key:contains("Тип")').next().text().trim() || '',
     sub_title: $('.program--desc').text().trim() || '',
-    //season: $('.program--series-title').text().split(',')[0].trim() || '',
-    //episode: $('.program--series-title').text().split(',')[1].trim() || ''
+    season: $('.program--series-title').text().split(',')[0].trim() || '',
+    episode: $('.program--series-title').text().split(',')[1].trim() || ''
   }
 }
 
