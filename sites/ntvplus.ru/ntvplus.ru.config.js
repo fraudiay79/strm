@@ -113,7 +113,7 @@ function parseStart($item) {
 async function loadProgramDetails($item) {
   const programId = $item.find('a').attr('href')
   const data = await axios
-    .get(`https://ntvplus.ru/${programId}`)
+    .get(`https://ntvplus.ru${programId}`)
     .then(r => r.data)
     .catch(console.error)
 
