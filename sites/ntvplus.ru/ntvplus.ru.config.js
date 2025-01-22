@@ -39,11 +39,11 @@ module.exports = {
           title: details.title || '',
           sub_title: details.sub_title || '',
           description: details.description || '',
-          category: details.category || '',
+          //category: details.category || '',
           actors: details.actors || [],
           director: details.director || '',
-          season: details.season || '',
-          episode: details.episode || '',
+          //season: details.season || '',
+          //episode: details.episode || '',
           icon: details.icon || '',
           start
         }
@@ -122,8 +122,8 @@ async function loadProgramDetails($item) {
   const $ = cheerio.load(data)
 
   return {
-    title: $item.find('.program--title').text().trim() || '',
-    icon: $item.find('.program--sliders-full img').first().attr('src') || '',
+    title: $('.program--title').text().trim() || '',
+    icon: $('.program--sliders-full img').first().attr('src') || '',
     actors: $('div.program--fields-item:contains("В ролях")')
       .next('.program--fields-value')
       .find('span[itemprop="actor"]')
@@ -136,11 +136,11 @@ async function loadProgramDetails($item) {
       .first()
       .text()
       .trim() || '',
-    description: $item.find('.program--text').text().trim() || '',
-    category: $item.find('.program--fields-key:contains("Тип")').next().text().trim() || '',
-    sub_title: $item.find('.program--desc').text().trim() || '',
-    season: $item.find('.program--series-title').text().split(',')[0].trim() || '',
-    episode: $item.find('.program--series-title').text().split(',')[1].trim() || ''
+    description: $('.program--text').text().trim() || '',
+    //category: $('.program--fields-key:contains("Тип")').next().text().trim() || '',
+    sub_title: $('.program--desc').text().trim() || '',
+    //season: $('.program--series-title').text().split(',')[0].trim() || '',
+    //episode: $('.program--series-title').text().split(',')[1].trim() || ''
   }
 }
 
