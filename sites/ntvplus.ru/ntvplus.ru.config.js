@@ -79,7 +79,7 @@ module.exports = {
         
         $('.channel-header').each((index, element) => {
           const name = $(element).find('.link--inherit').text().trim()
-          const site_id = $(element).find('[data-favorite]').attr('data-favorite')}
+          const site_id = $(element).find('[data-favorite]').attr('data-favorite')
           
           if (name && site_id) {
             channels.push({ lang: 'ru', name, site_id })
