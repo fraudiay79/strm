@@ -406,14 +406,14 @@
   <channel site="tvheute.at" lang="de" xmltv_id="ATV.at" site_id="atv">ATV</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ATV2.at" site_id="atv2">ATV 2</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="DMAX.at" site_id="dmax">DMAX</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="K19.at" site_id="206966312329">K19</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="K19.at" site_id="206966312329">K19</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="kabeleins.at" site_id="k1">kabel eins</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="kronetv.at" site_id="206969384179">krone.tv</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="LandleTV.at" site_id="206970408219">Ländle TV</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="MelodieTV.at" site_id="206966312231">Melodie TV</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="kronetv.at" site_id="206969384179">krone.tv</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="LandleTV.at" site_id="206970408219">Ländle TV</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="MelodieTV.at" site_id="206966312231">Melodie TV</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="Nickelodeon.at" site_id="nick">Nickelodeon</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="oe24TV.at" site_id="oe24tv">oe24.TV</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="Okto.at" site_id="206966312068">Okto</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="Okto.at" site_id="206966312068">Okto</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ORF1.at" site_id="orf1">ORF 1</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ORF2.at" site_id="orf2">ORF 2</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ORFIII.at" site_id="orf_iii">ORF III</channel>
@@ -421,8 +421,8 @@
   <channel site="tvheute.at" lang="de" xmltv_id="ProSieben.at" site_id="pro7">ProSieben</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ProSiebenMAXX.at" site_id="7maxx">ProSieben MAXX</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="Puls4.at" site_id="puls_4">PULS 4</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="Puls24.at" site_id="206965288206">PULS 24</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="R9.at" site_id="206964776420">R9</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="Puls24.at" site_id="206965288206">PULS 24</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="R9.at" site_id="206964776420">R9</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="SAT1.at" site_id="sat1">SAT.1</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="SAT1Gold.at" site_id="sat1gold">SAT.1 Gold</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="ServusTV.at" site_id="servustv">ServusTV</channel>
@@ -435,7 +435,7 @@
   <channel site="sky.de" lang="de" xmltv_id="SkySportAustria6.at" site_id="884">Sky Sport Austria 6</channel>
   <channel site="sky.de" lang="de" xmltv_id="SkySportAustria7.at" site_id="885">Sky Sport Austria 7</channel>
   <channel site="tvheute.at" lang="de" xmltv_id="VOX.at" site_id="vox">VOX</channel>
-  <channel site="tv.magenta.at" lang="de" xmltv_id="W24.at" site_id="206969384250">W24</channel>
+  <channel site="magentatv.at" lang="de" xmltv_id="W24.at" site_id="206969384250">W24</channel>
   #Azerbaijan
   <channel site="iptvx.one" lang="az" xmltv_id="AzTV.az" site_id="aztv">AzTV</channel>
   <channel site="iptvx.one" lang="az" xmltv_id="CBC.az" site_id="cbc-az">CBC • CBC AZ</channel>
@@ -1258,82 +1258,82 @@
   <channel site="startimestv.com" lang="en" xmltv_id="SourceAfricaTV.ci" site_id="716">Source Africa TV</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="TVAlBayane.ci" site_id="ci#180776">TV Al Bayane</channel>
   #Croatia
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="24Kitchen.hr" site_id="282238504006">24Kitchen</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport1.hr" site_id="274914856088">Arenasport 1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport2.hr" site_id="282238503965">Arenasport 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport3.hr" site_id="282238503966">Arenasport 3</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport4.hr" site_id="282238503968">Arenasport 4</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport5.hr" site_id="282235944358">Arenasport 5</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport6.hr" site_id="282238503971">Arenasport 6</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport7.hr" site_id="282235944384">Arenasport 7</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport8.hr" site_id="282235944385">Arenasport 8</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport9.hr" site_id="282237992142">Arenasport 9</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ArenaSport10.hr" site_id="282237992144">Arenasport 10</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="AuroraTV.hr" site_id="338263080040">Aurora TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="BBCEarth.hr" site_id="276770344361">BBC Earth</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Cartoonito.hr" site_id="276770856273">Cartoonito</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Cinemax.hr" site_id="276770344388">Cinemax</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Cinemax2.hr" site_id="276767784259">Cinemax 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CineStarTV1.hr" site_id="276770344379">CineStar TV 1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CineStarTV2.hr" site_id="461780008179">Cinestar TV 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CineStarTVAction.hr" site_id="276770856300">CineStar TV Action &amp; Thriller</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CineStarTVComedyFamily.hr" site_id="346586664198">Cinestar TV Comedy &amp; Family</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CineStarTVFantasy.hr" site_id="276795432141">Cinestar TV Fantasy</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CineStarTVPremiere1.hr" site_id="276770856304">Cinestar TV Premiere 1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CineStarTVPremiere2.hr" site_id="276770344392">Cinestar TV Premiere 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CMCTV.hr" site_id="274913832116">CMC - Croatian Music Channel</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="CrimePlusInvestigation.hr" site_id="276771368119">Crime &amp; Investigation</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="DaVinci.hr" site_id="276770856271">Da Vinci</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="DomaTV.hr" site_id="276771368109">Doma TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="EEntertainment.hr" site_id="282239016114">E!</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="EpicDrama.hr" site_id="276771368146">Epic Drama</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="HBO.hr" site_id="276767784251">HBO</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="HBO2.hr" site_id="276771368141">HBO 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="HBO3.hr" site_id="276767784254">HBO 3</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="History.hr" site_id="276770344354">History</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="History2.hr" site_id="276767784233">History 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="HRT1.hr" site_id="274913832105">HRT 1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="HRT2.hr" site_id="276770344331">HRT 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="HRT3.hr" site_id="276771368111">HRT 3</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="HRT4.hr" site_id="276770344339">HRT 4</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="24Kitchen.hr" site_id="282238504006">24Kitchen</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport1.hr" site_id="274914856088">Arenasport 1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport2.hr" site_id="282238503965">Arenasport 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport3.hr" site_id="282238503966">Arenasport 3</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport4.hr" site_id="282238503968">Arenasport 4</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport5.hr" site_id="282235944358">Arenasport 5</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport6.hr" site_id="282238503971">Arenasport 6</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport7.hr" site_id="282235944384">Arenasport 7</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport8.hr" site_id="282235944385">Arenasport 8</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport9.hr" site_id="282237992142">Arenasport 9</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ArenaSport10.hr" site_id="282237992144">Arenasport 10</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="AuroraTV.hr" site_id="338263080040">Aurora TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="BBCEarth.hr" site_id="276770344361">BBC Earth</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Cartoonito.hr" site_id="276770856273">Cartoonito</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Cinemax.hr" site_id="276770344388">Cinemax</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Cinemax2.hr" site_id="276767784259">Cinemax 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CineStarTV1.hr" site_id="276770344379">CineStar TV 1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CineStarTV2.hr" site_id="461780008179">Cinestar TV 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CineStarTVAction.hr" site_id="276770856300">CineStar TV Action &amp; Thriller</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CineStarTVComedyFamily.hr" site_id="346586664198">Cinestar TV Comedy &amp; Family</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CineStarTVFantasy.hr" site_id="276795432141">Cinestar TV Fantasy</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CineStarTVPremiere1.hr" site_id="276770856304">Cinestar TV Premiere 1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CineStarTVPremiere2.hr" site_id="276770344392">Cinestar TV Premiere 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CMCTV.hr" site_id="274913832116">CMC - Croatian Music Channel</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="CrimePlusInvestigation.hr" site_id="276771368119">Crime &amp; Investigation</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="DaVinci.hr" site_id="276770856271">Da Vinci</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="DomaTV.hr" site_id="276771368109">Doma TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="EEntertainment.hr" site_id="282239016114">E!</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="EpicDrama.hr" site_id="276771368146">Epic Drama</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="HBO.hr" site_id="276767784251">HBO</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="HBO2.hr" site_id="276771368141">HBO 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="HBO3.hr" site_id="276767784254">HBO 3</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="History.hr" site_id="276770344354">History</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="History2.hr" site_id="276767784233">History 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="HRT1.hr" site_id="274913832105">HRT 1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="HRT2.hr" site_id="276770344331">HRT 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="HRT3.hr" site_id="276771368111">HRT 3</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="HRT4.hr" site_id="276770344339">HRT 4</channel>
   <channel site="mts.rs" lang="hr" xmltv_id="HRTInternational.hr" site_id="639#865">HRT Int'l</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="JugotonTV.hr" site_id="282239016175">Jugoton</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="KinoTV.hr" site_id="276796967984">Kino TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Klasik.hr" site_id="276795944047">Klasik TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="KreatorTV.hr" site_id="338258984073">GP1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="LaudatoTV.hr" site_id="282239016116">Laudato TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Loviribolov.rs" site_id="426076200273">Balkan Trip</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="MAXSport1.hr" site_id="311616552052">MAXSport 1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="MAXSport2.hr" site_id="311620648169">MAXSport 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="M1Film.hr" site_id="276790824378">M1 Film</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="M1Gold.hr" site_id="276782632042">M1 Gold</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="MiniTV.hr" site_id="276770344372">Mini TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="N1.hr" site_id="276770344345">N1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Narodni.hr" site_id="282237992222">bravo! TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="NationalGeographic.hr" site_id="276770344350">National Geographic</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="NationalGeographicWild.hr" site_id="276770344352">National Geographic Wild</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Nickelodeon.hr" site_id="276796967974">Nickelodeon</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="NickJr.hr" site_id="276771368129">Nick Jr.</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="NovaTV.hr" site_id="274914856086">Nova TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="PickboxTV.hr" site_id="276767784220">Pickbox TV</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="RTL2.hr" site_id="276770344334">RTL 2</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="RTL.hr" site_id="274913832109">RTL</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="RTLAria.hr" site_id="311618600203">RTL Adria</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="RTLCrime.hr" site_id="276770344347">RTL Crime</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="JugotonTV.hr" site_id="282239016175">Jugoton</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="KinoTV.hr" site_id="276796967984">Kino TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Klasik.hr" site_id="276795944047">Klasik TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="KreatorTV.hr" site_id="338258984073">GP1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="LaudatoTV.hr" site_id="282239016116">Laudato TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Loviribolov.rs" site_id="426076200273">Balkan Trip</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="MAXSport1.hr" site_id="311616552052">MAXSport 1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="MAXSport2.hr" site_id="311620648169">MAXSport 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="M1Film.hr" site_id="276790824378">M1 Film</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="M1Gold.hr" site_id="276782632042">M1 Gold</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="MiniTV.hr" site_id="276770344372">Mini TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="N1.hr" site_id="276770344345">N1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Narodni.hr" site_id="282237992222">bravo! TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="NationalGeographic.hr" site_id="276770344350">National Geographic</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="NationalGeographicWild.hr" site_id="276770344352">National Geographic Wild</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Nickelodeon.hr" site_id="276796967974">Nickelodeon</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="NickJr.hr" site_id="276771368129">Nick Jr.</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="NovaTV.hr" site_id="274914856086">Nova TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="PickboxTV.hr" site_id="276767784220">Pickbox TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTL2.hr" site_id="276770344334">RTL 2</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTL.hr" site_id="274913832109">RTL</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTLAria.hr" site_id="311618600203">RTL Adria</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTLCrime.hr" site_id="276770344347">RTL Crime</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="RTLCroatiaWorld.hr" site_id="645#334">RTL Croatia World</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="RTLKockica.hr" site_id="276767784228">RTL Kockica</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="RTLLiving.hr" site_id="276770344341">RTL Living</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="RTLPassion.hr" site_id="276771368143">RTL Passion</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="SportskaTV.hr" site_id="96">Sportska televizija</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="StarChannel.hr" site_id="276770856295">Star Channel</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="StarCrime.hr" site_id="276770856280">Star Crime</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="StarLife.hr" site_id="276771368133">Star Life</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="StarMovies.hr" site_id="276770344385">Star Movies</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ViasatExplore.se" site_id="276770344357">Viasat Explore</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ViasatHistory.se" site_id="435380776371">Viasat History</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ViasatNature.se" site_id="276767784232">Viasat Nature</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="Z1.hr" site_id="343759399964">Z1</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="hr" xmltv_id="ZdravaTV7.hr" site_id="343758888241">Zdrava TV</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTLKockica.hr" site_id="276767784228">RTL Kockica</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTLLiving.hr" site_id="276770344341">RTL Living</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTLPassion.hr" site_id="276771368143">RTL Passion</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="SportskaTV.hr" site_id="96">Sportska televizija</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="StarChannel.hr" site_id="276770856295">Star Channel</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="StarCrime.hr" site_id="276770856280">Star Crime</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="StarLife.hr" site_id="276771368133">Star Life</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="StarMovies.hr" site_id="276770344385">Star Movies</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ViasatExplore.se" site_id="276770344357">Viasat Explore</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ViasatHistory.se" site_id="435380776371">Viasat History</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ViasatNature.se" site_id="276767784232">Viasat Nature</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="Z1.hr" site_id="343759399964">Z1</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="ZdravaTV7.hr" site_id="343758888241">Zdrava TV</channel>
   #Cuba
   <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="Cubavision.cu" site_id="cv">Cubavisión</channel>
   <channel site="tvcubana.icrt.cu" lang="es" xmltv_id="CubavisionInternacional.cu" site_id="cvi">Cubavisión Internacional</channel>
@@ -3626,6 +3626,22 @@
   <channel site="tv.post.lu" lang="lb" xmltv_id="RTLTeleLuxembourg.lu" site_id="bdd0b3f0-8093-11e9-b5ca-f345a2ed0fbe">RTL</channel>
   <channel site="tv.post.lu" lang="lb" xmltv_id="RTLZwee.lu" site_id="5c2aa860-8096-11e9-b5ca-f345a2ed0fbe">RTL Zwee</channel>
   #Macedonia
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MRT1.mk" site_id="19122">МРТ 1</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MRT2.mk" site_id="19124">МРТ 2</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MRT3.mk" site_id="19244">МРТ 3</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MRT4.mk" site_id="19107">МРТ 4</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MRT5.mk" site_id="19245">МРТ 5</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MRTSobraniskikanal.mk" site_id="19289">Собраниски Канал</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MNet.mk" site_id="19139">M-Net</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="MTM.mk" site_id="19217">MTM</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="Sitel.mk" site_id="19308">Сител</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="AlsatM.mk" site_id="19309">Alsat M</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="KlanMacedonia.mk" site_id="19341">Klan Macedonia</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="TelmaTV.mk" site_id="19342">Телма</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="TeraTV.mk" site_id="19349">Тера</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="TVSonce.mk" site_id="19353">ТВ Сонце</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="TVEdo.mk" site_id="19112">TV Edo</channel>
+  <channel site="magentatv.mk" lang="mk" xmltv_id="TVShenja.mk" site_id="19304">TV Shenja</channel>
   #Madagascar
   <channel site="startimestv.com" lang="en" xmltv_id="GasyStar.mg" site_id="1764005706">GasyStar</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="IBCTV.mg" site_id="713">I-BC</channel>
@@ -3910,20 +3926,20 @@
   <channel site="zuragt.mn" lang="mn" xmltv_id="TV25.mn" site_id="mn25">MN25</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="UBS.mn" site_id="ubs-1">UBS-1</channel>
   #Montenegro
-  <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG1.me" site_id="357126696327">RTCG 1 • РТЦГ 1</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG2.me" site_id="357129256090">RTCG 2 • РТЦГ 2</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="RTCG3.me" site_id="357130280088">Parlamentarni Kanal • РТЦГ 3</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="RTCG1.me" site_id="357126696327">RTCG 1 • РТЦГ 1</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="RTCG2.me" site_id="357129256090">RTCG 2 • РТЦГ 2</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="RTCG3.me" site_id="357130280088">Parlamentarni Kanal • РТЦГ 3</channel>
   <channel site="tv2go.t-2.net" lang="me" xmltv_id="RTCGMNE.me" site_id="109">RTCG MNE • РТЦГ MNE</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="Vijesti.me" site_id="357130280091">Vijesti</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="PrvaM.me" site_id="357130792083">Prva M</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="NovaM.me" site_id="357130792085">Nova M</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="TVAdria.me" site_id="357131304057">Adria TV</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="PinkM.me" site_id="359181864255">Pink M</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="GradskaTV.me" site_id="357140008211">Gradska TV</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="HappyTV.me" site_id="359840295974">Happy TV</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="AdriaticSport1.me" site_id="357140008407">Adriatic Sport 1</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="AdriaticSport2.me" site_id="357142568065">Adriatic Sport 2</channel>
-  <channel site="tv.magenta.me" lang="me" xmltv_id="AdriaticSport3.me" site_id="357142568066">Adriatic Sport 3</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="Vijesti.me" site_id="357130280091">Vijesti</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="PrvaM.me" site_id="357130792083">Prva M</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="NovaM.me" site_id="357130792085">Nova M</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="TVAdria.me" site_id="357131304057">Adria TV</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="PinkM.me" site_id="359181864255">Pink M</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="GradskaTV.me" site_id="357140008211">Gradska TV</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="HappyTV.me" site_id="359840295974">Happy TV</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="AdriaticSport1.me" site_id="357140008407">Adriatic Sport 1</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="AdriaticSport2.me" site_id="357142568065">Adriatic Sport 2</channel>
+  <channel site="magentatv.me" lang="me" xmltv_id="AdriaticSport3.me" site_id="357142568066">Adriatic Sport 3</channel>
   #Morocco
   <channel site="snrt.ma" lang="ar" xmltv_id="AlAoula.ma" site_id="1208">Al Aoula</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="2MMonde.ma" site_id="1#38#2M وطني">2M Monde</channel>
@@ -7305,9 +7321,9 @@
   <channel site="horizon.tv" lang="en" xmltv_id="BabesTV.us" site_id="10187">Babes TV</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BalkanErotic.si" site_id="1000645">Balkan Erotic</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="BangU.us" site_id="BANGU">Bang U</channel>
-  <channel site="vivacom.bg" lang="bg" xmltv_id="BarelyLegalTV.us" site_id="22#Barely Legal">Barely Legal TV</channel>
+  <channel site="epg.iptvx.one" lang="ru" xmltv_id="BarelyLegalTV.us" site_id="barely-legal">Barely Legal TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="BeateUhseTV.de" site_id="107">Beate Uhse</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="en" xmltv_id="BlueHustler.nl" site_id="291">Blue Hustler</channel>
+  <channel site="tv24.se" lang="en" xmltv_id="BlueHustler.nl" site_id="blue-hustler">Blue Hustler</channel>
   <channel site="mtel.ba" lang="en" xmltv_id="BrazzersTVEurope.us" site_id="191#300">Brazzers TV Europe</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Candy.ru" site_id="candy">Candy • Candy 3D HD • Candy HD</channel>
   <channel site="webtv.delta.nl" lang="en" xmltv_id="Desire.uk" site_id="10059">Desire</channel>
@@ -7326,7 +7342,7 @@
   <channel site="tv.post.lu" lang="en" xmltv_id="HustlerHD.nl" site_id="7a91a730-71a1-11e9-a762-3be38d7f533c">Hustler HD</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="HustlerTV.nl" site_id="72">Hustler TV</channel>
   <channel site="mujtvprogram.cz" lang="cs" xmltv_id="LeoTV.cz" site_id="127">Leo TV</channel>
-  <channel site="m.tv.sms.cz" lang="cs" xmltv_id="LeoTVGold.cz" site_id="Leo+TV+Gold">Leo TV Gold</channel>
+  <channel site="antiktv.sk" lang="sk" xmltv_id="LeoTVGold.cz" site_id="leo_gold">Leo TV Gold</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="LustPur.de" site_id="32">Lust Pur</channel>
   <channel site="ziggogo.tv" lang="nl" xmltv_id="MeidenvanHollandHard.nl" site_id="NL_000175_019312">Meiden van Holland Hard</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="MilfTV.si" site_id="1000491">Milf TV</channel>
@@ -7370,12 +7386,12 @@
   <channel site="iptvx.one" lang="ru" xmltv_id="Silk.ru" site_id="sholk">Шелк • Шёлк</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="SirinaTV.gr" site_id="sirinatv">Sirina</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="SuperONE.hu" site_id="SUPERONEHD">SuperONE</channel>
-  <channel site="m.tv.sms.cz" lang="en" xmltv_id="TrueAmateurs.uk" site_id="True+Amateurs">True Amateurs</channel>
+  <channel site="antiktv.sk" lang="en" xmltv_id="TrueAmateurs.uk" site_id="true_amateurs">True Amateurs</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Venus.ar" site_id="ar#venus">Venus</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="VenusBrasil.br" site_id="br#venus-tv-sd">Venus</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="en" xmltv_id="VividRed.us" site_id="761">Vivid Red</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="en" xmltv_id="VividTouch.uk" site_id="762">Vivid Touch</channel>
-  <channel site="mojmaxtv.hrvatskitelekom.hr" lang="en" xmltv_id="VividTVEurope.uk" site_id="715">Vivid TV</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="VividRed.us" site_id="vivid-red-hd-627">Vivid Red</channel>
+  <channel site="programtv.onet.pl" lang="en" xmltv_id="VividTouch.uk" site_id="vivid-touch-636">Vivid Touch</channel>
+  <channel site="tv.post.lu" lang="en" xmltv_id="VividTVEurope.uk" site_id="0945da60-730e-11e9-8408-8db53eb23c3e">Vivid TV</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="VixenTV.ca" site_id="892">Vixen</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="XBizarre.al" site_id="al/programacioni#tring-bizarre">X-Bizarre</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="XBungaBunga.al" site_id="al/programacioni#tring-bunga-bunga">X-BungaBunga</channel>
