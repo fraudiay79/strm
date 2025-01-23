@@ -1,101 +1,147 @@
-const doFetch = require('@ntlab/sfetch')
 const axios = require('axios')
+const crypto = require('crypto')
 const dayjs = require('dayjs')
-const _ = require('lodash')
 
-const cached = {}
+const API_ENDPOINT = 'https://tv-at-prod.yo-digital.com/at-bifrost'
+
+const headers = {
+  app_key: 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
+  app_version: '02.0.1050',
+  'device-id': '5aa1283d-5229-4799-a383-0fe76efb9b24',
+  'x-request-session-id': '64cbafc1-fce8-4dd1-a724-bc773d4da7b2',
+  'x-request-tracking-id': 'cc72a98b-9182-487f-8329-bedf9a633827',
+  'x-user-agent': 'web|web|Chrome-131|02.0.1050|1'
+}
 
 module.exports = {
   site: 'magentatv.at',
-  url({ date }) {
-    return `https://tv-at-prod.yo-digital.com/at-bifrost/epg/channel/schedules?date=${date.format(
-      'YYYY-MM-DD'
-    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=de&natco_code=at`
-  },
+  days: 2,
   request: {
-    headers: {
-      app_key: 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
-      app_version: '02.0.1050',
-      'device-id': '5aa1283d-5229-4799-a383-0fe76efb9b24',
-      'x-request-session-id': '64cbafc1-fce8-4dd1-a724-bc773d4da7b2',
-      'x-request-tracking-id': 'cc72a98b-9182-487f-8329-bedf9a633827',
-      'x-user-agent': 'web|web|Chrome-131|02.0.1050|1'
-    },
+    headers,
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
+  url({ date }) {
+    return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
+      'YYYY-MM-DD'
+    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=de&natco_code=at`
+  },
   async parser({ content, channel, date }) {
-    const data = parseData(content)
-    if (!data) return []
+    let programs = []
+    if (!content) return programs
 
-    let items = parseItems(data, channel)
-    if (!items.length) return []
+    let items = parseItems(JSON.parse(content), channel)
+    if (!items.length) return programs
 
-    const queue = [3, 6, 9, 12, 15, 18, 21]
-      .map(offset => {
-        const url = module.exports.url({ date }).replace('hour_offset=0', `hour_offset=${offset}`)
-        const params = module.exports.request
+    const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
+      axios.get(
+        `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
+      'YYYY-MM-DD'
+    )}&hour_offset=${i}&hour_range=3&natco_code=at`,
+        { headers }
+      )
+    )
 
-        if (cached[url]) {
-          items = items.concat(parseItems(cached[url], channel))
+    await Promise.allSettled(promises)
+      .then(results => {
+        results.forEach(r => {
+          if (r.status === 'fulfilled') {
+            const parsed = parseItems(r.value.data, channel)
 
-          return null
-        }
-
-        return { url, params }
+            items = items.concat(parsed)
+          }
+        })
       })
-      .filter(Boolean)
+      .catch(console.error)
 
-    await doFetch(queue, (_req, _data) => {
-      if (_data) {
-        cached[_req.url] = _data
+    for (let item of items) {
+      const detail = await loadProgramDetails(item)
+      programs.push({
+        title: item.description,
+        description: parseDescription(detail),
+        date: parseDate(item),
+        category: parseCategory(item),
+        icon: detail.poster_image_url,
+        actors: parseRoles(detail, 'Schauspieler'),
+        directors: parseRoles(detail, 'Regisseur'),
+        season: parseSeason(item),
+        episode: parseEpisode(item),
+        start: parseStart(item),
+        stop: parseStop(item)
+      })
+    }
 
-        items = items.concat(parseItems(_data, channel))
-      }
-    })
-
-    items = _.sortBy(items, i => dayjs(i.start_time).valueOf())
-
-    return items.map(item => ({
-      title: item.description,
-      categories: Array.isArray(item.genres) ? item.genres.map(g => g.name) : [],
-      season: item.season_number,
-      episode: item.episode_number ? parseInt(item.episode_number) : null,
-      date: item['release_year'] ? item['release_year'].toString() : null,
-      start: item.start_time,
-      stop: item.end_time
-    }))
+    return programs
   },
   async channels() {
     const data = await axios
-      .get(
-        'https://tv-at-prod.yo-digital.com/at-bifrost/epg/channel?channelMap_id=&natco_key=NZu7aIg1vFTNLwHcb0Kjhqk54ql9RJj5&app_language=de&natco_code=at',
-        module.exports.request
-      )
+      .get(`${API_ENDPOINT}/epg/channel?natco_code=at`, { headers })
       .then(r => r.data)
-      .catch(console.error)
+      .catch(console.log)
 
-    return data.channels.map(channel => ({
-      lang: 'de',
-      name: channel.title,
-      site_id: channel.station_id
-    }))
+    return data.channels.map(item => {
+      return {
+        lang: 'pl',
+        site_id: item.station_id,
+        name: item.title
+      }
+    })
   }
 }
 
-function parseData(content) {
-  try {
-    const data = JSON.parse(content)
+async function loadProgramDetails(item) {
+  if (!item.program_id) return {}
+  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=at`
+  const data = await axios
+    .get(url, { headers })
+    .then(r => r.data)
+    .catch(console.log)
 
-    return data || null
-  } catch {
-    return null
-  }
+  return data || {}
+}
+
+function parseDate(item) {
+  return item && item.release_year ? item.release_year.toString() : null
+}
+
+function parseStart(item) {
+  return dayjs(item.start_time)
+}
+
+function parseStop(item) {
+  return dayjs(item.end_time)
 }
 
 function parseItems(data, channel) {
-  if (!data.channels || !Array.isArray(data.channels[channel.site_id])) return []
+  if (!data || !data.channels) return []
+  const channelData = data.channels[channel.site_id]
+  if (!channelData) return []
+  return channelData
+}
 
-  return data.channels[channel.site_id]
+function parseCategory(item) {
+  if (!item.genres) return null
+  return item.genres.map(genre => genre.id)
+}
+
+function parseSeason(item) {
+  if (item.season_display_number === 'Folgen') return null
+  return item.season_number
+}
+
+function parseEpisode(item) {
+  if (item.episode_number) return parseInt(item.episode_number)
+  if (item.season_display_number === 'Folgen') return item.season_number
+  return null
+}
+
+function parseDescription(item) {
+  if (!item.details) return null
+  return item.details.description
+}
+
+function parseRoles(item, role_name) {
+  if (!item.roles) return null
+  return item.roles.filter(role => role.role_name === role_name).map(role => role.person_name)
 }
