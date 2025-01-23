@@ -1,6 +1,7 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
+const axios = require('axios')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -37,17 +38,17 @@ module.exports = {
         const duration = parseInt(item.TotalDivWidth / 4.8)
         const stop = start.add(duration, 'm')
         programs.push({ 
-		  title,
-		  subtitle: parseSubtitle(detail),
-		  description: parseDescription(detail),
+          title,
+          subtitle: parseSubtitle(detail, channel),
+          description: parseDescription(detail, channel),
           date: parseDate(item),
-		  category: parseCategory(item),
-		  icon: parseImage(item),
-		  season: parseSeason(item),
-          episode: parseEpisode(item),
-		  start, 
-		  stop 
-		})
+          category: parseCategory(detail, channel),
+          icon: parseImage(detail),
+          season: parseSeason(detail),
+          episode: parseEpisode(detail),
+          start, 
+          stop 
+        })
       }
     }
 
@@ -55,7 +56,6 @@ module.exports = {
   },
   async channels({ lang = 'ar' }) {
     const result = {}
-    const axios = require('axios')
     for (const pkg of Object.values(packages)) {
       const channels = await axios
         .get(`https://www.osn.com/api/tvchannels.ashx?culture=en-US&packageId=${pkg}&country=${country}`)
@@ -83,29 +83,28 @@ async function loadProgramDetails(item) {
   if (!item.program_id) return {}
   const url = `https://www.osn.com/api/TVScheduleWebService.asmx/GetProgramDetails?prgmEPGUNIQID=${item.program_id}&countryCode=SA`
   const data = await axios
-    .get(url, { headers })
+    .get(url)
     .then(r => r.data)
     .catch(console.log)
 
   return data || {}
 }
 
-function parseSubtitle(item) {
+function parseSubtitle(item, channel) {
   if (channel.lang === 'ar' && !item.EpisodeAr || !item.EpisodeEn) {
     return null
   }
   return channel.lang === 'ar' ? item.EpisodeAr : item.EpisodeEn
 }
 
-
-function parseDescription(item) {
+function parseDescription(item, channel) {
   if (channel.lang === 'ar' && !item.Arab_Synopsis || !item.Synopsis) {
     return null
   }
   return channel.lang === 'ar' ? item.Arab_Synopsis : item.Synopsis
 }
 
-function parseCategory(item) {
+function parseCategory(item, channel) {
   if (channel.lang === 'ar' && !item.GenreArabicName || !item.GenreEnglishName) {
     return null
   }
