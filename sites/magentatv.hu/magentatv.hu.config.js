@@ -8,8 +8,8 @@ const headers = {
   app_key: 'exSJHBiSAN6wAAeqdWLdTUfdTi2PNark',
   app_version: '02.0.1091',
   'device-id': 'd6d831df-14c1-443e-b9b7-351c53e7d223',
-  'x-request-session-id': '649e8fd1-9185-42fa-92bf-a4d3d3514ff7',
-  'x-request-tracking-id': '35ab7d00-2aa8-4e66-a97c-8801efee83f9',
+  'x-request-session-id': '5bf86441-69c4-4b66-9bdd-27b806b3325a',
+  'x-request-tracking-id': '9e83e838-43da-4a95-8a82-b4adde50e3c3',
   'x-user-agent': 'web|web|Chrome-131|02.0.1091|1'
 }
 
@@ -34,7 +34,7 @@ module.exports = {
     let items = parseItems(JSON.parse(content), channel)
     if (!items.length) return programs
 
-    const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
+    const promises = [18, 21].map(i =>
       axios.get(
         `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
       'YYYY-MM-DD'
@@ -92,7 +92,7 @@ module.exports = {
 
 async function loadProgramDetails(item) {
   if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=hu`
+  const url = `${API_ENDPOINT}/details/program/${item.program_id}?natco_code=hu`
   const data = await axios
     .get(url, { headers })
     .then(r => r.data)
