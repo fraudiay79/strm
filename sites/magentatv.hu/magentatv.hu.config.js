@@ -76,7 +76,7 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`${API_ENDPOINT}/epg/channel?natco_code=hu`, { headers })
+      .get(`${API_ENDPOINT}/epg/channel?channelMap_id=&natco_key=Tydx7H7fJO6HxgjvJok0ZhVWFmX3om0P&app_language=hu&natco_code=hu`, { headers })
       .then(r => r.data)
       .catch(console.log)
 
