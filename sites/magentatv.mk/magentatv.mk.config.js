@@ -34,7 +34,7 @@ module.exports = {
     let items = parseItems(JSON.parse(content), channel)
     if (!items.length) return programs
 
-    const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
+    const promises = [18, 21].map(i =>
       axios.get(
         `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
       'YYYY-MM-DD'
