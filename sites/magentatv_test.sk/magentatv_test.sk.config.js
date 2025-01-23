@@ -3,7 +3,7 @@ const dayjs = require('dayjs')
 
 const BASIC_TOKEN = 'N2JjNWNjMTEtYWFiNi00ZmRlLTk0MTQtOThmOGNkYmY2NGI0'
 
-let session
+let session;
 
 const API_ENDPOINT = 'https://skgo.magio.tv/v2/television'
 
@@ -13,8 +13,8 @@ module.exports = {
   request: {
     async headers() {
       if (!session) {
-        session = await loadSessionDetails()
-        if (!session || !session.access_token) return null
+        session = await loadSessionDetails();
+        if (!session || !session.access_token) return null;
       }
 
       return {
@@ -61,6 +61,14 @@ module.exports = {
     }
   },
   async channels() {
+    if (!session || !session.access_token) {
+      session = await loadSessionDetails();
+      if (!session || !session.access_token) {
+        console.error('Error: Unable to retrieve session or access_token.');
+        return [];
+      }
+    }
+
     const data = await axios
       .get(`${API_ENDPOINT}/channels?list=LIVE&queryScope=LIVE`, {
         headers: {
