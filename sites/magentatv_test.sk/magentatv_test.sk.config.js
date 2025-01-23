@@ -4,7 +4,7 @@ const dayjs = require('dayjs')
 const BASIC_TOKEN =
   'N2JjNWNjMTEtYWFiNi00ZmRlLTk0MTQtOThmOGNkYmY2NGI0'
 
-let session
+let session;
 
 const API_ENDPOINT = 'https://skgo.magio.tv/v2/television'
 
@@ -15,13 +15,13 @@ module.exports = {
   request: {
     async headers() {
       if (!session) {
-        session = await loadSessionDetails()
+        session = await loadSessionDetails();
         if (!session || !session.access_token) return null
       }
 
       return {
         Authorization: `Bearer ${session.access_token}`,
-		    Referer: 'https://magiogo.sk/',
+	Referer: 'https://magiogo.sk/',
         Origin: 'https://magiogo.sk'
       }
     },
@@ -67,7 +67,7 @@ module.exports = {
           {
             headers: {
               Authorization: `Bearer ${session.access_token}`,
-		          Referer: 'https://magiogo.sk/',
+	      Referer: 'https://magiogo.sk/',
               Origin: 'https://magiogo.sk'
             }
           }
@@ -88,7 +88,7 @@ module.exports = {
 function loadSessionDetails() {
   return axios
     .post(
-      'https://skgo.magio.tv/v2/auth/init',
+      'https://skgo.magio.tv/v2/auth/init?dsid=Netscape.1737643104902.0.3476842042868087&deviceName=Web%20Browser&deviceType=OTT_WIN&osVersion=0.0.0&appVersion=4.0.21-hf.0&language=SK',
       {},
       {
         params: {
@@ -97,7 +97,7 @@ function loadSessionDetails() {
 		headers: {
 		  'Referer': 'https://magiogo.sk/',
 		  'Origin': 'https://magiogo.sk',
-      'Pragma': 'no-cache',
+                  'Pragma': 'no-cache',
 		  'User-Agent': 'UA',
 		  'Sec-Fetch-Mode': 'cors',
 		  'Sec-Fetch-Site': 'cross-site'
