@@ -1,10 +1,10 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-STREAM-INF:BANDWIDTH=3300000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720
-https://llhls-live.akamaized.net/exp=1737623705~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=c30bf69e31a49354bab82b5e6e8b7470f5c5fb0338ad23d96279f0c8a993aacf/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b3000000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1737630723~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=ffb377e7d8cd98d9c210f32a5623c5e82e6125344d7ab9d2251627dd45bef658/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b3000000_cmaf_v.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2100000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x540
-https://llhls-live.akamaized.net/exp=1737623705~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=c30bf69e31a49354bab82b5e6e8b7470f5c5fb0338ad23d96279f0c8a993aacf/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b1800000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1737630723~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=ffb377e7d8cd98d9c210f32a5623c5e82e6125344d7ab9d2251627dd45bef658/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b1800000_cmaf_v.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=730000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360
-https://llhls-live.akamaized.net/exp=1737623705~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=c30bf69e31a49354bab82b5e6e8b7470f5c5fb0338ad23d96279f0c8a993aacf/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b600000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1737630723~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=ffb377e7d8cd98d9c210f32a5623c5e82e6125344d7ab9d2251627dd45bef658/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b600000_cmaf_v.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=420000,CODECS="avc1.640015,mp4a.40.5",RESOLUTION=426x240
-https://llhls-live.akamaized.net/exp=1737623705~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=c30bf69e31a49354bab82b5e6e8b7470f5c5fb0338ad23d96279f0c8a993aacf/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b360000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1737630723~acl=%2F8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls%2F%2A~hmac=ffb377e7d8cd98d9c210f32a5623c5e82e6125344d7ab9d2251627dd45bef658/8b6a0d2f-116b-4ec3-8d77-e385cbed6136_llhls/chunklist_b360000_cmaf_v.m3u8
