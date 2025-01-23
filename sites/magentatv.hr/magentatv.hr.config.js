@@ -34,7 +34,7 @@ module.exports = {
     let items = parseItems(JSON.parse(content), channel)
     if (!items.length) return programs
 
-    const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
+    const promises = [18, 21].map(i =>
       axios.get(
         `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
       'YYYY-MM-DD'
@@ -92,7 +92,7 @@ module.exports = {
 
 async function loadProgramDetails(item) {
   if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=hr`
+  const url = `${API_ENDPOINT}/details/program/${item.program_id}?natco_code=hr`
   const data = await axios
     .get(url, { headers })
     .then(r => r.data)
