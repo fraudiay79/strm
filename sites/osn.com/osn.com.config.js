@@ -91,23 +91,14 @@ async function loadProgramDetails(item) {
 }
 
 function parseSubtitle(item, channel) {
-  if (channel.lang === 'ar' && !item.EpisodeAr || !item.EpisodeEn) {
-    return null
-  }
   return channel.lang === 'ar' ? item.EpisodeAr : item.EpisodeEn
 }
 
 function parseDescription(item, channel) {
-  if (channel.lang === 'ar' && !item.Arab_Synopsis || !item.Synopsis) {
-    return null
-  }
   return channel.lang === 'ar' ? item.Arab_Synopsis : item.Synopsis
 }
 
 function parseCategory(item, channel) {
-  if (channel.lang === 'ar' && !item.GenreArabicName || !item.GenreEnglishName) {
-    return null
-  }
   return channel.lang === 'ar' ? item.GenreArabicName : item.GenreEnglishName
 }
 
