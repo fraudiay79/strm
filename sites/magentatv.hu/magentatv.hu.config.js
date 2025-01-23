@@ -19,7 +19,7 @@ module.exports = {
   request: {
     headers,
     cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
+      ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
   url: function ({ channel, date }) {
@@ -76,17 +76,18 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`${API_ENDPOINT}/epg/channel?channelMap_id=&natco_key=Tydx7H7fJO6HxgjvJok0ZhVWFmX3om0P&app_language=hu&natco_code=hu`, { headers })
+      .get(
+        'https://tv-hu-prod.yo-digital.com/hu-bifrost/epg/channel?channelMap_id=&natco_key=Tydx7H7fJO6HxgjvJok0ZhVWFmX3om0P&app_language=hu&natco_code=hu',
+        module.exports.request
+      )
       .then(r => r.data)
-      .catch(console.log)
+      .catch(console.error)
 
-    return data.channels.map(item => {
-      return {
-        lang: 'hu',
-        site_id: item.station_id,
-        name: item.title
-      }
-    })
+    return data.channels.map(channel => ({
+      lang: 'hu',
+      name: channel.title,
+      site_id: channel.station_id
+    }))
   }
 }
 
