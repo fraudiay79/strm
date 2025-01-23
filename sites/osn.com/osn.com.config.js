@@ -26,7 +26,7 @@ module.exports = {
       }
     }
   },
-  parser({ content, channel }) {
+  async parser({ content, channel }) {
     const programs = []
     const items = JSON.parse(content) || []
     if (Array.isArray(items)) {
