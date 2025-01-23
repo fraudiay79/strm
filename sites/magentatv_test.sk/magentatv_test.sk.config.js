@@ -92,7 +92,7 @@ module.exports = {
 
 async function loadSessionDetails() {
   return axios
-    .post('https://skgo.magio.tv/v2/auth/init?dsid=Netscape.1737643104902.0.3476842042868087&deviceName=Web%20Browser&deviceType=OTT_WIN&osVersion=0.0.0&appVersion=4.0.21-hf.0&language=SK', {}, {
+    .post('https://skgo.magio.tv/v2/auth/init', {}, {
       params: {
         "refreshToken": `${BASIC_TOKEN}`
       },
@@ -100,7 +100,7 @@ async function loadSessionDetails() {
         'Referer': 'https://magiogo.sk/',
         'Origin': 'https://magiogo.sk',
         'Pragma': 'no-cache',
-        'User-Agent': 'UA',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
         'Sec-Fetch-Mode': 'cors',
         'Sec-Fetch-Site': 'cross-site'
       }
