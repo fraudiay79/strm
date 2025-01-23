@@ -1,13 +1,11 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
-const BASIC_TOKEN =
-  'N2JjNWNjMTEtYWFiNi00ZmRlLTk0MTQtOThmOGNkYmY2NGI0'
+const BASIC_TOKEN = 'N2JjNWNjMTEtYWFiNi00ZmRlLTk0MTQtOThmOGNkYmY2NGI0'
 
-let session;
+let session
 
 const API_ENDPOINT = 'https://skgo.magio.tv/v2/television'
-
 
 module.exports = {
   site: 'magentatv_test.sk',
@@ -15,18 +13,19 @@ module.exports = {
   request: {
     async headers() {
       if (!session) {
-        session = await loadSessionDetails();
+        session = await loadSessionDetails()
         if (!session || !session.access_token) return null
       }
 
       return {
         Authorization: `Bearer ${session.access_token}`,
-	Referer: 'https://magiogo.sk/',
+        Referer: 'https://magiogo.sk/',
         Origin: 'https://magiogo.sk'
       }
     },
-	cache: {
+    cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
+    }
   },
   url({ channel, date }) {
     return `${API_ENDPOINT}/epg?filter=channel.id=in=(${channel.site_id});startTime=ge=${date.format('YYYY-MM-DDTHH:mm:ss.000')};startTime=le=${date.add(1, 'days').subtract(1, 's').format('YYYY-MM-DDTHH:mm:ss.000')}&lang=SK`
@@ -63,15 +62,13 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`${API_ENDPOINT}/channels?list=LIVE&queryScope=LIVE`,
-          {
-            headers: {
-              Authorization: `Bearer ${session.access_token}`,
-	      Referer: 'https://magiogo.sk/',
-              Origin: 'https://magiogo.sk'
-            }
-          }
-        )
+      .get(`${API_ENDPOINT}/channels?list=LIVE&queryScope=LIVE`, {
+        headers: {
+          Authorization: `Bearer ${session.access_token}`,
+          Referer: 'https://magiogo.sk/',
+          Origin: 'https://magiogo.sk'
+        }
+      })
       .then(r => r.data)
       .catch(console.log)
 
@@ -85,25 +82,21 @@ module.exports = {
   }
 }
 
-function loadSessionDetails() {
+async function loadSessionDetails() {
   return axios
-    .post(
-      'https://skgo.magio.tv/v2/auth/init?dsid=Netscape.1737643104902.0.3476842042868087&deviceName=Web%20Browser&deviceType=OTT_WIN&osVersion=0.0.0&appVersion=4.0.21-hf.0&language=SK',
-      {},
-      {
-        params: {
-		  "refreshToken": `${BASIC_TOKEN}`
-		  },
-		headers: {
-		  'Referer': 'https://magiogo.sk/',
-		  'Origin': 'https://magiogo.sk',
-                  'Pragma': 'no-cache',
-		  'User-Agent': 'UA',
-		  'Sec-Fetch-Mode': 'cors',
-		  'Sec-Fetch-Site': 'cross-site'
-        }
+    .post('https://skgo.magio.tv/v2/auth/init?dsid=Netscape.1737643104902.0.3476842042868087&deviceName=Web%20Browser&deviceType=OTT_WIN&osVersion=0.0.0&appVersion=4.0.21-hf.0&language=SK', {}, {
+      params: {
+        "refreshToken": `${BASIC_TOKEN}`
+      },
+      headers: {
+        'Referer': 'https://magiogo.sk/',
+        'Origin': 'https://magiogo.sk',
+        'Pragma': 'no-cache',
+        'User-Agent': 'UA',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'cross-site'
       }
-    )
+    })
     .then(r => r.data)
     .catch(error => {
       console.error('Error loading session details:', error)
