@@ -22,10 +22,10 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url: function ({ channel, date }) {
-    return `${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=${
-      channel.site_id
-    }&date=${date.format('YYYY-MM-DD')}&hour_offset=${date.format('H')}&hour_range=3&natco_code=pl`
+  url({ date }) {
+    return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
+      'YYYY-MM-DD'
+    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=pl&natco_code=pl`
   },
   async parser({ content, channel, date }) {
     let programs = []
@@ -36,9 +36,9 @@ module.exports = {
 
     const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
       axios.get(
-        `${API_ENDPOINT}/epg/channel/schedules/v2?station_ids=${channel.site_id}&date=${date.format(
-          'YYYY-MM-DD'
-        )}&hour_offset=${i}&hour_range=3&natco_code=pl`,
+        `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
+      'YYYY-MM-DD'
+    )}&hour_offset=${i}&hour_range=3&natco_code=pl`,
         { headers }
       )
     )
