@@ -32,7 +32,7 @@ module.exports = {
             programs.push({
               title: item.Title,
               description: item.Description || 'No description available',
-              category: item.Genres.join(', ') || null,
+              category: item.Genres?.join(', ') || null,
               icon: item.Icon,
               start,
               stop
