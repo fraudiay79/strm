@@ -82,7 +82,7 @@ module.exports = {
 
     return data.channels.map(item => {
       return {
-        lang: 'pl',
+        lang: 'de',
         site_id: item.station_id,
         name: item.title
       }
