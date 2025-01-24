@@ -119,7 +119,7 @@ function parseItems(content) {
 function loadSessionDetails() {
   return axios
     .post(`${API_ENDPOINT}/session`, {
-      sapiToken: 'sol:2:TfBJ4XZ0-3a5uhbDUlr8MZyEIcvR34GuXevPAhTWsRk:e3RzOjE3Mzc3NDQ4MjU1OTAsdToiMGViM2Y1MjAtN2Q2YS1lYTVhLTI1MDUtYzMwNWE1MzAxNjJhIn0',
+      sapiToken: 'sol:2:-DmwiBqyNxxdjNXD_nAfcpy86T_H2I5G6jXePIFHxlo:e3RzOjE3Mzc3NDU3Nzc4NDAsdToiMGViM2Y1MjAtN2Q2YS1lYTVhLTI1MDUtYzMwNWE1MzAxNjJhIn0',
       osVersion: 'Windows 10',
       deviceModel: 'Chrome',
       deviceType: 'PC',
@@ -131,7 +131,7 @@ function loadSessionDetails() {
       brand: 'oro',
       memberId: '0',
       featureLevel: 6,
-      provisionData: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJiciI6Im9ybyIsImlhdCI6MTczNzc0NDgyMywiZHMiOiJ3YTA0MmYxNzAtYzE5ZS0xMWVmLTg1YmQtNGJiOGE1MTllMDgxIiwidXAiOiJzb2wiLCJpYyI6dHJ1ZSwiZGUiOiJicmFuZE1hcHBpbmcifQ.cULbH2hy1SGC8U8Z51U30PeCM8nJS8fX8DhZvr6D3Gc'
+      provisionData: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkcyI6IndhMDQyZjE3MC1jMTllLTExZWYtODViZC00YmI4YTUxOWUwODEiLCJpYXQiOjE3Mzc3NDU3NzUsImljIjp0cnVlLCJ1cCI6InNvbCIsImRlIjoiYnJhbmRNYXBwaW5nIiwiYnIiOiJvcm8ifQ.lMhIxSt399T-XElxLa28tEeaHHx4E4aTJ1zPsita2Sc'
     })
     .then(r => r.data)
     .catch(console.log)
