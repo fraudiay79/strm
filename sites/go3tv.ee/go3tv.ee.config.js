@@ -42,7 +42,7 @@ module.exports = {
       icon: program.images && program.images.android_tv && program.images.android_tv.length > 0 ? 'https:' + program.images.android_tv[0].miniUrl : ''
     }))
   },
-async function getChannels() {
+async channels() {
   try {
     const response = await axios.get('https://go3.tv/api/products/sections/v2/live_tv?platform=BROWSER&lang=EE&tenant=OM_EE')
     const data = response.data
