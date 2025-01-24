@@ -35,9 +35,9 @@ module.exports = {
       }
     }
   },
-  parser: async function ({ content, date }) {
+  parser: async function ({ content }) {
     let programs = []
-    const items = parseItems(content, date)
+    const items = JSON.parse(content)
 
     for (let item of items) {
       const detail = await loadProgramDetails(item)
@@ -109,26 +109,6 @@ function parseImages(item) {
 function parseRoles(detail, role_name) {
   if (!detail.params || !detail.params.credits) return null
   return detail.params.credits.filter(role => role.role === role_name).map(role => role.person)
-}
-
-function parseItems(content, date) {
-  try {
-    if (!content || !content.epg) return []
-
-    const items = []
-    Object.keys(content.epg).forEach(channelId => {
-      content.epg[channelId].forEach(program => {
-        if (program?.params?.start && date.isSame(dayjs.utc(program.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]'), 'd')) {
-          items.push(program)
-        }
-      })
-    })
-
-    return items
-  } catch (err) {
-    console.log(err)
-    return []
-  }
 }
 
 function loadSessionDetails() {
