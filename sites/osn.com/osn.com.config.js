@@ -28,10 +28,13 @@ module.exports = {
     }
   },
   async parser({ content, channel }) {
-    const programs = []
-    const items = JSON.parse(content) || []
-    if (Array.isArray(items)) {
-      for (const item of items) {
+    let programs = []
+    if (!content) return programs
+
+    let items = JSON.parse(content)
+    if (!items.length) return programs
+    
+      for (let item of items) {
         const detail = await loadProgramDetails(item)
         const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
         const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
@@ -50,7 +53,6 @@ module.exports = {
           stop 
         })
       }
-    }
 
     return programs
   },
