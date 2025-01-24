@@ -29,7 +29,9 @@ module.exports = {
       }
 
       return {
-        authorization: `Bearer ${session.token}`
+        Authorization: `Bearer ${session.token}`,
+        Origin: 'https://livetv.focussat.ro',
+        Referer: 'https://livetv.focussat.ro/'
       }
     }
   },
@@ -65,7 +67,7 @@ module.exports = {
     const data = await axios
       .get(`${API_ENDPOINT}/bouquet`, {
         headers: {
-          Authorization: `Bearer ${session.access_token}`
+          Authorization: `Bearer ${session.token}`
         }
       })
       .then(r => r.data)
