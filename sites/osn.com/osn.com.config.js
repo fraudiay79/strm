@@ -31,19 +31,19 @@ module.exports = {
     const programs = []
     const items = JSON.parse(content) || []
     for (const item of items) {
+      const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
       const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
       const duration = parseInt(item.TotalDivWidth / 4.8)
       const stop = start.add(duration, 'm')
       const details = await loadProgramDetails(item)
       programs.push({
-        title: details.title,
+        title,
         description: details.description,
         icon: details.icon,
         category: details.category,
         sub_title: details.sub_title,
         season: details.season,
         episode: details.episode,
-        year: details.date,
         start,
         stop
       })
@@ -94,22 +94,18 @@ async function loadProgramDetails(item) {
     return {}
   }
   
-  const title = item.lang === 'ar' ? jsonData.Arab_Title : jsonData.Title
   const subTitle = item.lang === 'ar' ? jsonData.EpisodeAr : jsonData.EpisodeEn
   const description = item.lang === 'ar' ? jsonData.Arab_Synopsis : jsonData.Synopsis
   const category = item.lang === 'ar' ? jsonData.GenreArabicName : jsonData.GenreEnglishName
   const imageUrl = jsonData.ProgramImage
   const season = jsonData.SeasonNo
   const episode = jsonData.EpisodeNo
-  const year = jsonData.Year
   
   return {
-    title: title,
     icon: imageUrl,
     description: description,
     category: category,
     sub_title: subTitle,
-    date: year,
     season: season,
     episode: episode
   }
