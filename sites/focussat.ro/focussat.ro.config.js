@@ -3,7 +3,6 @@ const axios = require('axios')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const doFetch = require('@ntlab/sfetch')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -16,6 +15,7 @@ let session
 module.exports = {
   site: 'focussat.ro',
   days: 2,
+  delay: 5000,
   url({ channel, date }) {
     return `${API_ENDPOINT}/schedule?channels=${
       channel.site_id
