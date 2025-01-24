@@ -50,11 +50,13 @@ module.exports = {
       .then(r => r.data)
       .catch(console.log)
 
+    // Map through the elements array within sections
     return data.sections[0].elements.map(element => {
+      const { id, title } = element.item
       return {
         lang: 'ee',
-        site_id: element.item.id,
-        name: element.item.title
+        site_id: id,
+        name: title
       }
     })
   } catch (error) {
@@ -62,4 +64,5 @@ module.exports = {
     return []
   }
 }
+
 }
