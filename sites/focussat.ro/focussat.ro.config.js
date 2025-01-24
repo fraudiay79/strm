@@ -111,11 +111,18 @@ function parseRoles(detail, role_name) {
 
 function parseItems(content, date) {
   try {
-    if (!content || !Array.isArray(content.assets)) return []
+    if (!content || !content.epg) return []
 
-    return content.assets.filter(
-      p => p?.params?.start && date.isSame(dayjs.utc(p.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]'), 'd')
-    )
+    const items = []
+    Object.keys(content.epg).forEach(channelId => {
+      content.epg[channelId].forEach(program => {
+        if (program?.params?.start && date.isSame(dayjs.utc(program.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]'), 'd')) {
+          items.push(program)
+        }
+      })
+    })
+
+    return items
   } catch (err) {
     console.log(err)
     return []
