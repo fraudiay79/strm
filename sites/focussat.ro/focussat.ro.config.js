@@ -82,7 +82,9 @@ async function loadProgramDetails(item) {
   if (!item.program_id) return {}
   const url = `${API_ENDPOINT}/assets/${item.program_id}`
   const data = await axios
-    .get(url, { headers: getHeaders() })
+    .get(url, { headers: {
+            Authorization: `Bearer ${session.access_token}`
+          } })
     .then(r => r.data)
     .catch(error => {
       console.log(error)
