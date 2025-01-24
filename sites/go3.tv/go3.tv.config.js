@@ -32,7 +32,8 @@ module.exports = {
       try {
         const response = await axios.get(url)
         const data = response.data
-        if (Array.isArray(data) && data.length > 0 && data[0].description) {
+        
+        if (Array.isArray(data) && data.length > 0 && typeof data[0].description === 'string') {
           return this.parseEPGData(data)
         }
       } catch (error) {
