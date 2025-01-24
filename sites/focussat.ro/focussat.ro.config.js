@@ -82,7 +82,9 @@ async function loadProgramDetails(item) {
   const url = `${API_ENDPOINT}/assets/${item.program_id}`
   const data = await axios
     .get(url, { headers: {
-            Authorization: `Bearer ${session.access_token}`
+            Authorization: `Bearer ${session.access_token}`,
+            Origin: 'https://livetv.focussat.ro',
+            Referer: 'https://livetv.focussat.ro/'
           } })
     .then(r => r.data)
     .catch(error => {
