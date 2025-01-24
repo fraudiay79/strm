@@ -26,14 +26,20 @@ module.exports = {
       `https://go3.tv/api/products/lives/programmes?liveId[]=${channel.site_id}&since=${since}&till=${till}&platform=BROWSER`
     ]
   },
-  async parser({ content }) {
-    try {
-      const data = JSON.parse(content)
-      return this.parseEPGData(data)
-    } catch (error) {
-      console.error('Error parsing EPG data:', error)
-      return []
+  async parser({ content, channel }) {
+    const urls = this.url({ channel, date: dayjs() })
+    for (const url of urls) {
+      try {
+        const response = await axios.get(url)
+        const data = response.data
+        if (data.length > 0 && data[0].description) {
+          return this.parseEPGData(data)
+        }
+      } catch (error) {
+        console.error(`Error fetching EPG data from ${url}:`, error)
+      }
     }
+    return []
   },
   parseEPGData(data) {
     return data.map(program => ({
