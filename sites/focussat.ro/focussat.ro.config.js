@@ -39,14 +39,14 @@ module.exports = {
     let programs = []
     const items = parseItems(content, date)
     for (const item of items) {
-      const detail = await loadProgramDetails(item)
+      //const detail = await loadProgramDetails(item)
       programs.push({
         title: item.title,
-        description: detail.desc,
+        //description: detail.desc,
         categories: parseCategories(item),
         icon: parseImages(item),
-        actors: parseRoles(detail, 'Actor'),
-        directors: parseRoles(detail, 'Director'),
+        //actors: parseRoles(detail, 'Actor'),
+        //directors: parseRoles(detail, 'Director'),
         season: item.params ? item.params.seriesSeason : null,
         episode: item.params ? item.params.seriesEpisode : null,
         start: item?.params?.start ? dayjs.utc(item.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]') : null,
