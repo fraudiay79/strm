@@ -33,12 +33,12 @@ module.exports = {
     if (Array.isArray(items)) {
       for (const item of items) {
         const detail = await loadProgramDetails(item)
-        const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
+        //const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
         const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
         const duration = parseInt(item.TotalDivWidth / 4.8)
         const stop = start.add(duration, 'm')
         programs.push({ 
-          title,
+          title: parseTitle(detail, channel),
           subtitle: parseSubtitle(detail, channel),
           description: parseDescription(detail, channel),
           date: parseDate(detail),
@@ -88,6 +88,10 @@ async function loadProgramDetails(item) {
     .catch(console.log)
 
   return data || {}
+}
+
+function parseTitle(detail, channel) {
+  return channel.lang === 'ar' ? detail.Arab_Title : detail.Title
 }
 
 function parseSubtitle(detail, channel) {
