@@ -28,13 +28,10 @@ module.exports = {
     }
   },
   async parser({ content, channel }) {
-    let programs = []
-    if (!content) return programs
-
-    let items = JSON.parse(content)
-    if (!items.length) return programs
-    
-      for (let item of items) {
+    const programs = []
+    const items = JSON.parse(content) || []
+    if (Array.isArray(items)) {
+      for (const item of items) {
         const detail = await loadProgramDetails(item)
         const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
         const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
@@ -44,7 +41,7 @@ module.exports = {
           title,
           subtitle: parseSubtitle(detail, channel),
           description: parseDescription(detail, channel),
-          date: parseDate(item),
+          date: parseDate(detail),
           category: parseCategory(detail, channel),
           icon: parseImage(detail),
           season: parseSeason(detail),
@@ -53,6 +50,7 @@ module.exports = {
           stop 
         })
       }
+    }
 
     return programs
   },
@@ -92,30 +90,30 @@ async function loadProgramDetails(item) {
   return data || {}
 }
 
-function parseSubtitle(item, channel) {
-  return channel.lang === 'ar' ? item.EpisodeAr : item.EpisodeEn
+function parseSubtitle(detail, channel) {
+  return channel.lang === 'ar' ? detail.EpisodeAr : detail.EpisodeEn
 }
 
-function parseDescription(item, channel) {
-  return channel.lang === 'ar' ? item.Arab_Synopsis : item.Synopsis
+function parseDescription(detail, channel) {
+  return channel.lang === 'ar' ? detail.Arab_Synopsis : detail.Synopsis
 }
 
-function parseCategory(item, channel) {
-  return channel.lang === 'ar' ? item.GenreArabicName : item.GenreEnglishName
+function parseCategory(detail, channel) {
+  return channel.lang === 'ar' ? detail.GenreArabicName : detail.GenreEnglishName
 }
 
-function parseSeason(item) {
-  return item.SeasonNo
+function parseSeason(detail) {
+  return detail.SeasonNo
 }
 
-function parseEpisode(item) {
-  return item.EpisodeNo
+function parseEpisode(detail) {
+  return detail.EpisodeNo
 }
 
-function parseDate(item) {
-  return item && item.Year ? item.Year.toString() : null
+function parseDate(detail) {
+  return detail && detail.Year ? detail.Year.toString() : null
 }
 
-function parseImage(item) {
-  return item.ProgramImage
+function parseImage(detail) {
+  return detail.ProgramImage
 }
