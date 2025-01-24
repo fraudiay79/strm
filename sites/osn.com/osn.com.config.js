@@ -84,12 +84,20 @@ async function loadProgramDetails(item) {
     .then(r => r.data)
     .catch(console.log)
 
-  const jsonData = JSON.parse(data)
+  if (!data || typeof data !== 'string') return {}
+
+  let jsonData
+  try {
+    jsonData = JSON.parse(data)
+  } catch (error) {
+    console.error('Error parsing JSON:', error)
+    return {}
+  }
   
-  const title = channel.lang === 'ar' ? jsonData.Arab_Title : jsonData.Title
-  const subTitle = channel.lang === 'ar' ? jsonData.EpisodeAr : jsonData.EpisodeEn
-  const description = channel.lang === 'ar' ? jsonData.Arab_Synopsis : jsonData.Synopsis
-  const category = channel.lang === 'ar' ? jsonData.GenreArabicName : jsonData.GenreEnglishName
+  const title = item.lang === 'ar' ? jsonData.Arab_Title : jsonData.Title
+  const subTitle = item.lang === 'ar' ? jsonData.EpisodeAr : jsonData.EpisodeEn
+  const description = item.lang === 'ar' ? jsonData.Arab_Synopsis : jsonData.Synopsis
+  const category = item.lang === 'ar' ? jsonData.GenreArabicName : jsonData.GenreEnglishName
   const imageUrl = jsonData.ProgramImage
   const season = jsonData.SeasonNo
   const episode = jsonData.EpisodeNo
