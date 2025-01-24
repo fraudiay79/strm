@@ -43,18 +43,23 @@ module.exports = {
     }))
   },
   async channels() {
-    const axios = require('axios')
+  const axios = require('axios')
+  try {
     const data = await axios
-      .get(`https://go3.tv/api/products/sections/v2/live_tv?platform=BROWSER&lang=EE&tenant=OM_EE`)
+      .get('https://go3.tv/api/products/sections/v2/live_tv?platform=BROWSER&lang=EE&tenant=OM_EE')
       .then(r => r.data)
       .catch(console.log)
 
-    return data.elements.item.map(chl => {
+    return data.sections[0].elements.map(element => {
       return {
         lang: 'ee',
-        site_id: chl.id,
-        name: chl.title
+        site_id: element.item.id,
+        name: element.item.title
       }
     })
+  } catch (error) {
+    console.error('Error fetching channels:', error)
+    return []
   }
+}
 }
