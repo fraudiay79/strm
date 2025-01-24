@@ -113,7 +113,8 @@ function parseRoles(detail, role_name) {
 }
 
 function parseItems(content) {
-  return JSON.parse(content) || []
+  const parsed = JSON.parse(content)
+  return Array.isArray(parsed) ? parsed : []
 }
 
 function loadSessionDetails() {
