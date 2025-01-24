@@ -80,8 +80,8 @@ module.exports = {
 }
 
 async function loadProgramDetails(item) {
-  if (!item.program_id) return {}
-  const url = `https://www.osn.com/api/TVScheduleWebService.asmx/GetProgramDetails?prgmEPGUNIQID=${item.program_id}&countryCode=SA`
+  if (!item.EPGUNIQID) return {}
+  const url = `https://www.osn.com/api/TVScheduleWebService.asmx/GetProgramDetails?prgmEPGUNIQID=${item.EPGUNIQID}&countryCode=SA`
   const data = await axios
     .get(url, { headers })
     .then(r => r.data)
