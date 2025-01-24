@@ -73,10 +73,10 @@ module.exports = {
       .then(r => r.data)
       .catch(console.error)
 
-    return data.channels.assetInfo.map(item => ({
+    return data.channels.map(item => ({
       lang: 'ro',
-      site_id: item.id,
-      name: item.title
+      site_id: item.assetInfo.id,
+      name: item.assetInfo.title
     }))
   }
 }
