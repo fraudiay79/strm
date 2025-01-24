@@ -45,11 +45,12 @@ module.exports = {
   async channels() {
     try {
       const response = await axios.get('https://go3.tv/api/products/sections/v2/live_tv?platform=BROWSER&lang=EE&tenant=OM_EE')
-      return response.data.sections[0].items.map(item => ({
+      const channels = response.data.sections[0].elements.map(element => ({
         lang: 'ee',
-        name: item.title,
-        site_id: item.id
-      }));
+        name: element.item.title,
+        site_id: element.item.id,
+      }))
+      return channels
     } catch (error) {
       console.error('Error fetching channels:', error)
       return []
