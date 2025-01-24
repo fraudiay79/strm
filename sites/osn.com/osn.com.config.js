@@ -54,12 +54,16 @@ module.exports = {
   async channels({ lang = 'ar' }) {
     const result = {}
     for (const pkg of Object.values(packages)) {
-      const channels = await axios
-        .get(`https://www.osn.com/api/tvchannels.ashx?culture=en-US&packageId=${pkg}&country=${country}`)
-        .then(response => response.data)
-        .catch(console.error)
+      let page = 1
+      let hasMorePages = true
 
-      if (Array.isArray(channels)) {
+      while (hasMorePages) {
+        const channels = await axios
+          .get(`https://www.osn.com/api/TVScheduleWebService.asmx/chnl?pg=${page}&pk=${pkg}&gn=0&cu=en-US&bx=2&dt=${encodeURIComponent(date.format('MM/DD/YYYY'))}`)
+          .then(response => response.data)
+          .catch(console.error)
+
+      if (Array.isArray(channels) && channels.length > 0) {
         for (const ch of channels) {
           if (result[ch.channelCode] === undefined) {
             result[ch.channelCode] = {
@@ -69,7 +73,11 @@ module.exports = {
             }
           }
         }
+        page++
+      } else {
+        hasMorePages = false
       }
+    }
     }
 
     return Object.values(result)
