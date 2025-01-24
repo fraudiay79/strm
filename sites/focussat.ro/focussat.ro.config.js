@@ -49,8 +49,8 @@ module.exports = {
         directors: parseRoles(detail, 'Director') || [],
         season: item.params ? item.params.seriesSeason : null,
         episode: item.params ? item.params.seriesEpisode : null,
-        start: item?.params?.start ? dayjs.utc(item.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]') : null,
-        stop: item?.params?.end ? dayjs.utc(item.params.end, 'YYYY-MM-DDTHH:mm:ss[Z]') : null
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     }
 
@@ -105,6 +105,14 @@ function parseImages(item) {
         .filter(i => i.type === 'la')
         .map(i => `${i.url}&w=460&h=260`)
     : []
+}
+
+function parseStart(item) {
+  return item?.params?.start ? dayjs.utc(item.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]') : null
+}
+
+function parseStop(item) {
+  return item?.params?.end ? dayjs.utc(item.params.end, 'YYYY-MM-DDTHH:mm:ss[Z]') : null
 }
 
 function parseRoles(detail, role_name) {
