@@ -119,7 +119,7 @@ function parseItems(content) {
 function loadSessionDetails() {
   return axios
     .post(`${API_ENDPOINT}/session`, {
-      sapiToken: 'sol:2:-DmwiBqyNxxdjNXD_nAfcpy86T_H2I5G6jXePIFHxlo:e3RzOjE3Mzc3NDU3Nzc4NDAsdToiMGViM2Y1MjAtN2Q2YS1lYTVhLTI1MDUtYzMwNWE1MzAxNjJhIn0',
+      sapiToken: 'sol:2:b3ljZea8QhXw7l-0b5Vf60ZFpFCfaedBz5w3wehIY1k:e3RzOjE3Mzc3NDYxODE5NzUsdToiMGViM2Y1MjAtN2Q2YS1lYTVhLTI1MDUtYzMwNWE1MzAxNjJhIn0',
       osVersion: 'Windows 10',
       deviceModel: 'Chrome',
       deviceType: 'PC',
