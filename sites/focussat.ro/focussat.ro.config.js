@@ -78,8 +78,8 @@ module.exports = {
 }
 
 async function loadProgramDetails(item) {
-  if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/assets/${item.program_id}`
+  if (!item.id) return {}
+  const url = `${API_ENDPOINT}/assets/${item.id}`
   const data = await axios
     .get(url, { headers: {
             Authorization: `Bearer ${session.access_token}`,
