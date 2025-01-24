@@ -27,29 +27,26 @@ module.exports = {
       }
     }
   },
-  async parser({ content, channel }) {
+  parser: async function ({ content, channel }) {
     const programs = []
     const items = JSON.parse(content) || []
-    if (Array.isArray(items)) {
-      for (const item of items) {
-        const detail = await loadProgramDetails(item)
-        //const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
-        const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
-        const duration = parseInt(item.TotalDivWidth / 4.8)
-        const stop = start.add(duration, 'm')
-        programs.push({ 
-          title: parseTitle(detail, channel),
-          subtitle: parseSubtitle(detail, channel),
-          description: parseDescription(detail, channel),
-          date: parseDate(detail),
-          category: parseCategory(detail, channel),
-          icon: parseImage(detail),
-          season: parseSeason(detail),
-          episode: parseEpisode(detail),
-          start, 
-          stop 
-        })
-      }
+    for (const item of items) {
+      const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
+      const duration = parseInt(item.TotalDivWidth / 4.8)
+      const stop = start.add(duration, 'm')
+      const details = await loadProgramDetails(item)
+      programs.push({
+        title: details.title,
+        description: details.description,
+        icon: details.icon,
+        category: details.category,
+        sub_title: details.sub_title,
+        season: details.season,
+        episode: details.episode,
+        year: details.date,
+        start,
+        stop
+      })
     }
 
     return programs
@@ -87,37 +84,25 @@ async function loadProgramDetails(item) {
     .then(r => r.data)
     .catch(console.log)
 
-  return data || {}
-}
-
-function parseTitle(detail, channel) {
-  return channel.lang === 'ar' ? detail.Arab_Title : detail.Title
-}
-
-function parseSubtitle(detail, channel) {
-  return channel.lang === 'ar' ? detail.EpisodeAr : detail.EpisodeEn
-}
-
-function parseDescription(detail, channel) {
-  return channel.lang === 'ar' ? detail.Arab_Synopsis : detail.Synopsis
-}
-
-function parseCategory(detail, channel) {
-  return channel.lang === 'ar' ? detail.GenreArabicName : detail.GenreEnglishName
-}
-
-function parseSeason(detail) {
-  return detail.SeasonNo
-}
-
-function parseEpisode(detail) {
-  return detail.EpisodeNo
-}
-
-function parseDate(detail) {
-  return detail && detail.Year ? detail.Year.toString() : null
-}
-
-function parseImage(detail) {
-  return detail.ProgramImage
+  const jsonData = JSON.parse(data)
+  
+  const title = channel.lang === 'ar' ? jsonData.Arab_Title : jsonData.Title
+  const subTitle = channel.lang === 'ar' ? jsonData.EpisodeAr : jsonData.EpisodeEn
+  const description = channel.lang === 'ar' ? jsonData.Arab_Synopsis : jsonData.Synopsis
+  const category = channel.lang === 'ar' ? jsonData.GenreArabicName : jsonData.GenreEnglishName
+  const imageUrl = jsonData.ProgramImage
+  const season = jsonData.SeasonNo
+  const episode = jsonData.EpisodeNo
+  const year = jsonData.Year
+  
+  return {
+    title: title,
+    icon: imageUrl,
+    description: description,
+    category: category,
+    sub_title: subTitle,
+    date: year,
+    season: season,
+    episode: episode
+  }
 }
