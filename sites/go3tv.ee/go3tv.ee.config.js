@@ -47,17 +47,23 @@ async channels() {
     const response = await axios.get('https://go3.tv/api/products/sections/v2/live_tv?platform=BROWSER&lang=EE&tenant=OM_EE')
     const data = response.data
 
-    return data.sections[0].elements.map(element => {
-      const { id, title } = element.item
-      return {
-        site_id: id,
-        name: title
-      }
-    })
+    if (data.sections && data.sections.length > 0 && data.sections[0].elements) {
+      return data.sections[0].elements.map(element => {
+        const { id, title } = element.item
+        return {
+          site_id: id,
+          name: title
+        }
+      })
+    } else {
+      console.error('Error fetching channels: sections array is empty or does not contain elements')
+      return []
+    }
   } catch (error) {
     console.error('Error fetching channels:', error)
     return []
   }
 }
+
 
 }
