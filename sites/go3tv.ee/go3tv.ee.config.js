@@ -51,7 +51,7 @@ module.exports = {
       .catch(console.log)
 
     // Map through the elements array within sections
-    return data.sections[0].elements.map(element => {
+    return data.elements[0].item.map(element => {
       const { id, title } = element.item
       return {
         lang: 'ee',
