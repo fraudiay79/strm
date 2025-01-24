@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- movistarplus.es
-          #npm run channels:parse --- --config=./sites/movistarplus.es/movistarplus.es.config.js --output=./sites/movistarplus.es/movistarplus.es.channels.xml
+          #npm test --- go3tv.ee
+          npm run channels:parse --- --config=./sites/go3tv.ee/go3tv.ee.config.js --output=./sites/go3tv.ee/go3tv.ee.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=movistarplus.es --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          #npm run grab --- --site=go3tv.ee --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/allente.no.xml
-        #git add -f sites/movistarplus.es/movistarplus.es.channels.xml
+        #git add -f guides/allente.no.xml
+        git add -f sites/go3tv.ee/go3tv.ee.channels.xml
         git commit -m "Update xml"
         git push -f origin main
