@@ -35,12 +35,9 @@ module.exports = {
       }
     }
   },
-  async parser({ content, date }) {
+  parser: async function ({ content, date }) {
     let programs = []
-    if (!content) return programs
-
-    let items = parseItems(JSON.parse(content), date)
-    if (!items.length) return programs
+    const items = parseItems(content, date)
 
     for (let item of items) {
       const detail = await loadProgramDetails(item)
@@ -95,21 +92,21 @@ async function loadProgramDetails(item) {
   return data || {}
 }
 
-function parseCategories(item) {
-  return Array.isArray(item?.params?.genres) ? item.params.genres.map(i => i.title) : []
+function parseCategories(detail) {
+  return Array.isArray(detail?.params?.genres) ? detail.params.genres.map(i => i.title) : []
 }
 
-function parseImages(item) {
-  return Array.isArray(item?.images)
-    ? item.images
+function parseImages(detail) {
+  return Array.isArray(detail?.images)
+    ? detail.images
         .filter(i => i.type === 'la')
         .map(i => `${i.url}&w=460&h=260`)
     : []
 }
 
-function parseRoles(item, role_name) {
-  if (!item.params || !item.params.credits) return null
-  return item.params.credits.filter(role => role.role === role_name).map(role => role.person)
+function parseRoles(detail, role_name) {
+  if (!detail.params || !detail.params.credits) return null
+  return detail.params.credits.filter(role => role.role === role_name).map(role => role.person)
 }
 
 function parseItems(content, date) {
