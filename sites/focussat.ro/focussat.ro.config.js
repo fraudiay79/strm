@@ -42,16 +42,16 @@ module.exports = {
     for (let item of items) {
       const detail = await loadProgramDetails(item)
       programs.push({
-        title: detail.title,
+        title: item.title,
         description: detail.desc,
-        categories: parseCategories(detail),
-        icon: parseImages(detail),
+        categories: parseCategories(item),
+        icon: parseImages(item),
         actors: parseRoles(detail, 'Actor'),
         directors: parseRoles(detail, 'Director'),
-        season: detail.params ? detail.params.seriesSeason : null,
-        episode: detail.params ? detail.params.seriesEpisode : null,
-        start: detail?.params?.start ? dayjs.utc(detail.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]') : null,
-        stop: detail?.params?.end ? dayjs.utc(detail.params.end, 'YYYY-MM-DDTHH:mm:ss[Z]') : null
+        season: item.params ? item.params.seriesSeason : null,
+        episode: item.params ? item.params.seriesEpisode : null,
+        start: item?.params?.start ? dayjs.utc(item.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]') : null,
+        stop: item?.params?.end ? dayjs.utc(item.params.end, 'YYYY-MM-DDTHH:mm:ss[Z]') : null
       })
     }
 
@@ -92,13 +92,13 @@ async function loadProgramDetails(item) {
   return data || {}
 }
 
-function parseCategories(detail) {
-  return Array.isArray(detail?.params?.genres) ? detail.params.genres.map(i => i.title) : []
+function parseCategories(item) {
+  return Array.isArray(item?.params?.genres) ? item.params.genres.map(i => i.title) : []
 }
 
-function parseImages(detail) {
-  return Array.isArray(detail?.images)
-    ? detail.images
+function parseImages(item) {
+  return Array.isArray(item?.images)
+    ? item.images
         .filter(i => i.type === 'la')
         .map(i => `${i.url}&w=460&h=260`)
     : []
