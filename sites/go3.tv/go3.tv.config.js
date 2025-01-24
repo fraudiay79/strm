@@ -33,6 +33,10 @@ module.exports = {
         const response = await axios.get(url)
         const data = response.data
         
+        // Log and check types
+        console.log('Data:', data)
+        console.log('Description type:', typeof data[0]?.description)
+        
         if (Array.isArray(data) && data.length > 0 && typeof data[0].description === 'string') {
           return this.parseEPGData(data)
         }
