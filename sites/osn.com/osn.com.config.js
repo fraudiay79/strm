@@ -83,7 +83,7 @@ async function loadProgramDetails(item) {
   if (!item.program_id) return {}
   const url = `https://www.osn.com/api/TVScheduleWebService.asmx/GetProgramDetails?prgmEPGUNIQID=${item.program_id}&countryCode=SA`
   const data = await axios
-    .get(url)
+    .get(url, { headers })
     .then(r => r.data)
     .catch(console.log)
 
