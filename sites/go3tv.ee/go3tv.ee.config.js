@@ -42,19 +42,14 @@ module.exports = {
       icon: program.images && program.images.android_tv && program.images.android_tv.length > 0 ? 'https:' + program.images.android_tv[0].miniUrl : ''
     }))
   },
-  async channels() {
-  const axios = require('axios')
+async function getChannels() {
   try {
-    const data = await axios
-      .get('https://go3.tv/api/products/sections/v2/live_tv?platform=BROWSER&lang=EE&tenant=OM_EE')
-      .then(r => r.data)
-      .catch(console.log)
+    const response = await axios.get('https://go3.tv/api/products/sections/v2/live_tv?platform=BROWSER&lang=EE&tenant=OM_EE')
+    const data = response.data
 
-    // Map through the elements array within sections
-    return data.elements[0].item.map(element => {
+    return data.sections[0].elements.map(element => {
       const { id, title } = element.item
       return {
-        lang: 'ee',
         site_id: id,
         name: title
       }
