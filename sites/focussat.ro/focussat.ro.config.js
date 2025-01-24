@@ -35,18 +35,18 @@ module.exports = {
       }
     }
   },
-  parser: async function ({ content, date }) {
+  parser: async function ({ content }) {
     let programs = []
-    const items = parseItems(content, date)
+    const items = parseItems(content)
     for (const item of items) {
       const detail = await loadProgramDetails(item)
       programs.push({
         title: item.title,
-        description: detail.desc,
-        categories: parseCategories(item),
-        icon: parseImages(item),
-        actors: parseRoles(detail, 'Actor'),
-        directors: parseRoles(detail, 'Director'),
+        description: detail.desc || '',
+        categories: parseCategories(item) || [],
+        icon: parseImages(item) || [],
+        actors: parseRoles(detail, 'Actor') || [],
+        directors: parseRoles(detail, 'Director') || [],
         season: item.params ? item.params.seriesSeason : null,
         episode: item.params ? item.params.seriesEpisode : null,
         start: item?.params?.start ? dayjs.utc(item.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]') : null,
@@ -112,24 +112,8 @@ function parseRoles(detail, role_name) {
   return detail.params.credits.filter(role => role.role === role_name).map(role => role.person)
 }
 
-function parseItems(content, date) {
-  try {
-    if (!content || !content.epg) return []
-
-    const items = []
-    Object.keys(content.epg).forEach(channelId => {
-      content.epg[channelId].forEach(program => {
-        if (program?.params?.start && date.isSame(dayjs.utc(program.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]'), 'd')) {
-          items.push(program)
-        }
-      })
-    })
-
-    return items
-  } catch (err) {
-    console.log(err)
-    return []
-  }
+function parseItems(content) {
+  return JSON.parse(content) || []
 }
 
 function loadSessionDetails() {
