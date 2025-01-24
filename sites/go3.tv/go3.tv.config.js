@@ -20,9 +20,13 @@ module.exports = {
     const formattedDate = date.format('YYYY-MM-DD')
     const since = `${formattedDate}T00:00-0500`
     const till = `${formattedDate}T23:59-0500`
-    return `https://go3.tv/api/products/lives/programmes?liveId[]=${channel.site_id}&since=${since}&till=${till}&platform=BROWSER&lang=EN&tenant=OM_EE`
+    return [
+      `https://go3.lv/api/products/lives/programmes?liveId[]=${channel.site_id}&since=${since}&till=${till}&platform=BROWSER`,
+      `https://go3.lt/api/products/lives/programmes?liveId[]=${channel.site_id}&since=${since}&till=${till}&platform=BROWSER`,
+      `https://go3.tv/api/products/lives/programmes?liveId[]=${channel.site_id}&since=${since}&till=${till}&platform=BROWSER`
+    ]
   },
-  parser: async function ({ content }) {
+  async parser({ content }) {
     try {
       const data = JSON.parse(content)
       return this.parseEPGData(data)
@@ -49,7 +53,7 @@ module.exports = {
         lang: 'ee',
         name: item.title,
         site_id: item.id
-      }));
+      }))
     } catch (error) {
       console.error('Error fetching channels:', error)
       return []
