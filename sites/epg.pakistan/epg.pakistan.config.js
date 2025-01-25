@@ -41,7 +41,7 @@ module.exports = {
     return channels.map(channel => ({
       lang: 'ur',
       site_id: channel.id,
-      name: channel.displayName[0].value
+      name: channel.displayName?.[0]?.value
     }))
   }
 }
