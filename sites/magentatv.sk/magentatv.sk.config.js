@@ -34,7 +34,7 @@ async function fetchTokens(url) {
 }
 
 module.exports = {
-  site: 'magentatv_test.sk',
+  site: 'magentatv.sk',
   days: 2,
   request: {
     async headers() {
