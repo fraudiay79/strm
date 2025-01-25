@@ -25,7 +25,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=25 --timeout=90000
+          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
           
     - name: Commit changes
       run: |
