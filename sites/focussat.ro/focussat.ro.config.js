@@ -28,7 +28,7 @@ module.exports = {
       return {
         Authorization: `Bearer ${session.token}`,
         Origin: 'https://livetv.focussat.ro',
-        Referer: 'https://livetv.focussat.ro/`
+        Referer: 'https://livetv.focussat.ro/'
       }
     }
   },
@@ -78,7 +78,7 @@ async function loadProgramDetails(id) {
     headers: {
       Authorization: `Bearer ${session.token}`,
       Origin: 'https://livetv.focussat.ro',
-      Referer: 'https://livetv.focussat.ro/`
+      Referer: 'https://livetv.focussat.ro/'
     }
   }).then(r => r.data).catch(error => {
     console.log(error)
@@ -161,4 +161,5 @@ async function fetchSessionData() {
     const ssoToken = data.ssoToken
     const provisionData = data.token // Assigning token to provisionData
 
-    console.log('Fetched session data successfully:', { ssoToken, provisionData}
+    console.log('Fetched session data successfully:', { ssoToken, provisionData })
+    return[_{{{CITATION{{{_1{](https://github.com/iptv-org/epg/tree/69294d7c48c4c99091d20e7ed6c977f3e24fc506/sites%2Fhd-plus.de.config.js)
