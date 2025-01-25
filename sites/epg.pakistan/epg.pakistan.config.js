@@ -28,8 +28,13 @@ module.exports = {
     let programs = []
     const items = parseItems(buffer, channel, date)
     for (let item of items) {
-      let title = await translateContent(item.title?.[0]?.value, 'ur')
-      let description = await translateContent(item.desc?.[0]?.value, 'ur')
+      let title = item.title?.[0]?.value
+      let description = item.desc?.[0]?.value
+      // Check if lang is 'ur' before translating
+      if (item.lang === 'ur') {
+        title = await translateContent(title, 'ur')
+        description = await translateContent(description, 'ur')
+      }
       programs.push({
         title: title,
         description: description,
