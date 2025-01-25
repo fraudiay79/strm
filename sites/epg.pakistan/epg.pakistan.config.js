@@ -32,16 +32,11 @@ module.exports = {
     return programs
   },
   async channels() {
-    const buffer = await axios
-      .get('https://www.open-epg.com/files/pakistan.xml.gz', {
-        responseType: 'arraybuffer'
-      })
+    const data = await axios
+      .get('https://www.open-epg.com/files/pakistan.xml')
       .then(r => r.data)
       .catch(console.log)
-
-    const data = ungzip(buffer)
-    const decoded = iconv.decode(data, 'utf8')
-    const { channels } = parser.parse(decoded)
+    const { channels } = parser.parse(data)
 
     return channels.map(channel => ({
       lang: 'ur',
