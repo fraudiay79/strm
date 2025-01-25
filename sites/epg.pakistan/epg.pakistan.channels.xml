@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
-  <channel site="epg.pakistan" lang="ur" xmltv_id="" site_id="8 XM.pk"></channel>
-  <channel site="epg.pakistan" lang="ur" xmltv_id="" site_id="24 Channel.pk"></channel>
-  <channel site="epg.pakistan" lang="ur" xmltv_id="" site_id="92 News.pk"></channel>
+  <channel site="epg.pakistan" lang="ur" xmltv_id="8XM.pk" site_id="8 XM.pk">8XM</channel>
+  <channel site="epg.pakistan" lang="ur" xmltv_id="24News.pk" site_id="24 Channel.pk">24 News</channel>
+  <channel site="epg.pakistan" lang="ur" xmltv_id="92News.pk" site_id="92 News.pk">92 News</channel>
   <channel site="epg.pakistan" lang="ur" xmltv_id="" site_id="A1 TV.pk"></channel>
   <channel site="epg.pakistan" lang="ur" xmltv_id="" site_id="A Plus.pk"></channel>
   <channel site="epg.pakistan" lang="ur" xmltv_id="" site_id="Aaj Entertainment.pk"></channel>
