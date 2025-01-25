@@ -2720,6 +2720,14 @@ globals@^14.0.0:
   resolved "https://registry.npmjs.org/globals/-/globals-14.0.0.tgz"
   integrity sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==
 
+googletrans@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/googletrans/-/googletrans-1.0.4.tgz#65b8ad0e5f80048be11def87c33f21d7a1a144db"
+  integrity sha512-vT0m4r0dRUc3FERIUDj1B9gYNV8zfeNumpF36LcS8378Wrc4Gw8FGIPXJVsRiHTXgoR4880SsVt6MvfHdIdITg==
+  dependencies:
+    axios ">=0.25.0"
+    qs "^6.10.2"
+
 got@^11.8.2:
   version "11.8.5"
   resolved "https://registry.npmjs.org/got/-/got-11.8.5.tgz"
