@@ -1,25 +1,60 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
 
+let session
+
 const API_ENDPOINT = 'https://czgo.magio.tv/v2/television'
 
-const headers = {
-  Referer: 'https://tvgo.t-mobile.cz/',
-  Origin: 'https://tvgo.t-mobile.cz',
-  Authorization: 'Bearer eyJhbGciOiJSUzI1NiJ9.eyJhdWQiOiJBUFBfTUNPUkUiLCJpYXQiOjE3Mzc2NDMxNzYsImV4cCI6MTczNzY1Mzk3NiwiZGV2aWNlSWQiOjI5MDU1NjYwLCJkZXZpY2VUeXBlIjoiT1RUX1dJTiIsImRldmljZVBsYXRmb3JtIjoiR08iLCJwbGF0Zm9ybSI6IkdPIiwibGFuZyI6IkNaIiwiZGF2Ijp0cnVlLCJraWQiOjE4NTEzNn0.nCPsbHKHHj3CPyuJwL1ltMrxKhqxbbM6BRJbjp1qpPj6PbW4HHxmW5drhei6HCyVkgBR3zn-s3Qc8IENeSQfKP9zF9hHbnvSvoN7jJMlApCwYIHDyirz1V_0lanS-iF0jAeH86d9qXWGPlXz-b_8QJYCUTM79UHkJKVgK13tYlFJlNfmpXxSYNRPyq5MVgA1nkxn7T7d7vGtqcuuKq-V6EI-n7uujqLlyTORKj2VH_DEu20hG978bbWDUQ9ujjwW5ogBY1zkSs_-GRK0OnG_CqgUYNfjFqEtyVO48PUEwu5M9BtQAA2njIc7WKVzspFpkY73SXUACcXebX3nhXxL5A'
+async function fetchTokens(url) {
+  try {
+    const response = await axios.post(url, {}, {
+      headers: {
+        Referer: 'https://tvgo.t-mobile.cz/',
+        Origin: 'https://tvgo.t-mobile.cz',
+        Pragma: 'no-cache',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+        'Sec-Fetch-Mode': 'cors',
+        'Sec-Fetch-Site': 'cross-site'
+      }
+    })
+    if (response.status === 200) {
+      //console.log('Tokens retrieved successfully:', response.data) // Debugging line
+      const data = response.data
+      const accessToken = data.token.accessToken
+      const refreshToken = data.token.refreshToken
+      return { accessToken, refreshToken }
+    } else {
+      console.error(`Failed to retrieve tokens, status code: ${response.status}`)
+      return null
+    }
+  } catch (error) {
+    console.error('Error fetching tokens:', error)
+    return null
+  }
 }
 
 module.exports = {
   site: 'magentatv.cz',
   days: 2,
   request: {
-    headers,
+    async headers() {
+      if (!session) {
+        session = await loadSessionDetails()
+        if (!session || !session.accessToken) return null
+      }
+
+      return {
+        Authorization: `Bearer ${session.accessToken}`,
+        Referer: 'https://tvgo.t-mobile.cz/',
+        Origin: 'https://tvgo.t-mobile.cz'
+      }
+    },
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
   url({ channel, date }) {
-    return `${API_ENDPOINT}/epg?filter=channel.id=in=(${channel.site_id});startTime=ge=${date.format('YYYY-MM-DDTHH:mm:ss.000')};startTime=le=${date.add(1, 'days').subtract(1, 's').format('YYYY-MM-DDTHH:mm:ss.000')}&lang=CZ`
+    return `${API_ENDPOINT}/epg?filter=channel.id=in=(${channel.site_id});startTime=ge=${date.format('YYYY-MM-DDTHH:mm:ss.000')};startTime=le=${date.add(1, 'days').subtract(1, 's').format('YYYY-MM-DDTHH:mm:ss.000')}&lang=SK`
   },
   parser({ content }) {
     try {
@@ -52,8 +87,22 @@ module.exports = {
     }
   },
   async channels() {
+    if (!session || !session.accessToken) {
+      session = await loadSessionDetails()
+      if (!session || !session.accessToken) {
+        console.error('Error: Unable to retrieve session or accessToken.')
+        return []
+      }
+    }
+
     const data = await axios
-      .get(`${API_ENDPOINT}/channels?list=LIVE&queryScope=LIVE`, { headers })
+      .get(`${API_ENDPOINT}/channels?list=LIVE&queryScope=LIVE`, {
+        headers: {
+          Authorization: `Bearer ${session.accessToken}`,
+          Referer: 'https://tvgo.t-mobile.cz/',
+          Origin: 'https://tvgo.t-mobile.cz'
+        }
+      })
       .then(r => r.data)
       .catch(console.log)
 
@@ -64,5 +113,17 @@ module.exports = {
         name: item.channel.name
       }
     })
+  }
+}
+
+async function loadSessionDetails() {
+  const url = 'https://czgo.magio.tv/v2/auth/init?dsid=Netscape.1737830285451.0.9481185528331544&deviceName=Web%20Browser&deviceType=OTT_WIN&osVersion=0.0.0&appVersion=4.0.21-hf.0&language=CZ'
+  const tokens = await fetchTokens(url)
+  //console.log('Loaded session details:', tokens) // Debugging line
+  if (tokens) {
+    return tokens
+  } else {
+    console.error('Error loading session details.')
+    return null
   }
 }
