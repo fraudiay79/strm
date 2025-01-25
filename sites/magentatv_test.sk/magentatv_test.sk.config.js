@@ -18,6 +18,7 @@ async function fetchTokens(url) {
       }
     });
     if (response.status === 200) {
+      console.log('Tokens retrieved successfully:', response.data); // Debugging line
       const data = response.data;
       const accessToken = data.accessToken;
       const refreshToken = data.refreshToken;
@@ -118,6 +119,7 @@ module.exports = {
 async function loadSessionDetails() {
   const url = 'https://skgo.magio.tv/v2/auth/init?dsid=Netscape.1737828170898.0.49497112051955927&deviceName=Web%20Browser&deviceType=OTT_WIN&osVersion=0.0.0&appVersion=4.0.21-hf.0&language=SK';
   const tokens = await fetchTokens(url);
+  console.log('Loaded session details:', tokens); // Debugging line
   if (tokens) {
     return tokens;
   } else {
