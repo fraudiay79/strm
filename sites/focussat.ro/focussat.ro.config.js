@@ -33,18 +33,24 @@ module.exports = {
       }
     }
   },
-  parser: function ({ content, date }) {
+  parser: async function ({ content }) {
     let programs = []
-    const items = parseItems(content, date)
-    items.forEach(item => {
+    const items = parseItems(content)
+    for (const item of items) {
+      const detail = await loadProgramDetails(item.id)
       programs.push({
-        title: item.title,
-        categories: parseCategories(item),
-        icon: parseImages(item),
+        id: item.id,
+        title: detail.title || item.title,
+        description: detail.description || '',
+        icon: parseImages(item) || '',
+        actors: parseRoles(detail, 'sg.ui.role.Cast') || [],
+        directors: parseRoles(detail, 'sg.ui.role.Producer') || [],
+        season: item.params ? item.params.seriesSeason : null,
+        episode: item.params ? item.params.seriesEpisode : null,
         start: parseStart(item),
         stop: parseStop(item)
       })
-    })
+    }
 
     return programs
   },
@@ -66,8 +72,32 @@ module.exports = {
   }
 }
 
-function parseCategories(item) {
-  return Array.isArray(item?.params?.genres) ? item.params.genres.map(i => i.title) : []
+async function loadProgramDetails(id) {
+  if (!id) return {}
+  const url = `${API_ENDPOINT}/assets/${id}`
+  const data = await axios.get(url, { headers: {
+    Authorization: `Bearer ${session.token}`,
+    Origin: 'https://livetv.focussat.ro',
+    Referer: 'https://livetv.focussat.ro/'
+  } }).then(r => r.data).catch(error => {
+    console.log(error)
+    return null
+  })
+
+  const landscapeImage = data.images.find(img => img.type === 'la')?.url
+
+  return {
+    id: data.id,
+    title: data.title,
+    description: data.desc,
+    icon: landscapeImage,
+    actors: data.params.credits
+      .filter(credit => credit.roleLabel === 'sg.ui.role.Cast')
+      .map(credit => credit.person),
+    directors: data.params.credits
+      .filter(credit => credit.roleLabel === 'sg.ui.role.Director')
+      .map(credit => credit.person)
+  }
 }
 
 function parseImages(item) {
@@ -82,6 +112,13 @@ function parseStart(item) {
 
 function parseStop(item) {
   return item?.params?.end ? dayjs.utc(item.params.end, 'YYYY-MM-DDTHH:mm:ss[Z]') : null
+}
+
+function parseRoles(detail, role_name) {
+  if (!detail.credits) return []
+  return detail.credits
+    .filter(role => role.roleLabel === role_name)
+    .map(role => role.person)
 }
 
 function parseItems(content) {
