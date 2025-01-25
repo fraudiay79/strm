@@ -17,9 +17,7 @@ module.exports = {
   days: 2,
   delay: 5000,
   url({ channel, date }) {
-    return `${API_ENDPOINT}/schedule?channels=${
-      channel.site_id
-    }&from=${date.format('YYYY-MM-DDTHH:mm:ss.SSS')}Z&until=${date.add(1, 'days').format('YYYY-MM-DDTHH:mm:ss.SSS')}Z`
+    return `${API_ENDPOINT}/schedule?channels=${channel.site_id}&from=${date.format('YYYY-MM-DDTHH:mm:ss.SSS')}Z&until=${date.add(1, 'days').format('YYYY-MM-DDTHH:mm:ss.SSS')}Z`
   },
   request: {
     async headers() {
@@ -39,14 +37,14 @@ module.exports = {
     let programs = []
     const items = parseItems(content)
     for (const item of items) {
-      const detail = await loadProgramDetails(item)
+      const detail = await loadProgramDetails(item.id)
       programs.push({
-        title: item.title,
-        description: detail.desc || '',
-        categories: parseCategories(item) || [],
-        icon: parseImages(item) || [],
-        actors: parseRoles(detail, 'Actor') || [],
-        directors: parseRoles(detail, 'Director') || [],
+        id: item.id,
+        title: detail.title || item.title,
+        description: detail.description || '',
+        icon: parseImages(item) || '',
+        actors: parseRoles(detail, 'sg.ui.role.Cast') || [],
+        directors: parseRoles(detail, 'sg.ui.role.Producer') || [],
         season: item.params ? item.params.seriesSeason : null,
         episode: item.params ? item.params.seriesEpisode : null,
         start: parseStart(item),
@@ -60,14 +58,11 @@ module.exports = {
     const session = await loadSessionDetails()
     if (!session || !session.token) throw new Error('The session token is missing')
 
-    const data = await axios
-      .get(`${API_ENDPOINT}/bouquet`, {
-        headers: {
-          Authorization: `Bearer ${session.token}`
-        }
-      })
-      .then(r => r.data)
-      .catch(console.error)
+    const data = await axios.get(`${API_ENDPOINT}/bouquet`, {
+      headers: {
+        Authorization: `Bearer ${session.token}`
+      }
+    }).then(r => r.data).catch(console.error)
 
     return data.channels.map(item => ({
       lang: 'ro',
@@ -77,34 +72,38 @@ module.exports = {
   }
 }
 
-async function loadProgramDetails(item) {
-  if (!item.id) return {}
-  const url = `${API_ENDPOINT}/assets/${item.id}`
-  const data = await axios
-    .get(url, { headers: {
-            Authorization: `Bearer ${session.token}`,
-            Origin: 'https://livetv.focussat.ro',
-            Referer: 'https://livetv.focussat.ro/'
-          } })
-    .then(r => r.data)
-    .catch(error => {
-      console.log(error)
-      return null
-    })
+async function loadProgramDetails(id) {
+  if (!id) return {}
+  const url = `${API_ENDPOINT}/assets/${id}`
+  const data = await axios.get(url, { headers: {
+    Authorization: `Bearer ${session.token}`,
+    Origin: 'https://livetv.focussat.ro',
+    Referer: 'https://livetv.focussat.ro/'
+  } }).then(r => r.data).catch(error => {
+    console.log(error)
+    return null
+  })
 
-  return data || {}
-}
+  const landscapeImage = data.images.find(img => img.type === 'la')?.url
 
-function parseCategories(item) {
-  return Array.isArray(item?.params?.genres) ? item.params.genres.map(i => i.title) : []
+  return {
+    id: data.id,
+    title: data.title,
+    description: data.desc,
+    icon: landscapeImage,
+    actors: data.params.credits
+      .filter(credit => credit.roleLabel === 'sg.ui.role.Cast')
+      .map(credit => credit.person),
+    directors: data.params.credits
+      .filter(credit => credit.roleLabel === 'sg.ui.role.Director')
+      .map(credit => credit.person)
+  }
 }
 
 function parseImages(item) {
-  return Array.isArray(item?.images)
-    ? item.images
-        .filter(i => i.type === 'la')
-        .map(i => `${i.url}&w=460&h=260`)
-    : []
+  return Array.isArray(item.images)
+    ? item.images.find(i => i.type === 'la')?.url || ''
+    : ''
 }
 
 function parseStart(item) {
@@ -116,8 +115,10 @@ function parseStop(item) {
 }
 
 function parseRoles(detail, role_name) {
-  if (!detail.params || !detail.params.credits) return null
-  return detail.params.credits.filter(role => role.role === role_name).map(role => role.person)
+  if (!detail.credits) return []
+  return detail.credits
+    .filter(role => role.roleLabel === role_name)
+    .map(role => role.person)
 }
 
 function parseItems(content) {
@@ -125,23 +126,20 @@ function parseItems(content) {
   return Array.isArray(parsed) ? parsed : []
 }
 
-function loadSessionDetails() {
-  return axios
-    .post(`${API_ENDPOINT}/session`, {
-      ssoToken: 'eyJrZXkiOiJtNyIsImFsZyI6ImRpciIsImVuYyI6IkExMjhDQkMtSFMyNTYifQ..711C_BSuYBi2EvgnQQoP4A.5D59RTyNQlK-I1Ucen0R4F1KCvRE8TgtxnFuasfrEdlXaLbibOmBDpk1B2wbRpm8ta36ARsB5bzCTOKAlJygMMJupnMPg1oJ-ff3bPOVXHuZXeAfNpgriHNT9ScQQZhFCBy9bZtHA49CPWy-_rE28Q3_HHCcLM9rzy5McLrsPbikI7JiPw5hB-eyQeN8X2OXl-f9vY5B2ltSTLTc2rJO32LMUaQ9aK1JXSnh2M5xN-mh0bcekNhIsy5_DtmGI7uPVa_dRKYO2KeklW4UwBe5R3idNvXoSb2NRifAW1E8y8W__HmAjzA7jNeTll4fyAI-mPx6f8zUqAj_XN628Oy9JCalD5SjPMXbKnj8_Xr2UdG4TR7CvyuvYgD212MnnfsyI3vWe9hqkv9nbeyu1bArrBd8mPpvKv2P8A8Ovkkpj4P1X1XTk2tKzWEyKMmD1AyQq3NvWLRgVX1gnLziyd6YCqZbBJBq_PYEZZAstH1_T0k5641n_XM8PedRExyhIjy1.3XqcDEyz4jsCAKUIou2OtA',
-      osVersion: 'Windows 10',
-      deviceModel: 'Chrome',
-      deviceType: 'PC',
-      deviceSerial: 'w112c2a90-da0a-11ef-b249-ad4a0ed7b0a7',
-      deviceOem: 'Chrome',
-      devicePrettyName: 'Chrome 131.0.0.0',
-      appVersion: '12.0',
-      language: 'en_US',
-      brand: 'fsro',
-      memberId: '0',
-      featureLevel: 6,
-      provisionData: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc2OTIyNDgsImJyIjoiZnNybyIsImljIjp0cnVlLCJ1cCI6Im03Y3oiLCJvcCI6IjExNSIsImRlIjoiYnJhbmRNYXBwaW5nIiwiZHMiOiJ3MTEyYzJhOTAtZGEwYS0xMWVmLWIyNDktYWQ0YTBlZDdiMGE3In0.qFa51xG4wb2lYISB1OeweQoA00Edot4B9zQLjEStiuo'
-    })
-    .then(r => r.data)
-    .catch(console.log)
+async function loadSessionDetails() {
+  return axios.post(`${API_ENDPOINT}/session`, {
+    ssoToken: 'eyJrZXkiOiJtNyIsImFsZyI6ImRpciIsImVuYyI6IkExMjhDQkMtSFMyNTYifQ..711C_BSuYBi2EvgnQQoP4A.5D59RTyNQlK-I1Ucen0R4F1KCvRE8TgtxnFuasfrEdlXaLbibOmBDpk1B2wbRpm8ta36ARsB5bzCTOKAlJygMMJupnMPg1oJ-ff3bPOVXHuZXeAfNpgriHNT9ScQQZhFCBy9bZtHA49CPWy-_rE28Q3_HHCcLM9rzy5McLrsPbikI7JiPw5hB-eyQeN8X2OXl-f9vY5B2ltSTLTc2rJO32LMUaQ9aK1JXSnh2M5xN-mh0bcekNhIsy5_DtmGI7uPVa_dRKYO2KeklW4UwBe5R3idNvXoSb2NRifAW1E8y8W__HmAjzA7jNeTll4fyAI-mPx6f8zUqAj_XN628Oy9JCalD5SjPMXbKnj8_Xr2UdG4TR7CvyuvYgD212MnnfsyI3vWe9hqkv9nbeyu1bArrBd8mPpvKv2P8A8Ovkkpj4P1X1XTk2tKzWEyKMmD1AyQq3NvWLRgVX1gnLziyd6YCqZbBJBq_PYEZZAstH1_T0k5641n_XM8PedRExyhIjy1.3XqcDEyz4jsCAKUIou2OtA',
+    osVersion: 'Windows 10',
+    deviceModel: 'Chrome',
+    deviceType: 'PC',
+    deviceSerial: 'w112c2a90-da0a-11ef-b249-ad4a0ed7b0a7',
+    deviceOem: 'Chrome',
+    devicePrettyName: 'Chrome 131.0.0.0',
+    appVersion: '12.0',
+    language: 'en_US',
+    brand: 'fsro',
+    memberId: '0',
+    featureLevel: 6,
+    provisionData: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3Mzc2OTIyNDgsImJyIjoiZnNybyIsImljIjp0cnVlLCJ1cCI6Im03Y3oiLCJvcCI6IjExNSIsImRlIjoiYnJhbmRNYXBwaW5nIiwiZHMiOiJ3MTEyYzJhOTAtZGEwYS0xMWVmLWIyNDktYWQ0YTBlZDdiMGE3In0.qFa51xG4wb2lYISB1OeweQoA00Edot4B9zQLjEStiuo'
+  }).then(r => r.data).catch(console.log)
 }
