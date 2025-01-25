@@ -2,8 +2,15 @@ const axios = require('axios')
 const iconv = require('iconv-lite')
 const parser = require('epg-parser')
 const { ungzip } = require('pako')
+const { default: translate } = require('googletrans')
 
 let cachedContent
+
+async function translateContent(text, targetLang) {
+  if (!text) return text
+  let translation = await translate(text, { to: targetLang })
+  return translation.text
+}
 
 module.exports = {
   site: 'epg.pakistan',
@@ -15,19 +22,21 @@ module.exports = {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  parser: function ({ buffer, channel, date, cached }) {
+  parser: async function ({ buffer, channel, date, cached }) {
     if (!cached) cachedContent = undefined
 
     let programs = []
     const items = parseItems(buffer, channel, date)
-    items.forEach(item => {
+    for (let item of items) {
+      let title = await translateContent(item.title?.[0]?.value, 'ur')
+      let description = await translateContent(item.desc?.[0]?.value, 'ur')
       programs.push({
-        title: item.title?.[0]?.value,
-        description: item.desc?.[0]?.value,
+        title: title,
+        description: description,
         start: item.start,
         stop: item.stop
       })
-    })
+    }
 
     return programs
   },
