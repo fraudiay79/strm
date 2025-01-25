@@ -7,9 +7,9 @@ const API_ENDPOINT = 'https://tv-hu-prod.yo-digital.com/bifrost'
 const headers = {
   app_key: 'exSJHBiSAN6wAAeqdWLdTUfdTi2PNark',
   app_version: '02.0.1091',
-  'device-id': 'd6d831df-14c1-443e-b9b7-351c53e7d223',
-  'x-request-session-id': '5bf86441-69c4-4b66-9bdd-27b806b3325a',
-  'x-request-tracking-id': '9e83e838-43da-4a95-8a82-b4adde50e3c3',
+  'device-id': crypto.randomUUID(),
+  'x-request-session-id': crypto.randomUUID(),
+  'x-request-tracking-id': crypto.randomUUID(),
   'x-user-agent': 'web|web|Chrome-131|02.0.1091|1'
 }
 
