@@ -20,8 +20,8 @@ async function fetchTokens(url) {
     if (response.status === 200) {
       console.log('Tokens retrieved successfully:', response.data); // Debugging line
       const data = response.data;
-      const accessToken = data.accessToken;
-      const refreshToken = data.refreshToken;
+      const accessToken = data.token.accessToken;
+      const refreshToken = data.token.refreshToken;
       return { accessToken, refreshToken };
     } else {
       console.error(`Failed to retrieve tokens, status code: ${response.status}`);
