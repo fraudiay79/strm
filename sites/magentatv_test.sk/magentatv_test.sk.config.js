@@ -7,7 +7,7 @@ const API_ENDPOINT = 'https://skgo.magio.tv/v2/television';
 
 async function fetchTokens(url) {
   try {
-    const response = await axios.get(url, {
+    const response = await axios.post(url, {}, {
       headers: {
         Referer: 'https://magiogo.sk/',
         Origin: 'https://magiogo.sk',
