@@ -71,7 +71,7 @@ module.exports = {
   }
 };
 
-async function fetchSessionData() {
+async function fetchSessionData(ssoToken, token) {
   const url = 'https://tvapi.solocoo.tv/v1/session';
 
   try {
@@ -82,11 +82,11 @@ async function fetchSessionData() {
       "userId": "9c6e0419-f77f-0b59-f309-9cfc8175b954",
       "countryCode": "RO",
       "communityName": "Focus Sat",
-      "ssoToken": "eyJrZXkiOiJtNyIsImFsZyI6ImRpciIsImVuYyI6IkExMjhDQkMtSFMyNTYifQ..B85_TTkG73-dYqeJV_D2ig.deqR9YaejycRRYOGkSsG6DMfAgEt4YU9aRMMoStdXspyR5EjAgoD95NgJvrJekQGpVaEBFPYfTuzxAUnfW2QOu8S7HB0RmtZdakAqPfNkO2Jw_LHj7SKS5pfPuAkEMT-rtAzSnDBPwXfHRwONKpb46U9YN5hV4CTYQkVIwNYQ1K3kyijLpeImxDNUw9jcowUBNZGCGrQUZUGfdSczz5qSkADaEHl_JfpuaTL4OJLesRFSo2PqsQZ3KRD_-1fBiXzC_TrNeru257TKJIVdX_G4cI7IIHS8MwIPtk3aBieVKP3cqLtWv4rAnHmxNkh-GkSpDx9JvbE5v-ek6eiwr4Vtp7FlIBtfPYBN19hL5fL9IVJxG4DDdSfSLjLAsnC95ommc75U7FLeBl4Cm6NdI89sJVZhPQPpTX5ccjrcjeRl--wGPnSiUA5S-ULadMp-hWNFq76PUB_5GtEK8D12mxzZ4QzNWoSVbRfVN1MB2kByVFtRpT-sHybY1xozySyLuSv.9wsWHIs_mZpo4y0ydeSHow",
+      "ssoToken": ssoToken,
       "update": true,
       "language": "en_US",
       "brandName": "Focus Sat",
-      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0di5zb2xvY29vLmF1dGgiOnsicyI6IncxMTJjMmE5MC1kYTBhLTExZWYtYjI0OS1hZDRhMGVkN2IwYTciLCJ1IjoiR1FSdW5IXzNXUXZ6Q1p6OGdYVzVWQSIsImwiOiJlbl9VUyIsImQiOiJQQyIsImRtIjoiQ2hyb21lIiwib20iOiJPIiwiYyI6Ik9OcEVfSU9MSURId3ZjZHVkYlVBNDNMMFU4eWZLV2JrcVBFUWg3VFNXdXciLCJzdCI6ImZ1bGwiLCJnIjoiZXlKaWNpSTZJbVp6Y204aUxDSmtZaUk2Wm1Gc2MyVXNJbTl3SWpvaU1URTFJaXdpWkdVaU9pSmljbUZ1WkUxaGNIQnBibWNpTENKd2RDSTZabUZzYzJVc0luVndJam9pYlRkamVpSjkiLCJmIjo2LCJiIjoiZnNybyJ9LCJuYmYiOjE3Mzc4MzI1NjEsImV4cCI6MTczNzgzNDU1MCwiaWF0IjoxNzM3ODMyNTYxLCJhdWQiOiJtN2N6In0.gZ4-rbonUDZKHcuuLSBdIXRIRPbNgPWy4pPwOu7ZTYc",
+      "token": token,
       "consent": false
     }, {
       headers: {
@@ -96,10 +96,11 @@ async function fetchSessionData() {
 
     const data = response.data;
 
-    const ssoToken = data.ssoToken;
+    const ssoTokenResponse = data.ssoToken;
     const provisionData = data.token; // Assigning token to provisionData
 
-    return { ssoToken, provisionData };
+    console.log('Fetched session data successfully:', { ssoToken: ssoTokenResponse, provisionData });
+    return { ssoToken: ssoTokenResponse, provisionData };
   } catch (error) {
     console.error('Fetch error:', error);
     return null;
@@ -107,24 +108,64 @@ async function fetchSessionData() {
 }
 
 async function loadSessionDetails() {
-  const sessionData = await fetchSessionData();
+  // Assume these values are dynamically obtained for each session
+  const dynamicSsoToken = "your_dynamic_ssoToken_here";
+  const dynamicToken = "your_dynamic_token_here";
+
+  const sessionData = await fetchSessionData(dynamicSsoToken, dynamicToken);
   if (!sessionData) return null;
 
   const { ssoToken, provisionData } = sessionData;
 
-  return axios.post(`${API_ENDPOINT}/session`, {
-    ssoToken: ssoToken,
-    osVersion: 'Windows 10',
-    deviceModel: 'Chrome',
-    deviceType: 'PC',
-    deviceSerial: 'w112c2a90-da0a-11ef-b249-ad4a0ed7b0a7',
-    deviceOem: 'Chrome',
-    devicePrettyName: 'Chrome 131.0.0.0',
-    appVersion: '12.0',
-    language: 'en_US',
-    brand: 'fsro',
-    memberId: '0',
-    featureLevel: 6,
-    provisionData: provisionData
-  }).then(r => r.data).catch(console.log);
+  try {
+    const response = await axios.post(`${API_ENDPOINT}/session`, {
+      ssoToken: ssoToken,
+      osVersion: 'Windows 10',
+      deviceModel: 'Chrome',
+      deviceType: 'PC',
+      deviceSerial: 'w112c2a90-da0a-11ef-b249-ad4a0ed7b0a7',
+      deviceOem: 'Chrome',
+      devicePrettyName: 'Chrome 131.0.0.0',
+      appVersion: '12.0',
+      language: 'en_US',
+      brand: 'fsro',
+      memberId: '0',
+      featureLevel: 6,
+      provisionData: provisionData
+    });
+
+    const data = response.data;
+    console.log('Loaded session details successfully:', data);
+    return data;
+  } catch (error) {
+    console.error('Load session details error:', error);
+    return null;
+  }
+}
+
+// Helper functions
+function parseImages(item) {
+  return Array.isArray(item.images)
+    ? item.images.find(i => i.type === 'la')?.url || ''
+    : '';
+}
+
+function parseStart(item) {
+  return item?.params?.start ? dayjs.utc(item.params.start, 'YYYY-MM-DDTHH:mm:ss[Z]') : null;
+}
+
+function parseStop(item) {
+  return item?.params?.end ? dayjs.utc(item.params.end, 'YYYY-MM-DDTHH:mm:ss[Z]') : null;
+}
+
+function parseRoles(detail, role_name) {
+  if (!detail.credits) return [];
+  return detail.credits
+    .filter(role => role.roleLabel === role_name)
+    .map(role => role.person);
+}
+
+function parseItems(content) {
+  const parsed = JSON.parse(content);
+  return Array.isArray(parsed) ? parsed : [];
 }
