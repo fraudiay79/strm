@@ -7,9 +7,9 @@ const API_ENDPOINT = 'https://tv-pl-prod.yo-digital.com/pl-bifrost'
 const headers = {
   app_key: '2zjAjpJ6dRfHR1nIwF47jz75g7Qf4F6z',
   app_version: '02.0.1080',
-  'device-id': '17cc269a-bb51-41cf-a1bc-7461a3b8d72b',
-  'x-request-session-id': '1d4c8f4c-67dc-4a8e-a2ed-44b2448b56ef',
-  'x-request-tracking-id': 'b2893718-c801-433f-8ddc-4889d64c3d6d',
+  'device-id': crypto.randomUUID(),
+  'x-request-session-id': crypto.randomUUID(),
+  'x-request-tracking-id': crypto.randomUUID(),
   'x-user-agent': 'web|web|Chrome-131|02.0.1080|1'
 }
 
