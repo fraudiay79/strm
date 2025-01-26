@@ -54,27 +54,26 @@ module.exports = {
     return programs
   },
   async channels() {
-  try {
-    const response = await axios.get(`https://idara.medi1tv.ma/rss/medi1tv/channels.aspx?lg=ar&a`)
-    console.log('Response data:', response.data)
-    
-    // Ensure response.data is an array
-    if (!Array.isArray(response.data)) {
-      console.error('Error: channels data is missing or not an array')
+    try {
+      const response = await axios.get(`https://idara.medi1tv.ma/rss/medi1tv/channels.aspx?lg=ar&a`)
+      console.log('Response data:', response.data)
+      
+      // Ensure response.data is an array
+      if (!Array.isArray(response.data)) {
+        console.error('Error: channels data is missing or not an array')
+        return []
+      }
+
+      return response.data.map((item) => {
+        return {
+          lang: 'ar',
+          site_id: item.type,
+          name: item.titre
+        }
+      })
+    } catch (error) {
+      console.error('Error fetching channels:', error)
       return []
     }
-
-    return response.data.map((item) => {
-      return {
-        lang: 'ar',
-        site_id: item.type,
-        name: item.titre
-      }
-    })
-  } catch (error) {
-    console.error('Error fetching channels:', error)
-    return []
   }
-}
-
 }
