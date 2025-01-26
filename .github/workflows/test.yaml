@@ -26,7 +26,7 @@ jobs:
           npm install
           #npm test --- upctv.sk
           #npm run channels:parse --- --config=./sites/upctv.sk/upctv.sk.config.js --output=./sites/upctv.sk/upctv.sk.channels.xml
-          npm run channels:parse --- --config=./sites/epg.unitedgroup/epg.unitedgroup.config.js --output=./sites/epg.unitedgroup/epg.unitedgroup_ba.channels.xml --set=country:ba
+          npm run channels:parse --- --config=./sites/mtel.ba_test/mtel.ba_test.config.js --output=./sites/mtel.ba_test/mtel.ba_test_ba.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
           #npm run grab --- --site=epg.pakistan --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
    
@@ -36,6 +36,6 @@ jobs:
         git config --local user.name "Your Name"
         #git add -f guides/allente.no.xml
         #git add -f sites/upctv.sk/upctv.sk.channels.xml
-        git add -f sites/epg.unitedgroup/epg.unitedgroup_ba.channels.xml
+        git add -f sites/mtel.ba_test/mtel.ba_test_ba.channels.xml
         git commit -m "Update xml"
         git push -f origin main
