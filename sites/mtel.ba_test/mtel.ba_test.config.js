@@ -18,46 +18,25 @@ module.exports = {
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
-  async parser({ content, channel, date }) {
+  parser: function ({ content, channel }) {
     let programs = []
-    if (!content) return programs
-
-    let items = parseItems(content, channel)
-    if (!items.length) return programs
-
-    const promises = Array.from({ length: 70 }, (_, i) =>
-      axios.get(`${API_ENDPOINT}/epg?platform=tv-iptv&currentPage=${i}&date=${date.format('YYYY-MM-DD')}`, {
-        headers: {
-          maxContentLength: 10000000, // 10 Mb
-          'X-Requested-With': 'XMLHttpRequest'
-        }
-      })
-    )
-
-    await Promise.allSettled(promises)
-      .then(results => {
-        results.forEach(r => {
-          if (r.status === 'fulfilled') {
-            const parsed = parseItems(r.value.data, channel)
-            items = items.concat(parsed)
-          }
+    const items = parseItems(content, channel)
+    items.products.forEach(product => {
+        product.programs.forEach(item => {
+            programs.push({
+                title: item.title,
+                description: item.description,
+                category: item.category,
+                icon: item.picture ? item.picture.url : null,
+                duration: item.durationMinutes,
+                start: parseStart(item).toJSON(),
+                stop: parseStop(item).toJSON()
+            })
         })
-      })
-      .catch(console.error)
-
-    for (let item of items) {
-      programs.push({
-        title: item.title,
-        description: item.description,
-        category: item.category,
-        icon: item?.picture?.url || null,
-        start: dayjs(item.start),
-        stop: dayjs(item.end)
-      })
-    }
+    })
 
     return programs
-  },
+},
   
   async channels() {
     let channels = []
