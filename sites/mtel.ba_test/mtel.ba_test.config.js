@@ -8,12 +8,13 @@ module.exports = {
   site: 'mtel.ba_test',
   days: 2,
   url: async function ({ date }) {
-    const totalEpgPages = await getEpgTotalPageCount()
+    const totalEpgPages = 70
     const pages = Array.from(Array(totalEpgPages).keys())
     return pages.map(page => `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&currentPage=${page}&date=${date.format('YYYY-MM-DD')}`)
   },
   request: {
     headers: {
+      'requestverificationtoken': 'LfZ425SGvnvr8gyMTHeoyrJAywxmesiqKBABGLPqYJ8sYOwzcH5lkuO4Ci-6WVvkKaeKq1NFNEOKhSwc0iaSvheRqXA1:HZv_w6NqTGTe-WNzGghsclcPWA4QiK0TDFLEs32ApUniUoccWjjeFrplm87wYAkQx3w-GXtZ2JE88sGATQsIO9y_W3c1',
       Referer: 'https://mtel.ba/Televizija/TV-ponuda/TV-vodic',
       'X-Requested-With': 'XMLHttpRequest',
       maxContentLength: 10000000 // 10 Mb
