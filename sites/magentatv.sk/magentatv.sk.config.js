@@ -36,6 +36,7 @@ async function fetchTokens(url) {
 module.exports = {
   site: 'magentatv.sk',
   days: 2,
+  delay: 5000,
   request: {
     async headers() {
       if (!session) {
