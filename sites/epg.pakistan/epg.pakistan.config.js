@@ -37,11 +37,8 @@ module.exports = {
       for (let item of items) {
         let title = item.title?.[0]?.value
         let description = item.desc?.[0]?.value
-        // Check if lang is 'ur' before translating
-        if (item.lang === 'ur') {
-          title = await translateContent(title, 'ur')
-          description = await translateContent(description, 'ur')
-        }
+        title = await translateContent(title, 'ur')
+        description = await translateContent(description, 'ur')
         programs.push({
           title: title,
           description: description,
