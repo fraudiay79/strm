@@ -8,10 +8,11 @@ module.exports = {
   site: 'mtel.ba',
   days: 2,
   url: function ({ date, page }) {
-    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&currentPage=${page}&date=${date.format('YYYY-MM-DD')}`;
+    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&date=${date.format('YYYY-MM-DD')}&pageSize=10000`;
   },
   request: {
     headers: {
+      maxContentLength: 10000000 // 10 Mb
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
@@ -33,31 +34,37 @@ module.exports = {
     });
     return programs;
   },
-  async channels() {
+  async function channels() {
     let channels = [];
-    const totalPages = 8;
-    const pages = Array.from(Array(totalPages).keys());
-    for (let page of pages) {
-      const data = await axios
-        .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
-          params: { pageSize: 20, currentPage: page, query: ':relevantno:tv-kategorija:tv-msat:tv-msat-paket:Svi+kanali' },
-          headers: {
-            'X-Requested-With': 'XMLHttpRequest'
-          }
-        })
-        .then(r => r.data)
-        .catch(console.log);
+    const totalPages = await getTotalPageCount();
+    const pages = Array.from(Array(totalPages).keys()); // Creates an array [0, 1, 2, ... totalPages-1]
 
-      data.products.forEach(item => {
-        channels.push({
-          lang: 'bs',
-          site_id: `${item.channelPosition}#${item.code}`,
-          name: item.name
+    for (let page of pages) {
+        const data = await axios
+            .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
+                params: {
+                    pageSize: 20,
+                    currentPage: page,
+                    query: ':relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
+                },
+                headers: {
+                    'X-Requested-With': 'XMLHttpRequest'
+                }
+            })
+            .then(r => r.data)
+            .catch(console.log);
+
+        data.products.forEach(item => {
+            channels.push({
+                lang: 'bs',
+                site_id: item.code,
+                name: item.name
+            });
         });
-      });
     }
+
     return channels;
-  }
+}
 };
 
 async function getTotalPageCount() {
@@ -66,7 +73,7 @@ async function getTotalPageCount() {
             params: {
                 pageSize: 20,
                 currentPage: 0,
-                query: ':relevantno:tv-kategorija:tv-msat:tv-msat-paket:Svi+kanali'
+                query: ':relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
             },
             headers: {
                 'X-Requested-With': 'XMLHttpRequest'
