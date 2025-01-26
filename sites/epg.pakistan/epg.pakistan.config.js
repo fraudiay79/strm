@@ -6,6 +6,17 @@ const { default: translate } = require('googletrans')
 
 let cachedContent
 
+async function translateContent(text, targetLang) {
+  if (!text) return text
+  try {
+    let translation = await translate(text, { to: targetLang })
+    return translation.text
+  } catch (error) {
+    console.log(`Error translating text: ${error.message}`)
+    return text
+  }
+}
+
 module.exports = {
   site: 'epg.pakistan',
   days: 2,
@@ -16,19 +27,21 @@ module.exports = {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  parser: function ({ buffer, channel, date, cached }) {
+  parser: async function ({ buffer, channel, date, cached }) {
     if (!cached) cachedContent = undefined
 
     let programs = []
     const items = parseItems(buffer, channel, date)
-    items.forEach(item => {
+    for (let item of items) {
+      const title = await translateContent(item.title?.[0]?.value, 'ur')
+      const description = await translateContent(item.desc?.[0]?.value, 'ur')
       programs.push({
-        title: item.title?.[0]?.value,
-        description: item.desc?.[0]?.value,
+        title: title,
+        description: description,
         start: item.start,
         stop: item.stop
       })
-    })
+    }
 
     return programs
   },
