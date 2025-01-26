@@ -41,10 +41,7 @@ module.exports = {
     return programs
   },
   async channels() {
-    const data = await axios
-      .get('https://contenthub-api.eco.astro.com.my/channel/all.json')
-      .then(r => r.data)
-      .catch(console.log)
+    const data = await axiosGetWithRetry('https://contenthub-api.eco.astro.com.my/channel/all.json')
 
     return data.response.map(item => {
       return {
@@ -129,11 +126,24 @@ function parseCategories(details) {
 
 async function loadProgramDetails(item) {
   const url = `${API_ENDPOINT}/api/v1/linear-detail?siTrafficKey=${item.siTrafficKey}`
-  const data = await axios
-    .get(url)
-    .then(r => r.data)
-    .catch(error => console.log(error.message))
+  const data = await axiosGetWithRetry(url)
   if (!data) return {}
 
   return data.response || {}
+}
+
+async function axiosGetWithRetry(url, retries = 0) {
+  try {
+    const response = await axios.get(url)
+    return response.data
+  } catch (error) {
+    if (error.response && error.response.status === 429 && retries < MAX_RETRIES) {
+      const retryAfter = parseInt(error.response.headers['retry-after']) || 1
+      await new Promise(resolve => setTimeout(resolve, retryAfter * 1000 * (2 ** retries)))
+      return axiosGetWithRetry(url, retries + 1)
+    } else {
+      console.log(error.message)
+      throw error
+    }
+  }
 }
