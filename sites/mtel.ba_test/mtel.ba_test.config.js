@@ -4,44 +4,67 @@ const timezone = require('dayjs/plugin/timezone')
 
 dayjs.extend(timezone)
 
+const API_ENDPOINT = 'https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels'
+
 module.exports = {
   site: 'mtel.ba_test',
   days: 2,
-  url: async function ({ date }) {
-    const totalEpgPages = 70
-    const pages = Array.from(Array(totalEpgPages).keys())
-    return pages.map(page => `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&currentPage=${page}&date=${date.format('YYYY-MM-DD')}`)
+  url({ date }) {
+    return `${API_ENDPOINT}/epg?platform=tv-iptv&currentPage=0&date=${date.format('YYYY-MM-DD')}`
   },
   request: {
     headers: {
-      'requestverificationtoken': 'LfZ425SGvnvr8gyMTHeoyrJAywxmesiqKBABGLPqYJ8sYOwzcH5lkuO4Ci-6WVvkKaeKq1NFNEOKhSwc0iaSvheRqXA1:HZv_w6NqTGTe-WNzGghsclcPWA4QiK0TDFLEs32ApUniUoccWjjeFrplm87wYAkQx3w-GXtZ2JE88sGATQsIO9y_W3c1',
-      Referer: 'https://mtel.ba/Televizija/TV-ponuda/TV-vodic',
-      'X-Requested-With': 'XMLHttpRequest',
-      maxContentLength: 10000000 // 10 Mb
+      'X-Requested-With': 'XMLHttpRequest'
     }
   },
-  parser({ content, channel }) {
-    const items = parseItems(content, channel)
+  async parser({ content, channel, date }) {
+    let programs = []
+    if (!content) return programs
 
-    return items.map(item => {
-      return {
+    let items = parseItems(content, channel)
+    if (!items.length) return programs
+
+    const promises = Array.from({ length: 70 }, (_, i) =>
+      axios.get(`${API_ENDPOINT}/epg?platform=tv-iptv&currentPage=${i}&date=${date.format('YYYY-MM-DD')}`, {
+        headers: {
+          'X-Requested-With': 'XMLHttpRequest'
+        }
+      })
+    )
+
+    await Promise.allSettled(promises)
+      .then(results => {
+        results.forEach(r => {
+          if (r.status === 'fulfilled') {
+            const parsed = parseItems(r.value.data, channel)
+            items = items.concat(parsed)
+          }
+        })
+      })
+      .catch(console.error)
+
+    for (let item of items) {
+      programs.push({
         title: item.title,
-        category: item.category,
         description: item.description,
+        category: item.category,
         icon: item?.picture?.url || null,
         start: dayjs(item.start),
         stop: dayjs(item.end)
-      }
-    })
+      })
+    }
+
+    return programs
   },
+  
   async channels() {
     let channels = []
     const totalPages = await getTotalPageCount()
-    const pages = Array.from(Array(totalPages).keys()) // Creates an array [0, 1, 2, ... totalPages-1]
+    const pages = Array.from(Array(totalPages).keys())
 
     for (let page of pages) {
       const data = await axios
-        .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
+        .get(`${API_ENDPOINT}/search`, {
           params: {
             pageSize: 20,
             currentPage: page,
@@ -69,16 +92,14 @@ module.exports = {
 
 async function getEpgTotalPageCount() {
   const data = await axios
-    .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg`, {
+    .get(`${API_ENDPOINT}/epg`, {
       params: {
         platform: 'tv-iptv',
         currentPage: 0,
         date: dayjs().format('YYYY-MM-DD')
       },
       headers: {
-        Referer: 'https://mtel.ba/Televizija/TV-ponuda/TV-vodic',
-        'X-Requested-With': 'XMLHttpRequest',
-        maxContentLength: 10000000 // 10 Mb
+        'X-Requested-With': 'XMLHttpRequest'
       }
     })
     .then(r => r.data)
@@ -91,7 +112,7 @@ async function getEpgTotalPageCount() {
 
 async function getTotalPageCount() {
   const data = await axios
-    .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
+    .get(`${API_ENDPOINT}/search`, {
       params: {
         pageSize: 20,
         currentPage: 0,
