@@ -60,6 +60,20 @@ module.exports = {
   }
 };
 
+async function getTotalPageCount() {
+  const data = await axios
+    .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
+      params: { pageSize: 20, currentPage: 0, query: ':relevantno:tv-kategorija:tv-msat:tv-msat-paket:Svi+kanali' },
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+
+  return data.total_pages
+}
+
 function parseStart(item) {
   return dayjs.tz(item.start, 'Europe/Sarajevo');
 }
