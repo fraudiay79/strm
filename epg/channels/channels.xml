@@ -1316,7 +1316,7 @@
   <channel site="magentatv.hr" lang="hr" xmltv_id="NovaTV.hr" site_id="274914856086">Nova TV</channel>
   <channel site="magentatv.hr" lang="hr" xmltv_id="PickboxTV.hr" site_id="276767784220">Pickbox TV</channel>
   <channel site="magentatv.hr" lang="hr" xmltv_id="RTL2.hr" site_id="276770344334">RTL 2</channel>
-  <channel site="magentatv.hr" lang="hr" xmltv_id="RTL.hr" site_id="274913832109">RTL</channel>
+  <channel site="magentatv.hr" lang="hr" xmltv_id="RTL.hr" site_id="274913832109">RTL Televizija</channel>
   <channel site="magentatv.hr" lang="hr" xmltv_id="RTLAria.hr" site_id="311618600203">RTL Adria</channel>
   <channel site="magentatv.hr" lang="hr" xmltv_id="RTLCrime.hr" site_id="276770344347">RTL Crime</channel>
   <channel site="mts.rs" lang="sr" xmltv_id="RTLCroatiaWorld.hr" site_id="645#334">RTL Croatia World</channel>
@@ -3945,10 +3945,12 @@
   <channel site="snrt.ma" lang="ar" xmltv_id="Laayoune.ma" site_id="4069">Laâyoune</channel>
   <channel site="chada.ma" lang="fr" xmltv_id="ChadaTV.ma" site_id="1">Chada TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="M24.ma" site_id="1#40#م 24 المغربية">M24</channel>
-  <channel site="sat.tv" lang="en" xmltv_id="Medi1TV.ma" site_id="1#48#Medi 1 TV">Medi 1 TV</channel>
+  <channel site="medi1tv.com" lang="fr" xmltv_id="Medi1TVAfrique.ma" site_id="afrique">Medi1TV Afrique</channel>
+  <channel site="medi1tv.com" lang="ar" xmltv_id="Medi1TVArabic.ma" site_id="arabic">Medi1TV Arabic</channel>
+  <channel site="medi1tv.com" lang="ar" xmltv_id="Medi1TVMaghreb.ma" site_id="maghreb">Medi1TV Maghreb</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlOnsTV.ma" site_id="1#48#الأنس">Al Ons</channel>
-  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TeleMaroc.ma" site_id="3380">Télé Maroc</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="TV5MondeMaghrebOrient.fr" site_id="1#33#تي في 5 المغرب">TV5Monde Maghreb-Orient</channel>
+  <channel site="tv.sfr.fr" lang="ar" xmltv_id="TeleMaroc.ma" site_id="3380">Télé Maroc</channel>
+  <channel site="sat.tv" lang="fr" xmltv_id="TV5MondeMaghrebOrient.fr" site_id="1#33#تي في 5 المغرب">TV5Monde Maghreb-Orient</channel>
   #Mozambique
   <channel site="startimestv.com" lang="en" xmltv_id="EcoTV.mz" site_id="529">EcoTV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="GunguTV.mz" site_id="530">Gungu TV</channel>
