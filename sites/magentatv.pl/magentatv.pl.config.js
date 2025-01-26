@@ -16,6 +16,7 @@ const headers = {
 module.exports = {
   site: 'magentatv.pl',
   days: 2,
+  delay: 5000,
   request: {
     headers,
     cache: {
