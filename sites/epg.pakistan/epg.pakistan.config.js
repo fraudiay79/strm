@@ -8,8 +8,13 @@ let cachedContent
 
 async function translateContent(text, targetLang) {
   if (!text) return text
-  let translation = await translate(text, { to: targetLang })
-  return translation.text
+  try {
+    let translation = await translate(text, { to: targetLang })
+    return translation.text
+  } catch (error) {
+    console.log(`Error translating text: ${error.message}`)
+    return text
+  }
 }
 
 module.exports = {
@@ -26,50 +31,61 @@ module.exports = {
     if (!cached) cachedContent = undefined
 
     let programs = []
-    const items = parseItems(buffer, channel, date)
-    for (let item of items) {
-      let title = item.title?.[0]?.value
-      let description = item.desc?.[0]?.value
-      // Check if lang is 'ur' before translating
-      if (item.lang === 'ur') {
-        title = await translateContent(title, 'ur')
-        description = await translateContent(description, 'ur')
+    try {
+      const items = parseItems(buffer, channel, date)
+      for (let item of items) {
+        let title = item.title?.[0]?.value
+        let description = item.desc?.[0]?.value
+        // Check if lang is 'ur' before translating
+        if (item.lang === 'ur') {
+          title = await translateContent(title, 'ur')
+          description = await translateContent(description, 'ur')
+        }
+        programs.push({
+          title: title,
+          description: description,
+          start: item.start,
+          stop: item.stop
+        })
       }
-      programs.push({
-        title: title,
-        description: description,
-        start: item.start,
-        stop: item.stop
-      })
+    } catch (error) {
+      console.log(`Error parsing items: ${error.message}`)
     }
 
     return programs
   },
   async channels() {
-    const data = await axios
-      .get('https://www.open-epg.com/files/pakistan.xml')
-      .then(r => r.data)
-      .catch(console.log)
-    const { channels } = parser.parse(data)
+    try {
+      const data = await axios.get('https://www.open-epg.com/files/pakistan.xml')
+      const { channels } = parser.parse(data)
 
-    return channels.map(channel => ({
-      lang: 'ur',
-      site_id: channel.id,
-      name: channel.displayName?.[0]?.value
-    }))
+      return channels.map(channel => ({
+        lang: 'ur',
+        site_id: channel.id,
+        name: channel.displayName?.[0]?.value
+      }))
+    } catch (error) {
+      console.log(`Error fetching channels: ${error.message}`)
+      return []
+    }
   }
 }
 
 function parseItems(buffer, channel, date) {
   if (!buffer) return []
 
-  if (!cachedContent) {
-    const content = ungzip(buffer)
-    const encoded = iconv.decode(content, 'utf8')
-    cachedContent = parser.parse(encoded)
+  try {
+    if (!cachedContent) {
+      const content = ungzip(buffer)
+      const encoded = iconv.decode(content, 'utf8')
+      cachedContent = parser.parse(encoded)
+    }
+
+    const { programs } = cachedContent
+
+    return programs.filter(p => p.channel === channel.site_id && date.isSame(p.start, 'day'))
+  } catch (error) {
+    console.log(`Error parsing items: ${error.message}`)
+    return []
   }
-
-  const { programs } = cachedContent
-
-  return programs.filter(p => p.channel === channel.site_id && date.isSame(p.start, 'day'))
 }
