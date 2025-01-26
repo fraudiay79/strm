@@ -16,23 +16,19 @@ module.exports = {
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
-  parser: function ({ content, channel }) {
-    let programs = []
+  parser({ content, channel }) {
     const items = parseItems(content, channel)
-    items.forEach(product => {
-      product.programs.forEach(item => {
-        programs.push({
-          title: item.title,
-          description: item.description,
-          category: item.category,
-          icon: item.picture ? item.picture.url : null,
-          duration: item.durationMinutes,
-          start: parseStart(item).toJSON(),
-          stop: parseStop(item).toJSON()
-        })
-      })
+
+    return items.map(item => {
+      return {
+        title: item.title,
+        category: item.category,
+        description: item.description,
+        icon: item?.picture?.url || null,
+        start: dayjs(item.start),
+        stop: dayjs(item.end)
+      }
     })
-    return programs
   },
   async channels() {
     let channels = []
@@ -85,22 +81,16 @@ async function getTotalPageCount() {
   return data.pagination.totalPages
 }
 
-function parseStart(item) {
-  return dayjs.tz(item.start, 'Europe/Sarajevo')
-}
-
-function parseStop(item) {
-  return dayjs.tz(item.end, 'Europe/Sarajevo')
-}
-
-function parseContent(content, channel) {
-  const [, channelId] = channel.site_id.split('#')
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data.products)) return null
-  return data.products.find(i => i.code === channelId)
-}
-
 function parseItems(content, channel) {
-  const data = parseContent(content, channel)
-  return data ? data.programs : []
+  try {
+    const data = JSON.parse(content)
+    if (!data || !Array.isArray(data.products)) return []
+
+    const channelData = data.products.find(c => c.code === channel.site_id)
+    if (!channelData || !Array.isArray(channelData.programs)) return []
+
+    return channelData.programs
+  } catch {
+    return []
+  }
 }
