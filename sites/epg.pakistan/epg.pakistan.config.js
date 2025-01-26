@@ -9,7 +9,7 @@ let cachedContent
 async function translateContent(text, targetLang) {
   if (!text) return text
   try {
-    let translation = await translate(text, { to: targetLang }, { timeout: 10000 }) // Increase timeout to 10 seconds
+    let translation = await translate(text, { to: targetLang }, { timeout: 30000 }) // Increase timeout to 30 seconds
     return translation.text
   } catch (error) {
     console.log(`Error translating text: ${error.message}`)
