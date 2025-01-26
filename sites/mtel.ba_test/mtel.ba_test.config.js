@@ -5,7 +5,7 @@ const timezone = require('dayjs/plugin/timezone')
 dayjs.extend(timezone)
 
 module.exports = {
-  site: 'mtel.ba',
+  site: 'mtel.ba_test',
   days: 2,
   url: function ({ date, page }) {
     return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&date=${date.format('YYYY-MM-DD')}&pageSize=10000`
