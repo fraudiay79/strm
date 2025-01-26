@@ -12,6 +12,7 @@ const API_ENDPOINT = 'https://sat.tv/wp-content/themes/twentytwenty-child/ajax_c
 module.exports = {
   site: 'sat.tv',
   days: 2,
+  delay: 5000,
   url: API_ENDPOINT,
   request: {
     method: 'POST',
