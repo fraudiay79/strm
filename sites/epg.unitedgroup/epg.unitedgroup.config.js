@@ -64,44 +64,46 @@ module.exports = {
     }
   },
   async channels() {
-    const countries = {
-      ba: { communityId: '12', languageId: '59', lang: 'bs' },
-      me: { communityId: '5', languageId: '10001', lang: 'me' },
-      rs: { communityId: '1', languageId: '404', lang: 'sr' },
-      si: { communityId: '8', languageId: '386', lang: 'sl' }
-    }
-    const session = await loadSessionDetails()
-    if (!session || !session.access_token) return null
-
-    let channels = []
-    for (let country in countries) {
-      const config = countries[country]
-      const lang = config.lang
-
-      try {
-        const data = await axios.get(
-          `https://api-web.ug-be.cdn.united.cloud/v1/public/channels?channelType=TV&communityId=${config.communityId}&languageId=${config.languageId}&imageSize=L`,
-          {
-            headers: {
-              Authorization: `Bearer ${session.access_token}`
-            }
-          }
-        )
-
-        const channelData = data.data.map(item => ({
-          lang,
-          site_id: item.id,
-          name: item.name
-        }))
-
-        channels = [...channels, ...channelData]
-      } catch (error) {
-        console.error(`Error fetching channels for ${country}:`, error)
-      }
-    }
-
-    return channels
+  const countries = {
+    ba: { communityId: '12', languageId: '59', lang: 'bs' },
+    me: { communityId: '5', languageId: '10001', lang: 'me' },
+    rs: { communityId: '1', languageId: '404', lang: 'sr' },
+    si: { communityId: '8', languageId: '386', lang: 'sl' }
   }
+  const session = await loadSessionDetails()
+  if (!session || !session.access_token) return null
+
+  const channelDataByCountry = {}
+  for (let country in countries) {
+    const config = countries[country]
+    const lang = config.lang
+
+    try {
+      const data = await axios.get(
+        `https://api-web.ug-be.cdn.united.cloud/v1/public/channels?channelType=TV&communityId=${config.communityId}&languageId=${config.languageId}&imageSize=L`,
+        {
+          headers: {
+            Authorization: `Bearer ${session.access_token}`
+          }
+        }
+      )
+
+      const channelData = data.data.map(item => ({
+        lang,
+        site_id: item.id,
+        name: item.name
+      }))
+
+      channelDataByCountry[country] = channelData
+    } catch (error) {
+      console.error(`Error fetching channels for ${country}:`, error)
+      channelDataByCountry[country] = []
+    }
+  }
+
+  return channelDataByCountry
+}
+
 }
 
 function parseImage(item) {
