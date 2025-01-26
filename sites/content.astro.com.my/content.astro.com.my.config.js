@@ -5,10 +5,12 @@ const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 const API_ENDPOINT = 'https://contenthub-api.eco.astro.com.my'
+const MAX_RETRIES = 5
 
 module.exports = {
   site: 'content.astro.com.my',
   days: 2,
+  delay: 5000,
   url: function ({ channel }) {
     return `${API_ENDPOINT}/channel/${channel.site_id}.json`
   },
