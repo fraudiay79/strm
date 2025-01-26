@@ -532,11 +532,11 @@
   <channel site="reportv.com.ar" lang="es" xmltv_id="TVU.bo" site_id="1870">TVU</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="UnitelSantaCruz.bo" site_id="6340">Unitel</channel>
   #Bosnia
-  <channel site="mtel.ba" lang="bs" xmltv_id="24Kitchen.ba" site_id="505#153">24Kitchen</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="24Kitchen.ba" site_id="118">24Kitchen</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="AgroTV.ba" site_id="501#147">Agro TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AlJazeeraBalkans.ba" site_id="051#25">Al Jazeera Balkans</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AlternativnaTV.ba" site_id="003#13">Alternativna TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AnimalPlanet.ba" site_id="404#125">Animal Planet</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="AlJazeeraBalkans.ba" site_id="657">Al Jazeera Balkans</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="AlternativnaTV.ba" site_id="32">Alternativna TV</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="AnimalPlanet.ba" site_id="17">Animal Planet</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaEsport.ba" site_id="050#471">Arena Esport</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaFight.ba" site_id="115#458">Arena Fight</channel>
   <channel site="mtel.ba" lang="sr" xmltv_id="ArenaSport1x2.ba" site_id="126#441">Arena sport 1x2</channel>
@@ -546,65 +546,62 @@
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport4.ba" site_id="104#498">Arena Sport 5</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport5.ba" site_id="104#56">Arena Sport 4</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport6.ba" site_id="105#499">Arena Sport 6</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="BabyTV.uk" site_id="203#85">Baby TV</channel>
+  <channel site="epg.unitedgroup" lang="en" xmltv_id="BabyTV.uk" site_id="1510">Baby TV</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="BalkanTripTV.rs" site_id="513#408">Balkan Trip</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="BHT1.ba" site_id="005#15">BHT</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="BloombergAdria.rs" site_id="020#484">Bloomberg Adria</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="BN.ba" site_id="002#12">BN</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BHT1.ba" site_id="198">BHT 1</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BloombergAdria.rs" site_id="1648">Bloomberg Adria</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BN.ba" site_id="449">BN</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="BN2.ba" site_id="025#23">BN 2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="BNMusic.ba" site_id="625#192">BN Music</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Cinemax.ba" site_id="353#104">Cinemax</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Cinemax2.ba" site_id="354#106">Cinemax 2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="DiscoveryChannel.ba" site_id="403#123">Discovery Channel</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BNMusic.ba" site_id="201">BN Music</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Cinemax.ba" site_id="63">Cinemax</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Cinemax2.ba" site_id="64">Cinemax 2</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="DiscoveryChannel.ba" site_id="776">Discovery Channel</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="DiscoveryScience.ba" site_id="411#444">Discovery Science</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="EnglishClubTV.uk" site_id="146#227">English Club TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Eurosport1.ba" site_id="106#58">Eurosport 1</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Eurosport2.ba" site_id="107#59">Eurosport 2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="FaceTV.ba" site_id="055#37">Face TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="FederalnaTV.ba" site_id="006#225">Federalna</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Eurosport1.ba" site_id="84">Eurosport 1</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Eurosport2.ba" site_id="1505">Eurosport 2</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="FaceTV.ba" site_id="471">Face TV</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="FederalnaTV.ba" site_id="33">Federalna</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="FightNetwork.ba" site_id="121#67">Fight Network</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Hayat.ba" site_id="054#35">Hayat</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Hayat2.ba" site_id="073#83">Hayat 2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="HayatFolk.ba" site_id="662#223">Hayat Folk</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="HayatMusic.ba" site_id="661#222">Hayat Music</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Hayatovci.ba" site_id="213#100">Hayatovci</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="HBO.ba" site_id="350#101">HBO</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="HBO2.ba" site_id="351#102">HBO 2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="HBO3.ba" site_id="352#103">HBO 3</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="HemaTV.ba" site_id="068#93">Hema TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="History.ba" site_id="400#118">History</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="History2.ba" site_id="135#134">History 2</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="JimJamEurope.uk" site_id="214#271">Jim Jam</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Minimax.ba" site_id="205#89">Minimax</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="MTVEurope.uk" site_id="165#334">MTV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ClubMTV.uk" site_id="167#297">Club MTV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="MTV90s.uk" site_id="168#298">MTV 90's</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="MTV80s.uk" site_id="169#226">MTV 80’s</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="MTV00s.uk" site_id="603#171">MTV 00's</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="MTVHits.uk" site_id="601#168">MTV Hits</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="N1.ba" site_id="101#2">N1</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Nickelodeon.ba" site_id="208#94">Nickelodeon</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="NickJr.ba" site_id="042#304">Nick Jr.</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="NickToons.ba" site_id="218#424">NickToons</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="NovaBH.ba" site_id="022#475">Nova BH</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="OBN.ba" site_id="061#482">OBN</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="OKanal.ba" site_id="052#26">O Kanal</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="OKanalPlus.ba" site_id="095#476">O Kanal Plus</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="OKanalMusic.ba" site_id="644#477">O Kanal Music</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayat.ba" site_id="466">Hayat</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayat2.ba" site_id="299">Hayat 2</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HayatFolk.ba" site_id="495">Hayat Folk</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HayatMusic.ba" site_id="496">Hayat Music</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayatovci.ba" site_id="494">Hayatovci</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HBO.ba" site_id="60">HBO</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HBO2.ba" site_id="61">HBO 2</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HBO3.ba" site_id="62">HBO 3</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HemaTV.ba" site_id="200">Hema TV</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="History.ba" site_id="99">History</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="History2.ba" site_id="115">History 2</channel>
+  <channel site="epg.unitedgroup" lang="en" xmltv_id="JimJamEurope.uk" site_id="1667">Jim Jam</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Minimax.ba" site_id="1511">Minimax</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="N1.ba" site_id="199">N1</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="NationalGeographic.ba" site_id="107">National Geographic</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="NationalGeographicWild.ba" site_id="111">National Geographic Wild</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Nickelodeon.ba" site_id="95">Nickelodeon</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="NickJr.ba" site_id="922">Nick Jr.</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="NickToons.ba" site_id="870">NickToons</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="NovaBH.ba" site_id="1494">Nova BH</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OBN.ba" site_id="30">OBN</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanal.ba" site_id="748">O Kanal</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanalPlus.ba" site_id="1096">O Kanal Plus</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanalMusic.ba" site_id="1097">O Kanal Music</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="OTVValentino.ba" site_id="093#448">OTV Valentino</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="PinkBH.ba" site_id="004#288">Pink BH</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="PinkBH.ba" site_id="587">Pink BH</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="PremierLeagueTV.uk" site_id="129#488">Premier League TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="RTLKockica.hr" site_id="205#459">RTL Kockica</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="RTRS.ba" site_id="001#11">РТРС</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="RTRSPlus.ba" site_id="009#18">РТРС Plus</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="StarChannel.a" site_id="304#114">Star Channel</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="StarCrime.ba" site_id="307#117">Star Crime</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="StarLife.ba" site_id="305#116">Star Life</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="TravelChannel.ba" site_id="121#332">Travel Channel</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="TropikTV.ba" site_id="212#399">Tropik TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ViasatExplore.ba" site_id="411#137">Viasat Explore</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ViasatHistory.ba" site_id="412#138">Viasat History</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ViasatNature.ba" site_id="410#135">Viasat Nature</channel>  
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTLKockica.hr" site_id="1495">RTL Kockica</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTRS.ba" site_id="31">РТРС</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTRSPlus.ba" site_id="653">РТРС Plus</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarChannel.a" site_id="56">Star Channel</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarCrime.ba" site_id="58">Star Crime</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarLife.ba" site_id="57">Star Life</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarMovies.ba" site_id="59">Star Movies</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="TravelChannel.ba" site_id="125">Travel Channel</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="TropikTV.ba" site_id="1526">Tropik TV</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="ViasatExplore.ba" site_id="730">Viasat Explore</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="ViasatHistory.ba" site_id="731">Viasat History</channel>
+  <channel site="epg.unitedgroup" lang="bs" xmltv_id="ViasatNature.ba" site_id="732">Viasat Nature</channel>  
   #Brazil
   <channel site="mi.tv" lang="pt" xmltv_id="AE.br" site_id="br#a-e">A&amp;E</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="AgroMais.br" site_id="br#agromais-hd">Agromais</channel>
@@ -6208,8 +6205,9 @@
   <channel site="sat.tv" lang="ar" xmltv_id="RojavaTV.sy" site_id="1#48#روجافا">Rojava TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="RonahiTV.sy" site_id="1#48#روناهي">Ronahî TV</channel>
   #Tahiti
-  <channel site="programme-tv.vini.pf" lang="fr" xmltv_id="Polynesie1ere.pf" site_id="polynesie-1ere">Polynésie la 1ère</channel>
-  <channel site="programme-tv.vini.pf" lang="fr" xmltv_id="TNTV.pf" site_id="tntv-local">TNTV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="Polynesie1ere.pf" site_id="pf#200046">Polynésie la 1ère</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="TNTV.pf" site_id="pf#200047">TNTV</channel>
+  <channel site="canalplus.com" lang="fr" xmltv_id="PacificPlus.pf" site_id="pf#200090">Pacific+</channel>
   #Tanzania
   <channel site="startimestv.com" lang="en" xmltv_id="BarmedasTV.tz" site_id="588">Barmedas tv</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="ChannelTen.tz" site_id="358">Channel Ten</channel>
@@ -7301,7 +7299,7 @@
   <channel site="iptvx.one" lang="ru" xmltv_id="BarelyLegalTV.us" site_id="barely-legal">Barely Legal TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="BeateUhseTV.de" site_id="107">Beate Uhse</channel>
   <channel site="tv24.se" lang="en" xmltv_id="BlueHustler.nl" site_id="blue-hustler">Blue Hustler</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="BrazzersTVEurope.us" site_id="191#300">Brazzers TV Europe</channel>
+  <channel site="epg.unitedgroup" lang="en" xmltv_id="BrazzersTVEurope.us" site_id="1658">Brazzers TV Europe</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Candy.ru" site_id="candy">Candy • Candy 3D HD • Candy HD</channel>
   <channel site="webtv.delta.nl" lang="en" xmltv_id="Desire.uk" site_id="10059">Desire</channel>
   <channel site="tv.sfr.fr" lang="en" xmltv_id="DorcelTV.fr" site_id="560">Dorcel TV</channel>
@@ -7348,7 +7346,7 @@
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="PlayHouse.si" site_id="1000294">Play House</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="PornHubTV.us" site_id="348886941">PornHub TV</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="PrivateTV.nl" site_id="74">Private TV</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="RealityKingsTV.us" site_id="915#374">Realty Kings TV</channel>
+  <channel site="epg.unitedgroup" lang="en" xmltv_id="RealityKingsTV.us" site_id="1657">Realty Kings TV</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="RedHotTV.ca" site_id="red-hot-tv/3627">Red Hot TV</channel>
   <channel site="tv.post.lu" lang="en" xmltv_id="RedlightHD.nl" site_id="764dd660-7009-11e9-a762-3be38d7f533c">Redlight</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="RedLips.ru" site_id="redlips">Red Lips • Red Lips HD</channel>
