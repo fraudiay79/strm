@@ -37,10 +37,10 @@ module.exports = {
     let channels = [];
     const totalPages = await getTotalPageCount();
     const pages = Array.from(Array(totalPages).keys());
-    for (let page of pages) {
+    for (let currentPage of pages) {
       const data = await axios
         .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
-          params: { pageSize: 20, currentPage: page, query: ':relevantno:tv-kategorija:tv-msat:tv-msat-paket:Svi+kanali' },
+          params: { pageSize: 20, currentPage, query: ':relevantno:tv-kategorija:tv-msat:tv-msat-paket:Svi+kanali' },
           headers: {
             'X-Requested-With': 'XMLHttpRequest'
           }
