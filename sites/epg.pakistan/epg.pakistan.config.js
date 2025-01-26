@@ -2,20 +2,8 @@ const axios = require('axios')
 const iconv = require('iconv-lite')
 const parser = require('epg-parser')
 const { ungzip } = require('pako')
-const { default: translate } = require('googletrans')
 
 let cachedContent
-
-async function translateContent(text, targetLang) {
-  if (!text) return text
-  try {
-    let translation = await translate(text, { to: targetLang }, { timeout: 30000 }) // Increase timeout to 30 seconds
-    return translation.text
-  } catch (error) {
-    console.log(`Error translating text: ${error.message}`)
-    return text
-  }
-}
 
 module.exports = {
   site: 'epg.pakistan',
@@ -27,26 +15,19 @@ module.exports = {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  parser: async function ({ buffer, channel, date, cached }) {
+  parser: function ({ buffer, channel, date, cached }) {
     if (!cached) cachedContent = undefined
 
     let programs = []
     const items = parseItems(buffer, channel, date)
-    for (let item of items) {
-	  let title = item.title?.[0]?.value
-	  let description = item.desc?.[0]?.value
-	  
-	  if (item.lang === 'ur') {
-        title = await translateContent(title, 'ur')
-        description = await translateContent(description, 'ur')
-	  }
+    items.forEach(item => {
       programs.push({
-        title: title,
-        description: description,
+        title: item.title?.[0]?.value,
+        description: item.desc?.[0]?.value,
         start: item.start,
         stop: item.stop
       })
-    }
+    })
 
     return programs
   },
