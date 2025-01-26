@@ -1,24 +1,24 @@
-const axios = require('axios');
-const dayjs = require('dayjs');
-const timezone = require('dayjs/plugin/timezone');
+const axios = require('axios')
+const dayjs = require('dayjs')
+const timezone = require('dayjs/plugin/timezone')
 
-dayjs.extend(timezone);
+dayjs.extend(timezone)
 
 module.exports = {
   site: 'mtel.ba',
   days: 2,
   url: function ({ date, page }) {
-    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&date=${date.format('YYYY-MM-DD')}&pageSize=10000`;
+    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&date=${date.format('YYYY-MM-DD')}&pageSize=10000`
   },
   request: {
     headers: {
-      maxContentLength: 10000000 // 10 Mb
+      maxContentLength: 10000000, // 10 Mb
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
   parser: function ({ content, channel }) {
-    let programs = [];
-    const items = parseItems(content, channel);
+    let programs = []
+    const items = parseItems(content, channel)
     items.forEach(product => {
       product.programs.forEach(item => {
         programs.push({
@@ -29,78 +29,78 @@ module.exports = {
           duration: item.durationMinutes,
           start: parseStart(item).toJSON(),
           stop: parseStop(item).toJSON()
-        });
-      });
-    });
-    return programs;
+        })
+      })
+    })
+    return programs
   },
-  async function channels() {
-    let channels = [];
-    const totalPages = await getTotalPageCount();
-    const pages = Array.from(Array(totalPages).keys()); // Creates an array [0, 1, 2, ... totalPages-1]
+  async channels() {
+    let channels = []
+    const totalPages = await getTotalPageCount()
+    const pages = Array.from(Array(totalPages).keys()) // Creates an array [0, 1, 2, ... totalPages-1]
 
     for (let page of pages) {
-        const data = await axios
-            .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
-                params: {
-                    pageSize: 20,
-                    currentPage: page,
-                    query: ':relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
-                },
-                headers: {
-                    'X-Requested-With': 'XMLHttpRequest'
-                }
-            })
-            .then(r => r.data)
-            .catch(console.log);
-
-        data.products.forEach(item => {
-            channels.push({
-                lang: 'bs',
-                site_id: item.code,
-                name: item.name
-            });
-        });
-    }
-
-    return channels;
-}
-};
-
-async function getTotalPageCount() {
-    const data = await axios
+      const data = await axios
         .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
-            params: {
-                pageSize: 20,
-                currentPage: 0,
-                query: ':relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
-            },
-            headers: {
-                'X-Requested-With': 'XMLHttpRequest'
-            }
+          params: {
+            pageSize: 20,
+            currentPage: page,
+            query: ':relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
+          },
+          headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+          }
         })
         .then(r => r.data)
-        .catch(console.log);
+        .catch(console.log)
 
-    return data.pagination.totalPages;
+      data.products.forEach(item => {
+        channels.push({
+          lang: 'bs',
+          site_id: item.code,
+          name: item.name
+        })
+      })
+    }
+
+    return channels
+  }
+}
+
+async function getTotalPageCount() {
+  const data = await axios
+    .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
+      params: {
+        pageSize: 20,
+        currentPage: 0,
+        query: ':relevantno:tv-kategorija:tv-iptv:tv-iptv-paket:Svi+kanali'
+      },
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+
+  return data.pagination.totalPages
 }
 
 function parseStart(item) {
-  return dayjs.tz(item.start, 'Europe/Sarajevo');
+  return dayjs.tz(item.start, 'Europe/Sarajevo')
 }
 
 function parseStop(item) {
-  return dayjs.tz(item.end, 'Europe/Sarajevo');
+  return dayjs.tz(item.end, 'Europe/Sarajevo')
 }
 
 function parseContent(content, channel) {
-  const [, channelId] = channel.site_id.split('#');
-  const data = JSON.parse(content);
-  if (!data || !Array.isArray(data.products)) return null;
-  return data.products.find(i => i.code === channelId);
+  const [, channelId] = channel.site_id.split('#')
+  const data = JSON.parse(content)
+  if (!data || !Array.isArray(data.products)) return null
+  return data.products.find(i => i.code === channelId)
 }
 
 function parseItems(content, channel) {
-  const data = parseContent(content, channel);
-  return data ? data.programs : [];
+  const data = parseContent(content, channel)
+  return data ? data.programs : []
 }
