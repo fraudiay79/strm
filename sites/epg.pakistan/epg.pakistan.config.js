@@ -33,6 +33,7 @@ module.exports = {
     let programs = []
     try {
       const items = parseItems(buffer, channel, date)
+      console.log(`Parsed ${items.length} items`) // Log number of parsed items
       for (let item of items) {
         let title = item.title?.[0]?.value
         let description = item.desc?.[0]?.value
@@ -79,9 +80,11 @@ function parseItems(buffer, channel, date) {
       const content = ungzip(buffer)
       const encoded = iconv.decode(content, 'utf8')
       cachedContent = parser.parse(encoded)
+      console.log(`Cached content parsed`) // Log when cached content is parsed
     }
 
     const { programs } = cachedContent
+    console.log(`Programs: ${programs.length}`) // Log number of programs in cached content
 
     return programs.filter(p => p.channel === channel.site_id && date.isSame(p.start, 'day'))
   } catch (error) {
