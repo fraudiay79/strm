@@ -14,6 +14,7 @@ module.exports = {
   },
   request: {
     headers: {
+      maxContentLength: 10000000, // 10 Mb
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
@@ -27,6 +28,7 @@ module.exports = {
     const promises = Array.from({ length: 70 }, (_, i) =>
       axios.get(`${API_ENDPOINT}/epg?platform=tv-iptv&currentPage=${i}&date=${date.format('YYYY-MM-DD')}`, {
         headers: {
+          maxContentLength: 10000000, // 10 Mb
           'X-Requested-With': 'XMLHttpRequest'
         }
       })
