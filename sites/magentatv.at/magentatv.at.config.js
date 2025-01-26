@@ -7,15 +7,16 @@ const API_ENDPOINT = 'https://tv-at-prod.yo-digital.com/at-bifrost'
 const headers = {
   app_key: 'CTnKA63ruKM0JM1doxAXwwyQLLmQiEiy',
   app_version: '02.0.1050',
-  'device-id': '5aa1283d-5229-4799-a383-0fe76efb9b24',
-  'x-request-session-id': '64cbafc1-fce8-4dd1-a724-bc773d4da7b2',
-  'x-request-tracking-id': 'cc72a98b-9182-487f-8329-bedf9a633827',
+  'device-id': crypto.randomUUID(),
+  'x-request-session-id': crypto.randomUUID(),
+  'x-request-tracking-id': crypto.randomUUID(),
   'x-user-agent': 'web|web|Chrome-131|02.0.1050|1'
 }
 
 module.exports = {
   site: 'magentatv.at',
   days: 2,
+  delay: 5000,
   request: {
     headers,
     cache: {
