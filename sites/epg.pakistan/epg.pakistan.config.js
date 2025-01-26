@@ -15,7 +15,7 @@ async function translateContent(text, targetLang) {
 module.exports = {
   site: 'epg.pakistan',
   days: 2,
-  url: 'https://www.open-epg.com/files/pakistan.xml.gz',
+  url: 'https://www.open-epg.com/files/pakistan.xml',
   request: {
     maxContentLength: 500000000, // 500 MB
     cache: {
