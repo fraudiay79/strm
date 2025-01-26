@@ -51,7 +51,7 @@ module.exports = {
       data.products.forEach(item => {
         channels.push({
           lang: 'bs',
-          site_id: item.code,
+          site_id: `${item.channelPosition}#${item.code}`,
           name: item.name
         });
       });
@@ -61,17 +61,21 @@ module.exports = {
 };
 
 async function getTotalPageCount() {
-  const data = await axios
-    .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
-      params: { pageSize: 20, currentPage: 0, query: ':relevantno:tv-kategorija:tv-msat:tv-msat-paket:Svi+kanali' },
-      headers: {
-        'X-Requested-With': 'XMLHttpRequest'
-      }
-    })
-    .then(r => r.data)
-    .catch(console.log)
+    const data = await axios
+        .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/search`, {
+            params: {
+                pageSize: 20,
+                currentPage: 0,
+                query: ':relevantno:tv-kategorija:tv-msat:tv-msat-paket:Svi+kanali'
+            },
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        })
+        .then(r => r.data)
+        .catch(console.log);
 
-  return data.total_pages
+    return data.pagination.totalPages;
 }
 
 function parseStart(item) {
