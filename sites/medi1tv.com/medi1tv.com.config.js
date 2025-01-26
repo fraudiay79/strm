@@ -54,17 +54,22 @@ module.exports = {
     return programs
   },
   async channels() {
-    const data = await axios
-      .get(`https://idara.medi1tv.ma/rss/medi1tv/channels.aspx?lg=ar&a`)
-      .then((r) => r.data)
-      .catch(console.log)
+  const data = await axios
+    .get(`https://idara.medi1tv.ma/rss/medi1tv/channels.aspx?lg=ar&a`)
+    .then((r) => r.data)
+    .catch(console.log)
 
-    return data.channels.map((item) => {
-      return {
-        lang: 'ar',
-        site_id: item.type,
-        name: item.titre
-      }
-    })
+  if (!data || !Array.isArray(data.channels)) {
+    console.error('Error: channels data is missing or not an array')
+    return []
   }
+
+  return data.channels.map((item) => {
+    return {
+      lang: 'ar',
+      site_id: item.type,
+      name: item.titre
+    }
+  })
+}
 }
