@@ -58,12 +58,13 @@ module.exports = {
     const response = await axios.get(`https://idara.medi1tv.ma/rss/medi1tv/channels.aspx?lg=ar&a`)
     console.log('Response data:', response.data)
     
-    if (!response.data || !Array.isArray(response.data.channels)) {
+    // Ensure response.data is an array
+    if (!Array.isArray(response.data)) {
       console.error('Error: channels data is missing or not an array')
       return []
     }
 
-    return response.data.channels.map((item) => {
+    return response.data.map((item) => {
       return {
         lang: 'ar',
         site_id: item.type,
