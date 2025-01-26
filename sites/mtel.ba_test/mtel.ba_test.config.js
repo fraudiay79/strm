@@ -7,12 +7,13 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'mtel.ba_test',
   days: 2,
-  url: function ({ date, page }) {
-    return `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&date=${date.format('YYYY-MM-DD')}&currentPage=0`
+  url: async function ({ date }) {
+    const totalPages = await getEpgTotalPageCount()
+    const pages = Array.from(Array(totalPages).keys())
+    return pages.map(page => `https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg?platform=tv-iptv&currentPage=${page}&date=${date.format('YYYY-MM-DD')}`)
   },
   request: {
     headers: {
-      maxContentLength: 10000000, // 10 Mb
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
@@ -61,6 +62,24 @@ module.exports = {
 
     return channels
   }
+}
+
+async function getEpgTotalPageCount() {
+  const data = await axios
+    .get(`https://mtel.ba/hybris/ecommerce/b2c/v1/products/channels/epg`, {
+      params: {
+        platform: 'tv-iptv',
+        currentPage: 0,
+        date: dayjs().format('YYYY-MM-DD')
+      },
+      headers: {
+        'X-Requested-With': 'XMLHttpRequest'
+      }
+    })
+    .then(r => r.data)
+    .catch(console.log)
+
+  return data.pagination.totalPages
 }
 
 async function getTotalPageCount() {
