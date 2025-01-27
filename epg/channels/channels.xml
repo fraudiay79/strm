@@ -21,7 +21,15 @@
   <channel site="tvprofil.com" lang="sq" xmltv_id="ExplorerNatyra.al" site_id="al/programacioni#explorer-natyra">Explorer Natyra</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="ExplorerSchkence.al" site_id="al/programacioni#explorer-shkence">Explorer Shkencë</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="Faxnews.al" site_id="al/programacioni#fax-news">Fax News</channel>
-  <channel site="tvprofil.com" lang="sq" xmltv_id="FilmAutor.al" site_id="al/programacioni#film-autor">Film Autor</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmAksion.al" site_id="film-aksion">Film Aksion</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmAutor.al" site_id="film-autor">Film Autor</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmDrame.al" site_id="film-drame">Film Dramë</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmFamily.al" site_id="family-hd">Film Family</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmGold.al" site_id="gold-hd">Film Gold</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmHits.al" site_id="film-hits-hd">Film Hits</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmKomedi.al" site_id="film-komedi">Film Komedi</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmMax.al" site_id="max-hd">Film Max</channel>
+  <channel site="ipko.tv" lang="sq" xmltv_id="FilmThriller.al" site_id="film-thriller">Film Thriller</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="FilmStinet.al" site_id="al/programacioni#stinet">Film Stinët</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="FilmBoxExtra.al" site_id="al/programacioni#filmbox-extra">FilmBox Extra</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="FilmBoxStars.al" site_id="al/programacioni#filmbox-plus">FilmBox Stars</channel>
@@ -5344,8 +5352,8 @@
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="PinkFamily.rs" site_id="47">Pink Family</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="PinkFashion.rs" site_id="703">Pink Fashion</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="PinkFilm.rs" site_id="174">Pink Film</channel>
-  <channel site="epg.unitedgroup" lang="sh" xmltv_id="PinkFolk1.rs" site_id="361">Pink Folk</channel>
-  <channel site="epg.unitedgroup" lang="sh" xmltv_id="PinkFolk2.rs" site_id="702">Pink Folk 2</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="PinkFolk1.rs" site_id="361">Pink Folk</channel>
+  <channel site="epg.unitedgroup" lang="sr" xmltv_id="PinkFolk2.rs" site_id="702">Pink Folk 2</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="PinkHits.rs" site_id="701">Pink Hits 1</channel>
   <channel site="epg.unitedgroup" lang="hr" xmltv_id="PinkHits2.rs" site_id="700">Pink Hits 2</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="PinkHorror.rs" site_id="582">Pink Horror</channel>
