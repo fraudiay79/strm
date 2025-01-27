@@ -7,9 +7,9 @@ const API_ENDPOINT = 'https://tv-mk-prod.yo-digital.com/mk-bifrost'
 const headers = {
   app_key: 'webq1ptdD5Gy4IatUZRiTezSu6sNc57A',
   app_version: '02.0.1091',
-  'device-id': crypto.randomUUID(),
-  'x-request-session-id': crypto.randomUUID(),
-  'x-request-tracking-id': crypto.randomUUID(),
+  'device-id': 'c36eef8a-96ed-4e8e-af1b-0998d444ab46',
+  'x-request-session-id': 'dad2295d-bdc2-4ab9-b300-401a95ce9927',
+  'x-request-tracking-id': '0c4ccdb3-8707-4cb8-babb-e8f0d4acec5c',
   'x-user-agent': 'web|web|Chrome-131|02.0.1091|1'
 }
 
