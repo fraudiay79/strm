@@ -33,7 +33,7 @@ module.exports = {
   },
   async channels() {
     const buffer = await axios
-      .get('https://www.open-epg.com/files/pakistan.xml', {
+      .get('https://www.open-epg.com/files/pakistan.xml.gz', {
         responseType: 'arraybuffer'
       })
       .then(r => r.data)
