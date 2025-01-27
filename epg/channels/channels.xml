@@ -214,7 +214,7 @@
   <channel site="mi.tv" lang="es" xmltv_id="HBO2.ar" site_id="ar#hbo-2">HBO 2</channel>
   <channel site="mi.tv" lang="es" xmltv_id="HBOFamily.ar" site_id="ar#hbo-family">HBO Family</channel>
   <channel site="mi.tv" lang="es" xmltv_id="HBOMundi.ar" site_id="ar#max">HBO Mundi</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBOPlus.ar" site_id="ar#hbo-plus-panamericano-hd">HBO Plus (Panamericano HD)</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOPlus.ar" site_id="ar#hbo-plus-panamericano-hd">HBO Plus</channel>
   <channel site="mi.tv" lang="es" xmltv_id="HBOPop.ar" site_id="ar#max-up">HBO Pop</channel>
   <channel site="mi.tv" lang="es" xmltv_id="HBOSignature.ar" site_id="ar#hbo-signature">HBO Signature</channel>
   <channel site="mi.tv" lang="es" xmltv_id="HBOXtreme.ar" site_id="ar#max-prime">HBO Xtreme</channel>
@@ -231,7 +231,6 @@
   <channel site="mi.tv" lang="es" xmltv_id="Lifetime.ar" site_id="ar#lifetime">Lifetime</channel>
   <channel site="mi.tv" lang="es" xmltv_id="MasChic.ar" site_id="ar#mas-chic">Más Chic</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Metro.ar" site_id="ar#metro">Metro</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="MTVHitsEurope.uk" site_id="ar#mtv-hits">MTV Hits</channel>
   <channel site="mi.tv" lang="es" xmltv_id="MTV.ar" site_id="ar#mtv">MTV</channel>
   <channel site="mi.tv" lang="es" xmltv_id="Much.ar" site_id="ar#muchmusic">MuchMusic</channel>
   <channel site="mi.tv" lang="es" xmltv_id="MusicTop.ar" site_id="ar#musictop">Musictop</channel>
@@ -700,9 +699,7 @@
   <channel site="mi.tv" lang="pt" xmltv_id="Loading.br" site_id="br#loading">Loading</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="MaisnaTela.br" site_id="br#globosat">+ Globosat</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="Megapix.br" site_id="br#megapix">Megapix</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="MTV00s.uk" site_id="br#vh1">VH1</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="MTV.br" site_id="br#mtv-brasil">MTV Brasil</channel>
-  <channel site="mi.tv" lang="pt" xmltv_id="MTVLive.uk" site_id="br#mtv-live-hd">MTV Live</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="Multishow.br" site_id="br#multishow">Multishow</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="MusicBoxBrazil.br" site_id="br#music-box-brasil">Music Box Brasil</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="NatGeoKids.br" site_id="br#nat-geo-kids">Nat Geo Kids</channel>
@@ -934,7 +931,6 @@
   <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatHistory.bg" site_id="7">Viasat History</channel>
   <channel site="tv.dir.bg" lang="bg" xmltv_id="ViasatNature.bg" site_id="168">Viasat Nature</channel>
   <channel site="tv.dir.bg" lang="en" xmltv_id="FightBox.nl" site_id="280">FightBox</channel>
-  <channel site="tv.dir.bg" lang="en" xmltv_id="MTVHits.uk" site_id="251">MTV Hits</channel>
   <channel site="tv.dir.bg" lang="en" xmltv_id="TraceSportStars.fr" site_id="300">Trace Sport Stars</channel>
   #Burkina Faso
   <channel site="startimestv.com" lang="en" xmltv_id="BurkinaInfo.bf" site_id="102798858">Burkina Info</channel>
@@ -1474,7 +1470,7 @@
   <channel site="magentatv.cz" lang="cs" xmltv_id="TelevizeSeznam.cz" site_id="6092">Televize Seznam</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="TLC.cz" site_id="4572">TLC</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="TravelChannel.cz" site_id="6008">Travel Channel</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="Travelxp.cz" site_id="6080">Travelxp HD</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="Travelxp.cz" site_id="6080">Travelxp</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="TVBarrandov.cz" site_id="4456">TV Barrandov</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="TVNoe.cz" site_id="6087">TV Noe</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="ViasatExplore.cz" site_id="4501">Viasat Explore</channel>
@@ -1488,10 +1484,6 @@
   <channel site="magentatv.cz" lang="en" xmltv_id="ExtremeSportsChannel.nl" site_id="4465">Extreme Sports Channel</channel>
   <channel site="magentatv.cz" lang="en" xmltv_id="FashionTVCzechSlovak.fr.fr" site_id="6007">Fashion TV</channel>
   <channel site="magentatv.cz" lang="en" xmltv_id="MTVEurope.uk" site_id="6003">MTV</channel>
-  <channel site="magentatv.cz" lang="en" xmltv_id="MTV00s.uk" site_id="6004">MTV 00s</channel>
-  <channel site="magentatv.cz" lang="en" xmltv_id="MTV80s.uk" site_id="4308">MTV 80s</channel>
-  <channel site="magentatv.cz" lang="en" xmltv_id="MTV90s.uk" site_id="6059">MTV 90s</channel>
-  <channel site="magentatv.cz" lang="en" xmltv_id="MTVHitsEurope.uk" site_id="6057">MTV Hits</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayCMusic.ca" site_id="110">Stingray CMusic</channel>
   <channel site="mujtvprogram.cz" lang="en" xmltv_id="StingrayiConcerts.ca" site_id="234">Stingray iConcerts</channel>
   <channel site="magentatv.sk" lang="sk" xmltv_id="Spectrum.sk" site_id="35">Spectrum</channel>
@@ -1552,8 +1544,6 @@
   <channel site="allente.dk" lang="da" xmltv_id="Kanal5.dk" site_id="0065">Kanal 5</channel>
   <channel site="knr.gl" lang="kl" xmltv_id="KNR1.gl" site_id="#">KNR</channel>
   <channel site="kvf.fo" lang="fo" xmltv_id="KringvarpForoya.fo" site_id="#">KVF</channel>
-  <channel site="allente.dk" lang="en" xmltv_id="MTV00s.uk" site_id="0246">MTV 00's</channel>
-  <channel site="allente.dk" lang="en" xmltv_id="MTV80s.uk" site_id="604">MTV 80's</channel>
   <channel site="allente.dk" lang="da" xmltv_id="MTVGlobal.uk" site_id="0076">MTV</channel>
   <channel site="allente.dk" lang="da" xmltv_id="NationalGeographic.dk" site_id="0317">National Geographic</channel>
   <channel site="allente.dk" lang="da" xmltv_id="Nickelodeon.dk" site_id="0086">Nickelodeon</channel>
@@ -2014,7 +2004,7 @@
   <channel site="magticom.ge" lang="ka" xmltv_id="Ertsulovneba.ge" site_id="72">ერთსულოვნება</channel>
   <channel site="magticom.ge" lang="ka" xmltv_id="EuronewsGeorgia.ge" site_id="68002">Euronews Georgia</channel>
   <channel site="magticom.ge" lang="ka" xmltv_id="Formula.ge" site_id="63000">ფორმულა</channel>
-  <channel site="magticom.ge" lang="ka" xmltv_id="GDSTV.ge" site_id="144">GDS HD</channel>
+  <channel site="magticom.ge" lang="ka" xmltv_id="GDSTV.ge" site_id="144">GDS</channel>
   <channel site="magticom.ge" lang="ka" xmltv_id="GuriaTV.ge" site_id="57000">გურია ტვ</channel>
   <channel site="magticom.ge" lang="ka" xmltv_id="GurjaaniTV.ge" site_id="286">გურჯაანი</channel>
   <channel site="magticom.ge" lang="ka" xmltv_id="ImediTV.ge" site_id="4">იმედი</channel>
@@ -2057,8 +2047,8 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="AllgauTV.de" site_id="448">allgäu.tv</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="AltenburgTV.de" site_id="3660">altenburg.tv</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="AnimalPlanet.de" site_id="105">Animal Planet</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="AnixeHDSerie.de" site_id="4777">ANIXE HD Serie</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="AnixePlus.de" site_id="452">ANIXE+</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="AnixeHDSerie.de" site_id="4777">Anixe HD Serie</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="AnixePlus.de" site_id="452">Anixe+</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="ARDalpha.de" site_id="479">ARD-alpha</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="arte.de" site_id="394">ARTE</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="automotorundsportchannel.de" site_id="108">auto motor und sport</channel>
@@ -2310,9 +2300,9 @@
   <channel site="cosmotetv.gr" lang="el" xmltv_id="OneChannel.gr" site_id="onechannelhd">ONE Channel</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="OpenBeyond.gr" site_id="openbeyondhd">Open Beyond</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="PanikTV.gr" site_id="panikhd">Panik TV</channel>
-  <channel site="cosmotetv.gr" lang="el" xmltv_id="Skai.gr" site_id="skaihd">ΣΚΑΪ</channel>
+  <channel site="cosmotetv.gr" lang="el" xmltv_id="Skai.gr" site_id="skaihd">Σκαϊ</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="Star.gr" site_id="starhd">Star</channel>
-  <channel site="cosmotetv.gr" lang="el" xmltv_id="TCM.gr" site_id="tcmhd">TCM HD</channel>
+  <channel site="cosmotetv.gr" lang="el" xmltv_id="TCM.gr" site_id="tcmhd">TCM</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="ViasatExplore.gr" site_id="viasatexplore">Viasat Explore</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="ViasatHistory.gr" site_id="viasathistory">Viasat History</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="ViasatNature.gr" site_id="viasatnature">Viasat Nature</channel>
@@ -2329,9 +2319,8 @@
   <channel site="nova.gr" lang="el" xmltv_id="Eurosport2.gr" site_id="31">Eurosport 2</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="VouliTV.gr" site_id="vouli">ΒΟΥΛΗ</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="KritiTV.gr" site_id="krititv">ΚΡΗΤΗ TV</channel>
-  <channel site="cosmotetv.gr" lang="el" xmltv_id="LuxeTV.lu" site_id="luxetvhd">Luxe TV HD</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="MadTV.gr" site_id="madhd">MAD</channel>
-  <channel site="cosmotetv.gr" lang="el" xmltv_id="Mega.gr" site_id="megahd">MEGA HD</channel>
+  <channel site="cosmotetv.gr" lang="el" xmltv_id="Mega.gr" site_id="megahd">Mega</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="MTVGlobal.uk" site_id="mtveurope">MTV Europe</channel>
   <channel site="cosmotetv.gr" lang="el" xmltv_id="NationalGeographicWild.gr" site_id="nat-geo-wild-hd">National Geographic Wild</channel>
   <channel site="nova.gr" lang="el" xmltv_id="Novalife.gr" site_id="14">Novalife</channel>
@@ -3238,7 +3227,7 @@
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JCOMHigashiKanto.jp" site_id="200_00021_0">J:COMチャンネル東京</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JCOMPremierChannel.jp" site_id="120_037_65406">J:COMプレミアチャンネル</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JCOMTV.jp" site_id="200_00052_0">J:テレ</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JidaigekiSenmonChannel.jp" site_id="120_159_65406">時代劇専門チャンネル HD</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JidaigekiSenmonChannel.jp" site_id="120_159_65406">時代劇専門チャンネル</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JLC.jp" site_id="120_287_65534">レジャーチャンネル</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOAXDTV.jp" site_id="2_1040_32738">日本テレビ</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="JOCXDTV.jp" site_id="2_1056_32740">フジテレビ</channel>
@@ -3289,7 +3278,7 @@
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TBSChannel1.jp" site_id="120_144_65406">TBSチャンネル1 最新ドラマ・音楽・映画</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TBSChannel2.jp" site_id="120_176_65406">TBSチャンネル2 名作ドラマ・スポーツ・アニメ</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TBSNEWS.jp" site_id="120_152_65406">TBS News</channel>
-  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TheCinema.jp" site_id="120_133_65534">ザ・シネマ HD</channel>
+  <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TheCinema.jp" site_id="120_133_65534">ザ・シネマ</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="ToeiChannel.jp" site_id="120_173_65406">東映チャンネルHD</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TVAsahiChannel1.jp" site_id="120_136_65406">テレ朝チャンネル１</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="TVAsahiChannel2.jp" site_id="120_188_65406">テレ朝チャンネル２</channel>
@@ -3764,9 +3753,8 @@
   <channel site="melita.com" lang="mt" xmltv_id="TVMnewsPlus.mt" site_id="b346e5a5-49e9-428a-a56a-2394d1c611ce">TVMnews+</channel>
   <channel site="melita.com" lang="mt" xmltv_id="TVMsportPlus.mt" site_id="ff41ddd8-8650-4921-bf99-e625d75f3605">TVMsport+</channel>
   <channel site="melita.com" lang="en" xmltv_id="FLivingChannel.mt" site_id="00144de1-557a-418f-90ce-f518aa195f35">f Living</channel>
-  <channel site="melita.com" lang="en" xmltv_id="ITVShopping.mt" site_id="98be3ea0-cb90-4f5c-b256-fbdf33816bd8">ITV Shopping</channel>
-  <channel site="melita.com" lang="en" xmltv_id="NetTV.mt" site_id="9a077164-80c8-473b-b97f-9e7c4f749fa1">NET HD</channel>
-  <channel site="melita.com" lang="en" xmltv_id="One.mt" site_id="ae5f3788-e956-47a3-ad49-cff84b9d3dfd">ONE HD</channel>
+  <channel site="melita.com" lang="en" xmltv_id="NetTV.mt" site_id="9a077164-80c8-473b-b97f-9e7c4f749fa1">Net TV</channel>
+  <channel site="melita.com" lang="en" xmltv_id="One.mt" site_id="ae5f3788-e956-47a3-ad49-cff84b9d3dfd">One</channel>
   <channel site="melita.com" lang="en" xmltv_id="ParliamentofMalta.mt" site_id="f1d6d64f-30b8-49c2-b8f4-67ce789b002f">Parliament Channel</channel>
   <channel site="melita.com" lang="en" xmltv_id="SmashTV.mt" site_id="90866e92-bb52-4842-b00d-ae2bad9dfec6">Smash TV</channel>
   <channel site="melita.com" lang="en" xmltv_id="TSN1.mt" site_id="d71d5637-86da-4c38-a434-ed119cf0e83c">TSN1</channel>
@@ -3897,7 +3885,7 @@
   <channel site="zuragt.mn" lang="mn" xmltv_id="DreamTV.mn" site_id="dream">Dream</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="EcoTV.mn" site_id="eco_suvag">Eco Channel</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="eduTV.mn" site_id="bolovsrol">Боловсрол ТВ</channel>
-  <channel site="zuragt.mn" lang="mn" xmltv_id="ETV.mn" site_id="etv">ETV HD</channel>
+  <channel site="zuragt.mn" lang="mn" xmltv_id="ETV.mn" site_id="etv">ETV</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="MNB.mn" site_id="mnb">МҮОНТ</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="MNBFamily.mn" site_id="mnb-ger-bl">MNB Гэр Бүл</channel>
   <channel site="zuragt.mn" lang="mn" xmltv_id="MNBSport.mn" site_id="mnb-sport">MNB Sport</channel>
@@ -4101,7 +4089,6 @@
   <channel site="sky.co.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="18">Investigation Discovery</channel>
   <channel site="sky.co.nz" lang="en" xmltv_id="JONES.nz" site_id="8">JONES!</channel>
   <channel site="sky.co.nz" lang="en" xmltv_id="Living.nz" site_id="17">Living Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="MTVHits.nz" site_id="22">MTV Hits</channel>
   <channel site="sky.co.nz" lang="en" xmltv_id="MTV.nz" site_id="15">MTV</channel>
   <channel site="sky.co.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="101">Nick</channel>
   <channel site="sky.co.nz" lang="en" xmltv_id="NickJr.au" site_id="104">Nick Jr.</channel>
@@ -4212,8 +4199,6 @@
   <channel site="allente.no" lang="no" xmltv_id="History2.no" site_id="1004">History 2</channel>
   <channel site="allente.no" lang="no" xmltv_id="Hits.no" site_id="1091">Hits</channel>
   <channel site="allente.no" lang="no" xmltv_id="InvestigationDiscovery.no" site_id="1011">Investigation Discovery</channel>
-  <channel site="allente.no" lang="en" xmltv_id="MTV00s.uk" site_id="0246">MTV 00's</channel>
-  <channel site="allente.no" lang="en" xmltv_id="MTV80s.uk" site_id="604">MTV 80's</channel>
   <channel site="allente.no" lang="no" xmltv_id="MTVGlobal.uk" site_id="0080">MTV</channel>
   <channel site="allente.no" lang="no" xmltv_id="NationalGeographic.no" site_id="0316">National Geographic</channel>
   <channel site="allente.no" lang="no" xmltv_id="Nickelodeon.no" site_id="0086">Nickelodeon</channel>
@@ -4783,7 +4768,7 @@
   <channel site="nostv.pt" lang="de" xmltv_id="RTLSuper.de" site_id="200">Super RTL</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="RTRPlanetaEurope.ru" site_id="117">RTR Planeta</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="TLC.pt" site_id="23">TLC</channel>
-  <channel site="nostv.pt" lang="pt" xmltv_id="TravelChannel.pt" site_id="70">Travel Channel HD</channel>
+  <channel site="nostv.pt" lang="pt" xmltv_id="TravelChannel.pt" site_id="70">Travel Channel</channel>
   <channel site="nostv.pt" lang="pt" xmltv_id="TVCancaoNova.pt" site_id="142">Canção Nova</channel>
   <channel site="nostv.pt" lang="es" xmltv_id="TVEInternacional.es" site_id="48">TVEi</channel>
   <channel site="nostv.pt" lang="en" xmltv_id="WSport.za" site_id="701">W-Sport</channel>
@@ -4872,10 +4857,10 @@
   <channel site="programetv.ro" lang="ro" xmltv_id="Eurosport2.ro" site_id="eurosport-2">Eurosport 2</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="ExplorisTV.ro" site_id="exploris-tv">Exploris TV</channel>
   <channel site="programetv.ro" lang="en" xmltv_id="ExtremeSportsChannel.nl" site_id="extreme-sports-channel">Extreme Sports</channel>
-  <channel site="programetv.ro" lang="ro" xmltv_id="FashionBox.nl" site_id="fashion-box-hd">Fashion Box HD</channel>
+  <channel site="programetv.ro" lang="ro" xmltv_id="FashionBox.nl" site_id="fashion-box-hd">FashionBox</channel>
   <channel site="programetv.ro" lang="en" xmltv_id="FashionTVEurope.fr" site_id="fashion-tv">Fashion TV</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="FavoritTV.ro" site_id="favorit">Favorit</channel>
-  <channel site="programetv.ro" lang="en" xmltv_id="FightBox.nl" site_id="fight-box-hd">Fight Box HD</channel>
+  <channel site="programetv.ro" lang="en" xmltv_id="FightBox.nl" site_id="fight-box-hd">FightBox</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="Film4.hu" site_id="film4">Film4</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="Filmbox.ro" site_id="filmbox">Filmbox</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="FilmBoxArthouse.ro" site_id="filmbox-arthouse">FilmBox Arthouse</channel>
@@ -4908,10 +4893,6 @@
   <channel site="programetv.ro" lang="ro" xmltv_id="MoozDance.ro" site_id="mooz-dance">Mooz Dance</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="MoozHits.ro" site_id="mooz-hits">Mooz Hits</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="MoozRo.ro" site_id="mooz-ro">Mooz Ro</channel>
-  <channel site="programetv.ro" lang="en" xmltv_id="MTV80s.uk" site_id="mtv-80s">MTV 80s</channel>
-  <channel site="programetv.ro" lang="en" xmltv_id="MTV90s.uk" site_id="mtv-90s">MTV 90s</channel>
-  <channel site="programetv.ro" lang="en" xmltv_id="MTVHitsEurope.uk" site_id="mtv-hits">MTV Hits</channel>
-  <channel site="programetv.ro" lang="en" xmltv_id="MTVLive.uk" site_id="mtv-live-hd">MTV Live HD</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="Museum.ro" site_id="museum-hd">Museum</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="MusicChannel.ro" site_id="music-channel">Music Channel</channel>
   <channel site="programetv.ro" lang="ro" xmltv_id="MuzsikaTV.hu" site_id="muzsika-tv">Muzsika TV</channel>
@@ -5882,8 +5863,8 @@
   <channel site="miguia.tv" lang="es" xmltv_id="Beteve.es" site_id="305">Betevé</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="BetisTV.es" site_id="1019">Betis TV</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Boing.es" site_id="1021">Boing</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="BomCine.es" site_id="2063">Bom Cine</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="BUENVIAJE.es" site_id="11112">¡BuenViaje!</channel>
+  <channel site="orangetv.es" lang="es" xmltv_id="BOMCine.es" site_id="2063">BOM Cine</channel>
+  <channel site="orangetv.es" lang="es" xmltv_id="BuenViaje.es" site_id="11112">¡BuenViaje!</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Calle13.es" site_id="11003">Calle 13</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="CanalCocina.es" site_id="11020">Canal Cocina</channel>
   <channel site="miguia.tv" lang="es" xmltv_id="CanalExtremadura.es" site_id="44">Canal Extremadura</channel>
@@ -5906,7 +5887,7 @@
   <channel site="orangetv.es" lang="es" xmltv_id="DAZNLaLiga.es" site_id="11077">DAZN LaLiga</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="DAZNLaLiga2.es" site_id="11080">DAZN LaLiga 2</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Decasa.es" site_id="11027">Decasa</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="DiscoveryChannel.es" site_id="1039">Discovery</channel>
+  <channel site="orangetv.es" lang="es" xmltv_id="DiscoveryChannel.es" site_id="1039">Discovery Channel</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="DisneyChannel.es" site_id="DCH">Disney Channel</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="DisneyJunior.es" site_id="11015">Disney Junior</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Divinity.es" site_id="1034">Divinity</channel>
@@ -5978,7 +5959,7 @@
   <channel site="movistarplus.es" lang="es" xmltv_id="MovistarOriginales.es" site_id="MORIG">M+ Originales</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="MovistarPlus.es" site_id="MPLUS">Movistar Plus+</channel>
   <channel site="movistarplus.es" lang="es" xmltv_id="MovistarPlus2.es" site_id="MPLUS2">Movistar Plus+ 2</channel>
-  <channel site="movistarplus.es" lang="es" xmltv_id="MovistarVamos.es" site_id="VAMOSD">M+ Vamos</channel>
+  <channel site="movistarplus.es" lang="es" xmltv_id="MovistarVamos.es" site_id="VAMOSD">#Vamos</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="MTVLive.us" site_id="11051">MTV Live</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="MTV.es" site_id="11050">MTV España</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="NationalGeographic.es" site_id="11017">National Geographic</channel>
@@ -6010,7 +5991,7 @@
   <channel site="movistarplus.es" lang="es" xmltv_id="TelevisionCanaria.es" site_id="CANAR">TV Canaria</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="Ten.es" site_id="12054">Ten</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TPA7.es" site_id="2009">TPA</channel>
-  <channel site="orangetv.es" lang="es" xmltv_id="Trece.es" site_id="1017">Tr3ce</channel>
+  <channel site="orangetv.es" lang="es" xmltv_id="Tr3ce.es" site_id="1017">Tr3ce</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TV3.es" site_id="2008">TV3</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TV3CAT.es" site_id="1036">TV3 CAT</channel>
   <channel site="orangetv.es" lang="es" xmltv_id="TVG2.es" site_id="2053">TVG 2</channel>
@@ -6044,8 +6025,6 @@
   <channel site="allente.se" lang="sv" xmltv_id="Kanal9.se" site_id="474">Kanal 9</channel>
   <channel site="allente.se" lang="sv" xmltv_id="Kanal11.se" site_id="0235">Kanal 11</channel>
   <channel site="allente.se" lang="sv" xmltv_id="Kunskapskanalen.se" site_id="0149">Kunskapskanalen</channel>
-  <channel site="allente.se" lang="en" xmltv_id="MTV00s.uk" site_id="0246">MTV 00's</channel>
-  <channel site="allente.se" lang="en" xmltv_id="MTV80s.uk" site_id="0099">MTV 80's</channel>
   <channel site="allente.se" lang="sv" xmltv_id="MTVGlobal.uk" site_id="0080">MTV</channel>
   <channel site="allente.se" lang="sv" xmltv_id="NationalGeographic.se" site_id="0084">National Geographic</channel>
   <channel site="allente.se" lang="sv" xmltv_id="Nickelodeon.se" site_id="0086">Nickelodeon</channel>
@@ -6651,14 +6630,14 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="NickJrToo.uk" site_id="1531/nick-jr-peppa">Nick Jr. Too</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Nicktoons.uk" site_id="874/nickloudhouse">Nicktoons</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="NottsTV.uk" site_id="1891/notts-tv">Notts TV</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="Now70s.uk" site_id="1917/now-70s">NOW 70s</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="Now80s.uk" site_id="1915/now-80s">NOW 80s</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="NOWRock.uk" site_id="1977/now-rock">NOW Rock</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="Now70s.uk" site_id="1917/now-70s">Now 70s</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="Now80s.uk" site_id="1915/now-80s">Now 80s</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="NowRock.uk" site_id="1977/now-rock">Now Rock</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="PBSAmerica.uk" site_id="1660/pbs-america">PBS America</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="PremierSports1.uk" site_id="1638/viaplay-sports-1-hd">Premier Sports 1</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="PremierSports2.uk" site_id="2270/viaplay-sports-2-hd">Premier Sports 2</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="Pop.uk" site_id="1403/pop">Pop</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="PopMax.uk" site_id="1862/pop-max">Pop Max</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="POP.uk" site_id="1403/pop">POP</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="POPMax.uk" site_id="1862/pop-max">POP Max</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Quest.uk" site_id="1483/quest">Quest</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="QuestRed.uk" site_id="2060/quest-red">Quest Red</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="QVC.uk" site_id="216/qvc">QVC</channel>
@@ -6716,9 +6695,8 @@
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Thats80s.uk" site_id="2400/thats-80s">That&apos;s 80s</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="Thats90s.uk" site_id="2437/thats-90s">That&apos;s 90s</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="ThatsTV.uk" site_id="2351/thats-tv">That&apos;s TV</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TinyPop.uk" site_id="1402/tiny-pop">Tiny Pop</channel>
+  <channel site="mytelly.co.uk" lang="en" xmltv_id="TinyPOP.uk" site_id="1402/tiny-pop">Tiny POP</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TLC.uk" site_id="1789/tlc">TLC</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TLCHD.uk" site_id="1794/tlc-hd">TLC HD</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TLCPlus1.uk" site_id="1790/tlc-1">TLC +1</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports1.uk" site_id="1804/tnt-sports-1">TNT Sports 1</channel>
   <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports2.uk" site_id="1806/tnt-sports-2">TNT Sports 2</channel>
@@ -6760,7 +6738,6 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="AXSTV.us" site_id="us#1414706180/axstv">AXS TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="BabyFirst.us" site_id="us#69030396/babyfirst-tv">BabyFirst</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="BBCAmerica.us" site_id="us#69044423/bbc-america-east">BBC America</channel>
-  <channel site="xumo.tv" lang="en" xmltv_id="BBCEarth.us" site_id="100#99951231">BBC Earth</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports3.us" site_id="90E69FC7-AA8C-40F2-B35F-EBD174495F76">beIN Sports 3</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports4.us" site_id="D0546ED7-9DB2-4924-9E32-C4F077E7BFC7">beIN Sports 4</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports5.us" site_id="A5A48DB1-C00B-4DB9-9FC6-5E5F25C18830">beIN Sports 5</channel>
@@ -6810,7 +6787,7 @@
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN.us" site_id="CSPAN">C-SPAN</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN2.us" site_id="CSPN2HD">C-SPAN 2</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN3.us" site_id="CSPN3HD">C-SPAN 3</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="CW.us" site_id="us#69041710/wkcf">CW (East)</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="CW.us" site_id="us#69048238/wupa">CW (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Dabl.us" site_id="us#7703165031/wcbs-dabl">Dabl</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Daystar.us" site_id="us#1758222088/daystar">Daystar</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="DestinationAmerica.us" site_id="us#69044143/destination-america">Destination America</channel> 
@@ -6930,7 +6907,7 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="MTVTr3s.us" site_id="us#69047125/tr3s-east">MTV Tr3s</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MTVU.us" site_id="us#69024870/mtv-u">MTV U</channel>
   <channel site="pluto.tv" lang="no" xmltv_id="MTVUnplugged.us" site_id="61c1e14e5df1da0007bee0e3">MTV Unplugged</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="MyNetworkTV.us" site_id="us#69043388/wwor">MyNetworkTV</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="MyNetworkTV.us" site_id="us#69030741/whvl">MyNetworkTV</channel>
   <channel site="ontvtonight.com" lang="es" xmltv_id="NASATV.us" site_id="us#629244160/wefs-nasa-education-channel">NASA TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="NationalGeographic.us" site_id="us#69049747/national-geographic">National Geographic</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="NatGeoMundo.us" site_id="us#69040267/nat-geo-mundo">Nat Geo Mundo</channel>
