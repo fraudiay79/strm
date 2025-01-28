@@ -16,22 +16,22 @@ function parseProgramTime(timeStr) {
 
   if (/am|pm|AM|PM/.test(timeStr)) {
     if (timeStr.includes('.') && !timeStr.includes(' ')) {
-      return dayjs.tz(timeStr, 'h.mm a', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+      return dayjs.tz(timeStr, 'h.mm a', timeZone).format('YYYYMMDDHHmmss')
     } else if (timeStr.includes(':')) {
-      return dayjs.tz(timeStr, 'h:mm A', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+      return dayjs.tz(timeStr, 'h:mm A', timeZone).format('YYYYMMDDHHmmss')
     } else {
-      return dayjs.tz(timeStr.replace(/\s+/g, ''), 'hmmA', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+      return dayjs.tz(timeStr.replace(/\s+/g, ''), 'hmmA', timeZone).format('YYYYMMDDHHmmss')
     }
   } else if (timeStr.includes('.')) {
-    return dayjs.tz(timeStr, 'H.mm', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+    return dayjs.tz(timeStr, 'H.mm', timeZone).format('YYYYMMDDHHmmss')
   } else if (timeStr.includes(':')) {
-    return dayjs.tz(timeStr, 'HH:mm', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+    return dayjs.tz(timeStr, 'HH:mm', timeZone).format('YYYYMMDDHHmmss')
   } else if (timeStr.length === 4 && /^\d{4}$/.test(timeStr)) {
-    return dayjs.tz(timeStr, 'HHmm', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
+    return dayjs.tz(timeStr, 'HHmm', timeZone).format('YYYYMMDDHHmmss')
   } else if (/PST/.test(timeStr)) {
     const pstTime = timeStr.match(/(\d{4})PST/)
     if (pstTime) {
-      return dayjs.tz(pstTime[1], 'HHmm', 'Asia/Karachi').format('YYYY-MM-DDTHH:mm:ssZ')
+      return dayjs.tz(pstTime[1], 'HHmm', 'Asia/Karachi').format('YYYYMMDDHHmmss')
     } else {
       return 'Invalid PST time format'
     }
@@ -42,7 +42,7 @@ function parseProgramTime(timeStr) {
 
 function calculateStopTime(start) {
   const timeZone = 'Asia/Karachi'
-  return dayjs.tz(start, 'YYYY-MM-DDTHH:mm:ssZ', timeZone).add(1, 'hour').format('YYYY-MM-DDTHH:mm:ssZ')
+  return dayjs.tz(start, 'YYYYMMDDHHmmss', timeZone).add(1, 'hour').format('YYYYMMDDHHmmss')
 }
 
 function toProperCase(str) {
