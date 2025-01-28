@@ -1,5 +1,5 @@
 // Disable TLS validation (use cautiously)
-//process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
 
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
