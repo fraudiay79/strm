@@ -22,8 +22,8 @@ module.exports = {
     const items = parseItems(buffer, channel, date)
     items.forEach(item => {
       programs.push({
-        title: item.title?.[0]?.value,
-        description: item.desc?.[0]?.value,
+        title: item.title?.[0]?.value || 'No Title',
+        description: item.desc?.[0]?.value || 'No Description',
         start: item.start,
         stop: item.stop
       })
@@ -37,17 +37,25 @@ module.exports = {
         responseType: 'arraybuffer'
       })
       .then(r => r.data)
-      .catch(console.log)
+      .catch(err => {
+        console.error('Failed to fetch channel data:', err)
+        throw err // or return null
+      })
 
-    const data = ungzip(buffer)
-    const decoded = iconv.decode(data, 'utf8')
-    const { channels } = parser.parse(decoded)
+    try {
+      const data = ungzip(buffer)
+      const decoded = iconv.decode(data, 'utf8')
+      const { channels } = parser.parse(decoded)
 
-    return channels.map(channel => ({
-      lang: 'ur',
-      site_id: channel.id,
-      name: channel.displayName[0].value
-    }))
+      return channels.map(channel => ({
+        lang: 'ur',
+        site_id: channel.id,
+        name: channel.displayName[0].value
+      }))
+    } catch (err) {
+      console.error('Failed to process channel data:', err)
+      throw err // or return null
+    }
   }
 }
 
@@ -55,9 +63,14 @@ function parseItems(buffer, channel, date) {
   if (!buffer) return []
 
   if (!cachedContent) {
-    const content = ungzip(buffer)
-    const encoded = iconv.decode(content, 'utf8')
-    cachedContent = parser.parse(encoded)
+    try {
+      const content = ungzip(buffer)
+      const encoded = iconv.decode(content, 'utf8')
+      cachedContent = parser.parse(encoded)
+    } catch (err) {
+      console.error('Failed to parse EPG data:', err)
+      return []
+    }
   }
 
   const { programs } = cachedContent
