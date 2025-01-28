@@ -41,7 +41,7 @@ module.exports = {
         description: details.description,
         icon: details.icon,
         category: details.category,
-        sub_title: details.sub_title,
+        subtitle: details.subtitle,
         season: details.season,
         episode: details.episode,
         start,
@@ -88,7 +88,10 @@ async function loadProgramDetails(item) {
   if (!item.EPGUNIQID) return {}
   const url = `https://www.osn.com/api/TVScheduleWebService.asmx/GetProgramDetails?prgmEPGUNIQID=${item.EPGUNIQID}&countryCode=SA`
   const data = await axios
-    .get(url)
+    .get(url, {
+      headers: {
+        'x-requested-with': 'XMLHttpRequest'
+      })
     .then(r => r.data)
     .catch(console.log)
 
@@ -113,7 +116,7 @@ async function loadProgramDetails(item) {
     icon: imageUrl,
     description: description,
     category: category,
-    sub_title: subTitle,
+    subtitle: subTitle,
     season: season,
     episode: episode
   }
