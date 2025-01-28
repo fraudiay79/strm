@@ -42,7 +42,7 @@ module.exports = {
       })
 
     try {
-      const decoded = iconv.decode(buffer, 'utf8')
+      const decoded = iconv.decode(buffer, 'utf8').trim()
       const { channels } = parser.parse(decoded)
 
       return channels.map(channel => ({
@@ -62,7 +62,7 @@ function parseItems(buffer, channel, date) {
 
   if (!cachedContent) {
     try {
-      const encoded = iconv.decode(buffer, 'utf8')
+      const encoded = iconv.decode(buffer, 'utf8').trim()
       cachedContent = parser.parse(encoded)
     } catch (err) {
       console.error('Failed to parse EPG data:', err)
