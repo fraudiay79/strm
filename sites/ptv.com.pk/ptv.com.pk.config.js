@@ -57,6 +57,12 @@ module.exports = {
     method: 'GET',
     headers: {
       'Referer': 'https://ptv.com.pk/ptvhome/tvguide',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
+      'Sec-Ch-Ua-Platform': '"Windows"',
+      'Sec-Ch-Ua': '"Not.A/Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"',
+      'Sec-Ch-Ua-Mobile': '?0',
+      'Sec-Fetch-Mode': 'cors',
+      'Sec-Fetch-Site': 'same-origin',
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
