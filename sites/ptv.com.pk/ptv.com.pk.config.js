@@ -56,6 +56,7 @@ module.exports = {
   request: {
     method: 'GET',
     headers: {
+      'Referer': 'https://ptv.com.pk/ptvhome/tvguide'
       'X-Requested-With': 'XMLHttpRequest'
     }
   },
