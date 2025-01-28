@@ -24,16 +24,16 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- epg.pakistan
-          #npm run channels:parse --- --config=./sites/epg.pakistan/epg.pakistan.config.js --output=./sites/epg.pakistan/epg.pakistan.channels.xml
+          #npm test --- ptv.com.pk
+          #npm run channels:parse --- --config=./sites/ptv.com.pk/ptv.com.pk.config.js --output=./sites/ptv.com.pk/ptv.com.pk.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=epg.pakistan --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run grab --- --site=ptv.com.pk --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
    
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
         git add -f guides/allente.no.xml
-        #git add -f sites/epg.pakistan/epg.pakistan.channels.xml
+        #git add -f sites/ptv.com.pk/ptv.com.pk.channels.xml
         git commit -m "Update xml"
         git push -f origin main
