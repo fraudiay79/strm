@@ -63,6 +63,9 @@ module.exports = {
   days: 2,
   request: {
     method: 'GET',
+    headers: {
+      'X-Requested-With': 'XMLHttpRequest'
+    }
   },
   url: function ({ date, channel }) {
     const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
