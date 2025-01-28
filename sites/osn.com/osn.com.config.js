@@ -91,7 +91,7 @@ async function loadProgramDetails(item) {
     .get(url, {
       headers: {
         'x-requested-with': 'XMLHttpRequest'
-      })
+      }})
     .then(r => r.data)
     .catch(console.log)
 
