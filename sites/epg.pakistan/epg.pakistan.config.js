@@ -1,14 +1,13 @@
 const axios = require('axios')
 const iconv = require('iconv-lite')
 const parser = require('epg-parser')
-const { ungzip } = require('pako')
 
 let cachedContent
 
 module.exports = {
   site: 'epg.pakistan',
   days: 2,
-  url: 'https://www.open-epg.com/files/pakistan.xml.gz',
+  url: 'https://www.open-epg.com/files/pakistan.xml',
   request: {
     maxContentLength: 500000000, // 500 MB
     cache: {
@@ -33,18 +32,17 @@ module.exports = {
   },
   async channels() {
     const buffer = await axios
-      .get('https://www.open-epg.com/files/pakistan.xml.gz', {
+      .get('https://www.open-epg.com/files/pakistan.xml', {
         responseType: 'arraybuffer'
       })
       .then(r => r.data)
       .catch(err => {
         console.error('Failed to fetch channel data:', err)
-        throw err // or return null
+        throw err
       })
 
     try {
-      const data = ungzip(buffer)
-      const decoded = iconv.decode(data, 'utf8')
+      const decoded = iconv.decode(buffer, 'utf8')
       const { channels } = parser.parse(decoded)
 
       return channels.map(channel => ({
@@ -54,7 +52,7 @@ module.exports = {
       }))
     } catch (err) {
       console.error('Failed to process channel data:', err)
-      throw err // or return null
+      throw err
     }
   }
 }
@@ -64,8 +62,7 @@ function parseItems(buffer, channel, date) {
 
   if (!cachedContent) {
     try {
-      const content = ungzip(buffer)
-      const encoded = iconv.decode(content, 'utf8')
+      const encoded = iconv.decode(buffer, 'utf8')
       cachedContent = parser.parse(encoded)
     } catch (err) {
       console.error('Failed to parse EPG data:', err)
