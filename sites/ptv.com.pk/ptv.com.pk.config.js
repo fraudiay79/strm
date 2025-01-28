@@ -1,5 +1,5 @@
 // Disable TLS validation (use cautiously)
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
+//process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
 
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
@@ -11,16 +11,9 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-function convertStringToDate(dateString) {
-    const parsedDate = dayjs(dateString, 'YYYYMMDDHHmmss')
-    const date = parsedDate.format('YYYY-MM-DD')
-    return date
-}
-
 function parseProgramTime(timeStr) {
   const timeZone = 'Asia/Karachi'
 
-  // Check for "am" or "pm" in the string (case-insensitive)
   if (/am|pm|AM|PM/.test(timeStr)) {
     if (timeStr.includes('.') && !timeStr.includes(' ')) {
       return dayjs.tz(timeStr, 'h.mm a', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
@@ -36,7 +29,6 @@ function parseProgramTime(timeStr) {
   } else if (timeStr.length === 4 && /^\d{4}$/.test(timeStr)) {
     return dayjs.tz(timeStr, 'HHmm', timeZone).format('YYYY-MM-DDTHH:mm:ssZ')
   } else if (/PST/.test(timeStr)) {
-    // Only parse values with the PST timezone
     const pstTime = timeStr.match(/(\d{4})PST/)
     if (pstTime) {
       return dayjs.tz(pstTime[1], 'HHmm', 'Asia/Karachi').format('YYYY-MM-DDTHH:mm:ssZ')
@@ -78,24 +70,22 @@ module.exports = {
     let programs = []
 
     try {
-      if (content.trim().startsWith('<')) {
-        const $ = cheerio.load(content)
-        $('.rt-post').each((index, element) => {
-          const timeStr = $(element).find('.rt-meta').text().trim()
-          const title = $(element).find('.post-title').text().trim()
-          if (timeStr && title) {
-            const start = parseProgramTime(timeStr)
-            const stop = calculateStopTime(start)
-            programs.push({
-              title: toProperCase(title),
-              start,
-              stop
-            })
-          }
-        })
-      }
+      const $ = cheerio.load(content)
+      $('.rt-post').each((index, element) => {
+        const timeStr = $(element).find('.rt-meta').text().trim()
+        const title = $(element).find('.post-title').text().trim()
+        if (timeStr && title) {
+          const start = parseProgramTime(timeStr)
+          const stop = calculateStopTime(start)
+          programs.push({
+            title: toProperCase(title),
+            start,
+            stop
+          })
+        }
+      })
     } catch (error) {
-      console.error("Error parsing content:", error.message)
+      console.error('Error parsing content:', error.message)
     }
 
     return programs
