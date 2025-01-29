@@ -3,6 +3,8 @@ const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const axios = require('axios')
 
+const API_ENDPOINT = 'https://www.osn.com/api/TVScheduleWebService.asmx'
+
 dayjs.extend(utc)
 dayjs.extend(timezone)
 
@@ -14,11 +16,7 @@ module.exports = {
   site: 'osn.com',
   days: 2,
   url({ channel, date }) {
-    return `https://www.osn.com/api/TVScheduleWebService.asmx/time?dt=${
-      encodeURIComponent(date.format('MM/DD/YYYY'))
-    }&co=${country}&ch=${
-      channel.site_id
-    }&mo=false&hr=0`
+    return `${API_ENDPOINT}/time?dt=${encodeURIComponent(date.format('MM/DD/YYYY'))}&co=${country}&ch=${channel.site_id}&mo=false&hr=0`
   },
   request: {
     headers({ channel }) {
@@ -27,15 +25,19 @@ module.exports = {
       }
     }
   },
-  parser: async function ({ content, channel }) {
-    const programs = []
-    const items = JSON.parse(content) || []
-    for (const item of items) {
-      const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
+  async parser({ content, channel, date }) {
+    let programs = []
+    if (!content) return programs
+
+    let items = JSON.parse(content)
+    if (!items.length) return programs
+	
+	for (let item of items) {
+	  const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
       const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
       const duration = parseInt(item.TotalDivWidth / 4.8)
       const stop = start.add(duration, 'm')
-      const details = await loadProgramDetails(item)
+      const detail = await loadProgramDetails(item)
       programs.push({
         title,
         description: details.description,
@@ -59,7 +61,7 @@ module.exports = {
 
       while (hasMorePages) {
         const channels = await axios
-          .get(`https://www.osn.com/api/TVScheduleWebService.asmx/chnl?pg=${page}&pk=${pkg}&gn=0&cu=en-US&bx=2&dt=${encodeURIComponent(date.format('MM/DD/YYYY'))}`)
+          .get(`${API_ENDPOINT}/chnl?pg=${page}&pk=${pkg}&gn=0&cu=en-US&bx=2&dt=${encodeURIComponent(date.format('MM/DD/YYYY'))}`)
           .then(response => response.data)
           .catch(console.error)
 
@@ -86,7 +88,7 @@ module.exports = {
 
 async function loadProgramDetails(item) {
   if (!item.EPGUNIQID) return {}
-  const url = `https://www.osn.com/api/TVScheduleWebService.asmx/GetProgramDetails?prgmEPGUNIQID=${item.EPGUNIQID}&countryCode=SA`
+  const url = `${API_ENDPOINT}/GetProgramDetails?prgmEPGUNIQID=${item.EPGUNIQID}&countryCode=SA`
   const data = await axios
     .get(url, {
       headers: {
