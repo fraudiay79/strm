@@ -31,17 +31,13 @@ module.exports = {
     return programs
   },
   async channels() {
-    const buffer = await axios
-      .get('https://www.open-epg.com/files/pakistan.xml', {
-        responseType: 'arraybuffer'
-      })
-      .then(r => r.data)
-      .catch(err => {
-        console.error('Failed to fetch channel data:', err)
-        throw err
-      })
-
     try {
+      const buffer = await axios
+        .get('https://www.open-epg.com/files/pakistan.xml', {
+          responseType: 'arraybuffer'
+        })
+        .then(r => r.data)
+
       const decoded = iconv.decode(buffer, 'utf8').trim()
       const { channels } = parser.parse(decoded)
 
@@ -51,7 +47,7 @@ module.exports = {
         name: channel.displayName[0].value
       }))
     } catch (err) {
-      console.error('Failed to process channel data:', err)
+      console.error('Failed to fetch or process channel data:', err.message)
       throw err
     }
   }
@@ -65,7 +61,7 @@ function parseItems(buffer, channel, date) {
       const encoded = iconv.decode(buffer, 'utf8').trim()
       cachedContent = parser.parse(encoded)
     } catch (err) {
-      console.error('Failed to parse EPG data:', err)
+      console.error('Failed to parse EPG data:', err.message)
       return []
     }
   }
