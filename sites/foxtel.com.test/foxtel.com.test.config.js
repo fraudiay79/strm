@@ -26,14 +26,14 @@ module.exports = {
   parser: function ({ content }) {
     const programs = []
     const items = JSON.parse(content)
-	items.forEach(item => {
+    items.forEach(item => {
       if (!item.details) return
       const start = dayjs(item.scheduledDate)
       const stop = start.add(item.duration, 'm')
       const detail = await loadProgramDetails(item)
       programs.push({
         title: item.programTitle,
-		subtitle: item.episodeTitle,
+	subtitle: item.episodeTitle,
         category: detail.genre,
         description: detail.shortSynopsis || detail.extendedSynopsis,
         icon: item.imageUrl,
