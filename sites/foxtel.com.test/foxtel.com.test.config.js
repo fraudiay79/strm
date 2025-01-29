@@ -23,7 +23,7 @@ module.exports = {
       Cookie: 'AAMC_foxtel_0=REGION|6'
     }
   },
-  parser: function ({ content }) {
+  async parser({ content }) {
     const programs = []
     const items = JSON.parse(content)
     items.forEach(item => {
