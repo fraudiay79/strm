@@ -10,7 +10,7 @@ dayjs.extend(timezone)
 const tz = 'Australia/Sydney'
 
 module.exports = {
-  site: 'foxtel.com.au',
+  site: 'foxtel.com.test',
   days: 2,
   url: function ({ date, channel }) {
     const todayEpoch = date.startOf('day').utc().valueOf()
