@@ -1,24 +1,18 @@
 const axios = require('axios')
-const iconv = require('iconv-lite')
 const parser = require('epg-parser')
-
-let cachedContent
 
 module.exports = {
   site: 'epg.pakistan',
-  days: 2,
+  days: 1,
   url: 'https://www.open-epg.com/files/pakistan.xml',
   request: {
-    maxContentLength: 500000000, // 500 MB
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  parser: function ({ buffer, channel, date, cached }) {
-    if (!cached) cachedContent = undefined
-
+  parser: function ({ content, channel, date }) {
     let programs = []
-    const items = parseItems(buffer, channel, date)
+    const items = parseItems(content, channel, date)
     items.forEach(item => {
       programs.push({
         title: item.title?.[0]?.value || 'No Title',
@@ -31,46 +25,22 @@ module.exports = {
     return programs
   },
   async channels() {
-    const buffer = await axios
-      .get('https://www.open-epg.com/files/pakistan.xml', {
-        responseType: 'arraybuffer'
-      })
+    const data = await axios
+      .get('https://www.open-epg.com/files/pakistan.xml')
       .then(r => r.data)
-      .catch(err => {
-        console.error('Failed to fetch channel data:', err)
-        throw err
-      })
+      .catch(console.log)
+    const { channels } = parser.parse(data)
 
-    try {
-      const decoded = iconv.decode(buffer, 'utf8').trim()
-      const { channels } = parser.parse(decoded)
-
-      return channels.map(channel => ({
-        lang: 'ur',
-        site_id: channel.id,
-        name: channel.displayName[0].value
-      }))
-    } catch (err) {
-      console.error('Failed to process channel data:', err)
-      throw err
-    }
+    return channels.map(channel => ({
+      lang: 'ur',
+      site_id: channel.id,
+      name: channel.displayName[0].value
+    }))
   }
 }
 
-function parseItems(buffer, channel, date) {
-  if (!buffer) return []
-
-  if (!cachedContent) {
-    try {
-      const encoded = iconv.decode(buffer, 'utf8').trim()
-      cachedContent = parser.parse(encoded)
-    } catch (err) {
-      console.error('Failed to parse EPG data:', err)
-      return []
-    }
-  }
-
-  const { programs } = cachedContent
+function parseItems(content, channel, date) {
+  const { programs } = parser.parse(content)
 
   return programs.filter(p => p.channel === channel.site_id && date.isSame(p.start, 'day'))
 }
