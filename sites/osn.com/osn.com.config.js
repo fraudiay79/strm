@@ -40,7 +40,7 @@ module.exports = {
       const detail = await loadProgramDetails(item)
       programs.push({
         title,
-        description: details.description,
+        description: detail.description,
         icon: detail.icon,
         category: detail.category,
         subtitle: detail.subtitle,
