@@ -24,28 +24,29 @@ module.exports = {
     }
   },
   parser: async function ({ content, date }) {
-    const programs = []
-    const items = JSON.parse(content)
-    items.forEach(item => {
-      if (!item.details) return
-      const start = dayjs(item.scheduledDate)
-      const stop = start.add(item.duration, 'm')
-      const detail = await loadProgramDetails(item)
-      programs.push({
-        title: item.programTitle,
-	subtitle: item.episodeTitle,
-        category: detail.genre,
-        description: detail.shortSynopsis || detail.extendedSynopsis,
-        icon: item.imageUrl,
-        season: item.seriesNumber,
-        episode: item.episodeNumber,
-        start,
-        stop
-      })
-    })
+  const programs = []
+  const items = JSON.parse(content)
 
-    return programs
-  },
+  for (const item of items) {
+    if (!item.details) continue
+    const start = dayjs(item.scheduledDate)
+    const stop = start.add(item.duration, 'm')
+    const detail = await loadProgramDetails(item) // corrected
+    programs.push({
+      title: item.programTitle,
+      subtitle: item.episodeTitle,
+      category: detail.genre,
+      description: detail.shortSynopsis || detail.extendedSynopsis,
+      icon: item.imageUrl,
+      season: item.seriesNumber,
+      episode: item.episodeNumber,
+      start,
+      stop
+    })
+  }
+
+  return programs
+},
   async channels() {
     const data = await axios
       .get('https://www.foxtel.com.au/webepg/ws/foxtel/channels?regionId=8336', {
