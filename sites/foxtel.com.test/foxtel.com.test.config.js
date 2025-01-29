@@ -1,5 +1,7 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const axios = require('axios')
 const cheerio = require('cheerio')
 
 const API_ENDPOINT = 'https://www.foxtel.com.au/webepg/ws/foxtel'
