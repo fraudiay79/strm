@@ -1,14 +1,23 @@
-const axios = require('axios')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
+const axios = require('axios')
 const cheerio = require('cheerio')
+
+const API_ENDPOINT = 'https://www.foxtel.com.au/webepg/ws/foxtel'
+
+dayjs.extend(utc)
+dayjs.extend(timezone)
+
+const tz = 'Australia/Sydney'
 
 module.exports = {
   site: 'foxtel.com.test',
   days: 2,
-  url({ channel, date }) {
-    return `https://www.foxtel.com.au/tv-guide/channel/${channel.site_id}/${date.format(
-      'YYYY/MM/DD'
-    )}`
+  url: function ({ date, channel }) {
+    const todayEpoch = date.startOf('day').utc().valueOf()
+    const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
+    return `${API_ENDPOINT}/channel/${channel.site_id}/events?movieHeight=110&tvShowHeight=90&startDate=${todayEpoch}&endDate=${nextDayEpoch}&regionId=8336`
   },
   request: {
     headers: {
@@ -16,37 +25,30 @@ module.exports = {
       Cookie: 'AAMC_foxtel_0=REGION|6'
     }
   },
-  async parser({ content, date }) {
-    let programs = []
-    const items = parseItems(content)
-    for (let item of items) {
-      const $item = cheerio.load(item)
-      const prev = programs[programs.length - 1]
-      let start = parseStart($item)
-      if (prev) {
-        if (start.isBefore(prev.start)) {
-          start = start.add(1, 'd')
-          date = date.add(1, 'd')
-        }
-        prev.stop = start
-      }
-      const stop = start.add(30, 'm')
-      const details = await loadProgramDetails($item)
-      programs.push({
-        title: parseTitle($item),
-        sub_title: parseSubTitle($item),
-	description: details.description,
-        icon: parseImage($item),
-        rating: parseRating($item),
-        season: parseSeason($item),
-        episode: parseEpisode($item),
-        start,
-        stop
-      })
-    }
+  parser: async function ({ content, date }) {
+  const programs = []
+  const items = JSON.parse(content)
 
-    return programs
-  },
+  for (const item of items) {
+    if (!item.details) continue
+    const start = dayjs(item.scheduledDate)
+    const stop = start.add(item.duration, 'm')
+    const detail = await loadProgramDetails(item) // corrected
+    programs.push({
+      title: item.programTitle,
+      subtitle: item.episodeTitle,
+      category: detail.genre,
+      description: detail.shortSynopsis || detail.extendedSynopsis,
+      icon: item.imageUrl,
+      season: item.seriesNumber,
+      episode: item.episodeNumber,
+      start,
+      stop
+    })
+  }
+
+  return programs
+},
   async channels() {
     const data = await axios
       .get('https://www.foxtel.com.au/webepg/ws/foxtel/channels?regionId=8336', {
@@ -72,83 +74,17 @@ module.exports = {
     })
   }
 }
-
-async function loadProgramDetails($item) {
-  const programId = $item('a').attr('href')
+  
+async function loadProgramDetails(item) {
+  if (!item.eventId) return {}
+  const url = `${API_ENDPOINT}/event/${item.eventId}?movieHeight=213&tvShowHeight=213&regionId=8336`
   const data = await axios
-    .get(`https://www.foxtel.com.au/tv-guide/${programId}`)
+    .get(url, { headers: {
+	'X-Requested-With': 'XMLHttpRequest',
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'
+      } })
     .then(r => r.data)
-    .catch(console.error)
-  if (!data) return Promise.resolve({})
-  
-  const $ = cheerio.load(data)
-  
-  return Promise.resolve({
-    description: $('epg-short-synopsis').text().trim()
-  })
-}
+    .catch(console.log)
 
-function parseSeason($item) {
-  let seasonString = $item('.epg-event-description > div > abbr:nth-child(1)').attr('title')
-  if (!seasonString) return null
-  let [, season] = seasonString.match(/^Season: (\d+)/) || [null, null]
-
-  return season ? parseInt(season) : null
-}
-
-function parseEpisode($item) {
-  let episodeString = $item('.epg-event-description > div > abbr:nth-child(2)').attr('title')
-  if (!episodeString) return null
-  let [, episode] = episodeString.match(/^Episode: (\d+)/) || [null, null]
-
-  return episode ? parseInt(episode) : null
-}
-
-function parseImage($item) {
-  return $item('.epg-event-thumbnail > img').attr('src')
-}
-
-function parseTitle($item) {
-  return $item('.epg-event-description').clone().children().remove().end().text().trim()
-}
-
-function parseSubTitle($item) {
-  let subtitle = $item('.epg-event-description > div')
-    .clone()
-    .children()
-    .remove()
-    .end()
-    .text()
-    .trim()
-    .split(',')
-
-  subtitle = subtitle.pop()
-  const [, rating] = subtitle.match(/\(([^)]+)\)$/) || [null, null]
-
-  return subtitle.replace(`(${rating})`, '').trim()
-}
-
-function parseRating($item) {
-  const subtitle = $item('.epg-event-description > div').text().trim()
-  const [, rating] = subtitle.match(/\(([^)]+)\)$/) || [null, null]
-
-  return rating
-    ? {
-        system: 'ACB',
-        value: rating
-      }
-    : null
-}
-
-function parseStart($item) {
-  const unix = $item('*').data('scheduled-date')
-
-  return dayjs(parseInt(unix))
-}
-
-function parseItems(content) {
-  if (!content) return []
-  const $ = cheerio.load(content)
-
-  return $('#epg-channel-events > a').toArray()
+  return data || {}
 }
