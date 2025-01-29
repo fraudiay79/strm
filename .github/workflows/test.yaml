@@ -27,7 +27,7 @@ jobs:
           #npm test --- magentatv.hr
           #npm run channels:parse --- --config=./sites/magentatv.hr/magentatv.hr.config.js --output=./sites/magentatv.hr/magentatv.hr.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=magentatv.hr --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run grab --- --site=magentatv.hr --maxConnections=20 --output=guides/allente.no.xml --days=2 --timeout=90000
    
     - name: Commit changes
       run: |
