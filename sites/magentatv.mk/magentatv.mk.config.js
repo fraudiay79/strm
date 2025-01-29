@@ -93,7 +93,7 @@ module.exports = {
 
 async function loadProgramDetails(item) {
   if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=mk`
+  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_key=HEEb5emU9KZG4prn2NaUkiv96g3IxpS6&interacted_with_nPVR=false&app_language=mk&natco_code=mk`
   const data = await axios
     .get(url, { headers })
     .then(r => r.data)
