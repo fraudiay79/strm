@@ -7,9 +7,9 @@ const API_ENDPOINT = 'https://tv-mk-prod.yo-digital.com/mk-bifrost'
 const headers = {
   app_key: 'webq1ptdD5Gy4IatUZRiTezSu6sNc57A',
   app_version: '02.0.1091',
-  'device-id': 'c36eef8a-96ed-4e8e-af1b-0998d444ab46',
-  'x-request-session-id': 'dad2295d-bdc2-4ab9-b300-401a95ce9927',
-  'x-request-tracking-id': '0c4ccdb3-8707-4cb8-babb-e8f0d4acec5c',
+  'device-id': crypto.randomUUID(),
+  'x-request-session-id': crypto.randomUUID(),
+  'x-request-tracking-id': crypto.randomUUID(),
   'x-user-agent': 'web|web|Chrome-131|02.0.1091|1'
 }
 
@@ -60,16 +60,16 @@ module.exports = {
       const detail = await loadProgramDetails(item)
       programs.push({
         title: item.description,
-        description: detail.details.description,
-        date: detail.release_year,
-        category: item.genres.map(genre => genre.id),
+        description: parseDescription(detail),
+        date: parseDate(item),
+        category: parseCategory(item),
         icon: detail.poster_image_url,
-        //actors: parseRoles(detail, 'Actor'),
-        //directors: parseRoles(detail, 'Director'),
-        season: item.season_number,
-        episode: item.episode_number,
-        start: dayjs(item.start_time),
-        stop: dayjs(item.end_time)
+        actors: parseRoles(detail, 'Actor'),
+        directors: parseRoles(detail, 'Director'),
+        season: parseSeason(item),
+        episode: parseEpisode(item),
+        start: parseStart(item),
+        stop: parseStop(item)
       })
     }
 
@@ -93,13 +93,16 @@ module.exports = {
 
 async function loadProgramDetails(item) {
   if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=mk`
-  const data = await axios
-    .get(url, { headers })
-    .then(r => r.data)
-    .catch(console.log)
 
-  return data || {}
+  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=mk`
+
+  try {
+    const response = await axios.get(url, { headers })
+    return response.data
+  } catch (error) {
+    console.error(`Error loading program details: ${error.message}`)
+    return { error: error.message }
+  }
 }
 
 function parseDate(item) {
