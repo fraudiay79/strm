@@ -32,20 +32,20 @@ module.exports = {
     let items = JSON.parse(content)
     if (!items.length) return programs
 	
-	for (let item of items) {
-	  const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
+    for (let item of items) {
+      const title = channel.lang === 'ar' ? item.Arab_Title : item.Title
       const start = dayjs.tz(item.StartDateTime, 'DD MMM YYYY, HH:mm', tz)
       const duration = parseInt(item.TotalDivWidth / 4.8)
       const stop = start.add(duration, 'm')
       const detail = await loadProgramDetails(item)
       programs.push({
         title,
-        description: detail.description,
-        icon: detail.icon,
-        category: detail.category,
-        subtitle: detail.subtitle,
-        season: detail.season,
-        episode: detail.episode,
+        description: channel.lang === 'ar' ? detail.Arab_Synopsis : detail.Synopsis,
+        icon: detail.ProgramImage,
+        category: channel.lang === 'ar' ? detail.GenreArabicName : detail.GenreEnglishName,
+        subtitle: channel.lang === 'ar' ? detail.EpisodeAr : detail.EpisodeEn,
+        season: detail.SeasonNo,
+        episode: detail.EpisodeNo,
         start,
         stop
       })
@@ -88,38 +88,13 @@ module.exports = {
 
 async function loadProgramDetails(item) {
   if (!item.EPGUNIQID) return {}
-  const url = `${API_ENDPOINT}/GetProgramDetails?prgmEPGUNIQID=${item.EPGUNIQID}&countryCode=SA`
+  const url = `/GetProgramDetails?prgmEPGUNIQID=${item.EPGUNIQID}&countryCode=SA`
   const data = await axios
-    .get(url, {
-      headers: {
-        'x-requested-with': 'XMLHttpRequest'
-      }})
+    .get(url, { headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'
+      } })
     .then(r => r.data)
     .catch(console.log)
 
-  if (!data || typeof data !== 'string') return {}
-
-  let jsonData
-  try {
-    jsonData = JSON.parse(data)
-  } catch (error) {
-    console.error('Error parsing JSON:', error)
-    return {}
-  }
-  
-  const subTitle = item.lang === 'ar' ? jsonData.EpisodeAr : jsonData.EpisodeEn
-  const description = item.lang === 'ar' ? jsonData.Arab_Synopsis : jsonData.Synopsis
-  const category = item.lang === 'ar' ? jsonData.GenreArabicName : jsonData.GenreEnglishName
-  const imageUrl = jsonData.ProgramImage
-  const season = jsonData.SeasonNo
-  const episode = jsonData.EpisodeNo
-  
-  return {
-    icon: imageUrl,
-    description: description,
-    category: category,
-    subtitle: subTitle,
-    season: season,
-    episode: episode
-  }
+  return data || {}
 }
