@@ -60,16 +60,16 @@ module.exports = {
       const detail = await loadProgramDetails(item)
       programs.push({
         title: item.description,
-        description: parseDescription(detail),
-        date: parseDate(item),
-        category: parseCategory(item),
+        description: detail.details.description,
+        date: detail.release_year,
+        category: item.genres.map(genre => genre.id),
         icon: detail.poster_image_url,
-        actors: parseRoles(detail, 'Actor'),
-        directors: parseRoles(detail, 'Director'),
-        season: parseSeason(item),
-        episode: parseEpisode(item),
-        start: parseStart(item),
-        stop: parseStop(item)
+        //actors: parseRoles(detail, 'Actor'),
+        //directors: parseRoles(detail, 'Director'),
+        season: item.season_number,
+        episode: item.episode_number,
+        start: dayjs(item.start_time),
+        stop: dayjs(item.end_time)
       })
     }
 
@@ -93,7 +93,7 @@ module.exports = {
 
 async function loadProgramDetails(item) {
   if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_key=HEEb5emU9KZG4prn2NaUkiv96g3IxpS6&interacted_with_nPVR=false&app_language=mk&natco_code=mk`
+  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=mk`
   const data = await axios
     .get(url, { headers })
     .then(r => r.data)
