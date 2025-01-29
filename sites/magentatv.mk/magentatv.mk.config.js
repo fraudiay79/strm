@@ -101,6 +101,21 @@ async function loadProgramDetails(item) {
     return response.data
   } catch (error) {
     console.error(`Error loading program details: ${error.message}`)
+    
+    // Additional condition to check for series_id if an error is returned
+    if (item.series_id) {
+      console.log(`Attempting to load details with series_id: ${item.series_id}`)
+      const seriesUrl = `${API_ENDPOINT}/details/series/${item.series_id}?natco_code=mk`
+      
+      try {
+        const seriesResponse = await axios.get(seriesUrl, { headers })
+        return seriesResponse.data
+      } catch (seriesError) {
+        console.error(`Error loading series details: ${seriesError.message}`)
+        return { error: seriesError.message }
+      }
+    }
+
     return { error: error.message }
   }
 }
