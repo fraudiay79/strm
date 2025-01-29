@@ -41,11 +41,11 @@ module.exports = {
       programs.push({
         title,
         description: details.description,
-        icon: details.icon,
-        category: details.category,
-        subtitle: details.subtitle,
-        season: details.season,
-        episode: details.episode,
+        icon: detail.icon,
+        category: detail.category,
+        subtitle: detail.subtitle,
+        season: detail.season,
+        episode: detail.episode,
         start,
         stop
       })
