@@ -17,9 +17,9 @@ module.exports = {
       ttl: 60 * 60 * 1000 // 1 hour
     }
   },
-  url({ channel, date }) {
-    return `https://middleware-prod01.silktv.ge/v1.5/?m=epg&cid=${channel.site_id}&sdt=${date.unix()}&edt=${date.add(1, 'd').unix()}&language=ka`
-  },
+  url: function ({ channel, date }) {
+  return `https://middleware-prod01.silktv.ge/v1.5/?m=epg&cid=${channel.site_id}&sdt=${date.format('YYYYMMDDHHmmss')}&edt=${date.add(1, 'd').format('YYYYMMDDHHmmss')}&language=ka`
+},
   parser: function ({ content }) {
   try {
     const data = JSON.parse(content)
