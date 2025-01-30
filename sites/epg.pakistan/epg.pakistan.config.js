@@ -9,7 +9,7 @@ module.exports = {
   days: 2,
   url: 'https://www.open-epg.com/files/pakistan.xml',
   request: {
-    maxContentLength: 500000000, // 500 MB
+    maxContentLength: 100000000, // 100 MB
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
@@ -62,7 +62,8 @@ function parseItems(buffer, channel, date) {
       cachedContent = parser.parse(encoded)
     } catch (err) {
       console.error('Failed to parse EPG data:', err.message)
-      return []
+      console.error('Error details:', err)
+      return [];
     }
   }
 
