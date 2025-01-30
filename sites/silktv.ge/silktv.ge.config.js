@@ -21,20 +21,20 @@ module.exports = {
     return `https://middleware-prod01.silktv.ge/v1.5/?m=epg&cid=${channel.site_id}&sdt=${date.unix()}&edt=${date.add(1, 'd').unix()}&language=ka`
   },
   parser: function ({ content }) {
-    const data = JSON.parse(content)
-    const programs = []
+  const data = JSON.parse(content)
+  const programs = []
 
   data.data.forEach(item => {
     programs.push({
       name: item.title,
       description: item.descr || 'No description available',
-      start: dayjs.unix(item.start),
-      stop: dayjs.unix(item.end)
+      start: dayjs(item.start, 'YYYYMMDDHHmmssSS').unix(),
+      stop: dayjs(item.end, 'YYYYMMDDHHmmssSS').unix()
     })
   })
 
   return programs
-  },
+},
   async channels() {
   const axios = require('axios')
   try {
