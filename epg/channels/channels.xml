@@ -1390,12 +1390,12 @@
   <channel site="magentatv.cz" lang="cs" xmltv_id="CSHistory.cz" site_id="6082">CS History</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="CSHorror.cz" site_id="4583">CS Horror</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="CSMystery.cz" site_id="6048">CS Mystery</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="CT1.cz" site_id="6054">ČT1</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="CT2.cz" site_id="6053">ČT2</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="CT24.cz" site_id="6024">ČT24</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="CTart.cz" site_id="6108">ČT art</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="CTDecko.cz" site_id="6108">ČT :D</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="CTSport.cz" site_id="6105">ČT sport</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ČT1.cz" site_id="6054">ČT1</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ČT2.cz" site_id="6053">ČT2</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ČT24.cz" site_id="6024">ČT24</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ČTart.cz" site_id="6108">ČT art</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ČTDéčko.cz" site_id="6108">ČT :D</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ČTSport.cz" site_id="6105">ČT sport</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="DiscoveryChannel.cz" site_id="6085">Discovery Channel</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="DisneyChannel.cz" site_id="15">Disney Channel</channel>
   <channel site="mujtvprogram.cz" lang="cs" xmltv_id="EEntertainment.cz" site_id="410">E!</channel>
@@ -1416,6 +1416,7 @@
   <channel site="magentatv.cz" lang="cs" xmltv_id="HBO3.cz" site_id="6072">HBO 3</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="History.cz" site_id="6014">History</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="InvestigationDiscovery.cz" site_id="4226">Investigation Discovery</channel>
+  <channel site="magentatv.cz" lang="cz" xmltv_id="JihočeskáTV.cz" site_id="6107">Jihočeská TV</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="JimJam.cz" site_id="6017">JimJam</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="KinoBarrandov.cz" site_id="4570">Kino Barrandov</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="LaLaTV.sk" site_id="4507">LaLa TV</channel>
@@ -1440,11 +1441,13 @@
   <channel site="magentatv.cz" lang="cs" xmltv_id="NovaSport4.cz" site_id="6123">Nova Sport 4</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="NovaSport5.cz" site_id="6126">Nova Sport 5</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="NovaSport6.cz" site_id="4599">Nova Sport 6</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="Ocko.cz" site_id="4499">Óčko</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="OckoBlack.cz" site_id="4506">Óčko Black</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="OckoExpres.cz" site_id="4505">Óčko Expres</channel>
-  <channel site="magentatv.cz" lang="cs" xmltv_id="OckoStar.cz" site_id="4500">Óčko Star</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="Óčko.cz" site_id="4499">Óčko</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ÓčkoBlack.cz" site_id="4506">Óčko Black</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ÓčkoExpres.cz" site_id="4505">Óčko Expres</channel>
+  <channel site="magentatv.cz" lang="cs" xmltv_id="ÓčkoStar.cz" site_id="4500">Óčko Star</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="ParamountNetwork.cz" site_id="4579">Paramount Network</channel>
+  <channel site="magentatv.cz" lang="cz" xmltv_id="Polar.cz" site_id="6109">Polar</channel>
+  <channel site="magentatv.cz" lang="cz" xmltv_id="PrahaTV.cz" site_id="6113">Praha TV</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="PremierSport1.sk" site_id="6096">Premier Sport 1</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="PremierSport2.sk" site_id="6121">Premier Sport 2</channel>
   <channel site="magentatv.cz" lang="cz" xmltv_id="PremierSport3.sk" site_id="4588">Premier Sport 3</channel>
@@ -1458,8 +1461,10 @@
   <channel site="magentatv.cz" lang="cs" xmltv_id="PrimaStar.cz" site_id="6119">Prima Star</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="PrimaZoom.cz" site_id="4470">Prima Zoom</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="Rebel.cz" site_id="6088">Rebel</channel>
+  <channel site="magentatv.cz" lang="cz" xmltv_id="RegionálníTV.cz" site_id="6114">Regionální TV TVS</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="Relax.cz" site_id="4459">Relax</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="RetroMusicTV.cz" site_id="6086">Retro Music</channel>
+  <channel site="magentatv.cz" lang="cz" xmltv_id="RiKTV.cz" site_id="4554">RiK TV</channel>
   <channel site="mujtvprogram.cz" lang="cs" xmltv_id="Skylink7.sk" site_id="723">Skylink 7</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="SlagerMuzika.cz" site_id="4528">Šláger Muzika</channel>
   <channel site="magentatv.cz" lang="cz" xmltv_id="SlagerOriginal.cz" site_id="4574">Šláger Originál</channel> 
@@ -1472,6 +1477,7 @@
   <channel site="magentatv.cz" lang="cs" xmltv_id="TravelChannel.cz" site_id="6008">Travel Channel</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="Travelxp.cz" site_id="6080">Travelxp</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="TVBarrandov.cz" site_id="4456">TV Barrandov</channel>
+  <channel site="magentatv.cz" lang="cz" xmltv_id="TVBrno1.cz" site_id="6111">TV Brno 1</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="TVNoe.cz" site_id="6087">TV Noe</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="ViasatExplore.cz" site_id="4501">Viasat Explore</channel>
   <channel site="magentatv.cz" lang="cs" xmltv_id="ViasatHistory.cz" site_id="4502">Viasat History</channel>
@@ -2038,6 +2044,13 @@
   <channel site="iptvx.one" lang="ka" xmltv_id="SetantaSports2.ge" site_id="setanta2-ge">Setanta Sports 2 Georgia • Сетанта Спорт 2 Georgia</channel>
   <channel site="iptvx.one" lang="ka" xmltv_id="SetantaSports3.ge" site_id="setanta3-ge">Setanta Sports 3 Georgia</channel>
   <channel site="iptvx.one" lang="ka" xmltv_id="SONGTVGeorgia.ge" site_id="song-tv-g">Song TV Georgia • Song TV Грузия</channel>
+  <channel site="silktv.ge" lang="ka" xmltv_id="SilkDocumentary.ge" site_id="272">სილქ დოკუმენტური</channel>
+  <channel site="silktv.ge" lang="ka" xmltv_id="SilkKids.ge" site_id="533">სილქ ქიდსი</channel>
+  <channel site="silktv.ge" lang="ka" xmltv_id="SilkMovieCollection.ge" site_id="596">სილქ კინო კოლექცია</channel>
+  <channel site="silktv.ge" lang="ka" xmltv_id="SilkMovieHollywood.ge" site_id="534">სილქ კინო ჰოლივუდი</channel>
+  <channel site="silktv.ge" lang="ka" xmltv_id="SilkSport1.ge" site_id="527">სილქ სპორტ 1</channel>
+  <channel site="silktv.ge" lang="ka" xmltv_id="SilkSport2.ge" site_id="532">სილქ სპორტ 2</channel>
+  <channel site="silktv.ge" lang="ka" xmltv_id="SilkSport3.ge" site_id="634">სილქ სპორტ 3</channel>
   #Germany
   <channel site="web.magentatv.de" lang="de" xmltv_id="3sat.de" site_id="392">3sat</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="13thStreet.de" site_id="255">13th Street</channel>
@@ -2486,7 +2499,7 @@
   <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLOtthon.hu" site_id="RTLOTTHON">RTL Otthon</channel>
   <channel site="magentatv.hu" lang="hu" xmltv_id="SkyShowtime1.hu" site_id="23661">SkyShowtime 1</channel>
   <channel site="magentatv.hu" lang="hu" xmltv_id="SkyShowtime2.hu" site_id="23662">SkyShowtime 2</channel>
-  <channel site="magentatv.hu" lang="hu" xmltv_id="SlagerTV.hu" site_id="1135">Sláger TV</channel>
+  <channel site="magentatv.hu" lang="hu" xmltv_id="ŠlágerOriginal.hu" site_id="1135">Sláger Originál</channel>
   <channel site="magentatv.hu" lang="hu" xmltv_id="SorozatPlus.hu" site_id="1069">Sorozat+</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="SorozatKlub.hu" site_id="SOROZATKLUB">Sorozat Klub</channel>
   <channel site="magentatv.hu" lang="hu" xmltv_id="Spektrum.hu" site_id="1023">Spektrum</channel>
@@ -5185,7 +5198,7 @@
   #Saudi Arabia
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="AlSaudiya.sa" site_id="946938">Al Saudiya</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlSaudiyaAlAan.sa" site_id="1#49#السعودية_الآن">Al Saudiya Al Aan</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="AlResalah.sa" site_id="1#72#الرسالة">Al Resalah</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="AlResalah.sa" site_id="446">Al Resalah</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AtfalMawahebTV.sa" site_id="1#33#اطفال و مواهب">Atfal Wa Mawaheb</channel>
   <channel site="artonline.tv" lang="ar" xmltv_id="ARTAflam1.sa" site_id="">ART Aflam 1</channel>
   <channel site="artonline.tv" lang="ar" xmltv_id="ARTAflam2.sa" site_id="Aflam2">ART Aflam 2</channel>
