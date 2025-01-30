@@ -35,20 +35,20 @@ module.exports = {
 
   return programs
   },
-  async channels() {
-    const axios = require('axios')
-    try {
-      const response = await axios.get(`https://middleware-prod01.silktv.ge/v1.5/?m=list-channels-all&sid=6F1D6919EAE061BA677D8552E07C14CE`)
-      const data = response.data
-      const channels = data.channel.map(channel => ({
-        lang: 'ka',
-        name: item.name,
-        site_id: item.id
-       }))
-      return channels
-    } catch (error) {
-      console.error('Error fetching channels:', error)
-      return []
-    }
+  async function channels() {
+  const axios = require('axios')
+  try {
+    const response = await axios.get(`https://middleware-prod01.silktv.ge/v1.5/?m=list-channels-all&sid=D40EC7E68344D040E4CD301B0F1019D4`)
+    const data = response.data
+    const channels = data.data.map(item => ({
+      lang: 'ka',
+      name: item.name,
+      site_id: item.id
+    }))
+    return channels
+  } catch (error) {
+    console.error('Error fetching channels:', error)
+    return []
   }
+}
 }
