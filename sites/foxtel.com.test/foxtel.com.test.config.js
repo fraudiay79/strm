@@ -84,7 +84,7 @@ async function loadProgramDetails(item) {
   const data = await axios
     .get(url, { headers: {
       'Accept-Language': 'en-US,en;q=0.9',
-      Cookie: 'AAMC_foxtel_0=REGION|6',
+      Cookie: 'AAMC_foxtel_0=REGION|7',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
       Referer: 'https://www.foxtel.com.au/tv-guide/channel/${channel.site_id}',
       'X-Requested-With': 'XMLHttpRequest'
