@@ -454,8 +454,8 @@
   <channel site="iptvx.one" lang="az" xmltv_id="MedeniyyetTV.az" site_id="medeniyyet">Medeniyyet TV • Mədəniyyət TV</channel>
   <channel site="iptvx.one" lang="az" xmltv_id="XezerTV.az" site_id="xezer">Xezer • Xəzər TV • Xəzər • Xezer TV</channel>
   #Bahrain
-  <channel site="elcinema.com" lang="ar" xmltv_id="BahrainTV.bh" site_id="1368">Bahrain TV</channel>
-  <channel site="sat.tv" lang="en" xmltv_id="BahrainInternational.bh" site_id="1#35#Bahrain International">Bahrain International</channel>
+  <channel site="elcinema.com" lang="ar" xmltv_id="BahrainTV.bh" site_id="1368">Bahrain TV</channel>  
+  <channel site="ontvtonight.com" lang="en" xmltv_id="BahrainInternational.bh" site_id="us#5034781559/bahrain-international-hdtv">Bahrain International</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlMaaref.bh" site_id="1#44#المعارف">Al Maaref</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="LuaLua.bh" site_id="1#44#اللؤلؤة">LuaLua</channel>
   #Barbados
@@ -3959,7 +3959,7 @@
   <channel site="medi1tv.com" lang="ar" xmltv_id="Medi1TVMaghreb.ma" site_id="maghreb">Medi1TV Maghreb</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlOnsTV.ma" site_id="1#48#الأنس">Al Ons</channel>
   <channel site="tv.sfr.fr" lang="ar" xmltv_id="TeleMaroc.ma" site_id="3380">Télé Maroc</channel>
-  <channel site="sat.tv" lang="fr" xmltv_id="TV5MondeMaghrebOrient.fr" site_id="1#33#تي في 5 المغرب">TV5Monde Maghreb-Orient</channel>
+  <channel site="sat.tv" lang="ar" xmltv_id="TV5MondeMaghrebOrient.fr" site_id="1#40#تي في 5 المغرب">TV5Monde Maghreb-Orient</channel>
   #Mozambique
   <channel site="startimestv.com" lang="en" xmltv_id="EcoTV.mz" site_id="529">EcoTV</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="GunguTV.mz" site_id="530">Gungu TV</channel>
