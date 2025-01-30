@@ -28,7 +28,7 @@ module.exports = {
     }
 
     const programs = data.data.map(item => ({
-      name: item.title,
+      title: item.title,
       description: item.descr || 'No description available',
       start: dayjs(item.start, 'YYYYMMDDHHmmssSS').unix(),
       stop: dayjs(item.end, 'YYYYMMDDHHmmssSS').unix()
