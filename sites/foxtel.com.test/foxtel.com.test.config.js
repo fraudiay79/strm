@@ -21,8 +21,10 @@ module.exports = {
   },
   request: {
     headers: {
-      'Accept-Language': 'en-US,en;',
-      Cookie: 'AAMC_foxtel_0=REGION|6'
+      'Accept-Language': 'en-US,en;q=0.9',
+      Cookie: 'AAMC_foxtel_0=REGION|6',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
+      Referer: 'https://www.foxtel.com.au/tv-guide'
     }
   },
   parser: async function ({ content, date }) {
@@ -31,9 +33,9 @@ module.exports = {
 
   for (const item of items) {
     if (!item.details) continue
-    const start = dayjs(item.scheduledDate)
+    const start = dayjs.unix(item.scheduledDate).utc()
     const stop = start.add(item.duration, 'm')
-    const detail = await loadProgramDetails(item) // corrected
+    const detail = await loadProgramDetails(item)
     programs.push({
       title: item.programTitle,
       subtitle: item.episodeTitle,
@@ -80,8 +82,11 @@ async function loadProgramDetails(item) {
   const url = `${API_ENDPOINT}/event/${item.eventId}?movieHeight=213&tvShowHeight=213&regionId=8336`
   const data = await axios
     .get(url, { headers: {
-	'X-Requested-With': 'XMLHttpRequest',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'
+      'Accept-Language': 'en-US,en;q=0.9',
+      Cookie: 'AAMC_foxtel_0=REGION|6',
+	  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36',
+	  Referer: 'https://www.foxtel.com.au/tv-guide'
+	  'X-Requested-With': 'XMLHttpRequest'
       } })
     .then(r => r.data)
     .catch(console.log)
