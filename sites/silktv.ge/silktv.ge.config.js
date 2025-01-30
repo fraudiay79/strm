@@ -21,19 +21,24 @@ module.exports = {
     return `https://middleware-prod01.silktv.ge/v1.5/?m=epg&cid=${channel.site_id}&sdt=${date.unix()}&edt=${date.add(1, 'd').unix()}&language=ka`
   },
   parser: function ({ content }) {
-  const data = JSON.parse(content)
-  const programs = []
+  try {
+    const data = JSON.parse(content)
+    if (!data || !data.data) {
+      throw new Error('Invalid data format')
+    }
 
-  data.data.forEach(item => {
-    programs.push({
+    const programs = data.data.map(item => ({
       name: item.title,
       description: item.descr || 'No description available',
       start: dayjs(item.start, 'YYYYMMDDHHmmssSS').unix(),
       stop: dayjs(item.end, 'YYYYMMDDHHmmssSS').unix()
-    })
-  })
+    }))
 
-  return programs
+    return programs
+  } catch (error) {
+    console.error('Error parsing programs:', error)
+    return []
+  }
 },
   async channels() {
   const axios = require('axios')
