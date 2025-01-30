@@ -35,7 +35,7 @@ module.exports = {
 
   return programs
   },
-  async function channels() {
+  async channels() {
   const axios = require('axios')
   try {
     const response = await axios.get(`https://middleware-prod01.silktv.ge/v1.5/?m=list-channels-all&sid=D40EC7E68344D040E4CD301B0F1019D4`)
