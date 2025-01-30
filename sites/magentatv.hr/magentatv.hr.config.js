@@ -10,6 +10,9 @@ const headers = {
   'device-id': crypto.randomUUID(),
   'x-request-session-id': crypto.randomUUID(),
   'x-request-tracking-id': crypto.randomUUID(),
+  'x-call-type': 'GUEST_USER',
+  'x-tv-flow': 'EPG',
+  'x-tv-step': 'EPG_SCHEDULES',
   'x-user-agent': 'web|web|Chrome-128|02.0.1080|1'
 }
 
