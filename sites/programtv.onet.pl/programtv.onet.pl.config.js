@@ -8,7 +8,7 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const currDate = DateTime.now().toUTC().startOf('day')
-    const day = date.diff(currDate, 'd')
+    const day = date.diff(currDate, 'days').days
 
     return `https://programtv.onet.pl/program-tv/${channel.site_id}?dzien=${day}`
   },
@@ -22,7 +22,6 @@ module.exports = {
       if (prev) {
         if (start < prev.start) {
           start = start.plus({ days: 1 })
-          date = date.add(1, 'd')
         }
         prev.stop = start
       }
@@ -75,7 +74,7 @@ async function loadProgramDetails($item) {
   const data = await axios
     .get(`https://programtv.onet.pl${programId}`)
     .then(r => r.data)
-    .catch(console.error)
+    .catch(error => console.error(`Error loading program details: ${error.message}`))
   if (!data) return Promise.resolve({})
   
   const $ = cheerio.load(data)
@@ -86,7 +85,7 @@ async function loadProgramDetails($item) {
   const jsonData = JSON.parse(script)
 
   // Ensure jsonData contains the expected structure
-  const imageUrl = jsonData.image ? jsonData.image.url : null;
+  const imageUrl = jsonData.image ? jsonData.image.url : null
   const actors = jsonData.workPerformed && jsonData.workPerformed.director
     ? jsonData.workPerformed.director.map(director => director.name)
     : []
@@ -112,7 +111,7 @@ async function loadProgramDetails($item) {
 
 function parseStart($item, date) {
   const timeString = $item('.hours > .hour').text()
-  const dateString = `${date.format('MM/DD/YYYY')} ${timeString}`
+  const dateString = `${date.toFormat('MM/dd/yyyy')} ${timeString}`
 
   return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH:mm', { zone: 'Europe/Warsaw' }).toUTC()
 }
