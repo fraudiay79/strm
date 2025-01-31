@@ -12,7 +12,7 @@ const tz = 'Africa/Casablanca'
 
 module.exports = {
   site: 'medi1tv.com',
-  days: 1,
+  days: 3,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
