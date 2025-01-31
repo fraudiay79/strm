@@ -35,6 +35,7 @@ jobs:
             python myvideoaz.py myvideoaz.json
             python streams.py streams.json
             python3 royanews.py > links/royanews.m3u8
+            python3 nowtvtr.py > links/nowtr.m3u8
       - name: commit and push files
         run: |
           git config --local user.email ""
