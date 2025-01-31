@@ -1,11 +1,11 @@
-const { parser, url } = require('./rt.com.config.js')
+const { url, parser } = require('./rt.com.config.js')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
 dayjs.extend(customParseFormat)
 dayjs.extend(utc)
 
-const date = dayjs.utc('2025-01-31', 'YYYY-MM-DD').startOf('d')
+const date = dayjs.utc('2025-01-03', 'YYYY-MM-DD').startOf('day')
 const channel = {
   site_id: 'rt.com',
   xmltv_id: 'RT.ru'
@@ -48,11 +48,7 @@ it('can parse response', () => {
     }
   ])
 
-  const result = parser({ content }).map(p => {
-    p.start = p.start.toJSON()
-    p.stop = p.stop.toJSON()
-    return p
-  })
+  const result = parser({ content })
 
   expect(result).toMatchObject([
     {
