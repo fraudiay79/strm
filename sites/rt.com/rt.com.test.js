@@ -1,5 +1,9 @@
 const { parser, url } = require('./rt.com.config.js')
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
+dayjs.extend(customParseFormat)
+dayjs.extend(utc)
 
 const date = dayjs.utc('2025-01-31', 'YYYY-MM-DD').startOf('d')
 const channel = {
