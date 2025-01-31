@@ -20,7 +20,7 @@ module.exports = {
       const stop = start.add(30, 'm')
       programs.push({
         title: item.programTitle,
-		    subtitle: item.telecastTitle,
+	sub_title: item.telecastTitle,
         description: item.summary,
         start,
         stop
