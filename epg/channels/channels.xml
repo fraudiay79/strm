@@ -498,6 +498,16 @@
   <channel site="telenet.tv" lang="nl" xmltv_id="MaghrebTV.be" site_id="almaghrebtv">Al Maghreb TV</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="MentTV.be" site_id="menttv">Ment TV</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Njam.be" site_id="njam">njam!</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports1FR.be" site_id="UID0680">Pickx+ Sports 1</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports2FR.be" site_id="UID0681">Pickx+ Sports 2</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports3FR.be" site_id="UID0682">Pickx+ Sports 3</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports4FR.be" site_id="UID0683">Pickx+ Sports 4</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports5FR.be" site_id="UID0684">Pickx+ Sports 5</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports6FR.be" site_id="UID0685">Pickx+ Sports 6</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports7FR.be" site_id="UID50289">Pickx+ Sports 7</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports8FR.be" site_id="UID0671">Pickx+ Sports 8</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports9FR.be" site_id="UID0672">Pickx+ Sports 9</channel>
+  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports10FR.be" site_id="UID0674">Pickx+ Sports 10</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Play4.be" site_id="vierhd">Play4</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Play5.be" site_id="vijfhd">Play5</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Play6.be" site_id="zes">Play6</channel>
@@ -517,6 +527,7 @@
   <channel site="telenet.tv" lang="fr" xmltv_id="RTLClub.be" site_id="clubrtlhd">RTL club</channel>
   <channel site="telenet.tv" lang="fr" xmltv_id="RTLPlug.be" site_id="plugrtl">RTL plug</channel>
   <channel site="telenet.tv" lang="fr" xmltv_id="RTLTVI.be" site_id="rtltvihd">RTL tvi</channel>
+  <channel site="telenet.tv" lang="nl" xmltv_id="Sport10.be" site_id="sport10">Sport 10</channel>
   <channel site="telenet.tv" lang="fr" xmltv_id="VOOsportWorld1.be" site_id="besport1hd">VOO Sport World 1</channel>
   <channel site="telenet.tv" lang="fr" xmltv_id="VOOsportWorld2.be" site_id="besport2">VOO Sport World 2</channel>
   <channel site="telenet.tv" lang="fr" xmltv_id="VOOsportWorld3.be" site_id="besport3">VOO Sport World 3</channel>
@@ -2829,77 +2840,80 @@
   <channel site="dishtv.in" lang="en" xmltv_id="Zing.in" site_id="10000000000970000">Zing</channel>
   <channel site="dishtv.in" lang="en" xmltv_id="Zoom.in" site_id="10000000000690000">Zoom</channel>
   #Indonesia
-  <channel site="mncvision.id" lang="en" xmltv_id="AnimaxAsia.sg" site_id="157">Animax</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="ANTV.id" site_id="4028c68585a0014401863437adf82243">ANTV</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="AXN.id" site_id="axn">AXN</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="BBCEarthAsia.uk" site_id="200">BBC Earth</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="beINSports1.id" site_id="beinsports1">beIN Sports 1</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="beINSports2.id" site_id="beinsports2">beIN Sports 2</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="beINSports3.id" site_id="beinsports3">beIN Sports 3</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="AnimaxAsia.sg" site_id="00000000000000000065">Animax</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="ANTV.id" site_id="00000000000000000010">ANTV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="AXN.id" site_id="00000000000000000079">AXN</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="BBCEarthAsia.uk" site_id="00000000000000000102">BBC Earth</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="beINSports1.id" site_id="00000000000000000122">beIN Sports</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="beINSports2.id" site_id="00000000000000000123">beIN Sports 2</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="beINSports3.id" site_id="00000000000000000124">beIN Sports 3</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="beINSports4.id" site_id="00000000000000000125">beIN Sports 4</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="beINSports5.id" site_id="00000000000000000126">beIN Sports 5</channel>
   <channel site="cubmu.com" lang="id" xmltv_id="BioskopIndonesia.id" site_id="4028c68574537fcd0174be26e4325724">Bioskop Indonesia</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="BTV.id" site_id="4028c68574537fcd0174be56c7d858fd">BTV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="CBeebiesAsia.uk" site_id="41">CBeebies</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="CCM.hk" site_id="22">CCM</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="CelestialMoviesIndonesia.id" site_id="20">Celestial Movies</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="BTV.id" site_id="00000000000000000015">BTV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="CBeebiesAsia.uk" site_id="00000000000000000058">Cbeebies</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="CelestialClassicMovies.id" site_id="00000000000000000045">CCM</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="CelestialMoviesIndonesia.id" site_id="00000000000000000044">Celestial Movies</channel>
   <channel site="cubmu.com" lang="en" xmltv_id="CNBCIndonesia.id" site_id="4028c68574537fcd0174be4b82c758dc">CNBC Indonesia</channel>
   <channel site="cubmu.com" lang="en" xmltv_id="CNNIndonesia.id" site_id="4028c68574537fcd0174be4997e958db">CNN Indonesia</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="CrimePlusInvestigationAsia.sg" site_id="207">Crime + Investigation</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="DreamWorks.sg" site_id="47">DreamWorks</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="Entertainment.id" site_id="86">Entertainment</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="FightSports.us" site_id="304">Fight Sports</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="FMN.id" site_id="150">FMN</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="Galaxy.id" site_id="galaxy">Galaxy</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="GalaxyPremium.id" site_id="12">Galaxy Premium</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="GTV.id" site_id="4028c68574537fcd0174be52f87b58f2">GTV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="HistoryAsia.us" site_id="206">History</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="IDXChannel.id" site_id="100">IDX</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="IMC.id" site_id="14">IMC</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="CrimePlusInvestigationAsia.sg" site_id="00000000000000000095">Crime Investigation</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="DreamWorks.sg" site_id="00000000000000000067">DreamWorks</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="Entertainment.id" site_id="00000000000000000072">Entertainment</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="FightSports.us" site_id="00000000000000000121">Fight Sports</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="FMN.id" site_id="00000000000000000081">FMN</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="Galaxy.id" site_id="00000000000000000049">Galaxy</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="GalaxyPremium.id" site_id="00000000000000000048">Galaxy PREMIUM</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="GlobalTrekker.sg" site_id="00000000000000000103">Global Trekker</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="GTV.id" site_id="00000000000000000003">GTV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="HistoryAsia.us" site_id="00000000000000000104">History</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="IDXChannel.id" site_id="00000000000000000134">IDX</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="IMC.id" site_id="00000000000000000050">IMC (Indonesia Movie Channel)</channel>
   <channel site="tivie.id" lang="id" xmltv_id="Indosiar.id" site_id="indosiar">Indosiar</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="iNews.id" site_id="inews">iNews</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="JakTV.id" site_id="4028c68574537fcd0174be55099d58fa">Jak TV</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="JTV.id" site_id="4028c6857e04fca5017ec407d96b7362">jtv</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="KidsTV.id" site_id="46">Kids TV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="KIX.hk" site_id="161">KIX</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="KompasTV.id" site_id="4028c68574537fcd0174be58644c5901">Kompas TV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="Life.id" site_id="91">LIFE</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="LifetimeAsia.us" site_id="lifetime">Lifetime</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="MetroTV.id" site_id="4028c68574537fcd0174be4783ff58da">Metro TV</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="MNCTV.id" site_id="4028c68574537fcd0174be5ef52a5904">MNC TV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="iNews.id" site_id="00000000000000000004">iNews</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="JakTV.id" site_id="00000000000000000025">JAK TV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="JTV.id" site_id="00000000000000000024">JTV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="KidsTV.id" site_id="00000000000000000056">Kids TV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="KIX.hk" site_id="00000000000000000075">KIX</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="KompasTV.id" site_id="00000000000000000013">Kompas TV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="Life.id" site_id="00000000000000000138">LIFE</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="LifetimeAsia.us" site_id="00000000000000000080">Lifetime</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="MetroTV.id" site_id="00000000000000000014">Metro TV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="MNCTV.id" site_id="00000000000000000002">MNC TV</channel>
   <channel site="cubmu.com" lang="id" xmltv_id="MusikIndonesia.id" site_id="4028c6857e04fca5017ec528dc550e98">Musik Indonesia</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="MuslimTV.id" site_id="92">Muslim TV</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="MyCinema.id" site_id="mycinema">My Cinema</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="MyCinemaAsia.id" site_id="mycinemaasia">My Cinema Asia</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="MyFamily.id" site_id="myfamily">My Family Channel</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="MyKidz.id" site_id="mykidz">My Kidz</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="NET.id" site_id="4028c685758bcfff01776c4ea3520a72">NET TV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="NickelodeonAsia.sg" site_id="49">Nickelodeon</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="NickJrAsia.sg" site_id="37">Nickelodeon Jr</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="MyCinema.id" site_id="00000000000000000052">My Cinema</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="MyCinemaAsia.id" site_id="00000000000000000053">My Cinema Asia</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="MyFamily.id" site_id="00000000000000000051">My Family Channel</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="MyKidz.id" site_id="00000000000000000066">My Kidz</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="NET.id" site_id="00000000000000000023">Net TV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="NickelodeonAsia.sg" site_id="00000000000000000064">Nickelodeon</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="NickJrAsia.sg" site_id="00000000000000000060">Nick Jr</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="OKTV.id" site_id="95">OK TV</channel>
   <channel site="cubmu.com" lang="id" xmltv_id="OneTV.in" site_id="4028c685840ff04901846166123a3e5d">One TV</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="ParamountNetwork.id" site_id="163">Paramount Network</channel>
-  <channel site="cubmu.com" lang="id" xmltv_id="RCTI.id" site_id="4028c68574537fcd0174be51092e58f1">RCTI</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="ROCKEntertainment.sg" site_id="rockentertainment">Rock Entertainment</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="ROCKExtreme.sg" site_id="rockaction">Rock Action</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="RCTI.id" site_id="00000000000000000001">RCTI</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="ROCKEntertainment.sg" site_id="00000000000000000092">ROCK Entertainment</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="ROCKExtreme.sg" site_id="00000000000000000093">ROCK Action</channel>
   <channel site="cubmu.com" lang="id" xmltv_id="SCTV.id" site_id="4028c68574537fcd0174be4d55ce58dd">SCTV</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="SEAToday.id" site_id="seatoday">SEA Today</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="SindoNewsTV.id" site_id="sindonews">SindoNews TV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="SoccerChannel.id" site_id="101">Soccer Channel</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="Sportstars2.id" site_id="98">Sportstars 2</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="SEAToday.id" site_id="00000000000000000017">SEA Today</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="SindoNewsTV.id" site_id="00000000000000000005">SindoNews</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="SoccerChannel.id" site_id="00000000000000000115">Soccer Channel</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="Sportstars2.id" site_id="00000000000000000113">Sportstars 2</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="Sportstars.id" site_id="00000000000000000112">Sportstars</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="Sportstars3.id" site_id="99">Sportstars 3</channel>
   <channel site="mncvision.id" lang="en" xmltv_id="Sportstars4.id" site_id="88">Sportstars 4</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="Sportstars.id" site_id="102">Sportstars</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="SPOTV2.id" site_id="spotv2">SpoTV 2</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="SPOTV.id" site_id="spotv">SpoTV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="TawafTV.id" site_id="105">Tawaf TV</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="Thrill.hk" site_id="19">Thrill</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="Trans7.id" site_id="trans7">Trans7</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="TransTV.id" site_id="transtv">Trans TV</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="tvNAsia.hk" site_id="tvn">tvN</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="tvNMoviesAsia.hk" site_id="tvnmovies">tvN Movies</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="tvOne.id" site_id="tvone">tvOne</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="TVRINasional.id" site_id="tvri">TVRI</channel>
-  <channel site="mncvision.id" lang="en" xmltv_id="VisionPrime.id" site_id="94">Vision Prime</channel>
-  <channel site="tivie.id" lang="id" xmltv_id="ZeeBioskop.id" site_id="zeebioskop">Zee Bioskop</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="SPOTV2.id" site_id="00000000000000000120">SPOTV 2</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="SPOTV.id" site_id="00000000000000000119">SPOTV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="TawafTV.id" site_id="00000000000000000029">Tawaf</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="Thrill.hk" site_id="00000000000000000041">Thrill</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="Trans7.id" site_id="00000000000000000007">Trans 7</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="TransTV.id" site_id="00000000000000000006">Trans TV</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="tvNAsia.hk" site_id="00000000000000000073">tvN</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="tvNMoviesAsia.hk" site_id="00000000000000000046">tvN Movies</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="tvOne.id" site_id="00000000000000000012">tvOne</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="TVRINasional.id" site_id="00000000000000000016">TVRI</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="VisionPrime.id" site_id="00000000000000000087">Vision Prime</channel>
+  <channel site="visionplus.id" lang="id" xmltv_id="ZeeBioskop.id" site_id="00000000000000000047">Zee Bioskop</channel>
   #Iraq
   <channel site="sat.tv" lang="ar" xmltv_id="AfaqTV.iq" site_id="1#45#افاق">Afaq</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlAnwar.iq" site_id="1#37#الانوار تي في">Al Anwar</channel>
@@ -7044,7 +7058,6 @@
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="TCC3.uy" site_id="410">TCC 3</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="Teledoce.uy" site_id="195">Teledoce</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="TVCiudad.uy" site_id="333">TV Ciudad</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="UruguayNaturalTV.uy" site_id="ar#uruguay-natural-uruguay">Uruguay Natural TV</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="VTV.uy" site_id="473">VTV</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="VTVPlus.uy" site_id="474">VTV+</channel>
   #Uzbekistan
