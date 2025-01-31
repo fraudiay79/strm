@@ -2,7 +2,7 @@ name: run streams.py
 
 on:
   schedule:
-    - cron: '0 */2 * * *' # Runs in every 2 hours
+    - cron: '0 */1 * * *' # Runs in every hour
   pull_request:
       branches:
         - main
