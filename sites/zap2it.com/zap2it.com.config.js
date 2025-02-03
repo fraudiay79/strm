@@ -18,7 +18,7 @@ module.exports = {
       'X-Requested-With': 'XMLHttpRequest',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'
     },
-    url: function ({ date, channel }) {
+    url({ date, channel }) {
       return `${API_ENDPOINT}/IsSSLinkNavigation=true&timespan=336&timestamp=${date.startOf('day').utc().valueOf()}&prgsvcid=${channel.site_id}&headendId=DITV&countryCode=USA&postalCode=32825&device=X&userId=-&aid=gapzap&isOverride=true&languagecode=en`
     }
   },
