@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   url: function ({ date, channel }) {
-    const todayEpoch = Math.floor(date.startOf('day').utc().valueOf() / 1000)
+    const todayEpoch = date.startOf('day').utc().valueOf()
     return `https://tvlistings.zap2it.com/api/sslgrid?IsSSLinkNavigation=true&timespan=336&timestamp=${todayEpoch}&prgsvcid=${channel.site_id}&headendId=DITV&countryCode=USA&postalCode=32825&device=X&userId=-&aid=gapzap&DSTUTCOffset=-240&STDUTCOffset=-300&languagecode=en-us`
   },
   parser({ content, channel }) {
