@@ -1,9 +1,4 @@
 const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-
-dayjs.extend(utc)
-
-const API_ENDPOINT = 'https://tvlistings.zap2it.com/api/sslgrid'
 
 module.exports = {
   site: 'zap2it.com',
@@ -18,10 +13,11 @@ module.exports = {
       'X-Requested-With': 'XMLHttpRequest',
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'
     },
-    url({ date, channel }) {
-      return `${API_ENDPOINT}/IsSSLinkNavigation=true&timespan=336&timestamp=${date.startOf('day').utc().valueOf()}&prgsvcid=${channel.site_id}&headendId=DITV&countryCode=USA&postalCode=32825&device=X&userId=-&aid=gapzap&isOverride=true&languagecode=en`
+    data: function ({ date, channel }) {
+      return `IsSSLinkNavigation=true&timespan=336&timestamp=${date.startOf('day').utc().valueOf()}&prgsvcid=${channel.site_id}&headendId=DITV&countryCode=USA&postalCode=32825&device=X&userId=-&aid=gapzap&isOverride=true&languagecode=en`
     }
   },
+  url: 'https://tvlistings.zap2it.com/api/sslgrid',
   parser({ content, channel }) {
     let programs = []
     const items = parseItems(content, channel)
@@ -54,7 +50,11 @@ module.exports = {
       return {
         lang: 'en',
         site_id: item.channelId,
-        name: item.callSign
+        name: item.callSign,
+        headendId: 'DITV', // Example headendId
+        countryCode: 'USA', // Example countryCode
+        postalCode: '32825', // Example postalCode
+        device: 'X' // Example device
       }
     })
   }
