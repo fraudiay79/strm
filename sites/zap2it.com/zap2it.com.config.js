@@ -1,6 +1,9 @@
 const dayjs = require('dayjs');
 const axios = require('axios');
 const axiosRetry = require('axios-retry');
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
 
 // Configure retry logic
 axiosRetry(axios, {
