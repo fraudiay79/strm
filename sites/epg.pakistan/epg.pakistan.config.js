@@ -32,11 +32,9 @@ module.exports = {
   },
   async channels() {
     try {
-      const buffer = await axios
-        .get('https://www.open-epg.com/files/pakistan.xml', {
-          responseType: 'arraybuffer'
-        })
-        .then(r => r.data)
+      const buffer = await axios.get('https://www.open-epg.com/files/pakistan.xml', {
+        responseType: 'arraybuffer'
+      }).then(r => r.data)
 
       const decoded = iconv.decode(buffer, 'utf8').trim()
       const { channels } = parser.parse(decoded)
@@ -63,7 +61,8 @@ function parseItems(buffer, channel, date) {
     } catch (err) {
       console.error('Failed to parse EPG data:', err.message)
       console.error('Error details:', err)
-      return [];
+      console.error('Problematic XML snippet:', buffer.toString().slice(0, 200)) // Log the problematic XML snippet
+      return []
     }
   }
 
