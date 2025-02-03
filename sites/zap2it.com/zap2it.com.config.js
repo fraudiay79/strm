@@ -1,4 +1,9 @@
 const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
+
+dayjs.extend(utc)
+
+const API_ENDPOINT = 'https://tvlistings.zap2it.com/api/sslgrid'
 
 module.exports = {
   site: 'zap2it.com',
@@ -6,17 +11,16 @@ module.exports = {
   request: {
     method: 'POST',
     headers: {
-	  'Accept': '*/*',
-	  'Accept-Encoding': 'gzip, deflate, br, zstd',
-	  'Origin': 'https://tvlistings.zap2it.com',
-	  'Referer': 'https://tvlistings.zap2it.com/ss-list.html?aid=gapzap',
-	  'X-Requested-With': 'XMLHttpRequest',
-	  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'
+      'Accept': '*/*',
+      'Accept-Encoding': 'gzip, deflate, br, zstd',
+      'Origin': 'https://tvlistings.zap2it.com',
+      'Referer': 'https://tvlistings.zap2it.com/ss-list.html?aid=gapzap',
+      'X-Requested-With': 'XMLHttpRequest',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36'
+    },
+    url: function ({ date, channel }) {
+      return `${API_ENDPOINT}/IsSSLinkNavigation=true&timespan=336&timestamp=${date.startOf('day').utc().valueOf()}&prgsvcid=${channel.site_id}&headendId=DITV&countryCode=USA&postalCode=32825&device=X&userId=-&aid=gapzap&isOverride=true&languagecode=en`
     }
-  },
-  url: function ({ date, channel }) {
-    const todayEpoch = date.startOf('day').utc().valueOf()
-    return `https://tvlistings.zap2it.com/api/sslgrid?IsSSLinkNavigation=true&timespan=336&timestamp=${todayEpoch}&prgsvcid=${channel.site_id}&headendId=DITV&countryCode=USA&postalCode=32825&device=X&userId=-&aid=gapzap&DSTUTCOffset=-240&STDUTCOffset=-300&languagecode=en-us`
   },
   parser({ content, channel }) {
     let programs = []
@@ -26,12 +30,12 @@ module.exports = {
       const start = dayjs(item.startTime)
       const stop = dayjs(item.endTime)
       programs.push({
-        title: item.program.title,
-        category: item.program.seriesGenres,
-        description: item.program.shortDesc,
-        image: item.program.thumbnail ? `https://zap2it.tmsimg.com/assets/${item.program.thumbnail}.jpg` : null,
-        season: parseSeason(item.program),
-        episode: parseEpisode(item.program),
+        title: item.title,
+        category: item.seriesGenres,
+        description: item.shortDesc,
+        image: item.thumbnail ? `https://zap2it.tmsimg.com/assets/${item.thumbnail}.jpg` : null,
+        season: parseSeason(item),
+        episode: parseEpisode(item),
         start,
         stop
       })
