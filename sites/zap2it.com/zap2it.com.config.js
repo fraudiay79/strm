@@ -1,16 +1,8 @@
-const dayjs = require('dayjs');
-const axios = require('axios');
-const axiosRetry = require('axios-retry');
+const dayjs = require('dayjs')
+const axios = require('axios')
 const utc = require('dayjs/plugin/utc')
 
 dayjs.extend(utc)
-
-// Configure retry logic
-axiosRetry(axios, {
-  retries: 3,
-  retryDelay: (retryCount) => retryCount * 1000,
-  retryCondition: (error) => error.response && error.response.status === 503
-});
 
 module.exports = {
   site: 'zap2it.com',
