@@ -551,36 +551,38 @@
   <channel site="reportv.com.ar" lang="es" xmltv_id="UnitelSantaCruz.bo" site_id="6340">Unitel</channel>
   #Bosnia
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="24Kitchen.ba" site_id="118">24Kitchen</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AgroTV.ba" site_id="501#147">Agro TV</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="AgroTV.ba" site_id="iptv#ch-147-agro-tv">Agro TV</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="AlJazeeraBalkans.ba" site_id="657">Al Jazeera Balkans</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="AlternativnaTV.ba" site_id="32">Alternativna TV</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="AnimalPlanet.ba" site_id="17">Animal Planet</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaEsport.ba" site_id="050#471">Arena Esport</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaFight.ba" site_id="115#458">Arena Fight</channel>
-  <channel site="mtel.ba" lang="sr" xmltv_id="ArenaSport1x2.ba" site_id="126#441">Arena sport 1x2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport1.ba" site_id="101#53">Arena Sport 1</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport2.ba" site_id="102#54">Arena Sport 2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport3.ba" site_id="103#55">Arena Sport 3</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport4.ba" site_id="104#498">Arena Sport 5</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport5.ba" site_id="104#56">Arena Sport 4</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport6.ba" site_id="105#499">Arena Sport 6</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaEsport.ba" site_id="iptv#ch-406-arena-esport-hd">Arena Esport</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaFight.ba" site_id="iptv#ch-465-arena-fight-hd">Arena Fight</channel>
+  <channel site="mtel.ba" lang="sr" xmltv_id="ArenaSport1x2.ba" site_id="iptv#ch-440-arena-sport-1-2">Arena sport 1x2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSportPremium1.ba" site_id="iptv#ch-arena-premium-1-hd">Arena Premium 1</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSportPremium2.ba" site_id="iptv#ch-arena-premium-2-hd">Arena Premium 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSportPremium3.ba" site_id="iptv#ch-arena-premium-3-hd">Arena Premium 3</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport1.ba" site_id="iptv#ch-53-arena-sport-1">Arena Sport 1</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport2.ba" site_id="iptv#ch-54-arena-sport-2">Arena Sport 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport3.ba" site_id="iptv#ch-55-arena-sport-3">Arena Sport 3</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport5.ba" site_id="iptv#ch-56-arena-sport-4">Arena Sport 4</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport4.ba" site_id="iptv#ch-arena-sport-5">Arena Sport 5</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport6.ba" site_id="iptv#ch-arena-sport-6">Arena Sport 6</channel>
   <channel site="epg.unitedgroup" lang="en" xmltv_id="BabyTV.uk" site_id="1510">Baby TV</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="BalkanTripTV.rs" site_id="513#408">Balkan Trip</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="BalkanTripTV.rs" site_id="iptv#ch-461-balkan-trip-hd">Balkan Trip</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="BHT1.ba" site_id="198">BHT 1</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="BloombergAdria.rs" site_id="1648">Bloomberg Adria</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="BN.ba" site_id="449">BN</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="BN2.ba" site_id="025#23">BN 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="BN2.ba" site_id="iptv#ch-468-bn-2">BN 2</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="BNMusic.ba" site_id="201">BN Music</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="Cinemax.ba" site_id="63">Cinemax</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="Cinemax2.ba" site_id="64">Cinemax 2</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="DiscoveryChannel.ba" site_id="776">Discovery Channel</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="DiscoveryScience.ba" site_id="411#444">Discovery Science</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="EnglishClubTV.uk" site_id="146#227">English Club TV</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="EnglishClubTV.uk" site_id="iptv#ch-227-english-club-tv">English Club TV</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="Eurosport1.ba" site_id="84">Eurosport 1</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="Eurosport2.ba" site_id="1505">Eurosport 2</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="FaceTV.ba" site_id="471">Face TV</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="FederalnaTV.ba" site_id="33">Federalna</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="FightNetwork.ba" site_id="121#67">Fight Network</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="FightNetwork.ba" site_id="iptv#ch-67-fight-network">Fight Network</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayat.ba" site_id="466">Hayat</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayat2.ba" site_id="299">Hayat 2</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="HayatFolk.ba" site_id="495">Hayat Folk</channel>
@@ -605,9 +607,9 @@
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanal.ba" site_id="748">O Kanal</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanalPlus.ba" site_id="1096">O Kanal Plus</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanalMusic.ba" site_id="1097">O Kanal Music</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="OTVValentino.ba" site_id="093#448">OTV Valentino</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="OTVValentino.ba" site_id="iptv#ch-439-otv-valentino">OTV Valentino</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="PinkBH.ba" site_id="587">Pink BH</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="PremierLeagueTV.uk" site_id="129#488">Premier League TV</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="PremierLeagueTV.uk" site_id="iptv#ch-premier-league-tv-hd">Premier League TV</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTLKockica.hr" site_id="1495">RTL Kockica</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTRS.ba" site_id="31">РТРС</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTRSPlus.ba" site_id="653">РТРС Plus</channel>
@@ -5279,7 +5281,7 @@
   <channel site="canalplus.com" lang="fr" xmltv_id="SunuYeuf.sn" site_id="sn#180710">Sunu Yeuf</channel>
   #Serbia
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="24Kitchen.rs" site_id="118">24Kitchen</channel>
-  <channel site="mtel.ba" lang="sr" xmltv_id="AgroTV.rs" site_id="501#147">Agro TV</channel>
+  <channel site="mtel.ba" lang="sr" xmltv_id="AgroTV.rs" site_id="iptv#ch-147-agro-tv">Agro TV</channel>
   <channel site="epg.unitedgroup" lang="bs" xmltv_id="AMC.rs" site_id="45">AMC</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="AnimalPlanet.rs" site_id="17">Animal Planet</channel>
   <channel site="magentatv.me" lang="sr" xmltv_id="ArenaEsport.rs" site_id="359838248389">Arena Esport</channel>
@@ -5298,11 +5300,11 @@
   <channel site="magentatv.me" lang="sr" xmltv_id="ArenaSport8.hr" site_id="359838760334">Arena Sport 8</channel>
   <channel site="magentatv.me" lang="sr" xmltv_id="ArenaSport9.hr" site_id="591971880133">Arena Sport 9</channel>
   <channel site="magentatv.me" lang="sr" xmltv_id="ArenaSport10.hr" site_id="591972904029">Arena Sport 10</channel>
-  <channel site="mtel.ba" lang="sr" xmltv_id="AXNAdria.rs" site_id="069#110">AXN</channel>
-  <channel site="mtel.ba" lang="sr" xmltv_id="AXNSpin.rs" site_id="070#112">AXN Spin</channel>
+  <channel site="mtel.ba" lang="sr" xmltv_id="AXNAdria.rs" site_id="iptv#ch-110-axn">AXN</channel>
+  <channel site="mtel.ba" lang="sr" xmltv_id="AXNSpin.rs" site_id="iptv#ch-112-axn-spin">AXN Spin</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="B92.rs" site_id="738">B92</channel>
   <channel site="epg.unitedgroup" lang="en" xmltv_id="BabyTV.rs" site_id="96">Baby TV</channel>
-  <channel site="mtel.ba" lang="sr" xmltv_id="BalkanTV.rs" site_id="029#284">Balkan TV</channel>
+  <channel site="mtel.ba" lang="sr" xmltv_id="BalkanTV.rs" site_id="iptv#ch-284-balkan-tv">Balkan TV</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="BBCEarth.rs" site_id="112">BBC Earth</channel>
   <channel site="epg.unitedgroup" lang="sr" xmltv_id="BelleAmie.rs" site_id="171">Belle Amie</channel>
   <channel site="mts.rs" lang="bs" xmltv_id="BlicTV.rs" site_id="115#886">Blic TV</channel>
@@ -7276,13 +7278,10 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="StarTrek.us" site_id="PlutoTV/ca#643ea768e0789d0008548886">Star Trek</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="MoreStarTrek.us" site_id="PlutoTV/us#634dacf51d90320007fcd5fa">More Star Trek</channel>
   #Adult
-  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel1.rs" site_id="917#376">Adult 1</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel2.rs" site_id="918#377">Adult 2</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel3.rs" site_id="919#378">Adult 3</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel4.rs" site_id="920#379">Adult 4</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel5.rs" site_id="921#380">Adult 5</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel6.rs" site_id="922#381">Adult 6</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel7.rs" site_id="923#382">Adult 7</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel1.rs" site_id="iptv#ch-376-adult-1">Adult 1</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel2.rs" site_id="iptv#ch-377-adult-2">Adult 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel3.rs" site_id="iptv#ch-378-adult-3">Adult 3</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="AdultChannel4.rs" site_id="iptv#ch-379-adult-4">Adult 4</channel>
   <channel site="horizon.tv" lang="en" xmltv_id="BabesTV.us" site_id="10187">Babes TV</channel>
   <channel site="tv2go.t-2.net" lang="sl" xmltv_id="BalkanErotic.si" site_id="1000645">Balkan Erotic</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="BangU.us" site_id="BANGU">Bang U</channel>
@@ -7297,8 +7296,8 @@
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="DorcelTVAfrica.fr" site_id="2838">Dorcel TV Africa</channel>
   <channel site="tv.post.lu" lang="en" xmltv_id="DuskTV.nl" site_id="c906fca0-7000-11e9-915f-ab32be3854aa">Dusk!</channel>
   <channel site="ipko.tv" lang="bs" xmltv_id="DreamPornTV.ba" site_id="dream-porn">Dream Porn</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="EroX.nl" site_id="900#175">EroX</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="EroXXX.nl" site_id="901#177">EroXXX</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="EroX.nl" site_id="iptv#ch-175-erox-hd">EroX</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="EroXXX.nl" site_id="iptv#ch-177-eroxxx-hd">EroXXX</channel>
   <channel site="ziggogo.tv" lang="nl" xmltv_id="EvilAngelTV.us" site_id="NL_000172_019302">Evil Angel</channel>
   <channel site="iptvx.one" lang="ru" xmltv_id="Exxxotica.ru" site_id="exxxotica">Exxxotica HD • Exxxotica</channel>
   <channel site="horizon.tv" lang="en" xmltv_id="Extasy.cz" site_id="10136">Extasy</channel>
@@ -7320,14 +7319,14 @@
   <channel site="startimestv.com" lang="en" xmltv_id="PenthouseBlack.us" site_id="348929971">Penthouse Black</channel>
   <channel site="telenet.tv" lang="en" xmltv_id="PenthouseGold.us" site_id="penthousehd1">Penthouse Gold</channel>
   <channel site="telenet.tv" lang="en" xmltv_id="PenthousePassion.us" site_id="penthousehd">Penthouse Passion</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic.rs" site_id="906#179">Pink Erotic</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic2.rs" site_id="907#181">Pink Erotic 2</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="Erotic3.rs" site_id="904#182">Pink Erotic 3</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="Erotic4.rs" site_id="905#184">Pink Erotic 4</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic5.rs" site_id="906#186">Pink Erotic 5</channel>
-  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic6.rs" site_id="907#188">Pink Erotic 6</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="Erotic7.rs" site_id="908#189">Pink Erotic 7</channel>
-  <channel site="mtel.ba" lang="en" xmltv_id="Erotic8.rs" site_id="909#191">Pink Erotic 8</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic.rs" site_id="iptv#ch-179-pink-erotic">Pink Erotic</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic2.rs" site_id="iptv#ch-181-pink-erotic-2">Pink Erotic 2</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="Erotic3.rs" site_id="iptv#ch-182-pink-erotic-3">Pink Erotic 3</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="Erotic4.rs" site_id="iptv#ch-184-pink-erotic-4">Pink Erotic 4</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic5.rs" site_id="iptv#ch-186-pink-erotic-5">Pink Erotic 5</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Erotic6.rs" site_id="iptv#ch-188-pink-erotic-6">Pink Erotic 6</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="Erotic7.rs" site_id="iptv#ch-189-pink-erotic-7">Pink Erotic 7</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="Erotic8.rs" site_id="iptv#ch-191-pink-erotic-8">Pink Erotic 8</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="PinkTV.fr" site_id="406">Pink TV</channel>
   <channel site="tv.post.lu" lang="fr" xmltv_id="PinkX.fr" site_id="7718b020-81d3-11e9-b43b-9d7b168e6372">Pink-X</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="PlayboyTV.us" site_id="PLAYBOY">Playboy TV</channel>
