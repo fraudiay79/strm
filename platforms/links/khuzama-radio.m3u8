@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=2700000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080
-https://live.kwikmotion.com/khuzamaradiolive/khuzama_source/hdntl=exp=1738845893~acl=%2fkhuzamaradiolive%2fkhuzama_source%2f*~data=hdntl~hmac=b87adf39163e6649d23cf2258b841b9e9620f6f28bc51fa442210ce95c8d745c/chunks.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2600000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080
+https://live.kwikmotion.com/khuzamaradiolive/khuzama_source/hdntl=exp=1738848511~acl=%2fkhuzamaradiolive%2fkhuzama_source%2f*~data=hdntl~hmac=9388b2b05ccf7b9a0ca493253ef903540893e373d6745ccf56033047f00d9a5b/chunks.m3u8
