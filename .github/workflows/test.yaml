@@ -27,7 +27,8 @@ jobs:
           #npm test --- canalplus.mm
           #npm run channels:parse --- --config=./sites/canalplus.mm/canalplus.mm.config.js --output=./sites/canalplus.mm/canalplus.mm.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=canalplus.mm --maxConnections=20 --output=guides/allente.no.xml --days=2 --timeout=90000
+          npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
+          #npm run grab --- --site=canalplus.mm --maxConnections=20 --output=guides/allente.no.xml --days=2 --timeout=90000
           #npm run grab --- --site=visionplus.id --lang=en --maxConnections=20 --output=guides/allente.no.xml --days=2 --timeout=90000
           
     - name: Commit changes
