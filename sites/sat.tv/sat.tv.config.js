@@ -6,11 +6,16 @@ const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const https = require('https')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 const API_ENDPOINT = 'https://sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
+
+const agent = new https.Agent({
+  secureProtocol: 'TLSv1_2_method' // Try 'TLSv1_method', 'TLSv1_1_method', etc.
+})
 
 module.exports = {
   site: 'sat.tv',
@@ -39,7 +44,8 @@ module.exports = {
     },
     cache: {
       ttl: 60 * 60 * 1000 // 1h
-    }
+    },
+    httpsAgent: agent
   },
   parser: function ({ content, date, channel }) {
     let programs = []
@@ -110,7 +116,8 @@ module.exports = {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             Cookie: `pll_language=${lang}`
-          }
+          },
+          httpsAgent: agent
         })
         .then(r => r.data)
         .catch(console.log)
