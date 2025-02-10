@@ -12,7 +12,7 @@ dayjs.extend(customParseFormat)
 let session
 
 module.exports = {
-  site: 'xem.kplus.vn',
+  site: 'kplus.vn',
   days: 2,
   url({ channel, date }) {
     return `https://tvapi-sgn.solocoo.tv/v1/assets?query=schedule,forrelated,${
