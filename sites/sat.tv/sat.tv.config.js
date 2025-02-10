@@ -1,26 +1,17 @@
-// Disable TLS validation (use cautiously)
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
-
 const axios = require('axios')
 const dayjs = require('dayjs')
 const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
-const https = require('https')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 const API_ENDPOINT = 'https://sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
 
-const agent = new https.Agent({
-  secureProtocol: 'TLSv1_2_method' // Try 'TLSv1_method', 'TLSv1_1_method', etc.
-})
-
 module.exports = {
   site: 'sat.tv',
   days: 2,
-  delay: 5000,
   url: API_ENDPOINT,
   request: {
     method: 'POST',
@@ -44,8 +35,7 @@ module.exports = {
     },
     cache: {
       ttl: 60 * 60 * 1000 // 1h
-    },
-    httpsAgent: agent
+    }
   },
   parser: function ({ content, date, channel }) {
     let programs = []
@@ -116,8 +106,7 @@ module.exports = {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             Cookie: `pll_language=${lang}`
-          },
-          httpsAgent: agent
+          }
         })
         .then(r => r.data)
         .catch(console.log)
@@ -125,7 +114,7 @@ module.exports = {
       const $ = cheerio.load(data)
       $('.main-container-channels-events > .container-channel-events').each((i, el) => {
         const name = $(el).find('.channel-title').text().trim()
-        const channelId = name.replace(/\s\&\s/gi, ' &amp; ')
+        const channelId = name.replace(/\s&\s/gi, ' &amp; ')
 
         if (!name) return
 
