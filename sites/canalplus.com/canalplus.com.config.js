@@ -149,10 +149,13 @@ function parseInfo(data) {
 async function loadProgramDetails(item) {
   if (!item.onClick || !item.onClick.URLPage) return {}
 
-  return await axios
-    .get(item.onClick.URLPage)
-    .then(r => r.data)
-    .catch(console.error)
+  try {
+    const response = await axios.get(item.onClick.URLPage)
+    return response.data
+  } catch (error) {
+    console.error(`Error loading program details: ${error.message}`)
+    return {}
+  }
 }
 
 function parseItems(content) {
