@@ -3209,8 +3209,10 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="ESPNCaribbean.jm" site_id="us#69034944/espn-caribbean">ESPN</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="ESPN2Caribbean.jm" site_id="us#69029844/espn2-caribbean">ESPN 2</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="FlowSports.jm" site_id="us#1864921428/flow-sports-caribbean">Flow Sports</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="PBCJamaicaTV.jm" site_id="JM1#PBC.Jamaica.jm">PBC Jamaica</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="SportsMax.jm" site_id="sportsmax/9959">SportsMax</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="SportsMax2.jm" site_id="us#663196076/sportsmax-2">SportsMax 2</channel>
+  <channel site="epgshare01.online" lang="en" xmltv_id="TVJ.jm" site_id="JM1#Television.Jamaica.jm">TVJ</channel>
   #Japan
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="AnimalPlanet.jp" site_id="120_186_65406">アニマルプラネット</channel>
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="Animax.jp" site_id="120_149_65406">アニマックス</channel>
@@ -3441,7 +3443,7 @@
   <channel site="dstv.com" lang="en" xmltv_id="KassTV.ke" site_id="ken#266">Kass TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="KBCChannel1.ke" site_id="uga#270">KBC Channel 1</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="KissTV.ke" site_id="1283919544">Kiss TV</channel>
-  <channel site="startimestv.com" lang="en" xmltv_id="KTN.ke" site_id="469">KTN</channel>
+  <channel site="dstv.com" lang="en" xmltv_id="KTN.ke" site_id="ken#272">KTN</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="KTNHome.ke" site_id="948896056">KTN Home</channel>
   <channel site="dstv.com" lang="en" xmltv_id="KTNNews.ke" site_id="uga#274">KTN News</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="LolweTV.ke" site_id="1283991086">Lolwe TV</channel>
@@ -3989,6 +3991,31 @@
   <channel site="startimestv.com" lang="pt" xmltv_id="TVMiramar.mz" site_id="517">TV Miramar</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="TVMTelescola.mz" site_id="518">TVM Telescola</channel>
   <channel site="startimestv.com" lang="en" xmltv_id="TVSucesso.mz" site_id="842945991">TV Sucesso</channel>
+  #Myanmar
+  <channel site="canalplus.mm" lang="my" xmltv_id="5Plus.mm" site_id="tmTYomC3vlFFUkmakr1DMK6-ord1taWrRmAvzLvD">5Plus</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusAction.mm" site_id="g8JUYBxSw0VDv4D5Gom_6dzbMXx9PIpYfNp9H-If">Canal+ Action</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusChaTate.mm" site_id="upOy8H_ztOpM2F5j2llw54qd_8E6rsbgln68AZHj">Canal+ Cha Tate</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusKyiLite.mm" site_id="9_H9OWvx7Y_we6i2kdOvtZp-0fY6bzHQbiJcYomt">Canal+ Kyi Lite</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusMaeMadi.mm" site_id="pjwaDllbulmD126yBwRAo0SCQb8BFSKE6RbTDIuv">Canal+ Mae Madi</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusPuTuTue.mm" site_id="-8BETJPi4dq_BxwHnvbbRFQZWJEt0KvqkXhIemV-">Canal+ Pu Tu Tue</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusSports1.mm" site_id="l8SwgPM-26cdpEm9XOUJc2nm1NqAtD7sOIvgsZyo">Canal+ Sports 1</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusSports2.mm" site_id="5I9RdAfalAQhhBJrmXjZGWNyr74uBwOKU7IEiA90">Canal+ Sports 2</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusSports3.mm" site_id="HHjPnkdGO4MT_WTrdcH7S4QxH7yDPQFMqUw7SAzd">Canal+ Sports 3</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusSuSann.mm" site_id="HQoXDQWNgEHUqOOzvdhZdv9L-C6-fl_tMQayxpC-">Canal+ Su Sann</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="CanalPlusZatLenn.mm" site_id="BN9jt3g1VK0uThyYymqGqISTluuOGBvUwfJzNslW">Canal+ Zat Lenn</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="Channel7.mm" site_id="BaXE-k1Y4MSbnUFtUsB-OHeyieMFS_FPDvOcbt7X">Channel 7</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="Channel9.mm" site_id="tMwyhc7HC32neTEKwWKftSS_T8ockQTYUPYNqoJ8">Channel 9</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="ChannelK.mm" site_id="IgWrUI2yxMDmIvuIuxdZd-qNsaskYVIJpL0oZulF">Channel K</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="ECTV.mm" site_id="BER2MwMpQA1E05FjobFCv2mPgGnTYsHhe41Ptyj5">ECTV</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="FortuneTV.mm" site_id="gk4tUpkx_O__4lEDGPNMmtxk8USwdUVhH5rFgqbN">Fortune TV</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="MaharBawdiTV.mm" site_id="evYmfOM6B5gHqgmhwy0-VGtOd4YUB-bWPZ4gUEhe">Maharbawdi</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="MITV.mm" site_id="8Z-n03nfDSNKHMtPAH8LIfGhbLL_F2-DazpmG3k2">MITV</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="MNTV.mm" site_id="IFGdhAgUwDwdM6tqU3-AP9JDE3-2q-wkm0hsNhQj">MNTV</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="MRTV.mm" site_id="Kwb3K_H7VwrTczf1paXl_hGE7g_GOSrCmrTG6GAZ">MRTV</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="MRTV4.mm" site_id="KJC-skiwYW4sMko-41UEE5LNRvi1SAN-geUlqAe1">MRTV-4</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="ThuKhuMa.mm" site_id="DWGJI2jHG1veBt6b0Shp-4jY08uQN5PicBTcTU0n">ThuKhuMa</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="ThuKhuMa2.mm" site_id="Yhynu_wUNlrw3P4sFq-ftBzZmM-w1UOgGLxPzoc4">ThuKhuMa 2</channel>
+  <channel site="canalplus.mm" lang="my" xmltv_id="YTV.mm" site_id="xUsyL0BV1Hf9_CsrH0JMS0OuWnqfTDURxQ0yRboo">YTV</channel>
   #Namibia
   <channel site="dstv.com" lang="en" xmltv_id="NBC1.na" site_id="nam#282">NBC 1</channel>
   <channel site="dstv.com" lang="en" xmltv_id="NBC2.na" site_id="nam#283">NBC 2</channel>
@@ -7111,6 +7138,54 @@
   <channel site="reportv.com.ar" lang="es" xmltv_id="VepacoTV.ve" site_id="3352">Vepaco TV</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="VePlus.ve" site_id="914">Ve Plus</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="Vive.ve" site_id="407">Vive</channel>
+  #Vietnam
+  <channel site="kplus.vn" lang="vi" xmltv_id="ANTV.vn" site_id="tJI5BT8LyuIlRx2To9jkMlM0pkM6GXskLCcPte0N">ANTV</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="BinhThuanTV6.vn" site_id="qCiPWtOsmF2j7RTAHndzdSHtd3mnjddC92VGtoov">Bình Thuận TV 6</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="BinhPhuoc1.vn" site_id="1QsvBohZIRvk57tRMCD_uACbk2xFuOXxItw2AOO2">Bình Phước 1</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="BinhThuan.vn" site_id="ac98BsuoQwW50SBW9c67dYFxGYYGAGvrYQgNFRW9">Bình Thuận</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="DaNang1.vn" site_id="At9MqFxfjhvLlcuWM8txMw9V6XGbn_a_cyWfKy3N">Da Nang 1</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="EChannel.vn" site_id="-VyuUALEqcJ99-pPuhujpwWk1gBtA5BlEHINdw5i">E Channel</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="HauGiang.vn" site_id="0brdJXzat6AY-5tYKnbXA6wTtMOjRlIgSSW5tvRa">Hau Giang</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="HaTinh.vn" site_id="5UwBQcjTxpjFkTBG2ZdA29Npv1viy_0uIMRHSVEt">Ha Tinh</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="HTV2.vn" site_id="DZIm6nVLT_Fvmy5Do4OVeTpJv8p1bjFXkqnh5rsY">HTV2</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="HTV3.vn" site_id="uRY9Lhx566fKPuaLWcjs55wo_u2yIAkDFcE7F7J6">HTV3</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="HTV7.vn" site_id="pPDPKS9_I8LucOy_DFvOqRuqqmsd7BGuWYsJHHhV">HTV7</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="HTV9.vn" site_id="4o9U0OncN2xNqG4W_gqjfKxy4foQxWVzwOQWDTr4">HTV9</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="InfoTV.vn" site_id="VK1WCSqS17JD9sZJAzYM6Ct--bQ_AUbrwzrZJO0D">Info TV</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="KhanhHoa.vn" site_id="p58VLAPdwXZhPLqL46u2evSyD7AWsOBAS5zojHOZ">Khanh Hoa</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONBiBi.vn" site_id="NwwR2PqSPYCc01B1dLOOdV0ZlKXGioDLYC84O-H6">ON BiBi</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONFootball.vn" site_id="03yiXEYHdpRJKOeI8Y7iXLjzKjrFuCYCGgjPm8qW">On Football</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONGolf.vn" site_id="W5p8R3WPMSHBdOs7w9uGRmpoUEUfcFlzLr2v8axR">ON Golf</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONMusic.vn" site_id="S2tMUo8FUa0KwojYapArN2DvaWiyPOorsHD1IwM4">ON Music</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONPhimViet.vn" site_id="TwTUqV7a7S33qhCrjWZi1pN0r6LtvJReRP2Z8gAG">ON Phim Việt</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONSports.vn" site_id="GYr7KKu9mouGRs8laZSk5dO4T-PHsgNBGTMkBXHQ">On Sports</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONSportsPlus.vn" site_id="9jB8eRpGRgp3pe37j8LUIfzi65no02me62P5e0Ys">ON Sports+</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONSportsNews.vn" site_id="MXcPi2XP6u2o6rR2NwDcYXf1iB3hrddykkrnN_qT">ON Sports News</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONStyle.vn" site_id="Y-zViGmCqPTLk5QhH_GyVo7hAfd5WZjhe4PMHklx">ON Style</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONVieDrama.vn" site_id="hYsakA64TnDGHRZil6qpZV64K7vkrnLTQ2maFHmY">ON Vie Drama</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ONVieGiaiTri.vn" site_id="kWpedZ7S9A9bIFmZxJY1jX7Vs3D7xVoDQeNxsNCH">ON Vie Giai Tri</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="QuangNam.vn" site_id="ctVDKWuSGol5ZUSNmByrowLyDI9Nley69JzlQrHP">Quang Nam</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="QuangNinhTV1.vn" site_id="G8K9Nb0qvRPNyTOTF4paqB1UQVYEvcdhBDK35Ep6">QTV1</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="QuangNinhTV3.vn" site_id="I8OHQHTj3jPruBMjBoc060yAU8-qaBnOgeSfjmHJ">QTV3</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="SCTV9.vn" site_id="He1HcrKA62AEEmNQyFy8dFa2zEY4JOuHe4JhwDcl">SCTV9</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="SCTVPhimTongHop.vn" site_id="OfTbJdMN03T3CZRFwyZQgNW6ua90RCS7iZhlz7M6">SCTV Phim Tổng Hợp</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="SonLa.vn" site_id="_dtUzHgcUW4eJYXtdeId8rSzeitAwasE7dQ63DWy">Son La</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ThaiNguyen1.vn" site_id="dn1oPY0sKhN45KI2cOcHryYvG9EOsOgvyhk692CH">Thái Nguyên 1</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="ThanhHoa.vn" site_id="8LvlAATMtPHuonzJGHfIySUck5Y5eFTTqiykTG-p">Thanh Hoa</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VinhLongTV1.vn" site_id="RjUg5hsjsM4_FUQBa5Z1UQpkt2iTL1HYvXnQFlVp">THVL1</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VinhLongTV2.vn" site_id="JPNfXNMnfxC4RjW4FmP503P-jCcVuLciRMadCcCB">THVL2</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VinhLongTV3.vn" site_id="rT-RWZbXNpD7c2DPd0jaFqImlLFR624hr3FEuypc">THVL3</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VinhLongTV4.vn" site_id="hGfRyROqeHE1fD4clI7NsO6oIfMNkRFuJrC08rIk">THVL4</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VinhPhuc.vn" site_id="7Ar763XCCf_z2LYvU8X6GVYtgMhv2NCdP0xaOFQO">Vinh Phuc</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV1.vn" site_id="WBSb0vxfNmLVmW814CFu_4CAeEukAj5QxKHd9JwV">VTV1</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV2.vn" site_id="3wtIVGSgCa6oIbO4Q6VSCk4Bjj2vYFzr7HTB_GmH">VTV2</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV3.vn" site_id="dDmD0toCd6WBZ9_JIh--ksBTHtpKRN7lVfb-3eHw">VTV3</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV4.vn" site_id="6VMeiOd9rCVDO7s3lbKzKExXcHZSqbrSerbDIoYi">VTV4</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV5.vn" site_id="_NqZMIGgqqTheZvG1hQooIwl_TFgBJObPxcXKI8k">VTV5</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV7.vn" site_id="Yo93e3168WOgzSKHGc3Vv19xpVcAvZaMtvILHtfe">VTV7</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV8.vn" site_id="CVIhugmChcVcfi1CqIVdsOpNIMHKA67KxhDjqb0F">VTV8</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTV9.vn" site_id="6FnSMBX5EDN7jL149tXn2MMf4dJRJLg5STfs8vEt">VTV9</channel>
+  <channel site="kplus.vn" lang="vi" xmltv_id="VTVCanTho.vn" site_id="SWn4bdB-AvlQS717rv7HJJDFa5QFttkc3F_aaw1p">VTV Cần Thơ</channel>
   #Yemen
   <channel site="sat.tv" lang="ar" xmltv_id="AdenTV.ye" site_id="1#39#عدن">Aden TV</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AICAden.ye" site_id="1#39#عدن المستقيلة">AIC Aden</channel>
