@@ -24,12 +24,28 @@ module.exports = {
     let programs = []
     const items = parseItems(buffer, channel, date)
     items.forEach(item => {
-      programs.push({
+      let program = {
         title: item.title?.[0]?.value,
         description: item.desc?.[0]?.value,
+        icon: item.icon?.[0]?.value,
+        credits: [],
+        category: [],
         start: item.start,
-        stop: item.stop
-      })
+        stop: item.stop,
+      }
+
+      if (item.credits?.[0]) {
+        program.credits = item.credits[0].children.map(credit => ({
+          role: credit.tagName,
+          name: credit.value
+        }))
+      }
+
+      if (item.category?.length > 0) {
+        program.category = item.category.map(cat => cat.value)
+      }
+
+      programs.push(program)
     })
 
     return programs
