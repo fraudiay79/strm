@@ -6,13 +6,12 @@ dayjs.extend(utc)
 
 const headers = {
   'X-Apikey': 'xe1dgrShwdR1DVOKGmsj8Ut4QLlGyOFI',
-  'X-Core-Appversion': '2.14.0.1',
+  'X-Core-Appversion': '2.20.0.3',
   'X-Core-Contentratinglimit': '0',
   'X-Core-Deviceid': '',
   'X-Core-Devicetype': 'web',
   Origin: 'https://nostv.pt',
-  'User-Agent':
-    'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
 module.exports = {
