@@ -7,10 +7,7 @@ let cachedContent
 module.exports = {
   site: 'epg.pakistan',
   days: 2,
-  url: [
-    'https://www.open-epg.com/files/pakistan.xml',
-    'https://www.open-epg.com/files/pakistan2.xml'
-  ],
+  url: 'https://www.open-epg.com/files/pakistan.xml',
   request: {
     maxContentLength: 100000000, // 100 MB
     cache: {
