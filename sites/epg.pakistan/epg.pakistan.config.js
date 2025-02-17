@@ -7,7 +7,7 @@ let cachedContent
 module.exports = {
   site: 'epg.pakistan',
   days: 2,
-  urls: [
+  url: [
     'https://www.open-epg.com/files/pakistan.xml',
     'https://www.open-epg.com/files/pakistan2.xml'
   ],
