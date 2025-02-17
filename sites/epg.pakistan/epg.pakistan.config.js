@@ -7,7 +7,10 @@ let cachedContent
 module.exports = {
   site: 'epg.pakistan',
   days: 2,
-  url: 'https://www.open-epg.com/files/pakistan.xml',
+  urls: [
+    'https://www.open-epg.com/files/pakistan.xml',
+    'https://www.open-epg.com/files/pakistan2.xml'
+  ],
   request: {
     maxContentLength: 100000000, // 100 MB
     cache: {
@@ -32,12 +35,17 @@ module.exports = {
   },
   async channels() {
     try {
-      const buffer = await axios.get('https://www.open-epg.com/files/pakistan.xml', {
-        responseType: 'arraybuffer'
-      }).then(r => r.data)
+      const buffers = await Promise.all(
+        this.urls.map(url => axios.get(url, { responseType: 'arraybuffer' }).then(r => r.data))
+      )
 
-      const decoded = iconv.decode(buffer, 'utf8').trim()
-      const { channels } = parser.parse(decoded)
+      const decodedBuffers = buffers.map(buffer => iconv.decode(buffer, 'utf8').trim())
+      const parsedData = decodedBuffers.map(decoded => parser.parse(decoded))
+
+      let channels = []
+      parsedData.forEach(data => {
+        channels = channels.concat(data.channels)
+      })
 
       return channels.map(channel => ({
         lang: 'ur',
