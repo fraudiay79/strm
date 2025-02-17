@@ -62,6 +62,7 @@ function parseItems(buffer, channel, date) {
   if (!cachedContent) {
     try {
       const encoded = iconv.decode(buffer, 'utf8').trim()
+      console.log('First few lines of the XML data:', encoded.slice(0, 500)) // Log the first 500 characters of the XML data for inspection
       cachedContent = parser.parse(encoded)
     } catch (err) {
       console.error('Failed to parse EPG data:', err.message)
