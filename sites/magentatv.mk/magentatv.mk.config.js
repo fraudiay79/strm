@@ -1,75 +1,100 @@
+const doFetch = require('@ntlab/sfetch')
 const axios = require('axios')
-const crypto = require('crypto')
 const dayjs = require('dayjs')
+const _ = require('lodash')
+const crypto = require('crypto')
 
-const API_ENDPOINT = 'https://tv-mk-prod.yo-digital.com/mk-bifrost'
+// API Configuration Constants
+const NATCO_CODE = 'mk'
+const APP_KEY = 'webq1ptdD5Gy4IatUZRiTezSu6sNc57A'
+const APP_VERSION = '02.0.1091'
+const NATCO_KEY = 'HEEb5emU9KZG4prn2NaUkiv96g3IxpS6'
+const SITE_URL = 'magentatv.mk'
 
-const headers = {
-  app_key: 'webq1ptdD5Gy4IatUZRiTezSu6sNc57A',
-  app_version: '02.0.1091',
-  'device-id': crypto.randomUUID(),
-  'x-request-session-id': crypto.randomUUID(),
+// Dynamic API Endpoint based on NATCO_CODE
+const API_ENDPOINT = `https://tv-${NATCO_CODE}-prod.yo-digital.com/${NATCO_CODE}-bifrost`
+
+// Session/Device IDs
+const DEVICE_ID = crypto.randomUUID()
+const SESSION_ID = crypto.randomUUID()
+
+const cached = {}
+
+const getHeaders = () => ({
+  'app_key': APP_KEY,
+  'app_version': APP_VERSION,
+  'device-id': DEVICE_ID,
+  'tenant': 'tv',
+  'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'origin': `https://${SITE_URL}`,
+  'x-request-session-id': SESSION_ID,
   'x-request-tracking-id': crypto.randomUUID(),
-  'x-user-agent': 'web|web|Chrome-131|02.0.1091|1'
-}
+  'x-tv-step': 'EPG_SCHEDULES',
+  'x-tv-flow': 'EPG',
+  'x-call-type': 'GUEST_USER',
+  'x-user-agent': `web|web|Chrome-131|${APP_VERSION}|1`
+})
 
 module.exports = {
-  site: 'magentatv.mk',
-  days: 2,
-  delay: 5000,
+  site: SITE_URL,
+  url({ date }) {
+    return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
+      'YYYY-MM-DD'
+    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=${NATCO_CODE}&natco_code=${NATCO_CODE}`
+  },
   request: {
-    headers,
+    headers: getHeaders(),
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  url({ date }) {
-    return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
-      'YYYY-MM-DD'
-    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=mk&natco_code=mk`
-  },
   async parser({ content, channel, date }) {
-    let programs = []
-    if (!content) return programs
+    const data = parseData(content)
+    if (!data) return []
 
-    let items = parseItems(JSON.parse(content), channel)
-    if (!items.length) return programs
+    let items = parseItems(data, channel)
+    if (!items.length) return []
 
-    const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
-      axios.get(
-        `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
-      'YYYY-MM-DD'
-    )}&hour_offset=${i}&hour_range=3&natco_code=mk`,
-        { headers }
-      )
-    )
+    const queue = [3, 6, 9, 12, 15, 18, 21]
+      .map(offset => {
+        const url = module.exports.url({ date }).replace('hour_offset=0', `hour_offset=${offset}`)
+        const params = { ...module.exports.request, headers: getHeaders() }
 
-    await Promise.allSettled(promises)
-      .then(results => {
-        results.forEach(r => {
-          if (r.status === 'fulfilled') {
-            const parsed = parseItems(r.value.data, channel)
+        if (cached[url]) {
+          items = items.concat(parseItems(cached[url], channel))
+          return null
+        }
 
-            items = items.concat(parsed)
-          }
-        })
+        return { url, params }
       })
-      .catch(console.error)
+      .filter(Boolean)
 
+    await doFetch(queue, (_req, _data) => {
+      if (_data) {
+        cached[_req.url] = _data
+        items = items.concat(parseItems(_data, channel))
+      }
+    })
+
+    items = _.sortBy(items, i => dayjs(i.start_time).valueOf())
+
+    // Fetch program details for each item
+    const programs = []
     for (let item of items) {
       const detail = await loadProgramDetails(item)
       programs.push({
         title: item.description,
         description: parseDescription(detail),
+        categories: parseCategories(detail),
         date: parseDate(item),
-        category: parseCategory(item),
-        icon: detail.poster_image_url,
+        image: detail.poster_image_url,
         actors: parseRoles(detail, 'Actor'),
         directors: parseRoles(detail, 'Director'),
+        producers: parseRoles(detail, 'Producer'),
         season: parseSeason(item),
         episode: parseEpisode(item),
-        start: parseStart(item),
-        stop: parseStop(item)
+        start: item.start_time,
+        stop: item.end_time
       })
     }
 
@@ -77,71 +102,48 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`${API_ENDPOINT}/epg/channel?natco_code=mk`, { headers })
+      .get(
+        `${API_ENDPOINT}/epg/channel?channelMap_id=&includeVirtualChannels=false&natco_key=${NATCO_KEY}&app_language=${NATCO_CODE}&natco_code=${NATCO_CODE}`,
+        { ...module.exports.request, headers: getHeaders() }
+      )
       .then(r => r.data)
-      .catch(console.log)
+      .catch(console.error)
 
-    return data.channels.map(item => {
-      return {
-        lang: 'mk',
-        site_id: item.station_id,
-        name: item.title
-      }
-    })
+    return data.channels.map(channel => ({
+      lang: NATCO_CODE,
+      name: channel.title,
+      site_id: channel.station_id
+    }))
   }
 }
 
 async function loadProgramDetails(item) {
   if (!item.program_id) return {}
+  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=${NATCO_CODE}`
+  const data = await axios
+    .get(url, { headers: getHeaders() })
+    .then(r => r.data)
+    .catch(console.log)
 
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=mk`
+  return data || {}
+}
 
+function parseData(content) {
   try {
-    const response = await axios.get(url, { headers })
-    return response.data
-  } catch (error) {
-    console.error(`Error loading program details: ${error.message}`)
-    
-    // Additional condition to check for series_id if an error is returned
-    if (item.series_id) {
-      console.log(`Attempting to load details with series_id: ${item.series_id}`)
-      const seriesUrl = `${API_ENDPOINT}/details/series/${item.series_id}?natco_code=mk`
-      
-      try {
-        const seriesResponse = await axios.get(seriesUrl, { headers })
-        return seriesResponse.data
-      } catch (seriesError) {
-        console.error(`Error loading series details: ${seriesError.message}`)
-        return { error: seriesError.message }
-      }
-    }
-
-    return { error: error.message }
+    const data = JSON.parse(content)
+    return data || null
+  } catch {
+    return null
   }
+}
+
+function parseItems(data, channel) {
+  if (!data.channels || !Array.isArray(data.channels[channel.site_id])) return []
+  return data.channels[channel.site_id]
 }
 
 function parseDate(item) {
   return item && item.release_year ? item.release_year.toString() : null
-}
-
-function parseStart(item) {
-  return dayjs(item.start_time)
-}
-
-function parseStop(item) {
-  return dayjs(item.end_time)
-}
-
-function parseItems(data, channel) {
-  if (!data || !data.channels) return []
-  const channelData = data.channels[channel.site_id]
-  if (!channelData) return []
-  return channelData
-}
-
-function parseCategory(item) {
-  if (!item.genres) return null
-  return item.genres.map(genre => genre.id)
 }
 
 function parseSeason(item) {
@@ -157,6 +159,18 @@ function parseEpisode(item) {
 function parseDescription(item) {
   if (!item.details) return null
   return item.details.description
+}
+
+function parseCategories(item) {
+  if (!item.details?.metadata) return []
+
+  const genreMetadata = item.details.metadata.find(meta =>
+    meta.type === "GENRES"
+  )
+
+  if (!genreMetadata?.value) return []
+
+  return genreMetadata.value.split(', ').filter(Boolean)
 }
 
 function parseRoles(item, role_name) {
