@@ -8,6 +8,7 @@ dayjs.extend(utc);
 dayjs.extend(customParseFormat);
 
 const API_ENDPOINT = 'https://www.sat.tv/wp-admin/admin-ajax.php';
+const API_ENDPOINT2 = 'http://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_onboarding.php';
 
 module.exports = {
   site: 'sat.tv.test',
@@ -103,7 +104,7 @@ module.exports = {
       params.append('userTimezone', 'Europe/London');
 
       const data = await axios
-        .post(API_ENDPOINT, params, {
+        .post(API_ENDPOINT2, params, {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             Cookie: `pll_language=${lang}`
