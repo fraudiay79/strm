@@ -88,7 +88,7 @@ module.exports = {
       { satellite: 1, lineup: 74, name: "7°W- Ramadan" },
       { satellite: 1, lineup: 72, name: "Best-Of Maghreb" },
       { satellite: 1, lineup: 33, name: "Best-Of Mashreq" },
-      { satellite: 8, lineup: 70, name: "Channel Sat 16°E' },
+      { satellite: 8, lineup: 70, name: "Channel Sat 16°E" },
       { satellite: 8, lineup: 62, name: "Benin First" },
       { satellite: 8, lineup: 63, name: "Cameroon First" },
       { satellite: 8, lineup: 64, name: "Côte d'Ivoire First" },
