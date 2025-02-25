@@ -1,75 +1,114 @@
+const doFetch = require('@ntlab/sfetch')
 const axios = require('axios')
-const crypto = require('crypto')
 const dayjs = require('dayjs')
+const _ = require('lodash')
+const crypto = require('crypto')
 
-const API_ENDPOINT = 'https://tv-me-prod.yo-digital.com/me-bifrost'
+// API Configuration Constants
+const NATCO_CODE = 'me'
+const APP_LANGUAGE = 'me'
+const APP_KEY = 'erYJuNj5fnVXtRgjkr4scxbr3oEkM4I4'
+const APP_VERSION = '02.0.1080'
+const NATCO_KEY = 'ANKB5xVVywklLUd9WtEOh8eyLnlAypTM'
+const SITE_URL = 'magentatv.me'
 
-const headers = {
-  app_key: 'erYJuNj5fnVXtRgjkr4scxbr3oEkM4I4',
-  app_version: '02.0.1080',
-  'device-id': crypto.randomUUID(),
-  'x-request-session-id': crypto.randomUUID(),
-  'x-request-tracking-id': crypto.randomUUID(),
-  'x-user-agent': 'web|web|Chrome-131|02.0.1080|1'
+// Role Types
+const ROLE_TYPES = {
+  ACTOR: 'Glumi',
+  DIRECTOR: 'Režija',
+  PRODUCER: 'Produkcija',
+  WRITER: 'Autor',
+  SCENARIO: 'Scenarij'
 }
 
+// Dynamic API Endpoint based on NATCO_CODE
+const API_ENDPOINT = `https://tv-${NATCO_CODE}-prod.yo-digital.com/${NATCO_CODE}-bifrost`
+
+// Session/Device IDs
+const DEVICE_ID = crypto.randomUUID()
+const SESSION_ID = crypto.randomUUID()
+
+const cached = {}
+
+const getHeaders = () => ({
+  'app_key': APP_KEY,
+  'app_version': APP_VERSION,
+  'device-id': DEVICE_ID,
+  'tenant': 'tv',
+  'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'origin': `https://${SITE_URL}`,
+  'x-request-session-id': SESSION_ID,
+  'x-request-tracking-id': crypto.randomUUID(),
+  'x-tv-step': 'EPG_SCHEDULES',
+  'x-tv-flow': 'EPG',
+  'x-call-type': 'GUEST_USER',
+  'x-user-agent': `web|web|Chrome-131|${APP_VERSION}|1`
+})
+
 module.exports = {
-  site: 'magentatv.me',
-  days: 2,
-  delay: 5000,
+  site: SITE_URL,
+  url({ date }) {
+    return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
+      'YYYY-MM-DD'
+    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=${APP_LANGUAGE}&natco_code=${NATCO_CODE}`
+  },
   request: {
-    headers,
+    headers: getHeaders(),
     cache: {
       ttl: 24 * 60 * 60 * 1000 // 1 day
     }
   },
-  url({ date }) {
-    return `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
-      'YYYY-MM-DD'
-    )}&hour_offset=0&hour_range=3&channelMap_id&filler=true&app_language=me&natco_code=me`
-  },
   async parser({ content, channel, date }) {
-    let programs = []
-    if (!content) return programs
+    const data = parseData(content)
+    if (!data) return []
 
-    let items = parseItems(JSON.parse(content), channel)
-    if (!items.length) return programs
+    let items = parseItems(data, channel)
+    if (!items.length) return []
 
-    const promises = [3, 6, 9, 12, 15, 18, 21].map(i =>
-      axios.get(
-        `${API_ENDPOINT}/epg/channel/schedules?date=${date.format(
-      'YYYY-MM-DD'
-    )}&hour_offset=${i}&hour_range=3&natco_code=me`,
-        { headers }
-      )
-    )
+    const queue = [3, 6, 9, 12, 15, 18, 21]
+      .map(offset => {
+        const url = module.exports.url({ date }).replace('hour_offset=0', `hour_offset=${offset}`)
+        const params = { ...module.exports.request, headers: getHeaders() }
 
-    await Promise.allSettled(promises)
-      .then(results => {
-        results.forEach(r => {
-          if (r.status === 'fulfilled') {
-            const parsed = parseItems(r.value.data, channel)
+        if (cached[url]) {
+          items = items.concat(parseItems(cached[url], channel))
+          return null
+        }
 
-            items = items.concat(parsed)
-          }
-        })
+        return { url, params }
       })
-      .catch(console.error)
+      .filter(Boolean)
 
+    await doFetch(queue, (_req, _data) => {
+      if (_data) {
+        cached[_req.url] = _data
+        items = items.concat(parseItems(_data, channel))
+      }
+    })
+
+    items = _.sortBy(items, i => dayjs(i.start_time).valueOf())
+
+    // Fetch program details for each item
+    const programs = []
     for (let item of items) {
       const detail = await loadProgramDetails(item)
+
+//      detectUnknownRoles(detail)
+
       programs.push({
         title: item.description,
+        sub_title: item.episode_name,
         description: parseDescription(detail),
+        categories: Array.isArray(item.genres) ? item.genres.map(g => g.name) : [],
         date: parseDate(item),
-        category: parseCategory(item),
-        icon: detail.poster_image_url,
-        actors: parseRoles(detail, 'Glumi'),
-        directors: parseRoles(detail, 'Režija'),
+        image: detail.poster_image_url,
+        actors: parseRoles(detail, ROLE_TYPES.ACTOR),
+        directors: parseRoles(detail, ROLE_TYPES.DIRECTOR),
+        producers: parseRoles(detail, ROLE_TYPES.PRODUCER),
         season: parseSeason(item),
         episode: parseEpisode(item),
-        start: parseStart(item),
-        stop: parseStop(item)
+        start: item.start_time,
+        stop: item.end_time
       })
     }
 
@@ -77,53 +116,48 @@ module.exports = {
   },
   async channels() {
     const data = await axios
-      .get(`${API_ENDPOINT}/epg/channel?natco_code=me`, { headers })
+      .get(
+        `${API_ENDPOINT}/epg/channel?channelMap_id=&includeVirtualChannels=false&natco_key=${NATCO_KEY}&app_language=${APP_LANGUAGE}&natco_code=${NATCO_CODE}`,
+        { ...module.exports.request, headers: getHeaders() }
+      )
       .then(r => r.data)
-      .catch(console.log)
+      .catch(console.error)
 
-    return data.channels.map(item => {
-      return {
-        lang: 'me',
-        site_id: item.station_id,
-        name: item.title
-      }
-    })
+    return data.channels.map(channel => ({
+      lang: NATCO_CODE,
+      name: channel.title,
+      site_id: channel.station_id
+    }))
   }
 }
 
 async function loadProgramDetails(item) {
   if (!item.program_id) return {}
-  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=me`
+  const url = `${API_ENDPOINT}/details/series/${item.program_id}?natco_code=${NATCO_CODE}`
   const data = await axios
-    .get(url, { headers })
+    .get(url, { headers: getHeaders() })
     .then(r => r.data)
     .catch(console.log)
 
   return data || {}
 }
 
-function parseDate(item) {
-  return item && item.release_year ? item.release_year.toString() : null
-}
-
-function parseStart(item) {
-  return dayjs(item.start_time)
-}
-
-function parseStop(item) {
-  return dayjs(item.end_time)
+function parseData(content) {
+  try {
+    const data = JSON.parse(content)
+    return data || null
+  } catch {
+    return null
+  }
 }
 
 function parseItems(data, channel) {
-  if (!data || !data.channels) return []
-  const channelData = data.channels[channel.site_id]
-  if (!channelData) return []
-  return channelData
+  if (!data.channels || !Array.isArray(data.channels[channel.site_id])) return []
+  return data.channels[channel.site_id]
 }
 
-function parseCategory(item) {
-  if (!item.genres) return null
-  return item.genres.map(genre => genre.id)
+function parseDate(item) {
+  return item && item.release_year ? item.release_year.toString() : null
 }
 
 function parseSeason(item) {
