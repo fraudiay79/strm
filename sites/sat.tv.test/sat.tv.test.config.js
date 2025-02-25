@@ -10,7 +10,7 @@ dayjs.extend(customParseFormat);
 const API_ENDPOINT = 'https://www.sat.tv/wp-admin/admin-ajax.php';
 
 module.exports = {
-  site: 'sat.tv',
+  site: 'sat.tv.test',
   days: 2,
   url: API_ENDPOINT,
   request: {
@@ -49,7 +49,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        image: parseImage($item),
+        icon: parseImage($item),
         start,
         stop
       });
