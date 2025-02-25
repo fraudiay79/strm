@@ -150,7 +150,7 @@ function parseStart($item, date) {
   let [, time] = eventDataDate.match(/(\d{2}:\d{2})/) || [null, null];
   if (!time) return null;
 
-  return dayjs.utc(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm`);
+  return dayjs.utc(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm')
 }
 
 function parseDuration($item) {
