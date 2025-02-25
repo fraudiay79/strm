@@ -27,7 +27,9 @@ module.exports = {
       const params = new URLSearchParams();
       params.append('dateFiltre', '0');
       params.append('hoursFiltre', '0');
-      params.append('postId', '2165');
+      params.append('action', 'block_tv_program');
+      params.append('ajax', 'true');
+      params.append('postId', '2162');
       params.append('lineupId', satLineup);
       params.append('sateliteId', satSatellite);
       params.append('userDateTime', date.valueOf());
