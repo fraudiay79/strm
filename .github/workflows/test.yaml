@@ -24,17 +24,17 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- magentatv.mk
-          #npm run channels:parse --- --config=./sites/magentatv.mk/magentatv.mk.config.js --output=./sites/magentatv.mk/magentatv.mk.channels.xml
+          #npm test --- sat.tv.test
+          npm run channels:parse --- --config=./sites/sat.tv.test/sat.tv.test.config.js --output=./sites/sat.tv.test/sat.tv.test.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
           #npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=magentatv.mk --maxConnections=20 --output=guides/allente.no.xml --days=2 --timeout=90000
+          #npm run grab --- --site=sat.tv.test --maxConnections=20 --output=guides/allente.no.xml --days=2 --timeout=90000
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/allente.no.xml
-        #git add -f sites/magentatv.mk/magentatv.mk.channels.xml
+        #git add -f guides/allente.no.xml
+        git add -f sites/sat.tv.test/sat.tv.test.channels.xml
         git commit -m "Update xml"
         git push -f origin main
