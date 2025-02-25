@@ -39,6 +39,9 @@ module.exports = {
     },
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
+    },
+    axiosConfig: {
+      maxContentLength: 10 * 1024 * 1024 // Increase the limit to 10 MB
     }
   },
   parser: function ({ content, date, channel }) {
