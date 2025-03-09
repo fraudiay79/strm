@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:BANDWIDTH=3000000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080
-https://live.kwikmotion.com/ksa1live/ksa1.smil/ksa1publish/ksa1_source/hdntl=exp=1741620117~acl=%2fksa1live%2fksa1.smil%2f*~data=hdntl~hmac=eff8c02a82a44a9883fd47a3b67d2bfae3d36a160a7127e2e1aff19fcc337c4e/chunks_dvr.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=820000,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=854x480
-https://live.kwikmotion.com/ksa1live/ksa1.smil/ksa1publish/ksa1_480p/hdntl=exp=1741620117~acl=%2fksa1live%2fksa1.smil%2f*~data=hdntl~hmac=eff8c02a82a44a9883fd47a3b67d2bfae3d36a160a7127e2e1aff19fcc337c4e/chunks_dvr.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=580000,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=640x360
-https://live.kwikmotion.com/ksa1live/ksa1.smil/ksa1publish/ksa1_360p/hdntl=exp=1741620117~acl=%2fksa1live%2fksa1.smil%2f*~data=hdntl~hmac=eff8c02a82a44a9883fd47a3b67d2bfae3d36a160a7127e2e1aff19fcc337c4e/chunks_dvr.m3u8
+https://live.kwikmotion.com/ksa1live/ksa1.smil/ksa1publish/ksa1_source/hdntl=exp=1741623857~acl=%2fksa1live%2fksa1.smil%2f*~data=hdntl~hmac=5cc2ee2c45633c926c437894f1ffcd7f8f990f50d8ab5c6e6a3087aa1a6a7e9a/chunks_dvr.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=870000,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=854x480
+https://live.kwikmotion.com/ksa1live/ksa1.smil/ksa1publish/ksa1_480p/hdntl=exp=1741623857~acl=%2fksa1live%2fksa1.smil%2f*~data=hdntl~hmac=5cc2ee2c45633c926c437894f1ffcd7f8f990f50d8ab5c6e6a3087aa1a6a7e9a/chunks_dvr.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=620000,CODECS="avc1.77.30,mp4a.40.2",RESOLUTION=640x360
+https://live.kwikmotion.com/ksa1live/ksa1.smil/ksa1publish/ksa1_360p/hdntl=exp=1741623857~acl=%2fksa1live%2fksa1.smil%2f*~data=hdntl~hmac=5cc2ee2c45633c926c437894f1ffcd7f8f990f50d8ab5c6e6a3087aa1a6a7e9a/chunks_dvr.m3u8
