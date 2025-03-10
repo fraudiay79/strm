@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const doFetch = require('@ntlab/sfetch')
 const debug = require('debug')('site:sky.com')
+const _ = require('lodash')
 
 dayjs.extend(utc)
 
@@ -12,9 +13,7 @@ module.exports = {
   site: 'sky.com',
   days: 2,
   url({ date, channel }) {
-    return `https://awk.epgsky.com/hawk/linear/schedule/${
-      date.format('YYYYMMDD')
-    }/${
+    return `https://awk.epgsky.com/hawk/linear/schedule/${date.format('YYYYMMDD')}/${
       channel.site_id
     }`
   },
@@ -27,20 +26,22 @@ module.exports = {
           .filter(schedule => schedule.sid === channel.site_id)
           .forEach(schedule => {
             if (Array.isArray(schedule.events)) {
-              schedule.events
-                .forEach(event => {
-                  const start = dayjs.utc(event.st * 1000)
-                  if (start.isSame(date, 'd')) {
-                    programs.push({
-                      title: event.t,
-                      description: event.sy,
-                      season: event.seasonnumber,
-                      episode: event.episodenumber,
-                      start,
-                      stop: start.add(event.d, 's')
-                    })
-                  }
-                })
+              _.sortBy(schedule.events, 'st').forEach(event => {
+                const start = dayjs.utc(event.st * 1000)
+                if (start.isSame(date, 'd')) {
+                  const image = `https://images.metadata.sky.com/pd-image/${event.programmeuuid}/16-9/640`
+                  programs.push({
+                    title: event.t,
+                    description: event.sy,
+                    season: event.seasonnumber,
+                    episode: event.episodenumber,
+                    start,
+                    stop: start.add(event.d, 's'),
+                    icon: image,
+                    image
+                  })
+                }
+              })
             }
           })
       }
@@ -56,10 +57,12 @@ module.exports = {
       if (queue.t === 'r') {
         const $ = cheerio.load(res)
         const initialData = JSON.parse(decodeURIComponent($('#initialData').text()))
-        initialData.state.epgData.regions
-          .forEach(region => {
-            queues.push({ t: 'c', url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}` })
+        initialData.state.epgData.regions.forEach(region => {
+          queues.push({
+            t: 'c',
+            url: `https://awk.epgsky.com/hawk/linear/services/${region.bouquet}/${region.subBouquet}`
           })
+        })
       }
       // process channels
       if (queue.t === 'c') {
