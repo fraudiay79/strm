@@ -113,7 +113,7 @@ module.exports = {
       params.append('userDateTime', dayjs().valueOf())
       params.append('userTimezone', 'Europe/London')
       const data = await axios
-        .post(API_ENDPOINT2, params, {
+        .post(API_ENDPOINT, params, {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             Cookie: `pll_language=${lang}`
