@@ -16,6 +16,7 @@ module.exports = {
   url: API_ENDPOINT,
   request: {
     method: 'POST',
+    maxContentLength: 100 * 1024 * 1024, // 100Mb
     headers({ channel }) {
       return {
         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
