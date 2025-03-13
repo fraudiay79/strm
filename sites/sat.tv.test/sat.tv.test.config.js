@@ -1,14 +1,14 @@
-const axios = require('axios');
-const dayjs = require('dayjs');
-const cheerio = require('cheerio');
-const utc = require('dayjs/plugin/utc');
-const customParseFormat = require('dayjs/plugin/customParseFormat');
+const axios = require('axios')
+const dayjs = require('dayjs')
+const cheerio = require('cheerio')
+const utc = require('dayjs/plugin/utc')
+const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-dayjs.extend(utc);
-dayjs.extend(customParseFormat);
+dayjs.extend(utc)
+dayjs.extend(customParseFormat)
 
-const API_ENDPOINT = 'https://www.sat.tv/wp-admin/admin-ajax.php';
-const API_ENDPOINT2 = 'http://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_onboarding.php';
+const API_ENDPOINT = 'https://www.sat.tv/wp-admin/admin-ajax.php'
+const API_ENDPOINT2 = 'https://sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
 
 module.exports = {
   site: 'sat.tv.test',
@@ -24,17 +24,17 @@ module.exports = {
       };
     },
     data({ channel, date }) {
-      const [satSatellite, satLineup] = channel.site_id.split('#');
-      const params = new URLSearchParams();
-      params.append('dateFiltre', '0');
-      params.append('hoursFiltre', '0');
-      params.append('action', 'block_tv_program');
-      params.append('ajax', 'true');
-      params.append('postId', '2162');
-      params.append('lineupId', satLineup);
-      params.append('sateliteId', satSatellite);
-      params.append('userDateTime', date.valueOf());
-      params.append('userTimezone', 'Europe/London');
+      const [satSatellite, satLineup] = channel.site_id.split('#')
+      const params = new URLSearchParams()
+      params.append('dateFiltre', '0')
+      params.append('hoursFiltre', '0')
+      params.append('action', 'block_tv_program')
+      params.append('ajax', 'true')
+      params.append('postId', '2162')
+      params.append('lineupId', satLineup)
+      params.append('sateliteId', satSatellite)
+      params.append('userDateTime', date.valueOf())
+      params.append('userTimezone', 'Europe/London')
 
       return params;
     },
@@ -101,17 +101,17 @@ module.exports = {
       { satellite: 8, lineup: 65, name: "Nigeria First" },
       { satellite: 8, lineup: 66, name: "Sénégal First" },
       { satellite: 8, lineup: 67, name: "Togo First" }
-    ];
+    ]
 
-    let channels = [];
+    let channels = []
     for (let sat of satellites) {
-      const params = new URLSearchParams();
-      params.append('satLang', lang);
-      params.append('satCountry', 'EUR');
-      params.append('satLineup', sat.lineup);
-      params.append('satLineupName', sat.name);
-      params.append('currentPage', 'tv-channels');
-
+      const params = new URLSearchParams()
+      params.append('dateFiltre', dayjs().format('YYYY-MM-DD'))
+      params.append('hoursFiltre', '0')
+      params.append('satLineup', sat.lineup)
+      params.append('satSatellite', sat.satellite)
+      params.append('userDateTime', dayjs().valueOf())
+      params.append('userTimezone', 'Europe/London')
       const data = await axios
         .post(API_ENDPOINT2, params, {
           headers: {
@@ -120,65 +120,65 @@ module.exports = {
           }
         })
         .then(r => r.data)
-        .catch(console.log);
+        .catch(console.log)
 
-      const $ = cheerio.load(data);
+      const $ = cheerio.load(data)
       $('.main-container-channels-events > .container-channel-events').each((i, el) => {
-        const name = $(el).find('.channel-title').text().trim();
-        const channelId = name.replace(/\s&\s/gi, ' &amp; ');
+        const name = $(el).find('.channel-title').text().trim()
+        const channelId = name.replace(/\s&\s/gi, ' &amp; ')
 
-        if (!name) return;
+        if (!name) return
 
         channels.push({
           lang,
           site_id: `${sat.satellite}#${sat.lineup}#${channelId}`,
           name
-        });
-      });
+        })
+      })
     }
 
-    return channels;
+    return channels
   }
-};
+}
 
 function parseImage($item) {
-  const src = $item('.event-logo img:not(.no-img)').attr('src');
+  const src = $item('.event-logo img:not(.no-img)').attr('src')
 
-  return src ? `https://sat.tv${src}` : null;
+  return src ? `https://sat.tv${src}` : null
 }
 
 function parseTitle($item) {
-  return $item('.event-data-title').text();
+  return $item('.event-data-title').text()
 }
 
 function parseDescription($item) {
-  return $item('.event-data-desc').text();
+  return $item('.event-data-desc').text()
 }
 
 function parseStart($item, date) {
-  let eventDataDate = $item('.event-data-date').text().trim();
-  let [, time] = eventDataDate.match(/(\d{2}:\d{2})/) || [null, null];
-  if (!time) return null;
+  let eventDataDate = $item('.event-data-date').text().trim()
+  let [, time] = eventDataDate.match(/(\d{2}:\d{2})/) || [null, null]
+  if (!time) return null
 
   return dayjs.utc(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm')
 }
 
 function parseDuration($item) {
-  let eventDataInfo = $item('.event-data-info').text().trim();
-  let [, h, m] = eventDataInfo.match(/(\d{2})h(\d{2})/) || [null, 0, 0];
+  let eventDataInfo = $item('.event-data-info').text().trim()
+  let [, h, m] = eventDataInfo.match(/(\d{2})h(\d{2})/) || [null, 0, 0]
 
-  return parseInt(h) * 60 + parseInt(m);
+  return parseInt(h) * 60 + parseInt(m)
 }
 
 function parseItems(content, channel) {
-  const [, , site_id] = channel.site_id.split('#');
-  const $ = cheerio.load(content);
+  const [, , site_id] = channel.site_id.split('#')
+  const $ = cheerio.load(content)
   const channelData = $('.main-container-channels-events > .container-channel-events')
     .filter((index, el) => {
-      return $(el).find('.channel-title').text().trim() === site_id;
+      return $(el).find('.channel-title').text().trim() === site_id
     })
-    .first();
-  if (!channelData) return [];
+    .first()
+  if (!channelData) return []
 
-  return $(channelData).find('.container-event').toArray();
+  return $(channelData).find('.container-event').toArray()
 }
