@@ -113,7 +113,7 @@ module.exports = {
       params.append('userDateTime', dayjs().valueOf())
       params.append('userTimezone', 'Europe/London')
       const data = await axios
-        .post(API_ENDPOINT_2, params, {
+        .post('https://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php', params, {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             Cookie: `pll_language=${lang}`
