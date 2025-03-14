@@ -8,7 +8,7 @@ dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
 const API_ENDPOINT = 'https://www.sat.tv/wp-admin/admin-ajax.php'
-const API_ENDPOINT2 = 'https://sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
+const API_ENDPOINT2 = 'https://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
 
 module.exports = {
   site: 'sat.tv.test',
@@ -142,7 +142,7 @@ module.exports = {
 }
 
 function parseImage($item) {
-  const src = $item('.event-logo img:not(.no-img)').attr('src')
+  const src = $item('.event-logo img').attr('src')
 
   return src ? `https://sat.tv${src}` : null
 }
