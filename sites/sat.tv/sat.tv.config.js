@@ -11,7 +11,7 @@ const API_ENDPOINT = 'https://www.sat.tv/wp-admin/admin-ajax.php'
 const API_ENDPOINT_2 = 'https://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php'
 
 module.exports = {
-  site: 'sat.tv.test',
+  site: 'sat.tv',
   days: 2,
   url: API_ENDPOINT,
   request: {
@@ -113,7 +113,7 @@ module.exports = {
       params.append('userDateTime', dayjs().valueOf())
       params.append('userTimezone', 'Europe/London')
       const data = await axios
-        .post('https://www.sat.tv/wp-content/themes/twentytwenty-child/ajax_chaines.php', params, {
+        .post(API_ENDPOINT_2, params, {
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
             Cookie: `pll_language=${lang}`
