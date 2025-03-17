@@ -144,7 +144,7 @@ module.exports = {
 function parseImage($item) {
   const src = $item('.event-logo img').attr('src')
 
-  return src ? `https://sat.tv${src}` : null
+  return src ? `http://sat.tv${src}` : null
 }
 
 function parseTitle($item) {
