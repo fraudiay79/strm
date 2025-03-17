@@ -102,20 +102,20 @@ function loadSessionDetails() {
   return axios
     .post('https://tvapi-sgn.solocoo.tv/v1/session', {
       ssoToken:
-	    'eyJrZXkiOiJjcG1tIiwiZW5jIjoiQTEyOENCQy1IUzI1NiIsImFsZyI6ImRpciJ9..Dcmv6UxSyoNg1RrxoaE2Fw.v3wZIg4_f1cWqCDvKNxkaMRb-39FrTvJVY9vK35z2W8oqppsSLId0qdFm9sUxMXz_Gn5RfURktzK0RgdiAAEL6fWGJyKoVAsRb74obEsfQSLyPG2gLB2LuWI4R3WCFCHay_Ofg0M9rdZsoJQBd2YRAKnBa8IdAc-IuD7a8jeWLzTzx4_JT_1GUjoEcksjbcF6feKKGytDnQufj9PgtIUKhi6ItCnwO-CuztuQ5uqMUyrCPe9O6j2zm8FgwkNFK_6pWRxgl8EseE6t2qZRVWjiZ3tlEdEVmzb7mDUs96Jk9ILkt4qqf7ewiWpntPYvlkd7uFhn3clDY3IqSH0IAuHbdtWCMbvxPE6XwlYhK-2_E2GV2qnmL7UhDT877yI7VB0SC47akpDZGPPP6irHTa30Vg-X43MRjzq4b4MLMJJSl8O8eg463PUZl61aZ-0wD2bDBa5XFhAChKR9F58er3CSjBprhR2AdCw1NPV-NA5hEQ.18LzJB0dLBjIfUAJzYqqxA',
+	    'eyJrZXkiOiJjcG1tIiwiYWxnIjoiZGlyIiwiZW5jIjoiQTEyOENCQy1IUzI1NiJ9..Hv9DXW8Chj7o4lPeIgcOog.iB78ltUZEFYodvQ7qteUZPv19sZ0zrfHrIibzgbBqu0Qy-0kJ1gvYqQMXN1X2mAwzReIckbqv_-NzpJqXpKc1CAOcb8gLXa8GGJOAa1JRjiBQbHK4hu33qgFokFQamyZbqv1XOy4g81nKpxhhWOoA3xvPn1bNwsr6Owf98Ai66ODcWp7bW9KR7moDPIj0gsxIIGWV-zjO3aNvu0GDmODykrTS3BjAe7LJWKwZ4TpLCq_WAJ1-U4lMj1iSv5fkTanLGD3hdrL1Xz2O-EOij43LwCdqY9sf7l9CIDDkzjLeWN6ESkv3dG-_oc3mcjp2CmVqtmXcbKKkbfSLJ8_yTfWykwyrtt6UagyE0hrGaq6ehWkFrnPpyVFfIe-nFE5GsYJmuTlYlnM9wIFioeNVuiLUdP8zDbhuMOIjrNhOC9TqLsSvH3Wz56ThVawzIeukAXI2DVITdDoQBIi6vmq4XYENg.RNzodqJyAjgfzrcWThE_mQ',
       osVersion: 'Windows 10',
       deviceModel: 'Chrome',
       deviceType: 'PC',
-      deviceSerial: 'wfd9ee490-e5a8-11ef-b608-45bab0c9fee8',
+      deviceSerial: 'w125adcd0-035a-11f0-8b10-5bfd4f4cf159',
       deviceOem: 'Chrome',
-      devicePrettyName: 'Chrome 132.0.0.0',
-      appVersion: '11.6.1',
+      devicePrettyName: 'Chrome 134.0.0.0',
+      appVersion: '12.2',
       language: 'en_US',
       brand: 'cpmm',
       memberId: '0',
       featureLevel: 6,
       provisionData:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE3MzkxOTQ3NzksImJyIjoiY3BtbSIsInVwIjoiY3BpIiwiaWMiOnRydWUsImRzIjoid2ZkOWVlNDkwLWU1YTgtMTFlZi1iNjA4LTQ1YmFiMGM5ZmVlOCIsImRlIjoiYnJhbmRNYXBwaW5nIn0.zOZSURwS1W0UQWgxsdcAOLDGkzS9LpvBPsLm_dJ6fq8'
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJiciI6ImNwbW0iLCJpYyI6dHJ1ZSwiaWF0IjoxNzQyMjM0NjI2LCJkcyI6IncxMjVhZGNkMC0wMzVhLTExZjAtOGIxMC01YmZkNGY0Y2YxNTkiLCJ1cCI6ImNwaSIsImRlIjoiYnJhbmRNYXBwaW5nIn0.n7Uw4_7kdmoMF4NtwocB7wXE2HXku7kOQNeeUm2e--g'
     })
     .then(r => r.data)
     .catch(console.log)
