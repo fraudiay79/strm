@@ -4,7 +4,7 @@ cd /home/runner/work/strm/strm/fraudiay79-epg-grab && npm install
 
 # EPG
 
-npm run grab -- --channels=../epg/channels/channels.xml --output=../epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
+npm run grab -- --channels=../epg/channels/channels.xml --output=../epg/epg-channels.xml --days=2 --maxConnections=25 --timeout=90000
 
 # Compress EPG xml files
 cd ../epg/
