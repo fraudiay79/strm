@@ -54,7 +54,7 @@ module.exports = {
     const axios = require('axios')
     try {
       const response = await axios.get(
-        `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=all&ts_start=${todayEpoch}&ts_end=${nextDayEpoch}&lang=en&pg=18&page=1&limit=999`
+        `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=all&ts_start=1743508800&ts_end=1743616800&lang=en&pg=50&page=1&limit=999`
       )
 
       return response.data.data.map(channel => ({
