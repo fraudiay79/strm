@@ -14,7 +14,8 @@ module.exports = {
   request: {
     headers: {
       'Accept-Language': 'en-US,en;',
-      Cookie: 'AAMC_foxtel_0=REGION|6'
+      Cookie: 'AAMC_foxtel_0=REGION|6',
+      'User-Agent': 'insomnia/2022.7.5'
     }
   },
   parser: function ({ content, date }) {
