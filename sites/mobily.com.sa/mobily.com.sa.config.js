@@ -20,7 +20,7 @@ module.exports = {
     const todayEpoch = date.startOf('day').utc().valueOf()
     const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
 
-    return `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=all&ts_start=${todayEpoch}&ts_end=${nextDayEpoch}&lang=en&pg=18&page=1&limit=999`
+    return `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=${channel.site_id}&ts_start=${todayEpoch}&ts_end=${nextDayEpoch}&lang=en&pg=18&page=1&limit=999`
   },
 
   parser: function ({ content }) {
