@@ -25,18 +25,18 @@ jobs:
       run: |
           npm install
           #npm test --- mobily.com.sa
-          npm run channels:parse --- --config=./sites/mobily.com.sa/mobily.com.sa.config.js --output=./sites/mobily.com.sa/mobily.com.sa.channels.xml
+          #npm run channels:parse --- --config=./sites/mobily.com.sa/mobily.com.sa.config.js --output=./sites/mobily.com.sa/mobily.com.sa.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
           #npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
-          #npm run grab --- --site=mobily.com.sa --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run grab --- --site=mobily.com.sa --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
           #npm run channels:parse --- --config=./sites/mobily.com.sa/mobily.com.sa.config.js --output=./sites/mobily.com.sa/mobily.com.sa_ar.channels.xml --set=lang:ar
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        #git add -f guides/allente.no.xml
-        git add -f sites/mobily.com.sa/mobily.com.sa.channels.xml
+        git add -f guides/allente.no.xml
+        #git add -f sites/mobily.com.sa/mobily.com.sa.channels.xml
         #git add -f sites/mobily.com.sa/mobily.com.sa_ar.channels.xml
         git commit -m "Update xml"
         git push -f origin main
