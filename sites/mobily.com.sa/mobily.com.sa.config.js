@@ -34,7 +34,7 @@ module.exports = {
         const icon = event.images.find(image => image.type === 'landscape_poster_v1')?.url || null
         const seasonEpisodeMatch = event.description.match(/S(\d+)\s*,\s*E(\d+)/)
 
-        const programData = {
+        programs.push({
           title: event.title,
           description: event.description || null,
           icon,
@@ -42,9 +42,7 @@ module.exports = {
           episode: seasonEpisodeMatch ? parseInt(seasonEpisodeMatch[2], 10) : null,
           start,
           stop
-        }
-
-        programs.push(programData)
+        })
       })
     })
 
