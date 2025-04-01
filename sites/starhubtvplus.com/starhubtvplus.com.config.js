@@ -82,8 +82,7 @@ module.exports = {
     return resources.map(ch => ({
       lang,
       site_id: ch.id,
-      name: ch.title,
-      logo: ch.pictures[0] ? ch.pictures[0].url : null
+      name: ch.title
     }))
   }
 }
