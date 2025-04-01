@@ -67,5 +67,22 @@ module.exports = {
 
     return programs.filter(p => dayjs(p.start).add(dayjs(p.start).utcOffset(), 'minute').isBetween(date.startOf('day').subtract(dayjs().utcOffset(), 'minute').utc(), 
     date.endOf('day').subtract(dayjs().utcOffset(), 'minute').utc(), 'second', '[]'))
+  },
+  async channels() {
+    const data = await axios
+      .get(`https://tvlistings.gracenote.com/api/grid?lineupId=USA-DITV-DEFAULT&timespan=2&headendId=DITV&country=USA&timezone=&device=X&postalCode=32825&isOverride=true&time=1743510600&pref=16%2C128&userId=-&aid=lat&languagecode=en-us`)
+      .then(r => r.data)
+      .catch((error) => {
+        console.error('Error fetching channels:', error.message)
+        return { channels: [] } // Return empty data if the request fails
+      });
+
+    return data.channels.map(item => {
+      return {
+        lang: 'en',
+        site_id: item.channelId,
+        name: item.callSign
+      }
+    })
   }
 }
