@@ -20,34 +20,33 @@ module.exports = {
     const todayEpoch = date.startOf('day').utc().valueOf()
     const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
 
-    return `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=${channel.site_id}&ts_start=${todayEpoch}&ts_end=${nextDayEpoch}&lang=en&pg=18&page=1&limit=999`
+    return `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=${channel.site_id}&ts_start=${todayEpoch}&ts_end=${nextDayEpoch}&lang=ar&pg=18&page=1&limit=999`
   },
 
   parser: function ({ content }) {
-    const programs = []
+  let programs = []
+  const data = JSON.parse(content)
 
-    const data = JSON.parse(content).data
-    data.forEach(channel => {
-      channel.events.forEach(event => {
-        const start = dayjs.unix(event.tsStart).tz('Asia/Riyadh')
-        const stop = dayjs.unix(event.tsEnd).tz('Asia/Riyadh')
-        const icon = event.images.find(image => image.type === 'landscape_poster_v1')?.url || null
-        const seasonEpisodeMatch = event.description.match(/S(\d+)\s*,\s*E(\d+)/)
-
-        programs.push({
-          title: event.title,
-          description: event.description || null,
-          icon,
-          season: seasonEpisodeMatch ? parseInt(seasonEpisodeMatch[1], 10) : null,
-          episode: seasonEpisodeMatch ? parseInt(seasonEpisodeMatch[2], 10) : null,
-          start,
-          stop
-        })
+  data.data.forEach(channel => {
+    channel.events.forEach(event => {
+      const start = dayjs(event.tsStart).utc().toISOString()
+      const stop = dayjs(event.tsEnd).utc().toISOString()
+      const icon = event.images.find(image => image.type === 'landscape_poster_v1')?.url || null
+      const seasonEpisodeMatch = event.description.match(/م(\d+)\s*،\s*ح(\d+)/) || event.description.match(/S(\d+)\s*,\s*E(\d+)/)
+      programs.push({
+        title: event.title,
+        description: event.description || 'No description available',
+        icon,
+        season: seasonEpisodeMatch ? parseInt(seasonEpisodeMatch[1], 10) : null,
+        episode: seasonEpisodeMatch ? parseInt(seasonEpisodeMatch[2], 10) : null,
+        start,
+        stop
       })
     })
+  })
 
-    return programs
-  },
+  return programs
+},
   async channels() {
     const axios = require('axios')
     try {
