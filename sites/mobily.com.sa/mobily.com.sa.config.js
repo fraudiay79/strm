@@ -31,8 +31,8 @@ module.exports = {
     channel.events.forEach(event => {
       const start = dayjs(event.tsStart).utc().toISOString()
       const stop = dayjs(event.tsEnd).utc().toISOString()
-      const icon = event.images.find(image => image.type === 'landscape_poster_v1')?.url || null
-      const seasonEpisodeMatch = event.description.match(/م(\d+)\s*،\s*ح(\d+)/) || event.description.match(/S(\d+)\s*,\s*E(\d+)/)
+      const icon = event.images?.find(image => image.type === 'landscape_poster_v1')?.url || null
+      const seasonEpisodeMatch = event.description?.match(/م(\d+)\s*،\s*ح(\d+)/) || event.description?.match(/S(\d+)\s*,\s*E(\d+)/)
       programs.push({
         title: event.title,
         description: event.description || 'No description available',
@@ -47,9 +47,11 @@ module.exports = {
 
   return programs
 },
-  async channels() {
+  async channels(date) {
     const axios = require('axios')
     try {
+      const todayEpoch = date.startOf('day').utc().valueOf()
+      const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
       const response = await axios.get(
         `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=all&ts_start=${todayEpoch}&ts_end=${nextDayEpoch}&lang=ar`
       )
