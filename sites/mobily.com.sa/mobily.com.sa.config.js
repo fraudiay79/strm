@@ -17,8 +17,8 @@ module.exports = {
   },
 
   url: function ({ date, channel }) {
-    const todayEpoch = date.startOf('day').utc().valueOf()
-    const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf()
+    const todayEpoch = date.startOf('day').utc().valueOf() / 1000
+    const nextDayEpoch = date.add(1, 'day').startOf('day').utc().valueOf() / 1000
 
     return `https://ev-app-api.aws.playco.com/api/media/channel/events?channels=${channel.site_id}&ts_start=${todayEpoch}&ts_end=${nextDayEpoch}&lang=ar`
   },
