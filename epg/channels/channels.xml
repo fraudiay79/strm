@@ -1637,6 +1637,7 @@
   <channel site="shahid.mbc.net" lang="en" xmltv_id="MBCMasr.eg" site_id="387290">MBC Masr</channel>
   <channel site="shahid.mbc.net" lang="en" xmltv_id="MBCMasrNA.eg" site_id="816776">MBC Masr NA</channel>
   <channel site="shahid.mbc.net" lang="en" xmltv_id="MBCMasr2.eg" site_id="387293">MBC Masr 2</channel>
+  <channel site="shahid.mbc.net" lang="ar" xmltv_id="MBCMasrDrama.eg" site_id="49923122575716">MBC Masr Drama</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MelodyAflam.eg" site_id="us#4414842749/melody-aflam-dish">Melody Aflam</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MelodyDrama.eg" site_id="us#69044660/melody-drama">Melody Drama</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MelodyHits.eg" site_id="us#69044659/melody-hits">Melody Hits</channel>
@@ -5245,7 +5246,7 @@
   <channel site="iptvx.one" lang="ru" xmltv_id="TopSecret.ru" site_id="sovsek">Совершенно секретно • Top Secret</channel>
   #Saudi Arabia
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="AlSaudiya.sa" site_id="946938">Al Saudiya</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="AlSaudiyaAlAan.sa" site_id="1#49#السعودية_الآن">Al Saudiya Al Aan</channel>
+  <channel site="shahid.mbc.net" lang="ar" xmltv_id="AlSaudiyaAlAan.sa" site_id="999927">Al Saudiya Al Aan</channel>
   <channel site="rotana.net" lang="ar" xmltv_id="AlResalah.sa" site_id="446">Al Resalah</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AtfalMawahebTV.sa" site_id="1#33#اطفال و مواهب">Atfal Wa Mawaheb</channel>
   <channel site="artonline.tv" lang="ar" xmltv_id="ARTAflam1.sa" site_id="">ART Aflam 1</channel>
