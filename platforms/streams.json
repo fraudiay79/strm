@@ -43,7 +43,7 @@
         {
             "name": "GBC TV",
             "slug": "gbctv",
-            "url": "https://vimeo.com/event/4156460/"
+            "url": "https://www.gbc.gi/tv/watch-live"
         },
         {
             "name": "SBS Plus",
@@ -54,11 +54,6 @@
             "name": "TVM",
             "slug": "tvm",
             "url": "https://tvmi.mt/live/2"
-        },
-        {
-            "name": "Al Wasat",
-            "slug": "wasat",
-            "url": "https://alwasat.ly/live"
         },
         {
             "name": "Souryana",
@@ -74,11 +69,6 @@
             "name": "Euro Star",
             "slug": "eurostar",
             "url": "https://eurostartv.com.tr/canli-izle"
-        },
-        {
-            "name": "NOW",
-            "slug": "nowtr",
-            "url": "https://www.nowtv.com.tr/canli-yayin"
         },
         {
             "name": "Maspero Zaman",
@@ -121,11 +111,6 @@
             "url": "https://www.twitch.tv/elbaladtv"
         },
         {
-            "name": "El Hiwar Ettounsi",
-            "slug": "elhiwartn",
-            "url": "https://www.dailymotion.com/video/x7ooijz"
-        },
-        {
             "name": "MRTV",
             "slug": "mrtv",
             "url": "https://www.twitch.tv/livestreamingmrtv"
@@ -143,7 +128,7 @@
         {
             "name": "El Nueve",
             "slug": "elnueve",
-            "url": "https://www.twitch.tv/elnueve_ok"
+            "url": "https://www.twitch.tv/elnueveok"
         },
         {
             "name": "Al Rassoul",
@@ -206,11 +191,6 @@
             "url": "https://www.showturk.com.tr/canli-yayin/showturk"
         },
         {
-            "name": "TV47",
-            "slug": "tv47kenya",
-            "url": "https://www.twitch.tv/tv47kenya"
-        },
-        {
             "name": "Willax",
             "slug": "willax",
             "url": "https://www.dailymotion.com/video/x7x4dgx"
@@ -253,7 +233,7 @@
         {
             "name": "TV47 Kenya",
             "slug": "tv47kenya",
-            "url": "https://www.twitch.tv/tv47kenya"
+            "url": "https://www.twitch.tv/tvfortyseven"
         },
         {
             "name": "TC Televisión",
@@ -268,12 +248,12 @@
         {
             "name": "RPC",
             "slug": "rpcpanama",
-            "url": "https://www.dailymotion.com/video/x8lwrcd"
+            "url": "https://www.rpctv.com/endirecto/1000"
         },
         {
             "name": "Oye TV",
             "slug": "oyetv",
-            "url": "https://www.dailymotion.com/video/x8odgha"
+            "url": "https://go.medcom.com.pa/oyetv"
         },
         {
             "name": "SerTV",
@@ -283,7 +263,7 @@
         {
             "name": "Telemetro",
             "slug": "telemetro",
-            "url": "https://www.dailymotion.com/video/x8nlwwo"
+            "url": "https://go.medcom.com.pa/telemetro"
         },
         {
             "name": "Télé Maroc",
@@ -293,7 +273,7 @@
         {
             "name": "VTV 1",
             "slug": "vtv1",
-            "url": "https://vtvgo.vn/xem-truc-tuyen-kenh-vtv1"
+            "url": "https://vtvgo.vn/channel/vtv1-1"
         }
     ]
 }
