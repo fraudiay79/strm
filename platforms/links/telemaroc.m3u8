@@ -1,12 +1,12 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-STREAM-INF:BANDWIDTH=6300000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080
-https://llhls-live.akamaized.net/exp=1744039513~acl=%2Fd7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls%2F%2A~hmac=572d3a834097903ed5dae79b3f1c5923868a4b17c235001e8b86ecb67e4d6436/d7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls/chunklist_b6000000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1744043214~acl=%2Fb37dad70-462e-4b08-a4b7-2685330e1bab_llhls%2F%2A~hmac=1506f1ef53a582c210dad63455baa2ea869a79b775ca8a3e7804dbcaf1266f2b/b37dad70-462e-4b08-a4b7-2685330e1bab_llhls/chunklist_b6000000_cmaf_v.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=3300000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720
-https://llhls-live.akamaized.net/exp=1744039513~acl=%2Fd7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls%2F%2A~hmac=572d3a834097903ed5dae79b3f1c5923868a4b17c235001e8b86ecb67e4d6436/d7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls/chunklist_b3000000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1744043214~acl=%2Fb37dad70-462e-4b08-a4b7-2685330e1bab_llhls%2F%2A~hmac=1506f1ef53a582c210dad63455baa2ea869a79b775ca8a3e7804dbcaf1266f2b/b37dad70-462e-4b08-a4b7-2685330e1bab_llhls/chunklist_b3000000_cmaf_v.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=2100000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x540
-https://llhls-live.akamaized.net/exp=1744039513~acl=%2Fd7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls%2F%2A~hmac=572d3a834097903ed5dae79b3f1c5923868a4b17c235001e8b86ecb67e4d6436/d7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls/chunklist_b1800000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1744043214~acl=%2Fb37dad70-462e-4b08-a4b7-2685330e1bab_llhls%2F%2A~hmac=1506f1ef53a582c210dad63455baa2ea869a79b775ca8a3e7804dbcaf1266f2b/b37dad70-462e-4b08-a4b7-2685330e1bab_llhls/chunklist_b1800000_cmaf_v.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=730000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360
-https://llhls-live.akamaized.net/exp=1744039513~acl=%2Fd7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls%2F%2A~hmac=572d3a834097903ed5dae79b3f1c5923868a4b17c235001e8b86ecb67e4d6436/d7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls/chunklist_b600000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1744043214~acl=%2Fb37dad70-462e-4b08-a4b7-2685330e1bab_llhls%2F%2A~hmac=1506f1ef53a582c210dad63455baa2ea869a79b775ca8a3e7804dbcaf1266f2b/b37dad70-462e-4b08-a4b7-2685330e1bab_llhls/chunklist_b600000_cmaf_v.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=420000,CODECS="avc1.640015,mp4a.40.5",RESOLUTION=426x240
-https://llhls-live.akamaized.net/exp=1744039513~acl=%2Fd7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls%2F%2A~hmac=572d3a834097903ed5dae79b3f1c5923868a4b17c235001e8b86ecb67e4d6436/d7aaec2b-86f1-4cfc-980b-8fdd9f720cec_llhls/chunklist_b360000_cmaf_v.m3u8
+https://llhls-live.akamaized.net/exp=1744043214~acl=%2Fb37dad70-462e-4b08-a4b7-2685330e1bab_llhls%2F%2A~hmac=1506f1ef53a582c210dad63455baa2ea869a79b775ca8a3e7804dbcaf1266f2b/b37dad70-462e-4b08-a4b7-2685330e1bab_llhls/chunklist_b360000_cmaf_v.m3u8
