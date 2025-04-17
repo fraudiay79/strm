@@ -8,7 +8,7 @@ url = "https://api.tv8.md/v1/live"
 s = requests.Session()
 resplink = s.get(url)
 response_json = json.loads(resplink.text)
-mastlnk = response_json["data"]["liveUrl"]
+mastlnk = response_json["liveUrl"]
 
 content_response = requests.get(mastlnk)
 content = content_response.text
