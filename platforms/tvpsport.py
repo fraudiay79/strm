@@ -21,7 +21,7 @@ try:
             
             # Use Streamlink to find and print the DASH URL
             streams = streamlink.streams(dash_url)
-            master_mpd = streams["best"].url
+            master_mpd = streams["best"].to_url()  # Use to_url() instead of url
             print(f"MPD URL: {master_mpd}")
         else:
             print("DASH source found, but no 'src' key available.")
@@ -29,3 +29,5 @@ try:
         print("No DASH sources found in the response.")
 except requests.exceptions.RequestException as e:
     print(f"An error occurred: {e}")
+except KeyError as e:
+    print(f"Key error: {e}")
