@@ -17,12 +17,7 @@ try:
     if dash_sources:
         dash_url = dash_sources[0].get("src")
         if dash_url:
-            print(f"DASH URL: {dash_url}")
-            
-            # Use Streamlink to find and print the DASH URL
-            streams = streamlink.streams(dash_url)
-            master_mpd = streams["best"].to_url()  # Use to_url() instead of url
-            print(f"MPD URL: {master_mpd}")
+            print(dash_url)
         else:
             print("DASH source found, but no 'src' key available.")
     else:
