@@ -21,11 +21,6 @@
             "url": "https://www.twitch.tv/dbstvstlucia"
         },
         {
-            "name": "STV",
-            "slug": "stvmz",
-            "url": "https://play.stv.co.mz/directo"
-        },
-        {
             "name": "Aden TV",
             "slug": "adentv",
             "url": "https://www.twitch.tv/adentv64"
@@ -41,34 +36,9 @@
             "url": "https://olympics.com/en/live/"
         },
         {
-            "name": "ATV (KW)",
-            "slug": "atvkw",
-            "url": "https://vimeo.com/event/4459995"
-        },
-        {
             "name": "Lulua",
             "slug": "lulua",
             "url": "https://vimeo.com/event/1117458"
-        },
-        {
-            "name": "GBC TV",
-            "slug": "gbctv",
-            "url": "https://www.gbc.gi/tv/watch-live"
-        },
-        {
-            "name": "SBS Plus",
-            "slug": "sbsplus",
-            "url": "https://www.sbs.co.kr/live/S03"
-        },
-        {
-            "name": "TVM",
-            "slug": "tvm",
-            "url": "https://tvmi.mt/live/2"
-        },
-        {
-            "name": "Souryana",
-            "slug": "souryana",
-            "url": "https://ok.ru/video/4242578808438"
         },
         {
             "name": "ABC News (AL)",
@@ -156,46 +126,6 @@
             "url": "https://www.atv.com.tr/canli-yayin"
         },
         {
-            "name": "Al Rai",
-            "slug": "alrai",
-            "url": "https://www.alraimedia.com/live"
-        },
-        {
-            "name": "Saudia TV",
-            "slug": "saudiatv",
-            "url": "https://www.aloula.sa/en/live/saudiatv"
-        },
-        {
-            "name": "Saudia Radio",
-            "slug": "saudiaradio",
-            "url": "https://www.aloula.sa/en/live/saudiaradio"
-        },
-        {
-            "name": "Jeddah Radio",
-            "slug": "jeddahradio",
-            "url": "https://www.aloula.sa/en/live/jeddahradio"
-        },
-        {
-            "name": "Riyadh Radio",
-            "slug": "riyadhradio",
-            "url": "https://www.aloula.sa/en/live/riyadhradio"
-        },
-        {
-            "name": "Quran Radio",
-            "slug": "quranradio",
-            "url": "https://www.aloula.sa/en/live/quranradio"
-        },
-        {
-            "name": "Nida Alislam Radio",
-            "slug": "nidaalislam",
-            "url": "https://www.aloula.sa/en/live/nidaalislam"
-        },
-        {
-            "name": "Khuzama Radio",
-            "slug": "khuzama-radio",
-            "url": "https://www.aloula.sa/en/live/khuzama-radio"
-        },
-        {
             "name": "Show Türk",
             "slug": "showturk",
             "url": "https://www.showturk.com.tr/canli-yayin/showturk"
@@ -209,11 +139,6 @@
             "name": "ATB (BO)",
             "slug": "atb",
             "url": "https://www.dailymotion.com/video/x84eirw"
-        },
-        {
-            "name": "C8",
-            "slug": "c8",
-            "url": "https://www.dailymotion.com/video/x5gv5rr"
         },
         {
             "name": "VTV (VE)",
@@ -236,11 +161,6 @@
             "url": "https://play.mrt.com.mk/live/46"
         },
         {
-            "name": "Paraguay TV",
-            "slug": "paraguaytv",
-            "url": "https://www.twitch.tv/paraguaytv_streaming"
-        },
-        {
             "name": "TV47 Kenya",
             "slug": "tv47kenya",
             "url": "https://www.twitch.tv/tvfortyseven"
@@ -258,7 +178,7 @@
         {
             "name": "RPC",
             "slug": "rpcpanama",
-            "url": "https://www.rpctv.com/endirecto/1000"
+            "url": "https://www.dailymotion.com/video/x8lwrcd"
         },
         {
             "name": "Canal 4",
@@ -273,7 +193,7 @@
         {
             "name": "Oye TV",
             "slug": "oyetv",
-            "url": "https://go.medcom.com.pa/oyetv"
+            "url": "https://www.dailymotion.com/video/x8nlwwo"
         },
         {
             "name": "SerTV",
@@ -304,6 +224,21 @@
             "name": "VTV 1",
             "slug": "vtv1",
             "url": "https://vtvgo.vn/channel/vtv1-1"
+        },
+        {
+            "name": "TVP Polonia",
+            "slug": "tvppolonia",
+            "url": "https://stream.tvp.pl/?channel_id=1773"
+        },
+        {
+            "name": "TVP Info",
+            "slug": "tvpinfo",
+            "url": "https://stream.tvp.pl/?channel_id=1455"
+        },
+        {
+            "name": "TVP World",
+            "slug": "tvpworld",
+            "url": "https://stream.tvp.pl/?channel_id=51656487"
         }
     ]
 }
