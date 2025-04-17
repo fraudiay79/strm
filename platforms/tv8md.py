@@ -20,6 +20,6 @@ for line in lines:
         full_url = base_url + line
         modified_content += full_url + "\n"
     else:
-        modified_content += line + "\n"
+        modified_content += full_url + "\n"
 
 print(modified_content)
