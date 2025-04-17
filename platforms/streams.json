@@ -239,6 +239,11 @@
             "name": "TVP World",
             "slug": "tvpworld",
             "url": "https://stream.tvp.pl/?channel_id=51656487"
+        },
+        {
+            "name": "TVP Sport",
+            "slug": "tvpsport",
+            "url": "https://vod.tvp.pl/api/products/399702/videos/playlist"
         }
     ]
 }
