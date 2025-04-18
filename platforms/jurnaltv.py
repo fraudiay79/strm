@@ -1,14 +1,12 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Base URL for constructing full URLs
-base_url = "https://live.cdn.jurnaltv.md/JurnalTV_HD/"
+# URL to fetch the JSON data
 url = "https://www.jurnaltv.md/page/live"
 
-# Create a session and fetch the HTML content from the page
-s = requests.Session()
-resplink = s.get(url)
-html_content = resplink.text
+# Fetch the HTML content from the page
+response = requests.get(url)
+html_content = response.text
 
 # Parse the HTML content
 soup = BeautifulSoup(html_content, "html.parser")
