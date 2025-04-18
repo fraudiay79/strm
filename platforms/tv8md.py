@@ -6,15 +6,15 @@ base_url = "https://live.cdn.tv8.md/TV7/"
 url = "https://api.tv8.md/v1/live"
 
 # Create a session and fetch the live URL from the API
-#s = requests.Session()
-#resplink = s.get(url)
+s = requests.Session()
+resplink = s.get(url)
 response_json = json.loads(resplink.text)
 
 # Extract the live URL from the response JSON
 mastlnk = response_json["liveUrl"]
 
 # Extract the token value from the "liveUrl"
-token = mastlnk.split("?token=")[-1]
+token = mastlnk.split("?token=")
 
 # Print the updated playlist
 print("#EXTM3U")
