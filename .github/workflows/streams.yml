@@ -38,6 +38,7 @@ jobs:
             #python3 royanews.py > links/royanews.m3u8
             #python3 nowtvtr.py > links/nowtr.m3u8
              python3 tv8md.py > links/tv8md.m3u8
+             python3 jurnaltv.py > links/jurnaltv.m3u8
       - name: commit and push files
         run: |
           git config --local user.email ""
