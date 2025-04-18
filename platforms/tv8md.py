@@ -14,7 +14,7 @@ response_json = json.loads(resplink.text)
 mastlnk = response_json["liveUrl"]
 
 # Extract the token value from the "liveUrl"
-token = mastlnk.split("?token=")
+token = mastlnk.split("?token=")[-1]
 
 # Print the updated playlist
 print("#EXTM3U")
