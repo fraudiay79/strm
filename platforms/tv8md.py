@@ -11,7 +11,7 @@ resplink = s.get(url)
 response_json = json.loads(resplink.text)
 
 # Extract the live URL from the response JSON
-mastlnk = response_json["data"]["liveUrl"]
+mastlnk = response_json["liveUrl"]
 
 # Fetch content from the live URL
 content_response = requests.get(mastlnk)
