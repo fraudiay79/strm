@@ -1,20 +1,17 @@
 import requests
-import json
 
-# Base URL for constructing full URLs
-base_url = "https://live.cdn.tv8.md/TV7/"
+# URL to fetch the JSON data
 url = "https://api.tv8.md/v1/live"
 
-# Create a session and fetch the live URL from the API
-s = requests.Session()
-resplink = s.get(url)
-response_json = json.loads(resplink.text)
+# Fetch the JSON data from the API
+response = requests.get(url)
+data = response.json()  # Parse the JSON response
 
-# Extract the live URL from the response JSON
-mastlnk = response_json["liveUrl"]
+# Extract the live URL from the JSON
+live_url = data["liveUrl"]
 
-# Extract the token value from the "liveUrl"
-token = mastlnk.split("?token=")[-1]
+# Extract the token from the live URL
+token = live_url.split("?token=")[-1]
 
 # Print the updated playlist
 print("#EXTM3U")
