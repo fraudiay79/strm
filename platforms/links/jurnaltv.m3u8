@@ -1,7 +1,22 @@
-Extracted m3u8 URL: https://live.cdn.jurnaltv.md/JurnalTV_HD/index.m3u8?token=5793b4d0ba7bed5c1cd0bb0f3ecae21db4e46e2e
-Extracted Token: 5793b4d0ba7bed5c1cd0bb0f3ecae21db4e46e2e
-#EXTM3U
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1750000,BANDWIDTH=2190000,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.cdn.jurnaltv.md/JurnalTV_HD/tracks-v2a1/mono.ts.m3u8?token=5793b4d0ba7bed5c1cd0bb0f3ecae21db4e46e2e
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2810000,BANDWIDTH=3510000,RESOLUTION=1024x576,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.cdn.jurnaltv.md/JurnalTV_HD/tracks-v1a1/mono.ts.m3u8?token=5793b4d0ba7bed5c1cd0bb0f3ecae21db4e46e2e
+An error occurred: Message: session not created: probably user data directory is already in use, please specify a unique value for --user-data-dir argument, or don't use --user-data-dir
+Stacktrace:
+#0 0x56124522cd0a <unknown>
+#1 0x561244cdd5f0 <unknown>
+#2 0x561244d170db <unknown>
+#3 0x561244d12e2f <unknown>
+#4 0x561244d62f9e <unknown>
+#5 0x561244d624c6 <unknown>
+#6 0x561244d54433 <unknown>
+#7 0x561244d20ea3 <unknown>
+#8 0x561244d21b01 <unknown>
+#9 0x5612451f1b5b <unknown>
+#10 0x5612451f5a41 <unknown>
+#11 0x5612451d8c52 <unknown>
+#12 0x5612451f65b4 <unknown>
+#13 0x5612451bcf0f <unknown>
+#14 0x56124521adb8 <unknown>
+#15 0x56124521af96 <unknown>
+#16 0x56124522bb56 <unknown>
+#17 0x7f80b529caa4 <unknown>
+#18 0x7f80b5329c3c <unknown>
+
