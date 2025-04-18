@@ -17,20 +17,6 @@ mastlnk = response_json["data"]["liveUrl"]
 content_response = requests.get(mastlnk)
 content = content_response.text
 
-# Process the content and construct full URLs
-lines = content.split("\n")
-modified_content = ""
-for line in lines:
-    if line.startswith("TV7"):
-        full_url = base_url + line
-        modified_content += full_url + "\n"
-    else:
-	    full_url = base_url + line
-        modified_content += full_url + "\n"
-
-# Print the modified content
-print(modified_content)
-
 # Extract the token value from the "liveUrl"
 token = mastlnk.split("?token=")[-1]
 
