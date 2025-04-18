@@ -33,7 +33,7 @@ jobs:
             pwd
             cd ./platforms/
             #python myvideoaz.py myvideoaz.json
-            python streams.py streams.json
+            #python streams.py streams.json
             #python3 tvpsport.py > links/tvpsport.m3u8 || echo "tvpsport failed"
             #python3 royanews.py > links/royanews.m3u8
             #python3 nowtvtr.py > links/nowtr.m3u8
