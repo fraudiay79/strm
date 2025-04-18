@@ -21,14 +21,14 @@ try:
         m3u8_url = script_tag.text[start_index:end_index]
 
         # Debug: Print the extracted m3u8 URL
-        print(f"Extracted m3u8 URL: {m3u8_url}")
+        #print(f"Extracted m3u8 URL: {m3u8_url}")
 
         # Extract the token value from the 'file' URL
         if "?token=" in m3u8_url:
             token = m3u8_url.split("?token=")[-1]
 
             # Debug: Print the extracted token
-            print(f"Extracted Token: {token}")
+            #print(f"Extracted Token: {token}")
 
             # Print the updated playlist
             print("#EXTM3U")
