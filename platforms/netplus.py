@@ -5,6 +5,7 @@ print("*** NET+/SWEEZ TV M3U CREATOR ***\n")
 
 # LOAD EPG DATA
 epg_api = "https://www.netplus.tv/api/cache/epglive/"
+#epg_api = "https://sweez.tv/api/cache/epglive/"
 epg = requests.get(epg_api).json()
 
 # CHECK CHANNELS
@@ -43,7 +44,7 @@ with open("tv.m3u", "w+") as file:
     for i in ch_list:
         file.write("#KODIPROP:inputstreamclass=inputstream.adaptive\n")
         file.write(f"#KODIPROP:inputstream.adaptive.manifest_type={i['type']}\n")
-        file.write(f'#EXTINF:0001 tvg-id="{i["id"]}" tvg-logo="https://picserve.netplus.ch/channels/{i["id"]}.png", {i["id"].replace("fast_", "")}\n')
+        file.write(f'#EXTINF:-1 tvg-id="{i["id"]}" tvg-name="{i["id"].replace("fast_", "")}" tvg-logo="https://picserve.netplus.ch/channels/{i["id"]}.png", {i["id"].replace("fast_", "")}\n')
         if i["type"] == "mpd":
             file.write(f"https://cachehsi1a.netplus.ch/live/eds/{i['id']}/browser-dash/{i['id']}.mpd\n")
         elif i["type"] == "hls":
