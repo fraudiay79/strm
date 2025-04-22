@@ -32,7 +32,7 @@ try:
         file.write("#EXT-X-STREAM-INF:BANDWIDTH=8000000\n")
         file.write(f"{m3u8_link}\n")
 
-    print(f"New m3u8 file created successfully: {output_file}")
+    #print(f"New m3u8 file created successfully: {output_file}")
 
 except Exception as e:
     print(f"Error writing to the m3u8 file: {e}")
