@@ -57,6 +57,7 @@ for url, name in zip(urls, names):
     try:
         with open(output_file, "w") as file:
             file.write("#EXTM3U\n")
+            file.write("#EXT-X-VERSION:3\n")
             file.write("#EXT-X-STREAM-INF:BANDWIDTH=8000000\n")
             file.write(f"{m3u8_link}\n")
         #print(f"File created successfully: {output_file}")
