@@ -23,7 +23,7 @@ urls = [
 ]
 
 # Corresponding names for the output files
-names = ["tvp1", "tvp2", "tvpsport", "tvphistoria", "tvpkobieta", "tvpkultura", "belsat", "tvpdocument", tvpkultura2", tvpnadobre", "tvpabc", "tvpabc2", "alfatvp", "tvphistoria", "tvprozrywka", "tvppolonia", "tvpnauka" ]
+names = ["tvp1", "tvp2", "tvpsport", "tvphistoria", "tvpkobieta", "tvpkultura", "belsat", "tvpdokument", tvpkultura2", tvpnadobre", "tvpabc", "tvpabc2", "alfatvp", "tvphistoria", "tvprozrywka", "tvppolonia", "tvpnauka" ]
 
 # Directory to save output files
 output_dir = "links"
