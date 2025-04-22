@@ -18,12 +18,11 @@ urls = [
     "https://vod.tvp.pl/api/products/399726/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
     "https://vod.tvp.pl/api/products/399725/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
     "https://vod.tvp.pl/api/products/399724/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
-    "https://vod.tvp.pl/api/products/399723/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
-    "https://vod.tvp.pl/api/products/399722/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER"
+    "https://vod.tvp.pl/api/products/399723/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER"
 ]
 
 # Corresponding names for the output files
-names = ["tvp1", "tvp2", "tvpsport", "tvphistoria", "tvpkobieta", "tvpkultura", "belsat", "tvpdokument", tvpkultura2", tvpnadobre", "tvpabc", "tvpabc2", "alfatvp", "tvphistoria", "tvprozrywka", "tvppolonia", "tvpnauka" ]
+names = ["tvp1", "tvp2", "tvpsport", "tvphistoria", "tvpkobieta", "tvpkultura", "belsat", "tvpdokument", "tvpkultura2", tvpnadobre", "tvpabc", "tvpabc2", "alfatvp", "tvphistoria", "tvprozrywka", "tvppolonia", "tvpnauka" ]
 
 # Directory to save output files
 output_dir = "links"
