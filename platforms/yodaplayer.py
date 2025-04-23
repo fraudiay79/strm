@@ -68,7 +68,7 @@ def Resolve(token):
                             "bandwidth": 7540000,
                             "resolution": "1920x1080",
                             "codec": "avc1.4d401f,mp4a.40.2",
-                            "track": "tracks-v2a1/mono.ts.m3u8"
+                            "track": "tracks-v1a1/mono.ts.m3u8"
                         }
                     ]
                     
