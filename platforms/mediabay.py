@@ -1,91 +1,114 @@
-import urllib.request
-import json
+# -*- coding: utf-8 -*-
+import requests
 import os
+import json
 
-# Create the 'mediabay' directory if it doesn't exist
-output_dir = 'mediabay'
+# Directory to save output files
+output_dir = "links"
 os.makedirs(output_dir, exist_ok=True)
 
-def fetch_country_channels():
-    url = "https://api.mediabay.tv/v2/countrychannels"
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Cookie': '_ga=GA1.1.1151399358.1734108649; _fbp=fb.1.1734108648923.42978377352479572; _ym_uid=1692727402762493332; _ym_d=1734108650; _ga_PDV69TQ9S4=GS1.1.1735576265.5.0.1735576265.60.0.0; SERVERID=app5; PHPSESSID=udb3fqmmv3gmu624rkj5aqnons; _ym_isad=1',
-        'Connection': 'keep-alive',
-        'Host': 'api.mediabay.tv',
-        'Sec-Ch-Ua': '"Not.A/Brand";v="24", "Chromium";v="131", "Google Chrome";v="131"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'same-site',
-        'Sec-Fetch-User': '?1'
-    }
+def Resolve():
     try:
-        # Create a request with headers
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as response:
-            data = json.loads(response.read().decode())
-            return data['data']
+        # Load the JSON configuration from 'mediabay.json'
+        with open("mediabay.json", "r", encoding="utf-8") as file:
+            config = json.load(file)
+        
+        # Iterate through the channels in the JSON
+        for source in config:
+            if "channels" not in source:
+                print("No channels found in the configuration.")
+                continue
+
+            # Base URL with placeholders
+            base_url = source.get("url", "")
+            if not base_url:
+                print("No URL found in the source configuration.")
+                continue
+            
+            # Headers (optional in JSON)
+            headers = source.get("headers", {})
+            user_agent = headers.get('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+            headers['User-Agent'] = user_agent  # Ensure User-Agent is set
+            
+            for channel in source["channels"]:
+                # Get channel name and variables
+                channel_name = channel.get("name", "Unknown Channel")
+                variables = channel.get("variables", [])
+                
+                # Extract 'CHANNEL_NAME' variable value
+                channel_variable = next((var["value"] for var in variables if var["name"] == "CHANNEL_NAME"), None)
+                if not channel_variable:
+                    print(f"Skipping {channel_name}: Missing 'CHANNEL_NAME' variable.")
+                    continue
+
+                # Format URL by replacing placeholder
+                url = base_url.replace("CHANNEL_NAME", channel_variable)
+                
+                try:
+                    # Fetch data from the URL
+                    response = requests.get(url, headers=headers)
+                    response.raise_for_status()  # Raise exception for HTTP errors
+                    
+                    # Parse JSON response
+                    data = response.json()
+                    if not data or "data" not in data or not data["data"]:
+                        print(f"Invalid API response for {channel_name}.")
+                        continue
+                    
+                    # Extract threadAddress
+                    thread_address = data["data"][0].get("threadAddress")
+                    if not thread_address:
+                        print(f"Thread address missing for {channel_name}.")
+                        continue
+                    
+                    # Define variations for streaming
+                    variations = [
+                        {
+                            "average_bandwidth": 650000,
+                            "bandwidth": 810000,
+                            "resolution": "426x240",
+                            "codec": "avc1.4d0015,mp4a.40.2",
+                            "track": "tracks-v3a1/mono.m3u8"
+                        },
+                        {
+                            "average_bandwidth": 1170000,
+                            "bandwidth": 1470000,
+                            "resolution": "640x360",
+                            "codec": "avc1.4d001e,mp4a.40.2",
+                            "track": "tracks-v2a1/mono.m3u8"
+                        },
+                        {
+                            "average_bandwidth": 2420000,
+                            "bandwidth": 3030000,
+                            "resolution": "854x480",
+                            "codec": "avc1.4d001e,mp4a.40.2",
+                            "track": "tracks-v1a1/mono.m3u8"
+                        }
+                    ]
+                    
+                    # Create an output file for the channel
+                    output_file = os.path.join(output_dir, f"{channel_name}.m3u8")
+                    with open(output_file, "w", encoding="utf-8") as file:
+                        file.write(f"#EXTM3U\n")
+                        for variation in variations:
+                            modified_link = thread_address.replace("playlist.m3u8", variation["track"])
+                            file.write(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={variation["average_bandwidth"]},BANDWIDTH={variation["bandwidth"]},RESOLUTION={variation["resolution"]},FRAME-RATE=25.000,CODECS="{variation["codec"]}",CLOSED-CAPTIONS=NONE\n')
+                            file.write(f"{modified_link}\n")
+                    
+                    print(f"Playlist created for {channel_name}: {output_file}")
+                    
+                except requests.exceptions.RequestException as e:
+                    print(f"Error fetching data for {channel_name}: {e}")
+                except IOError as e:
+                    print(f"Error writing file for {channel_name}: {e}")
+    
+    except FileNotFoundError:
+        print("The file 'mediabay.json' was not found.")
+    except json.JSONDecodeError:
+        print("Error decoding 'mediabay.json'. Ensure it's valid JSON.")
     except Exception as e:
-        print(f"An error occurred while fetching country channels: {e}")
-        return []
+        print(f"An unexpected error occurred: {e}")
 
-def fetch_m3u8_url(channel_id):
-    url = f"https://api.mediabay.tv/v2/channels/thread/{channel_id}"
-    headers = {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36',
-        'Accept': '*/*',
-        'Accept-Encoding': 'gzip, deflate, br, zstd',
-        'Cookie': '_ga=GA1.1.1151399358.1734108649; _fbp=fb.1.1734108648923.42978377352479572; _ym_uid=1692727402762493332; _ym_d=1734108650; _ga_PDV69TQ9S4=GS1.1.1735576265.5.0.1735576265.60.0.0; SERVERID=app5; PHPSESSID=udb3fqmmv3gmu624rkj5aqnons; _ym_isad=1',
-        'Connection': 'keep-alive',
-        'Host': 'api.mediabay.tv',
-        'Sec-Ch-Ua': '"Not.A/Brand";v="24", "Chromium";v="131", "Google Chrome";v="131"',
-        'Sec-Ch-Ua-Mobile': '?0',
-        'Sec-Ch-Ua-Platform': '"Windows"',
-        'Sec-Fetch-Mode': 'navigate',
-        'Sec-Fetch-Site': 'same-site',
-        'Sec-Fetch-User': '?1'
-    }
-    try:
-        # Create a request with headers
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as response:
-            data = json.loads(response.read().decode())
-            return data['data'][0]['threadAddress']
-    except Exception as e:
-        print(f"An error occurred while fetching m3u8 URL for channel {channel_id}: {e}")
-        return None
-
-def create_m3u8_file(m3u8_url, channel_id):
-    if not m3u8_url:
-        print(f"No m3u8 URL found for channel {channel_id}")
-        return
-
-    m3u8_content = f"""#EXTM3U
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1360000,BANDWIDTH=1710000,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS="avc1.4d001e,mp4a.40.2",CLOSED-CAPTIONS=NONE
-{m3u8_url}
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2420000,BANDWIDTH=3020000,RESOLUTION=854x480,FRAME-RATE=25.000,CODECS="avc1.4d001e,mp4a.40.2",CLOSED-CAPTIONS=NONE
-{m3u8_url}
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=4300000,BANDWIDTH=5380000,RESOLUTION=1280x720,FRAME-RATE=25.000,CODECS="avc1.4d001f,mp4a.40.2",CLOSED-CAPTIONS=NONE
-{m3u8_url}
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=6410000,BANDWIDTH=8010000,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.4d0028,mp4a.40.2",CLOSED-CAPTIONS=NONE
-{m3u8_url}
-"""
-
-    file_name = os.path.join(output_dir, f"{channel_id}.m3u8")
-    with open(file_name, "w") as file:
-        file.write(m3u8_content)
-    print(f"M3U8 file '{file_name}' created with the link: {m3u8_url}")
-
-# Main script logic
-def main():
-    channels = fetch_country_channels()
-    for channel in channels:
-        channel_id = channel['id']
-        m3u8_url = fetch_m3u8_url(channel_id)
-        create_m3u8_file(m3u8_url, channel_id)
-
+# Main entry point
 if __name__ == "__main__":
-    main()
+    Resolve()
