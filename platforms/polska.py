@@ -31,7 +31,9 @@ urls = [
     "https://vod.tvp.pl/api/products/399725/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
     "https://vod.tvp.pl/api/products/399724/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
     "https://vod.tvp.pl/api/products/399723/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
-    "https://vod.tvp.pl/api/products/399722/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER"
+    "https://vod.tvp.pl/api/products/399722/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
+    "https://vod.tvp.pl/api/products/399731/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
+    "https://vod.tvp.pl/api/products/399699/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER"
 ]
 
 # Corresponding names for the output files
@@ -49,10 +51,12 @@ names = [
     "tvpabc",
     "tvpabc2",
     "alfatvp",
-    "tvphistoria",
+    "tvphistoria2",
     "tvprozrywka",
     "tvppolonia",
-    "tvpnauka"
+    "tvpnauka",
+    "tvpworld",
+    "tvpinfo"
 ]
 
 # Directory to save output files
