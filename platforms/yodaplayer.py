@@ -61,14 +61,14 @@ def Resolve(token):
                             "bandwidth": 2610000,
                             "resolution": "1048x576",
                             "codec": "avc1.4d401f,mp4a.40.2",
-                            "track": "tracks-v1a1/mono.ts.m3u8"
+                            "track": "video.m3u8"
                         },
                         {
                             "average_bandwidth": 6030000,
                             "bandwidth": 7540000,
                             "resolution": "1920x1080",
                             "codec": "avc1.4d401f,mp4a.40.2",
-                            "track": "tracks-v1a1/mono.ts.m3u8"
+                            "track": "video.m3u8"
                         }
                     ]
                     
