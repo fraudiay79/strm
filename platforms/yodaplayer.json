@@ -1,0 +1,276 @@
+[
+    {
+        "name": "YodaPlayer",
+        "slug": "links",
+		"url": "https://str.yodacdn.net/CHANNEL_NAME/video.m3u8",
+        "method": "GET",
+        "pattern": "<source.*?src=\"(.*?)\"",
+        "expire_duration": "1D",
+        "mode": "variant",
+        "output_filter": "token",
+        "headers": {},
+        "channels": [
+            {
+                "name": "aztv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "aztv"
+                    }
+                ]
+            },
+            {
+                "name": "xazar",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "xazar"
+                    }
+                ]
+            },
+            {
+                "name": "arb24",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "arb24"
+                    }
+                ]
+            },
+            {
+                "name": "ntv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "ntv"
+                    }
+                ]
+            },
+            {
+                "name": "apatv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "apatv"
+                    }
+                ]
+            },
+            {
+                "name": "bakutv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "bakutv"
+                    }
+                ]
+            },
+            {
+                "name": "atv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "atv"
+                    }
+                ]
+            },
+            {
+                "name": "haberglobal",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "haberglobal"
+                    }
+                ]
+            },
+            {
+                "name": "real",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "real"
+                    }
+                ]
+            },
+            {
+                "name": "tmbtr",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "tmbtr"
+                    }
+                ]
+            },
+            {
+                "name": "tmbaz",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "tmbaz"
+                    }
+                ]
+            },
+            {
+                "name": "arb",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "arb"
+                    }
+                ]
+            },
+            {
+                "name": "start",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "start"
+                    }
+                ]
+            },
+            {
+                "name": "ictimai",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "ictimai"
+                    }
+                ]
+            },
+            {
+                "name": "kanal35",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "kanal35"
+                    }
+                ]
+            },
+            {
+                "name": "idman",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "idman"
+                    }
+                ]
+            },
+            {
+                "name": "gunaztv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "gunaztv"
+                    }
+                ]
+            },
+            {
+                "name": "eltv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "eltv"
+                    }
+                ]
+            },
+            {
+                "name": "qafkaz",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "qafkaz"
+                    }
+                ]
+            },
+            {
+                "name": "arbgunesh",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "arbgunesh"
+                    }
+                ]
+            },
+            {
+                "name": "cbc",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "cbc"
+                    }
+                ]
+            },
+            {
+                "name": "medeniyyet",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "medeniyyet"
+                    }
+                ]
+            },
+            {
+                "name": "space",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "space"
+                    }
+                ]
+            },
+            {
+                "name": "tmb",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "tmb"
+                    }
+                ]
+            },
+            {
+                "name": "agrotv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "agrotv"
+                    }
+                ]
+            },
+            {
+                "name": "showplus",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "showplus"
+                    }
+                ]
+            },
+            {
+                "name": "mtvaz",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "mtvaz"
+                    }
+                ]
+            },
+            {
+                "name": "shtv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "shtv"
+                    }
+                ]
+            },
+            {
+                "name": "vip",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "vip"
+                    }
+                ]
+            }
+        ]
+    }
+]
