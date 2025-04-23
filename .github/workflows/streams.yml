@@ -34,14 +34,14 @@ jobs:
             pwd
             cd ./platforms/
             #python myvideoaz.py myvideoaz.json
-            #python yodaplayer.py yodaplayer.json
-            python giniko.py giniko.json
-            #python mediabay.py mediabay.json
-            #python streams.py streams.json
-            #python3 polska.py
-            #python3 tv8md.py
+            python yodaplayer.py yodaplayer.json
+            #python giniko.py giniko.json
+            python mediabay.py mediabay.json
+            python streams.py streams.json
+            python3 polska.py
+            python3 tv8md.py
             #python3 netplus.py > links/netplus.m3u
-            #python3 jurnaltv.py > links/jurnaltv.m3u8
+            python3 jurnaltv.py > links/jurnaltv.m3u8
       - name: commit and push files
         run: |
           git config --local user.email ""
