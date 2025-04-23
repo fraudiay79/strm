@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 import requests
-from bs4 import BeautifulSoup
-import xml.etree.ElementTree as ET
 import os
 import json
+import xml.etree.ElementTree as ET
 
 # Directory to save output files
 output_dir = "links"
@@ -21,48 +20,41 @@ def fetch_data(url, headers=None):
         print(f"Error fetching URL {url}: {e}")
         return None
 
-def fetch_xml_content(url, headers=None):
+def extract_wmsAuthSign_from_url(url, headers):
     """
-    Fetch and return raw XML content from the specified URL
+    Fetch and extract the 'wmsAuthSign' token from the given URL
     """
     response = fetch_data(url, headers)
     if response:
-        return response.text
+        try:
+            # Parse XML content
+            xml_content = response.text
+            root = ET.fromstring(xml_content)
+            for elem in root.iter("string"):
+                if "wmsAuthSign=" in elem.text:
+                    sign_index = elem.text.index("?wmsAuthSign=") + len("?wmsAuthSign=")
+                    token = elem.text[sign_index:]
+                    return token
+            return None
+        except Exception as e:
+            print(f"Error parsing XML content: {e}")
+            return None
     return None
-
-def extract_wmsAuthSign_from_xml(xml_content):
-    """
-    Parse XML content and extract the 'wmsAuthSign' token
-    """
-    try:
-        root = ET.fromstring(xml_content)
-        for elem in root.iter("string"):
-            if "wmsAuthSign=" in elem.text:
-                sign_index = elem.text.index("?wmsAuthSign=") + len("?wmsAuthSign=")
-                token = elem.text[sign_index:]
-                return token
-        return None
-    except Exception as e:
-        print(f"Error parsing XML content: {e}")
-        return None
 
 def Resolve():
     """
-    Main function to process the JSON configuration, fetch data, 
-    and generate playlist files for each channel
+    Process the JSON configuration, fetch data, and generate playlist files
     """
     try:
         # Load the JSON configuration from 'giniko.json'
         with open("giniko.json", "r", encoding="utf-8") as file:
             config = json.load(file)
         
-        # Iterate through the sources in the JSON configuration
         for source in config:
             if "channels" not in source:
                 print("No channels found in the configuration.")
                 continue
 
-            # Base URL with placeholders
             base_url = source.get("url", "")
             if not base_url:
                 print("No URL found in the source configuration.")
@@ -70,16 +62,8 @@ def Resolve():
 
             headers = source.get("headers", {})
             user_agent = headers.get('User-Agent', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
-            headers['User-Agent'] = user_agent  # Ensure User-Agent is set
-            
-            # Fetch XML content and extract 'wmsAuthSign' token
-            xml_content = fetch_xml_content(base_url, headers)
-            wmsAuthSign_token = extract_wmsAuthSign_from_xml(xml_content)
-            if not wmsAuthSign_token:
-                print(f"Unable to fetch 'wmsAuthSign' token for {base_url}. Skipping source.")
-                continue
-            
-            # Process each channel in the source
+            headers['User-Agent'] = user_agent
+
             for channel in source["channels"]:
                 channel_name = channel.get("name", "Unknown Channel")
                 variables = channel.get("variables", [])
@@ -89,16 +73,22 @@ def Resolve():
                     print(f"Skipping {channel_name}: Missing 'CHANNEL_NAME' variable.")
                     continue
 
-                # Format URL by replacing placeholder
+                # Format URL
                 url = base_url.replace("CHANNEL_NAME", channel_variable)
-                
+
+                # Extract 'wmsAuthSign' token from the same URL
+                wmsAuthSign_token = extract_wmsAuthSign_from_url(url, headers)
+                if not wmsAuthSign_token:
+                    print(f"Unable to fetch 'wmsAuthSign' token for {channel_name}. Skipping.")
+                    continue
+
                 try:
-                    # Fetch data from the URL
+                    # Fetch m3u8 data from the URL
                     response = fetch_data(url, headers)
                     if not response:
                         print(f"Failed to fetch data for {channel_name}.")
                         continue
-                    
+
                     # Parse JSON response
                     data = response.json()
                     if not data or "data" not in data or not data["data"]:
