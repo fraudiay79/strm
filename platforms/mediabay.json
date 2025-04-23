@@ -11,7 +11,7 @@
         "headers": {},
         "channels": [
             {
-                "name": "NRBTV",
+                "name": "nrbtv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -20,16 +20,7 @@
                 ]
             },
             {
-                "name": "Радио Русская Реклама",
-                "variables": [
-                    {
-                        "name": "CHANNEL_NAME",
-                        "value": "472"
-                    }
-                ]
-            },
-            {
-                "name": "Arezo TV",
+                "name": "arezo",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -38,7 +29,7 @@
                 ]
             },
             {
-                "name": "TOLO TV",
+                "name": "tolotv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -47,7 +38,7 @@
                 ]
             },
             {
-                "name": "TOLO News",
+                "name": "tolonews",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -56,7 +47,7 @@
                 ]
             },
             {
-                "name": "Noor TV",
+                "name": "noortv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -65,16 +56,7 @@
                 ]
             },
             {
-                "name": "ATV",
-                "variables": [
-                    {
-                        "name": "CHANNEL_NAME",
-                        "value": "606"
-                    }
-                ]
-            },
-            {
-                "name": "Real TV",
+                "name": "real-tv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -83,7 +65,7 @@
                 ]
             },
             {
-                "name": "ARB",
+                "name": "arb",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -92,7 +74,7 @@
                 ]
             },
             {
-                "name": "ARB 24",
+                "name": "arb-24",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -101,7 +83,7 @@
                 ]
             },
             {
-                "name": "AzTV",
+                "name": "az-tv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -110,7 +92,7 @@
                 ]
             },
             {
-                "name": "Ictimai TV",
+                "name": "ictimai-tv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -119,7 +101,7 @@
                 ]
             },
             {
-                "name": "Xezer",
+                "name": "xezer-tv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -128,7 +110,7 @@
                 ]
             },
             {
-                "name": "Medeniyyet",
+                "name": "medeniyet-tv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -137,7 +119,7 @@
                 ]
             },
             {
-                "name": "ATV (Azad Azerbaycan TV)",
+                "name": "atv-azad",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -146,7 +128,7 @@
                 ]
             },
             {
-                "name": "CBC",
+                "name": "cbc",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -155,7 +137,7 @@
                 ]
             },
             {
-                "name": "Музыка (KG)",
+                "name": "music-kg",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -164,7 +146,7 @@
                 ]
             },
             {
-                "name": "Илим Билим",
+                "name": "eltr-kg",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -173,7 +155,7 @@
                 ]
             },
             {
-                "name": "Ала-тоо 24",
+                "name": "ala-too-24",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -182,7 +164,7 @@
                 ]
             },
             {
-                "name": "Пирамида",
+                "name": "pyramida",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -191,7 +173,7 @@
                 ]
             },
             {
-                "name": "Ош Пирим",
+                "name": "oshpirim",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -200,7 +182,7 @@
                 ]
             },
             {
-                "name": "ЭЛ ТР Кыргызстан",
+                "name": "eltr2-kg",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -209,7 +191,7 @@
                 ]
             },
             {
-                "name": "Хабар 24",
+                "name": "24kz",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -218,7 +200,7 @@
                 ]
             },
             {
-                "name": "Новое телевидение (Караганда)",
+                "name": "novoetv",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -227,7 +209,7 @@
                 ]
             },
             {
-                "name": "Казахские фильмы",
+                "name": "kazakhfilms",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -236,7 +218,7 @@
                 ]
             },
             {
-                "name": "Jibek Joly",
+                "name": "jibek-joly",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -245,7 +227,7 @@
                 ]
             },
             {
-                "name": "Muzzone",
+                "name": "muzzone",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -254,7 +236,7 @@
                 ]
             },
             {
-                "name": "Атамекен",
+                "name": "atameken",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -281,7 +263,7 @@
                 ]
             },
             {
-                "name": "Varzish",
+                "name": "varzish",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
