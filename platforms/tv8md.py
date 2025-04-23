@@ -1,7 +1,6 @@
 #! /usr/bin/python3
 
 import requests
-import json
 import os
 
 print('#EXTM3U')
@@ -11,19 +10,18 @@ headers = {
 }
 s = requests.Session()
 
-# URL to fetch the JSON data
-url = "https://api.tv8.md/v1/live"
-
-name = ["tv8md"]
+# URLs and corresponding names
+urls = ["https://api.tv8.md/v1/live"]
+names = ["tv8md"]
 
 # Directory to save output files
 output_dir = "links"
 os.makedirs(output_dir, exist_ok=True)
 
 # Process each URL and save to corresponding file
-for url, name in zip(url, name):
+for current_url, name in zip(urls, names):
     try:
-        resplink = s.get(url, headers=headers)
+        resplink = s.get(current_url, headers=headers)
         resplink.raise_for_status()
         response_json = resplink.json()
         mastlnk = response_json["liveUrl"]
@@ -40,11 +38,17 @@ for url, name in zip(url, name):
             file.write("#EXTM3U\n")
 
             for variant, (bandwidth, avg_bandwidth, resolution) in variations.items():
-                modified_link = mastlnk.replace("index.m3u8", variant)
-				file.write(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE\n')
-                file.write(f"{modified_link}\n")
+                if "index.m3u8" in mastlnk:
+                    modified_link = mastlnk.replace("index.m3u8", variant)
+                    file.write(
+                        f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE\n'
+                    )
+                    file.write(f"{modified_link}\n")
+                else:
+                    print("Error: 'index.m3u8' not found in liveUrl.")
+                    continue
 
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching data from {url}: {e}")
-    except (KeyError, IndexError, json.JSONDecodeError):
-        print(f"Error: Unable to retrieve 'liveUrl' m3u8 link from {url}.")
+        print(f"Error fetching data from {current_url}: {e}")
+    except (KeyError, IndexError, ValueError):
+        print(f"Error: Unable to retrieve 'liveUrl' from {current_url}.")
