@@ -146,7 +146,7 @@
                 ]
             },
             {
-                "name": "eltr-kg",
+                "name": "ilim-bilim",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -182,7 +182,7 @@
                 ]
             },
             {
-                "name": "eltr2-kg",
+                "name": "eltr-kg",
                 "variables": [
                     {
                         "name": "CHANNEL_NAME",
@@ -268,6 +268,15 @@
                     {
                         "name": "CHANNEL_NAME",
                         "value": "596"
+                    }
+                ]
+            },
+            {
+                "name": "aqlvoy",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "645"
                     }
                 ]
             }
