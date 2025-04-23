@@ -1,0 +1,96 @@
+[
+    {
+        "name": "Giniko",
+        "slug": "links",
+		"url": "https://www.giniko.com/xml/secure/plist.php?ch=CHANNEL_NAME",
+        "method": "GET",
+        "pattern": "<source.*?src=\"(.*?)\"",
+        "expire_duration": "1D",
+        "mode": "variant",
+        "output_filter": "token",
+        "headers": {},
+        "channels": [
+            {
+                "name": "arezotv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "440"
+                    }
+                ]
+            },
+            {
+                "name": "1tvafg",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "307"
+                    }
+                ]
+            },
+            {
+                "name": "noortv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "414"
+                    }
+                ]
+            },
+            {
+                "name": "lemar",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "281"
+                    }
+                ]
+            },
+            {
+                "name": "canalalgerie",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "328"
+                    }
+                ]
+            },
+            {
+                "name": "algeria3",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "530"
+                    }
+                ]
+            },
+            {
+                "name": "alwataniya",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "185"
+                    }
+                ]
+            },
+            {
+                "name": "ssudan",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "188"
+                    }
+                ]
+            },
+            {
+                "name": "sudantv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "187"
+                    }
+                ]
+            }
+        ]
+    }
+]
