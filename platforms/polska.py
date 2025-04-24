@@ -35,7 +35,8 @@ urls = [
     "https://vod.tvp.pl/api/products/399731/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
     "https://vod.tvp.pl/api/products/399699/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
     "https://vod.tvp.pl/api/products/399754/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
-    "https://vod.tvp.pl/api/products/1065595/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER"
+    "https://vod.tvp.pl/api/products/1065595/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER",
+    "https://vod.tvp.pl/api/products/999687/videos/playlist?videoType=LIVE&lang=PL&platform=BROWSER"
 ]
 
 # Corresponding names for the output files
@@ -60,7 +61,8 @@ names = [
     "tvpworld",
     "tvpinfo",
     "tvp3warszawa",
-    "tvpparlamentsenat"
+    "tvpparlamentsenat",
+    "tvpwilno"
 ]
 
 # Directory to save output files
