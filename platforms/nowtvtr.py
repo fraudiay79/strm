@@ -18,7 +18,7 @@ try:
     html_content = response.text
 
     soup = BeautifulSoup(html_content, "html.parser")
-    script_tag = soup.find('script', text=True)
+    script_tag = soup.find('script', string=True)
 
     if script_tag:
         script_content = script_tag.string
