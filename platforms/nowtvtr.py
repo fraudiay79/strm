@@ -23,8 +23,8 @@ try:
     # Parse the HTML using BeautifulSoup
     soup = BeautifulSoup(html_content, "html.parser")
     
-    # Find the <script> tag containing JavaScript
-    script_tag = soup.find('script', text=True)
+    # Find the <script> tag that contains 'var fxPlayer'
+    script_tag = soup.find('script', text=lambda t: t and 'var fxPlayer' in t)
 
     if script_tag:
         # Extract the script content
@@ -38,7 +38,7 @@ try:
         match = re.search(r"daiUrl\s*:\s*'(https?://[^']+)'", script_content)
         if match:
             daiUrl = match.group(1)
-            print("Extracted daiUrl:", daiUrl)
+            #print("Extracted daiUrl:", daiUrl)
 
             # Define resolution variations
             variations = {
@@ -66,7 +66,7 @@ try:
         else:
             print("daiUrl not found in the script content.")
     else:
-        print("No <script> tag with the required content found.")
+        print("No <script> tag containing 'var fxPlayer' found.")
 except requests.exceptions.RequestException as e:
     # Handle network-related exceptions
     print(f"An error occurred while fetching the URL: {e}")
