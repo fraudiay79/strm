@@ -35,7 +35,7 @@ try:
             }
 
             name = "nowtv"  # Define a base name for the file
-            output_file = os.path.join(output_dir, f"{name}.m3u8")
+            output_file = os.path.join(output_dir, f"nowtvtr.m3u8")
 
             with open(output_file, "w") as file:
                 file.write("#EXTM3U\n")
