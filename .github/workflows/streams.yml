@@ -1,0 +1,51 @@
+name: run streams.py
+
+on:
+  schedule:
+    - cron: '0 */1 * * *' # Runs in every hour
+  pull_request:
+      branches:
+        - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+            python-version: '3.x' 
+            
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          
+          pwd
+          cd ./platforms/
+          
+          pip3 install -r requirements.txt
+          pip3 install beautifulsoup4
+          pip3 install selenium
+      - name: execute py script 
+        run:  |
+            pwd
+            cd ./platforms/
+            #python myvideoaz.py myvideoaz.json
+            python yodaplayer.py yodaplayer.json
+            #python giniko.py giniko.json
+            python mediabay.py mediabay.json
+            python streams.py streams.json
+            python3 polska.py
+            python3 tv8md.py
+            #python3 netplus.py > links/netplus.m3u
+            python3 jurnaltv.py > links/jurnaltv.m3u8
+      - name: commit and push files
+        run: |
+          git config --local user.email ""
+          git config --local user.name "Stream Ninja 🥷🏽"
+          git add -A
+          git commit -m "updated streams"
+          git push
