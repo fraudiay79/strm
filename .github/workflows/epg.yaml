@@ -20,24 +20,17 @@ jobs:
     - name: Set up Node
       uses: actions/setup-node@v4
       with:
-        node-version: 18
+           node-version: 18
 
     - name: npm grab epg
       run: |
-        npm install
-        npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
-
-        # Add file compression logic to ensure .gz file is created
-        gzip ./epg/epg-channels.xml
-
-    - name: Verify file existence
-      run: |
-        ls -l ./epg/epg-channels.xml.gz
-
+          npm install
+          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
+          
     - name: Commit changes
       run: |
-        git config user.name "🧟 Brainz"
-        git config user.email "<>"
-        git add -f ./epg/epg-channels.xml.gz
-        git commit -m "updated epg"
-        git push -f origin main
+          git config user.name "🧟 Brainz"
+          git config user.email "<>"
+          git add -f epg/epg-channels.xml.gz
+          git commit -m "updated epg"
+          git push -f origin main
