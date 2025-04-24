@@ -1,6 +1,10 @@
-Script Content: (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-NJ7G7JV');
-daiUrl not found in the script content.
+Script Content: var fxPlayer;    
+    $( document ).ready(function(){
+        $("#video-player-container").append('<div id="video-player-container-inner" class="video-fk-placehoder live-player-container"></div>')
+        var $width = $("#video-player-container").width();            
+        $("#video-player-container-inner").css('height', $width * 0.5625);
+        
+        var timer = setInterval(function(){
+            if(typeof ADMPlayer != 'undefined' && typeof ADMPlayer.players != 'undefined'){             
+H=550000,BANDWIDTH=500000,NAME="nowtv_360p",RESOLUTION=640x360
+https://nowtv-live-ad.ercdn.net/nowtv/nowtv_360p.m3u8?st=Va6xJltjugMJVPVPQ_bBpg&e=1745537581
