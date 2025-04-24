@@ -18,13 +18,15 @@ try:
     html_content = response.text
 
     soup = BeautifulSoup(html_content, "html.parser")
-    script_tag = soup.find('script', string=True)
+    script_tag = soup.find('script', text=True)
 
     if script_tag:
-        script_content = script_tag.string
+	    script_content = script_tag.string or script_tag.text
+        script_content = script_content.strip()
         match = re.search(r"daiUrl\s*:\s*'(https?://[^']+)'", script_content)
         if match:
             daiUrl = match.group(1)
+            
 
             # Generate multiple resolution variations
             variations = {
