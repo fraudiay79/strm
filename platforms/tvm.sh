@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # File paths
-file1="platforms/links/tvm.m3u8"
-file2="platforms/links/tvmnews.m3u8"
-file3="platforms/links/tvmsport.m3u8"
+file1="links/tvm.m3u8"
+file2="links/tvmnews.m3u8"
+file3="links/tvmsport.m3u8"
 
 # URLs to fetch `data-jwt`
 url1="https://tvmi.mt/live/2"
