@@ -5,6 +5,7 @@ import os
 # Common Headers
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0",
+    "Origin": "https://tvmi.mt",
     "Referer": "https://tvmi.mt/"
 }
 
@@ -43,12 +44,12 @@ for url, name in zip(urls, names):
                 file.write("#EXT-X-VERSION:3\n")
                 file.write('#EXT-X-STREAM-INF:BANDWIDTH=1755600,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"\n')
 
-                # Write the URL or error message
+                # Write the URL with the Referer header
                 if match:
                     data_jwt_value = match.group(1)
                     live_url_main = f"https://dist9.tvmi.mt/{data_jwt_value}/live/{url.split('/')[-1]}/0/index.m3u8"
-                    file.write(f"{live_url_main}\n")
-                    print(f"Generated {output_file} with live URL.")
+                    file.write(f"{live_url_main}|Referer=\https://tvmi.mt/\\n")
+                    print(f"Generated {output_file} with live URL and Referer header.")
                 else:
                     file.write(f"# Error: Live URL not found for {url}\n")
                     print(f"Live URL not found for {url}.")
