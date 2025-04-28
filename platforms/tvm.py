@@ -9,6 +9,7 @@ headers = {
     "Referer": "https://tvmi.mt/",
     "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
     "accept-language": "en-US,en;q=0.9",
+    "cookie": "tvmi_gid=ODM5MTAwNjU5NTcxODM3NTQxMTM3; _ga=GA1.1.309400976.1743444398; tvmi_sid=MTIzMTAwNjU5NTcxODQwMjY1ODkx; _ga_2FFHHTTHE0=GS1.1.1745851410.6.0.1745851410.0.0.0",
     "priority": "u=0, i",
     "sec-ch-ua": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
     "sec-ch-ua-mobile": "?0",
