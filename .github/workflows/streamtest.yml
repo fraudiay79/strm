@@ -27,7 +27,8 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            sh tvm.sh
+            python giniko.py giniko.json
+            #sh tvm.sh
             #python3 tvm.py
       - name: commit and push files
         run: |
