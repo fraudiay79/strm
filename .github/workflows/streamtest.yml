@@ -27,7 +27,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 nowtvtr.py > links/nowtvtr.m3u8
+            python3 tvm.py
       - name: commit and push files
         run: |
           git config --local user.email ""
