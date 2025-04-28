@@ -11,7 +11,7 @@ url2="https://tvmi.mt/live/3"
 url3="https://tvmi.mt/live/4"
 
 # Corresponding live paths
-live1="/live/4/0/index.m3u8"
+live1="/live/2/0/index.m3u8"
 live2="/live/3/0/index.m3u8"
 live3="/live/4/0/index.m3u8"
 
