@@ -27,7 +27,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            bash tvm.sh
+            sh tvm.sh
             #python3 tvm.py
       - name: commit and push files
         run: |
