@@ -2,13 +2,30 @@
     {
         "name": "YodaPlayer",
         "slug": "links",
-		"url": "https://str.yodacdn.net/CHANNEL_NAME/video.m3u8",
+	"url": "https://str.yodacdn.net/CHANNEL_NAME/video.m3u8",
         "method": "GET",
         "pattern": "<source.*?src=\"(.*?)\"",
         "expire_duration": "1D",
         "mode": "variant",
         "output_filter": "token",
-        "headers": {},
+        "headers": {
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
+            "Accept-Encoding": "gzip, deflate, br, zstd",
+            "Accept-Language": "en-US,en;q=0.9",
+            "Cache-Control": "max-age=0",
+            "Connection": "keep-alive",
+            "Cookie": "_ym_uid=1745418736828895381; _ym_d=1745418736; _ga_9SPZ4PY6B6=GS1.1.1745843830.4.0.1745843830.0.0.0; _ga=GA1.2.1877885301.1745418735; _gid=GA1.2.267733869.1745843832; _ym_isad=1",
+            "Host": "yodaplayer.yodacdn.net",
+            "Sec-Fetch-Dest": "document",
+            "Sec-Fetch-Mode": "navigate",
+            "Sec-Fetch-Site": "cross-site",
+            "Sec-Fetch-User": "?1",
+            "Upgrade-Insecure-Requests": "1",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+            "sec-ch-ua": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"Windows\""
+        },
         "channels": [
             {
                 "name": "aztv",
