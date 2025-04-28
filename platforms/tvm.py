@@ -1,9 +1,11 @@
 import requests
 import re
+import os
 
 # Common Headers
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0",
+    "Origin": "https://tvmi.mt",
     "Referer": "https://tvmi.mt/"
 }
 
@@ -14,26 +16,45 @@ urls = [
     "https://tvmi.mt/live/4"
 ]
 
+# Corresponding names for the output files
+names = [
+    "tvm",
+    "tvmnews",
+    "tvmsport"
+]
 
+# Directory to save output files
+output_dir = "links"
+os.makedirs(output_dir, exist_ok=True)
+
+# Validate output directory
+if not os.path.isdir(output_dir):
+    print(f"Output directory {output_dir} does not exist.")
+    exit(1)
 
 # Print M3U Headers
 print("#EXTM3U")
 print("#EXT-X-VERSION:3")
 print('#EXT-X-STREAM-INF:BANDWIDTH=1755600,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"')
 
-# Process each URL
-for url in urls:
-    response = requests.get(url, headers=headers)
+# Process each URL and save to corresponding file
+for url, name in zip(urls, names):
+    try:
+        response = requests.get(url, headers=headers, timeout=10)
+        response.raise_for_status()  # Raise exception for HTTP errors
+        output_file = os.path.join(output_dir, f"{name}.m3u8")
 
-    if response.status_code == 200:
-        site_content = response.text
-        match = re.search(r'data-jwt="(.*?)"', site_content)
+        if response.status_code == 200:
+            site_content = response.text
+            match = re.search(r'data-jwt="(.*?)"', site_content)
 
-        if match:
-            data_jwt_value = match.group(1)
-            live_url_main = f"https://dist9.tvmi.mt/{data_jwt_value}/live/{url.split('/')[-1]}/0/index.m3u8"
-            print(live_url_main)
+            if match:
+                data_jwt_value = match.group(1)
+                live_url_main = f"https://dist9.tvmi.mt/{data_jwt_value}/live/{url.split('/')[-1]}/0/index.m3u8"
+                print(live_url_main)
+            else:
+                print(f"Live URL not found for {url}.")
         else:
-            print(f"https://Live URL not found for {url}.")
-    else:
-        print(f"https://Failed to fetch the website content for {url}.")
+            print(f"Failed to fetch the website content for {url}.")
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching {url}: {e}")
