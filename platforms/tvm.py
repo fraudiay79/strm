@@ -5,7 +5,6 @@ import os
 # Common Headers
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36 Edg/121.0.0.0",
-    "Origin": "https://tvmi.mt",
     "Referer": "https://tvmi.mt/"
 }
 
@@ -27,17 +26,7 @@ names = [
 output_dir = "links"
 os.makedirs(output_dir, exist_ok=True)
 
-# Validate output directory
-if not os.path.isdir(output_dir):
-    print(f"Output directory {output_dir} does not exist.")
-    exit(1)
-
-# Print M3U Headers
-print("#EXTM3U")
-print("#EXT-X-VERSION:3")
-print('#EXT-X-STREAM-INF:BANDWIDTH=1755600,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"')
-
-# Process each URL and save to corresponding file
+# Process each URL and save to a separate .m3u8 file
 for url, name in zip(urls, names):
     try:
         response = requests.get(url, headers=headers, timeout=10)
@@ -48,12 +37,21 @@ for url, name in zip(urls, names):
             site_content = response.text
             match = re.search(r'data-jwt="(.*?)"', site_content)
 
-            if match:
-                data_jwt_value = match.group(1)
-                live_url_main = f"https://dist9.tvmi.mt/{data_jwt_value}/live/{url.split('/')[-1]}/0/index.m3u8"
-                print(live_url_main)
-            else:
-                print(f"Live URL not found for {url}.")
+            with open(output_file, "w") as file:
+                # Write M3U headers
+                file.write("#EXTM3U\n")
+                file.write("#EXT-X-VERSION:3\n")
+                file.write('#EXT-X-STREAM-INF:BANDWIDTH=1755600,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"\n')
+
+                # Write the URL or error message
+                if match:
+                    data_jwt_value = match.group(1)
+                    live_url_main = f"https://dist9.tvmi.mt/{data_jwt_value}/live/{url.split('/')[-1]}/0/index.m3u8"
+                    file.write(f"{live_url_main}\n")
+                    print(f"Generated {output_file} with live URL.")
+                else:
+                    file.write(f"# Error: Live URL not found for {url}\n")
+                    print(f"Live URL not found for {url}.")
         else:
             print(f"Failed to fetch the website content for {url}.")
     except requests.exceptions.RequestException as e:
