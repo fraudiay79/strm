@@ -31,10 +31,6 @@ def Resolve(token):
             
             # Headers (optional in JSON)
             headers = source.get("headers", {})
-            headers['User-Agent'] = headers.get(
-                'User-Agent', 
-                'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
-            )
             
             for channel in source["channels"]:
                 # Get channel name and variables
