@@ -48,7 +48,7 @@ for url, name in zip(urls, names):
                 if match:
                     data_jwt_value = match.group(1)
                     live_url_main = f"https://dist9.tvmi.mt/{data_jwt_value}/live/{url.split('/')[-1]}/0/index.m3u8"
-                    file.write(f"{live_url_main}|Referer=\https://tvmi.mt/\\n")
+                    file.write(f"{live_url_main}|Referer=https://tvmi.mt/"\n')
                     print(f"Generated {output_file} with live URL and Referer header.")
                 else:
                     file.write(f"# Error: Live URL not found for {url}\n")
