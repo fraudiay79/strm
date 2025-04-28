@@ -27,7 +27,8 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 tvm.py
+            sh tvm.sh
+            #python3 tvm.py
       - name: commit and push files
         run: |
           git config --local user.email ""
