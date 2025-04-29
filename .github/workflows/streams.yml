@@ -41,7 +41,7 @@ jobs:
             python3 polska.py
             python3 tv8md.py
             sh tvm.sh
-            sh tvi.sh
+            sh tvipt.sh
             #python3 netplus.py > links/netplus.m3u
             python3 jurnaltv.py > links/jurnaltv.m3u8
             #python3 alrai.py > links/alrai.m3u8
