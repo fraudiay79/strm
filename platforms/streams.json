@@ -6,6 +6,86 @@
     },
     "channels": [
         {
+            "name": "BTV (Bulgaria)",
+            "slug": "btvbg",
+            "url": "https://btvplus.bg/live/"
+        },
+        {
+            "name": "Bloomberg (Bulgaria)",
+            "slug": "bloombergbg",
+            "url": "https://www.bloombergtv.bg/video"
+        },
+        {
+            "name": "Nova (Bulgaria)",
+            "slug": "novabg",
+            "url": "https://nova.bg/live"
+        },
+        {
+            "name": "Nova News(Bulgaria)",
+            "slug": "novanewsbg",
+            "url": "https://nova.bg/live/news"
+        },
+        {
+            "name": "Bulgaria On Air",
+            "slug": "bgonair",
+            "url": "https://www.bgonair.bg/tvonline"
+        },
+        {
+            "name": "BNT1",
+            "slug": "bnt1",
+            "url": "https://tv.bnt.bg/bnt1"
+        },
+        {
+            "name": "BNT2",
+            "slug": "bnt2",
+            "url": "https://tv.bnt.bg/bnt2"
+        },
+        {
+            "name": "BNT3",
+            "slug": "bnt3",
+            "url": "https://tv.bnt.bg/bnt3"
+        },
+        {
+            "name": "BNT4",
+            "slug": "bnt4",
+            "url": "https://tv.bnt.bg/bnt4"
+        },
+        {
+            "name": "LNK",
+            "slug": "lnklt",
+            "url": "https://lnk.lt/tiesiogiai#lnk"
+        },
+        {
+            "name": "BTV",
+            "slug": "btvlt",
+            "url": "https://lnk.lt/tiesiogiai#btv"
+        },
+        {
+            "name": "2TV",
+            "slug": "2tvlt",
+            "url": "https://lnk.lt/tiesiogiai#2tv"
+        },
+        {
+            "name": "Info TV",
+            "slug": "infolt",
+            "url": "https://lnk.lt/tiesiogiai#infotv"
+        },
+        {
+            "name": "TV1",
+            "slug": "tv1lt",
+            "url": "https://lnk.lt/tiesiogiai#tv1"
+        },
+        {
+            "name": "LTV1",
+            "slug": "ltv1lv",
+            "url": "https://replay.lsm.lv/lv/skaties/tiesraide/ltv1"
+        },
+        {
+            "name": "LTV7",
+            "slug": "ltv7lv",
+            "url": "https://replay.lsm.lv/lv/skaties/tiesraide/ltv7"
+        },
+        {
             "name": "Hadhramaut",
             "slug": "hadhramaut",
             "url": "https://www.twitch.tv/hadramout1"
