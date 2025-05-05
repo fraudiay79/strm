@@ -6,6 +6,16 @@
     },
     "channels": [
         {
+            "name": "Public Sénat",
+            "slug": "publicsenat",
+            "url": "https://www.dailymotion.com/video/xkxbzc"
+        },
+        {
+            "name": "B Smart",
+            "slug": "bsmart",
+            "url": "https://www.dailymotion.com/video/x7tn4fp"
+        },
+        {
             "name": "BTV (Bulgaria)",
             "slug": "btvbg",
             "url": "https://btvplus.bg/live/"
