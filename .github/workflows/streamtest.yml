@@ -27,9 +27,9 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python giniko.py giniko.json
+            #python giniko.py giniko.json
             #sh tvm.sh
-            #python3 tvm.py
+            python3 tego.py
       - name: commit and push files
         run: |
           git config --local user.email ""
