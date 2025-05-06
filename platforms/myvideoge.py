@@ -8,8 +8,10 @@ os.makedirs(output_dir, exist_ok=True)
 
 # List of URLs and corresponding names
 urls = [
-    "https://api.myvideo.ge/api/v1/channel/chunk/pirvelitv",    
+    "https://api.myvideo.ge/api/v1/channel/chunk/gpbhd", 
+    "https://api.myvideo.ge/api/v1/channel/chunk/pirvelitv",   
     "https://api.myvideo.ge/api/v1/channel/chunk/mtavari",    
+    "https://api.myvideo.ge/api/v1/channel/chunk/adjara",      
     "https://api.myvideo.ge/api/v1/channel/chunk/rustavi2hqnew",    
     "https://api.myvideo.ge/api/v1/channel/chunk/euronewsgeorgia",    
     "https://api.myvideo.ge/api/v1/channel/chunk/imedihd",    
@@ -87,12 +89,15 @@ urls = [
     "https://api.myvideo.ge/api/v1/channel/chunk/bmg",    
     "https://api.myvideo.ge/api/v1/channel/chunk/primetv",    
     "https://api.myvideo.ge/api/v1/channel/chunk/plustv",    
-    "https://api.myvideo.ge/api/v1/channel/chunk/tvtvc"
+    "https://api.myvideo.ge/api/v1/channel/chunk/tvtvc",    
+    "https://api.myvideo.ge/api/v1/channel/chunk/chadrakitv",    
+    "https://api.myvideo.ge/api/v1/channel/chunk/ilontv",    
+    "https://api.myvideo.ge/api/v1/channel/chunk/musicbox"
 ]
 
 # Corresponding names for the output files
 names = [
-    "pirvelitv", "mtavari", "rustavi2hqnew", "euronewsgeorgia", "imedihd", "postv", "formula",
+    "gpbhd", "pirvelitv", "mtavari", "adjara", "rustavi2hqnew", "euronewsgeorgia", "imedihd", "postv", "formula",
     "caucasia", "palitra", "maestro", "comedy", "marao", "rtv", "starvision",
     "artarea", "caucasia", "erimedia", "abkhaz", "agrogaremo", "agrotv", "drotv",
     "kartuliarkhi", "bbb", "enkibenki", "ertsulovneba", "qartuli", "puls", "musictv", "malltv",
@@ -102,7 +107,7 @@ names = [
     "positivetv", "meteo24", "tvsaperavi", "gms", "chadrakitv", "girchitv", "o2", "egrisitv",
     "argotv", "gmtv", "kolkheti89", "greentv", "borjomitv", "odishi", "nwbctv", "tv9",
     "tanamgzavri", "tafutv", "tv5geo", "gttv", "akhalitv", "tvmonitoring", "ctv",
-    "sezonitv", "bmg", "primetv", "plustv", "tvtvc"
+    "sezonitv", "bmg", "primetv", "plustv", "tvtvc", "chadrakitv", "ilontv", "musicbox"
 ]
 
 # Define headers, including referrer and origin
