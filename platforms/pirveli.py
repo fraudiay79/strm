@@ -1,10 +1,31 @@
 import requests
+import os
 
-# Define the API URL
+# Directory to save output files
+output_dir = "links"
+os.makedirs(output_dir, exist_ok=True)
+
+# Define API URL
 url = "https://api.myvideo.ge/api/v1/channel/chunk/pirvelitv"
 
-# Send the GET request
-response = requests.get(url)
+# Define headers, including referrer and origin
+headers = {
+    "accept": "application/json, text/plain, */*",
+    "accept-language": "ge",
+    "authorization": "Bearer YOUR_ACCESS_TOKEN",  # Replace with a valid token
+    "priority": "u=1, i",
+    "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "empty",
+    "sec-fetch-mode": "cors",
+    "sec-fetch-site": "same-site",
+    "referer": "https://tv.myvideo.ge/",
+    "origin": "https://tv.myvideo.ge"
+}
+
+# Send GET request to API
+response = requests.get(url, headers=headers)
 
 if response.status_code == 200:
     try:
@@ -16,8 +37,8 @@ if response.status_code == 200:
             # Extract base URL from file URL
             base_url = file_url.rsplit("/", 1)[0] + "/"
 
-            # Fetch m3u8 content
-            content_response = requests.get(file_url)
+            # Fetch m3u8 content using headers
+            content_response = requests.get(file_url, headers=headers)
             if content_response.status_code == 200:
                 content = content_response.text
                 lines = content.split("\n")
@@ -30,7 +51,13 @@ if response.status_code == 200:
                     else:
                         modified_content += line + "\n"
 
-                print(modified_content)
+                # Save the modified content to a file
+                output_file = os.path.join(output_dir, "pirvelitv.m3u8")
+                with open(output_file, "w") as file:
+                    file.write(modified_content)
+
+                print(f"Created file: {output_file}")
+
             else:
                 print("Failed to fetch m3u8 content.")
         else:
