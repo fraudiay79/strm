@@ -22,9 +22,9 @@ jwt_tvm=$(wget -qO- --keep-session-cookies --save-cookies "$cookie_file" \
 echo "JWT for tvm: $jwt_tvm"
 
 # Update the m3u8 file using the fetched token
-sed -i "/https:\/\/dist9.tvmi.mt/ c https://dist9.tvmi.mt/${jwt_tvm}/live/2/0/index.m3u8" links/tvm.m3u8
-sed -i "/https:\/\/dist9.tvmi.mt/ c https://dist9.tvmi.mt/${jwt_tvm}/live/3/0/index.m3u8" links/tvmnews.m3u8
-sed -i "/https:\/\/dist9.tvmi.mt/ c https://dist9.tvmi.mt/${jwt_tvm}/live/4/0/index.m3u8" links/tvmsport.m3u8
+sed -i "/https:\/\/dist9.tvmi.mt/ c https://dist9.tvmi.mt/${jwt_tvm}/live/2/0/index.m3u8" links/mt/tvm.m3u8
+sed -i "/https:\/\/dist9.tvmi.mt/ c https://dist9.tvmi.mt/${jwt_tvm}/live/3/0/index.m3u8" links/mt/tvmnews.m3u8
+sed -i "/https:\/\/dist9.tvmi.mt/ c https://dist9.tvmi.mt/${jwt_tvm}/live/4/0/index.m3u8" links/mt/tvmsport.m3u8
 
 # Cleanup cookies
 rm -f "$cookie_file"
