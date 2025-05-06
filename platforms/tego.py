@@ -1,6 +1,6 @@
 import requests
 import os
-import json  # Added json import
+import json
 
 # Define the token URL
 token_url = "https://api.siberapi.com/sso/get_guest_token.php?app_id=1"
@@ -10,11 +10,32 @@ streaming_urls = [
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/1?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/2?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/4?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/27?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1"
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/27?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/5?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/6?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/7?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/8?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/9?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/10?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/11?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/13?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1"
 ]
 
 # Corresponding names for the output files
-names = ["ttt", "synergy", "wpg10", "lfn"]
+names = [
+    "ttt",
+    "synergy",
+    "wpg10",
+    "lfntt",
+    "jaagriti",
+    "trinitytv",
+    "bhaktitv",
+    "ibntv",
+    "wacktv",
+    "abstv",
+    "ietv",
+    "plustv"
+]
 
 # Directory to save output files
 output_dir = "links"
@@ -54,11 +75,8 @@ if token_response.status_code == 200:
                     print(f"Error: Unable to retrieve streaming URL from {url}.")
                     continue
                 
-                # Ensure "index.m3u8" exists before replacing
-                if "index.m3u8" in mastlnk:
-                    base_link = mastlnk.replace("index.m3u8", "")
-                else:
-                    base_link = mastlnk  # Fallback
+                # Extract base URL and token
+                base_url, token = mastlnk.split("?token=")
 
                 # Generate multiple resolution variations
                 variations = {
@@ -74,7 +92,7 @@ if token_response.status_code == 200:
                     file.write("#EXTM3U\n")
 
                     for variant, (bandwidth, avg_bandwidth, resolution) in variations.items():
-                        modified_link = f"{base_link}{variant}/mono.m3u8"
+                        modified_link = f"{base_url}/{variant}/mono.m3u8?token={token}"
                         file.write(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=30.000,CODECS="avc1.4d401f,mp4a.40.2",CLOSED-CAPTIONS=NONE\n')
                         file.write(f"{modified_link}\n")
 
