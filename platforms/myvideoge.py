@@ -36,17 +36,15 @@ try:
     if file_url:
         # Define resolution variations
         variations = {
-            "master_v1": (6020000, 4810000, "1920x1080"),
-            "master_v2": (2710000, 2170000, "1280x720"),
-            "master_v3": (2160000, 1730000, "1024x576"),
+            "tracks-v1a1/mono": (6020000, 4810000, "1920x1080"),
+            "tracks-v1a1/mono": (2710000, 2170000, "1280x720"),
+            "tracks-v1a1/mono": (2160000, 1730000, "1024x576"),
         }
 
         output_file = os.path.join(output_dir, "stream_links.m3u8")
 
         with open(output_file, "w") as file:
             file.write("#EXTM3U\n")
-            file.write("#EXT-X-VERSION:4\n")
-            file.write("#EXT-X-INDEPENDENT-SEGMENTS\n")
 
             for variant, (bandwidth, avg_bandwidth, resolution) in variations.items():
                 modified_link = file_url.replace("index", variant)
