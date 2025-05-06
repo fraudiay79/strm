@@ -2,116 +2,91 @@ import requests
 import os
 import json
 
-# List of URLs to fetch JSON data
+# Define the authentication API URL to fetch the access token
+auth_url = "https://api.siberapi.com/sso/get_guest_token.php?app_id=1"
+
+# List of streaming URLs
 streaming_urls = [
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/1?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/2?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/4?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/27?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/5?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/6?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/7?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/8?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/9?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/10?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/11?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    "https://mw.siberapi.com/api/ui/stb/v3/Channels/13?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1"
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/27?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1"
 ]
 
 # Corresponding names for the output files
-names = [
-    "ttt",
-    "synergy",
-    "wpg10",
-    "lfntt",
-    "jaagriti",
-    "trinitytv",
-    "bhaktitv",
-    "ibntv",
-    "wacktv",
-    "abstv",
-    "ietv",
-    "plustv"
-]
+names = ["ttt", "synergy", "wpg10", "lfn"]
 
 # Directory to save output files
 output_dir = "links"
 os.makedirs(output_dir, exist_ok=True)
 
-# Function to fetch the token from the first streaming URL
-def fetch_token_from_first_url():
-    first_url = streaming_urls[0]  # Use the first streaming URL
+# **Step 1: Fetch the access_token**
+def fetch_access_token():
     try:
-        response = requests.get(first_url)
+        response = requests.get(auth_url)
         response.raise_for_status()
-        response_json = response.json()
-        token = response_json["response"]["tv_channel"][0].get("streaming_url")
-        if token and "?token=" in token:
-            return token.split("?token=")[1]  # Extract token
+        token_data = response.json()
+        
+        if "access_token" in token_data:
+            return token_data["access_token"]
         else:
-            print("Error: Token not found in response.")
+            print("Error: access_token not found in authentication response.")
             return None
+
     except requests.exceptions.RequestException as e:
-        print(f"Error fetching token from {first_url}: {e}")
+        print(f"Error fetching access_token: {e}")
         return None
 
-# Fetch the token once
-access_token = fetch_token_from_first_url()
+# **Step 2: Fetch the ?token= from the first streaming URL**
+def fetch_token_from_first_url(access_token):
+    first_url = streaming_urls[0]  # Use the first streaming URL
+    headers = {
+        "Authorization": f"Bearer {access_token}"
+    }
+    
+    try:
+        response = requests.get(first_url, headers=headers)
+        response.raise_for_status()
+        response_json = response.json()
+
+        if "tv_channel" in response_json.get("response", {}) and response_json["response"]["tv_channel"]:
+            mastlnk = response_json["response"]["tv_channel"][0].get("streaming_url")
+            if mastlnk and "?token=" in mastlnk:
+                return mastlnk.split("?token=")[1]  # Extract the token value
+        
+        print("Error: Streaming token not found in first API response.")
+        return None
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching streaming token from {first_url}: {e}")
+        return None
+
+# Fetch access_token first
+access_token = fetch_access_token()
 
 if access_token:
     print("Access Token Retrieved:", access_token)
+    
+    # Fetch token from first streaming URL
+    streaming_token = fetch_token_from_first_url(access_token)
 
-    # Adjusted Headers for API requests
-    headers = {
-        "accept": "*/*",
-        "accept-language": "en-US,en;q=0.9",
-        "authorization": f"Bearer {access_token}",
-        "priority": "u=1, i",
-        "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
-        "sec-ch-ua-mobile": "?0",
-        "sec-ch-ua-platform": "\"Windows\"",
-        "sec-fetch-dest": "empty",
-        "sec-fetch-mode": "cors",
-        "sec-fetch-site": "cross-site"
-    }
+    if streaming_token:
+        print("Streaming Token Retrieved:", streaming_token)
 
-    # Process each URL using the same token
-    for url, name in zip(streaming_urls, names):
-        try:
-            resplink = requests.get(url, headers=headers)
-            resplink.raise_for_status()
-            response_json = resplink.json()
+        # Process each URL using the same streaming token
+        for url, name in zip(streaming_urls, names):
+            base_url = url.split("?")[0]  # Extract base part of the URL
+            modified_link = f"{base_url}?token={streaming_token}"
 
-            mastlnk = response_json["response"]["tv_channel"][0].get("streaming_url")
-            if not mastlnk:
-                print(f"Error: Unable to retrieve streaming URL from {url}.")
-                continue
-
-            base_url = mastlnk.split("?token=")[0]  # Extract base URL
-
-            # Generate multiple resolution variations
-            variations = {
-                "tracks-v1a1": (440000, 350000, "256x144"),
-                "tracks-v2a1": (780000, 620000, "640x360"),
-                "tracks-v3a1": (1300000, 1040000, "1024x576"),
-                "tracks-v4a1": (1980000, 1580000, "1280x720"),
-            }
-
+            # Save the modified streaming URL
             output_file = os.path.join(output_dir, f"{name}.m3u8")
-
             with open(output_file, "w") as file:
-                file.write("#EXTM3U\n")
-
-                for variant, (bandwidth, avg_bandwidth, resolution) in variations.items():
-                    modified_link = f"{base_url}/{variant}/mono.m3u8?token={access_token}"
-                    file.write(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=30.000,CODECS="avc1.4d401f,mp4a.40.2",CLOSED-CAPTIONS=NONE\n')
-                    file.write(f"{modified_link}\n")
+                file.write(modified_link)
 
             print(f"Created file: {output_file}")
 
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching data from {url}: {e}")
-        except (KeyError, IndexError, json.JSONDecodeError) as e:
-            print(f"Error parsing JSON response from {url}: {e}")
+    else:
+        print("Failed to retrieve a valid streaming token. Script terminated.")
+
 else:
-    print("Failed to retrieve a valid token. Script terminated.")
+    print("Failed to retrieve a valid access_token. Script terminated.")
