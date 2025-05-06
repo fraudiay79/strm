@@ -66,7 +66,7 @@ names = [
 ]
 
 # Directory to save output files
-output_dir = "links"
+output_dir = "links/pl"
 os.makedirs(output_dir, exist_ok=True)
 
 # Process each URL and save to corresponding file
