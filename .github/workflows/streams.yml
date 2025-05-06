@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            #python myvideoaz.py myvideoaz.json
+            python myvideoaz.py myvideoaz.json
             python yodaplayer.py yodaplayer.json
             #python giniko.py giniko.json
             python mediabay.py mediabay.json
