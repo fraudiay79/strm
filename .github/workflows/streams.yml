@@ -34,9 +34,9 @@ jobs:
             pwd
             cd ./platforms/
             #python myvideoaz.py myvideoaz.json
-            python yodaplayer.py yodaplayer.json
+            #python yodaplayer.py yodaplayer.json
             #python giniko.py giniko.json
-            python mediabay.py mediabay.json
+            #python mediabay.py mediabay.json
             python streams.py streams.json
             python3 tego.py
             python3 polska.py
