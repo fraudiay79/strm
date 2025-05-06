@@ -29,7 +29,7 @@ jobs:
             cd ./platforms/
             #python giniko.py giniko.json
             #sh tvm.sh
-            python3 tego.py
+            python3 myvideoge.py
       - name: commit and push files
         run: |
           git config --local user.email ""
