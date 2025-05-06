@@ -38,6 +38,7 @@ jobs:
             #python giniko.py giniko.json
             python mediabay.py mediabay.json
             python streams.py streams.json
+            python3 tego.py
             python3 polska.py
             python3 tv8md.py
             sh tvm.sh
