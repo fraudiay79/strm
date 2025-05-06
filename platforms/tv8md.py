@@ -15,7 +15,7 @@ urls = ["https://api.tv8.md/v1/live"]
 names = ["tv8md"]
 
 # Directory to save output files
-output_dir = "links"
+output_dir = "links/md"
 os.makedirs(output_dir, exist_ok=True)
 
 # Process each URL and save to corresponding file
