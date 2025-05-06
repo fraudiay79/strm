@@ -9,32 +9,35 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps: 
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-            python-version: '3.x' 
+          python-version: '3.x'
             
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          
-          pwd
           cd ./platforms/
-          
           pip3 install -r requirements.txt
-          pip3 install beautifulsoup4
-          pip3 install selenium
-      - name: execute py script 
-        run:  |
-            pwd
-            cd ./platforms/
-            python3 myvideoge.py
-            python3 myvideoaz.py myvideoaz.json
-      - name: commit and push files
+          pip3 install beautifulsoup4 selenium
+          
+      - name: Execute Python scripts
         run: |
-          git config --local user.email ""
+          cd ./platforms/
+          python3 myvideoge.py
+          python3 myvideoaz.py myvideoaz.json
+
+      - name: Pull remote changes before pushing
+        run: |
+          git pull --rebase origin main
+
+      - name: Commit and push files
+        run: |
+          git config --local user.email "your-email@example.com"
           git config --local user.name "Stream Ninja 🥷🏽"
           git add -A
           git commit -m "updated streams"
-          git push
+          git push origin main
