@@ -6,6 +6,11 @@
     },
     "channels": [
         {
+            "name": "CCN TV6",
+            "slug": "ccntv6",
+            "url": "https://www.dailymotion.com/video/x7x3klh"
+        },
+        {
             "name": "Public Sénat",
             "slug": "publicsenat",
             "url": "https://www.dailymotion.com/video/xkxbzc"
