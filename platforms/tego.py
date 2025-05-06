@@ -25,7 +25,7 @@ streaming_urls = [
 names = ["ttt", "synergy", "wpg10", "lfntt", "jaagriti", "trinitytv", "bhaktitv", "ibntv", "wacktv", "abstv", "ietv", "plustv"]
 
 # Directory to save output files
-output_dir = "links"
+output_dir = "links/tt"
 os.makedirs(output_dir, exist_ok=True)
 
 # Fetch the access token
