@@ -30,6 +30,11 @@ jobs:
           python3 myvideoge.py
           python3 myvideoaz.py myvideoaz.json
 
+      - name: Commit local changes before pulling
+        run: |
+          git add -A
+          git commit -m "Saving local changes before pull"
+
       - name: Pull remote changes before pushing
         run: |
           git pull --rebase origin main
