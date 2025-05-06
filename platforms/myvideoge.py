@@ -3,7 +3,7 @@ import os
 import json
 
 # Directory to save output files
-output_dir = "links"
+output_dir = "links/ge"
 os.makedirs(output_dir, exist_ok=True)
 
 # List of URLs and corresponding names
