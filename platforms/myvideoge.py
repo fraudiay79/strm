@@ -1,5 +1,6 @@
 import requests
 import os
+import json
 
 # Directory to save output files
 output_dir = "links"
@@ -30,46 +31,49 @@ headers = {
 
 # Loop through each URL and corresponding name
 for url, name in zip(urls, names):
-    base_url = f"http://nue01-edge03.itdc.ge/{name}/"  # Correctly format base URL
+    base_url = f"http://nue01-edge03.itdc.ge/{name}/"  # Ensure correct format
 
-    response = requests.get(url, headers=headers)
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
 
-    if response.status_code == 200:
+        # Parse JSON response safely
         try:
             json_data = response.json()
-            file_url = json_data.get("data", {}).get("attributes", {}).get("file")
-
-            if file_url:
-                # Fetch m3u8 content using headers
-                content_response = requests.get(file_url, headers=headers)
-                if content_response.status_code == 200:
-                    content = content_response.text
-                    lines = content.split("\n")
-                    modified_content = ""
-
-                    for line in lines:
-                        line = line.strip()
-                        if line and not line.startswith("#") and not line.startswith("http"):
-                            full_url = base_url + line
-                            modified_content += full_url + "\n"
-                        else:
-                            modified_content += line + "\n"
-
-                    # Save the modified content to a file
-                    output_file = os.path.join(output_dir, f"{name}.m3u8")
-                    with open(output_file, "w") as file:
-                        file.write(modified_content)
-
-                    print(f"Created file: {output_file}")
-
-                else:
-                    print(f"Failed to fetch m3u8 content for {name}.")
-            else:
-                print(f"File URL not found for {name}.")
-
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching data for {name}: {e}")
-        except ValueError:
+        except json.JSONDecodeError:
             print(f"Error: Invalid JSON response for {name}.")
-    else:
-        print(f"Failed to fetch API content for {name}. Status code:", response.status_code)
+            continue
+
+        file_url = json_data.get("data", {}).get("attributes", {}).get("file")
+
+        if not file_url:
+            print(f"Error: 'file' key missing for {name}.")
+            continue
+
+        # Fetch m3u8 content using headers
+        content_response = requests.get(file_url, headers=headers)
+        content_response.raise_for_status()
+
+        content = content_response.text
+        lines = content.split("\n")
+        modified_content = ""
+
+        for line in lines:
+            line = line.strip()
+            if not line:  # Skip empty lines
+                continue
+            if not line.startswith("#") and not line.startswith("http"):
+                full_url = base_url + line
+                modified_content += full_url + "\n"
+            else:
+                modified_content += line + "\n"
+
+        # Save the modified content to a file
+        output_file = os.path.join(output_dir, f"{name}.m3u8")
+        with open(output_file, "w") as file:
+            file.write(modified_content)
+
+        print(f"Created file: {output_file}")
+
+    except requests.exceptions.RequestException as e:
+        print(f"Error fetching data for {name}: {e}")
