@@ -30,6 +30,7 @@ jobs:
             #python giniko.py giniko.json
             #sh tvm.sh
             python3 myvideoge.py
+            python3 myvideoaz.py myvideoaz.json
       - name: commit and push files
         run: |
           git config --local user.email ""
