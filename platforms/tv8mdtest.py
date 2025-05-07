@@ -1,5 +1,4 @@
 import requests
-import re
 
 base_url = "https://live.cdn.tv8.md/TV7/"
 api_url = "https://api.tv8.md/v1/live"
