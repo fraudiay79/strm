@@ -1,25 +1,36 @@
 import requests
+import re
 
-# Step 1: Get JSON data from API
+base_url = "https://live.cdn.tv8.md/TV7/"
 api_url = "https://api.tv8.md/v1/live"
+
+# Step 1: Fetch JSON data
 response = requests.get(api_url)
 
 if response.status_code == 200:
-    json_data = response.json()  # Convert response to JSON
-    live_url = json_data.get("liveUrl")  # Extract m3u8 link
-    
+    json_data = response.json()
+    live_url = json_data.get("liveUrl")
+
     if live_url:
-        # Step 2: Fetch the content from the live_url
-        response = requests.get(live_url)
+        # Step 2: Fetch content from liveUrl
+        content_response = requests.get(live_url)
         
-        if response.status_code == 200:
-            content = response.text
-            lines = content.splitlines()
+        if content_response.status_code == 200:
+            content = content_response.text
+            lines = content.split("\n")
+            modified_content = ""
+
             for line in lines:
-                print(line)
+                if line.startswith("live_"):
+                    full_url = base_url + line
+                    modified_content += full_url + "\n"
+                else:
+                    modified_content += line + "\n"
+
+            print(modified_content)
         else:
-            print(f"Failed to retrieve the file. Status code: {response.status_code}")
+            print("Failed to fetch content.")
     else:
-        print("Failed to extract the m3u8 link from the JSON response.")
+        print("Live URL not found in the JSON response.")
 else:
-    print(f"Failed to retrieve the JSON data. Status code: {response.status_code}")
+    print("Failed to fetch the API content.")
