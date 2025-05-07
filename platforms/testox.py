@@ -18,17 +18,14 @@ if response.status_code == 200:
     # Extract kodk, kos, and playerjs values using regex
     kodk_match = re.search(r'var kodk\s*=\s*"(.*?)"', site_content)
     kos_match = re.search(r'var kos\s*=\s*"(.*?)"', site_content)
-    playerjs_match = re.search(r'new Playerjs\("#(.*?)"\)', site_content)
+    playerjs_match = re.search(r'new Playerjs\("#(.*?)"\)', site_content)  # Remove "#"
 
     if not (kodk_match and kos_match and playerjs_match):
         print("Error: Missing required values (kodk, kos, playerjs) in page source.")
     else:
         kodk = kodk_match.group(1)
         kos = kos_match.group(1)
-        playerjs_encoded = playerjs_match.group(1)
-
-        # Debugging: Print extracted playerjs value before decoding
-        print(f"Extracted playerjs: {playerjs_encoded}")
+        playerjs_encoded = playerjs_match.group(1).lstrip("#")  # Remove the "#"
 
         # Fix Base64 padding issue
         missing_padding = len(playerjs_encoded) % 4
@@ -39,7 +36,7 @@ if response.status_code == 200:
             decoded_playerjs = base64.b64decode(playerjs_encoded).decode("utf-8")
             print(f"Decoded playerjs: {decoded_playerjs}")  # Debugging step
         except Exception as e:
-            print("Error decoding playerjs:", e)
+            print(f"Error decoding playerjs: {e}")
             decoded_playerjs = ""
 
         # Attempt to parse JSON
