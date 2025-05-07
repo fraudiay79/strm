@@ -80,8 +80,6 @@ headers = {
 
 # Loop through each URL and corresponding name
 for url, name in zip(urls, names):
-    
-
     try:
         response = requests.get(url, headers=headers)
         response.raise_for_status()
@@ -99,23 +97,25 @@ for url, name in zip(urls, names):
             print(f"Error: 'streamUrl' key missing for {name}.")
             continue
 
+        # Extract base URL from streamUrl
+        base_url = file_url.rsplit("/", 1)[0] + "/"
+
         # Fetch m3u8 content using headers
         content_response = requests.get(file_url, headers=headers)
         content_response.raise_for_status()
 
         content = content_response.text
         lines = content.split("\n")
-        modified_content = ""
+        modified_content = "#EXTM3U\n"
 
         for line in lines:
             line = line.strip()
             if not line:  # Skip empty lines
                 continue
-            if not line.startswith("#") and not line.startswith("http"):
-                full_url = base_url + line
-                modified_content += full_url + "\n"
-            else:
+            if line.startswith("#"):
                 modified_content += line + "\n"
+            elif line.startswith("tracks-"):  # Ensure full URL for track listings
+                modified_content += base_url + line + "\n"
 
         # Save the modified content to a file
         output_file = os.path.join(output_dir, f"{name}.m3u8")
