@@ -30,17 +30,17 @@ if response.status_code == 200:
         # Debugging: Print extracted playerjs value before attempting decoding
         print(f"Extracted playerjs: {playerjs_encoded}")
 
-        # Validate if the extracted string is Base64
-        if len(playerjs_encoded) % 4 != 0:
-            print("Warning: Extracted playerjs is not a valid Base64 string (incorrect padding).")
-            decoded_playerjs = playerjs_encoded  # Use raw string instead of decoding
-        else:
-            try:
-                decoded_playerjs = base64.b64decode(playerjs_encoded).decode("utf-8")
-                print(f"Decoded playerjs: {decoded_playerjs}")  # Debugging step
-            except Exception as e:
-                print(f"Error decoding playerjs: {e}")
-                decoded_playerjs = ""
+        # Fix Base64 padding issue before decoding
+        missing_padding = len(playerjs_encoded) % 4
+        if missing_padding:
+            playerjs_encoded += "=" * (4 - missing_padding)
+
+        try:
+            decoded_playerjs = base64.b64decode(playerjs_encoded).decode("utf-8")
+            print(f"Decoded playerjs: {decoded_playerjs}")  # Debugging step
+        except Exception as e:
+            print(f"Error decoding playerjs: {e}")
+            decoded_playerjs = ""
 
         # Attempt to parse JSON if decoding was successful
         try:
