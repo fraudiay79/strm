@@ -20,16 +20,9 @@ if response.status_code == 200:
             modified_content = ""
 
             for line in lines:
-                if line.startswith("live_"):
-                    full_url = base_url + line
-                    modified_content += full_url + "\n"
-                else:
-                    modified_content += line + "\n"
+                full_url = base_url + line
+                modified_content += full_url + "\n"
 
             print(modified_content)
-        else:
-            print("Failed to fetch content.")
-    else:
-        print("Live URL not found in the JSON response.")
 else:
     print("Failed to fetch the API content.")
