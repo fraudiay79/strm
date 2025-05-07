@@ -16,6 +16,9 @@ def get_live_url_via_selenium():
 
     try:
         driver.get("https://tv8.md/live")
+
+        # Extract cookies to maintain session token consistency
+        cookies = {cookie['name']: cookie['value'] for cookie in driver.get_cookies()}
         page_source = driver.page_source
 
         # Extract the live URL (with token)
@@ -23,17 +26,17 @@ def get_live_url_via_selenium():
         driver.quit()
 
         if live_url_match:
-            return live_url_match.group(1)  # Return the extracted live URL
+            return live_url_match.group(1), cookies  # Return the extracted live URL & cookies
         else:
             print("Error: Live URL not found using Selenium.")
-            return None
+            return None, None
     except Exception as e:
         print(f"Error fetching live URL via Selenium: {e}")
         driver.quit()
-        return None
+        return None, None
 
 # Use Selenium first to retrieve live URL
-live_url = get_live_url_via_selenium()
+live_url, cookies = get_live_url_via_selenium()
 
 # If Selenium fails, try using the API request
 if not live_url:
@@ -44,10 +47,12 @@ if not live_url:
         "Accept": "*/*",
         "Accept-Language": "en-US,en;q=0.9",
         "Referer": "https://tv8.md/live",
-        "Origin": "https://tv8.md"
+        "Origin": "https://tv8.md",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
     }
 
-    response = requests.get(api_url, headers=headers)
+    session = requests.Session()  # Maintain session consistency
+    response = session.get(api_url, headers=headers, cookies=cookies)
 
     if response.status_code == 200:
         json_data = response.json()
@@ -63,8 +68,8 @@ if not live_url:
 # Base URL for media streams
 base_url = "https://live.cdn.tv8.md/TV7/"
 
-# Step 2: Fetch M3U8 content
-content_response = requests.get(live_url, headers=headers)
+# Step 2: Fetch M3U8 content using session
+content_response = session.get(live_url, headers=headers, cookies=cookies)
 
 if content_response.status_code == 200:
     content = content_response.text
