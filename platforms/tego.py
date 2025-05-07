@@ -21,8 +21,8 @@ STREAMING_URLS = [
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/13?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1"
 ]
 
-# Corresponding names for the output files
-names = ["ttt", "synergy", "wpg10", "lfntt", "jaagriti", "trinitytv", "bhaktitv", "ibntv", "wacktv", "abstv", "ietv", "plustv"]
+# Corresponding names for output files
+NAMES = ["ttt", "synergy", "wpg10", "lfntt", "jaagriti", "trinitytv", "bhaktitv", "ibntv", "wacktv", "abstv", "ietv", "plustv"]
 
 # Directory to save output files
 OUTPUT_DIR = "links/tt"
