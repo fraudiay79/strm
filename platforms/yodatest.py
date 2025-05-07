@@ -7,7 +7,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.chrome.options import Options
 
 # Directory to save output files
-output_dir = "links/mt"
+output_dir = "links/yoda"
 os.makedirs(output_dir, exist_ok=True)
 
 # Headers to match browser behavior
@@ -63,7 +63,8 @@ if response.status_code == 200:
         token = match.group(1)
 
     if token:
-        names = ["aztv", "xazar"]
+        names = ["aztv", "xazar", "arb24", "ntv", "apatv", "bakutv", "atv", "haberglobal", "real", "tmbtr", "tmbaz", "arb", "start", "ictimai", "kanal35", "idman", 
+                "gunaztv", "eltv", "qafkaz", "arbgunesh", "cbc", "medeniyyet", "space", "tmb", "agrotv", "showplus", "mtvaz", "shtv", "vip"]
         
         for name in names:
             m3u8_url = f"https://str.yodacdn.net/{name}/video.m3u8?token={token}"
