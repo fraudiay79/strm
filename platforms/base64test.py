@@ -1,7 +1,7 @@
 import base64
 
 # Encoded string
-encoded_str = "#FeyJpZCI6InBsX29rIiwiZmlsZSI6Int2MX01MjRFNTU2RzNEUTFW7djJ9ZjE3NzI3ZjkzNmI4MDE5ZmMyYTAFNTU2RzNEUQ==5In0="
+encoded_str = "#FeyJpZCIFNTU2RzNEUQ==6InBsX29rIiwiZmlsZSI6Int2MX1jMDY1e3YyfWYyOWNiYjMzYjNmODI3FNTU2RzM=OTkxMWViYzhlIn0="
 
 # Step 1: Remove leading "#"
 encoded_str = encoded_str.lstrip("#")
