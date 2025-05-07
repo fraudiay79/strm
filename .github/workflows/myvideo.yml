@@ -1,4 +1,4 @@
-name: run myvideoge.py
+name: run myvideo.py
 
 on:
   schedule:
@@ -27,6 +27,7 @@ jobs:
       - name: Execute Python scripts
         run: |
           cd ./platforms/
+          python3 tego.py
           python3 myvideoge.py
           python3 myvideoaz.py myvideoaz.json
 
