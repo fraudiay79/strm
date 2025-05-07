@@ -17,7 +17,7 @@ if response.status_code == 200:
     match = re.search(r'data-token="(.*?)"', site_content)
 
     if match:
-        token = match.group(0)
+        token = match.group(1)
 
         for name in names:
             m3u8_url = f"https://str.yodacdn.net/{name}/video.m3u8?token={token}"
