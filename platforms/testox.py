@@ -27,6 +27,9 @@ if response.status_code == 200:
         kos = kos_match.group(1)
         playerjs_encoded = playerjs_match.group(1)
 
+        # Debugging: Print extracted playerjs value before decoding
+        print(f"Extracted playerjs: {playerjs_encoded}")
+
         # Fix Base64 padding issue
         missing_padding = len(playerjs_encoded) % 4
         if missing_padding:
@@ -34,6 +37,7 @@ if response.status_code == 200:
 
         try:
             decoded_playerjs = base64.b64decode(playerjs_encoded).decode("utf-8")
+            print(f"Decoded playerjs: {decoded_playerjs}")  # Debugging step
         except Exception as e:
             print("Error decoding playerjs:", e)
             decoded_playerjs = ""
@@ -41,6 +45,7 @@ if response.status_code == 200:
         # Attempt to parse JSON
         try:
             decoded_json = json.loads(decoded_playerjs)
+            print(f"Parsed JSON data: {decoded_json}")  # Debugging step
             v1 = decoded_json.get("v1", "")
             v2 = decoded_json.get("v2", "")
         except json.JSONDecodeError:
