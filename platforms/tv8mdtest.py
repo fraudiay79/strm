@@ -20,8 +20,8 @@ if response.status_code == 200:
             modified_content = ""
 
             for line in lines:
-                # Only prepend base_url to lines that contain actual stream file paths
-                if line.endswith(".ts") or line.endswith(".m3u8"):
+                # Check if the line contains ".ts" or ".m3u8" and prepend base_url
+                if ".ts" in line or ".m3u8" in line:
                     full_url = base_url + line
                 else:
                     full_url = line
