@@ -18,7 +18,7 @@ if response.status_code == 200:
     # Extract kodk, kos, and playerjs values using regex
     kodk_match = re.search(r'var kodk\s*=\s*"(.*?)"', site_content)
     kos_match = re.search(r'var kos\s*=\s*"(.*?)"', site_content)
-    playerjs_match = re.search(r'new Playerjs\("#(.*?)"\)', site_content)  # Remove "#"
+    playerjs_match = re.search(r'new Playerjs\("#(.*?)"\)', site_content)  # Removed the "#"
 
     if not (kodk_match and kos_match and playerjs_match):
         print("Error: Missing required values (kodk, kos, playerjs) in page source.")
@@ -27,19 +27,22 @@ if response.status_code == 200:
         kos = kos_match.group(1)
         playerjs_encoded = playerjs_match.group(1).lstrip("#")  # Remove the "#"
 
-        # Fix Base64 padding issue
-        missing_padding = len(playerjs_encoded) % 4
-        if missing_padding:
-            playerjs_encoded += "=" * (4 - missing_padding)
+        # Debugging: Print extracted playerjs value before attempting decoding
+        print(f"Extracted playerjs: {playerjs_encoded}")
 
-        try:
-            decoded_playerjs = base64.b64decode(playerjs_encoded).decode("utf-8")
-            print(f"Decoded playerjs: {decoded_playerjs}")  # Debugging step
-        except Exception as e:
-            print(f"Error decoding playerjs: {e}")
-            decoded_playerjs = ""
+        # Validate if the extracted string is Base64
+        if len(playerjs_encoded) % 4 != 0:
+            print("Warning: Extracted playerjs is not a valid Base64 string (incorrect padding).")
+            decoded_playerjs = playerjs_encoded  # Use raw string instead of decoding
+        else:
+            try:
+                decoded_playerjs = base64.b64decode(playerjs_encoded).decode("utf-8")
+                print(f"Decoded playerjs: {decoded_playerjs}")  # Debugging step
+            except Exception as e:
+                print(f"Error decoding playerjs: {e}")
+                decoded_playerjs = ""
 
-        # Attempt to parse JSON
+        # Attempt to parse JSON if decoding was successful
         try:
             decoded_json = json.loads(decoded_playerjs)
             print(f"Parsed JSON data: {decoded_json}")  # Debugging step
