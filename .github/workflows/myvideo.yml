@@ -41,4 +41,4 @@ jobs:
           git config --local user.name "Stream Ninja 🥷🏽"
           git add -A
           git commit -m "updated streams"
-          git push
+          git push -f origin main
