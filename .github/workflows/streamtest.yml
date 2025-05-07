@@ -29,7 +29,7 @@ jobs:
             cd ./platforms/
             #python giniko.py giniko.json
             #sh tvm.sh
-            python3 base64test.py
+            python3 tvm.py
             #python3 tv8mdtest.py > links/tv8mdtest.m3u8
             #python3 myvideoaz.py myvideoaz.json
       - name: commit and push files
