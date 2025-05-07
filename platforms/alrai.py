@@ -12,7 +12,7 @@ if response.status_code == 200:
 
     if match:
         m3u8_url = match.group(0)
-        print(f"Extracted M3U8 URL: {m3u8_url}")
+        #print(f"Extracted M3U8 URL: {m3u8_url}")
 
         # Fetch m3u8 content
         content_response = requests.get(m3u8_url)
