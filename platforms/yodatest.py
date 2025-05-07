@@ -1,6 +1,10 @@
 import requests
 import re
 
+# Directory to save output files
+output_dir = "links/test"
+os.makedirs(output_dir, exist_ok=True)
+
 names = ["aztv", "xazar"]
 url = "https://yodaplayer.yodacdn.net/"
 
