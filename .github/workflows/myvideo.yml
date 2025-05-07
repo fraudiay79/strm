@@ -38,7 +38,7 @@ jobs:
       - name: commit and push files
         run: |
           git config --local user.email ""
-          git config --local user.name "Stream Ninja 🥷🏽"
+          git config --local user.name "Squeaky Ninja 🥷🏽"
           git add -A
           git commit -m "updated streams"
           git push -f origin main
