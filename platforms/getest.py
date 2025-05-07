@@ -23,7 +23,7 @@ def get_bearer_token():
         return None
 
 # Directory to save output files
-output_dir = "links/ge"
+output_dir = "links/testge"
 os.makedirs(output_dir, exist_ok=True)
 
 # List of URLs and corresponding names
