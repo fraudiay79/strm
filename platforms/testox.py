@@ -18,19 +18,19 @@ if response.status_code == 200:
     # Extract kodk, kos, and playerjs values using regex
     kodk_match = re.search(r'var kodk\s*=\s*"(.*?)"', site_content)
     kos_match = re.search(r'var kos\s*=\s*"(.*?)"', site_content)
-    playerjs_match = re.search(r'new Playerjs\("#(.*?)"\)', site_content)  # Ensure we correctly extract only the Base64 part
+    playerjs_match = re.search(r'new Playerjs\("#([A-Za-z0-9+/=]+)"\)', site_content)  # Restrict to valid Base64 characters
 
     if not (kodk_match and kos_match and playerjs_match):
         print("Error: Missing required values (kodk, kos, playerjs) in page source.")
     else:
         kodk = kodk_match.group(1)
         kos = kos_match.group(1)
-        playerjs_encoded = playerjs_match.group(1).lstrip("#")  # Remove the "#" if present
+        playerjs_encoded = playerjs_match.group(1).lstrip("#")  # Remove leading "#"
 
-        # Debugging: Print extracted playerjs value before attempting decoding
-        print(f"Raw extracted playerjs: {playerjs_encoded}")
+        # Debugging: Print extracted playerjs before decoding
+        print(f"Extracted playerjs: {playerjs_encoded}")
 
-        # Ensure proper Base64 formatting by restoring missing padding if needed
+        # Ensure proper Base64 padding before decoding
         missing_padding = len(playerjs_encoded) % 4
         if missing_padding:
             playerjs_encoded += "=" * (4 - missing_padding)
