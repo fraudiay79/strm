@@ -20,9 +20,18 @@ if response.status_code == 200:
             modified_content = ""
 
             for line in lines:
-                full_url = base_url + line
+                # Only prepend base_url to lines that contain actual stream file paths
+                if line.endswith(".ts") or line.endswith(".m3u8"):
+                    full_url = base_url + line
+                else:
+                    full_url = line
+                
                 modified_content += full_url + "\n"
 
             print(modified_content)
+        else:
+            print("Failed to fetch content.")
+    else:
+        print("Live URL not found in the JSON response.")
 else:
     print("Failed to fetch the API content.")
