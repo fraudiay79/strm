@@ -40,11 +40,11 @@ jobs:
             python streams.py streams.json
             python3 tego.py
             python3 polska.py
-            python3 tv8md.py
+            python3 tv8md.py > links/md/tv8md.m3u8
             sh tvm.sh
             sh tvipt.sh
             #python3 netplus.py > links/netplus.m3u
-            python3 jurnaltv.py > links/jurnaltv.m3u8
+            python3 jurnaltv.py > links/md/jurnaltv.m3u8
             #python3 alrai.py > links/alrai.m3u8
       - name: commit and push files
         run: |
