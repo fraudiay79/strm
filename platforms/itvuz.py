@@ -106,7 +106,7 @@ for url, name in zip(urls, names):
 
         content = content_response.text
         lines = content.split("\n")
-        modified_content = "#EXTM3U\n"
+        modified_content = ""
 
         for line in lines:
             line = line.strip()
