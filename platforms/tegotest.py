@@ -15,8 +15,16 @@ STREAMING_URLS = [
 NAMES = ["ttt", "synergy"]
 
 # Directory to save output files
-OUTPUT_DIR = "links/tt"
+OUTPUT_DIR = "links/test"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+# Predefined bitrate and resolution variations
+VARIATIONS = {
+    "tracks-v1a1": (440000, 350000, "256x144"),
+    "tracks-v2a1": (780000, 620000, "640x360"),
+    "tracks-v3a1": (1300000, 1040000, "1024x576"),
+    "tracks-v4a1": (1980000, 1580000, "1280x720"),
+}
 
 
 def fetch_access_token():
@@ -65,19 +73,21 @@ def process_streaming_links():
         base_url, token = mastlnk.split("?token=")
         base_url = base_url.replace("index.m3u8", "")
 
-        variations = ["tracks-v1a1", "tracks-v2a1", "tracks-v3a1", "tracks-v4a1"]
-
         output_file = os.path.join(OUTPUT_DIR, f"{name}.m3u8")
 
         with open(output_file, "w") as file:
             file.write("#EXTM3U\n")
-            for variant in variations:
+
+            for variant, (bandwidth, avg_bandwidth, resolution) in VARIATIONS.items():
                 modified_link = f"{base_url}{variant}/mono.m3u8?token={token}"
+                file.write(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution}\n')
                 file.write(f"{modified_link}\n")
 
-        # Print the modified links
+        # Print the modified links with metadata
         print(f"--- M3U8 Content for {name} ---")
-        for variant in variations:
+        print("#EXTM3U")
+        for variant, (bandwidth, avg_bandwidth, resolution) in VARIATIONS.items():
+            print(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution}')
             print(f"{base_url}{variant}/mono.m3u8?token={token}")
 
         print(f"Created file: {output_file}")
