@@ -1,8 +1,12 @@
-Error: API URL not found using Selenium.
+Error: Live URL not found using Selenium.
+Trying to fetch live URL via API request...
+
+--- Modified M3U8 Content ---
+
 #EXTM3U
 #EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2790000,BANDWIDTH=3490000,RESOLUTION=1024x576,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.cdn.tv8.md/TV7/tracks-v2a1/mono.ts.m3u8?token=d1f3eb90f3201abf0bf5a0cc68c555be7c28636e
+https://live.cdn.tv8.md/TV7/tracks-v2a1/mono.ts.m3u8?token=f9517b545d1812ca23c8010dee288dc755508ed6
 #EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=6440000,BANDWIDTH=8050000,RESOLUTION=1920x1080,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.cdn.tv8.md/TV7/tracks-v1a1/mono.ts.m3u8?token=d1f3eb90f3201abf0bf5a0cc68c555be7c28636e
+https://live.cdn.tv8.md/TV7/tracks-v1a1/mono.ts.m3u8?token=f9517b545d1812ca23c8010dee288dc755508ed6
 
 
