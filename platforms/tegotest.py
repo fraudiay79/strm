@@ -9,14 +9,13 @@ TOKEN_URL = "https://api.siberapi.com/sso/get_guest_token.php?app_id=1"
 STREAMING_URLS = [
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/1?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/2?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
-    # Add more URLs if needed...
 ]
 
 # Corresponding names for output files
 NAMES = ["ttt", "synergy"]
 
 # Directory to save output files
-OUTPUT_DIR = "links/test"
+OUTPUT_DIR = "links/tt"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 
@@ -63,23 +62,23 @@ def process_streaming_links():
             print(f"Error: Streaming URL missing for {name}.")
             continue
 
-        # Fetch the m3u8 file content dynamically
-        try:
-            m3u8_response = requests.get(mastlnk, headers=headers)
-            m3u8_response.raise_for_status()
-            m3u8_content = m3u8_response.text
-        except requests.exceptions.RequestException as e:
-            print(f"Error fetching m3u8 content for {name}: {e}")
-            continue
+        base_url, token = mastlnk.split("?token=")
+        base_url = base_url.replace("index.m3u8", "")
 
-        # Print out the lines from the m3u8 content
-        print(f"--- M3U8 Content for {name} ---")
-        print(m3u8_content)
+        variations = ["tracks-v1a1", "tracks-v2a1", "tracks-v3a1", "tracks-v4a1"]
 
-        # Save the content to a file
         output_file = os.path.join(OUTPUT_DIR, f"{name}.m3u8")
+
         with open(output_file, "w") as file:
-            file.write(m3u8_content)
+            file.write("#EXTM3U\n")
+            for variant in variations:
+                modified_link = f"{base_url}{variant}/mono.m3u8?token={token}"
+                file.write(f"{modified_link}\n")
+
+        # Print the modified links
+        print(f"--- M3U8 Content for {name} ---")
+        for variant in variations:
+            print(f"{base_url}{variant}/mono.m3u8?token={token}")
 
         print(f"Created file: {output_file}")
 
