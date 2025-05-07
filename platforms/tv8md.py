@@ -1,54 +1,47 @@
-#! /usr/bin/python3
-
 import requests
-import os
 
-print('#EXTM3U')
+base_url = "https://live.cdn.tv8.md/TV7/"
+api_url = "https://api.tv8.md/v1/live"
 
+# Define custom headers
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+    "Accept": "*/*",
+    "Accept-Language": "en-US,en;q=0.9",
+    "Sec-Fetch-Dest": "empty",
+    "Sec-Fetch-Mode": "cors",
+    "Sec-Fetch-Site": "same-site",
+    "Referer": "https://tv8.md/live",
+    "Origin": "https://tv8.md"
 }
-s = requests.Session()
 
-# URLs and corresponding names
-urls = ["https://api.tv8.md/v1/live"]
-names = ["tv8md"]
+# Step 1: Fetch JSON data with headers
+response = requests.get(api_url, headers=headers)
 
-# Directory to save output files
-output_dir = "links/md"
-os.makedirs(output_dir, exist_ok=True)
+if response.status_code == 200:
+    json_data = response.json()
+    live_url = json_data.get("liveUrl")
 
-# Process each URL and save to corresponding file
-for current_url, name in zip(urls, names):
-    try:
-        resplink = s.get(current_url, headers=headers)
-        resplink.raise_for_status()
-        response_json = resplink.json()
-        mastlnk = response_json["liveUrl"]
+    if live_url:
+        # Step 2: Fetch content from liveUrl with headers
+        content_response = requests.get(live_url, headers=headers)
+        
+        if content_response.status_code == 200:
+            content = content_response.text
+            lines = content.split("\n")
+            modified_content = ""
 
-        # Generate multiple resolution variations
-        variations = {
-            "tracks-v2a1/mono.ts.m3u8": (2960000, 3700000, "1024x576"),
-            "tracks-v1a1/mono.ts.m3u8": (6600000, 8250000, "1920x1080")
-        }
-
-        output_file = os.path.join(output_dir, f"{name}.m3u8")
-
-        with open(output_file, "w") as file:
-            file.write("#EXTM3U\n")
-
-            for variant, (bandwidth, avg_bandwidth, resolution) in variations.items():
-                if "index.m3u8" in mastlnk:
-                    modified_link = mastlnk.replace("index.m3u8", variant)
-                    file.write(
-                        f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE\n'
-                    )
-                    file.write(f"{modified_link}\n")
+            for line in lines:
+                if ".ts" in line or ".m3u8" in line:
+                    full_url = base_url + line
                 else:
-                    print("Error: 'index.m3u8' not found in liveUrl.")
-                    continue
+                    full_url = line
+                
+                modified_content += full_url + "\n"
 
-    except requests.exceptions.RequestException as e:
-        print(f"Error fetching data from {current_url}: {e}")
-    except (KeyError, IndexError, ValueError):
-        print(f"Error: Unable to retrieve 'liveUrl' from {current_url}.")
+            print(modified_content)
+        else:
+            print("Failed to fetch content.")
+    else:
+        print("Live URL not found in the JSON response.")
+else:
+    print("Failed to fetch the API content.")
