@@ -3,10 +3,10 @@ import os
 import json
 
 # Define the token URL
-token_url = "https://api.siberapi.com/sso/get_guest_token.php?app_id=1"
+TOKEN_URL = "https://api.siberapi.com/sso/get_guest_token.php?app_id=1"
 
-# List of URLs to fetch JSON data
-streaming_urls = [
+# List of streaming URLs
+STREAMING_URLS = [
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/1?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/2?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/4?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
@@ -25,70 +25,83 @@ streaming_urls = [
 names = ["ttt", "synergy", "wpg10", "lfntt", "jaagriti", "trinitytv", "bhaktitv", "ibntv", "wacktv", "abstv", "ietv", "plustv"]
 
 # Directory to save output files
-output_dir = "links/tt"
-os.makedirs(output_dir, exist_ok=True)
+OUTPUT_DIR = "links/tt"
+os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Fetch the access token
-token_response = requests.get(token_url)
-if token_response.status_code == 200:
-    token_data = token_response.json()
-    access_token = token_data.get("access_token")
+# Predefined bitrate and resolution variations
+VARIATIONS = {
+    "tracks-v1a1": (440000, 350000, "256x144"),
+    "tracks-v2a1": (780000, 620000, "640x360"),
+    "tracks-v3a1": (1300000, 1040000, "1024x576"),
+    "tracks-v4a1": (1980000, 1580000, "1280x720"),
+}
 
-    if access_token:
-        print("Access Token Retrieved")
 
-        headers = {
-            "accept": "*/*",
-            "accept-language": "en-US,en;q=0.9",
-            "authorization": f"Bearer {access_token}",
-            "priority": "u=1, i",
-            "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": "\"Windows\"",
-            "sec-fetch-dest": "empty",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "cross-site"
-        }
+def fetch_access_token():
+    """Fetch the access token from the API."""
+    response = requests.get(TOKEN_URL)
+    if response.status_code == 200:
+        token_data = response.json()
+        return token_data.get("access_token")
+    print(f"Failed to fetch token. Status code: {response.status_code}")
+    return None
 
-        for url, name in zip(streaming_urls, names):
-            try:
-                resplink = requests.get(url, headers=headers)
-                resplink.raise_for_status()
-                response_json = resplink.json()
 
-                mastlnk = response_json["response"]["tv_channel"][0].get("streaming_url")
-                if not mastlnk:
-                    print(f"Error: Unable to retrieve streaming URL from {url}.")
-                    continue
-                
-                # **Fix: Remove 'index.m3u8' from the base URL**
-                base_url, token = mastlnk.split("?token=")
-                base_url = base_url.replace("index.m3u8", "")  # Remove 'index.m3u8'
+def fetch_json_data(url, headers):
+    """Fetch JSON data from the given URL."""
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        return response.json()
+    except (requests.exceptions.RequestException, json.JSONDecodeError) as e:
+        print(f"Error fetching/parsing data from {url}: {e}")
+        return None
 
-                variations = {
-                    "tracks-v1a1": (440000, 350000, "256x144"),
-                    "tracks-v2a1": (780000, 620000, "640x360"),
-                    "tracks-v3a1": (1300000, 1040000, "1024x576"),
-                    "tracks-v4a1": (1980000, 1580000, "1280x720"),
-                }
 
-                output_file = os.path.join(output_dir, f"{name}.m3u8")
+def process_streaming_links():
+    """Fetch and process the m3u8 streaming content dynamically."""
+    access_token = fetch_access_token()
+    if not access_token:
+        print("Access Token retrieval failed.")
+        return
 
-                with open(output_file, "w") as file:
-                    file.write("#EXTM3U\n")
+    headers = {
+        "authorization": f"Bearer {access_token}",
+        "accept": "*/*",
+    }
 
-                    for variant, (bandwidth, avg_bandwidth, resolution) in variations.items():
-                        modified_link = f"{base_url}{variant}/mono.m3u8?token={token}"
-                        file.write(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=30.000,CODECS="avc1.4d401f,mp4a.40.2",CLOSED-CAPTIONS=NONE\n')
-                        file.write(f"{modified_link}\n")
+    for url, name in zip(STREAMING_URLS, NAMES):
+        json_data = fetch_json_data(url, headers)
+        if not json_data:
+            continue
 
-                print(f"Created file: {output_file}")
+        mastlnk = json_data.get("response", {}).get("tv_channel", [{}])[0].get("streaming_url")
+        if not mastlnk:
+            print(f"Error: Streaming URL missing for {name}.")
+            continue
 
-            except requests.exceptions.RequestException as e:
-                print(f"Error fetching data from {url}: {e}")
-            except (KeyError, IndexError, json.JSONDecodeError) as e:
-                print(f"Error parsing JSON response from {url}: {e}")
-    else:
-        print("Access Token not found in response.")
-else:
-    print("Failed to fetch token. Status code:", token_response.status_code)
+        base_url, token = mastlnk.split("?token=")
+        base_url = base_url.replace("index.m3u8", "")
+
+        output_file = os.path.join(OUTPUT_DIR, f"{name}.m3u8")
+
+        with open(output_file, "w") as file:
+            file.write("#EXTM3U\n")
+
+            for variant, (bandwidth, avg_bandwidth, resolution) in VARIATIONS.items():
+                modified_link = f"{base_url}{variant}/mono.m3u8?token={token}"
+                file.write(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=30.000,CODECS="avc1.4d401f,mp4a.40.2",CLOSED-CAPTIONS=NONE\n')
+                file.write(f"{modified_link}\n")
+
+        # Print the modified links with metadata
+        print(f"--- M3U8 Content for {name} ---")
+        print("#EXTM3U")
+        for variant, (bandwidth, avg_bandwidth, resolution) in VARIATIONS.items():
+            print(f'#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH={avg_bandwidth},BANDWIDTH={bandwidth},RESOLUTION={resolution},FRAME-RATE=30.000,CODECS="avc1.4d401f,mp4a.40.2",CLOSED-CAPTIONS=NONE')
+            print(f"{base_url}{variant}/mono.m3u8?token={token}")
+
+        print(f"Created file: {output_file}")
+
+
+# Run the processing function
+process_streaming_links()
