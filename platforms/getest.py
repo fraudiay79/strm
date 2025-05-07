@@ -11,7 +11,9 @@ def get_bearer_token():
     }
     headers = {
         "accept": "application/json",
-        "content-type": "application/x-www-form-urlencoded"
+        "content-type": "application/x-www-form-urlencoded",
+        "origin": "https://tv.myvideo.ge",
+        "referer": "https://tv.myvideo.ge/"
     }
 
     response = requests.post(auth_url, data=payload, headers=headers)
@@ -23,7 +25,7 @@ def get_bearer_token():
         return None
 
 # Directory to save output files
-output_dir = "links/testge"
+output_dir = "links/ge"
 os.makedirs(output_dir, exist_ok=True)
 
 # List of URLs and corresponding names
@@ -44,7 +46,7 @@ bearer_token = get_bearer_token()
 if not bearer_token:
     exit("No valid token obtained, exiting.")
 
-# Define headers with authentication
+# Define headers with authentication, origin, and referer
 headers = {
     "accept": "application/json, text/plain, */*",
     "authorization": f"Bearer {bearer_token}",
@@ -92,4 +94,4 @@ for url, name in zip(urls, names):
 
     except requests.exceptions.RequestException as e:
         print(f"Error fetching data for {name}: {e}")
-      
+        
