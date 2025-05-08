@@ -35,7 +35,7 @@ if response.status_code == 200:
             break
 
     if m3u8_url:
-        print(f"Extracted M3U8 URL: {m3u8_url}")
+        #print(f"Extracted M3U8 URL: {m3u8_url}")
 
         # Fetch the M3U8 content
         content_response = requests.get(m3u8_url)
@@ -58,7 +58,7 @@ if response.status_code == 200:
                 else:
                     modified_content += line + "\n"
 
-            print("\nModified M3U8 Content:\n", modified_content)
+            print(modified_content)
         else:
             print("Failed to fetch M3U8 content.")
     else:
