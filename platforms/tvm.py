@@ -2,8 +2,7 @@ import os
 import re
 import requests
 from playwright.sync_api import sync_playwright
-import pkg_resources
-from playwright_stealth import stealth
+from playwright_stealth import stealth_sync
 
 # Directory setup
 output_dir = "links/mt"
@@ -20,7 +19,7 @@ def fetch_dynamic_jwt(url):
         page = browser.new_page()
 
         # Apply stealth mode (helps evade bot detection)
-        stealth(page)
+        stealth_sync(page)
 
         # Simulate a real user request
         page.set_extra_http_headers({
