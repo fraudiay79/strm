@@ -2,7 +2,8 @@ import os
 import re
 import requests
 from playwright.sync_api import sync_playwright
-from playwright_stealth import stealth  # Install this with `pip install playwright-stealth`
+import pkg_resources
+from playwright_stealth import stealth
 
 # Directory setup
 output_dir = "links/mt"
