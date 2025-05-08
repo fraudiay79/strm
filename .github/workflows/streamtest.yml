@@ -26,6 +26,7 @@ jobs:
           pip3 install webdriver-manager
           pip3 install setuptools
           pip3 install undetected-chromedriver
+          pip3 install selenium-stealth
       - name: execute py script 
         run:  |
             pwd
