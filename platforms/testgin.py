@@ -3,9 +3,9 @@ import requests
 import xml.etree.ElementTree as ET
 import re
 from selenium import webdriver
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium_stealth import stealth
+from webdriver_manager.chrome import ChromeDriverManager  # Added for automatic ChromeDriver installation
 
 # Define the URL
 url = "https://www.giniko.com/xml/secure/plist.php?ch=440"
@@ -13,15 +13,13 @@ url = "https://www.giniko.com/xml/secure/plist.php?ch=440"
 # Set up Chrome options (Headless mode enabled)
 chrome_options = Options()
 chrome_options.add_argument("--headless")  # Enables headless mode
-chrome_options.add_argument("--disable-blink-features=AutomationControlled")  # Helps bypass detection
-chrome_options.add_argument("--no-sandbox")  # Avoids sandbox issues in cloud environments
-chrome_options.add_argument("--disable-dev-shm-usage")  # Prevents memory-related crashes
-chrome_options.add_argument("--disable-gpu")  # Helps with headless stability
+chrome_options.add_argument("--disable-blink-features=AutomationControlled")  # Helps bypass bot detection
+chrome_options.add_argument("--no-sandbox")
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument("--disable-gpu")
 
-# Initialize Selenium WebDriver (Headless mode)
-chrome_driver_path = "path/to/chromedriver"  # Replace with actual ChromeDriver path
-service = Service(chrome_driver_path)
-driver = webdriver.Chrome(service=service, options=chrome_options)
+# Initialize Selenium WebDriver using webdriver-manager
+driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
 
 # Apply stealth settings to avoid bot detection
 stealth(driver,
