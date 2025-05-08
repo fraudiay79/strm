@@ -23,7 +23,9 @@ def fetch_dynamic_jwt(url):
 
         # Simulate a real user request
         page.set_extra_http_headers({
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36",
+            "Cookie": "tvmi_gid=ODM5MTAwNjU5NTcxODM3NTQxMTM3; _ga=GA1.1.309400976.1743444398; tvmi_sid=MjE5MTAwNjU5NTcxODQxMzA2NTUx; _ga_2FFHHTTHE0=GS2.1.s1746718238$o10$g1$t1746720589$j0$l0$h0",
+            "Origin": "https://tvmi.mt",
             "Referer": "https://tvmi.mt/"
         })
 
