@@ -12,7 +12,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-            python-version: '3.x'
+            python-version: '3.12'
 
       - name: Install dependencies
         run: |
@@ -24,7 +24,6 @@ jobs:
           pip3 install -r requirements.txt
           pip3 install beautifulsoup4
           pip3 install setuptools
-          pip3 install pkg_resources
           pip3 install playwright playwright-stealth
           playwright install
       
