@@ -38,13 +38,11 @@ jobs:
             #python giniko.py giniko.json
             #python mediabay.py mediabay.json
             python streams.py streams.json
-            #python3 tego.py
+            python3 myvideoge.py
             python3 polska.py
             #python3 tv8md.py > links/md/tv8md.m3u8
             sh tvm.sh
             sh tvipt.sh
-            #python3 netplus.py > links/netplus.m3u
-            #python3 jurnaltv.py > links/md/jurnaltv.m3u8
             python3 telemaroc.py > links/telemaroc.m3u8
       - name: commit and push files
         run: |
