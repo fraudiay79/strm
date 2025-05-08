@@ -3,9 +3,10 @@ import requests
 import xml.etree.ElementTree as ET
 import re
 from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium_stealth import stealth
-from webdriver_manager.chrome import ChromeDriverManager  # Added for automatic ChromeDriver installation
+from webdriver_manager.chrome import ChromeDriverManager  # Automatically installs ChromeDriver
 
 # Define the URL
 url = "https://www.giniko.com/xml/secure/plist.php?ch=440"
@@ -19,7 +20,8 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 chrome_options.add_argument("--disable-gpu")
 
 # Initialize Selenium WebDriver using webdriver-manager
-driver = webdriver.Chrome(ChromeDriverManager().install(), options=chrome_options)
+service = Service(ChromeDriverManager().install())  # Fixes multiple values for 'options' error
+driver = webdriver.Chrome(service=service, options=chrome_options)
 
 # Apply stealth settings to avoid bot detection
 stealth(driver,
