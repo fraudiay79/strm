@@ -38,12 +38,14 @@ jobs:
           pip3 install setuptools
           pip3 install undetected-chromedriver
           pip3 install selenium-stealth
+          pip3 install playwright
+          playwright install
       
       - name: execute py script 
         run:  |
             pwd
             cd ./platforms/
-            python3 testgin.py > links/testgin.m3u8
+            python3 tvm.py
 
       - name: commit and push files
         run: |
