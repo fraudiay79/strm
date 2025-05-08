@@ -13,7 +13,7 @@ if response.status_code == 200:
         # Print output in the specified format
         print("#EXTM3U")
         print("#EXT-X-VERSION:3")
-        print("#EXT-X-STREAM-INF:BANDWIDTH=2126865,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d0028,mp4a.40.2",CLOSED-CAPTIONS=NONE")
+        print("#EXT-X-STREAM-INF:BANDWIDTH=2126865,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS='avc1.4d0028,mp4a.40.2',CLOSED-CAPTIONS=NONE")
         print(erstrm)
     else:
         print("erstrm not found in the content.")
