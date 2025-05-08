@@ -2,6 +2,7 @@ import os
 import re
 import requests
 from playwright.sync_api import sync_playwright
+from playwright_stealth import stealth  # Install this with `pip install playwright-stealth`
 
 # Directory setup
 output_dir = "links/mt"
@@ -14,24 +15,35 @@ names = ["tvm", "tvmnews", "tvmsport"]
 # Extract JWT dynamically with Playwright
 def fetch_dynamic_jwt(url):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=True)
+        browser = p.chromium.launch(headless=True)  # Headless mode enabled
         page = browser.new_page()
 
-        # Simulate a real user
+        # Apply stealth mode (helps evade bot detection)
+        stealth(page)
+
+        # Simulate a real user request
         page.set_extra_http_headers({
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
             "Referer": "https://tvmi.mt/"
         })
 
-        page.goto(url, wait_until="networkidle")
-        content = page.content()
-        browser.close()
+        # Navigate to the page with increased timeout and reliable loading trigger
+        try:
+            print(f"Navigating to {url}...")
+            page.goto(url, timeout=60000, wait_until="domcontentloaded")  # 60 sec timeout
 
-        # Extract values dynamically
-        data_jwt_value = re.search(r'data-jwt="(.*?)"', content)
-        host_value = re.search(r'data-dist-host="(.*?)"', content)
+            content = page.content()
+            browser.close()
 
-        return data_jwt_value.group(1) if data_jwt_value else None, host_value.group(1) if host_value else None
+            # Extract values dynamically
+            data_jwt_value = re.search(r'data-jwt="(.*?)"', content)
+            host_value = re.search(r'data-dist-host="(.*?)"', content)
+
+            return data_jwt_value.group(1) if data_jwt_value else None, host_value.group(1) if host_value else None
+        except Exception as e:
+            print(f"Error while loading {url}: {e}")
+            browser.close()
+            return None, None
 
 # Process each URL
 for url, name in zip(urls, names):
@@ -40,7 +52,7 @@ for url, name in zip(urls, names):
         data_jwt, host = fetch_dynamic_jwt(url)
 
         if not data_jwt or not host:
-            print(f"Error: Missing values for {url}")
+            print(f"Error: Missing values for {url}, skipping...")
             continue
 
         live_url = f"https://{host}/{data_jwt}/live/{url.split('/')[-1]}/0/index.m3u8"
