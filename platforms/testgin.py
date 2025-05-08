@@ -2,39 +2,47 @@ import time
 import requests
 import xml.etree.ElementTree as ET
 import re
-import undetected_chromedriver as uc
+from selenium import webdriver
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options
+from selenium_stealth import stealth
 
 # Define the URL
 url = "https://www.giniko.com/xml/secure/plist.php?ch=440"
 
-# Define the headers
-headers = {
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-    "Accept-Encoding": "gzip, deflate, br, zstd",
-    "Accept-Language": "en-US,en;q=0.9",
-    "Cache-Control": "max-age=0",
-    "Connection": "keep-alive",
-    "Cookie": "_pk_id.5.ac7a=e820b13d673baa9e.1745434587.; PHPSESSID=frabcgi9htt8blspmrlg91iq77; __utmc=52549950; __utmz=52549950.1745873900.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided); __utma=52549950.1725668953.1745434587.1746705347.1746707432.4; __utmt=1; _pk_ref.5.ac7a=%5B%22%22%2C%22%22%2C1746707432%2C%22https%3A%2F%2Fwww.google.com%2F%22%5D; _pk_ses.5.ac7a=1; sc_is_visitor_unique=rx9849145.1746707509.83ABBD63A8534269BDCAD5ED3545F548.4.3.3.3.3.3.3.3.2; __utmb=52549950.4.10.1746707432",
-    "Host": "www.giniko.com",
-    "Sec-Fetch-Dest": "document",
-    "Sec-Fetch-Mode": "navigate",
-    "Sec-Fetch-Site": "none",
-    "Sec-Fetch-User": "?1",
-    "Upgrade-Insecure-Requests": "1",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
-    "sec-ch-ua": "\"Chromium\";v=\"136\", \"Google Chrome\";v=\"136\", \"Not.A/Brand\";v=\"99\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Windows\""
-}
+# Set up Chrome options (Headless mode enabled)
+chrome_options = Options()
+chrome_options.add_argument("--headless")  # Enables headless mode
+chrome_options.add_argument("--disable-blink-features=AutomationControlled")  # Helps bypass detection
+chrome_options.add_argument("--no-sandbox")  # Avoids sandbox issues in cloud environments
+chrome_options.add_argument("--disable-dev-shm-usage")  # Prevents memory-related crashes
+chrome_options.add_argument("--disable-gpu")  # Helps with headless stability
 
-# Initialize Undetected ChromeDriver
-driver = uc.Chrome(headless=True)
-driver.get(url)
-time.sleep(3)  # Allow time for the page to load
+# Initialize Selenium WebDriver (Headless mode)
+chrome_driver_path = "path/to/chromedriver"  # Replace with actual ChromeDriver path
+service = Service(chrome_driver_path)
+driver = webdriver.Chrome(service=service, options=chrome_options)
 
-# Extract page source
-page_source = driver.page_source
-driver.quit()
+# Apply stealth settings to avoid bot detection
+stealth(driver,
+    languages=["en-US", "en"],
+    vendor="Google Inc.",
+    platform="Win32",
+    webgl_vendor="Intel Inc.",
+    renderer="Intel Iris OpenGL Engine",
+    fix_hairline=True,
+)
+
+try:
+    # Open the webpage
+    driver.get(url)
+    time.sleep(3)  # Allow time for dynamic content to load
+
+    # Extract page source
+    page_source = driver.page_source
+
+finally:
+    driver.quit()  # Close the browser session
 
 # Parse XML from page source
 try:
@@ -51,6 +59,11 @@ try:
         print(f"Extracted M3U8 URL: {m3u8_url}")
 
         # Fetch the M3U8 content with headers
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+            "Referer": "https://www.giniko.com/watch.php?id=186",
+            "Cookie": "_pk_id.5.ac7a=e820b13d673baa9e.1745434587.; PHPSESSID=frabcgi9htt8blspmrlg91iq77;"
+        }
         content_response = requests.get(m3u8_url, headers=headers)
 
         if content_response.status_code == 200:
