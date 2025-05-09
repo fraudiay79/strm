@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 rutube.py
+            python3 peers.py
 
       - name: commit and push files
         run: |
