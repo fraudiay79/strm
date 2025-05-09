@@ -1,5 +1,4 @@
 import requests
-import base64
 import re
 
 USER_AGENT = "Dalvik/2.1.0 (Linux; U; Android 8.0.1;)"
@@ -8,14 +7,10 @@ EXTOPT = "$OPT:adaptive-logic=highest$OPT:demux=adaptive,any$OPT:adaptive-use-ac
          f"$OPT:http-user-agent={USER_AGENT}$OPT:http-referrer={REFERRER}" \
          "$OPT:no-ts-cc-check$OPT:INT-SCRIPT-PARAMS=peers_tv"
 
-def decode_url(encoded_url):
-    """Decode a Base64-encoded URL"""
-    return base64.b64decode(encoded_url).decode()
-
 def get_token():
     """Fetch authentication token from PeersTV API"""
-    url = decode_url("aHR0cDovL2FwaS5wZWVycy50di9hdXRoLzIvdG9rZW4=")
-    payload = decode_url("Z3JhbnRfdHlwZT1pbmV0cmElM0Fhbm9ueW1vdXMmY2xpZW50X2lkPTI5NzgzMDUxJmNsaWVudF9zZWNyZXQ9YjRkNGViNDM4ZDc2MGRhOTVmMGFjYjViYzZiNWM3NjA")
+    url = "http://api.peers.tv/auth/2/token"
+    payload = "grant_type=inetra%3Aanonymous&client_id=29783051&client_secret=b4d4eb438d760da95f0acb5bc6b5c760"
     
     headers = {"User-Agent": USER_AGENT, "Content-Type": "application/x-www-form-urlencoded"}
     response = requests.post(url, data=payload, headers=headers, timeout=8)
@@ -27,7 +22,7 @@ def get_token():
 
 def get_archive_url(channel_id, token):
     """Retrieve archive stream URL from PeersTV API"""
-    url = decode_url("aHR0cHM6Ly9hcGkucGVlcnMudHYvbWVkaWFsb2NhdG9yLzEvdGltZXNoaWZ0Lmpzb24/b2Zmc2V0PTcyMDAmc3RyZWFtX2lkPQ") + channel_id
+    url = f"https://api.peers.tv/medialocator/1/timeshift.json?offset=7200&stream_id={channel_id}"
     headers = {"User-Agent": USER_AGENT, "Authorization": f"Bearer {token}"}
     
     response = requests.get(url, headers=headers, timeout=12)
