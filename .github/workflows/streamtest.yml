@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 mnaytest.py > links/mediabay.m3u
+            python3 mbaytest.py > links/mediabay.m3u
 
       - name: commit and push files
         run: |
