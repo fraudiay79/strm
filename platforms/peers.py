@@ -1,11 +1,11 @@
 import requests
 import re
 
-USER_AGENT = "Dalvik/2.1.0 (Linux; U; Android 8.0.1;)"
-REFERRER = "https://peers.tv/"
-EXTOPT = "$OPT:adaptive-logic=highest$OPT:demux=adaptive,any$OPT:adaptive-use-access" \
-         f"$OPT:http-user-agent={USER_AGENT}$OPT:http-referrer={REFERRER}" \
-         "$OPT:no-ts-cc-check$OPT:INT-SCRIPT-PARAMS=peers_tv"
+#USER_AGENT = "Dalvik/2.1.0 (Linux; U; Android 8.0.1;)"
+#REFERRER = "https://peers.tv/"
+#EXTOPT = "$OPT:adaptive-logic=highest$OPT:demux=adaptive,any$OPT:adaptive-use-access" \
+         #f"$OPT:http-user-agent={USER_AGENT}$OPT:http-referrer={REFERRER}" \
+         #"$OPT:no-ts-cc-check$OPT:INT-SCRIPT-PARAMS=peers_tv"
 
 def get_token():
     """Fetch authentication token from PeersTV API"""
@@ -35,7 +35,8 @@ def get_archive_url(channel_id, token):
     if not stream_url:
         return None
     
-    return stream_url.group(1).replace('\\/', '/') + EXTOPT
+    return stream_url.group(1).replace('\\/', '/') 
+         #+ EXTOPT
 
 def get_stream_url(base_url, token):
     """Format stream URL with token and options"""
@@ -44,7 +45,8 @@ def get_stream_url(base_url, token):
     stream_url = re.sub(r"[\?&]+", "&", stream_url)
     stream_url = re.sub(r"&", "?", stream_url, 1)
     
-    return stream_url + EXTOPT
+    return stream_url 
+#+ EXTOPT
 
 if __name__ == "__main__":
     tv_id = "futbol_hd"  # Default channel ID
@@ -60,6 +62,6 @@ if __name__ == "__main__":
     else:
         print("No archive stream available.")
 
-    base_stream_url = f"http://hls.peers.tv/streaming/{tv_id}/playlist.m3u8"
+    base_stream_url = f"http://api.peers.tv/timeshift/{tv_id}/16/playlist.m3u8"
     stream_url = get_stream_url(base_stream_url, token)
     print(f"Live stream URL: {stream_url}")
