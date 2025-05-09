@@ -40,7 +40,7 @@ def get_archive_url(channel_id, token):
 
 def get_stream_url(base_url, token):
     """Format stream URL with token and options"""
-    stream_url = f"{base_url}?token={token}"
+    stream_url = f"{base_url}?token={token}&offset=1"
     stream_url = re.sub(r"([\?&]offset=\d+)", r"\1", stream_url)
     stream_url = re.sub(r"[\?&]+", "&", stream_url)
     stream_url = re.sub(r"&", "?", stream_url, 1)
@@ -56,12 +56,15 @@ if __name__ == "__main__":
         print("Error fetching token.")
         exit()
 
-    archive_url = get_archive_url(tv_id, token)
-    if archive_url:
-        print(f"Archive stream URL: {archive_url}")
-    else:
-        print("No archive stream available.")
+    #archive_url = get_archive_url(tv_id, token)
+    #if archive_url:
+    #    print(f"Archive stream URL: {archive_url}")
+    #else:
+    #    print("No archive stream available.")
 
     base_stream_url = f"http://api.peers.tv/timeshift/{tv_id}/16/playlist.m3u8"
     stream_url = get_stream_url(base_stream_url, token)
-    print(f"Live stream URL: {stream_url}")
+    print("#EXTM3U")
+    print("#EXT-X-VERSION:3")
+    print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
+    print(stream_url)
