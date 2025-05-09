@@ -1,11 +1,11 @@
 import requests
 import re
 
-#USER_AGENT = "Dalvik/2.1.0 (Linux; U; Android 8.0.1;)"
-#REFERRER = "https://peers.tv/"
-#EXTOPT = "$OPT:adaptive-logic=highest$OPT:demux=adaptive,any$OPT:adaptive-use-access" \
-         #f"$OPT:http-user-agent={USER_AGENT}$OPT:http-referrer={REFERRER}" \
-         #"$OPT:no-ts-cc-check$OPT:INT-SCRIPT-PARAMS=peers_tv"
+USER_AGENT = "Dalvik/2.1.0 (Linux; U; Android 8.0.1;)"
+REFERRER = "https://peers.tv/"
+EXTOPT = "$OPT:adaptive-logic=highest$OPT:demux=adaptive,any$OPT:adaptive-use-access" \
+         f"$OPT:http-user-agent={USER_AGENT}$OPT:http-referrer={REFERRER}" \
+         "$OPT:no-ts-cc-check$OPT:INT-SCRIPT-PARAMS=peers_tv"
 
 def get_token():
     """Fetch authentication token from PeersTV API"""
