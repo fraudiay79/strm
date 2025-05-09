@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 peertest.py
+            python3 peertest.py > peertest.m3u
 
       - name: commit and push files
         run: |
