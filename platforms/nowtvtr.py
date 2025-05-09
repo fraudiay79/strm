@@ -14,8 +14,7 @@ if response.status_code == 200:
         # Print output in the specified format
         print("#EXTM3U")
         print("#EXT-X-VERSION:3")
-        print("#EXT-X-INDEPENDENT-SEGMENTS")
-        print("#EXT-X-STREAM-INF:PROGRAM-ID=2850,AVERAGE-BANDWIDTH=950000,BANDWIDTH=1050000,NAME=720p,RESOLUTION=1280x720")
+        print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
         print(erstrm)
     else:
         print("erstrm not found in the content.")
