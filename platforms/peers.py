@@ -84,7 +84,7 @@ if __name__ == "__main__":
     print("#EXT-X-VERSION:3")
 
     for channel in tv_id:
-        base_stream_url = f"http://api.peers.tv/timeshift/{tv_id}/16/playlist.m3u8"
+        base_stream_url = f"http://api.peers.tv/timeshift/{channel}/16/playlist.m3u8"
         stream_url = get_stream_url(base_stream_url, token)
 
         print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
