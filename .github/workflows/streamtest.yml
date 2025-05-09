@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 alrai.py > links/alrai.m3u8
+            python3 myge.py > links/out_myvideoge.m3u
 
       - name: commit and push files
         run: |
