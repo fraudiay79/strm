@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 myge.py > links/out_myvideoge.m3u
+            python3 oxaxtest.py > links/out_oxax.m3u
 
       - name: commit and push files
         run: |
