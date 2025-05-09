@@ -1,5 +1,10 @@
 import requests
 import re
+import os
+
+# Directory to save output files
+output_dir = "links/ru"
+os.makedirs(output_dir, exist_ok=True)
 
 USER_AGENT = "Dalvik/2.1.0 (Linux; U; Android 8.0.1;)"
 REFERRER = "https://peers.tv/"
@@ -22,7 +27,7 @@ def get_token():
 
 def get_archive_url(channel_id, token):
     """Retrieve archive stream URL from PeersTV API"""
-    url = f"https://api.peers.tv/medialocator/1/timeshift.json?offset=7200&stream_id={channel_id}"
+    url = f"https://api.peers.tv/medialocator/1/timeshift.json?offset=7200&stream_id={channel_id}&offset=1"
     headers = {"User-Agent": USER_AGENT, "Authorization": f"Bearer {token}"}
     
     response = requests.get(url, headers=headers, timeout=12)
@@ -46,25 +51,43 @@ def get_stream_url(base_url, token):
     stream_url = re.sub(r"&", "?", stream_url, 1)
     
     return stream_url 
-#+ EXTOPT
+         #+ EXTOPT
+
+def save_m3u8(filename, stream_url):
+    """Save stream URL in .m3u8 format"""
+    filepath = os.path.join(output_dir, filename)
+    with open(filepath, "w", encoding="utf-8") as file:
+        file.write("#EXTM3U\n")
+        file.write("#EXT-X-VERSION:3\n")
+        file.write("#EXT-X-STREAM-INF:PROGRAM-ID=1\n")
+        file.write(f"{stream_url}\n")
+    print(f"Saved M3U8 file: {filepath}")
+
+# List of TV channel IDs
+tv_id = [
+    "firstmuz", "2x2tv", "8_kanal", "amedia1", "amediapremium_hd", "babes_tv", "blue_hustler_18", "brazzers_tv_europe_18", "ipark",
+    "da_vinci", "erox_18", "fan_hd", "filmbox_arthouse", "kino24", "mma_tv_com", "rutv",
+    "russia_today_hd", "sonyscifi", "sony_turbo", "set", "tiji", "timeless_dizi_channel", "travel_adventure_hd",
+    "tv21", "tv1000_action", "tv_1000_rus_kino", "viasat_explorer", "viasat_nature", "viasat_sport_hd", "tv1000_comedy_hd", "tv1000_megahit_hd",
+    "tv1000_premium_hd", "viasat_golf_hd", "zee-tv", "zoopark", "avto_24", "auto_plus", "v_gostyah_u_skazki",
+    "time", "detskij_mir", "dialogi_o_rybalke", "dom_kino", "dom_kino_premium", "dorama", "drive", "jv", "eurokino", "zoo_tv", "khl", "kxl_hd", "boets",
+    "match_nash_sport", "otvrus", "ots", "1kanal_hd", "friday", "5kanal", "rentv", "sts_love", "futbol_hd", "perec"
+]
 
 if __name__ == "__main__":
-    tv_id = "futbol_hd"  # Default channel ID
-    
     token = get_token()
     if not token:
         print("Error fetching token.")
         exit()
 
-    #archive_url = get_archive_url(tv_id, token)
-    #if archive_url:
-    #    print(f"Archive stream URL: {archive_url}")
-    #else:
-    #    print("No archive stream available.")
-
-    base_stream_url = f"http://api.peers.tv/timeshift/{tv_id}/16/playlist.m3u8"
-    stream_url = get_stream_url(base_stream_url, token)
     print("#EXTM3U")
     print("#EXT-X-VERSION:3")
-    print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
-    print(stream_url)
+
+    for channel in tv_id:
+        base_stream_url = f"http://hls.peers.tv/streaming/{channel}/playlist.m3u8"
+        stream_url = get_stream_url(base_stream_url, token)
+
+        print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
+        print(stream_url)
+
+        save_m3u8(f"{channel}.m3u8", stream_url)
