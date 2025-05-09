@@ -1,4 +1,4 @@
-name: run streams.py
+name: run streamstest.py
 
 on:
   workflow_dispatch:
