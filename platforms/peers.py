@@ -71,7 +71,8 @@ tv_id = [
     "tv21", "tv1000_action", "tv_1000_rus_kino", "viasat_explorer", "viasat_nature", "viasat_sport_hd", "tv1000_comedy_hd", "tv1000_megahit_hd",
     "tv1000_premium_hd", "viasat_golf_hd", "zee-tv", "zoopark", "avto_24", "auto_plus", "v_gostyah_u_skazki",
     "time", "detskij_mir", "dialogi_o_rybalke", "dom_kino", "dom_kino_premium", "dorama", "drive", "jv", "eurokino", "zoo_tv", "khl", "kxl_hd", "boets",
-    "match_nash_sport", "otvrus", "ots", "1kanal_hd", "friday", "5kanal", "rentv", "sts_love", "futbol_hd", "perec"
+    "match_nash_sport", "otvrus", "ots", "1kanal_hd", "friday", "5kanal", "rentv", "sts_love", "futbol_hd", "perec", "temptation", "hustler_hd", "shalun",
+    "frenchlover", "russkaya_noch", "daring_tv", "shelk"
 ]
 
 if __name__ == "__main__":
