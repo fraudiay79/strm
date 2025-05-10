@@ -2,62 +2,66 @@ import os
 import requests
 import json
 
-API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variable
-SHOWS = {
-    "Supernatural": 1622,
-    "Seinfeld": 1957, "Game of Thrones": 1399, "Band of Brothers": 4613, "House of the Dragon": 94997,
-    "Chernobyl": 87108, "The Sopranos": 52814, "The Wire": 1438, "Sherlock": 19885, "The Tudors": 2942,
-    "Firefly": 1437, "Spartacus": 46296, "The Pacific": 16997, "Dracula (2020)": 86850, "Dracula": 58928,
-    "Gangs of London": 85021, "Broadchurch": 1427, "Rome": 1891, "Deadwood": 1406, "The Last of Us": 100088,
-    "The Boys": 76479, "The Witcher": 71912, "Dune: Prophecy": 90228, "The Penguin": 194764, "Da Ali G Show": 4417,
-    "The Office": 2996, "True Detective": 46648, "Taboo": 65708, "Dexter": 1405, "Black Sails": 47665,
-    "The Night Of": 66276, "The Walking Dead: Daryl Dixon": 211684, "The Walking Dead: Dead City": 194583,
-    "The Walking Dead: The Ones Who Live": 206586, "The Fall": 49010, "Copper": 44983, "Mr. Bean": 4327,
-    "Blackadder": 7246, "Penny Dreadful": 54671, "The Night Manager": 61859, "Mad Men": 1104, "Tulsa King": 153312,
-    "Killing Eve": 72750, "Halo": 52814, "Mayor of Kingstown": 97951, "Weeds": 186, "Luther": 1426, "Time": 126116,
-    "Dead Set": 7831, "The Frankenstein Chronicles": 64421, "Outlander": 56570, "Peacemaker": 110492,
-    "The Terror": 75191, "Succession": 76331, "Warrior": 73544, "The Couple Next Door": 223438,
-    "The White Lotus": 111803
-}
-OUTPUT_DIR = "meta/shows"
+API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variables
+OUTPUT_DIR_SHOWS = "meta/shows"
+OUTPUT_DIR_MOVIES = "meta/movies"
 
 # Unicode squared letters mapping (A-Z)
 SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
 
-os.makedirs(OUTPUT_DIR, exist_ok=True)  # Ensure the output directory exists
+# TV Shows List
+SHOWS = {
+    "Supernatural": 1622, "Seinfeld": 1957, "Game of Thrones": 1399, "Band of Brothers": 4613,
+    "House of the Dragon": 94997, "Chernobyl": 87108, "The Sopranos": 52814, "The Wire": 1438,
+    "Sherlock": 19885, "The Tudors": 2942, "Firefly": 1437, "Spartacus": 46296,
+    "The Pacific": 16997, "Dracula (2020)": 86850, "Dracula": 58928, "Gangs of London": 85021,
+    "Broadchurch": 1427, "Rome": 1891, "Deadwood": 1406, "The Last of Us": 100088,
+    "The Boys": 76479, "The Witcher": 71912, "Dune: Prophecy": 90228, "The Penguin": 194764,
+    "True Detective": 46648, "Taboo": 65708, "Dexter": 1405, "Black Sails": 47665,
+    "Peacemaker": 110492, "Succession": 76331, "Warrior": 73544, "The White Lotus": 111803
+}
+
+# Movies List
+MOVIES = {
+    "The Avengers": 24428, "The Dark Knight": 155, "Inception": 27205, "Interstellar": 157336,
+    "Gladiator": 98, "Titanic": 597, "The Godfather": 238, "Pulp Fiction": 680,
+    "Fight Club": 550, "Schindler's List": 424, "The Lord of the Rings: The Fellowship of the Ring": 120,
+    "The Lord of the Rings: The Two Towers": 121, "The Lord of the Rings: The Return of the King": 122
+}
+
+os.makedirs(OUTPUT_DIR_SHOWS, exist_ok=True)
+os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
+
+def get_squared_letter(name):
+    """ Extracts first meaningful letter for squared symbol """
+    words = name.split()
+    first_letter = words[1][0].upper() if words[0].lower() == "the" and len(words) > 1 else words[0][0].upper()
+    return SQUARED_LETTERS.get(first_letter, "")
 
 def fetch_show_data(show_name, show_id):
-    if not API_KEY:
-        print("Error: TMDB_API_KEY is not set. Please add it to the environment variables.")
-        return
-
-    first_letter = show_name[0].upper()
-    squared_letter = SQUARED_LETTERS.get(first_letter, "")  # Get squared Unicode letter
-
-    show_info = {
-        "name": show_name,
-        "category": f"{squared_letter} {show_name}",
-        "info": {},
-        "seasons": []
-    }
-
-    # Fetch general show details
+    """ Fetches and formats TV show data """
+    squared_letter = get_squared_letter(show_name)
+    
     base_url = f"https://api.themoviedb.org/3/tv/{show_id}?api_key={API_KEY}&append_to_response=credits"
     try:
         response = requests.get(base_url)
         response.raise_for_status()
         data = response.json()
 
-        show_info["info"] = {
-            "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
-            "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
-            "plot": data.get("overview", ""),
-            "rating": str(data.get("vote_average", "")),
-            "genre": [genre["name"].lower() for genre in data.get("genres", [])],
-            "cast": [actor["name"] for actor in data.get("credits", {}).get("cast", [])[:5]]  # Moved cast here
+        show_info = {
+            "name": show_name,
+            "category": f"{squared_letter} {show_name}",
+            "info": {
+                "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
+                "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
+                "plot": data.get("overview", ""),
+                "rating": str(data.get("vote_average", "")),
+                "genre": [genre["name"].lower() for genre in data.get("genres", [])],
+                "cast": [actor["name"] for actor in data.get("credits", {}).get("cast", [])[:5]]
+            },
+            "seasons": []
         }
 
-        # Fetch seasons
         for season in range(1, data.get("number_of_seasons", 1) + 1):
             season_url = f"https://api.themoviedb.org/3/tv/{show_id}/season/{season}?api_key={API_KEY}"
             season_response = requests.get(season_url)
@@ -83,27 +87,68 @@ def fetch_show_data(show_name, show_id):
                     "info": {
                         "poster": f"https://image.tmdb.org/t/p/w227_and_h127_bestv2{ep.get('still_path', '')}",
                         "plot": ep.get("overview", ""),
-                        "director": [],
                         "duration": ep.get("runtime", 0) * 60 if ep.get("runtime") else None,
                         "rating": str(ep.get("vote_average", "")),
                         "backdrop": f"https://image.tmdb.org/t/p/w500_and_h282_face{ep.get('still_path', '')}"
-                    },
-                    "video": ""
+                    }
                 }
                 season_info["episodes"].append(episode_info)
 
             show_info["seasons"].append(season_info)
 
-        # Save JSON to file
-        output_file = os.path.join(OUTPUT_DIR, f"{show_name.lower().replace(' ', '_')}.json")
+        output_file = os.path.join(OUTPUT_DIR_SHOWS, f"{show_name.lower().replace(' ', '_')}.json")
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(show_info, f, indent=2)
 
-        print(f"Data saved to {output_file}")
+        print(f"Saved: {output_file}")
 
     except requests.RequestException as e:
-        print(f"Error fetching data for {show_name}: {e}")
+        print(f"Error fetching {show_name}: {e}")
 
-# Fetch data for all shows
+def fetch_movie_data(movie_name, movie_id):
+    """ Fetches and formats movie data """
+    squared_letter = get_squared_letter(movie_name)
+
+    base_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&append_to_response=credits,videos"
+    try:
+        response = requests.get(base_url)
+        response.raise_for_status()
+        data = response.json()
+
+        trailer_key = ""
+        for video in data.get("videos", {}).get("results", []):
+            if video["type"] == "Trailer" and video["site"] == "YouTube":
+                trailer_key = video["key"]
+                break
+
+        movie_info = {
+            "name": movie_name,
+            "category": f"{squared_letter} {movie_name}",
+            "info": {
+                "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
+                "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
+                "plot": data.get("overview", ""),
+                "director": [
+                    crew["name"] for crew in data.get("credits", {}).get("crew", []) if crew["job"] == "Director"
+                ],
+                "cast": [actor["name"] for actor in data.get("credits", {}).get("cast", [])[:6]],
+                "trailer": trailer_key,
+                "rating": str(data.get("vote_average", "")),
+                "year": data.get("release_date", "").split("-")[0] if data.get("release_date") else None
+            }
+        }
+
+        output_file = os.path.join(OUTPUT_DIR_MOVIES, f"{movie_name.lower().replace(' ', '_')}.json")
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(movie_info, f, indent=2)
+
+        print(f"Saved: {output_file}")
+
+    except requests.RequestException as e:
+        print(f"Error fetching {movie_name}: {e}")
+
+# Fetch TV shows & movies
 for name, id in SHOWS.items():
     fetch_show_data(name, id)
+for name, id in MOVIES.items():
+    fetch_movie_data(name, id)
