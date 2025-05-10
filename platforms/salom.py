@@ -12,7 +12,6 @@ headers = {
     "Accept-Encoding": "gzip, deflate, br, zstd",
     "Accept-Language": "en-US,en;q=0.9",
     "Connection": "keep-alive",
-    "Cookie": "_ga=GA1.1.803268640.1746817100; _ym_uid=1746817101616663663; _ym_d=1746817101; _ym_isad=1; _ga_S3N9G8EWBW=GS2.1.s1746906357$o3$g1$t1746907000$j0$l0$h0",
     "Host": "spectator-api.salomtv.uz",
     "Origin": "https://salomtv.uz",
     "Referer": "https://salomtv.uz/",
