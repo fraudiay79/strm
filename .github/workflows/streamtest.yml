@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 salom.py
+            python3 tv8md.py > links/mt/tv8md.m3u8
 
       - name: commit and push files
         run: |
