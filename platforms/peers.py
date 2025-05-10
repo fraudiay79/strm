@@ -41,7 +41,6 @@ def get_archive_url(channel_id, token):
         return None
     
     return stream_url.group(1).replace('\\/', '/') 
-         #+ EXTOPT
 
 def get_stream_url(base_url, token):
     """Format stream URL with token and options"""
@@ -51,7 +50,6 @@ def get_stream_url(base_url, token):
     stream_url = re.sub(r"&", "?", stream_url, 1)
     
     return stream_url 
-         #+ EXTOPT
 
 def save_m3u8(filename, stream_url):
     """Save stream URL in .m3u8 format"""
@@ -60,6 +58,7 @@ def save_m3u8(filename, stream_url):
         file.write("#EXTM3U\n")
         file.write("#EXT-X-VERSION:3\n")
         file.write("#EXT-X-STREAM-INF:PROGRAM-ID=1\n")
+        file.write(f"{EXTOPT}\n")
         file.write(f"{stream_url}\n")
     print(f"Saved M3U8 file: {filepath}")
 
@@ -100,17 +99,15 @@ if __name__ == "__main__":
     print("#EXT-X-VERSION:3")
 
     for channel, filename in channel_map.items():
-    # Adjust base_stream_url for "babes_tv" and "nts"
-    if channel == "babes_tv" or channel == "nts":
-        base_stream_url = f"http://api.peers.tv/timeshift/{channel}/126/playlist.m3u8"
-    else:
-        base_stream_url = f"http://api.peers.tv/timeshift/{channel}/16/playlist.m3u8"
+        if channel == "babes_tv" or channel == "nts":
+            base_stream_url = f"http://api.peers.tv/timeshift/{channel}/126/playlist.m3u8"
+        else:
+            base_stream_url = f"http://api.peers.tv/timeshift/{channel}/16/playlist.m3u8"
 
-    stream_url = get_stream_url(base_stream_url, token)
+        stream_url = get_stream_url(base_stream_url, token)
 
-    print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
-    print(EXTOPT)
-    print(stream_url)
+        print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
+        print(EXTOPT)
+        print(stream_url)
 
-    save_m3u8(f"{filename}.m3u8", stream_url)
-
+        save_m3u8(f"{filename}.m3u8", stream_url)
