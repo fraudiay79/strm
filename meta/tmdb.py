@@ -2,7 +2,7 @@ import os
 import requests
 import json
 
-API_KEY = "d71701bd5cda8d0e9b86cf383e4aa872"
+API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variable
 TV_ID = 1622  # Supernatural TV ID
 TOTAL_SEASONS = 15
 OUTPUT_DIR = "meta/shows"
@@ -10,6 +10,10 @@ OUTPUT_DIR = "meta/shows"
 os.makedirs(OUTPUT_DIR, exist_ok=True)  # Ensure the output directory exists
 
 def fetch_show_data():
+    if not API_KEY:
+        print("Error: TMDB_API_KEY is not set. Please add it to the environment variables.")
+        return
+
     show_info = {
         "name": "Supernatural",
         "category": "🄳 Supernatural",
