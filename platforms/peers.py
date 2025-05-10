@@ -75,6 +75,20 @@ tv_id = [
     "exxxotica_hd", "russkayanoch", "playboy_tv_18", "red_lips_hd"
 ]
 
+# Corresponding names for the output files
+names = [
+    "firstmuz", "2x2", "8kanal", "amedia1", "amediapremium", "bab", "bhus", "bratv", "ipark",
+    "davinci", "ero", "fan", "filmboxarthouse", "kino24", "mmatv", "rutv",
+    "rt", "scifi", "black", "red", "tiji", "dizi", "traveladventure",
+    "tv21", "tv1000action", "tv1000ruskino", "vijuexplorer", "vijunature", "vijusport", "vijucomedy", "vijumegahit",
+    "vijupremiere", "vijuserial", "indiya", "zoopark", "avto24", "autoplus", "v_gostyah_u_skazki",
+    "time", "detskij_mir", "dialogi_o_rybalke", "dom_kino", "dom_kino_premium", "dorama", "drive", "jv", "eurokino", "zoo_tv", "khl", "khlprime", "boets",
+    "strana", "otvrus", "ots", "1kanal", "friday", "5kanal", "rentv", "stslove", "futbol", "perec", "shalun", "otica", "russnoch", "pbtv", "redl"
+]
+
+# Mapping TV channel IDs to corresponding file names
+channel_map = dict(zip(tv_id, names))
+
 if __name__ == "__main__":
     token = get_token()
     if not token:
@@ -84,11 +98,16 @@ if __name__ == "__main__":
     print("#EXTM3U")
     print("#EXT-X-VERSION:3")
 
-    for channel in tv_id:
+    for channel, filename in channel_map.items():
+    # Adjust base_stream_url for "babes_tv"
+    if channel == "babes_tv":
+        base_stream_url = f"http://api.peers.tv/timeshift/{channel}/126/playlist.m3u8"
+    else:
         base_stream_url = f"http://api.peers.tv/timeshift/{channel}/16/playlist.m3u8"
-        stream_url = get_stream_url(base_stream_url, token)
 
-        print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
-        print(stream_url)
+    stream_url = get_stream_url(base_stream_url, token)
 
-        save_m3u8(f"{channel}.m3u8", stream_url)
+    print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
+    print(stream_url)
+
+    save_m3u8(f"{filename}.m3u8", stream_url)
