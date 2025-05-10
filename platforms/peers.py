@@ -8,9 +8,9 @@ os.makedirs(output_dir, exist_ok=True)
 
 USER_AGENT = "Dalvik/2.1.0 (Linux; U; Android 8.0.1;)"
 REFERRER = "https://peers.tv/"
-EXTOPT = "$OPT:adaptive-logic=highest$OPT:demux=adaptive,any$OPT:adaptive-use-access" \
-         f"$OPT:http-user-agent={USER_AGENT}$OPT:http-referrer={REFERRER}" \
-         "$OPT:no-ts-cc-check$OPT:INT-SCRIPT-PARAMS=peers_tv"
+EXTOPT = "#EXTVLCOPT:adaptive-logic=highest\n#EXTVLCOPT:demux=adaptive,any\n#EXTVLCOPT:adaptive-use-access\n" \
+         f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n#EXTVLCOPT:http-referrer={REFERRER}\n" \
+         "#EXTVLCOPT:no-ts-cc-check\n#EXTVLCOPT:INT-SCRIPT-PARAMS=peers_tv"
 
 def get_token():
     """Fetch authentication token from PeersTV API"""
@@ -72,18 +72,19 @@ tv_id = [
     "tv1000_premium_hd", "viasat_golf_hd", "zee-tv", "zoopark", "avto_24", "auto_plus", "v_gostyah_u_skazki",
     "time", "detskij_mir", "dialogi_o_rybalke", "dom_kino", "dom_kino_premium", "dorama", "drive", "jv", "eurokino", "zoo_tv", "khl", "kxl_hd", "boets",
     "match_nash_sport", "otvrus", "ots", "1kanal_hd", "friday", "5kanal", "rentv", "sts_love", "futbol_hd", "perec", "shalun",
-    "exxxotica_hd", "russkayanoch", "playboy_tv_18", "red_lips_hd"
+    "exxxotica_hd", "russkayanoch", "playboy_tv_18", "red_lips_hd", "karusel", "mama", "muz_tvnew", "tv3", "tnt_hd", "utv", "nts"
 ]
 
 # Corresponding names for the output files
 names = [
-    "firstmuz", "2x2", "8kanal", "amedia1", "amediapremium", "bab", "bhus", "bratv", "ipark",
+    "1hd", "2x2", "8kanal", "amedia1", "amediapremium", "bab", "bhus", "bratv", "ipark",
     "davinci", "ero", "fan", "filmboxarthouse", "kino24", "mmatv", "rutv",
     "rt", "scifi", "black", "red", "tiji", "dizi", "traveladventure",
     "tv21", "tv1000action", "tv1000ruskino", "vijuexplorer", "vijunature", "vijusport", "vijucomedy", "vijumegahit",
-    "vijupremiere", "vijuserial", "indiya", "zoopark", "avto24", "autoplus", "v_gostyah_u_skazki",
-    "time", "detskij_mir", "dialogi_o_rybalke", "dom_kino", "dom_kino_premium", "dorama", "drive", "jv", "eurokino", "zoo_tv", "khl", "khlprime", "boets",
-    "strana", "otvrus", "ots", "1kanal", "friday", "5kanal", "rentv", "stslove", "futbol", "perec", "shalun", "otica", "russnoch", "pbtv", "redl"
+    "vijupremiere", "vijuserial", "indiya", "zoopark", "avto24", "autoplus", "vgostyahuskazki",
+    "vremya", "detskijmir", "dialogiorybalke", "domkino", "domkinopremium", "dorama", "drive", "jv", "eurokino", "zootv", "khl", "khlprime", "boets",
+    "strana", "otvrus", "ots", "1kanal", "friday", "5kanal", "rentv", "stslove", "futbol", "che", "shalun", "otica", "russnoch", "pbtv", "redl", "karusel",
+    "mama", "muztv", "tv3", "tnt", "utv", "nts"
 ]
 
 # Mapping TV channel IDs to corresponding file names
@@ -99,7 +100,7 @@ if __name__ == "__main__":
     print("#EXT-X-VERSION:3")
 
     for channel, filename in channel_map.items():
-    if channel == "babes_tv":
+    if channel == "babes_tv" or channel == "nts":
         base_stream_url = f"http://api.peers.tv/timeshift/{channel}/126/playlist.m3u8"
     else:
         base_stream_url = f"http://api.peers.tv/timeshift/{channel}/16/playlist.m3u8"
@@ -107,6 +108,7 @@ if __name__ == "__main__":
     stream_url = get_stream_url(base_stream_url, token)
 
     print("#EXT-X-STREAM-INF:PROGRAM-ID=1")
+    print(EXTOPT)
     print(stream_url)
 
     save_m3u8(f"{filename}.m3u8", stream_url)
