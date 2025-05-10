@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 peers.py
+            python3 salom.py
 
       - name: commit and push files
         run: |
