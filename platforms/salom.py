@@ -29,16 +29,12 @@ output_dir = "links/salom"
 os.makedirs(output_dir, exist_ok=True)
 
 # Fetch the JSON data
-session = requests.Session()  # Handle cookies properly
+session = requests.Session()
 session.headers.update(headers)
 
 response = session.get(api_url)
 if response.status_code == 200:
-    try:
-        data = json.loads(response.content.decode('utf-8'))  # Ensure proper decoding
-    except json.JSONDecodeError:
-        print("Failed to parse JSON response")
-        exit()
+    data = response.json()
 
     # Process M3U8 files
     for channel in data.get("tv_channels", []):
