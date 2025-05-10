@@ -2,39 +2,51 @@ import os
 import requests
 import json
 
-API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variables
-OUTPUT_DIR_SHOWS = "meta/shows"
-OUTPUT_DIR_MOVIES = "meta/movies"
+API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variable
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Get script directory
+MOVIE_LIST_FILE = os.path.join(SCRIPT_DIR, "movie_list.json")  # Path to movie list JSON
+SHOWS_LIST_FILE = os.path.join(SCRIPT_DIR, "shows_list.json")  # Path to shows list JSON
+
+OUTPUT_DIR_SHOWS = os.path.join(SCRIPT_DIR, "meta/shows")
+OUTPUT_DIR_MOVIES = os.path.join(SCRIPT_DIR, "meta/movies")
+
+os.makedirs(OUTPUT_DIR_SHOWS, exist_ok=True)
+os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
 
 # Unicode squared letters mapping (A-Z)
 SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
 
-SHOWS = {
-    "Supernatural": 1622,
-    "Seinfeld": 1957, "Game of Thrones": 1399, "Band of Brothers": 4613, "House of the Dragon": 94997,
-    "Chernobyl": 87108, "The Sopranos": 52814, "The Wire": 1438, "Sherlock": 19885, "The Tudors": 2942,
-    "Firefly": 1437, "Spartacus": 46296, "The Pacific": 16997, "Dracula (2020)": 86850, "Dracula": 58928,
-    "Gangs of London": 85021, "Broadchurch": 1427, "Rome": 1891, "Deadwood": 1406, "The Last of Us": 100088,
-    "The Boys": 76479, "The Witcher": 71912, "Dune: Prophecy": 90228, "The Penguin": 194764, "Da Ali G Show": 4417,
-    "The Office": 2996, "True Detective": 46648, "Taboo": 65708, "Dexter": 1405, "Black Sails": 47665,
-    "The Night Of": 66276, "The Walking Dead: Daryl Dixon": 211684, "The Walking Dead: Dead City": 194583,
-    "The Walking Dead: The Ones Who Live": 206586, "The Fall": 49010, "Copper": 44983, "Mr. Bean": 4327,
-    "Blackadder": 7246, "Penny Dreadful": 54671, "The Night Manager": 61859, "Mad Men": 1104, "Tulsa King": 153312,
-    "Killing Eve": 72750, "Halo": 52814, "Mayor of Kingstown": 97951, "Weeds": 186, "Luther": 1426, "Time": 126116,
-    "Dead Set": 7831, "The Frankenstein Chronicles": 64421, "Outlander": 56570, "Peacemaker": 110492,
-    "The Terror": 75191, "Succession": 76331, "Warrior": 73544, "The Couple Next Door": 223438,
-    "The White Lotus": 111803
-}
+# Load TV shows from shows_list.json
+def load_shows():
+    if not os.path.exists(SHOWS_LIST_FILE):
+        print("Error: shows_list.json not found.")
+        return {}
+    
+    with open(SHOWS_LIST_FILE, "r", encoding="utf-8") as f:
+        try:
+            data = json.load(f)
+            return data if isinstance(data, dict) else {}
+        except json.JSONDecodeError:
+            print("Error: Failed to parse shows_list.json.")
+            return {}
 
-MOVIES = {
-    "The Avengers": 24428, "The Dark Knight": 155, "Inception": 27205, "Interstellar": 157336,
-    "Gladiator": 98, "Titanic": 597, "The Godfather": 238, "Pulp Fiction": 680,
-    "Fight Club": 550, "Schindler's List": 424, "The Lord of the Rings: The Fellowship of the Ring": 120,
-    "The Lord of the Rings: The Two Towers": 121, "The Lord of the Rings: The Return of the King": 122
-}
+SHOWS = load_shows()
 
-os.makedirs(OUTPUT_DIR_SHOWS, exist_ok=True)
-os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
+# Load movies from movie_list.json
+def load_movies():
+    if not os.path.exists(MOVIE_LIST_FILE):
+        print("Error: movie_list.json not found.")
+        return {}
+    
+    with open(MOVIE_LIST_FILE, "r", encoding="utf-8") as f:
+        try:
+            data = json.load(f)
+            return data if isinstance(data, dict) else {}
+        except json.JSONDecodeError:
+            print("Error: Failed to parse movie_list.json.")
+            return {}
+
+MOVIES = load_movies()
 
 def get_squared_letter(name):
     words = name.split()
@@ -149,11 +161,11 @@ def fetch_movie_data(movie_name, movie_id):
         print(f"Error fetching {movie_name}: {e}")
         return None
 
-# Fetch TV shows
+# Fetch TV shows from shows_list.json
 for name, id in SHOWS.items():
     fetch_show_data(name, id)
 
-# Fetch movies and store in a single JSON file
+# Fetch movies from movie_list.json and store in a single JSON file
 movies_data = [fetch_movie_data(name, id) for name, id in sorted(MOVIES.items()) if fetch_movie_data(name, id)]
 output_file = os.path.join(OUTPUT_DIR_MOVIES, "movies.json")
 with open(output_file, "w", encoding="utf-8") as f:
