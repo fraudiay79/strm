@@ -42,7 +42,7 @@ SHOWS = {
     "Mr. Bean": 4327,
     "Blackadder": 7246,
     "Penny Dreadful": 54671,
-    "The Night Manager: 61859,
+    "The Night Manager": 61859,
     "Mad Men": 1104,
     "Tulsa King": 153312,
     "Killing Eve": 72750,
