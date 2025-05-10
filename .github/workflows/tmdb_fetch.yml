@@ -30,18 +30,11 @@ jobs:
         TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       run: python meta/tmdb.py
 
-    - name: Configure Git
+    - name: Commit & Push Updated Data
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-
-    - name: Push to Different Repository
-      env:
-        TARGET_REPO: ${{ secrets.TARGET_REPO }}
-        TARGET_BRANCH: "main"
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: |
-        git remote add target https://github.com/${TARGET_REPO}.git
-        git add meta/shows/*.json meta/movies/movies.json
+        git add meta/shows/*.json meta/movies/*.json
         git commit -m "Update TMDb data for TV shows and movies"
-        git push target HEAD:$TARGET_BRANCH
+        git push
+      continue-on-error: true
