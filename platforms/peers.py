@@ -100,6 +100,7 @@ if __name__ == "__main__":
     print("#EXT-X-VERSION:3")
 
     for channel, filename in channel_map.items():
+    # Adjust base_stream_url for "babes_tv" and "nts"
     if channel == "babes_tv" or channel == "nts":
         base_stream_url = f"http://api.peers.tv/timeshift/{channel}/126/playlist.m3u8"
     else:
@@ -112,3 +113,4 @@ if __name__ == "__main__":
     print(stream_url)
 
     save_m3u8(f"{filename}.m3u8", stream_url)
+
