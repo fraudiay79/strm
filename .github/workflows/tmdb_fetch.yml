@@ -25,16 +25,16 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
 
-    - name: Run TMDb Script
+    - name: Run TMDb Script for TV Shows & Movies
       env:
         TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
       run: python meta/tmdb.py
 
-    - name: Commit & Push Data
+    - name: Commit & Push Updated Data
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        git add meta/shows/*.json
-        git commit -m "Update TMDb data for all shows"
+        git add meta/shows/*.json meta/movies/*.json
+        git commit -m "Update TMDb data for TV shows and movies"
         git push
       continue-on-error: true
