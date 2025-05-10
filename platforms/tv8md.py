@@ -16,7 +16,7 @@ headers = {
 session = requests.Session()
 
 # Directory to save output files
-output_dir = "links/pl"
+output_dir = "links/md"
 os.makedirs(output_dir, exist_ok=True)
 
 try:
