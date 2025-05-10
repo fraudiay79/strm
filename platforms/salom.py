@@ -1,7 +1,6 @@
 import os
 import requests
 import json
-import urllib.parse
 
 # Define the API URL
 api_url = "https://spectator-api.salomtv.uz/v1/tv/channel"
@@ -29,43 +28,24 @@ output_dir = "links/salom"
 os.makedirs(output_dir, exist_ok=True)
 
 # Fetch the JSON data
-session = requests.Session()
+session = requests.Session()  # Handle cookies properly
 session.headers.update(headers)
 
 response = session.get(api_url)
 if response.status_code == 200:
     data = response.json()
-
-    # Process M3U8 files
+    
+    # Iterate over each channel and save the M3U8 file in the specified directory
     for channel in data.get("tv_channels", []):
         flusonic_id = channel.get("flusonic_id")
         m3u8_url = channel.get("url")
-
+        
         if flusonic_id and m3u8_url:
-            content_response = session.get(m3u8_url)
-
-            if content_response.status_code == 200:
-                content = content_response.text
-                lines = content.split("\n")
-                modified_content = ""
-
-                base_url = urllib.parse.urljoin(m3u8_url, "/")  # More robust URL handling
-
-                for line in lines:
-                    line = line.strip()
-                    if line.startswith("tracks"):
-                        full_url = base_url + line
-                        modified_content += full_url + "\n"
-                    else:
-                        modified_content += line + "\n"
-
-                # Save modified M3U8 content
-                filename = os.path.join(output_dir, f"{flusonic_id}.m3u8")
-                with open(filename, "w") as file:
-                    file.write(modified_content)
-                
-                print(f"Saved {filename}")
-            else:
-                print(f"Failed to fetch M3U8 content for {flusonic_id}")
+            filename = os.path.join(output_dir, f"{flusonic_id}.m3u8")
+            with open(filename, "w") as file:
+                file.write("#EXTM3U\n")
+                file.write("#EXT-X-STREAM-INF:PROGRAM-ID=1\n")
+                file.write(m3u8_url + "\n")
+            print(f"Saved {filename}")
 else:
-    print(f"Failed to fetch data from API. Status code: {response.status_code}")
+    print("Failed to fetch data from API. Status code:", response.status_code)
