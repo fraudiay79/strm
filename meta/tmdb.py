@@ -4,72 +4,25 @@ import json
 
 API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variable
 SHOWS = {
-    "Seinfeld": 1957,
-    "Game of Thrones": 1399,
-    "Band of Brothers": 4613,
-    "House of the Dragon": 94997,
-    "Chernobyl": 87108,
-    "The Sopranos": 52814,
-    "The Wire": 1438,
-    "Sherlock": 19885,
-    "The Tudors": 2942,
-    "Firefly": 1437,
-    "Spartacus": 46296,
-    "The Pacific": 16997,
-    "Dracula (2020)": 86850,    
-    "Dracula": 58928,
-    "Gangs of London": 85021,
-    "Broadchurch": 1427,
-    "Rome": 1891,
-    "Deadwood": 1406,
-    "The Last of Us": 100088,
-    "The Boys": 76479,
-    "The Witcher": 71912,
-    "Dune: Prophecy": 90228,
-    "The Penguin": 194764,
-    "Da Ali G Show": 4417,
-    "The Office": 2996,
-    "True Detective": 46648,
-    "Taboo": 65708,
-    "Dexter": 1405,
-    "Black Sails": 47665,
-    "The Night Of": 66276,
-    "The Walking Dead: Daryl Dixon": 211684,
-    "The Walking Dead: Dead City": 194583,
-    "The Walking Dead: The Ones Who Live": 206586,
-    "The Fall": 49010,
-    "Copper": 44983,
-    "Mr. Bean": 4327,
-    "Blackadder": 7246,
-    "Penny Dreadful": 54671,
-    "The Night Manager": 61859,
-    "Mad Men": 1104,
-    "Tulsa King": 153312,
-    "Killing Eve": 72750,
-    "Halo": 52814,
-    "Mayor of Kingstown": 97951,
-    "Weeds": 186,
-    "Luther": 1426,
-    "Time": 126116,
-    "Dead Set": 7831,
-    "The Frankenstein Chronicles": 64421,
-    "Outlander": 56570,
-    "Peacemaker": 110492,
-    "The Terror": 75191, 
-    "Succession": 76331,
-    "Warrior": 73544,
-    "The Couple Next Door": 223438,
+    "Supernatural": 1622,
+    "Seinfeld": 1957, "Game of Thrones": 1399, "Band of Brothers": 4613, "House of the Dragon": 94997,
+    "Chernobyl": 87108, "The Sopranos": 52814, "The Wire": 1438, "Sherlock": 19885, "The Tudors": 2942,
+    "Firefly": 1437, "Spartacus": 46296, "The Pacific": 16997, "Dracula (2020)": 86850, "Dracula": 58928,
+    "Gangs of London": 85021, "Broadchurch": 1427, "Rome": 1891, "Deadwood": 1406, "The Last of Us": 100088,
+    "The Boys": 76479, "The Witcher": 71912, "Dune: Prophecy": 90228, "The Penguin": 194764, "Da Ali G Show": 4417,
+    "The Office": 2996, "True Detective": 46648, "Taboo": 65708, "Dexter": 1405, "Black Sails": 47665,
+    "The Night Of": 66276, "The Walking Dead: Daryl Dixon": 211684, "The Walking Dead: Dead City": 194583,
+    "The Walking Dead: The Ones Who Live": 206586, "The Fall": 49010, "Copper": 44983, "Mr. Bean": 4327,
+    "Blackadder": 7246, "Penny Dreadful": 54671, "The Night Manager": 61859, "Mad Men": 1104, "Tulsa King": 153312,
+    "Killing Eve": 72750, "Halo": 52814, "Mayor of Kingstown": 97951, "Weeds": 186, "Luther": 1426, "Time": 126116,
+    "Dead Set": 7831, "The Frankenstein Chronicles": 64421, "Outlander": 56570, "Peacemaker": 110492,
+    "The Terror": 75191, "Succession": 76331, "Warrior": 73544, "The Couple Next Door": 223438,
     "The White Lotus": 111803
 }
 OUTPUT_DIR = "meta/shows"
 
 # Unicode squared letters mapping (A-Z)
-SQUARED_LETTERS = {
-    "A": "🄰", "B": "🄱", "C": "🄲", "D": "🄳", "E": "🄴", "F": "🄵", "G": "🄶",
-    "H": "🄷", "I": "🄸", "J": "🄹", "K": "🄺", "L": "🄻", "M": "🄼", "N": "🄽",
-    "O": "🄾", "P": "🄿", "Q": "🅀", "R": "🅁", "S": "🅂", "T": "🅃", "U": "🅄",
-    "V": "🅅", "W": "🅆", "X": "🅇", "Y": "🅈", "Z": "🅉"
-}
+SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)  # Ensure the output directory exists
 
@@ -89,7 +42,7 @@ def fetch_show_data(show_name, show_id):
     }
 
     # Fetch general show details
-    base_url = f"https://api.themoviedb.org/3/tv/{show_id}?api_key={API_KEY}"
+    base_url = f"https://api.themoviedb.org/3/tv/{show_id}?api_key={API_KEY}&append_to_response=credits"
     try:
         response = requests.get(base_url)
         response.raise_for_status()
@@ -100,7 +53,8 @@ def fetch_show_data(show_name, show_id):
             "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
             "plot": data.get("overview", ""),
             "rating": str(data.get("vote_average", "")),
-            "genre": [genre["name"].lower() for genre in data.get("genres", [])]
+            "genre": [genre["name"].lower() for genre in data.get("genres", [])],
+            "cast": [actor["name"] for actor in data.get("credits", {}).get("cast", [])[:5]]  # Moved cast here
         }
 
         # Fetch seasons
@@ -116,7 +70,6 @@ def fetch_show_data(show_name, show_id):
                     "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{season_data.get('poster_path', '')}",
                     "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{season_data.get('backdrop_path', '')}",
                     "plot": season_data.get("overview", ""),
-                    "cast": [actor["name"] for actor in season_data.get("credits", {}).get("cast", [])[:2]],
                     "year": season_data.get("air_date", "").split("-")[0] if season_data.get("air_date") else None,
                     "trailer": ""
                 },
