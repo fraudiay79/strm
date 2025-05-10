@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+import urllib.parse
 
 # Define the API URL
 api_url = "https://spectator-api.salomtv.uz/v1/tv/channel"
@@ -29,24 +30,31 @@ output_dir = "links/salom"
 os.makedirs(output_dir, exist_ok=True)
 
 # Fetch the JSON data
-response = requests.get(api_url, headers=headers)
+session = requests.Session()  # Handle cookies properly
+session.headers.update(headers)
+
+response = session.get(api_url)
 if response.status_code == 200:
-    data = response.json()
-    
-    # Iterate over each channel and process M3U8 files
+    try:
+        data = json.loads(response.content.decode('utf-8'))  # Ensure proper decoding
+    except json.JSONDecodeError:
+        print("Failed to parse JSON response")
+        exit()
+
+    # Process M3U8 files
     for channel in data.get("tv_channels", []):
         flusonic_id = channel.get("flusonic_id")
         m3u8_url = channel.get("url")
 
         if flusonic_id and m3u8_url:
-            content_response = requests.get(m3u8_url)
+            content_response = session.get(m3u8_url)
 
             if content_response.status_code == 200:
                 content = content_response.text
                 lines = content.split("\n")
-                modified_content = ""  # No longer initializes with #EXTM3U
+                modified_content = ""
 
-                base_url = m3u8_url.rsplit("/", 1)[0] + "/"  # Extract base URL
+                base_url = urllib.parse.urljoin(m3u8_url, "/")  # More robust URL handling
 
                 for line in lines:
                     line = line.strip()
@@ -65,4 +73,4 @@ if response.status_code == 200:
             else:
                 print(f"Failed to fetch M3U8 content for {flusonic_id}")
 else:
-    print("Failed to fetch data from API. Status code:", response.status_code)
+    print(f"Failed to fetch data from API. Status code: {response.status_code}")
