@@ -33,17 +33,36 @@ response = requests.get(api_url, headers=headers)
 if response.status_code == 200:
     data = response.json()
     
-    # Iterate over each channel and save the M3U8 file in the specified directory
+    # Iterate over each channel and process M3U8 files
     for channel in data.get("tv_channels", []):
         flusonic_id = channel.get("flusonic_id")
         m3u8_url = channel.get("url")
-        
+
         if flusonic_id and m3u8_url:
-            filename = os.path.join(output_dir, f"{flusonic_id}.m3u8")
-            with open(filename, "w") as file:
-                file.write("#EXTM3U\n")
-                file.write("#EXT-X-STREAM-INF:PROGRAM-ID=1\n")
-                file.write(m3u8_url + "\n")
-            print(f"Saved {filename}")
+            content_response = requests.get(m3u8_url)
+
+            if content_response.status_code == 200:
+                content = content_response.text
+                lines = content.split("\n")
+                modified_content = ""  # No longer initializes with #EXTM3U
+
+                base_url = m3u8_url.rsplit("/", 1)[0] + "/"  # Extract base URL
+
+                for line in lines:
+                    line = line.strip()
+                    if line.startswith("tracks"):
+                        full_url = base_url + line
+                        modified_content += full_url + "\n"
+                    else:
+                        modified_content += line + "\n"
+
+                # Save modified M3U8 content
+                filename = os.path.join(output_dir, f"{flusonic_id}.m3u8")
+                with open(filename, "w") as file:
+                    file.write(modified_content)
+                
+                print(f"Saved {filename}")
+            else:
+                print(f"Failed to fetch M3U8 content for {flusonic_id}")
 else:
     print("Failed to fetch data from API. Status code:", response.status_code)
