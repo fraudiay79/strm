@@ -1,0 +1,100 @@
+{
+  "name": "Dead Set",
+  "category": "\ud83c\udd33 Dead Set",
+  "info": {
+    "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/wks5MzDsW5zg5KrQz0JCcefDNeM.jpg",
+    "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/weGZnTTwTESZvKx6EZU6myuRL9f.jpg",
+    "plot": "Zombies are rampaging throughout Britain. Blissfully unaware of gory events outside, the Big Brother housemates are in for the ultimate eviction night...",
+    "rating": "7.242",
+    "genre": [
+      "drama",
+      "sci-fi & fantasy"
+    ],
+    "cast": [
+      "Kevin Eldon",
+      "Beth Cordingly",
+      "Warren Brown",
+      "Riz Ahmed",
+      "Davina McCall"
+    ]
+  },
+  "seasons": [
+    {
+      "season": 1,
+      "info": {
+        "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/nDtuEUOj5pzzFVXDUhKNmc9Vpm2.jpg",
+        "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+        "plot": "Britain is in the grip of an apocalyptic crisis. While the housemates in the Big Brother house remain oblivious, fast-moving hoards of the undead decimate the studio compound.",
+        "year": "2008",
+        "trailer": ""
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Outbreak",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lMcKiJxrF6xk6LNVwy1ZLDICHVG.jpg",
+            "plot": "It\u2019s a typical Friday night eviction on Big Brother. Except it\u2019s not a typical evening; there are reports of disturbances and riots all over the country. BB Producer Patrick has just heard that the live show may be bumped for breaking news on the riots.",
+            "director": [],
+            "duration": 2760,
+            "rating": "7.3",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lMcKiJxrF6xk6LNVwy1ZLDICHVG.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 2,
+          "name": "Can the Housemates Keep Angel Alive?",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ORlg7cWQmYmlLxcBzO55JdE8pv.jpg",
+            "plot": "After an encounter with a zombie, Riq meets lone armed survivor Alex. The pair team up and escape the zombies by hiding in an abandoned country house.",
+            "director": [],
+            "duration": 1440,
+            "rating": "7.0",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ORlg7cWQmYmlLxcBzO55JdE8pv.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 3,
+          "name": "Live Feed",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/idDQobtmvQmiUuxSNJoOH796L3R.jpg",
+            "plot": "As Kelly and Marky hunt for medical supplies, the situation in the Big Brother house takes a sudden turn for the worse. Meanwhile, Patrick does something to appall Pippa. Riq and Alex make a startling discovery.",
+            "director": [],
+            "duration": 1500,
+            "rating": "7.0",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/idDQobtmvQmiUuxSNJoOH796L3R.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 4,
+          "name": "Running",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/e7dQSVS8T46eJSAm8771MRElcxG.jpg",
+            "plot": "Patrick and Pippa make a desperate bid for freedom. Riq and Alex face unimaginable peril. Joplin thinks he\u2019s worked out what\u2019s happening. And the undead are still arriving...",
+            "director": [],
+            "duration": 1500,
+            "rating": "7.4",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/e7dQSVS8T46eJSAm8771MRElcxG.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 5,
+          "name": "A Way Out",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gZf0spmWFoyCOMk5uS0HbMjt4SH.jpg",
+            "plot": "As huge numbers of undead gather at the studio gates, Patrick, Kelly and the housemates are forced to make some agonizing decisions. Who will survive \u2013 and what will be left of them?",
+            "director": [],
+            "duration": 1560,
+            "rating": "7.5",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gZf0spmWFoyCOMk5uS0HbMjt4SH.jpg"
+          },
+          "video": ""
+        }
+      ]
+    }
+  ]
+}

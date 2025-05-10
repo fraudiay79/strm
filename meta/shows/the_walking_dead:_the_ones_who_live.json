@@ -1,0 +1,111 @@
+{
+  "name": "The Walking Dead: The Ones Who Live",
+  "category": "\ud83c\udd43 The Walking Dead: The Ones Who Live",
+  "info": {
+    "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/ywbacot78IuNhGW4uVZPxxxVTkm.jpg",
+    "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/5PCKxpFcCTDFT3b1olJGPaAIM9e.jpg",
+    "plot": "The love story of Rick Grimes and Michonne is changed by a changed world. Kept apart by distance. By an unstoppable power. Can they find each other and who they were in a situation unlike any they've ever known?",
+    "rating": "7.953",
+    "genre": [
+      "sci-fi & fantasy",
+      "drama"
+    ],
+    "cast": [
+      "Andrew Lincoln",
+      "Danai Gurira",
+      "Pollyanna McIntosh"
+    ]
+  },
+  "seasons": [
+    {
+      "season": 1,
+      "info": {
+        "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vZ57LSqaelPrW90Ujw497YhRa04.jpg",
+        "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+        "plot": "",
+        "year": "2024",
+        "trailer": ""
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "Years",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hikNgOTUgd6ASVqHgvW6TpjoZGG.jpg",
+            "plot": "Rick tries to find his place in a new world.",
+            "director": [],
+            "duration": 3480,
+            "rating": "8.3",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hikNgOTUgd6ASVqHgvW6TpjoZGG.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 2,
+          "name": "Gone",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/faHjP0CJp4f57xcSjE7UlntNPyR.jpg",
+            "plot": "Michonne finds unexpected help on her search for Rick.",
+            "director": [],
+            "duration": 3300,
+            "rating": "7.9",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/faHjP0CJp4f57xcSjE7UlntNPyR.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 3,
+          "name": "Bye",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/o1Qw7o1ab4tAzMUh5esJ41TNpZF.jpg",
+            "plot": "Rick and Michonne have to find a way to survive.",
+            "director": [],
+            "duration": 2940,
+            "rating": "7.3",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/o1Qw7o1ab4tAzMUh5esJ41TNpZF.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 4,
+          "name": "What We",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/93RqOHVclGyBoH4FIi3VmHnlxXe.jpg",
+            "plot": "Rick and Michonne try to find the love they had.",
+            "director": [],
+            "duration": 3060,
+            "rating": "6.8",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/93RqOHVclGyBoH4FIi3VmHnlxXe.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 5,
+          "name": "Become",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/q6Vqo90TAbu9NbuIhPgxzgIZogh.jpg",
+            "plot": "Dangerous people make Rick and Michonne's journey difficult.",
+            "director": [],
+            "duration": 3000,
+            "rating": "7.2",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/q6Vqo90TAbu9NbuIhPgxzgIZogh.jpg"
+          },
+          "video": ""
+        },
+        {
+          "episode": 6,
+          "name": "The Last Time",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aC727VkeHt1XTo7yzzHA0emwmvx.jpg",
+            "plot": "Rick and Michonne have to perform a near-impossible miracle.",
+            "director": [],
+            "duration": 3000,
+            "rating": "7.3",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aC727VkeHt1XTo7yzzHA0emwmvx.jpg"
+          },
+          "video": ""
+        }
+      ]
+    }
+  ]
+}
