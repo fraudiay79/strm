@@ -9,19 +9,23 @@ OUTPUT_DIR_MOVIES = "meta/movies"
 # Unicode squared letters mapping (A-Z)
 SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
 
-# TV Shows List
 SHOWS = {
-    "Supernatural": 1622, "Seinfeld": 1957, "Game of Thrones": 1399, "Band of Brothers": 4613,
-    "House of the Dragon": 94997, "Chernobyl": 87108, "The Sopranos": 52814, "The Wire": 1438,
-    "Sherlock": 19885, "The Tudors": 2942, "Firefly": 1437, "Spartacus": 46296,
-    "The Pacific": 16997, "Dracula (2020)": 86850, "Dracula": 58928, "Gangs of London": 85021,
-    "Broadchurch": 1427, "Rome": 1891, "Deadwood": 1406, "The Last of Us": 100088,
-    "The Boys": 76479, "The Witcher": 71912, "Dune: Prophecy": 90228, "The Penguin": 194764,
-    "True Detective": 46648, "Taboo": 65708, "Dexter": 1405, "Black Sails": 47665,
-    "Peacemaker": 110492, "Succession": 76331, "Warrior": 73544, "The White Lotus": 111803
+    "Supernatural": 1622,
+    "Seinfeld": 1957, "Game of Thrones": 1399, "Band of Brothers": 4613, "House of the Dragon": 94997,
+    "Chernobyl": 87108, "The Sopranos": 52814, "The Wire": 1438, "Sherlock": 19885, "The Tudors": 2942,
+    "Firefly": 1437, "Spartacus": 46296, "The Pacific": 16997, "Dracula (2020)": 86850, "Dracula": 58928,
+    "Gangs of London": 85021, "Broadchurch": 1427, "Rome": 1891, "Deadwood": 1406, "The Last of Us": 100088,
+    "The Boys": 76479, "The Witcher": 71912, "Dune: Prophecy": 90228, "The Penguin": 194764, "Da Ali G Show": 4417,
+    "The Office": 2996, "True Detective": 46648, "Taboo": 65708, "Dexter": 1405, "Black Sails": 47665,
+    "The Night Of": 66276, "The Walking Dead: Daryl Dixon": 211684, "The Walking Dead: Dead City": 194583,
+    "The Walking Dead: The Ones Who Live": 206586, "The Fall": 49010, "Copper": 44983, "Mr. Bean": 4327,
+    "Blackadder": 7246, "Penny Dreadful": 54671, "The Night Manager": 61859, "Mad Men": 1104, "Tulsa King": 153312,
+    "Killing Eve": 72750, "Halo": 52814, "Mayor of Kingstown": 97951, "Weeds": 186, "Luther": 1426, "Time": 126116,
+    "Dead Set": 7831, "The Frankenstein Chronicles": 64421, "Outlander": 56570, "Peacemaker": 110492,
+    "The Terror": 75191, "Succession": 76331, "Warrior": 73544, "The Couple Next Door": 223438,
+    "The White Lotus": 111803
 }
 
-# Movies List
 MOVIES = {
     "The Avengers": 24428, "The Dark Knight": 155, "Inception": 27205, "Interstellar": 157336,
     "Gladiator": 98, "Titanic": 597, "The Godfather": 238, "Pulp Fiction": 680,
@@ -33,16 +37,14 @@ os.makedirs(OUTPUT_DIR_SHOWS, exist_ok=True)
 os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
 
 def get_squared_letter(name):
-    """ Extracts first meaningful letter for squared symbol """
     words = name.split()
     first_letter = words[1][0].upper() if words[0].lower() == "the" and len(words) > 1 else words[0][0].upper()
     return SQUARED_LETTERS.get(first_letter, "")
 
 def fetch_show_data(show_name, show_id):
-    """ Fetches and formats TV show data """
     squared_letter = get_squared_letter(show_name)
-    
     base_url = f"https://api.themoviedb.org/3/tv/{show_id}?api_key={API_KEY}&append_to_response=credits"
+    
     try:
         response = requests.get(base_url)
         response.raise_for_status()
@@ -90,7 +92,10 @@ def fetch_show_data(show_name, show_id):
                         "duration": ep.get("runtime", 0) * 60 if ep.get("runtime") else None,
                         "rating": str(ep.get("vote_average", "")),
                         "backdrop": f"https://image.tmdb.org/t/p/w500_and_h282_face{ep.get('still_path', '')}"
-                    }
+                    },
+                    "video": "",
+                    "drm": "",
+                    "drmkey": ""
                 }
                 season_info["episodes"].append(episode_info)
 
@@ -106,10 +111,9 @@ def fetch_show_data(show_name, show_id):
         print(f"Error fetching {show_name}: {e}")
 
 def fetch_movie_data(movie_name, movie_id):
-    """ Fetches and formats movie data """
     squared_letter = get_squared_letter(movie_name)
-
     base_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&append_to_response=credits,videos"
+    
     try:
         response = requests.get(base_url)
         response.raise_for_status()
@@ -121,7 +125,7 @@ def fetch_movie_data(movie_name, movie_id):
                 trailer_key = video["key"]
                 break
 
-        movie_info = {
+        return {
             "name": movie_name,
             "category": f"{squared_letter} {movie_name}",
             "info": {
@@ -135,20 +139,24 @@ def fetch_movie_data(movie_name, movie_id):
                 "trailer": trailer_key,
                 "rating": str(data.get("vote_average", "")),
                 "year": data.get("release_date", "").split("-")[0] if data.get("release_date") else None
-            }
+            },
+            "video": "",
+            "drm": "",
+            "drmkey": ""
         }
-
-        output_file = os.path.join(OUTPUT_DIR_MOVIES, f"{movie_name.lower().replace(' ', '_')}.json")
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(movie_info, f, indent=2)
-
-        print(f"Saved: {output_file}")
 
     except requests.RequestException as e:
         print(f"Error fetching {movie_name}: {e}")
+        return None
 
-# Fetch TV shows & movies
+# Fetch TV shows
 for name, id in SHOWS.items():
     fetch_show_data(name, id)
-for name, id in MOVIES.items():
-    fetch_movie_data(name, id)
+
+# Fetch movies and store in a single JSON file
+movies_data = [fetch_movie_data(name, id) for name, id in sorted(MOVIES.items()) if fetch_movie_data(name, id)]
+output_file = os.path.join(OUTPUT_DIR_MOVIES, "movies.json")
+with open(output_file, "w", encoding="utf-8") as f:
+    json.dump({"movies": movies_data}, f, indent=2)
+
+print(f"Saved combined movie data to {output_file}")
