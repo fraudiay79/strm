@@ -7,8 +7,8 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Get script directory
 MOVIE_LIST_FILE = os.path.join(SCRIPT_DIR, "movie_list.json")  # Path to movie list JSON
 SHOWS_LIST_FILE = os.path.join(SCRIPT_DIR, "shows_list.json")  # Path to shows list JSON
 
-OUTPUT_DIR_SHOWS = os.path.join(SCRIPT_DIR, "meta/shows")
-OUTPUT_DIR_MOVIES = os.path.join(SCRIPT_DIR, "meta/movies")
+OUTPUT_DIR_SHOWS = os.path.join(SCRIPT_DIR, "shows")
+OUTPUT_DIR_MOVIES = os.path.join(SCRIPT_DIR, "movies")
 
 os.makedirs(OUTPUT_DIR_SHOWS, exist_ok=True)
 os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
