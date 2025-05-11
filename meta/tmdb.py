@@ -16,37 +16,21 @@ os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
 # Unicode squared letters mapping (A-Z)
 SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
 
-# Load TV shows from shows_list.json
-def load_shows():
-    if not os.path.exists(SHOWS_LIST_FILE):
-        print("Error: shows_list.json not found.")
+def load_json_file(file_path):
+    if not os.path.exists(file_path):
+        print(f"Error: {file_path} not found.")
         return {}
-    
-    with open(SHOWS_LIST_FILE, "r", encoding="utf-8") as f:
+
+    with open(file_path, "r", encoding="utf-8") as f:
         try:
             data = json.load(f)
             return data if isinstance(data, dict) else {}
         except json.JSONDecodeError:
-            print("Error: Failed to parse shows_list.json.")
+            print(f"Error: Failed to parse {file_path}.")
             return {}
 
-SHOWS = load_shows()
-
-# Load movies from movie_list.json
-def load_movies():
-    if not os.path.exists(MOVIE_LIST_FILE):
-        print("Error: movie_list.json not found.")
-        return {}
-    
-    with open(MOVIE_LIST_FILE, "r", encoding="utf-8") as f:
-        try:
-            data = json.load(f)
-            return data if isinstance(data, dict) else {}
-        except json.JSONDecodeError:
-            print("Error: Failed to parse movie_list.json.")
-            return {}
-
-MOVIES = load_movies()
+SHOWS = load_json_file(SHOWS_LIST_FILE)
+MOVIES = load_json_file(MOVIE_LIST_FILE)
 
 def get_squared_letter(name):
     words = name.split()
@@ -56,7 +40,7 @@ def get_squared_letter(name):
 def fetch_show_data(show_name, show_id):
     squared_letter = get_squared_letter(show_name)
     base_url = f"https://api.themoviedb.org/3/tv/{show_id}?api_key={API_KEY}&append_to_response=credits"
-    
+
     try:
         response = requests.get(base_url)
         response.raise_for_status()
@@ -69,7 +53,7 @@ def fetch_show_data(show_name, show_id):
                 "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
                 "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
                 "plot": data.get("overview", ""),
-                "rating": str(data.get("vote_average", "")),
+                "rating": f"{data.get('vote_average', 0):.1f}",
                 "genre": [genre["name"].lower() for genre in data.get("genres", [])],
                 "cast": [actor["name"] for actor in data.get("credits", {}).get("cast", [])[:5]]
             },
@@ -102,7 +86,7 @@ def fetch_show_data(show_name, show_id):
                         "poster": f"https://image.tmdb.org/t/p/w227_and_h127_bestv2{ep.get('still_path', '')}",
                         "plot": ep.get("overview", ""),
                         "duration": ep.get("runtime", 0) * 60 if ep.get("runtime") else None,
-                        "rating": str(ep.get("vote_average", "")),
+                        "rating": f"{ep.get('vote_average', 0):.1f}",
                         "backdrop": f"https://image.tmdb.org/t/p/w500_and_h282_face{ep.get('still_path', '')}"
                     },
                     "video": "",
@@ -125,17 +109,16 @@ def fetch_show_data(show_name, show_id):
 def fetch_movie_data(movie_name, movie_id):
     squared_letter = get_squared_letter(movie_name)
     base_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&append_to_response=credits,videos"
-    
+
     try:
         response = requests.get(base_url)
         response.raise_for_status()
         data = response.json()
 
-        trailer_key = ""
-        for video in data.get("videos", {}).get("results", []):
-            if video["type"] == "Trailer" and video["site"] == "YouTube":
-                trailer_key = video["key"]
-                break
+        trailer_key = next(
+            (video["key"] for video in data.get("videos", {}).get("results", []) if video["type"] == "Trailer" and video["site"] == "YouTube"), 
+            ""
+        )
 
         return {
             "name": movie_name,
@@ -144,12 +127,10 @@ def fetch_movie_data(movie_name, movie_id):
                 "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
                 "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
                 "plot": data.get("overview", ""),
-                "director": [
-                    crew["name"] for crew in data.get("credits", {}).get("crew", []) if crew["job"] == "Director"
-                ],
+                "director": [crew["name"] for crew in data.get("credits", {}).get("crew", []) if crew["job"] == "Director"],
                 "cast": [actor["name"] for actor in data.get("credits", {}).get("cast", [])[:6]],
                 "trailer": trailer_key,
-                "rating": str(data.get("vote_average", "")),
+                "rating": f"{data.get('vote_average', 0):.1f}",
                 "year": data.get("release_date", "").split("-")[0] if data.get("release_date") else None
             },
             "video": "",
@@ -161,11 +142,9 @@ def fetch_movie_data(movie_name, movie_id):
         print(f"Error fetching {movie_name}: {e}")
         return None
 
-# Fetch TV shows from shows_list.json
 for name, id in SHOWS.items():
     fetch_show_data(name, id)
 
-# Fetch movies from movie_list.json and store in a single JSON file
 movies_data = [fetch_movie_data(name, id) for name, id in sorted(MOVIES.items()) if fetch_movie_data(name, id)]
 output_file = os.path.join(OUTPUT_DIR_MOVIES, "movies.json")
 with open(output_file, "w", encoding="utf-8") as f:
