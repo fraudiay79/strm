@@ -90,7 +90,7 @@ def fetch_show_data(show_name, show_id):
                         "backdrop": f"https://image.tmdb.org/t/p/w500_and_h282_face{ep.get('still_path', '')}"
                     },
                     "video": "",
-                    "drm": "",
+                    "drm": "clearkey",
                     "drmkey": ""
                 }
                 season_info["episodes"].append(episode_info)
@@ -134,7 +134,7 @@ def fetch_movie_data(movie_name, movie_id):
                 "year": data.get("release_date", "").split("-")[0] if data.get("release_date") else None
             },
             "video": "",
-            "drm": "",
+            "drm": "clearkey",
             "drmkey": ""
         }
 
