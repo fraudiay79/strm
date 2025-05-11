@@ -1,0 +1,76 @@
+{
+  "name": "Dracula (2020)",
+  "category": "\ud83c\udd33 Dracula (2020)",
+  "info": {
+    "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/5SqUNnExnN7Cr8rzyTXJTWmEMHn.jpg",
+    "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/WyqBb9HV4DikUDJmnie3w0owYn.jpg",
+    "plot": "Transylvania, 1897. The blood-drinking Count Dracula is drawing his plans against Victorian London. And be warned: the dead travel fast.",
+    "rating": "7.0",
+    "genre": [
+      "drama",
+      "action & adventure"
+    ],
+    "cast": [
+      "Claes Bang",
+      "Dolly Wells",
+      "Mark Gatiss",
+      "Morfydd Clark"
+    ]
+  },
+  "seasons": [
+    {
+      "season": 1,
+      "info": {
+        "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/8HT4OBm2nfcyB2o8MTukIRgdM2s.jpg",
+        "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+        "plot": "Transylvania, 1897. The blood-drinking Count Dracula is drawing his plans against Victorian London. And be warned: the dead travel fast.",
+        "year": "2020",
+        "trailer": ""
+      },
+      "episodes": [
+        {
+          "episode": 1,
+          "name": "The Rules of the Beast",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5OdnfJ7RGUIMEPZjPlQEmwsavCu.jpg",
+            "plot": "English lawyer Jonathan Harker travels to Transylvania to meet a new client \u2014and a legend is about to get fresh blood.",
+            "duration": 5400,
+            "rating": "7.8",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5OdnfJ7RGUIMEPZjPlQEmwsavCu.jpg"
+          },
+          "video": "",
+          "drm": "",
+          "drmkey": ""
+        },
+        {
+          "episode": 2,
+          "name": "Blood Vessel",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/m4rHDK32dh3jKwTzci8Ymhn0rGv.jpg",
+            "plot": "The crew and passengers aboard the Russian ship, The Demeter, are locked in a life-or-death struggle to stop Count Dracula before he reaches England.",
+            "duration": 5400,
+            "rating": "7.5",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/m4rHDK32dh3jKwTzci8Ymhn0rGv.jpg"
+          },
+          "video": "",
+          "drm": "",
+          "drmkey": ""
+        },
+        {
+          "episode": 3,
+          "name": "The Dark Compass",
+          "info": {
+            "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pf0PbgjYWsU9BAF5evMkieJEEh.jpg",
+            "plot": "Count Dracula has made it to England \u2014a new world pulsing with fresh blood\u2014 and lays his plans to spread his foul vampire contagion. But why does he set his sights on the seemingly ordinary Lucy Westenra?",
+            "duration": 5400,
+            "rating": "6.1",
+            "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pf0PbgjYWsU9BAF5evMkieJEEh.jpg"
+          },
+          "video": "",
+          "drm": "",
+          "drmkey": ""
+        }
+      ]
+    }
+  ]
+}
