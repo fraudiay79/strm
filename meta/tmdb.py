@@ -4,12 +4,11 @@ import json
 
 API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variable
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Get script directory
-META_DIR = os.path.join(SCRIPT_DIR, "meta")  # Define the meta directory
-MOVIE_LIST_FILE = os.path.join(META_DIR, "movie_list.json")  # Path to movie list JSON
-SHOWS_LIST_FILE = os.path.join(META_DIR, "shows_list.json")  # Path to shows list JSON
+MOVIE_LIST_FILE = os.path.join(SCRIPT_DIR, "movie_list.json")  # Path to movie list JSON
+SHOWS_LIST_FILE = os.path.join(SCRIPT_DIR, "shows_list.json")  # Path to shows list JSON
 
-OUTPUT_DIR_SHOWS = os.path.join(META_DIR, "shows")
-OUTPUT_DIR_MOVIES = os.path.join(META_DIR, "movies")
+OUTPUT_DIR_SHOWS = os.path.join(SCRIPT_DIR, "meta/shows")
+OUTPUT_DIR_MOVIES = os.path.join(SCRIPT_DIR, "meta/movies")
 
 os.makedirs(OUTPUT_DIR_SHOWS, exist_ok=True)
 os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
@@ -20,7 +19,7 @@ SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
 # Load TV shows from shows_list.json
 def load_shows():
     if not os.path.exists(SHOWS_LIST_FILE):
-        print("Error: shows_list.json not found in meta directory.")
+        print("Error: shows_list.json not found.")
         return {}
     
     with open(SHOWS_LIST_FILE, "r", encoding="utf-8") as f:
@@ -36,7 +35,7 @@ SHOWS = load_shows()
 # Load movies from movie_list.json
 def load_movies():
     if not os.path.exists(MOVIE_LIST_FILE):
-        print("Error: movie_list.json not found in meta directory.")
+        print("Error: movie_list.json not found.")
         return {}
     
     with open(MOVIE_LIST_FILE, "r", encoding="utf-8") as f:
