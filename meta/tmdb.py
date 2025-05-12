@@ -2,18 +2,19 @@ import os
 import requests
 import json
 
-API_KEY = os.getenv("TMDB_API_KEY")  # Retrieve API key from environment variable
-SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))  # Get script directory
-MOVIE_LIST_FILE = os.path.join(SCRIPT_DIR, "movie_list.json")  # Path to movie list JSON
-SHOWS_LIST_FILE = os.path.join(SCRIPT_DIR, "shows_list.json")  # Path to shows list JSON
+API_KEY = os.getenv("TMDB_API_KEY")
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+
+MOVIE_LIST_FILE = os.path.join(SCRIPT_DIR, "movie_list.json")
+SHOWS_LIST_FILE = os.path.join(SCRIPT_DIR, "shows_list.json")
 
 OUTPUT_DIR_SHOWS = os.path.join(SCRIPT_DIR, "shows")
 OUTPUT_DIR_MOVIES = os.path.join(SCRIPT_DIR, "movies")
+COMBINED_FILE = os.path.join(SCRIPT_DIR, "all_media.json")
 
 os.makedirs(OUTPUT_DIR_SHOWS, exist_ok=True)
 os.makedirs(OUTPUT_DIR_MOVIES, exist_ok=True)
 
-# Unicode squared letters mapping (A-Z)
 SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
 
 def load_json_file(file_path):
@@ -35,8 +36,6 @@ MOVIES = load_json_file(MOVIE_LIST_FILE)
 def get_squared_letter(name):
     words = name.split()
     first_letter = words[1][0].upper() if words[0].lower() in ["the", "a"] and len(words) > 1 else words[0][0].upper()
-
-    # Use ⛝ if the first character is a digit
     return "⛝" if first_letter.isdigit() else SQUARED_LETTERS.get(first_letter, "")
 
 def fetch_show_data(show_name, show_id):
@@ -49,6 +48,7 @@ def fetch_show_data(show_name, show_id):
         data = response.json()
 
         show_info = {
+            "type": "show",
             "name": show_name,
             "category": f"{squared_letter} {show_name}",
             "info": {
@@ -99,14 +99,11 @@ def fetch_show_data(show_name, show_id):
 
             show_info["seasons"].append(season_info)
 
-        output_file = os.path.join(OUTPUT_DIR_SHOWS, f"{show_name.lower().replace(' ', '_')}.json")
-        with open(output_file, "w", encoding="utf-8") as f:
-            json.dump(show_info, f, indent=2)
-
-        print(f"Saved: {output_file}")
+        return show_info
 
     except requests.RequestException as e:
         print(f"Error fetching {show_name}: {e}")
+        return None
 
 def fetch_movie_data(movie_name, movie_id):
     squared_letter = get_squared_letter(movie_name)
@@ -123,6 +120,7 @@ def fetch_movie_data(movie_name, movie_id):
         )
 
         return {
+            "type": "movie",
             "name": movie_name,
             "category": f"{squared_letter}",
             "info": {
@@ -144,12 +142,11 @@ def fetch_movie_data(movie_name, movie_id):
         print(f"Error fetching {movie_name}: {e}")
         return None
 
-for name, id in SHOWS.items():
-    fetch_show_data(name, id)
+shows_data = [fetch_show_data(name, id) for name, id in SHOWS.items() if fetch_show_data(name, id)]
+movies_data = [fetch_movie_data(name, id) for name, id in MOVIES.items() if fetch_movie_data(name, id)]
 
-movies_data = [fetch_movie_data(name, id) for name, id in sorted(MOVIES.items()) if fetch_movie_data(name, id)]
-output_file = os.path.join(OUTPUT_DIR_MOVIES, "movies.json")
-with open(output_file, "w", encoding="utf-8") as f:
-    json.dump({"movies": movies_data}, f, indent=2)
+# Save individual JSON files
+with open(COMBINED_FILE, "w", encoding="utf-8") as f:
+    json.dump({"media": shows_data + movies_data}, f, indent=2)
 
-print(f"Saved combined movie data to {output_file}")
+print(f"Saved combined media data to {COMBINED_FILE}")
