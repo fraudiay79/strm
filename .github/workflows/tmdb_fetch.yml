@@ -34,7 +34,7 @@ jobs:
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        git add meta/shows/*.json meta/movies/*.json
+        git add meta/shows/*.json meta/movies/*.json meta/all_media.json
         git commit -m "Update TMDb data for TV shows and movies"
         git push
       continue-on-error: true
