@@ -34,7 +34,7 @@ MOVIES = load_json_file(MOVIE_LIST_FILE)
 
 def get_squared_letter(name):
     words = name.split()
-    first_letter = words[1][0].upper() if words[0].lower() == "the" and len(words) > 1 else words[0][0].upper()
+    first_letter = words[1][0].upper() if words[0].lower() in ["the", "a"] and len(words) > 1 else words[0][0].upper()
     return SQUARED_LETTERS.get(first_letter, "")
 
 def fetch_show_data(show_name, show_id):
@@ -122,7 +122,7 @@ def fetch_movie_data(movie_name, movie_id):
 
         return {
             "name": movie_name,
-            "category": f"{squared_letter} {movie_name}",
+            "category": f"{squared_letter}",
             "info": {
                 "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
                 "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
