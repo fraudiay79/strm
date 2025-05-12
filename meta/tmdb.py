@@ -35,7 +35,9 @@ MOVIES = load_json_file(MOVIE_LIST_FILE)
 def get_squared_letter(name):
     words = name.split()
     first_letter = words[1][0].upper() if words[0].lower() in ["the", "a"] and len(words) > 1 else words[0][0].upper()
-    return SQUARED_LETTERS.get(first_letter, "")
+
+    # Use ⛝ if the first character is a digit
+    return "⛝" if first_letter.isdigit() else SQUARED_LETTERS.get(first_letter, "")
 
 def fetch_show_data(show_name, show_id):
     squared_letter = get_squared_letter(show_name)
