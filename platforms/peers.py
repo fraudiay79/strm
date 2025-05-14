@@ -44,7 +44,7 @@ def get_archive_url(channel_id, token):
 
 def get_stream_url(base_url, token):
     """Format stream URL with token and options"""
-    stream_url = f"{base_url}?token={token}&offset=1"
+    stream_url = f"{base_url}?token={token}&offset=10"
     stream_url = re.sub(r"([\?&]offset=\d+)", r"\1", stream_url)
     stream_url = re.sub(r"[\?&]+", "&", stream_url)
     stream_url = re.sub(r"&", "?", stream_url, 1)
@@ -58,7 +58,7 @@ def save_m3u8(filename, stream_url):
         file.write("#EXTM3U\n")
         file.write("#EXT-X-VERSION:3\n")
         file.write("#EXT-X-STREAM-INF:PROGRAM-ID=1\n")
-        file.write(f"{EXTOPT}\n")
+        #file.write(f"{EXTOPT}\n")
         file.write(f"{stream_url}\n")
     print(f"Saved M3U8 file: {filepath}")
 
