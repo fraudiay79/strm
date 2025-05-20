@@ -5,12 +5,12 @@ import json
 API_KEY = os.getenv("TMDB_API_KEY")
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
-KIDS_LIST_FILE = os.path.join(SCRIPT_DIR, "kids_list.json")
+KIDS_LIST_FILE = os.path.join(SCRIPT_DIR, "test.json")
 
-OUTPUT_DIR_KIDS = os.path.join(SCRIPT_DIR, "kids")
+OUTPUT_DIR_KIDS = os.path.join(SCRIPT_DIR, "test")
 os.makedirs(OUTPUT_DIR_KIDS, exist_ok=True)
 
-OUTPUT_FILE = os.path.join(OUTPUT_DIR_KIDS, "kids_movies.json")
+OUTPUT_FILE = os.path.join(OUTPUT_DIR_KIDS, "test_movies.json")
 
 def load_json_file(file_path):
     if not os.path.exists(file_path):
@@ -27,6 +27,13 @@ def load_json_file(file_path):
 
 KIDS = load_json_file(KIDS_LIST_FILE)
 
+SQUARED_LETTERS = {chr(i): chr(0x1F130 + (i - 65)) for i in range(65, 91)}
+
+def get_squared_letter(name):
+    words = name.split()
+    first_letter = words[1][0].upper() if words[0].lower() in ["the", "a"] and len(words) > 1 else words[0][0].upper()
+    return "⛝" if first_letter.isdigit() else SQUARED_LETTERS.get(first_letter, "")
+
 def fetch_movie_data(movie_name, movie_id):
     base_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&append_to_response=credits,videos"
 
@@ -42,7 +49,7 @@ def fetch_movie_data(movie_name, movie_id):
 
         return {
             "name": movie_name,
-            "category": "\U0001F9D2 Kids",
+            "category": f"{squared_letter}",
             "info": {
                 "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
                 "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
