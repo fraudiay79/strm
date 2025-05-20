@@ -35,6 +35,7 @@ def get_squared_letter(name):
     return "⛝" if first_letter.isdigit() else SQUARED_LETTERS.get(first_letter, "")
 
 def fetch_movie_data(movie_name, movie_id):
+    squared_letter = get_squared_letter(movie_name)
     base_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&append_to_response=credits,videos"
 
     try:
