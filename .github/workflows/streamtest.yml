@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 tv8md.py
+            python3 snrt.py
 
       - name: commit and push files
         run: |
