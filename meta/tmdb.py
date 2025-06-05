@@ -48,9 +48,8 @@ def fetch_show_data(show_name, show_id):
         data = response.json()
 
         show_info = {
-            "type": "show",
             "name": show_name,
-            "category": f"{squared_letter} {show_name}",
+            "category": f"{squared_letter}",
             "info": {
                 "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
                 "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
@@ -120,7 +119,6 @@ def fetch_movie_data(movie_name, movie_id):
         )
 
         return {
-            "type": "movie",
             "name": movie_name,
             "category": f"{squared_letter}",
             "info": {
@@ -147,6 +145,6 @@ movies_data = [fetch_movie_data(name, id) for name, id in MOVIES.items() if fetc
 
 # Save individual JSON files
 with open(COMBINED_FILE, "w", encoding="utf-8") as f:
-    json.dump({"media": shows_data + movies_data}, f, indent=2)
+    json.dump({shows_data + movies_data}, f, indent=2, separators=(',', ': '))
 
 print(f"Saved combined media data to {COMBINED_FILE}")
