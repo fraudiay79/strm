@@ -61,6 +61,43 @@ def fetch_show_data(show_name, show_id):
             "seasons": []
         }
 
+        for season in range(1, data.get("number_of_seasons", 1) + 1):
+            season_url = f"https://api.themoviedb.org/3/tv/{show_id}/season/{season}?api_key={API_KEY}"
+            season_response = requests.get(season_url)
+            season_response.raise_for_status()
+            season_data = season_response.json()
+
+            season_info = {
+                "season": season,
+                "info": {
+                    "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{season_data.get('poster_path', '')}",
+                    "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{season_data.get('backdrop_path', '')}",
+                    "plot": season_data.get("overview", ""),
+                    "year": season_data.get("air_date", "").split("-")[0] if season_data.get("air_date") else None,
+                    "trailer": ""
+                },
+                "episodes": []
+            }
+
+            for ep in season_data.get("episodes", []):
+                episode_info = {
+                    "episode": ep.get("episode_number", ""),
+                    "name": ep.get("name", ""),
+                    "info": {
+                        "poster": f"https://image.tmdb.org/t/p/w227_and_h127_bestv2{ep.get('still_path', '')}",
+                        "plot": ep.get("overview", ""),
+                        "duration": ep.get("runtime", 0) * 60 if ep.get("runtime") else None,
+                        "rating": f"{ep.get('vote_average', 0):.1f}",
+                        "backdrop": f"https://image.tmdb.org/t/p/w500_and_h282_face{ep.get('still_path', '')}"
+                    },
+                    "video": "",
+                    "drm": "clearkey",
+                    "drmkey": ""
+                }
+                season_info["episodes"].append(episode_info)
+
+            show_info["seasons"].append(season_info)
+
         return show_info
 
     except requests.RequestException as e:
@@ -93,7 +130,10 @@ def fetch_movie_data(movie_name, movie_id):
                 "trailer": trailer_key,
                 "rating": f"{data.get('vote_average', 0):.1f}",
                 "year": data.get("release_date", "").split("-")[0] if data.get("release_date") else None
-            }
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
         }
 
     except requests.RequestException as e:
@@ -103,25 +143,8 @@ def fetch_movie_data(movie_name, movie_id):
 shows_data = [fetch_show_data(name, id) for name, id in SHOWS.items() if fetch_show_data(name, id)]
 movies_data = [fetch_movie_data(name, id) for name, id in MOVIES.items() if fetch_movie_data(name, id)]
 
-# Save JSON with standard formatting
+# Save individual JSON files
 with open(COMBINED_FILE, "w", encoding="utf-8") as f:
-    json.dump(shows_data + movies_data, f, indent=2, ensure_ascii=False)
+    json.dump(shows_data + movies_data, f, indent=2, separators=(',', ': '))
 
-# Post-process the JSON file to adjust formatting for director and cast
-with open(COMBINED_FILE, "r", encoding="utf-8") as f:
-    formatted_json = f.read()
-
-# Replace newlines inside director and cast lists
-formatted_json = formatted_json.replace('"director": [\n    ', '"director": [')
-formatted_json = formatted_json.replace('",\n    "', '","')
-formatted_json = formatted_json.replace('\n  ],', '],')
-
-formatted_json = formatted_json.replace('"cast": [\n    ', '"cast": [')
-formatted_json = formatted_json.replace('",\n    "', '","')
-formatted_json = formatted_json.replace('\n  ],', '],')
-
-# Write the adjusted JSON back to the file
-with open(COMBINED_FILE, "w", encoding="utf-8") as f:
-    f.write(formatted_json)
-
-print(f"Saved formatted media data to {COMBINED_FILE}")
+print(f"Saved combined media data to {COMBINED_FILE}")
