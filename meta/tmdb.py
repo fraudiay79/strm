@@ -145,6 +145,6 @@ movies_data = [fetch_movie_data(name, id) for name, id in MOVIES.items() if fetc
 
 # Save individual JSON files
 with open(COMBINED_FILE, "w", encoding="utf-8") as f:
-    json.dump({shows_data + movies_data}, f, indent=2, separators=(',', ': '))
+    json.dump(shows_data + movies_data, f, indent=2, separators=(',', ': '))
 
 print(f"Saved combined media data to {COMBINED_FILE}")
