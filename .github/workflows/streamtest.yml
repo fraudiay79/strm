@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 snrt.py
+            sh snrt.sh
 
       - name: commit and push files
         run: |
