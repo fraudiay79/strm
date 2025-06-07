@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            sh snrt.sh
+            bash snrt.sh
 
       - name: commit and push files
         run: |
