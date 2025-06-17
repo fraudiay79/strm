@@ -21,6 +21,7 @@ def load_json_file(file_path):
     if not os.path.exists(file_path):
         print(f"Error: {file_path} not found.")
         return {}
+
     with open(file_path, "r", encoding="utf-8") as f:
         try:
             data = json.load(f)
@@ -29,19 +30,8 @@ def load_json_file(file_path):
             print(f"Error: Failed to parse {file_path}.")
             return {}
 
-def parse_movies_dict(raw_dict):
-    parsed = {}
-    for name, value in raw_dict.items():
-        try:
-            movie_id_str, drmkey, video = [v.strip() for v in value.split(",")]
-            parsed[name] = {
-                "id": int(movie_id_str),
-                "drmkey": drmkey,
-                "video": video
-            }
-        except ValueError:
-            print(f"Skipping malformed entry: {name} -> {value}")
-    return parsed
+SHOWS = load_json_file(SHOWS_LIST_FILE)
+MOVIES = load_json_file(MOVIE_LIST_FILE)
 
 def get_squared_letter(name):
     words = name.split()
@@ -59,7 +49,7 @@ def fetch_show_data(show_name, show_id):
 
         show_info = {
             "name": show_name,
-            "category": squared_letter,
+            "category": f"{squared_letter}",
             "info": {
                 "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
                 "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
@@ -114,7 +104,7 @@ def fetch_show_data(show_name, show_id):
         print(f"Error fetching {show_name}: {e}")
         return None
 
-def fetch_movie_data(movie_name, movie_id, movie_video, movie_drmkey):
+def fetch_movie_data(movie_name, movie_id):
     squared_letter = get_squared_letter(movie_name)
     base_url = f"https://api.themoviedb.org/3/movie/{movie_id}?api_key={API_KEY}&append_to_response=credits,videos"
 
@@ -124,14 +114,13 @@ def fetch_movie_data(movie_name, movie_id, movie_video, movie_drmkey):
         data = response.json()
 
         trailer_key = next(
-            (video["key"] for video in data.get("videos", {}).get("results", [])
-             if video["type"] == "Trailer" and video["site"] == "YouTube"), 
+            (video["key"] for video in data.get("videos", {}).get("results", []) if video["type"] == "Trailer" and video["site"] == "YouTube"), 
             ""
         )
 
         return {
             "name": movie_name,
-            "category": squared_letter,
+            "category": f"{squared_letter}",
             "info": {
                 "poster": f"https://image.tmdb.org/t/p/w220_and_h330_face{data.get('poster_path', '')}",
                 "bg": f"https://image.tmdb.org/t/p/w500_and_h282_face{data.get('backdrop_path', '')}",
@@ -142,29 +131,19 @@ def fetch_movie_data(movie_name, movie_id, movie_video, movie_drmkey):
                 "rating": f"{data.get('vote_average', 0):.1f}",
                 "year": data.get("release_date", "").split("-")[0] if data.get("release_date") else None
             },
-            "video": movie_video,
+            "video": "",
             "drm": "clearkey",
-            "drmkey": movie_drmkey
+            "drmkey": ""
         }
 
     except requests.RequestException as e:
         print(f"Error fetching {movie_name}: {e}")
         return None
 
-# Load data
-SHOWS = load_json_file(SHOWS_LIST_FILE)
-RAW_MOVIES = load_json_file(MOVIE_LIST_FILE)
-MOVIES = parse_movies_dict(RAW_MOVIES)
-
-# Fetch all data
 shows_data = [fetch_show_data(name, id) for name, id in SHOWS.items() if fetch_show_data(name, id)]
-movies_data = [
-    fetch_movie_data(name, data["id"], data["video"], data["drmkey"]) 
-    for name, data in MOVIES.items()
-    if fetch_movie_data(name, data["id"], data["video"], data["drmkey"])
-]
+movies_data = [fetch_movie_data(name, id) for name, id in MOVIES.items() if fetch_movie_data(name, id)]
 
-# Save combined JSON
+# Save individual JSON files
 with open(COMBINED_FILE, "w", encoding="utf-8") as f:
     json.dump(shows_data + movies_data, f, indent=2, separators=(',', ': '))
 
