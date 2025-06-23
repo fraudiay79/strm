@@ -4,17 +4,12 @@ import requests
 import json
 import os
 
-print('#EXTM3U')
-print('#EXT-X-VERSION:3')
-print('#EXT-X-INDEPENDENT-SEGMENTS')
-
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Accept': '*/*',
-    'Connection': 'keep-alive',
+    'Accept': 'application/json, text/javascript, */*; q=0.01',
+    'Accept-Language': 'en-US,en;q=0.9',
     'Referer': 'https://www.nelonen.fi/',
-    'X-Forwarded-For': '85.23.198.1'  # Example Finnish IP
+    'X-Requested-With': 'XMLHttpRequest'
 }
 
 s = requests.Session()
@@ -34,17 +29,19 @@ for url, name in zip(urls, names):
     try:
         resplink = s.get(url, headers=headers)
         print(f"\nStatus {resplink.status_code} from {url}")
-        if not resplink.text.strip().startswith('{'):
-            print(f"Invalid or empty response body:\n{resplink.text[:200]}...\n")
-            continue
+        print(f"Final URL: {resplink.url}")
+        print(f"Redirect chain: {[r.status_code for r in resplink.history]}")
+        print(f"Content-Type: {resplink.headers.get('Content-Type')}")
 
         try:
             response_json = resplink.json()
         except json.JSONDecodeError:
-            print(f"Unable to parse JSON from {url}")
+            dump_path = os.path.join(output_dir, f"{name}_raw_response.bin")
+            with open(dump_path, "wb") as f:
+                f.write(resplink.content)
+            print(f"Non-JSON or binary response saved to {dump_path}")
             continue
 
-        # Safe navigation of nested keys
         try:
             mastlnk = response_json["clip"]["playback"]["streamUrls"]["android"]["url"]
         except (KeyError, TypeError):
