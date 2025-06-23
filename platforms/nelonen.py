@@ -9,7 +9,8 @@ headers = {
     'Accept-Encoding': 'gzip, deflate, br',
     'Accept': '*/*',
     'Connection': 'keep-alive',
-    'Referer': 'https://www.nelonen.fi/'
+    'Referer': 'https://www.nelonen.fi/',
+    'X-Forwarded-For': '85.23.198.1'
 }
 s = requests.Session()
 
