@@ -4,6 +4,10 @@ import requests
 import json
 import os
 
+print('#EXTM3U')
+print('#EXT-X-VERSION:3')
+print('#EXT-X-INDEPENDENT-SEGMENTS')
+
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
     'Accept': 'application/json, text/javascript, */*; q=0.01',
@@ -41,6 +45,10 @@ for url, name in zip(urls, names):
                 f.write(resplink.content)
             print(f"Non-JSON or binary response saved to {dump_path}")
             continue
+
+        # Print full JSON structure
+        print(f"\nJSON from {url}:\n")
+        print(json.dumps(response_json, indent=2))
 
         try:
             mastlnk = response_json["clip"]["playback"]["streamUrls"]["android"]["url"]
