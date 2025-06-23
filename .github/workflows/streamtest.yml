@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 polska.py
+            python3 nelonen.py
 
       - name: commit and push files
         run: |
