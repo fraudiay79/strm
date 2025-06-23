@@ -22,7 +22,7 @@ jobs:
           cd ./platforms/
 
           pip3 install -r requirements.txt
-          #pip3 install beautifulsoup4
+          pip3 install beautifulsoup4
           #pip3 install setuptools
           #pip3 install playwright playwright-stealth
           #pip install --upgrade playwright-stealth
@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            bash snrt.sh
+            python3 polska.py
 
       - name: commit and push files
         run: |
