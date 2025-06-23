@@ -4,10 +4,6 @@ import requests
 import json
 import os
 
-print('#EXTM3U')
-print('#EXT-X-VERSION:3')
-print('#EXT-X-INDEPENDENT-SEGMENTS')
-
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
     'Accept': 'application/json, text/javascript, */*; q=0.01',
@@ -49,7 +45,10 @@ for url, name in zip(urls, names):
         print(f"\nJSON from {url}:\n")
         print(json.dumps(response_json, indent=2))
 
-        android_block = response_json["clip"]["playback"]["streamUrls"].get("android")
+        media_block = response_json["clip"]["playback"].get("media", {})
+        stream_urls = media_block.get("streamUrls", {})
+        android_block = stream_urls.get("android")
+
         print("\nInspecting streamUrls.android:")
         print(repr(android_block))
 
