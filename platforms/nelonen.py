@@ -46,14 +46,17 @@ for url, name in zip(urls, names):
             print(f"Non-JSON or binary response saved to {dump_path}")
             continue
 
-        # Print full JSON structure
         print(f"\nJSON from {url}:\n")
         print(json.dumps(response_json, indent=2))
 
-        try:
-            mastlnk = response_json["clip"]["playback"]["streamUrls"]["android"]["url"]
-        except (KeyError, TypeError):
-            print(f"HLS URL not found in JSON from {url}")
+        android_block = response_json["clip"]["playback"]["streamUrls"].get("android")
+        print("\nInspecting streamUrls.android:")
+        print(repr(android_block))
+
+        if isinstance(android_block, dict) and "url" in android_block:
+            mastlnk = android_block["url"]
+        else:
+            print(f"'android.url' missing or not a dict in JSON from {url}")
             continue
 
         variations = {
