@@ -1,19 +1,18 @@
-#! /usr/bin/python3
+#!/usr/bin/python3
 
 import requests
 import json
 import os
 
-print('#EXTM3U')
-print('#EXT-X-VERSION:3')
-print('#EXT-X-INDEPENDENT-SEGMENTS')
-
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Accept': '*/*',
+    'Connection': 'keep-alive',
+    'Referer': 'https://www.nelonen.fi/'
 }
 s = requests.Session()
 
-# List of URLs to fetch JSON data
 urls = [
     "https://mcc.nm-ovp.nelonenmedia.fi/v2/media/2584964",
     "https://mcc.nm-ovp.nelonenmedia.fi/v2/media/2582939",
@@ -21,27 +20,24 @@ urls = [
     "https://mcc.nm-ovp.nelonenmedia.fi/v2/media/2584966"
 ]
 
-# Corresponding names for the output files
-names = [
-    "jim",
-    "nelonen",
-    "liv",
-    "hero"
-]
+names = ["jim", "nelonen", "liv", "hero"]
 
-# Directory to save output files
 output_dir = "links/fi"
 os.makedirs(output_dir, exist_ok=True)
 
-# Process each URL and save to corresponding file
 for url, name in zip(urls, names):
     try:
         resplink = s.get(url, headers=headers)
         resplink.raise_for_status()
         response_json = resplink.json()
-        mastlnk = response_json["clip"]["playback"]["streamUrls"]["android"]["url"]
 
-        # Generate multiple resolution variations
+        # Safe JSON access
+        try:
+            mastlnk = response_json["clip"]["playback"]["streamUrls"]["android"]["url"]
+        except (KeyError, TypeError):
+            print(f"HLS url not found in JSON from {url}")
+            continue
+
         variations = {
             "hls-index_9": (1209948, "768x432", 1517906),
             "hls-index_10": (2027339, "1024x576", 2571659),
@@ -57,14 +53,14 @@ for url, name in zip(urls, names):
             file.write("#EXT-X-INDEPENDENT-SEGMENTS\n")
 
             for variant, (avg_bandwidth, resolution, bandwidth) in variations.items():
-                modified_link = mastlnk.replace("hls_index", variant)
-                file.write(f'#EXT-X-STREAM-INF:CODECS="avc1.4D401F,mp4a.40.2",AVERAGE-BANDWIDTH={avg_bandwidth},RESOLUTION={resolution},VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH={bandwidth}\n')
+                modified_link = mastlnk.replace("hls-index", variant)
+                file.write(
+                    f'#EXT-X-STREAM-INF:CODECS="avc1.4D401F,mp4a.40.2",AVERAGE-BANDWIDTH={avg_bandwidth},'
+                    f'RESOLUTION={resolution},VIDEO-RANGE=SDR,FRAME-RATE=25.0,BANDWIDTH={bandwidth}\n'
+                )
                 file.write(f"{modified_link}\n")
-
-
-        #print(f"Created file: {output_file}")
 
     except requests.exceptions.RequestException as e:
         print(f"Error fetching data from {url}: {e}")
-    except (KeyError, IndexError, json.JSONDecodeError):
-        print(f"Error: Unable to retrieve 'HLS' m3u8 link from {url}.")
+    except (json.JSONDecodeError, TypeError):
+        print(f"Error: Unable to parse JSON from {url}")
