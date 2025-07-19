@@ -1,44 +1,44 @@
 [
   {
-    "name": "Studio, The",
-    "category": "\ud83c\udd42",
+    "name": "Gunpowder",
+    "category": "\ud83c\udd36",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/2c6ofLTa5CRfeQjVA1bWiYBdxQN.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/aSOrTfmIL211gjenXoRzvBoxgYv.jpg",
-      "plot": "Desperate for celebrity approval, the newly appointed head of a movie studio and his executive team at Continental Studios must juggle corporate demands with creative ambitions as they try to keep movies alive and relevant.",
-      "rating": "7.6",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/3eHeKVmm08g8LDoXobBioyti7id.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/5PwGtqNQaD8wzhRaDp7nwBpPyNt.jpg",
+      "plot": "London, 1605. Robert Catesby, a 33-year old Warwickshire gentleman, devises a plot to blow up Parliament and kill the King.",
+      "rating": "6.8",
       "genre": [
-        "comedy",
+        "war & politics",
         "drama"
       ],
       "cast": [
-        "Seth Rogen",
-        "Catherine O'Hara",
-        "Ike Barinholtz",
-        "Chase Sui Wonders",
-        "Kathryn Hahn"
+        "Kit Harington",
+        "Mark Gatiss",
+        "Edward Holcroft",
+        "Tom Cullen",
+        "Peter Mullan"
       ]
     },
     "seasons": [
       {
         "season": 1,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/byC5kuHuqHU2FGFI8grcnrm8JOG.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/3eHeKVmm08g8LDoXobBioyti7id.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
           "plot": "",
-          "year": "2025",
+          "year": "2017",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "The Promotion",
+            "name": "Episode 1",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eq9BVsnH8FFNEUaqAeyXze6wjlh.jpg",
-              "plot": "Matt Remick is named the new head of Continental Studios\u2014and put in charge of a project that threatens public humiliation.",
-              "duration": 2700,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eq9BVsnH8FFNEUaqAeyXze6wjlh.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5zuvcYibFUD1otv36Re2XO28Z5U.jpg",
+              "plot": "It is 1603, and as England wars with Spain and the bloody persecution of Catholics intensifies, a young nobleman resolves to avenge his kin and defend his faith by any means necessary.",
+              "duration": 3540,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5zuvcYibFUD1otv36Re2XO28Z5U.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -46,13 +46,13 @@
           },
           {
             "episode": 2,
-            "name": "The Oner",
+            "name": "Episode 2",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ooGsHK3Fg5FWQeQgPX3ujg6LFBe.jpg",
-              "plot": "The filming of an intricate sunset shot becomes complicated by Matt's set visit.",
-              "duration": 1560,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ooGsHK3Fg5FWQeQgPX3ujg6LFBe.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/h7r0yztvrmRV4euEp9kZhi7GrTF.jpg",
+              "plot": "As the king's network of spies close in on them, Catesby and Wintour attempt to raise an army for their plot across mainland Europe. Returning to London with Guy Fawkes in tow, Catesby assembles his gang of plotters for the first time. They know they must act fast, and the plan is formed - they will strike next week, 5 November, at the opening of Parliament.",
+              "duration": 3540,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/h7r0yztvrmRV4euEp9kZhi7GrTF.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -60,13 +60,90 @@
           },
           {
             "episode": 3,
-            "name": "The Note",
+            "name": "Episode 3",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/Gy75JkMYp7DESqUdnlc1y6yMoY.jpg",
-              "plot": "Matt feels nervous about giving legendary director Ron Howard a difficult piece of feedback.",
-              "duration": 2160,
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mU6jNOH8DMvf0OJFsYZjYEZClS7.jpg",
+              "plot": "On the eve of the 5th of November, Catesby, Fawkes and the plotters load the tunnels below Parliament with barrels of gunpowder. Across the city, Father Garnet is under pressure to reveal Catesby's plot for the good of the Catholic faith. Will the priest be the one to betray Catesby at the eleventh hour?",
+              "duration": 3540,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mU6jNOH8DMvf0OJFsYZjYEZClS7.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "His Dark Materials",
+    "category": "\ud83c\udd37",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/g6tIKGc3f1H5QMz1dcgCwADKpZ7.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/t8KjRqfOqNx14cHLwARjR08bjeb.jpg",
+      "plot": "Lyra is an orphan who lives in a parallel universe in which science, theology and magic are entwined. Her search for a kidnapped friend uncovers a sinister plot involving stolen children and turns into a quest to understand a mysterious phenomenon called Dust. She is later joined on her journey by Will, a boy who possesses a knife that can cut windows between worlds. As she learns the truth about her parents and her prophesied destiny, the two young people are caught up in a war against celestial powers that ranges across many worlds.",
+      "rating": "7.9",
+      "genre": [
+        "sci-fi & fantasy",
+        "drama"
+      ],
+      "cast": [
+        "Dafne Keen",
+        "Amir Wilson",
+        "Ruth Wilson",
+        "Adewale Akinnuoye-Agbaje",
+        "Simone Kirby"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/xOjRNnQw5hqR1EULJ2iHkGwJVA4.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Series 1 follows Lyra, a seemingly ordinary but brave young girl from another world. Her search for a kidnapped friend uncovers an evil plot.",
+          "year": "2019",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Lyra's Jordan",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/m2bRTb2YGzNZDCB5X4w2r6S8p8S.jpg",
+              "plot": "Orphan Lyra Belacqua's world is turned upside-down by her long-absent uncle's return from the north, while the glamorous Mrs Coulter visits Jordan College with a proposition.",
+              "duration": 3420,
               "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/Gy75JkMYp7DESqUdnlc1y6yMoY.jpg"
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/m2bRTb2YGzNZDCB5X4w2r6S8p8S.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Idea of North",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/21FN51Bdicgfc5fPjtXlzMOksld.jpg",
+              "plot": "Lyra starts her new life in London, determined to find Roger with Mrs Coulter\u2019s help. The Gyptians continue their search for the missing children and the elusive Gobblers.",
+              "duration": 3540,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/21FN51Bdicgfc5fPjtXlzMOksld.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Spies",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ouMUZmn6gnPQXzRfj2dCWzbNxpp.jpg",
+              "plot": "From the clutches of the Gobblers, Lyra finds help from an unlikely place. It helps her put together more about her past and keep safe from Mrs Coulter and the Magisterium.",
+              "duration": 3480,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ouMUZmn6gnPQXzRfj2dCWzbNxpp.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -74,13 +151,13 @@
           },
           {
             "episode": 4,
-            "name": "The Missing Reel",
+            "name": "Armour",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1mMc3EPUCOogcGboCtEzQW24At7.jpg",
-              "plot": "A reel of film goes missing, sending Matt and Sal on a race against the clock to find it.",
-              "duration": 1800,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1mMc3EPUCOogcGboCtEzQW24At7.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fLltHTyoRBBM9am4KbjN9QVxjdY.jpg",
+              "plot": "Lyra and the Gyptians arrive in the North and seek the help of the Witches\u2019 Consul, Texan aeronaut Lee Scoresby and an armoured bear in service to the town.",
+              "duration": 3540,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fLltHTyoRBBM9am4KbjN9QVxjdY.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -88,13 +165,13 @@
           },
           {
             "episode": 5,
-            "name": "The War",
+            "name": "The Lost Boy",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3Aa2iO9O96u2mlRQMAMR7jYBDBr.jpg",
-              "plot": "Frustrated by her position in the office hierarchy, Quinn wages a war against Sal.",
-              "duration": 1860,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3Aa2iO9O96u2mlRQMAMR7jYBDBr.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5TDYmzqlghVkftMSo88cNWaMNMh.jpg",
+              "plot": "The alethiometer sends Lyra and Iorek on a new path, leading to a shocking but vital clue in her search to find her friend Roger and the other missing children.",
+              "duration": 3540,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5TDYmzqlghVkftMSo88cNWaMNMh.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -102,13 +179,13 @@
           },
           {
             "episode": 6,
-            "name": "The Pediatric Oncologist",
+            "name": "The Daemon-Cages",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/AYEtoda25HjNpKrXnKKjhfyDxx.jpg",
-              "plot": "Matt\u2019s ego is put to the test when his new doctor girlfriend brings him to a charity gala.",
-              "duration": 1680,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/AYEtoda25HjNpKrXnKKjhfyDxx.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lvyJ4ddUYrPXQDADuM14c6pAQmR.jpg",
+              "plot": "Lyra discovers the horrific truth behind the Gobbler\u2019s activities in the North. She must use all her wits to help free those around her and avoid suffering a terrible fate.",
+              "duration": 3360,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lvyJ4ddUYrPXQDADuM14c6pAQmR.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -116,13 +193,13 @@
           },
           {
             "episode": 7,
-            "name": "Casting",
+            "name": "The Fight to the Death",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xc6IR18mgMQayrxLNPV2oe1HexQ.jpg",
-              "plot": "The Continental team scrambles to come up with a movie cast that won't offend anyone.",
-              "duration": 1500,
-              "rating": "8.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xc6IR18mgMQayrxLNPV2oe1HexQ.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hQzuDf0OwFoqyM1Q1sLz1yCArz5.jpg",
+              "plot": "Separated from her friends, Lyra must use all of her methods of deception to thwart a formidable foe. Meanwhile, Mrs Coulter plots her next move.",
+              "duration": 3480,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hQzuDf0OwFoqyM1Q1sLz1yCArz5.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -130,41 +207,13 @@
           },
           {
             "episode": 8,
-            "name": "The Golden Globes",
+            "name": "Betrayal",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/Ak8ecQWq227ToWxGCUmzrYIFOPK.jpg",
-              "plot": "Matt tries to get Zo\u00eb Kravitz to thank him in her award acceptance speech.",
-              "duration": 1920,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/Ak8ecQWq227ToWxGCUmzrYIFOPK.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "CinemaCon (1)",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/x7JyRMWm6cFh8sGSfCNRh3sxYOP.jpg",
-              "plot": "When Matt sets out to throw the coolest party at CinemaCon, it backfires in psychedelic fashion.",
-              "duration": 2160,
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qtvvzZz2ACzg971VifhmqY4vONb.jpg",
+              "plot": "As the Magisterium closes in, Lyra learns more about Asriel\u2019s rebellion. But her assistance to him comes at great personal cost.",
+              "duration": 3480,
               "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/x7JyRMWm6cFh8sGSfCNRh3sxYOP.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "The Presentation (2)",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7htiLT04c2pZ6ncXh51vGuVmK6z.jpg",
-              "plot": "If Matt\u2019s team doesn't pull off an amazing CinemaCon presentation, the studio will be sold...to a tech company.",
-              "duration": 1440,
-              "rating": "8.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7htiLT04c2pZ6ncXh51vGuVmK6z.jpg"
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qtvvzZz2ACzg971VifhmqY4vONb.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -175,13 +224,412 @@
       {
         "season": 2,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_faceNone",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/nieSFtjKHagQR40Pjycat44p6qd.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": null,
+          "plot": "Series 2 begins after Lord Asriel has opened a bridge to a new world, and, distraught over the death of her best friend, Lyra follows Asriel into the unknown. In a strange and mysterious abandoned city she meets Will, a boy from our world who is also running from a troubled past. Mrs. Coulter searches for Lyra, determined to bring her home by any means necessary.",
+          "year": "2020",
           "trailer": ""
         },
-        "episodes": []
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "The City of Magpies",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dVqcSoLziJKP7e1fD32cceTSicW.jpg",
+              "plot": "Lyra and Will find themselves in a strange new place. The Magisterium take action as Mrs Coulter interrogates a suspected heretic witch, and Lee Scoresby embarks on a mission.",
+              "duration": 3000,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dVqcSoLziJKP7e1fD32cceTSicW.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Cave",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ovRL1ntejLiCPiv5OLNlkT2f5lG.jpg",
+              "plot": "Lyra crosses into Will's world, and they set off to find answers about Dust. Will is shocked to discover he has grandparents, but quickly realises he can\u2019t trust them.",
+              "duration": 3060,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ovRL1ntejLiCPiv5OLNlkT2f5lG.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Theft",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/voF9ri9CUO6RmGew48CAgDagxTn.jpg",
+              "plot": "Lyra ignores the alethiometer, with dangerous consequences for her and Will. Lee Scoresby\u2019s search for Grumman brings an unlikely ally, and the witches seek answers.",
+              "duration": 3000,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/voF9ri9CUO6RmGew48CAgDagxTn.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Tower of the Angels",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mpWvXKXB8B7LQkJFtsou2UXd8Ej.jpg",
+              "plot": "In search of the knife, Will and Lyra try to gain entry into the Torre Degli Angeli. Lee finds Grumman - or Jopari, as he is now known - and they take to the sky in search of the knife bearer.",
+              "duration": 3000,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mpWvXKXB8B7LQkJFtsou2UXd8Ej.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Scholar",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/je7u1CMpRvoNsXdx4no6UIo1roa.jpg",
+              "plot": "Will and Lyra plan to steal the alethiometer from Boreal but are set back by an unforeseen guest. MacPhail takes decisive action, and Mary takes a leap of faith.",
+              "duration": 2880,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/je7u1CMpRvoNsXdx4no6UIo1roa.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Malice",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vaS57Vrt0cfUshi6jOfATJF1pbY.jpg",
+              "plot": "Lyra and Will find allies who can help them in their search for Will\u2019s father. The Magisterium learn something shocking, and Mrs Coulter meets a formidable foe.",
+              "duration": 2880,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vaS57Vrt0cfUshi6jOfATJF1pbY.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "\u00c6sah\u00e6ttr",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zVAPWZDHkrJMGfqWBlavMoq9inE.jpg",
+              "plot": "As all paths converge on Citt\u00e0gazze, Lee is determined to fulfil his quest, whatever the cost. Mrs Coulter\u2019s question is answered, and Will takes on his father\u2019s mantle.",
+              "duration": 2880,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zVAPWZDHkrJMGfqWBlavMoq9inE.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vadOcGP9xi8ZENQcWkbO2zPG5uE.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "In the final chapter, Lyra, the prophesied child, and Will, the bearer of The Subtle Knife, must journey to a dark place from which no one has ever returned. As her father\u2019s great war against the Authority edges closer, they will learn that saving the worlds comes at a terrible price.",
+          "year": "2022",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "The Enchanted Sleeper",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hb0wGxQwck2JlLHCbENPDRchLI1.jpg",
+              "plot": "Held captive by Mrs Coulter, a dreaming Lyra finds herself in a mysterious place with someone familiar - Roger. Will continues his quest to find Lyra, meeting unexpected allies along the way.",
+              "duration": 3480,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hb0wGxQwck2JlLHCbENPDRchLI1.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Break",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/FLby5s62ibvmCB4SwD5XULVSly.jpg",
+              "plot": "Will tries to save Lyra from her mother and the Magisterium, but it comes at a great personal cost. Asriel\u2019s plans change when unexpected angelic visitors crash into his republic.",
+              "duration": 3480,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/FLby5s62ibvmCB4SwD5XULVSly.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Intention Craft",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iSELRvUirliSuGErLFWCYZEuEEp.jpg",
+              "plot": "Lyra and Will seek help from Iorek to fix the Subtle Knife before reaching an agreement to go to the Land of the Dead together. Mrs Coulter goes on trial in Asriel\u2019s republic.",
+              "duration": 3420,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iSELRvUirliSuGErLFWCYZEuEEp.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Lyra and Her Death",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/y0u60bAdpxbc7YnPE4AsJ3pKrIr.jpg",
+              "plot": "As Lyra and Will head to the Land of the Dead, Mrs Coulter tries to thwart MacPhail. Mary is buoyed by the unexpected appearance of a very unusual creature.",
+              "duration": 3480,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/y0u60bAdpxbc7YnPE4AsJ3pKrIr.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "No Way Out",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/A4jpLR4cOFc2L1plTzHRZPykHyR.jpg",
+              "plot": "In the world of the mulefa, Mary makes a heartbreaking discovery. Lyra and Will journey through the Land of the Dead in search of Roger.",
+              "duration": 3480,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/A4jpLR4cOFc2L1plTzHRZPykHyR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "The Abyss",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/di1qPnbZdEKM8Y6LMQz2u3dHX7G.jpg",
+              "plot": "As Metatron's abyss rips through the worlds, sucking Dust into its depths, Lyra and Will attempt to lead the ghosts out of the Land of the Dead.",
+              "duration": 3540,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/di1qPnbZdEKM8Y6LMQz2u3dHX7G.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "The Clouded Mountain",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7Ltsu1h07V7ghQ4Yf35Y5BFNsrk.jpg",
+              "plot": "As the Clouded Mountain approaches, Mrs Coulter, Asriel and his council discuss their battle strategy. In the Land of the Dead, Lyra and Will deliberate their next move.",
+              "duration": 3000,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7Ltsu1h07V7ghQ4Yf35Y5BFNsrk.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "The Botanic Garden",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rDJTSQOJ9srQ1GR6DeFxUtvUEod.jpg",
+              "plot": "Lyra and Will reunite with Mary and hear a story that changes everything. Now they must decide what they are willing to sacrifice if they are to save the worlds.",
+              "duration": 3480,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rDJTSQOJ9srQ1GR6DeFxUtvUEod.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nautilus",
+    "category": "\ud83c\udd3d",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/eBHzItKQNfPdt2GL4LcHJy8P1sH.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/8pWGfg6siFjgWJahhkrzGDz1UDs.jpg",
+      "plot": "The origin story of the iconic Captain Nemo: an Indian Prince robbed of his birthright and family, a prisoner of the East India Mercantile Company and a man bent on revenge against the forces that have taken everything from him.",
+      "rating": "6.8",
+      "genre": [
+        "drama",
+        "action & adventure",
+        "sci-fi & fantasy"
+      ],
+      "cast": [
+        "Shazad Latif",
+        "Georgia Flood",
+        "C\u00e9line Menville",
+        "Thierry Fr\u00e9mont",
+        "Luke Arnold"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/eBHzItKQNfPdt2GL4LcHJy8P1sH.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Nemo steals a formidable prototype submarine and escapes into the Indian ocean with a ragtag crew, determined to enact revenge against the ruthless East India Mercantile Company.",
+          "year": "2024",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Anahata",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aqq5s8fgziqGBFc6TxgTVZNx9qG.jpg",
+              "plot": "Nemo and his fellow inmates at Kalpani Penal Colony are the slave labourers building an ironclad submarine - the Nautilus. Once finished, Nemo and a trusted crew plan to escape on it. But when Director Crawley arrives to demand the Nautilus be moved to Bombay to be armed - today - Nemo must leave. Now. With whoever he can muster as crew.",
+              "duration": 3240,
+              "rating": "4.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aqq5s8fgziqGBFc6TxgTVZNx9qG.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Tick, Tick, Boom",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uWkeTfbHFxn65TcQ4yyaU8eOstl.jpg",
+              "plot": "When the Nautilus is spotted by Company troopers, Nemo must inspire the crew to work together so they can reach the open seas before they\u2019re run down. An encounter with whalers slows them down and just as they are about to reach the open sea and freedom, they are cut off by the formidable Dreadnought - and a game of depth-bomb cat and mouse ensues.",
+              "duration": 3180,
+              "rating": "4.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uWkeTfbHFxn65TcQ4yyaU8eOstl.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "What Lies Beneath",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yVk3Gu5AWdBfkEioKXexSpyrNJ7.jpg",
+              "plot": "On Karajan the crew meet the eccentric White Rajah, but can they trust his hospitality? Nemo discovers a shocking truth, and Humility and the crew learn who Nemo really is.",
+              "duration": 3300,
+              "rating": "3.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yVk3Gu5AWdBfkEioKXexSpyrNJ7.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Slippery When Wet",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uUbrM7OWZ6deoYwGSrImh8vQfXL.jpg",
+              "plot": "Captain Nemo and his starving crew go ashore on a seemingly deserted island in search of food. When Blaster goes missing, Nemo and Humility embark on a daring rescue mission but soon encounter a giant electric eel.",
+              "duration": 3120,
+              "rating": "4.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uUbrM7OWZ6deoYwGSrImh8vQfXL.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Anguille Fum\u00e9e",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nN2WXhdMEtkbhW0A2cvGzAQIB4d.jpg",
+              "plot": "When an eerie red glow appears, the giant eel suddenly releases the Nautilus, it turns out to be a chain of underwater volcanoes. Without steering power, the Nautilus continues to sink towards the dangerous lava - and it soon becomes clear that only Humility can save the crew.",
+              "duration": 2880,
+              "rating": "4.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nN2WXhdMEtkbhW0A2cvGzAQIB4d.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "The Big Blue",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zb1KTjUuyJcEGKU2owwFWW5zeIq.jpg",
+              "plot": "The underwater volcanoes turn out to reveal a clue to the legendary underwater city of Atlantis. A small group goes exploring and finds what appears to be an ancient outpost of the lost civilization, but also realizes that it is home to terrifying sea lilies and the crew must fight for their lives.",
+              "duration": 3180,
+              "rating": "4.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zb1KTjUuyJcEGKU2owwFWW5zeIq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Cold War",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/atL7FKXvYqJIM77dWTIe0oNOpV7.jpg",
+              "plot": "A daring battle between the Company ships Dreadnought and Nautilus leaves both stranded in the Arctic ice, leading to an uneasy truce. Nemo reunites with a friend from his past and is shaken by more revelations about his father.",
+              "duration": 3240,
+              "rating": "5.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/atL7FKXvYqJIM77dWTIe0oNOpV7.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "The Tipping Point",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/l9t0CTKAbDwgLjoSSGxZy3CTdss.jpg",
+              "plot": "When it is revealed that Nemo has been too daring and put the crew in danger, they lock him in his cabin and Boniface takes command instead. At the magnetic north pole, the problems pile up. Nemo must unite his divided crew by telling them who he really is.",
+              "duration": 3060,
+              "rating": "4.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/l9t0CTKAbDwgLjoSSGxZy3CTdss.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Ride of the Valkyrie",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8ieo7uQZ2inWvzkB2jrqVNqtMBm.jpg",
+              "plot": "When Nautilus finally arrives at the treasure, they realize that it has not been forgotten at all, on the contrary, it is guarded by wild warriors. Nemo feels that he has led his crew to the end of the world - for nothing.",
+              "duration": 2640,
+              "rating": "5.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8ieo7uQZ2inWvzkB2jrqVNqtMBm.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Too Big to Fail",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iCf8I365VsuxUaYu8RXRqRrN5bq.jpg",
+              "plot": "The Nautilus crew spread rumours that the East India Mercantile Company is failing. When the stock price plunges, a shareholder meeting is called for tonight. Nemo and the crew have three hours to scheme their way into that meeting, so they can dissolve the Company forever.",
+              "duration": 3180,
+              "rating": "5.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iCf8I365VsuxUaYu8RXRqRrN5bq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
       }
     ]
   }
