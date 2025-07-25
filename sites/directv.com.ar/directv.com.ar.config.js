@@ -36,7 +36,7 @@ module.exports = {
       const [channelNum, channelName] = channel.site_id.split('#')
 
       return {
-        filterParameters: {
+        filterParam: {
           day: date.date(),
           time: 0,
           minute: 0,
