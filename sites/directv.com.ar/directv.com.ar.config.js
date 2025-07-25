@@ -11,7 +11,7 @@ dayjs.extend(customParseFormat)
 module.exports = {
   site: 'directv.com.ar',
   days: 2,
-  url: 'https://www.directv.com.ar/guia/ChannelDetail.aspx/GetProgramming',
+  url: 'https://www.directv.com.ar/guia/guia.aspx/GetProgramming',
   request: {
     method: 'POST',
     headers: {
@@ -27,7 +27,7 @@ module.exports = {
       'Sec-Fetch-Site': 'same-origin',
       'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36',
-      'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="114", "Google Chrome";v="114"',
+      'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"',
       'sec-ch-ua-mobile': '?0',
       'sec-ch-ua-platform': '"Windows"'
     },
