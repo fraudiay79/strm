@@ -1,5 +1,6 @@
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0'
 
+const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -56,25 +57,35 @@ module.exports = {
   },
   parser({ content, channel }) {
     const trimmed = content.trim()
-    if (!trimmed.startsWith('{') || trimmed.includes('<html') || trimmed.includes('<!DOCTYPE html')) {
-      console.warn(`⚠️ Skipping ${channel.site_id}: Received HTML instead of JSON.`)
-      return []
-    }
 
-    let programs = []
-    const items = parseItems(content, channel)
-    items.forEach(item => {
-      programs.push({
+    if (trimmed.startsWith('{')) {
+      const items = parseItems(content, channel)
+      return items.map(item => ({
         title: item.title,
         description: item.description,
         rating: parseRating(item),
         start: parseStart(item),
         stop: parseStop(item)
-      })
-    })
-
-    return programs
+      }))
+    } else {
+      console.warn(`📄 Using HTML parser for ${channel.site_id}`)
+      return parseHTML(content, channel)
+    }
   }
+}
+
+function parseItems(content, channel) {
+  let [ChannelNumber, ChannelName] = channel.site_id.split('#')
+  ChannelName = ChannelName.replace('&amp;', '&')
+  const data = JSON.parse(content)
+
+  if (!data || !Array.isArray(data.d)) return []
+
+  const channelData = data.d.find(
+    c => c.ChannelNumber == ChannelNumber && c.ChannelName === ChannelName
+  )
+
+  return channelData?.ProgramList ?? []
 }
 
 function parseRating(item) {
@@ -94,14 +105,28 @@ function parseStop(item) {
   return dayjs.tz(item.endTimeString, 'M/D/YYYY h:mm:ss A', 'America/Argentina/Buenos_Aires')
 }
 
-function parseItems(content, channel) {
-  let [ChannelNumber, ChannelName] = channel.site_id.split('#')
-  ChannelName = ChannelName.replace('&amp;', '&')
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data.d)) return []
-  const channelData = data.d.find(
-    c => c.ChannelNumber == ChannelNumber && c.ChannelName === ChannelName
-  )
+// 🧩 Fallback HTML Parser
+function parseHTML(content, channel) {
+  const $ = cheerio.load(content)
+  const programs = []
 
-  return channelData && Array.isArray(channelData.ProgramList) ? channelData.ProgramList : []
+  $('div.program').each((_, elem) => {
+    const title = $(elem).find('.title').text().trim()
+    const description = $(elem).find('.description').text().trim()
+    const timeString = $(elem).find('.time').text().trim()
+
+    const [startStr, endStr] = timeString.split(' - ')
+    const start = dayjs.tz(startStr, 'h:mm A', 'America/Argentina/Buenos_Aires')
+    const stop = dayjs.tz(endStr, 'h:mm A', 'America/Argentina/Buenos_Aires')
+
+    programs.push({
+      title,
+      description,
+      rating: null,
+      start,
+      stop
+    })
+  })
+
+  return programs
 }
