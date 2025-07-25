@@ -1,4 +1,5 @@
 process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0
+
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
@@ -30,7 +31,7 @@ module.exports = {
       'sec-ch-ua': '"Not.A/Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"',
       'sec-ch-ua-mobile': '?0',
       'sec-ch-ua-platform': '"Windows"',
-      "X-Requested-With": "XMLHttpRequest"
+      'X-Requested-With': 'XMLHttpRequest'
     },
     data({ channel, date }) {
       const [channelNum, channelName] = channel.site_id.split('#')
@@ -54,6 +55,12 @@ module.exports = {
     }
   },
   parser({ content, channel }) {
+    const trimmed = content.trim()
+    if (!trimmed.startsWith('{') || trimmed.includes('<html') || trimmed.includes('<!DOCTYPE html')) {
+      console.warn(`⚠️ Skipping ${channel.site_id}: Received HTML instead of JSON.`)
+      return []
+    }
+
     let programs = []
     const items = parseItems(content, channel)
     items.forEach(item => {
@@ -88,7 +95,6 @@ function parseStop(item) {
 }
 
 function parseItems(content, channel) {
-  if (!content) return []
   let [ChannelNumber, ChannelName] = channel.site_id.split('#')
   ChannelName = ChannelName.replace('&amp;', '&')
   const data = JSON.parse(content)
