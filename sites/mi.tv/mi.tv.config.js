@@ -1,8 +1,8 @@
-const axios = require('axios')
 const cheerio = require('cheerio')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const axios = require('axios')
 
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
@@ -21,45 +21,41 @@ module.exports = {
   days: 2,
   url({ date, channel }) {
     const [country, id] = channel.site_id.split('#')
-    return `https://mi.tv/${country}/async/channel/${id}/${date.format('YYYY-MM-DD')}/0`
+    return `https://mi.tv/${country}/canales/${id}/${date.format('YYYY-MM-DD')}`
   },
-  parser({ content, date }) {
+  async parser({ date, channel }) {
+    const url = module.exports.url({ date, channel })
+    const html = await customAxios.get(url).then(r => r.data).catch(console.error)
+    const $ = cheerio.load(html)
     const programs = []
-    const items = parseItems(content)
-    items.forEach(item => {
-      const prev = programs[programs.length - 1]
-      const $item = cheerio.load(item)
-      let start = parseStart($item, date)
-      if (!start) return
-      if (prev && start.isBefore(prev.start)) {
-        start = start.add(1, 'd')
-        date = date.add(1, 'd')
-        prev.stop = start
-      } else if (prev) {
-        prev.stop = start
-      }
+
+    $('#page-contents .listing').each((i, el) => {
+      const $el = $(el)
+
+      const timeString = $el.find('.time').first().text().trim()
+      if (!timeString) return
+
+      const start = dayjs.utc(`${date.format('MM/DD/YYYY')} ${timeString}`, 'MM/DD/YYYY HH:mm')
       const stop = start.add(1, 'h')
+
       programs.push({
-        title: parseTitle($item),
-        category: parseCategory($item),
-        description: parseDescription($item),
-        icon: parseImage($item),
+        title: $el.find('h2').text().trim(),
+        category: $el.find('.sub-title').text().trim(),
+        description: $el.find('.synopsis').text().trim(),
+        icon: extractImage($el),
         start,
         stop
       })
     })
+
     return programs
   },
   async channels({ country }) {
     let lang = country === 'br' ? 'pt' : 'es'
-    const url = `https://mi.tv/${country}/sitemap`
+    const sitemapUrl = `https://mi.tv/${country}/sitemap`
 
-    const data = await customAxios
-      .get(url)
-      .then(r => r.data)
-      .catch(console.log)
-
-    const $ = cheerio.load(data)
+    const html = await customAxios.get(sitemapUrl).then(r => r.data).catch(console.error)
+    const $ = cheerio.load(html)
     const channels = []
 
     $(`#page-contents a[href*="${country}/canales"], a[href*="${country}/canais"]`).each((i, el) => {
@@ -75,4 +71,10 @@ module.exports = {
 
     return channels
   }
+}
+
+function extractImage($el) {
+  const bg = $el.find('.image').css('background-image')
+  const [, image] = bg.match(/url\(['"]?(.*?)['"]?\)/) || [null, null]
+  return image
 }
