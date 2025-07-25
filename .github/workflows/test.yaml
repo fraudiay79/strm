@@ -28,7 +28,9 @@ jobs:
           #npm run channels:parse --- --config=./sites/guide.lk/guide.lk.config.js --output=./sites/guide.lk/guide.lk.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
           #npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
-          npm run grab --- --site=guide.lk --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          #npm run grab --- --site=guide.lk --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run channels:parse --- --config=./sites/web.magentatv.de/web.magentatv.de.config.js --output=./sites/web.magentatv.de/web.magentatv.de.channels.xml
+
           #npm run grab --- --site=guide.lk --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000 --lang=ar
           #npm run channels:parse --- --config=./sites/guide.lk/guide.lk.config.js --output=./sites/guide.lk/guide.lk_ar.channels.xml --set=lang:ar
           #npm run channels:parse --- --config=./sites/guide.lk/guide.lk.config.js --output=./sites/guide.lk/guide.lk_ar.channels.xml --set=lang:en
@@ -37,9 +39,10 @@ jobs:
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/allente.no.xml
+        #git add -f guides/allente.no.xml
         #git add -f sites/guide.lk/guide.lk.channels.xml
         #git add -f sites/guide.lk/guide.lk_ar.channels.xml
         #git add -f sites/guide.lk/guide.lk_en.channels.xml
+        git add -f sites/web.magentatv.de/web.magentatv.de.channels.xml
         git commit -m "Update xml"
         git push -f origin main
