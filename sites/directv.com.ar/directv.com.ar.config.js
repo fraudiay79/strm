@@ -36,7 +36,6 @@ module.exports = {
     },
     data({ channel, date }) {
       const [channelNum, channelName] = channel.site_id.split('#')
-
       return {
         filterParam: {
           day: date.date(),
@@ -55,6 +54,8 @@ module.exports = {
       }
     }
   },
+
+  // 👇 Main parser with HTML fallback
   parser({ content, channel }) {
     const trimmed = content.trim()
 
@@ -74,20 +75,18 @@ module.exports = {
   }
 }
 
+// ✅ Extract programs from JSON
 function parseItems(content, channel) {
-  let [ChannelNumber, ChannelName] = channel.site_id.split('#')
-  ChannelName = ChannelName.replace('&amp;', '&')
+  let [ChannelNumber] = channel.site_id.split('#')
   const data = JSON.parse(content)
 
   if (!data || !Array.isArray(data.d)) return []
 
-  const channelData = data.d.find(
-    c => c.ChannelNumber == ChannelNumber && c.ChannelName === ChannelName
-  )
-
+  const channelData = data.d.find(c => String(c.ChannelNumber) === String(ChannelNumber))
   return channelData?.ProgramList ?? []
 }
 
+// 🎬 Parse rating
 function parseRating(item) {
   return item.rating
     ? {
@@ -97,6 +96,7 @@ function parseRating(item) {
     : null
 }
 
+// 🕒 Time parsing
 function parseStart(item) {
   return dayjs.tz(item.startTimeString, 'M/D/YYYY h:mm:ss A', 'America/Argentina/Buenos_Aires')
 }
@@ -105,7 +105,7 @@ function parseStop(item) {
   return dayjs.tz(item.endTimeString, 'M/D/YYYY h:mm:ss A', 'America/Argentina/Buenos_Aires')
 }
 
-// 🧩 Fallback HTML Parser
+// 🧩 HTML fallback parser
 function parseHTML(content, channel) {
   const $ = cheerio.load(content)
   const programs = []
