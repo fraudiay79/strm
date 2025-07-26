@@ -140,149 +140,129 @@
   <channel site="zap.co.ao" lang="pt" xmltv_id="ZapNovelas.ao" site_id="2439">ZAP Novelas</channel>
   <channel site="zap.co.ao" lang="pt" xmltv_id="ZapViva.ao" site_id="2455">ZAP Viva</channel>
   #Argentina
-  <channel site="mi.tv" lang="es" xmltv_id="247CanaldeNoticias.ar" site_id="ar#24-7-canal-de-noticias">24/7 Canal de Noticias</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="A24.ar" site_id="ar#america-24">A24</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="AE.ar" site_id="ar#a-e-mundo">A&amp;E</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="AMC.ar" site_id="ar#amc">AMC</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="AmericaSports.ar" site_id="ar#america-sports">América Sports</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="AmericaTV.ar" site_id="ar#america-2-capital">América TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="AnimalPlanet.ar" site_id="ar#animal-planet">Animal Planet</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ArgentinisimaSatelital.ar" site_id="ar#argentinisima-satelital">Argentinísima Satelital</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Atrescine.es" site_id="ar#a3cine">Atrescine</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Atreseries.es" site_id="ar#atreseries">Atreseries</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="AXN.ar" site_id="ar#axn">AXN</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="BabyTV.uk" site_id="ar#babytv">BabyTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="C5N.ar" site_id="ar#c5n">C5N</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Cartoonito.ar" site_id="ar#boomerang-cartoon">Cartoonito</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal10Cordoba.ar" site_id="ar#canal-10-de-cordoba">Canal 10</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal20VillaMaria.ar" site_id="ar#canal-c20-villa-maria">Canal 20</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal26.ar" site_id="ar#26-tv">Canal 26</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalA.ar" site_id="ar#canal-a">Canal á</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanaldelaCiudad.ar" site_id="ar#ciudad-abierta">Canal de la Ciudad</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalLuz.ar" site_id="ar#canal-luz">Canal Luz</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalOrbe21.ar" site_id="ar#canal-orbe-21">Canal Orbe 21</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalRural.ar" site_id="ar#canal-rural">Canal Rural</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalU.ar" site_id="ar#cba-24n">Canal U</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CartoonNetwork.ar" site_id="ar#cartoon-network">Cartoon Network</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CINEAR.ar" site_id="ar#incaa-tv">CINE.AR</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Cinecanal.ar" site_id="ar#cinecanal">Cinecanal</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Cinemax.ar" site_id="ar#cinemax">Cinemax</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CiudadMagazine.ar" site_id="ar#magazine">Ciudad Magazine</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CMElCanaldelaMusica.ar" site_id="ar#canal-de-la-musica">El Canal de la Música</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CN23.ar" site_id="ar#cn-23">CN23</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ComedyCentral.ar" site_id="ar#comedy-central">Comedy Central</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ConexionEducativa.ar" site_id="ar#conexion-educativa">Conexión Educativa</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ConstruirTV.ar" site_id="ar#construir">Construir TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CronicaTV.ar" site_id="ar#cronica">Cronica</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DeporTV.ar" site_id="ar#dxtv">DeporTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryChannel.ar" site_id="ar#discovery">Discovery Channel</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryHomeHealth.ar" site_id="ar#discovery-home-and-health">Discovery Home &amp; Health</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryKids.ar" site_id="ar#discovery-kids">Discovery Kids</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryScience.ar" site_id="ar#discovery-science">Discovery Science</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryTheater.ar" site_id="ar#discovery-hd-theater">Discovery Theater</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryTurbo.ar" site_id="ar#discovery-turbo">Discovery Turbo</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryWorld.ar" site_id="ar#discovery-world-hd">Discovery World</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DisneyChannel.ar" site_id="ar#disney">Disney Channel</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DisneyJunior.ar" site_id="ar#disney-jr">Disney Junior</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="DisneyXD.ar" site_id="ar#disney-xd">Disney XD</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="EEntertainment.ar" site_id="ar#entertainment">E!</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ElGourmet.ar" site_id="ar#el-gourmet">El Gourmet</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ElNueve.ar" site_id="ar#canal-9">El Nueve</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ElTrece.ar" site_id="ar#el-trece">El Trece</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Encuentro.ar" site_id="ar#encuentro">Encuentro</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ESPN.ar" site_id="ar#espn">ESPN</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ESPN2.ar" site_id="ar#espn-2">ESPN 2</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ESPN3.ar" site_id="ar#espn-3">ESPN 3</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ESPNExtra.ar" site_id="ar#espn-1">ESPN Extra</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ESPNPremium.ar" site_id="ar#fox-sports-premium">ESPN Premium</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="EuropaEuropa.ar" site_id="ar#europa-europa">Europa Europa</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="FilmArts.ar" site_id="ar#film-arts">film&amp;arts</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="FoodNetwork.ar" site_id="ar#food-network">Food Network</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="FoxSports.ar" site_id="ar#fox-sports-hd">FOX Sports</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="FoxSports2.ar" site_id="ar#fox-sports-2">FOX Sports 2</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="FoxSports3.ar" site_id="ar#fox-sports-3">FOX Sports 3</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="FXMovies.ar" site_id="ar#fx-movies">FX Movies</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="FX.ar" site_id="ar#fx">FX</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="GarageTV.ar" site_id="ar#el-garage">El Garage TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Glitz.ar" site_id="ar#glitz">Glitz</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="GoldenEdgePanregional.mx" site_id="ar#golden-edge">Golden Edge</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="GoldenPanregional.mx" site_id="ar#golden">Golden</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="GolfChannel.ar" site_id="ar#golf-channel">Golf Channel</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="GolTVUSA.us" site_id="ar#gol-tv">Gol TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HAPSATV.ar" site_id="ar#hapsa">HAPSATV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBO.ar" site_id="ar#hbo">HBO</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBO2.ar" site_id="ar#hbo-2">HBO 2</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBOFamily.ar" site_id="ar#hbo-family">HBO Family</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBOMundi.ar" site_id="ar#max">HBO Mundi</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBOPlus.ar" site_id="ar#hbo-plus-panamericano-hd">HBO Plus</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBOPop.ar" site_id="ar#max-up">HBO Pop</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBOSignature.ar" site_id="ar#hbo-signature">HBO Signature</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HBOXtreme.ar" site_id="ar#max-prime">HBO Xtreme</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HGTV.ar" site_id="ar#hgtv">HGTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="History.ar" site_id="ar#history">History</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="History2.ar" site_id="ar#h2">History 2</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HolaTVLatinAmerica.us" site_id="ar#hola-tv">Hola TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="HTV.ar" site_id="ar#htv">HTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="InvestigationDiscovery.ar" site_id="ar#investigation-discovery">Investigation Discovery</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ISatSouth.us" site_id="ar#i-sat">I-SAT</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="IVCPanregional.ve" site_id="ar#ivc">IVC</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="LaNacionPlus.ar" site_id="ar#la-nacion">LN+</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="LasEstrellasLatinAmerica.mx" site_id="ar#canal-de-las-estrellas">Las Estrellas</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Lifetime.ar" site_id="ar#lifetime">Lifetime</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="MasChic.ar" site_id="ar#mas-chic">Más Chic</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Metro.ar" site_id="ar#metro">Metro</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="MTV.ar" site_id="ar#mtv">MTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Much.ar" site_id="ar#muchmusic">MuchMusic</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="MusicTop.ar" site_id="ar#musictop">Musictop</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="NatGeoKids.ar" site_id="ar#nat-geo-kids">Nat Geo Kids</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="NationalGeographic.ar" site_id="ar#national-geographic">National Geographic</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="NationalGeographicWild.ar" site_id="ar#nat-geo-wild">National Geographic Wild</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="NBATV.ar" site_id="ar#nba-tv">NBA TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="NETTV.ar" site_id="ar#net-tv">Net TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Nickelodeon.ar" site_id="ar#nickelodeon">Nickelodeon</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="NickJr.ar" site_id="ar#nick-jr">Nick Jr.</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Nicktoons.ar" site_id="ar#nicktoons">NickToons</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Pakapaka.ar" site_id="ar#pakapaka">Pakapaka</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ParamountNetwork.ar" site_id="ar#paramount-channel">Paramount Network</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Pasiones.ar" site_id="ar#pasiones">Pasiones</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="PlayboyTVLatino.ar" site_id="ar#playboy">Playboy TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="QuieroMusicaenmiIdioma.ar" site_id="ar#quiero">Quiero</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="SmithsonianChannel.ar" site_id="ar#smithsonian-channel">Smithsonian Channel</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="SonyChannel.ar" site_id="ar#sony">Sony Channel</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Space.ar" site_id="ar#space">Space</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="StarChannel.ar" site_id="ar#fox">Star Channel</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="StudioUniversal.ar" site_id="ar#studio-universal">Studio Universal</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Syfy.ar" site_id="ar#syfy">Syfy</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TCM.ar" site_id="ar#tcm">TCM</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TECtv.ar" site_id="ar#tecnopolis">TECtv</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TelediarioTV.ar" site_id="ar#telediario">Telediario</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Telefe.ar" site_id="ar#telefe">Telefe</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Telemax.ar" site_id="ar#telemax">Telemax</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TelemundoInternacional.us" site_id="ar#telemundo">Telemundo Internacional</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TierraMiaTV.ar" site_id="ar#tierra-mia-tv">Tierra Mía TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TLC.ar" site_id="ar#discovery-tlc">TLC</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TN.ar" site_id="ar#tn">TN</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TNT.ar" site_id="ar#tnt">TNT</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TNTNovelas.ar" site_id="ar#tbs">TNT Novelas</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TNTSeries.ar" site_id="ar#tnt-series">TNT Series</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TNTSports.ar" site_id="ar#tnt-sports">TNT Sports</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Tooncast.ar" site_id="ar#tooncast">Tooncast</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="truTV.ar" site_id="ar#tru-tv">truTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TurismoVisionArgentina.ar" site_id="ar#turismo-vision-argentina">Turismo Visión Argentina</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TV5MondeLatinAmerica.fr" site_id="ar#tv-5">TV5Monde Amérique Latine</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TVEInternacionalAmerica.es" site_id="ar#tve">TVE</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TVPublica.ar" site_id="ar#canal-7-capital">TV Pública</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TyCSports.ar" site_id="ar#tyc-sports">TyC Sports</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TyCSports2.ar" site_id="ar#tyc-alternativa">TyC Sports 2</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="UniversalTV.ar" site_id="ar#universal-channel">Universal TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="A24.ar" site_id="343">A24</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="AE.ar" site_id="455">A&amp;E</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="AMC.ar" site_id="1362">AMC</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="AmericaSports.ar" site_id="84">América Sports</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="AmericaTV.ar" site_id="175">América TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="AmericaTV2.ar" site_id="3248">América TV 2</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="AnimalPlanet.ar" site_id="2932">Animal Planet</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ArgentinisimaSatelital.ar" site_id="57">Argentinísima Satelital</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Atrescine.es" site_id="ar#a3cine">Atrescine</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Atreseries.es" site_id="ar#atreseries">Atreseries</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="AXN.ar" site_id="1862">AXN</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="BabyTV.uk" site_id="695">BabyTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="C5N.ar" site_id="709">C5N</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Cartoonito.ar" site_id="174">Cartoonito</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Canal26.ar" site_id="3">Canal 26</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalA.ar" site_id="58">Canal á</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanaldelaCiudad.ar" site_id="2332">Canal de la Ciudad</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalLuz.ar" site_id="349">Canal Luz</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalRural.ar" site_id="11">Canal Rural</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CartoonNetwork.ar" site_id="403">Cartoon Network</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CINEAR.ar" site_id="1605">CINE.AR</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Cinecanal.ar" site_id="3467">Cinecanal</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Cinemax.ar" site_id="2293">Cinemax</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CiudadMagazine.ar" site_id="26">Ciudad Magazine</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CMElCanaldelaMusica.ar" site_id="230">El Canal de la Música</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CN23.ar" site_id="1345">CN23</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ComedyCentral.ar" site_id="2037">Comedy Central</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ConstruirTV.ar" site_id="1813">Construir TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CronicaTV.ar" site_id="192">Cronica</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DeporTV.ar" site_id="2195">DeporTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryChannel.ar" site_id="438">Discovery Channel</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryHomeHealth.ar" site_id="3135">Discovery Home &amp; Health</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryKids.ar" site_id="396">Discovery Kids</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryScience.ar" site_id="493">Discovery Science</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryTheater.ar" site_id="1181">Discovery Theater</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryTurbo.ar" site_id="492">Discovery Turbo</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryWorld.ar" site_id="1389">Discovery World</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DisneyChannel.ar" site_id="386">Disney Channel</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="DisneyJunior.ar" site_id="1102">Disney Junior</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="EEntertainment.ar" site_id="491">E!</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ElGourmet.ar" site_id="473">El Gourmet</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ElNueve.ar" site_id="96">El Nueve</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ElTrece.ar" site_id="6">El Trece</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Encuentro.ar" site_id="477">Encuentro</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN.ar" site_id="2603">ESPN</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN2.ar" site_id="2899">ESPN 2</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN3.ar" site_id="2020">ESPN 3</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN4.ar" site_id="222">ESPN 4</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPNPremium.ar" site_id="3951">ESPN Premium</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="EuropaEuropa.ar" site_id="184">Europa Europa</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="FilmArts.ar" site_id="63">film&amp;arts</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="FoodNetwork.ar" site_id="3450">Food Network</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports.ar" site_id="979">FOX Sports</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports2.ar" site_id="2202">FOX Sports 2</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports3.ar" site_id="1101">FOX Sports 3</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="FX.ar" site_id="427">FX</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="GarageTV.ar" site_id="358">El Garage TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Glitz.ar" site_id="1835">Glitz</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="GoldenEdgePanregional.mx" site_id="4527">Golden Edge</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="GoldenPanregional.mx" site_id="401">Golden</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="GolTVUSA.us" site_id="2377">Gol TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBO.ar" site_id="21">HBO</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBO2.ar" site_id="2127">HBO 2</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOFamily.ar" site_id="335">HBO Family</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOMundi.ar" site_id="1348">HBO Mundi</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOPlus.ar" site_id="2165">HBO Plus</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOPop.ar" site_id="3422">HBO Pop</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOSignature.ar" site_id="500">HBO Signature</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOXtreme.ar" site_id="334">HBO Xtreme</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HGTV.ar" site_id="1531">HGTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="History.ar" site_id="445">History</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="History2.ar" site_id="2824">History 2</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HolaTVLatinAmerica.us" site_id="2670">Hola TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="HTV.ar" site_id="115">HTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="InvestigationDiscovery.ar" site_id="591">Investigation Discovery</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ISatSouth.us" site_id="917">I-SAT</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="IVCPanregional.ve" site_id="3315">IVC</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="LaNacionPlus.ar" site_id="3644">LN+</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="LasEstrellasLatinAmerica.mx" site_id="2235">Las Estrellas</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Lifetime.ar" site_id="2790">Lifetime</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="MasChic.ar" site_id="1752">Más Chic</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Metro.ar" site_id="27">Metro</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="MTV.ar" site_id="1339">MTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="NatGeoKids.ar" site_id="ar#nat-geo-kids">Nat Geo Kids</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="NationalGeographic.ar" site_id="404">National Geographic</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="NETTV.ar" site_id="4646">Net TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Nickelodeon.ar" site_id="1229">Nickelodeon</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="NickJr.ar" site_id="1226">Nick Jr.</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Pakapaka.ar" site_id="1492">Pakapaka</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ParamountNetwork.ar" site_id="2910">Paramount Network</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Pasiones.ar" site_id="2217">Pasiones</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="PlayboyTVLatino.ar" site_id="3292">Playboy TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="QuieroMusicaenmiIdioma.ar" site_id="779">Quiero</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="SonyChannel.ar" site_id="446">Sony Channel</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Space.ar" site_id="1258">Space</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="StarChannel.ar" site_id="778">Star Channel</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="StudioUniversal.ar" site_id="580">Studio Universal</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TCM.ar" site_id="910">TCM</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TECtv.ar" site_id="1999">TECtv</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TelediarioTV.ar" site_id="ar#telediario">Telediario</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Telefe.ar" site_id="2354">Telefe</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TelemundoInternacional.us" site_id="1153">Telemundo Internacional</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TLC.ar" site_id="339">TLC</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TN.ar" site_id="1847">TN</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TNT.ar" site_id="4230">TNT</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTNovelas.ar" site_id="8200">TNT Novelas</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSeries.ar" site_id="2999">TNT Series</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSports.ar" site_id="3950">TNT Sports</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Tooncast.ar" site_id="880">Tooncast</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="truTV.ar" site_id="1112">truTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TV5MondeLatinAmerica.fr" site_id="ar#tv-5">TV5Monde Amérique Latine</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TVEInternacionalAmerica.es" site_id="59">TVE</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TVPublica.ar" site_id="1569">TV Pública</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TyCSports.ar" site_id="2355">TyC Sports</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="UniversalTV.ar" site_id="1508">Universal TV</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalCinema.ar" site_id="453">Universal Cinema</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalComedy.ar" site_id="455">Universal Comedy</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalCrime.ar" site_id="456">Universal Crime</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalPremiere.ar" site_id="452">Universal Premiere</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalReality.ar" site_id="454">Universal Reality</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Viajar.es" site_id="ar#viajar">Viajar</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Volver.ar" site_id="ar#volver">Volver</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.ar" site_id="ar#warner-channel">Warner TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="USANetwork.ar" site_id="8327">USA Network</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Volver.ar" site_id="45">Volver</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="WarnerTV.ar" site_id="3787">Warner TV</channel>
   #Armenia
   <channel site="iptvx.one" lang="hy" xmltv_id="5TV.am" site_id="5-am">5 TV (Армения) • 5TV</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ArmeniaTV.am" site_id="armenia-tv">Армения ТВ • Armenia TV</channel>
@@ -1125,30 +1105,34 @@
   <channel site="canalplus.com" lang="fr" xmltv_id="TeleTchad.td" site_id="td#180275">Télé Tchad</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="TchadInfos.ci" site_id="td#180079">Tchad Infos</channel>
   #Chile
-  <channel site="mi.tv" lang="es" xmltv_id="13C.cl" site_id="cl#canal-13-c">13C</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="24Horas.cl" site_id="cl#tvn-24-h">24 Horas</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ARTV.cl" site_id="cl#artv">ARTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal13.cl" site_id="cl#canal-13">Canal 13</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalClaro.cl" site_id="sv#canal-claro">Canal Claro</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanaldelSur.cl" site_id="cl#canal-del-sur">Canal del Sur</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalEcool.cl" site_id="cl#ecool-tv">Ecool TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalISB.cl" site_id="cl#isb-tv">ISB TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CDFBasico.cl" site_id="cl#cdf-basico">CDF Básico</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CDF.cl" site_id="cl#cdf-hd">CDF</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CDFPremium.cl" site_id="cl#cdf-premium">CDF Premium</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CDOBasico.cl" site_id="cl#cdo-basico">CDO Básico</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CDO.cl" site_id="cl#cdo-hd">CDO</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CDOPremium.cl" site_id="cl#cdo-premium">CDO Premium</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ChileVision.cl" site_id="cl#chilevision">Chilevisión</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CNNChile.cl" site_id="cl#cnn-chile">CNN Chile</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ETCTV.cl" site_id="cl#etc-tv">ETC TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="LaRed.cl" site_id="cl#la-red">La Red</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Mega.cl" site_id="cl#mega">Mega</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="RecTV.cl" site_id="cl#rec-tv">REC TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TeletrakTV.cl" site_id="cl#teletrak">Teletrak</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TVN.cl" site_id="cl#tvn">TVN</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TVSenado.cl" site_id="cl#senado-tv">TV Senado</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ZonaLatina.cl" site_id="cl#zona-latina">Zona Latina</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="13C.cl" site_id="cl#canal-13-c">13C</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="24Horas.cl" site_id="1310">24 Horas</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ARTV.cl" site_id="cl#artv">ARTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Canal13.cl" site_id="1398">Canal 13</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalClaro.cl" site_id="sv#canal-claro">Canal Claro</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanaldelSur.cl" site_id="cl#canal-del-sur">Canal del Sur</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalEcool.cl" site_id="cl#ecool-tv">Ecool TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalISB.cl" site_id="cl#isb-tv">ISB TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CDFBasico.cl" site_id="cl#cdf-basico">CDF Básico</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CDF.cl" site_id="cl#cdf-hd">CDF</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CDFPremium.cl" site_id="cl#cdf-premium">CDF Premium</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CDOBasico.cl" site_id="cl#cdo-basico">CDO Básico</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CDO.cl" site_id="cl#cdo-hd">CDO</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CDOPremium.cl" site_id="cl#cdo-premium">CDO Premium</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ChileVision.cl" site_id="4525">Chilevisión</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CNNChile.cl" site_id="888">CNN Chile</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ETCTV.cl" site_id="cl#etc-tv">ETC TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="LaRed.cl" site_id="368">La Red</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Mega.cl" site_id="3242">Mega</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="NTV.cl" site_id="5462">NTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="RecTV.cl" site_id="cl#rec-tv">REC TV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TeletrakTV.cl" site_id="1304">Teletrak</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSports.cl" site_id="1409">TNT Sports</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSports2.cl" site_id="1305">TNT Sports 2</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSports3.cl" site_id="1303">TNT Sports 3</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TVN.cl" site_id="4879">TVN</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TVSenado.cl" site_id="cl#senado-tv">TV Senado</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="ZonaLatina.cl" site_id="cl#zona-latina">Zona Latina</channel>
   #China
   <channel site="tv.cctv.com" lang="zh" xmltv_id="AnhuiTV.cn" site_id="anhui">安徽卫视</channel>
   <channel site="tv.cctv.com" lang="zh" xmltv_id="BeijingSatelliteTV.cn" site_id="btv1">北京卫视</channel>
@@ -1234,29 +1218,30 @@
   <channel site="tv.cctv.com" lang="zh" xmltv_id="YunnanTV1.cn" site_id="yunnan">云南卫视</channel>
   <channel site="tv.cctv.com" lang="zh" xmltv_id="ZhejiangSatelliteTV.cn" site_id="zhejiang">浙江卫视</channel>
   #Colombia
-  <channel site="mi.tv" lang="es" xmltv_id="Cablenoticias.co" site_id="co#cablenoticias">Cablenoticias</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CaliTV.co" site_id="co#cali-tv">CaliTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Canal1.co" site_id="co#canal-uno">Canal 1</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalC.co" site_id="co#canal-c">Canal C</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalCapital.co" site_id="co#canal-capital">Canal Capital</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalCartagena.co" site_id="co#canal-cartagena">Canal Cartagena</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalRCN.co" site_id="co#canal-rcn-hd">RCN</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalTRO.co" site_id="co#tro">Canal TRO</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CanalU.co" site_id="co#canal-u">Canal U</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="CaracolTV.co" site_id="co#caracol">Caracol</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Cosmovision.co" site_id="co#cosmovision">Cosmovisión</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Cristovision.co" site_id="co#cristo-vision">Cristovisión</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="NovelasCaracol.co" site_id="co#caracol-novelas">Novelas Caracol</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TeleAmiga.co" site_id="co#teleamiga">TeleAmiga</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Teleantioquia.co" site_id="co#teleantioquia">Teleantioquia</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Telecafe.co" site_id="co#telecafe">Telecafé</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Telecaribe.co" site_id="co#telecaribe">Telecaribe</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Telemedellin.co" site_id="co#telemedellin">Telemedellín</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Telepacifico.co" site_id="co#telepacifico">Telepacifico</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TeleNostalgia.co" site_id="co#tele-nostalgia">Telenostalgia</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TeleVid.co" site_id="co#televid-hd">Tele Vid</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Trece.co" site_id="co#canal-tr3ce">Tr3ce</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="WinSports.co" site_id="co#win-sports-hd">Win Sports</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Cablenoticias.co" site_id="1003">Cablenoticias</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CaliTV.co" site_id="co#cali-tv">CaliTV</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Canal1.co" site_id="1010">Canal 1</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalC.co" site_id="co#canal-c">Canal C</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalCapital.co" site_id="938">Canal Capital</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalCartagena.co" site_id="co#canal-cartagena">Canal Cartagena</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalRCN.co" site_id="1028">RCN</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalTRO.co" site_id="co#tro">Canal TRO</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalU.co" site_id="co#canal-u">Canal U</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="CaracolTV.co" site_id="1074">Caracol</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Cosmovision.co" site_id="809">Cosmovisión</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Cristovision.co" site_id="1868">Cristovisión</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="NovelasCaracol.co" site_id="co#caracol-novelas">Novelas Caracol</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TeleAmiga.co" site_id="798">TeleAmiga</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Teleantioquia.co" site_id="1007">Teleantioquia</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Telecafe.co" site_id="1180">Telecafé</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Telecaribe.co" site_id="1030">Telecaribe</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Telemedellin.co" site_id="1029">Telemedellín</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Telepacifico.co" site_id="1031">Telepacifico</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TeleNostalgia.co" site_id="964">Telenostalgia</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="TeleVid.co" site_id="co#televid-hd">Tele Vid</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Trece.co" site_id="co#canal-tr3ce">Tr3ce</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="WinSports.co" site_id="2863">Win Sports</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Zoom.co" site_id="1148">Zoom</channel>
   #Congo
   <channel site="canalplus.com" lang="fr" xmltv_id="DRTV.cg" site_id="cg#180383">DRTV</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TeleCongo.cg" site_id="858">TeleCongo</channel>
@@ -7326,7 +7311,7 @@
   <channel site="cosmotetv.gr" lang="el" xmltv_id="SirinaTV.gr" site_id="sirinatv">Sirina</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="SuperONE.hu" site_id="SUPERONEHD">SuperONE</channel>
   <channel site="antiktv.sk" lang="en" xmltv_id="TrueAmateurs.uk" site_id="true_amateurs">True Amateurs</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Venus.ar" site_id="ar#venus">Venus</channel>
+  <channel site="reportv.com.ar" lang="es" xmltv_id="Venus.ar" site_id="3294">Venus</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="VenusBrasil.br" site_id="br#venus-tv-sd">Venus</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="VividRed.us" site_id="vivid-red-hd-627">Vivid Red</channel>
   <channel site="programtv.onet.pl" lang="en" xmltv_id="VividTouch.uk" site_id="vivid-touch-636">Vivid Touch</channel>
