@@ -2106,7 +2106,6 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="DisneyChannel.de" site_id="27">Disney Channel</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="DMAX.de" site_id="429">DMAX</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="emsTVLingen.de" site_id="4380">ems TV</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="eSports1.de" site_id="191">eSports1</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="EuronewsGerman.fr" site_id="482">euronews</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Eurosport1.de" site_id="389">Eurosport 1</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Eurosport2.de" site_id="18">Eurosport 2</channel>
@@ -2192,14 +2191,11 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="sixx.de" site_id="380">sixx</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyAtlantic.de" site_id="264">Sky Atlantic</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaAction.de" site_id="40">Sky Cinema Action</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaBestOf.de" site_id="263">Sky Cinema Best of</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaHighlights.de" site_id="263">Sky Cinema Highlights</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaClassics.de" site_id="200">Sky Cinema Classics</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaFamily.de" site_id="572">Sky Cinema Family</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaFun.de" site_id="235">Sky Cinema Fun</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaSpecial.de" site_id="3844">Sky Cinema Special</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaPremieren.de" site_id="195">Sky Cinema Premieren</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaPremierenPlus24.de" site_id="202">Sky Cinema Premieren +24</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaThriller.de" site_id="4356">Sky Cinema Thriller</channel>
+  <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCinemaPremiere.de" site_id="195">Sky Cinema Premiere</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyCrime.de" site_id="4924">Sky Crime</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyDocumentaries.de" site_id="5143">Sky Documentaries</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SkyKrimi.de" site_id="201">Sky Krimi</channel>
@@ -2238,7 +2234,6 @@
   <channel site="web.magentatv.de" lang="de" xmltv_id="sonnenklarTV.de" site_id="486">sonnenklar.TV</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SpiegelGeschichte.de" site_id="4406">Spiegel Geschichte</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Sport1.de" site_id="401">Sport1</channel>
-  <channel site="web.magentatv.de" lang="de" xmltv_id="Sport1Plus.de" site_id="44">Sport1+</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SportdigitalFUSSBALL.de" site_id="194">Sportdigital Fußball</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="SRFernsehen.de" site_id="379">SR Fernsehen</channel>
   <channel site="web.magentatv.de" lang="de" xmltv_id="Studio47.de" site_id="2616">Studio 47</channel>
@@ -4033,7 +4028,7 @@
   <channel site="tvgids.nl" lang="nl" xmltv_id="AnimalPlanet.nl" site_id="animalplanet">Animal Planet</channel>
   <channel site="tvgids.nl" lang="nl" xmltv_id="AT5.nl" site_id="at5">AT5</channel>
   <channel site="ziggogo.tv" lang="en" xmltv_id="BabyTV.uk" site_id="NL_000091_019490">BabyTV</channel>
-  <channel site="tvgids.nl" lang="nl" xmltv_id="BBCFirst.uk" site_id="bbcfirst">BBC First</channel>
+  <channel site="tvgids.nl" lang="nl" xmltv_id="BBCNL.uk" site_id="bbcnl">BBC NL</channel>
   <channel site="tvgids.nl" lang="nl" xmltv_id="BVN.nl" site_id="bvn">BVN</channel>
   <channel site="tvgids.nl" lang="nl" xmltv_id="CanalPlusAction.nl" site_id="canalplusaction">Canal+ Action</channel>
   <channel site="tvgids.nl" lang="nl" xmltv_id="Cartoonito.nl" site_id="Cartoonito">Cartoonito</channel>
