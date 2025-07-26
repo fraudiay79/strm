@@ -29,19 +29,23 @@ module.exports = {
     const $ = cheerio.load(html)
     const programs = []
 
-    $('#page-contents .listing').each((i, el) => {
+    // Adapted for América 24-style listings
+    $('.channel-schedule .program').each((i, el) => {
       const $el = $(el)
 
-      const timeString = $el.find('.time').first().text().trim()
-      if (!timeString) return
+      const timeString = $el.find('.program-time').text().trim()
+      const title = $el.find('.program-title').text().trim()
+      const description = $el.find('.program-description').text().trim()
+
+      if (!timeString || !title) return
 
       const start = dayjs.utc(`${date.format('MM/DD/YYYY')} ${timeString}`, 'MM/DD/YYYY HH:mm')
-      const stop = start.add(1, 'h')
+      const stop = start.add(1, 'hour') // You may adjust duration if detailed data is available
 
       programs.push({
-        title: $el.find('h2').text().trim(),
-        category: $el.find('.sub-title').text().trim(),
-        description: $el.find('.synopsis').text().trim(),
+        title,
+        category: '', // No clear category info in this layout
+        description,
         icon: extractImage($el),
         start,
         stop
