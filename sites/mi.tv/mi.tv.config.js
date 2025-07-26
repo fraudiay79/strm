@@ -7,14 +7,17 @@ const axios = require('axios')
 dayjs.extend(utc)
 dayjs.extend(customParseFormat)
 
-const customAxios = axios.create({
-  headers: {
-    'Accept': 'text/html,application/json;q=0.9,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/138 Safari/537.36',
-    'X-Requested-With': 'XMLHttpRequest'
-  }
-})
+function buildAxios(channelId) {
+  return axios.create({
+    headers: {
+      'Accept': 'text/html,application/json;q=0.9,*/*;q=0.8',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+      'X-Requested-With': 'XMLHttpRequest',
+      'Referer': `https://mi.tv/ar/canales/${channelId}` // 💡 Added to bypass 403
+    }
+  })
+}
 
 module.exports = {
   site: 'mi.tv',
@@ -24,28 +27,48 @@ module.exports = {
     return `https://mi.tv/${country}/canales/${id}/${date.format('YYYY-MM-DD')}`
   },
   async parser({ date, channel }) {
+    const [country, channelId] = channel.site_id.split('#')
     const url = module.exports.url({ date, channel })
-    const html = await customAxios.get(url).then(r => r.data).catch(console.error)
+    const axiosInstance = buildAxios(channelId)
+
+    let html
+    try {
+      const response = await axiosInstance.get(url)
+      html = response.data
+    } catch (err) {
+      console.error(`❌ Failed fetching ${channel.site_id} @ ${date.format('YYYY-MM-DD')}`)
+      console.error('Status:', err.response?.status)
+      console.error('Headers:', err.response?.headers)
+      return []
+    }
+
     const $ = cheerio.load(html)
     const programs = []
 
-    // Adapted for América 24-style listings
-    $('.channel-schedule .program').each((i, el) => {
+    const programElements = $('.channel-schedule .program').length > 0
+      ? $('.channel-schedule .program') // 🆕 América 24-style
+      : $('#page-contents .listing')     // 🧓 Older layout fallback
+
+    programElements.each((i, el) => {
       const $el = $(el)
 
-      const timeString = $el.find('.program-time').text().trim()
-      const title = $el.find('.program-title').text().trim()
-      const description = $el.find('.program-description').text().trim()
+      const timeString =
+        $el.find('.program-time').text().trim() ||
+        $el.find('.time').first().text().trim()
 
-      if (!timeString || !title) return
+      if (!timeString) return
 
       const start = dayjs.utc(`${date.format('MM/DD/YYYY')} ${timeString}`, 'MM/DD/YYYY HH:mm')
-      const stop = start.add(1, 'hour') // You may adjust duration if detailed data is available
+      const stop = start.add(1, 'hour') // ⏱️ Default 1-hour duration
 
       programs.push({
-        title,
-        category: '', // No clear category info in this layout
-        description,
+        title:
+          $el.find('.program-title').text().trim() ||
+          $el.find('h2').text().trim(),
+        category: $el.find('.sub-title').text().trim() || '',
+        description:
+          $el.find('.program-description').text().trim() ||
+          $el.find('.synopsis').text().trim(),
         icon: extractImage($el),
         start,
         stop
@@ -55,7 +78,7 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
-    let lang = country === 'br' ? 'pt' : 'es'
+    const lang = country === 'br' ? 'pt' : 'es'
     const sitemapUrl = `https://mi.tv/${country}/sitemap`
 
     const html = await customAxios.get(sitemapUrl).then(r => r.data).catch(console.error)
