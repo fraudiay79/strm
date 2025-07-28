@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 tdmax.py > links/testtdmax.m3u8
+            python3 tdmax.py
 
       - name: commit and push files
         run: |
