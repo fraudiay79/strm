@@ -21,7 +21,6 @@ module.exports = {
         programs.push(item)
       }
     })
-
     return programs
   },
   async channels() {
@@ -31,10 +30,7 @@ module.exports = {
 
     let seq = 0
     const queues = [baseUrl]
-    while (true) {
-      if (!queues.length) {
-        break
-      }
+    while (queues.length) {
       const url = queues.shift()
       const content = await axios
         .get(url)
@@ -50,7 +46,7 @@ module.exports = {
             const href = $(item).attr('href')
             channels.push({
               lang: 'pt',
-              site_id: href.substr(href.lastIndexOf('/') + 1),
+              site_id: href.substring(href.lastIndexOf('/') + 1),
               name: $(item).find('.licontent h2').text().trim()
             })
           })
@@ -72,29 +68,49 @@ function parseItems(content, date) {
   const result = []
   const $ = cheerio.load(content)
 
-  let lastDate
+  let lastDate = null
+
   for (const item of $('ul.mw li').toArray()) {
     const $item = $(item)
+
     if ($item.hasClass('subheader')) {
-      lastDate = `${$item.text().split(', ')[1]}/${date.format('YYYY')}`
-    } else if ($item.hasClass('divider')) {
-      // ignore
-    } else if (lastDate) {
-      const data = { title: $item.find('a').attr('title').trim() }
-      const ep = data.title.match(/T(\d+) EP(\d+)/)
-      if (ep) {
-        data.season = parseInt(ep[1])
-        data.episode = parseInt(ep[2])
+      const headerParts = $item.text().split(', ')
+      if (headerParts.length > 1) {
+        lastDate = `${headerParts[1]}/${date.format('YYYY')}`
+      } else {
+        console.warn('Malformed subheader, skipping:', $item.text())
+        lastDate = null
       }
-      data.start = dayjs.tz(`${lastDate} ${$item.find('.time').text()}`, 'DD/MM/YYYY HH:mm', 'America/Sao_Paulo')
+    } else if ($item.hasClass('divider')) {
+      continue
+    } else if (lastDate) {
+      const timeText = $item.find('.time').text().trim()
+      const fullDateTime = `${lastDate} ${timeText}`
+      const parsedStart = dayjs.tz(fullDateTime, 'DD/MM/YYYY HH:mm', 'America/Sao_Paulo')
+
+      if (!parsedStart.isValid()) {
+        console.warn('Invalid start time, skipping:', fullDateTime)
+        continue
+      }
+
+      const title = $item.find('a').attr('title')?.trim() || 'Untitled'
+      const data = { title, start: parsedStart }
+
+      const epMatch = title.match(/T(\d+) EP(\d+)/)
+      if (epMatch) {
+        data.season = parseInt(epMatch[1])
+        data.episode = parseInt(epMatch[2])
+      }
+
       result.push(data)
+    } else {
+      console.warn('Item encountered before valid date context:', $item.text())
     }
   }
-  // use stop time from next item
-  if (result.length > 1) {
-    for (let i = 0; i < result.length - 1; i++) {
-      result[i].stop = result[i + 1].start
-    }
+
+  // Assign stop time from next item's start time
+  for (let i = 0; i < result.length - 1; i++) {
+    result[i].stop = result[i + 1].start
   }
 
   return result
