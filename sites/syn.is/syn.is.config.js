@@ -14,7 +14,7 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    return `https://www.syn.is/api/epg${channel.site_id}/${date.format('YYYY-MM-DD')}`
+    return `https://www.syn.is/api/epg/${channel.site_id}/${date.format('YYYY-MM-DD')}`
   },
   parser: function ({ content }) {
     let data
