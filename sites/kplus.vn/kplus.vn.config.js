@@ -123,22 +123,27 @@ function parseItems(content, date) {
 function loadSessionDetails() {
   return axios
     .post('https://tvapi-sgn.solocoo.tv/v1/session', {
+      brandName: 'K+',
+      demo: true,
+      token:
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0di5zb2xvY29vLmF1dGgiOnsicyI6IndiNjhhYzdiMC02YjY2LTExZjAtYmNlZC03MzVkNWRjN2FmOWUiLCJ1Ijoia0Y1LThwYktTeHJkQXg3SnJyUWxTQSIsImwiOiJlbl9VUyIsImQiOiJQQyIsImRtIjoiQ2hyb21lIiwib20iOiJPIiwiYyI6InFPLVdhX0lYRkJjQ3g1WkdPOWJsYU9uWVoxYXJUQzhiWXp5ZXpqV2tpUmciLCJzdCI6ImZ1bGwiLCJnIjoiZXlKaWNpSTZJblp6ZEhZaUxDSjFjQ0k2SW1Od2FTSXNJbVJpSWpwbVlXeHpaU3dpY0hRaU9tWmhiSE5sTENKa1pTSTZJbUp5WVc1a1RXRndjR2x1WnlKOSIsImYiOjcsImIiOiJ2c3R2In0sIm5iZiI6MTc1MzY3NTA0MywiZXhwIjoxNzUzNjkyNDE3LCJpYXQiOjE3NTM2NzUwNDMsImF1ZCI6ImNwaSJ9.VRDhLYXehZSQNk0RbhXodXCtn8m4FBqEGbopeRtaq1c',
+      params: {
+        'FPData.FPTimeInterval': 120,
+        'FPData.FPIsAliveUrl': 'https://fp.kplus.vn/api/fp/isalivesg',
+        'User.Status': 'sg.ui.sso.user.status.anonymous',
+        'FPData.FPKey': 'uZnqUXcx96ZpSOry9oxAFJp83MK4GHgEVre6nCsGDM0=',
+        'FPData.FPKeyGenDate': 1486305098
+      },
       ssoToken:
-        'eyJhbGciOiJkaXIiLCJrZXkiOiJ2c3R2IiwiZW5jIjoiQTEyOENCQy1IUzI1NiJ9..6jMKWv5bSqODWOWLmeERqw._WcKmMW2ij3yPJkhFllQHgXOkW7powvzT-5p6G4_jjYa8vzJybmHu_1CwIEb_s2hVOyaNDi6M-NVLNY9CaNU3aSC-ojZ4UoQ7QLRTFWP-2uY-mL5IgJtL7Xknus5blHJbR8B-xaOODXIJh8PneZORmPHa5EHhs1vOmqpGb1COZwqlw_WFbGT9EsFq6W8fsYH3O5cUqec608Uad-wK59OQIJyofZJwrb6VTthmwwIDxX6Dn-kyYssfdXvPF_BXu5A-e2MFOsdzvMjENdq0FHCk-b9OojzENR6S-JEtSTrZHrgSfHsqb1DwVbtuaetFlV-A3-gxyqqHH7QIvkRM38StNMAp_q8TUauhluwKK3nuXbgogiQ9d9Kc9s7WGoBPOVHsZ4w6wJ9fDBIyhApOJUAdEINi7dLpe1pTBBk6ZA504PVyQ0d6DtdhJhkbT6I88wwxz2U6sF5tInZBcdyZzCa1KKHWQuonTJ4IPcILGQFuzo.lhVv2QaTOaxTS9F4Ht2L3A',
-      osVersion: 'Windows 10',
-      deviceModel: 'Chrome',
-      deviceType: 'PC',
-      deviceSerial: 'w408a0eb0-d50f-11ef-affa-af9775b838ad',
-      deviceOem: 'Chrome',
-      devicePrettyName: 'Chrome 128.0.0.0',
-      appVersion: '12.1',
+        'eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2V5IjoidnN0diJ9..AY5EkwCdINfZMfrWci2LiA.M14gNlF_Fhgkh3gaRzx7nGbneFhIvbhahTbA0AZlgSRoc-MYncKBU0neEhVZy_UP134VRlyjnL_X8ZlOc2SbNc-jCm8zogA8sldcNJ_iJr0b3tS5MW6rKFOSri1tiIs7gPib5vbA7iZrNbob-_pqsgBy5R8RHlcXL2PtTEHKJ5PKicBsUu53zOH9MQtKfPlkWnglGg8v9130y7TMskwdz2J2OaBmoS94uTp3KVxux6hkifP9dKboIjcvgH5s6BdO2rSnF_-oC13oQOOx3kegGo6UNF2GCP_cEF5p8byV7HFJ1Hl-Me82iXJfmqC1IVQyIa2M442ehgHgNDvFgparuQDyaJ3ABZ8TCnH6PfhnTftPHlJtJyLJt6tAilgWP6M5aprgMSm_9gsj0GxhloUJOLoI-Zwr2bJEvtiyzobZ-ukaYAHSdeVJ5dxTfP1JOATGnD_G_pnidMI58kUh-P8xicF04eXABTqBQnOQz_RjkkI.5in5jW2z3SL35zLgEs-jsA',
       language: 'en_US',
-      brand: 'vstv',
-      memberId: '0',
-      featureLevel: 6,
-      provisionData:
-        'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzcxNDU4MjYsImljIjp0cnVlLCJ1cCI6ImNwaSIsImJyIjoidnN0diIsImRzIjoidzQwOGEwZWIwLWQ1MGYtMTFlZi1hZmZhLWFmOTc3NWI4MzhhZCIsImRlIjoiYnJhbmRNYXBwaW5nIn0.Ou6yh5qXtlK4NhyWHciVszARr98PLL1TkaXKpqQtub8'
+      userName: 'HGac_Dx8ylYn8T9G3GjuzQ',
+      userLogin: 'HGac_Dx8ylYn8T9G3GjuzQ@vstv.solocoo.tv',
+      consent: false,
+      userId: 'f27e5e90-ca96-1a4b-dd03-1ec9aeb42548',
+      countryCode: 'VN',
+      communityName: 'VSTV'
     })
     .then(r => r.data)
-    .catch(console.log)
+    .catch(console.log);
 }
