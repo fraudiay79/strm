@@ -1,14 +1,7 @@
 const axios = require('axios')
 const dayjs = require('dayjs')
-const utc = require('dayjs/plugin/utc')
-const timezone = require('dayjs/plugin/timezone')
-const customParseFormat = require('dayjs/plugin/customParseFormat')
 
-let TOKEN
-
-dayjs.extend(utc)
-dayjs.extend(timezone)
-dayjs.extend(customParseFormat)
+let authToken
 
 module.exports = {
   site: 'dishtv.in',
@@ -16,13 +9,14 @@ module.exports = {
   url: 'https://epg.mysmartstick.com/dishtv/api/v1/epg/entities/programs',
   request: {
     method: 'POST',
-    headers: function() {
-      return setHeaders()
+    async headers() {
+      await fetchToken()
+
+      return {
+        Authorization: authToken
+      }
     },
-    data({
-      channel,
-      date
-    }) {
+    data({ channel, date }) {
       return {
         allowPastEvents: true,
         channelid: channel.site_id,
@@ -30,133 +24,144 @@ module.exports = {
       }
     }
   },
-  parser: function({ channel, content }) {
-      let programs = [];
-      const items = parseItems(content);
-      const lang = channel.lang;
-      items.forEach(item => {
-          // Determine the title based on the lang attribute
-          const title = lang === 'hi' ? item.regional.hindi.title : item.title;
-          const desc = lang === 'hi' ? item.regional.hindi.desc + (item['episode-num'] ? ` ${item['episode-num']}` : '') : item.desc + (item['episode-num'] ? ` ${item['episode-num']}` : '');
-          programs.push({
-              title: title,
-              description: desc,
-              icon: item.programmeurl,
-              start: parseStart(item),
-              stop: parseStop(item)
-          });
-      });
-      return programs;
+  parser: ({ content }) => {
+    const programs = []
+    const items = parseItems(content)
+    items.forEach(item => {
+      programs.push({
+        title: parseTitle(item),
+        description: parseDescription(item),
+        category: parseCategory(item),
+        actors: item.credits.actors,
+        directors: item.credits.directors,
+        producers: item.credits.producers,
+        date: item.productionyear,
+        icon: parseIcon(item),
+        image: parseImage(item),
+        episode: parseEpisode(item),
+        start: dayjs(item.start),
+        stop: dayjs(item.stop)
+      })
+    })
+
+    return programs
+  },
+  async channels() {
+    await fetchToken()
+
+    const totalPages = await fetchPages()
+
+    const queue = Array.from(Array(totalPages).keys()).map(i => {
+      const data = new FormData()
+      data.append('pageNum', i + 1)
+
+      return {
+        method: 'post',
+        url: 'https://www.dishtv.in/services/epg/channels',
+        data,
+        headers: {
+          'authorization-token': authToken
+        }
+      }
+    })
+
+    const channels = []
+    for (let item of queue) {
+      const data = await axios(item)
+        .then(r => r.data)
+        .catch(console.error)
+
+      data.programDetailsByChannel.forEach(channel => {
+        channels.push({
+          lang: 'en',
+          site_id: channel.channelid,
+          name: channel.channelname
+        })
+      })
+    }
+
+    return channels
   }
-
-  // async channels() {
-  //   let channels = []
-  //   const url = 'https://www.dishtv.in/services/epg/channels'
-  //   const params = {
-  //     headers: await setHeaders()
-  //   }
-  //   const pages = await fetchPages()
-
-  //   for (let i = 0; i < Number(pages); i++) {
-  //     const body = {
-  //       pageNum: i + 1
-  //     }
-  //     const data = await axios
-  //       .post(url, body, params)
-  //       .then(r => r.data)
-  //       .catch(console.log)
-
-  //     data.programDetailsByChannel.forEach(channel => {
-  //       if (channel.channelname === '.') return
-  //       channels.push({
-  //         lang: 'en',
-  //         site_id: channel.channelid,
-  //         name: channel.channelname
-  //       })
-  //     })
-  //   }
-
-  //   return channels
-  // }
 }
 
-function parseStart(item) {
-  return dayjs.tz(item.start, 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
+function parseTitle(item) {
+  return Object.values(item.regional)
+    .map(region => ({
+      lang: region.languagecode,
+      value: region.title
+    }))
+    .filter(i => Boolean(i.value))
 }
 
-function parseStop(item) {
-  return dayjs.tz(item.stop, 'YYYY-MM-DDTHH:mm:ss', 'Asia/Kolkata')
+function parseDescription(item) {
+  return Object.values(item.regional)
+    .map(region => ({
+      lang: region.languagecode,
+      value: region.desc
+    }))
+    .filter(i => Boolean(i.value))
+}
+
+function parseCategory(item) {
+  return Object.values(item.regional)
+    .map(region => ({
+      lang: region.languagecode,
+      value: region.genre
+    }))
+    .filter(i => Boolean(i.value))
+}
+
+function parseEpisode(item) {
+  return item['episode-num'] ? parseInt(item['episode-num']) : null
+}
+
+function parseIcon(item) {
+  return item.programmeurl || null
+}
+
+function parseImage(item) {
+  return item?.images?.landscape?.['1280x720'] ? item.images.landscape['1280x720'] : null
 }
 
 function parseItems(content) {
-  const data = JSON.parse(content)
-  if (!data || !Array.isArray(data)) return []
+  try {
+    const data = JSON.parse(content)
 
-  return data
+    return Array.isArray(data) ? data : []
+  } catch {
+    return []
+  }
+}
+
+async function fetchToken() {
+  if (authToken) return
+
+  const data = await axios
+    .post('https://www.dishtv.in/services/epg/signin', null, {
+      headers: {
+        'sec-fetch-dest': 'empty',
+        'sec-fetch-mode': 'cors',
+        'sec-fetch-site': 'same-origin',
+        'x-requested-with': 'XMLHttpRequest',
+        Referer: 'https://www.dishtv.in/channel-guide.html'
+      }
+    })
+    .then(r => r.data)
+    .catch(console.error)
+
+  authToken = data.token
 }
 
 async function fetchPages() {
-  const url = 'https://www.dishtv.in/services/epg/channels'
-  const body = {
-    pageNum: 1,
-  }
-  const params = {
-    headers: await setHeaders()
-  }
+  const formData = new FormData()
+  formData.append('pageNum', 1)
+
   const data = await axios
-    .post(url, body, params)
+    .post('https://www.dishtv.in/services/epg/channels', formData, {
+      headers: { 'authorization-token': authToken }
+    })
     .then(r => r.data)
-    .catch(console.log)
+    .catch(console.error)
 
-  return data.pageNum
-}
-
-// Function to try to fetch TOKEN
-function fetchToken() {
-  return fetch(
-      'https://www.dishtv.in/services/epg/signin', {
-        headers: {
-          accept: 'application/json, text/javascript, */*; q=0.01',
-          'sec-fetch-dest': 'empty',
-          'sec-fetch-mode': 'cors',
-          'sec-fetch-site': 'same-origin',
-          'x-requested-with': 'XMLHttpRequest',
-          Referer: 'https://www.dishtv.in/channel-guide.html'
-        },
-        method: 'POST'
-      }
-    )
-    .then(response => {
-      // Check if the response status is OK (2xx)
-      if (!response.ok) {
-        throw new Error('HTTP request failed')
-      }
-      return response.json()
-    })
-    .then(data => {
-      if (data.token) {
-        TOKEN = data.token
-      } else {
-        console.log('TOKEN not found in the response.')
-      }
-    })
-    .catch(error => {
-      console.error(error)
-    })
-}
-
-function setHeaders() {
-  if (!TOKEN) {
-    return fetchToken().then(() => {
-      return {
-        'Content-Type': 'application/json',
-        'Authorization': TOKEN
-      }
-    })
-  } else {
-    return {
-      'Content-Type': 'application/json',
-      'Authorization': TOKEN
-    }
-  }
+  return data.totalPages ? parseInt(data.totalPages) : 0
 }
