@@ -47,8 +47,6 @@ async function channels({ country = 'ar' } = {}) {
     cl: ['2354'],
     co: ['2770'],
     cr: ['2295'],
-    ec: ['3269'],
-    mx: ['3129'],
     uy: ['2685']
   }
 
