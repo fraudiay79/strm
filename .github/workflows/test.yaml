@@ -35,8 +35,6 @@ jobs:
           npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_cl.channels.xml --set=country:cl
           npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_co.channels.xml --set=country:co
           npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_cr.channels.xml --set=country:cr
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_ec.channels.xml --set=country:ec
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_mx.channels.xml --set=country:mx
           npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_uy.channels.xml --set=country:uy
           npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_ve.channels.xml --set=country:ve
           #npm run grab --- --site=reportv.com.ar --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
@@ -54,8 +52,6 @@ jobs:
         git add -f sites/reportv.com.ar/reportv.com.ar_cl.channels.xml
         git add -f sites/reportv.com.ar/reportv.com.ar_co.channels.xml
         git add -f sites/reportv.com.ar/reportv.com.ar_cr.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_ec.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_mx.channels.xml
         git add -f sites/reportv.com.ar/reportv.com.ar_uy.channels.xml
         git add -f sites/reportv.com.ar/reportv.com.ar_ve.channels.xml
         #git add -f sites/guide.lk/guide.lk_en.channels.xml
