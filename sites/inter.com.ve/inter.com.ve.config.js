@@ -17,6 +17,8 @@ const regionPaths = {
   '2354': 'cl',
   '2770': 'co',
   '2295': 'cr',
+  '3269': 'ec',
+  '3129': 'mx',
   '2685': 'uy',
   '2919': 've',
   '2687': 'ar',
@@ -36,57 +38,6 @@ const regionTimezones = {
   '2694': 'America/Caracas',
   '2687': 'America/Argentina/Buenos_Aires'
 }
-
-module.exports = {
-  site: 'inter.com.ve',
-  days: 2,
-
-  url: async function ({ channel, date }) {
-    const [region, site_id] = channel.site_id.split('#')
-    const path = regionPaths[region]
-    const formData = new URLSearchParams()
-    formData.append('idSenial', site_id)
-    formData.append('Alineacion', path)
-    formData.append('DiaDesde', date.format('YYYY/MM/DD'))
-    formData.append('HoraDesde', '00:00:00')
-
-    const response = await axios
-      .post('https://www.reportv.com.ar/buscador/ProgXSenial.php', formData)
-      .then(r => r.data.toString())
-      .catch(console.error)
-
-    return response
-  },
-
-  async parser({ content, date, channel }) {
-    const [region] = channel.site_id.split('#')
-    let programs = []
-    const items = parseItems(content, date)
-
-    for (let item of items) {
-      const $item = cheerio.load(item)
-      const start = parseStart($item, date, region)
-      const duration = parseDuration($item)
-      const stop = start.add(duration, 's')
-      const details = await loadProgramDetails($item)
-
-      programs.push({
-        title: parseTitle($item),
-        category: parseCategory($item),
-        icon: details.image,
-        description: details.description,
-        directors: details.directors,
-        actors: details.actors,
-        start,
-        stop
-      })
-    }
-
-    return programs
-  },
-
-  const axios = require('axios')
-const cheerio = require('cheerio')
 
 async function channels({ country = 'ar' } = {}) {
   const countryPaths = {
@@ -134,9 +85,57 @@ async function channels({ country = 'ar' } = {}) {
   return channels
 }
 
+module.exports = {
+  site: 'inter.com.ve',
+  days: 2,
+  channels,
+
+  url: async function ({ channel, date }) {
+    const [region, site_id] = channel.site_id.split('#')
+    const path = regionPaths[region]
+    const formData = new URLSearchParams()
+    formData.append('idSenial', site_id)
+    formData.append('Alineacion', path)
+    formData.append('DiaDesde', date.format('YYYY/MM/DD'))
+    formData.append('HoraDesde', '00:00:00')
+
+    const response = await axios
+      .post('https://www.reportv.com.ar/buscador/ProgXSenial.php', formData)
+      .then(r => r.data.toString())
+      .catch(console.error)
+
+    return response
+  },
+
+  parser: async function ({ content, date, channel }) {
+    const [region] = channel.site_id.split('#')
+    let programs = []
+    const items = parseItems(content, date)
+
+    for (let item of items) {
+      const $item = cheerio.load(item)
+      const start = parseStart($item, date, region)
+      const duration = parseDuration($item)
+      const stop = start.add(duration, 's')
+      const details = await loadProgramDetails($item)
+
+      programs.push({
+        title: parseTitle($item),
+        category: parseCategory($item),
+        icon: details.image,
+        description: details.description,
+        directors: details.directors,
+        actors: details.actors,
+        start,
+        stop
+      })
+    }
+
+    return programs
+  }
 }
 
-// --- Helpers Below ---
+// --- Helper Functions ---
 
 function parseStart($item, date, region) {
   const timezone = regionTimezones[region] || 'UTC'
