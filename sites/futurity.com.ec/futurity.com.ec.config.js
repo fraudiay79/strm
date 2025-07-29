@@ -58,7 +58,7 @@ module.exports = {
   },
   async channels() {
     const content = await axios
-      .get('https://www.reportv.com.ar/buscador/Buscador.php?aid=2356')
+      .get('https://www.reportv.com.ar/finder/index/3269/')
       .then(r => r.data)
       .catch(console.log)
     const $ = cheerio.load(content)
