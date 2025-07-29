@@ -85,35 +85,40 @@ module.exports = {
     return programs
   },
 
-  async channels({ country }) {
-    const countryPaths = {
-      ar: ['2313'],
-      ve: ['2694'],
-      bo: ['2356'],
-      cl: ['2354'],
-      co: ['2770'],
-      cr: ['2295'],
-      uy: ['2685']
-    }
+  const axios = require('axios')
+const cheerio = require('cheerio')
 
-    let channels = []
-    const pathIds = countryPaths[country] || []
+async function channels({ country = 'ar' } = {}) {
+  const countryPaths = {
+    ar: ['2313'],
+    ve: ['2694'],
+    bo: ['2356'],
+    cl: ['2354'],
+    co: ['2770'],
+    cr: ['2295'],
+    ec: ['3269'],
+    mx: ['3129'],
+    uy: ['2685']
+  }
 
-    for (const aid of pathIds) {
-      const url = `https://www.reportv.com.ar/buscador/Buscador.php?aid=${aid}`
+  const pathIds = countryPaths[country] || []
+  console.log('Country:', country)
+  console.log('Path IDs:', pathIds)
 
-      const data = await axios
-        .get(url)
-        .then(r => r.data)
-        .catch(console.error)
+  let channels = []
 
-      const $ = cheerio.load(data)
+  for (const aid of pathIds) {
+    const url = `https://www.reportv.com.ar/buscador/Buscador.php?aid=${aid}`
+
+    try {
+      const response = await axios.get(url)
+      const $ = cheerio.load(response.data)
       const items = $('#tr_home_2 > td:nth-child(1) > select > option').toArray()
 
       items.forEach(item => {
         const site_id = `${aid}#${$(item).attr('value')}`
         const name = $(item).text().trim()
-        if (name !== '.') {
+        if (name && name !== '.') {
           channels.push({
             lang: 'es',
             site_id,
@@ -121,10 +126,14 @@ module.exports = {
           })
         }
       })
+    } catch (error) {
+      console.error(`Error fetching data from ${url}:`, error.message)
     }
-
-    return channels
   }
+
+  return channels
+}
+
 }
 
 // --- Helpers Below ---
