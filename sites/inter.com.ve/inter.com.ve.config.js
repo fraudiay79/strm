@@ -11,17 +11,17 @@ dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 require('dayjs/locale/es')
 
+// --- Caching Setup ---
+const channelCache = {}
+
+// --- Region Mappings ---
 const regionPaths = {
   '2356': 'bo',
   '2313': 'ar',
   '2354': 'cl',
   '2770': 'co',
   '2295': 'cr',
-  '3269': 'ec',
-  '3129': 'mx',
   '2685': 'uy',
-  '2919': 've',
-  '2687': 'ar',
   '2694': 've'
 }
 
@@ -31,15 +31,17 @@ const regionTimezones = {
   '2354': 'America/Santiago',
   '2770': 'America/Bogota',
   '2295': 'America/Costa_Rica',
-  '3269': 'America/Guayaquil',
-  '3129': 'America/Mexico_City',
   '2685': 'America/Montevideo',
-  '2919': 'America/Caracas',
-  '2694': 'America/Caracas',
-  '2687': 'America/Argentina/Buenos_Aires'
+  '2694': 'America/Caracas'
 }
 
+// --- Channel Fetch with Caching ---
 async function channels({ country = 'ar' } = {}) {
+  if (channelCache[country]) {
+    console.log(`Serving cached channels for: ${country}`)
+    return channelCache[country]
+  }
+
   const countryPaths = {
     ar: ['2313'],
     ve: ['2694'],
@@ -51,10 +53,9 @@ async function channels({ country = 'ar' } = {}) {
   }
 
   const pathIds = countryPaths[country] || []
-  console.log('Country:', country)
-  console.log('Path IDs:', pathIds)
+  console.log('Fetching channels for country:', country)
 
-  let channels = []
+  let result = []
 
   for (const aid of pathIds) {
     const url = `https://www.reportv.com.ar/buscador/Buscador.php?aid=${aid}`
@@ -68,7 +69,7 @@ async function channels({ country = 'ar' } = {}) {
         const site_id = `${aid}#${$(item).attr('value')}`
         const name = $(item).text().trim()
         if (name && name !== '.') {
-          channels.push({
+          result.push({
             lang: 'es',
             site_id,
             name
@@ -76,13 +77,15 @@ async function channels({ country = 'ar' } = {}) {
         }
       })
     } catch (error) {
-      console.error(`Error fetching data from ${url}:`, error.message)
+      console.error(`Error fetching data for ${aid}:`, error.message)
     }
   }
 
-  return channels
+  channelCache[country] = result
+  return result
 }
 
+// --- EPG Scraper Export ---
 module.exports = {
   site: 'inter.com.ve',
   days: 2,
@@ -133,12 +136,11 @@ module.exports = {
   }
 }
 
-// --- Helper Functions ---
-
+// --- Helpers ---
 function parseStart($item, date, region) {
-  const timezone = regionTimezones[region] || 'UTC'
+  const tz = regionTimezones[region] || 'UTC'
   const [time] = $item('div:nth-child(1) > span').text().split(' - ')
-  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', timezone)
+  return dayjs.tz(`${date.format('YYYY-MM-DD')} ${time}`, 'YYYY-MM-DD HH:mm', tz)
 }
 
 function parseDuration($item) {
@@ -161,14 +163,14 @@ function parseImage($) {
 }
 
 function parseActors($) {
-  const section = $('#Ficha > div').html()?.split('<br>').find(str => str.includes('Actores:'))
+  const section = $('#Ficha > div').html()?.split('<br>').find(s => s.includes('Actores:'))
   if (!section) return []
   const $section = cheerio.load(section)
   return $section('span').map((i, el) => $section(el).text().trim()).get()
 }
 
 function parseDirectors($) {
-  const section = $('#Ficha > div').html()?.split('<br>').find(str => str.includes('Directores:'))
+  const section = $('#Ficha > div').html()?.split('<br>').find(s => s.includes('Directores:'))
   if (!section) return []
   const $section = cheerio.load(section)
   return $section('span').map((i, el) => $section(el).text().trim()).get()
@@ -181,8 +183,8 @@ function parseDescription($) {
 function parseItems(content, date) {
   if (!content) return []
   const $ = cheerio.load(content)
-  const d = _.startCase(date.locale('es').format('DD MMMM YYYY'))
-  return $(`.trProg[title*="${d}"]`).toArray()
+  const formatted = _.startCase(date.locale('es').format('DD MMMM YYYY'))
+  return $(`.trProg[title*="${formatted}"]`).toArray()
 }
 
 async function loadProgramDetails($item) {
