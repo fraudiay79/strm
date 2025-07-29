@@ -24,36 +24,24 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
-          #npm test --- guide.lk
-          #npm run channels:parse --- --config=./sites/guide.lk/guide.lk.config.js --output=./sites/guide.lk/guide.lk.channels.xml
+          #npm test --- gracenote.com
+          #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
           #npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
-          #npm run channels:parse --- --config=./sites/mi.tv/mi.tv.config.js --output=./sites/mi.tv/mi.tv_ar.channels.xml --set=country:ar
+          npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com.channels.xml --set=country:ar
           #npm run grab --- --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=guides/allente.no.xml --days=1 --timeout=90000
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_ar.channels.xml --set=country:ar
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_bo.channels.xml --set=country:bo
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_cl.channels.xml --set=country:cl
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_co.channels.xml --set=country:co
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_cr.channels.xml --set=country:cr
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_uy.channels.xml --set=country:uy
-          npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_ve.channels.xml --set=country:ve
+          #npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_ve.channels.xml --set=country:ve
           #npm run grab --- --site=reportv.com.ar --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
-          #npm run grab --- --site=guide.lk --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000 --lang=ar
-          #npm run channels:parse --- --config=./sites/guide.lk/guide.lk.config.js --output=./sites/guide.lk/guide.lk_ar.channels.xml --set=lang:ar
-          #npm run channels:parse --- --config=./sites/guide.lk/guide.lk.config.js --output=./sites/guide.lk/guide.lk_ar.channels.xml --set=lang:en
+          #npm run grab --- --site=gracenote.com --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000 --lang=ar
+          #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:ar
+          #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:en
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
         #git add -f guides/allente.no.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_ar.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_bo.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_cl.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_co.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_cr.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_uy.channels.xml
-        git add -f sites/reportv.com.ar/reportv.com.ar_ve.channels.xml
-        #git add -f sites/guide.lk/guide.lk_en.channels.xml
+        #git add -f sites/reportv.com.ar/reportv.com.ar_ar.channels.xml
+        git add -f sites/gracenote.com/gracenote.com.channels.xml
         git commit -m "Update xml"
         git push -f origin main
