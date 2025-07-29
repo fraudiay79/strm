@@ -89,8 +89,8 @@ module.exports = {
 
   async channels({ country }) {
     const countryPaths = {
-      ar: ['2313', '2687'],
-      ve: ['2694', '2919'],
+      ar: ['2313'],
+      ve: ['2694'],
       bo: ['2356'],
       cl: ['2354'],
       co: ['2770'],
