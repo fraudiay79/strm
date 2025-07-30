@@ -49,35 +49,49 @@ module.exports = {
   },
 
   parser({ content }) {
-    const data = JSON.parse(content)
-    let programs = []
+  const data = JSON.parse(content)
+  let programs = []
 
-    if (Array.isArray(data.gridPrograms)) {
-      data.gridPrograms.forEach(p => {
-        const start = dayjs(p.startTime).utc().toISOString()
-        const stop = dayjs(p.endTime).utc().toISOString()
+  // Loop through each channel block
+  if (Array.isArray(data.channels)) {
+    data.channels.forEach(channel => {
+      const events = channel.events || []
+      events.forEach(event => {
+        const start = dayjs(event.startTime).utc().toISOString()
+        const stop = dayjs(event.endTime).utc().toISOString()
+        const p = event.program || {}
+
         const season = p.season ? `S${p.season}` : ''
         const episode = p.episode ? `E${p.episode}` : ''
         const episodeCode = season || episode ? `${season}${episode}` : null
 
+        const flags = event.flag || []
+        const isLive = flags.includes('Live')
+        const isNew = flags.includes('New')
+        let title = p.title || 'Untitled Program'
+        if (isLive && !title.startsWith('Live:')) {
+          title = `Live: ${title}`
+        }
+
         programs.push({
-          title: p.title?.includes('Live') ? p.title : `Live: ${p.title}`,
+          title,
           subtitle: p.episodeTitle || null,
           description: p.shortDesc || 'No description available',
-          category: p.seriesGenres?.join(', ') || 'N/A',
-          rating: p.rating || null,
-          icon: p.thumbnail
-            ? `https://zap2it.tmsimg.com/assets/${p.thumbnail}.jpg`
+          category: event.filter?.join(', ') || 'N/A',
+          rating: event.rating || null,
+          icon: event.thumbnail
+            ? `https://zap2it.tmsimg.com/assets/${event.thumbnail}.jpg`
             : null,
           start,
           stop,
           episode: episodeCode
         })
       })
-    }
+    })
+  }
 
-    return programs
-  },
+  return programs
+},
 
   async channels() {
     const unixTime = Math.floor(dayjs().utc().valueOf() / 1000)
