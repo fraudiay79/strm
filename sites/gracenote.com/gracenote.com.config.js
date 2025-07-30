@@ -45,8 +45,7 @@ module.exports = {
     })
 
     return `https://tvlistings.gracenote.com/api/grid?${query.toString()}`
-  }
-},
+  },
 
   parser({ content }) {
     const data = JSON.parse(content)
