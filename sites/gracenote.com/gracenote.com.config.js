@@ -11,6 +11,7 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'gracenote.com',
   days: 7,
+
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -26,16 +27,16 @@ module.exports = {
   },
 
   url({ date, channel }) {
-    const unixTime = dayjs(date).utc().unix()
+    const unixTime = Math.floor(dayjs(date).utc().valueOf() / 1000)
 
     const query = new URLSearchParams({
-      lineupId: channel.lineupId,
-      timespan: '336',
-      headendId: channel.headendId,
-      country: channel.countryCode,
+      lineupId: channel.lineupId || '',
+      timespan: '2',
+      headendId: channel.headendId || 'NY31519',
+      country: channel.countryCode || 'USA',
       timezone: channel.timezone || '',
       device: channel.device || 'X',
-      postalCode: channel.postalCode || '10001',
+      postalCode: channel.postalCode || '10003',
       isOverride: 'true',
       time: unixTime.toString(),
       pref: '16,128',
@@ -79,14 +80,9 @@ module.exports = {
   },
 
   async channels() {
-    const lineupId = '10001-directv'
-    const headendId = '12345'
-    const country = 'USA'
-    const device = 'default'
-    const postalCode = '10001'
-    const time = dayjs().utc().format('YYYY-MM-DD')
+    const unixTime = Math.floor(dayjs().utc().valueOf() / 1000)
 
-    const url = `https://tvlistings.gracenote.com/api/grid?lineupId=${lineupId}&timespan=2&headendId=${headendId}&country=${country}&device=${device}&postalCode=${postalCode}&isOverride=true&time=${time}&pref=m%2Cp%2C16%2C256&userId=-&aid=cha&languagecode=en`
+    const url = `https://tvlistings.gracenote.com/api/grid?lineupId=&timespan=2&headendId=NY31519&country=USA&device=X&postalCode=10003&isOverride=true&time=${unixTime}&pref=16%2C128&userId=-&aid=tribnyc2dl&languagecode=en-us`
 
     try {
       const response = await axios.get(url, {
