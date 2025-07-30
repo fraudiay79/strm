@@ -88,28 +88,30 @@ module.exports = {
 },
 
   async channels() {
-    const unixTime = Math.floor(dayjs().utc().valueOf() / 1000)
+  const unixTime = Math.floor(dayjs().utc().valueOf() / 1000)
 
-    const url = `https://tvlistings.gracenote.com/api/grid?lineupId=USA-DISH501-DEFAULT&timespan=2&headendId=DISH501&country=USA&timezone=&device=X&postalCode=10001&isOverride=true&time=1753844400&pref=16%2C128&userId=-&aid=tribnyc2dl&languagecode=en-us`
+  const url = `https://tvlistings.gracenote.com/api/grid?lineupId=USA-DISH501-DEFAULT&timespan=2&headendId=DISH501&country=USA&device=X&postalCode=10001&isOverride=true&time=${unixTime}&pref=16%2C128&userId=-&aid=tribnyc2dl&languagecode=en-us`
 
-    try {
-      const response = await axios.get(url, {
-        headers: {
-          'User-Agent': 'Mozilla/5.0',
-          Accept: 'application/json'
-        }
-      })
+  try {
+    const response = await axios.get(url, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        'Accept': 'application/json',
+        'Referer': 'https://tvlistings.gracenote.com/',
+        'Origin': 'https://tvlistings.gracenote.com'
+      }
+    })
 
-      const mappings = response.data?.callSignMappings || []
+    const mappings = response.data?.callSignMappings || []
 
-      return mappings.map(item => ({
-        lang: 'en',
-        site_id: item.channelId?.toString(),
-        name: item.callSign
-      }))
-    } catch (error) {
-      console.error('Error fetching Gracenote channel data:', error.message)
-      return []
-    }
+    return mappings.map(item => ({
+      lang: 'en',
+      site_id: item.channelId?.toString(),
+      name: item.callSign
+    }))
+  } catch (error) {
+    console.error('Error fetching Gracenote channel data:', error.message)
+    return []
   }
+}
 }
