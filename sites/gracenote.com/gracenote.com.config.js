@@ -90,7 +90,7 @@ module.exports = {
   async channels() {
     const unixTime = Math.floor(dayjs().utc().valueOf() / 1000)
 
-    const url = `https://tvlistings.gracenote.com/api/grid?lineupId=USA-DISH501-DEFAULT&timespan=2&headendId=DISH501&country=USA&device=X&postalCode=10001&isOverride=true&time=${unixTime}&pref=16%2C128&userId=-&aid=tribnyc2dl&languagecode=en-us`
+    const url = `https://tvlistings.gracenote.com/api/grid?lineupId=USA-DISH501-DEFAULT&timespan=2&headendId=DISH501&country=USA&timezone=&device=X&postalCode=10001&isOverride=true&time=1753844400&pref=16%2C128&userId=-&aid=tribnyc2dl&languagecode=en-us`
 
     try {
       const response = await axios.get(url, {
