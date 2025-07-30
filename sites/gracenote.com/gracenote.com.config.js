@@ -30,13 +30,13 @@ module.exports = {
     const unixTime = Math.floor(dayjs(date).utc().valueOf() / 1000)
 
     const query = new URLSearchParams({
-      lineupId: channel.lineupId || '',
+      lineupId: channel.lineupId || 'USA-DISH501-DEFAULT',
       timespan: '2',
-      headendId: channel.headendId || 'NY31519',
+      headendId: channel.headendId || 'DISH501',
       country: channel.countryCode || 'USA',
       timezone: channel.timezone || '',
       device: channel.device || 'X',
-      postalCode: channel.postalCode || '10003',
+      postalCode: channel.postalCode || '10001',
       isOverride: 'true',
       time: unixTime.toString(),
       pref: '16,128',
