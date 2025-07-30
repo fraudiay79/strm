@@ -15,25 +15,38 @@ module.exports = {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
     },
-    method: 'POST',
+    method: 'GET',
     headers: {
       'User-Agent':
         'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
       Accept: 'application/json',
       'Accept-Encoding': 'gzip, deflate, br',
-      'Content-Type': 'application/x-www-form-urlencoded',
       Origin: 'https://tvlistings.gracenote.com'
     }
   },
 
-  url({ date }) {
-    return 'https://tvlistings.gracenote.com/api/sslgrid'
-  },
+  url({ date, channel }) {
+    const unixTime = dayjs(date).utc().unix()
 
-  body({ date, channel }) {
-    const timestamp = dayjs(date).utc().format('YYYY-MM-DD')
-    return `IsSSLinkNavigation=true&timespan=336&timestamp=${timestamp}&prgsvcid=${channel.lineupId}&headendId=${channel.headendId}&countryCode=${channel.countryCode}&postalCode=${channel.postalCode}&device=${channel.device}&userId=-&aid=cha&isOverride=true&languagecode=en`
-  },
+    const query = new URLSearchParams({
+      lineupId: channel.lineupId,
+      timespan: '336',
+      headendId: channel.headendId,
+      country: channel.countryCode,
+      timezone: channel.timezone || '',
+      device: channel.device || 'X',
+      postalCode: channel.postalCode || '10001',
+      isOverride: 'true',
+      time: unixTime.toString(),
+      pref: '16,128',
+      userId: '-',
+      aid: channel.aid || 'tribnyc2dl',
+      languagecode: channel.languagecode || 'en-us'
+    })
+
+    return `https://tvlistings.gracenote.com/api/grid?${query.toString()}`
+  }
+},
 
   parser({ content }) {
     const data = JSON.parse(content)
