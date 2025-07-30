@@ -95,24 +95,17 @@ module.exports = {
   try {
     const response = await axios.get(url, {
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
-        'Accept': 'application/json',
-        'Referer': 'https://tvlistings.gracenote.com/',
-        'Origin': 'https://tvlistings.gracenote.com'
+        'User-Agent': 'Mozilla/5.0',
+        Accept: 'application/json'
       }
     })
 
-    const data = await response.json()
-	
-	if (!Array.isArray(data.channels)) {
-      console.warn('Unexpected structure:', JSON.stringify(data, null, 2))
-      return []
-    }
+    const mappings = response.data?.channels || []
 
-    return data.channels.map(item => ({
+    return mappings.map(channel => ({
       lang: 'en',
-      site_id: item.channelId?.toString(),
-      name: item.callSign
+      site_id: channel.channelId?.toString(),
+      name: channel.callSign
     }))
   } catch (error) {
     console.error('Error fetching Gracenote channel data:', error.message)
