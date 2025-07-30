@@ -87,37 +87,35 @@ module.exports = {
   return programs
 },
 
- async function channels() {
-  try {
-    const url = 'https://tvlistings.gracenote.com/api/grid?lineupId=USA-DISH501-DEFAULT&timespan=2&headendId=DISH501&country=USA&timezone=&device=X&postalCode=10001&isOverride=true&time=1753844400&pref=16%2C128&userId=-&aid=tribnyc2dl&languagecode=en-us'
+ async channels() {
+  const unixTime = Math.floor(dayjs().utc().valueOf() / 1000)
 
-    const response = await fetch(url, {
-      method: 'GET',
+  const url = `https://tvlistings.gracenote.com/api/grid?lineupId=USA-DISH501-DEFAULT&timespan=2&headendId=DISH501&country=USA&device=X&postalCode=10001&isOverride=true&time=${unixTime}&pref=16%2C128&userId=-&aid=tribnyc2dl&languagecode=en-us`
+
+  try {
+    const response = await axios.get(url, {
       headers: {
-        'Content-Type': 'application/json'
-        // Note: No Authorization header required for this endpoint
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+        'Accept': 'application/json',
+        'Referer': 'https://tvlistings.gracenote.com/',
+        'Origin': 'https://tvlistings.gracenote.com'
       }
     })
 
-    if (!response.ok) {
-      console.error(`Fetch failed: ${response.status} ${response.statusText}`)
-      return []
-    }
-
     const data = await response.json()
-
-    if (!Array.isArray(data.channels)) {
-      console.warn('Expected "channels" to be an array:', data)
+	
+	if (!Array.isArray(data.channels)) {
+      console.warn('Unexpected structure:', JSON.stringify(data, null, 2))
       return []
     }
 
-    return data.channels.map(c => ({
+    return data.channels.map(item => ({
       lang: 'en',
-      site_id: c.channelId?.toString() || null,
-      name: c.callSign || 'Unnamed Channel'
+      site_id: item.channelId?.toString(),
+      name: item.callSign
     }))
-  } catch (err) {
-    console.error('Unexpected error:', err)
+  } catch (error) {
+    console.error('Error fetching Gracenote channel data:', error.message)
     return []
   }
 }
