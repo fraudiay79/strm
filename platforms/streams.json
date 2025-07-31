@@ -151,6 +151,16 @@
             "url": "https://www.twitch.tv/adentv64"
         },
         {
+            "name": "PBO (PE)",
+            "slug": "pboperu",
+            "url": "https://www.twitch.tv/pboperu"
+        },
+        {
+            "name": "Panamericana",
+            "slug": "panamericana",
+            "url": "https://kick.com/api/v2/channels/ptv5/livestream"
+        },
+        {
             "name": "STV",
             "slug": "stvscotland",
             "url": "https://player.api.stv.tv/v1/streams/stv/"
