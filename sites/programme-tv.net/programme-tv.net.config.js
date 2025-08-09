@@ -29,13 +29,14 @@ module.exports = {
     items.forEach(item => {
       const $item = cheerio.load(item)
       const title = parseTitle($item)
+      const subtitle = parseSubtitle($item)
       const icon = parseImage($item)
       const category = parseCategory($item)
       const start = parseStart($item, date)
       const duration = parseDuration($item)
       const stop = start.add(duration, 'ms')
 
-      programs.push({ title, icon, category, start, stop })
+      programs.push({ title, subtitle, icon, category, start, stop })
     })
 
     return programs
@@ -112,4 +113,8 @@ function parseItems(content) {
   const $ = cheerio.load(content)
 
   return $('.mainBroadcastCard').toArray()
+}
+
+function parseSubtitle($item) {
+  return $item('.mainBroadcastCard-subtitle').text().trim() || null
 }
