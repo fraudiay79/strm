@@ -78,8 +78,7 @@ module.exports = {
         .replace(/\s+/g, '-')                   // Replace spaces with hyphens
         .replace(/[^a-zA-Z0-9-]/g, '')          // Remove special chars but keep hyphens
         .replace(/^-+|-+$/g, '')                // Remove leading/trailing hyphens
-        + '/' + channel.id,
-        logo: channel.channelLogo
+        + '/' + channel.id
       })
     })
 
