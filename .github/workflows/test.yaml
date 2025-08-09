@@ -32,7 +32,8 @@ jobs:
           #npm run grab --- --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=guides/allente.no.xml --days=1 --timeout=90000
           #npm run channels:parse --- --config=./sites/reportv.com.ar/reportv.com.ar.config.js --output=./sites/reportv.com.ar/reportv.com.ar_ve.channels.xml --set=country:ve
           #npm run grab --- --site=reportv.com.ar --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
-          npm run grab --- --site=gracenote.com --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run channels:parse --- --config=./sites/sat.tv/sat.tv.config.js --output=./sites/sat.tv/sat.tv_en.channels.xml --set=lang:en
+          #npm run grab --- --site=gracenote.com --maxConnections=20 --output=guides/allente.no.xml --days=1 --timeout=90000
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:ar
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:en
           
@@ -40,8 +41,8 @@ jobs:
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        git add -f guides/allente.no.xml
-        #git add -f sites/reportv.com.ar/reportv.com.ar_ar.channels.xml
+        #git add -f guides/allente.no.xml
+        git add -f sites/sat.tv/sat.tv_en.channels.xml
         #git add -f sites/gracenote.com/gracenote.com.channels.xml
         git commit -m "Update xml"
         git push -f origin main
