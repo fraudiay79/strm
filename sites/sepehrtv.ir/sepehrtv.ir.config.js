@@ -14,8 +14,8 @@ const requestHeaders = {
   "sec-fetch-dest": "empty",
   "sec-fetch-mode": "cors",
   "sec-fetch-site": "same-site",
-  "origin": "https://sepehrtv.ir"
-  "referrer": "https://sepehrtv.ir/"
+  "origin": "https://sepehrtv.ir",
+  "referer": "https://sepehrtv.ir/"
 }
 
 module.exports = {
