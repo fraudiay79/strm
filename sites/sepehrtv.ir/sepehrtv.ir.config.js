@@ -62,7 +62,7 @@ module.exports = {
   async channels() {
     try {
       const response = await axios.get(
-        'https://sepehrapi.sepehrtv.ir/v3/channels/?key=tv1&include_media_resources=true&include_details=true',
+        'https://sepehrapi.sepehrtv.ir/v3/channels/?include_media_resources=true&include_details=false',
         { headers: requestHeaders }
       )
 
