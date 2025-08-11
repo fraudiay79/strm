@@ -24,6 +24,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
+          npm install oauth-1.0a
           #npm test --- gracenote.com
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com.channels.xml
           #npm run grab -- --channels=./epg/channels/test.channels.xml --output=guides/epg-test.channels.xml --days=1 --maxConnections=20 --timeout=90000
