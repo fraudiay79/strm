@@ -25,6 +25,7 @@ jobs:
     - name: npm grab epg
       run: |
           npm install
+          npm install oauth-1.0a
           npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
           
     - name: Commit changes
