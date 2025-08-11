@@ -31,7 +31,7 @@ jobs:
           #npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com.channels.xml
           #npm run grab --- --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=guides/allente.no.xml --days=1 --timeout=90000
-          npm run grab --- --site=sat.tv --maxConnections=5 --output=guides/allente.no.xml --days=1 --timeout=90000 --lang=ar
+          npm run grab --- --site=tv.dir.bg --maxConnections=5 --output=guides/allente.no.xml --days=1 --timeout=90000
           #npm run channels:parse --- --config=./sites/sepehrtv.ir/sepehrtv.ir.config.js --output=./sites/sepehrtv.ir/sepehrtv.ir.channels.xml
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:ar
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:en
