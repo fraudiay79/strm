@@ -6,7 +6,7 @@ module.exports = {
   site: 'tv.dir.bg',
   days: 2,
   url({ channel, date }) {
-    return `https://tv.dir.bg/programa?channel=${channel.site_id}&date=${date.format('YYYY-MM-DD')}`
+    return `https://tv.dir.bg/programa/${channel.site_id}&date=${date.format('YYYY-MM-DD')}`
   },
   parser({ content, date }) {
     const programs = []
