@@ -5,50 +5,28 @@ const { DateTime } = require('luxon')
 module.exports = {
   site: 'tv.dir.bg',
   days: 2,
-
-  url() {
-    return 'https://tv.dir.bg/programa'
+  url({ channel, date }) {
+    return `https://tv.dir.bg/programa?channel=${channel.site_id}&date=${date.format('YYYY-MM-DD')}`
   },
-
-  async channels() {
-    const html = await axios
-      .get('https://tv.dir.bg/programa')
-      .then(r => r.data)
-      .catch(console.log)
-
-    const $ = cheerio.load(html)
-    const items = $('#programa-left > div > div > div > a').toArray()
-
-    return items.map(item => {
-      const $item = $(item)
-      return {
-        lang: 'bg',
-        site_id: $item.attr('href').replace('tv_channel.php?id=', ''),
-        name: $item.find('div.thumbnail > img').attr('alt')
-      }
-    })
-  },
-
-  parser({ content, date, channel }) {
+  parser({ content, date }) {
     const programs = []
-    const $ = cheerio.load(content)
-
-    const channelBlock = $(`#events-${channel.site_id}`)
-    const items = channelBlock.find('li').toArray()
-
+    const items = parseItems(content)
+    
     items.forEach(item => {
       const $item = cheerio.load(item)
       const prev = programs[programs.length - 1]
       let start = parseStart($item, date)
       if (!start) return
-
-      if (prev && start < prev.start) {
-        start = start.plus({ days: 1 })
-        date = date.plus({ days: 1 })
+      
+      if (prev) {
+        if (start < prev.start) {
+          start = start.plus({ days: 1 })
+          date = date.add(1, 'd')
+        }
         prev.stop = start
       }
-
-      const stop = start.plus({ minutes: 30 }) // default duration
+      
+      const stop = start.plus({ minutes: 30 }) // Default duration if not specified
       programs.push({
         title: parseTitle($item),
         start,
@@ -57,17 +35,54 @@ module.exports = {
     })
 
     return programs
+  },
+  async channels() {
+    const html = await axios
+      .get('https://tv.dir.bg/programa')
+      .then(r => r.data)
+      .catch(console.log)
+
+    const $ = cheerio.load(html)
+    const channels = []
+    
+    $('#channels-list a').each(function() {
+      const $link = $(this)
+      const href = $link.attr('href')
+      const match = href.match(/channel=(\d+)/)
+      
+      if (match) {
+        channels.push({
+          lang: 'bg',
+          site_id: match[1],
+          name: $link.find('img').attr('alt')
+        })
+      }
+    })
+
+    return channels
   }
 }
 
 function parseStart($item, date) {
-  const time = $item('i').text().trim()
-  if (!time) return null
-
-  const dateString = `${date.toFormat('MM/dd/yyyy')} ${time}`
-  return DateTime.fromFormat(dateString, 'MM/dd/yyyy HH.mm', { zone: 'Europe/Sofia' }).toUTC()
+  const timeText = $item('span.time').text().trim()
+  if (!timeText) return null
+  
+  const [hours, minutes] = timeText.split(':').map(Number)
+  return DateTime.fromObject({
+    year: date.year,
+    month: date.month,
+    day: date.day,
+    hour: hours,
+    minute: minutes,
+    zone: 'Europe/Sofia'
+  }).toUTC()
 }
 
 function parseTitle($item) {
-  return $item.text().replace(/^\d{2}.\d{2}/, '').trim()
+  return $item('span.title').text().trim()
+}
+
+function parseItems(content) {
+  const $ = cheerio.load(content)
+  return $('div.program-list li').toArray()
 }
