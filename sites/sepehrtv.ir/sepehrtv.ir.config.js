@@ -1,76 +1,86 @@
-const crypto = require('crypto')
-const OAuth = require('oauth-1.0a')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const crypto = require('crypto')
 const axios = require('axios')
+const OAuth = require('oauth-1.0a')
 
 dayjs.extend(utc)
 
-// 🔐 OAuth Header Generator with timestamp and nonce
-function getOAuthHeader(url, method = 'GET') {
+// 🔐 OAuth Configuration
+const OAUTH_CONFIG = {
+  consumerKey: '84ALFkdjpBX0DSR3DsaLo364lKs1hTGq',
+  consumerSecret: 'VPk0dIUxdAPu5NbBAfMKdnC9G99KIKjd',
+  token: 'b49255684ad9347386d890a04a642bfa7052d69ca568938b622ca7d84ed93972',
+  tokenSecret: '64c1e29167fa69c9d9d715be04fe2ec48de57b99ec72ad341c62f31cc5fd547a'
+}
+
+// 🧠 OAuth Header Generator
+function getAuthHeaderForRequest(url, method = 'GET') {
   const oauth = OAuth({
     consumer: {
-      key: '84ALFkdjpBX0DSR3DsaLo364lKs1hTGq',
-      secret: 'VPk0dIUxdAPu5NbBAfMKdnC9G99KIKjd'
+      key: OAUTH_CONFIG.consumerKey,
+      secret: OAUTH_CONFIG.consumerSecret
     },
     signature_method: 'HMAC-SHA1',
-    hash_function(base_string, key) {
-      return crypto
-        .createHmac('sha1', key)
-        .update(base_string)
-        .digest('base64')
+    hash_function(baseString, key) {
+      return crypto.createHmac('sha1', key).update(baseString).digest('base64')
     }
   })
 
-  const token = {
-    key: 'b49255684ad9347386d890a04a642bfa7052d69ca568938b622ca7d84ed93972',
-    secret: '64c1e29167fa69c9d9d715be04fe2ec48de57b99ec72ad341c62f31cc5fd547a'
-  }
-
-  const timestamp = Math.floor(Date.now() / 1000)
+  const timestamp = Math.floor(Date.now() / 1000).toString()
   const nonce = crypto.randomBytes(16).toString('hex')
 
   const requestData = {
     url,
     method,
-    data: {
-      oauth_timestamp: timestamp,
-      oauth_nonce: nonce
-    }
+    data: {},
+    oauth_timestamp: timestamp,
+    oauth_nonce: nonce
+  }
+
+  const token = {
+    key: OAUTH_CONFIG.token,
+    secret: OAUTH_CONFIG.tokenSecret
   }
 
   const authHeader = oauth.toHeader(oauth.authorize(requestData, token))
-  
-  // Debug output
-  console.log('Generated OAuth Headers:', authHeader)
-  console.log('Request URL:', url)
-  console.log('Timestamp:', timestamp)
-  console.log('Nonce:', nonce)
+
+  // 🕒 Log timestamp and nonce for debugging
+  console.log(`OAuth Timestamp: ${timestamp}`)
+  console.log(`OAuth Nonce: ${nonce}`)
 
   return authHeader
 }
 
-// 🧠 Dynamic Request Headers
-function getRequestHeaders(url) {
+// 🌐 Base Headers
+const baseHeaders = {
+  "accept": "*/*",
+  "accept-language": "en-US,en;q=0.9",
+  "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"",
+  "sec-ch-ua-mobile": "?0",
+  "sec-ch-ua-platform": "\"Windows\"",
+  "sec-fetch-dest": "empty",
+  "sec-fetch-mode": "cors",
+  "sec-fetch-site": "same-site",
+  "origin": "https://sepehrtv.ir",
+  "referer": "https://sepehrtv.ir/",
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+}
+
+// 🧾 Combine Headers
+function getRequestHeaders(url, method = 'GET') {
+  const oauthHeaders = getAuthHeaderForRequest(url, method)
   return {
-    ...getOAuthHeader(url),
-    "accept": "*/*",
-    "accept-language": "en-US,en;q=0.9",
-    "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"",
-    "sec-ch-ua-mobile": "?0",
-    "sec-ch-ua-platform": "\"Windows\"",
-    "sec-fetch-dest": "empty",
-    "sec-fetch-mode": "cors",
-    "sec-fetch-site": "same-site",
-    "origin": "https://sepehrtv.ir",
-    "referer": "https://sepehrtv.ir/",
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36"
+    ...baseHeaders,
+    ...oauthHeaders
   }
 }
 
+// 📦 Module Export
 module.exports = {
   site: 'sepehrtv.ir',
   days: 2,
+  delay: 5000,
   request: {
     cache: {
       ttl: 60 * 60 * 1000 // 1 hour
@@ -80,20 +90,21 @@ module.exports = {
   // 📅 EPG URL Builder
   url({ channel, date }) {
     const formattedDate = date.format('YYYY-MM-DD')
-    const epgUrl = `https://sepehrapi.sepehrtv.ir/v3/epg/tvprogram?channel_id=${channel.site_id}&date=${formattedDate}`
-    console.log('EPG URL:', epgUrl) // Debug output
-    return epgUrl
+    return `https://sepehrapi.sepehrtv.ir/v3/epg/tvprogram?channel_id=${channel.site_id}&date=${formattedDate}`
+  },
+
+  // 🧠 Header Builder
+  async getRequestHeaders(url, method = 'GET') {
+    return getRequestHeaders(url, method)
   },
 
   // 📺 EPG Parser
-  parser({ content, channel, date }) {
+  parser({ content }) {
     let data
     try {
       data = JSON.parse(content)
-      console.log(`Parsed EPG data for ${channel.site_id} on ${date.format('YYYY-MM-DD')}:`, data) // Debug
     } catch (error) {
       console.error('Error parsing JSON:', error)
-      console.error('Response content:', content) // Debug
       return []
     }
 
@@ -101,67 +112,43 @@ module.exports = {
 
     if (data && Array.isArray(data.list)) {
       data.list.forEach(item => {
-        if (!item || !item.start || !item.duration) {
-          console.warn('Invalid program item:', item) // Debug
-          return
-        }
+        if (!item || !item.start || !item.duration) return
 
         const start = dayjs.utc(item.start)
         const stop = start.add(item.duration, 'm')
 
         programs.push({
-          title: item.title || 'No Title',
+          title: item.title,
           description: item.descSummary || item.descFull || '',
           start,
           stop
         })
       })
-    } else {
-      console.warn('Unexpected data format:', data) // Debug
     }
 
-    console.log(`Found ${programs.length} programs for ${channel.site_id}`) // Debug
     return programs
   },
 
-  // 📡 Channel Fetcher with improved error handling
+  // 📡 Channel Fetcher
   async channels() {
-    const url = 'https://sepehrapi.sepehrtv.ir/v3/channels/?include_media_resources=true&include_details=false'
-    
     try {
-      console.log('Fetching channels from:', url) // Debug
-      const response = await axios.get(url, {
-        headers: getRequestHeaders(url),
-        timeout: 10000 // 10 seconds timeout
-      })
+      const url = 'https://sepehrapi.sepehrtv.ir/v3/channels/?key=tv1&include_media_resources=true&include_details=true'
+      const headers = getRequestHeaders(url)
 
-      console.log('Channels API response status:', response.status) // Debug
+      const response = await axios.get(url, { headers })
 
       if (!response.data || !Array.isArray(response.data.list)) {
-        console.error('Invalid channels response:', response.data)
+        console.error('Error: No channels data found')
         return []
       }
 
-      const channels = response.data.list.map(channel => ({
+      return response.data.list.map(channel => ({
         lang: 'fa',
         site_id: channel.id,
         name: channel.name
       }))
-
-      console.log(`Found ${channels.length} channels`) // Debug
-      return channels
-
     } catch (error) {
-      console.error('Error fetching channels:')
-      if (error.response) {
-        console.error('Response status:', error.response.status)
-        console.error('Response data:', error.response.data)
-        console.error('Response headers:', error.response.headers)
-      } else if (error.request) {
-        console.error('No response received:', error.request)
-      } else {
-        console.error('Error:', error.message)
-      }
+      console.error('Error fetching channels:', error)
       return []
     }
   }
