@@ -2,13 +2,14 @@ const crypto = require('crypto')
 const OAuth = require('oauth-1.0a')
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const timezone = require('dayjs/plugin/timezone')
 const axios = require('axios')
 
 dayjs.extend(utc)
+dayjs.extend(timezone)
 
 // 🔐 Fixed OAuth Header Generator
 function getOAuthHeader(url, method = 'GET') {
-  // Ensure URL is properly formatted
   if (typeof url !== 'string') {
     url = String(url)
   }
@@ -33,13 +34,13 @@ function getOAuthHeader(url, method = 'GET') {
   }
 
   const requestData = {
-    url: url.includes('?') ? url.split('?')[0] : url, // Handle query params
+    url: url.includes('?') ? url.split('?')[0] : url,
     method,
     data: url.includes('?') ? Object.fromEntries(new URLSearchParams(url.split('?')[1])) : null
   }
 
   const auth = oauth.authorize(requestData, token)
-  
+
   return {
     'Authorization': `OAuth oauth_consumer_key="${oauth.consumer.key}", ` +
       `oauth_nonce="${auth.oauth_nonce}", ` +
@@ -92,20 +93,25 @@ module.exports = {
     }
   },
 
-  // 📺 EPG Parser
+  // 📺 EPG Parser with Tehran Timezone and Formatted Times
   parser({ content }) {
     try {
       const data = JSON.parse(content)
       if (!data?.list) return []
 
       return data.list
-        .filter(item => item?.start && item.duration)
-        .map(item => ({
-          title: item.title || '',
-          description: item.descSummary || item.descFull || '',
-          start: dayjs.utc(item.start),
-          stop: dayjs.utc(item.start).add(item.duration, 'm')
-        }))
+        .filter(item => typeof item?.start === 'string' && item.duration)
+        .map(item => {
+          const start = dayjs.utc(item.start).tz('Asia/Tehran')
+          const stop = start.add(item.duration, 'm')
+
+          return {
+            title: item.title || '',
+            description: item.descSummary || item.descFull || '',
+            start: start.format('HH:mm'),
+            stop: stop.format('HH:mm')
+          }
+        })
 
     } catch (error) {
       console.error('Parser error:', error)
