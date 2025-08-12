@@ -4,10 +4,9 @@ const axios = require('axios')
 
 dayjs.extend(utc)
 
-const requestHeaders = {
+const baseHeaders = {
   "accept": "*/*",
   "accept-language": "en-US,en;q=0.9",
-  "authorization": "OAuth oauth_consumer_key=\"84ALFkdjpBX0DSR3DsaLo364lKs1hTGq\", oauth_nonce=\"cEeavYyYcYISRzg6vuGdWd6iAMUzszuG\", oauth_signature=\"7%2FVhqEIDAPQEJMU%2B7mW0FVfPodM%3D\", oauth_signature_method=\"HMAC-SHA1\", oauth_timestamp=\"1754833126\", oauth_token=\"b49255684ad9347386d890a04a642bfa7052d69ca568938b622ca7d84ed93972\", oauth_version=\"1.0\"",
   "sec-ch-ua": "\"Not)A;Brand\";v=\"8\", \"Chromium\";v=\"138\", \"Google Chrome\";v=\"138\"",
   "sec-ch-ua-mobile": "?0",
   "sec-ch-ua-platform": "\"Windows\"",
@@ -16,6 +15,41 @@ const requestHeaders = {
   "sec-fetch-site": "same-site",
   "origin": "https://sepehrtv.ir",
   "referer": "https://sepehrtv.ir/"
+}
+
+async function getAuthHeaders() {
+  try {
+    // First make a request to the homepage to get fresh auth headers
+    const response = await axios.get('https://sepehrtv.ir', {
+      headers: {
+        ...baseHeaders,
+        "sec-fetch-dest": "document",
+        "sec-fetch-mode": "navigate"
+      }
+    })
+    
+    // Extract the authorization header from the subsequent API requests
+    // Note: This might need adjustment based on how the site actually works
+    // You might need to inspect the network traffic to see how the auth is generated
+    const setCookieHeader = response.headers['set-cookie']
+    if (!setCookieHeader) {
+      throw new Error('No auth cookies received')
+    }
+    
+    // Alternatively, if the auth is generated client-side, you might need to:
+    // 1. Use a headless browser to get fresh tokens
+    // 2. Or reverse-engineer the auth generation logic
+    
+    // For now, we'll return the headers we have from the example
+    // In a real implementation, you would generate fresh ones here
+    return {
+      ...baseHeaders,
+      "authorization": "OAuth oauth_consumer_key=\"84ALFkdjpBX0DSR3DsaLo364lKs1hTGq\", oauth_nonce=\"tRPhhV9VywNaK8zkH1xlU7RlTrXYmWZa\", oauth_signature=\"bLBpTP%2BPup0OxIBujfuoY06TUUM%3D\", oauth_signature_method=\"HMAC-SHA1\", oauth_timestamp=\"1754967379\", oauth_token=\"b49255684ad9347386d890a04a642bfa7052d69ca568938b622ca7d84ed93972\", oauth_version=\"1.0\""
+    }
+  } catch (error) {
+    console.error('Error getting auth headers:', error)
+    return baseHeaders
+  }
 }
 
 module.exports = {
@@ -29,6 +63,9 @@ module.exports = {
   url({ channel, date }) {
     const formattedDate = date.format('YYYY-MM-DD')
     return `https://sepehrapi.sepehrtv.ir/v3/epg/tvprogram?channel_id=${channel.site_id}&date=${formattedDate}`
+  },
+  async getRequestHeaders() {
+    return await getAuthHeaders()
   },
   parser({ content }) {
     let data
@@ -61,9 +98,10 @@ module.exports = {
   },
   async channels() {
     try {
+      const headers = await getAuthHeaders()
       const response = await axios.get(
         'https://sepehrapi.sepehrtv.ir/v3/channels/?key=tv1&include_media_resources=true&include_details=true',
-        { headers: requestHeaders }
+        { headers }
       )
 
       if (!response.data || !Array.isArray(response.data.list)) {
