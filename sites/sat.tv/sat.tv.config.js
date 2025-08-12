@@ -12,7 +12,6 @@ const API_ENDPOINT = 'https://www.sat.tv/wp-content/themes/twentytwenty-child/aj
 module.exports = {
   site: 'sat.tv',
   days: 2,
-  delay: 5000,
   url: API_ENDPOINT,
   request: {
     method: 'POST',
@@ -50,7 +49,7 @@ module.exports = {
       programs.push({
         title: parseTitle($item),
         description: parseDescription($item),
-        icon: parseImage($item),
+        image: parseImage($item),
         start,
         stop
       })
