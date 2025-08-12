@@ -1,8 +1,53 @@
 const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
+const puppeteer = require('puppeteer')
 const axios = require('axios')
 
 dayjs.extend(utc)
+
+let cachedAuthHeaders = null
+let lastAuthTime = null
+
+async function getFreshAuthHeaders() {
+  // Use cache if recent (5 minutes)
+  if (cachedAuthHeaders && lastAuthTime && Date.now() - lastAuthTime < 300000) {
+    return cachedAuthHeaders
+  }
+
+  const browser = await puppeteer.launch({
+    headless: true,
+    args: ['--no-sandbox']
+  })
+  const page = await browser.newPage()
+
+  try {
+    // Navigate to the page that makes the API call
+    await page.goto('https://sepehrtv.ir', { waitUntil: 'networkidle2' })
+
+    // Wait for and intercept the API request to get the auth headers
+    const authHeaders = await new Promise((resolve) => {
+      page.on('request', (request) => {
+        if (request.url().includes('sepehrapi.sepehrtv.ir/v3/epg/tvprogram')) {
+          resolve(request.headers())
+          browser.close()
+        }
+      })
+    })
+
+    cachedAuthHeaders = {
+      ...baseHeaders,
+      authorization: authHeaders.authorization
+    }
+    lastAuthTime = Date.now()
+
+    return cachedAuthHeaders
+  } catch (error) {
+    console.error('Error getting fresh auth headers:', error)
+    throw error
+  } finally {
+    await browser.close()
+  }
+}
 
 const baseHeaders = {
   "accept": "*/*",
@@ -15,41 +60,6 @@ const baseHeaders = {
   "sec-fetch-site": "same-site",
   "origin": "https://sepehrtv.ir",
   "referer": "https://sepehrtv.ir/"
-}
-
-async function getAuthHeaders() {
-  try {
-    // First make a request to the homepage to get fresh auth headers
-    const response = await axios.get('https://sepehrtv.ir', {
-      headers: {
-        ...baseHeaders,
-        "sec-fetch-dest": "document",
-        "sec-fetch-mode": "navigate"
-      }
-    })
-    
-    // Extract the authorization header from the subsequent API requests
-    // Note: This might need adjustment based on how the site actually works
-    // You might need to inspect the network traffic to see how the auth is generated
-    const setCookieHeader = response.headers['set-cookie']
-    if (!setCookieHeader) {
-      throw new Error('No auth cookies received')
-    }
-    
-    // Alternatively, if the auth is generated client-side, you might need to:
-    // 1. Use a headless browser to get fresh tokens
-    // 2. Or reverse-engineer the auth generation logic
-    
-    // For now, we'll return the headers we have from the example
-    // In a real implementation, you would generate fresh ones here
-    return {
-      ...baseHeaders,
-      "authorization": "OAuth oauth_consumer_key=\"84ALFkdjpBX0DSR3DsaLo364lKs1hTGq\", oauth_nonce=\"tRPhhV9VywNaK8zkH1xlU7RlTrXYmWZa\", oauth_signature=\"bLBpTP%2BPup0OxIBujfuoY06TUUM%3D\", oauth_signature_method=\"HMAC-SHA1\", oauth_timestamp=\"1754967379\", oauth_token=\"b49255684ad9347386d890a04a642bfa7052d69ca568938b622ca7d84ed93972\", oauth_version=\"1.0\""
-    }
-  } catch (error) {
-    console.error('Error getting auth headers:', error)
-    return baseHeaders
-  }
 }
 
 module.exports = {
@@ -65,7 +75,12 @@ module.exports = {
     return `https://sepehrapi.sepehrtv.ir/v3/epg/tvprogram?channel_id=${channel.site_id}&date=${formattedDate}`
   },
   async getRequestHeaders() {
-    return await getAuthHeaders()
+    try {
+      return await getFreshAuthHeaders()
+    } catch (error) {
+      console.error('Failed to get auth headers, falling back to base headers')
+      return baseHeaders
+    }
   },
   parser({ content }) {
     let data
@@ -98,7 +113,7 @@ module.exports = {
   },
   async channels() {
     try {
-      const headers = await getAuthHeaders()
+      const headers = await getFreshAuthHeaders()
       const response = await axios.get(
         'https://sepehrapi.sepehrtv.ir/v3/channels/?key=tv1&include_media_resources=true&include_details=true',
         { headers }
