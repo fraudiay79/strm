@@ -6,7 +6,7 @@ const axios = require('axios')
 
 dayjs.extend(utc)
 
-// 🔐 OAuth Header Generator
+// 🔐 OAuth Header Generator - Updated to match browser request
 function getOAuthHeader(url, method = 'GET') {
   const oauth = OAuth({
     consumer: {
@@ -32,10 +32,16 @@ function getOAuthHeader(url, method = 'GET') {
     method
   }
 
-  return oauth.toHeader(oauth.authorize(requestData, token))
+  // Generate the OAuth header with all required parameters
+  const authHeader = oauth.toHeader(oauth.authorize(requestData, token))
+  
+  // Return the properly formatted Authorization header
+  return {
+    'Authorization': `OAuth ${authHeader.Authorization}`
+  }
 }
 
-// 🧠 Dynamic Request Headers
+// 🧠 Dynamic Request Headers - Updated to match browser request
 function getRequestHeaders(url) {
   return {
     ...getOAuthHeader(url),
@@ -47,8 +53,7 @@ function getRequestHeaders(url) {
     "sec-fetch-dest": "empty",
     "sec-fetch-mode": "cors",
     "sec-fetch-site": "same-site",
-    "origin": "https://sepehrtv.ir",
-    "referer": "https://sepehrtv.ir/"
+    "Referer": "https://sepehrtv.ir/"
   }
 }
 
