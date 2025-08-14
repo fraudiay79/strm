@@ -140,130 +140,149 @@
   <channel site="zap.co.ao" lang="pt" xmltv_id="ZapNovelas.ao" site_id="2439">ZAP Novelas</channel>
   <channel site="zap.co.ao" lang="pt" xmltv_id="ZapViva.ao" site_id="2455">ZAP Viva</channel>
   #Argentina
-  <channel site="reportv.com.ar" lang="es" xmltv_id="A24.ar" site_id="343">A24</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AE.ar" site_id="455">A&amp;E</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AMC.ar" site_id="1362">AMC</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AmericaSports.ar" site_id="84">América Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AmericaTV.ar" site_id="175">América TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AmericaTV2.ar" site_id="3248">América TV 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AnimalPlanet.ar" site_id="2932">Animal Planet</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ArgentinisimaSatelital.ar" site_id="57">Argentinísima Satelital</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Atrescine.es" site_id="ar#a3cine">Atrescine</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Atreseries.es" site_id="ar#atreseries">Atreseries</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AXN.ar" site_id="1862">AXN</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="BabyTV.uk" site_id="695">BabyTV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="C5N.ar" site_id="709">C5N</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Cartoonito.ar" site_id="174">Cartoonito</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Canal26.ar" site_id="3">Canal 26</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalA.ar" site_id="58">Canal á</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CanaldelaCiudad.ar" site_id="2332">Canal de la Ciudad</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalLuz.ar" site_id="349">Canal Luz</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CanalRural.ar" site_id="11">Canal Rural</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CartoonNetwork.ar" site_id="403">Cartoon Network</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CINEAR.ar" site_id="1605">CINE.AR</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Cinecanal.ar" site_id="3467">Cinecanal</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Cinemax.ar" site_id="2293">Cinemax</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CiudadMagazine.ar" site_id="26">Ciudad Magazine</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CMElCanaldelaMusica.ar" site_id="230">El Canal de la Música</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CN23.ar" site_id="1345">CN23</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ComedyCentral.ar" site_id="2037">Comedy Central</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ConstruirTV.ar" site_id="1813">Construir TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CronicaTV.ar" site_id="192">Cronica</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DeporTV.ar" site_id="2195">DeporTV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryChannel.ar" site_id="438">Discovery Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryHomeHealth.ar" site_id="3135">Discovery Home &amp; Health</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryKids.ar" site_id="396">Discovery Kids</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryScience.ar" site_id="493">Discovery Science</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryTheater.ar" site_id="1181">Discovery Theater</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryTurbo.ar" site_id="492">Discovery Turbo</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryWorld.ar" site_id="1389">Discovery World</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DisneyChannel.ar" site_id="386">Disney Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DisneyJunior.ar" site_id="1102">Disney Junior</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="EEntertainment.ar" site_id="491">E!</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ElGourmet.ar" site_id="473">El Gourmet</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ElNueve.ar" site_id="96">El Nueve</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ElTrece.ar" site_id="6">El Trece</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Encuentro.ar" site_id="477">Encuentro</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN.ar" site_id="2603">ESPN</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN2.ar" site_id="2899">ESPN 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN3.ar" site_id="2020">ESPN 3</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN4.ar" site_id="222">ESPN 4</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPNPremium.ar" site_id="3951">ESPN Premium</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="EuropaEuropa.ar" site_id="184">Europa Europa</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FilmArts.ar" site_id="63">film&amp;arts</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoodNetwork.ar" site_id="3450">Food Network</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports.ar" site_id="979">FOX Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports2.ar" site_id="2202">FOX Sports 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports3.ar" site_id="1101">FOX Sports 3</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FX.ar" site_id="427">FX</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="GarageTV.ar" site_id="358">El Garage TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Glitz.ar" site_id="1835">Glitz</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="GoldenEdgePanregional.mx" site_id="4527">Golden Edge</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="GoldenPanregional.mx" site_id="401">Golden</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="GolTVUSA.us" site_id="2377">Gol TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBO.ar" site_id="21">HBO</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBO2.ar" site_id="2127">HBO 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOFamily.ar" site_id="335">HBO Family</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOMundi.ar" site_id="1348">HBO Mundi</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOPlus.ar" site_id="2165">HBO Plus</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOPop.ar" site_id="3422">HBO Pop</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOSignature.ar" site_id="500">HBO Signature</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOXtreme.ar" site_id="334">HBO Xtreme</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HGTV.ar" site_id="1531">HGTV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="History.ar" site_id="445">History</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="History2.ar" site_id="2824">History 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HolaTVLatinAmerica.us" site_id="2670">Hola TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HTV.ar" site_id="115">HTV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="InvestigationDiscovery.ar" site_id="591">Investigation Discovery</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ISatSouth.us" site_id="917">I-SAT</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="IVCPanregional.ve" site_id="3315">IVC</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="LaNacionPlus.ar" site_id="3644">LN+</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="LasEstrellasLatinAmerica.mx" site_id="2235">Las Estrellas</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Lifetime.ar" site_id="2790">Lifetime</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="MasChic.ar" site_id="1752">Más Chic</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Metro.ar" site_id="27">Metro</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="MTV.ar" site_id="1339">MTV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="NatGeoKids.ar" site_id="ar#nat-geo-kids">Nat Geo Kids</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="NationalGeographic.ar" site_id="404">National Geographic</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="NETTV.ar" site_id="4646">Net TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Nickelodeon.ar" site_id="1229">Nickelodeon</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="NickJr.ar" site_id="1226">Nick Jr.</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Pakapaka.ar" site_id="1492">Pakapaka</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ParamountNetwork.ar" site_id="2910">Paramount Network</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Pasiones.ar" site_id="2217">Pasiones</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="PlayboyTVLatino.ar" site_id="3292">Playboy TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="QuieroMusicaenmiIdioma.ar" site_id="779">Quiero</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="SonyChannel.ar" site_id="446">Sony Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Space.ar" site_id="1258">Space</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="StarChannel.ar" site_id="778">Star Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="StudioUniversal.ar" site_id="580">Studio Universal</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TCM.ar" site_id="910">TCM</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TECtv.ar" site_id="1999">TECtv</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TelediarioTV.ar" site_id="ar#telediario">Telediario</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Telefe.ar" site_id="2354">Telefe</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TelemundoInternacional.us" site_id="1153">Telemundo Internacional</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TLC.ar" site_id="339">TLC</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TN.ar" site_id="1847">TN</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TNT.ar" site_id="4230">TNT</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTNovelas.ar" site_id="8200">TNT Novelas</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSeries.ar" site_id="2999">TNT Series</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSports.ar" site_id="3950">TNT Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Tooncast.ar" site_id="880">Tooncast</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="truTV.ar" site_id="1112">truTV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TV5MondeLatinAmerica.fr" site_id="38">TV5Monde Amérique Latine</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TVEInternacionalAmerica.es" site_id="59">TVE</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TVPublica.ar" site_id="1569">TV Pública</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TyCSports.ar" site_id="2355">TyC Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TyCSports2.ar" site_id="153">TyC Sports 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="UniversalTV.ar" site_id="1508">Universal TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="247CanaldeNoticias.ar" site_id="ar#24-7-canal-de-noticias">24/7 Canal de Noticias</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="A24.ar" site_id="ar#america-24">A24</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AE.ar" site_id="ar#a-e-mundo">A&amp;E</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AMC.ar" site_id="ar#amc">AMC</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AmericaSports.ar" site_id="ar#america-sports">América Sports</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AmericaTV.ar" site_id="ar#america-2-capital">América TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AnimalPlanet.ar" site_id="ar#animal-planet">Animal Planet</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ArgentinisimaSatelital.ar" site_id="ar#argentinisima-satelital">Argentinísima Satelital</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Atrescine.es" site_id="ar#a3cine">Atrescine</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Atreseries.es" site_id="ar#atreseries">Atreseries</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AXN.ar" site_id="ar#axn">AXN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="BabyTV.uk" site_id="ar#babytv">BabyTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="C5N.ar" site_id="ar#c5n">C5N</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cartoonito.ar" site_id="ar#boomerang-cartoon">Cartoonito</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal10Cordoba.ar" site_id="ar#canal-10-de-cordoba">Canal 10</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal20VillaMaria.ar" site_id="ar#canal-c20-villa-maria">Canal 20</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal26.ar" site_id="ar#26-tv">Canal 26</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalA.ar" site_id="ar#canal-a">Canal á</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanaldelaCiudad.ar" site_id="ar#ciudad-abierta">Canal de la Ciudad</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalLuz.ar" site_id="ar#canal-luz">Canal Luz</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalOrbe21.ar" site_id="ar#canal-orbe-21">Canal Orbe 21</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalRural.ar" site_id="ar#canal-rural">Canal Rural</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CanalU.ar" site_id="ar#cba-24n">Canal U</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CartoonNetwork.ar" site_id="ar#cartoon-network">Cartoon Network</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CINEAR.ar" site_id="ar#incaa-tv">CINE.AR</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cinecanal.ar" site_id="ar#cinecanal">Cinecanal</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cinemax.ar" site_id="ar#cinemax">Cinemax</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CiudadMagazine.ar" site_id="ar#magazine">Ciudad Magazine</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CMElCanaldelaMusica.ar" site_id="ar#canal-de-la-musica">El Canal de la Música</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CN23.ar" site_id="ar#cn-23">CN23</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ComedyCentral.ar" site_id="ar#comedy-central">Comedy Central</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ConexionEducativa.ar" site_id="ar#conexion-educativa">Conexión Educativa</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ConstruirTV.ar" site_id="ar#construir">Construir TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CronicaTV.ar" site_id="ar#cronica">Cronica</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DeporTV.ar" site_id="ar#dxtv">DeporTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryChannel.ar" site_id="ar#discovery">Discovery Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryHomeHealth.ar" site_id="ar#discovery-home-and-health">Discovery Home &amp; Health</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryKids.ar" site_id="ar#discovery-kids">Discovery Kids</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryScience.ar" site_id="ar#discovery-science">Discovery Science</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryTheater.ar" site_id="ar#discovery-hd-theater">Discovery Theater</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryTurbo.ar" site_id="ar#discovery-turbo">Discovery Turbo</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryWorld.ar" site_id="ar#discovery-world-hd">Discovery World</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DisneyChannel.ar" site_id="ar#disney">Disney Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DisneyJunior.ar" site_id="ar#disney-jr">Disney Junior</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DisneyXD.ar" site_id="ar#disney-xd">Disney XD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="EEntertainment.ar" site_id="ar#entertainment">E!</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ElGourmet.ar" site_id="ar#el-gourmet">El Gourmet</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ElNueve.ar" site_id="ar#canal-9">El Nueve</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ElTrece.ar" site_id="ar#el-trece">El Trece</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Encuentro.ar" site_id="ar#encuentro">Encuentro</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPN.ar" site_id="ar#espn">ESPN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPN2.ar" site_id="ar#espn-2">ESPN 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPN3.ar" site_id="ar#espn-3">ESPN 3</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPNExtra.ar" site_id="ar#espn-1">ESPN Extra</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPNPremium.ar" site_id="ar#fox-sports-premium">ESPN Premium</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="EuropaEuropa.ar" site_id="ar#europa-europa">Europa Europa</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FilmArts.ar" site_id="ar#film-arts">film&amp;arts</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoodNetwork.ar" site_id="ar#food-network">Food Network</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoxSports.ar" site_id="ar#fox-sports-hd">FOX Sports</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoxSports2.ar" site_id="ar#fox-sports-2">FOX Sports 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoxSports3.ar" site_id="ar#fox-sports-3">FOX Sports 3</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FXMovies.ar" site_id="ar#fx-movies">FX Movies</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FX.ar" site_id="ar#fx">FX</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="GarageTV.ar" site_id="ar#el-garage">El Garage TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Glitz.ar" site_id="ar#glitz">Glitz</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="GoldenEdgePanregional.mx" site_id="ar#golden-edge">Golden Edge</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="GoldenPanregional.mx" site_id="ar#golden">Golden</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="GolfChannel.ar" site_id="ar#golf-channel">Golf Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="GolTVUSA.us" site_id="ar#gol-tv">Gol TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HAPSATV.ar" site_id="ar#hapsa">HAPSATV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBO.ar" site_id="ar#hbo">HBO</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBO2.ar" site_id="ar#hbo-2">HBO 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOFamily.ar" site_id="ar#hbo-family">HBO Family</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOMundi.ar" site_id="ar#max">HBO Mundi</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOPlus.ar" site_id="ar#hbo-plus-panamericano-hd">HBO Plus</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOPop.ar" site_id="ar#max-up">HBO Pop</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOSignature.ar" site_id="ar#hbo-signature">HBO Signature</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOXtreme.ar" site_id="ar#max-prime">HBO Xtreme</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HGTV.ar" site_id="ar#hgtv">HGTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="History.ar" site_id="ar#history">History</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="History2.ar" site_id="ar#h2">History 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HolaTVLatinAmerica.us" site_id="ar#hola-tv">Hola TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HTV.ar" site_id="ar#htv">HTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="InvestigationDiscovery.ar" site_id="ar#investigation-discovery">Investigation Discovery</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ISatSouth.us" site_id="ar#i-sat">I-SAT</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="IVCPanregional.ve" site_id="ar#ivc">IVC</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="LaNacionPlus.ar" site_id="ar#la-nacion">LN+</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="LasEstrellasLatinAmerica.mx" site_id="ar#canal-de-las-estrellas">Las Estrellas</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Lifetime.ar" site_id="ar#lifetime">Lifetime</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MasChic.ar" site_id="ar#mas-chic">Más Chic</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Metro.ar" site_id="ar#metro">Metro</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MTV.ar" site_id="ar#mtv">MTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Much.ar" site_id="ar#muchmusic">MuchMusic</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MusicTop.ar" site_id="ar#musictop">Musictop</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NatGeoKids.ar" site_id="ar#nat-geo-kids">Nat Geo Kids</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NationalGeographic.ar" site_id="ar#national-geographic">National Geographic</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NationalGeographicWild.ar" site_id="ar#nat-geo-wild">National Geographic Wild</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NBATV.ar" site_id="ar#nba-tv">NBA TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NETTV.ar" site_id="ar#net-tv">Net TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Nickelodeon.ar" site_id="ar#nickelodeon">Nickelodeon</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NickJr.ar" site_id="ar#nick-jr">Nick Jr.</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Nicktoons.ar" site_id="ar#nicktoons">NickToons</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Pakapaka.ar" site_id="ar#pakapaka">Pakapaka</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ParamountNetwork.ar" site_id="ar#paramount-channel">Paramount Network</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Pasiones.ar" site_id="ar#pasiones">Pasiones</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="PlayboyTVLatino.ar" site_id="ar#playboy">Playboy TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="QuieroMusicaenmiIdioma.ar" site_id="ar#quiero">Quiero</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="SmithsonianChannel.ar" site_id="ar#smithsonian-channel">Smithsonian Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="SonyChannel.ar" site_id="ar#sony">Sony Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Space.ar" site_id="ar#space">Space</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarChannel.ar" site_id="ar#fox">Star Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StudioUniversal.ar" site_id="ar#studio-universal">Studio Universal</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Syfy.ar" site_id="ar#syfy">Syfy</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TCM.ar" site_id="ar#tcm">TCM</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TECtv.ar" site_id="ar#tecnopolis">TECtv</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TelediarioTV.ar" site_id="ar#telediario">Telediario</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Telefe.ar" site_id="ar#telefe">Telefe</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Telemax.ar" site_id="ar#telemax">Telemax</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TelemundoInternacional.us" site_id="ar#telemundo">Telemundo Internacional</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TierraMiaTV.ar" site_id="ar#tierra-mia-tv">Tierra Mía TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TLC.ar" site_id="ar#discovery-tlc">TLC</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TN.ar" site_id="ar#tn">TN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TNT.ar" site_id="ar#tnt">TNT</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TNTNovelas.ar" site_id="ar#tbs">TNT Novelas</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TNTSeries.ar" site_id="ar#tnt-series">TNT Series</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TNTSports.ar" site_id="ar#tnt-sports">TNT Sports</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Tooncast.ar" site_id="ar#tooncast">Tooncast</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="truTV.ar" site_id="ar#tru-tv">truTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TurismoVisionArgentina.ar" site_id="ar#turismo-vision-argentina">Turismo Visión Argentina</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TV5MondeLatinAmerica.fr" site_id="ar#tv-5">TV5Monde Amérique Latine</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TVEInternacionalAmerica.es" site_id="ar#tve">TVE</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TVPublica.ar" site_id="ar#canal-7-capital">TV Pública</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TyCSports.ar" site_id="ar#tyc-sports">TyC Sports</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TyCSports2.ar" site_id="ar#tyc-alternativa">TyC Sports 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="UniversalTV.ar" site_id="ar#universal-channel">Universal TV</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalCinema.ar" site_id="453">Universal Cinema</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalComedy.ar" site_id="455">Universal Comedy</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalCrime.ar" site_id="456">Universal Crime</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalPremiere.ar" site_id="452">Universal Premiere</channel>
   <channel site="programacion.tcc.com.uy" lang="es" xmltv_id="UniversalReality.ar" site_id="454">Universal Reality</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="USANetwork.ar" site_id="8327">USA Network</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Volver.ar" site_id="45">Volver</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="WarnerTV.ar" site_id="3787">Warner TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Viajar.es" site_id="ar#viajar">Viajar</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Volver.ar" site_id="ar#volver">Volver</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.ar" site_id="ar#warner-channel">Warner TV</channel>
   #Armenia
   <channel site="iptvx.one" lang="hy" xmltv_id="5TV.am" site_id="5-am">5 TV (Армения) • 5TV</channel>
   <channel site="iptvx.one" lang="hy" xmltv_id="ArmeniaTV.am" site_id="armenia-tv">Армения ТВ • Armenia TV</channel>
@@ -310,12 +329,12 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="9.au" site_id="au/Sydney/epg#mjh-channel-9-nsw">Channel 9</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="au/Brisbane/epg#mjh-10shake-qld">Nickelodeon</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="NickJr.au" site_id="au/Brisbane/epg#mjh-10-nick-jr">Nick Jr</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="NITV.au" site_id="au/Sydney/epg#mjh-sbs-nitv">NITV</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSFood.au" site_id="au/Sydney/epg#mjh-sbs-food">SBS Food</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="SBS.au" site_id="au/Sydney/epg#mjh-sbs">SBS</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSViceland.au" site_id="au/Sydney/epg#mjh-sbs-viceland">SBS Viceland</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSWorldMovies.au" site_id="au/Sydney/epg#mjh-sbs-world-movies">SBS World Movies</channel>
-  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSWorldWatch.au" site_id="au/Sydney/epg#mjh-sbs-world-watch">SBS World Watch</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="NITV.au" site_id="au/Sydney/epg#mjh-sbs-5nsw">NITV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSFood.au" site_id="au/Sydney/epg#mjh-sbs-3syd">SBS Food</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SBS.au" site_id="au/Sydney/epg#mjh-sbs-sbst">SBS</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSViceland.au" site_id="au/Sydney/epg#mjh-sbs-2syd">SBS Viceland</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSWorldMovies.au" site_id="au/Sydney/epg#mjh-sbs-4syd">SBS World Movies</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SBSWorldWatch.au" site_id="au/Sydney/epg#mjh-sbs-6nat">SBS World Watch</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports1.au" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F">beIN Sports 1</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports2.au" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A">beIN Sports 2</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports3.au" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746">beIN Sports 3</channel>
@@ -327,9 +346,7 @@
   <channel site="foxtel.com.au" lang="en" xmltv_id="BBCEarth.au" site_id="BBC-Earth/BBK">BBC Earth</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="BBCFirst.au" site_id="BBC-First/BSF">BBC First</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="BBCUKTV.au" site_id="UKTV/UKT">UKTV</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Boomerang.au" site_id="Boomerang/BOO">Boomerang</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="BoxSets.au" site_id="BoxSets/BXS">BoxSets</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="CartoonNetwork.au" site_id="Cartoon-Network/CNE">Cartoon Network</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="CBeebies.au" site_id="Cbeebies/CBE">Cbeebies</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="ClubMTV.au" site_id="Club-MTV/VH1">Club MTV</channel>
   <channel site="foxtel.com.au" lang="en" xmltv_id="CMT.au" site_id="CMT/CMT">CMT</channel>
@@ -479,16 +496,6 @@
   <channel site="telenet.tv" lang="nl" xmltv_id="MaghrebTV.be" site_id="almaghrebtv">Al Maghreb TV</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="MentTV.be" site_id="menttv">Ment TV</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Njam.be" site_id="njam">njam!</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports1FR.be" site_id="UID0680">Pickx+ Sports 1</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports2FR.be" site_id="UID0681">Pickx+ Sports 2</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports3FR.be" site_id="UID0682">Pickx+ Sports 3</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports4FR.be" site_id="UID0683">Pickx+ Sports 4</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports5FR.be" site_id="UID0684">Pickx+ Sports 5</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports6FR.be" site_id="UID0685">Pickx+ Sports 6</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports7FR.be" site_id="UID50289">Pickx+ Sports 7</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports8FR.be" site_id="UID0671">Pickx+ Sports 8</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports9FR.be" site_id="UID0672">Pickx+ Sports 9</channel>
-  <channel site="pickx.be" lang="fr" xmltv_id="PickxPlusSports10FR.be" site_id="UID0674">Pickx+ Sports 10</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Play4.be" site_id="vierhd">Play4</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Play5.be" site_id="vijfhd">Play5</channel>
   <channel site="telenet.tv" lang="nl" xmltv_id="Play6.be" site_id="zes">Play6</channel>
@@ -1749,6 +1756,7 @@
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="beINSportsMax10.fr" site_id="1342">beIN Sports Max 10</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="BET.fr" site_id="1960">BET</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMTV.fr" site_id="481">BFMTV</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFM2.fr" site_id="4092">BFM2</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMAlsace.fr" site_id="3460">BFM Alsace</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMBusiness.fr" site_id="1073">BFM Business</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMGrandLille.fr" site_id="930">BFM Grand Lille</channel>
@@ -1758,7 +1766,6 @@
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="BFMParisIledeFrance.fr" site_id="1077">BFM Paris</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="BOneTV.cd" site_id="b-one-339">B.One</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="Boomerang.fr" site_id="321">Boomerang</channel>
-  <channel site="tv.sfr.fr" lang="fr" xmltv_id="C8.fr" site_id="445">C8</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="Canal32.fr" site_id="534">Canal 32</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalJ.fr" site_id="32">Canal J</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="CanalPlus.fr" site_id="34">Canal+</channel>
@@ -1845,8 +1852,8 @@
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="NRJ12.fr" site_id="444">NRJ 12</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="NRJHits.fr" site_id="605">NRJ Hits</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="OCS.fr" site_id="282">OCS</channel>
-  <channel site="tv.sfr.fr" lang="fr" xmltv_id="OLTV.fr" site_id="463">OLTV</channel>
-  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ParamountChannel.fr" site_id="1562">Paramount Channel</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="OLPLAY.fr" site_id="463">OLPLAY</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="ParamountNetwork.fr" site_id="1562">Paramount Network</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="ParisPremiere.fr" site_id="145">Paris Première</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="PiwiPlus.fr" site_id="piwiplus-104">Piwi+</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="PlanetePlus.fr" site_id="planeteplus-16">Planète+</channel>
@@ -1865,6 +1872,7 @@
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="SerieClub.fr" site_id="49">Série Club</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="SportenFrance.fr" site_id="2837">Sport en France</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="Syfy.fr" site_id="479">Syfy</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="T18.fr" site_id="4139">T18</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TCMCinema.fr" site_id="185">TCM Cinéma</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TebeoTV.fr" site_id="1321">Tébéo</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TeleGrenoble.fr" site_id="537">Télé Grenoble Isère</channel>
@@ -1874,7 +1882,7 @@
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TF1.fr" site_id="192">TF1</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TF1SeriesFilms.fr" site_id="1404">TF1 Séries Films</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TFX.fr" site_id="446">TFX</channel>
-  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TiJi.fr" site_id="229">Tiji</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TiJi.fr" site_id="229">TiJi</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TLC.fr" site_id="1374">TLC</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TMC.fr" site_id="195">TMC</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TTNTV.fr" site_id="tntv-france-6503">TNTV France</channel>
@@ -1897,7 +1905,7 @@
   <channel site="ontvtonight.com" lang="fr" xmltv_id="TV5MondeStyle.fr" site_id="us#4461114408/tv5-monde-style-sling">TV5Monde Style</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TV7Bordeaux.fr" site_id="273">TV7 Bordeaux</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TV8MontBlanc.fr" site_id="421">8 Mont-Blanc</channel>
-  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVBreizh.fr" site_id="225">TvBreizh</channel>
+  <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVBreizh.fr" site_id="225">TV Breizh</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVPI.fr" site_id="2275">TVPI</channel>
   <channel site="programme-tv.net" lang="fr" xmltv_id="TVSud.fr" site_id="tvsud-montpellier-344">TVSud</channel>
   <channel site="tv.sfr.fr" lang="fr" xmltv_id="TVTours.fr" site_id="540">TV Tours</channel>
@@ -2456,288 +2464,277 @@
   <channel site="syn.is" lang="is" xmltv_id="SynSportIsland2.is" site_id="synsportisland2">Sýn Sport Ísland 2</channel>
   <channel site="syn.is" lang="is" xmltv_id="SynSportViaplay.is" site_id="synsportviaplay">Sýn Sport Viaplay</channel>
   #India
-  <channel site="dishtv.in" lang="en" xmltv_id="9XJhakaas.in" site_id="10000000007500000">9X Jhakaas</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="9XM.in" site_id="10000000003060000">9XM</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="9XTashan.in" site_id="10000000007300000">9X Tashan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AajTak.in" site_id="10000000000720000">Aaj Tak</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AakaashAath.in" site_id="10000000001210000">Aakash Aath</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Aastha.in" site_id="10000000001390000">Aastha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ABPAnanda.in" site_id="10000000001950000">ABP Ananda</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ABPMajha.in" site_id="10000000002020000">ABP Majha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ABPNews.in" site_id="10000000000180000">ABP News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AbzyCool.in" site_id="10000000072020000">Abzy Cool</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AlankarTV.in" site_id="10000000029250000">Alankar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AndFlix.in" site_id="10000000059350000">&amp;Flix</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AndPrive.in" site_id="10000000053720000">&amp;Prive</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AndTV.in" site_id="10000000028000000">&amp;TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ArgusNews.in" site_id="10000000075992204">Argus</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ArihantTV.in" site_id="10000000006710000">Dharm Sandesh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="AssamTalks.in" site_id="10000000039340000">Assam Talk</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="B4UBhojpuri.in" site_id="10000000004380000">B4U Bhojpuri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="B4UKadak.in" site_id="10000000066390000">B4U Kadak</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="B4UMovies.in" site_id="10000000000740000">B4U Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="B4UMusic.in" site_id="10000000000730000">B4U Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="BalleBalle.in" site_id="10000000015420000">Balle Balle</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="BigGanga.in" site_id="10000000016950000">Big Ganga</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="BigMagic.in" site_id="10000000007350000">Big Magic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CartoonNetwork.in" site_id="10000000000760000">Cartoon Network</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ChannelDivya.in" site_id="10000000004750000">Divya TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ChardiklaTimeTV.in" site_id="10000000003050000">CHARDIKLA TIME TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CinemaTV.in" site_id="10000000009290000">Cinema TV India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CNBCTV18.in" site_id="10000000000710000">CNBC TV18</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CNBCAwaaz.in" site_id="10000000000890000">CNBC Awaaz</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CNBCBajar.in" site_id="10000000022380000">CNBC Bajar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CNNNews18.in" site_id="10000000000780000">CNN News 18</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Colors.in" site_id="10000000004170000">Colors</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsBangla.in" site_id="10000000000380000">Colors Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsBanglaCinema.in" site_id="10000000066940000">Colors Bangla Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsCineplex.in" site_id="10000000041660000">Colors Cineplex</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsGujarati.in" site_id="10000000000390000">Colors Gujarati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsGujaratiCinema.in" site_id="10000000063050000">Colors Gujarati Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsInfinity.in" site_id="10000000035220000">Colors Infinity</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsMarathi.in" site_id="10000000000460000">Colors Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsOdia.in" site_id="10000000000430000">Colors Odia</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ColorsRishtey.in" site_id="10000000018500000">Colors Rishtey</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ComedyCentral.in" site_id="10000000007730000">Comedy Central</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="CTVNAKDPlus.in" site_id="10000000015980000">CTVN AKD Plus</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDArunPrabha.in" site_id="10000000051550000">DD Arunprabha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDAssam.in" site_id="10000000002840000">DD Assam</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDBangla.in" site_id="10000000002520000">DD Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDBharati.in" site_id="10000000001780000">DD Bharati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDBihar.in" site_id="10000000002810000">DD Bihar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDChandana.in" site_id="10000000002550000">DD Chandana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDGirnar.in" site_id="10000000002540000">DD Girnar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDHissar.in" site_id="10000000019140000">DD Hisar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDIndia.in" site_id="10000000001800000">DD India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDKashir.in" site_id="10000000002820000">DD Kashir</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDKisan.in" site_id="10000000029140000">DD Kisan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDMadhyaPradesh.in" site_id="10000000016830000">DD MP</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDMalayalam.in" site_id="10000000002610000">DD Malayalam</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDNational.in" site_id="10000000000980000">DD National</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDNews.in" site_id="10000000001820000">DD News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDOdia.in" site_id="10000000002510000">DD Oriya</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDPodhigai.in" site_id="10000000002500000">DD Podhigai</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDPunjabi.in" site_id="10000000002630000">DD Punjabi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDRajasthan.in" site_id="10000000002570000">DD Rajasthan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDSahyadri.in" site_id="10000000001130000">DD Sahyadri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDSaptagiri.in" site_id="10000000002860000">DD Saptagiri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDUrdu.in" site_id="10000000002910000">DD URDU</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDUttarPradesh.in" site_id="10000000002900000">DD UP</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DDYadagiri.in" site_id="10000000028800000">DD Yadagiri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Dhinchaak.in" site_id="10000000074520000">Goldmines</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DhoomMusic.in" site_id="10000000009510000">Dhoom Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryChannel.in" site_id="10000000000310000">Discovery Channel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryKids.in" site_id="10000000009420000">Discovery Kids</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryScience.in" site_id="10000000003130000">Discovery Science</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryTurbo.in" site_id="10000000005700000">Discovery Turbo</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DishBuzz2.in" site_id="10000000069150000">BUZZ SD 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DishBuzz.in" site_id="10000000036200000">Dish Buzz</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DisneyChannel.in" site_id="10000000000340000">Disney Channel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DisneyJunior.in" site_id="10000000012870000">Disney Junior</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="DY365.in" site_id="10000000006050000">DY 365</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Epic.in" site_id="10000000026390000">Epic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ETNow.in" site_id="10000000005240000">ET Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ETNowSwadesh.in" site_id="10000000075992357">ET Now Swadesh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ETVTelugu.in" site_id="10000000000360000">ETV Telugu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="EZMall.in" site_id="10000000055410000">EZ Mall</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="FaktMarathi.in" site_id="10000000032000000">Fakt Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Filamchi.in" site_id="10000000073830000">Filamchi Bhojpuri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="9XJhakaas.in" site_id="90012">9X Jhakaas</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="9XM.in" site_id="77447">9XM</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="9XTashan.in" site_id="142504">9X Tashan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AajTak.in" site_id="142507">Aaj Tak</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AakaashAath.in" site_id="142510">Aakash Aath</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Aastha.in" site_id="142514">Aastha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ABPAnanda.in" site_id="142518">ABP Ananda</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ABPMajha.in" site_id="142521">ABP Majha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ABPNews.in" site_id="158138">ABP News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Alankar.in" site_id="142630">Alankar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AndFlix.in" site_id="142636">&amp;Flix</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AndPictures.in" site_id="142638">&amp; Pictures</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AndPrive.in" site_id="142639">&amp;Prive</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AndTV.in" site_id="142641">&amp;TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AnimalPlanet.in" site_id="158140">Animal Planet</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ArgusNews.in" site_id="142650">Argus</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ArihantTV.in" site_id="142651">Dharm Sandesh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="AssamTalks.in" site_id="142683">Assam Talks</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="B4UBhojpuri.in" site_id="142694">B4U Bhojpuri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="B4UKadak.in" site_id="142695">B4U Kadak</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="B4UMovies.in" site_id="140063">B4U Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="B4UMusic.in" site_id="158141">B4U Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="BalleBalle.in" site_id="142697">Balle Balle</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="BigMagic.in" site_id="142715">Big Magic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CartoonNetwork.in" site_id="157576">Cartoon Network</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ChannelDivya.in" site_id="143010">Divya TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ChardiklaTimeTV.in" site_id="142736">Chardikla Time TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CNBCTV18.in" site_id="142743">CNBC TV18</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CNBCAwaaz.in" site_id="142745">CNBC Awaaz</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CNBCBajar.in" site_id="142742">CNBC Bajar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CNNNews18.in" site_id="142747">CNN News 18</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Colors.in" site_id="158149">Colors</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsBangla.in" site_id="157577">Colors Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsBanglaCinema.in" site_id="142748">Colors Bangla Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsCineplex.in" site_id="158147">Colors Cineplex</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsCineplexBollywood.in" site_id="142749">Colors Cineplex Bollywood</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsCineplexSuperhits.in" site_id="142750">Colors Cineplex Superhits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsGujarati.in" site_id="158148">Colors Gujarati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsGujaratiCinema.in" site_id="142751">Colors Gujarati Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsInfinity.in" site_id="157578">Colors Infinity</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsMarathi.in" site_id="157580">Colors Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ColorsRishtey.in" site_id="158239">Colors Rishtey</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="CTVNAKDPlus.in" site_id="142754">CTVN AKD Plus</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDArunPrabha.in" site_id="142776">DD Arunprabha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDAssam.in" site_id="142777">DD Assam</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDBangla.in" site_id="142778">DD Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDBharati.in" site_id="142779">DD Bharati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDBihar.in" site_id="142780">DD Bihar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDChandana.in" site_id="142781">DD Chandana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDGirnar.in" site_id="142782">DD Girnar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDIndia.in" site_id="158251">DD India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDKashir.in" site_id="142788">DD Kashir</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDKisan.in" site_id="142789">DD Kisan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDMadhyaPradesh.in" site_id="142790">DD MP</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDMalayalam.in" site_id="142791">DD Malayalam</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDNational.in" site_id="158252">DD National</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDNews.in" site_id="158254">DD News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDOdia.in" site_id="142796">DD Oriya</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDPunjabi.in" site_id="142800">DD Punjabi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDRajasthan.in" site_id="142801">DD Rajasthan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDSahyadri.in" site_id="142803">DD Sahyadri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDSaptagiri.in" site_id="142804">DD Saptagiri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDSports.in" site_id="158255">DD Sports</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDTamil.in" site_id="142797">DD Tamil</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDUrdu.in" site_id="142808">DD URDU</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDUttarPradesh.in" site_id="142807">DD UP</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DDYadagiri.in" site_id="142810">DD Yadagiri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Goldmines.in" site_id="142881">Goldmines</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DhoomMusic.in" site_id="142882">Dhoom Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryChannel.in" site_id="100869">Discovery Channel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryKids.in" site_id="159011">Discovery Kids</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryScience.in" site_id="159107">Discovery Science</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DiscoveryTurbo.in" site_id="159108">Discovery Turbo</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DisneyChannel.in" site_id="158843">Disney Channel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DisneyJunior.in" site_id="142990">Disney Junior</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="DY365.in" site_id="143015">DY365</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Epic.in" site_id="159013">Epic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ETNow.in" site_id="143021">ET Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ETNowSwadesh.in" site_id="143022">ET Now Swadesh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ETVTelugu.in" site_id="143033">ETV Telugu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Eurosport.in" site_id="157802">Eurosport</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="FaktMarathi.in" site_id="143038">Fakt Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Filamchi.in" site_id="157803">Filamchi Bhojpuri</channel>
   <channel site="tataplay.com" lang="en" xmltv_id="FoodFood.in" site_id="117">Food Food</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="GoodNewsToday.in" site_id="10000000075992321">Good News Today</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Gubbare.in" site_id="10000000075990144">Gubbare</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="GulistanNews.in" site_id="10000000018380000">Gulistan News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="HareKrsnaTV.in" site_id="10000000052650000">Hare Krsnahare Krsna</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="HistoryTV18.in" site_id="10000000007360000">History TV 18</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="HungamaTV.in" site_id="10000000001690000">Hungama TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IBC24.in" site_id="10000000005190000">IBC 24</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IndiaNews.in" site_id="10000000004420000">India News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IndiaNewsHaryana.in" site_id="10000000016920000">India News Haryana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IndiaToday.in" site_id="10000000000810000">India Today</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IndiaTV.in" site_id="10000000000910000">India TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Indradhanu.in" site_id="10000000054700000">Indradhanu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="InvestigationDiscovery.in" site_id="10000000056360000">Investigation Discovery</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IsharaTV.in" site_id="10000000075990296">Ishara TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="IshwarBhaktiTV.in" site_id="10000000013090000">Ishwar Bhakti</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="JalshaMovies.in" site_id="10000000013240000">Jalsha Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="JinvaniChannel.in" site_id="10000000009440000">Jinvani</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Jonack.in" site_id="10000000041500000">Jonack TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="KanakNews.in" site_id="10000000016050000">Kanak News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="KhushbooBangla.in" site_id="10000000013280000">Khusboo Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="KolkataTV.in" site_id="10000000004020000">Kolkata TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="LokSabhaTV.in" site_id="10000000002750000">Sansad TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="LokshahiNews.in" site_id="10000000072890000">Lokshahi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Maiboli.in" site_id="10000000017590000">Mailboli</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanGrand.in" site_id="10000000069590000">Manoranjan Grand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanMovies.in" site_id="10000000021720000">Manoranjan Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanTV.in" site_id="10000000004490000">Manoranjan TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MarvelHQ.us" site_id="10000000000350000">Super Hungama</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Mastiii.in" site_id="10000000005890000">Mastiii</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MBCTV.in" site_id="10000000009480000">MBC TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Mh1Music.in" site_id="10000000001970000">MH1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MirrorNow.in" site_id="10000000038730000">Mirror Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MNX.in" site_id="10000000045360000">MNX</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MoviePlus.jp" site_id="10000000070980000">News India 24X7</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MoviesNow.in" site_id="10000000006570000">Movies Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MoviesNowPlus.in" site_id="10000000025870000">Movies Now+</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MTV.in" site_id="10000000000480000">MTV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MTVBeats.in" site_id="10000000048710000">MTV Beats</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="MusicIndia.in" site_id="10000000002040000">Music India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NaaptolTamil.in" site_id="10000000025590000">Naaptol</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NandighoshaTV.in" site_id="10000000072550000">Nandighosha TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NationalGeographic.in" site_id="10000000000170000">National Geographic Channel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NationalGeographicWild.in" site_id="10000000005680000">National Geographic Wild</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NaxatraNews.in" site_id="10000000016110000">Naxatra News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NDTV24x7.in" site_id="10000000000500000">NDTV 24X7</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NDTVIndia.in" site_id="10000000000490000">NDTV India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Nepal1.in" site_id="10000000001240000">Nepal One</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18AssamNorthEast.in" site_id="10000000048010000">News18 Assam North East</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Bangla.in" site_id="10000000022900000">News18 Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18BiharJharkhand.in" site_id="10000000000410000">News18 Bihar/Jharkhand</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Gujarati.in" site_id="10000000028340000">News18 Gujarati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18India.in" site_id="10000000001180000">News18 India</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Lokmat.in" site_id="10000000003830000">News18 Lokmat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18MadhyaPradeshChhattisgarh.in" site_id="10000000000420000">News18 Madhya Pradesh/Chhattisgarh</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Odia.in" site_id="10000000030850000">News18 Oriya</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Rajasthan.in" site_id="10000000000450000">News18 Rajasthan</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News18Urdu.in" site_id="10000000000440000">News18 JK/Himachal</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="News24.in" site_id="10000000003440000">News24 Think First</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsLive.in" site_id="10000000004790000">News Live</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsNation.in" site_id="10000000010620000">News Nation</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsStateUPUK.in" site_id="10000000021290000">News State UP/UK</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsTimeBangla.in" site_id="10000000004360000">News Time</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NewsX.in" site_id="10000000003800000">News X</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Nickelodeon.in" site_id="10000000001010000">Nickelodeon</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NickelodeonSonic.in" site_id="10000000007610000">Sonic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NickHDPlus.in" site_id="10000000039210000">Nick HD+</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NKTV24x7.in" site_id="10000000075990330">NK TV 24X7</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="NortheastLive.in" site_id="10000000050540000">Northeast Live</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="OdishaTV.in" site_id="10000000003380000">Odisha TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ParasGold.in" site_id="10000000006790000">Paras Gold One</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PeaceofMindTV.in" site_id="10000000011140000">Peace of Mind</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Pitaara.in" site_id="10000000053660000">Pitaara TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Pogo.in" site_id="10000000000860000">Pogo</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PragNews.in" site_id="10000000006630000">Prag News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PrameyaNews7.in" site_id="10000000032950000">Prameya News7</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PrarthanaTV.in" site_id="10000000007020000">Prarthana TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PratidinTime.in" site_id="10000000006660000">Pratidin Time</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PTCChakde.in" site_id="10000000005300000">PTV Chakde</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PTCMusic.in" site_id="10000000064490000">PTC Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PTCNews.in" site_id="10000000002670000">PTC News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PTCPunjabi.in" site_id="10000000004250000">PTC Punjabi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PTCPunjabiGold.in" site_id="10000000064480000">PTC Punjabi Gold</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PTCSimran.in" site_id="10000000064500000">PTC Simran</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="PunjabiHits.in" site_id="10000000075991559">Punjabi Hits</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Ramdhenu.in" site_id="10000000018980000">Ramdhenu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Rang.in" site_id="10000000005580000">Rang</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Rengoni.in" site_id="10000000028900000">Rengoni TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="RepublicBangla.in" site_id="10000000075990309">Republic Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="RepublicTV.in" site_id="10000000052070000">Republic TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="RongeenTV.in" site_id="10000000066990000">Rongeen TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="RupasiBangla.in" site_id="10000000005690000">Rupasi Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SaamTV.in" site_id="10000000004280000">Saam TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SadhnaTV.in" site_id="10000000001330000">Sadhna TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SandeshNews.in" site_id="10000000013010000">Sandesh News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SangeetBangla.in" site_id="10000000001380000">Sangeet Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SangeetBhojpuri.in" site_id="10000000004320000">Sangeet Bhojpuri</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SanskarTV.in" site_id="10000000001160000">Sanskar</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SantvaniChannel.in" site_id="10000000075300000">Sant Wani</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SatsangTV.in" site_id="10000000003720000">Satsang</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ShemarooMarathiBana.in" site_id="10000000072640000">Shemaroo Marathibana</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ShemarooTV.in" site_id="10000000073540000">Shemaroo TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ShowBox.in" site_id="10000000067140000">ShowBox</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ShubhTV.in" site_id="10000000041760000">Shubh TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SidharthBhakti.in" site_id="10000000075992324">Sidharth Bhakti</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SongdewTV.in" site_id="10000000063850000">Songdew</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyAath.in" site_id="10000000004390000">Sony Aath</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyBBCEarth.in" site_id="10000000050930000">Sony BBC Earth</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyEntertainment.in" site_id="10000000009390000">Sony Entertainment</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyMarathi.in" site_id="10000000060520000">Sony Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyMax2.in" site_id="10000000022850000">Sony Max 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyPal.in" site_id="10000000025050000">Sony Pal</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyPix.in" site_id="10000000000550000">Sony Pix</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonySAB.in" site_id="10000000000560000">Sony SAB</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen1.in" site_id="10000000000620000">Sony Sports Ten 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen2.in" site_id="10000000000240000">Sony Sports Ten 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen3.in" site_id="10000000006000000">Sony Sports Ten 3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="GoodNewsToday.in" site_id="143090">Good News Today</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Gubbare.in" site_id="159014">Gubbare</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="GulistanNews.in" site_id="143097">Gulistan News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="HareKrsnaTV.in" site_id="143102">Hare Krsnahare Krsna</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="HistoryTV18.in" site_id="143133">History TV 18</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="HungamaTV.in" site_id="143150">Hungama TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IBC24.in" site_id="143156">IBC 24</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IndiaNewsHaryana.in" site_id="143192">India News Haryana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IndiaToday.in" site_id="143197">India Today</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IndiaTV.in" site_id="143199">India TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="InvestigationDiscovery.in" site_id="157811">Investigation Discovery</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IsharaTV.in" site_id="159015">Ishara TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="IshwarBhaktiTV.in" site_id="143213">Ishwar Bhakti</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="JalshaMovies.in" site_id="143219">Jalsha Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="JinvaniChannel.in" site_id="143230">Jinvani</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Jonack.in" site_id="143238">Jonack TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="KanakNews.in" site_id="143252">Kanak News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="KhushbooBangla.in" site_id="143265">Khusboo Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="KolkataTV.in" site_id="143271">Kolkata TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="LokshahiNews.in" site_id="143284">Lokshahi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Maiboli.in" site_id="143295">Mailboli</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanGrand.in" site_id="143302">Manoranjan Grand</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanMovies.in" site_id="143303">Manoranjan Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ManoranjanTV.in" site_id="143304">Manoranjan TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Mastiii.in" site_id="143308">Mastiii</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MBCTV.in" site_id="135691">MBC TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Mh1Music.in" site_id="143536">MH1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MirrorNow.in" site_id="143543">Mirror Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MNPlus.in" site_id="143548">MN+</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MNX.in" site_id="143549">MNX</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MoviesNow.in" site_id="143554">Movies Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MTV.in" site_id="143558">MTV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="MusicIndia.in" site_id="143563">Music India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NationalGeographic.in" site_id="143574">National Geographic Channel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NationalGeographicWild.in" site_id="143572">National Geographic Wild</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NDTV24x7.in" site_id="154895">NDTV 24X7</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NDTVIndia.in" site_id="157588">NDTV India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Nepal1.in" site_id="143584">Nepal 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18AssamNorthEast.in" site_id="143606">News18 Assam North East</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Bangla.in" site_id="143607">News18 Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18BiharJharkhand.in" site_id="143608">News18 Bihar/Jharkhand</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Gujarati.in" site_id="143609">News18 Gujarati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18India.in" site_id="143610">News18 India</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Lokmat.in" site_id="143614">News18 Lokmat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18MadhyaPradeshChhattisgarh.in" site_id="143615">News18 Madhya Pradesh/Chhattisgarh</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Odia.in" site_id="143616">News18 Odia</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Punjab.in" site_id="143617">News18 Punjab</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Rajasthan.in" site_id="143618">News18 Rajasthan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News18Urdu.in" site_id="143621">News18 Urdu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="News24.in" site_id="90009">News24</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsLive.in" site_id="143595">News Live</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsNation.in" site_id="143596">News Nation</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsStateUPUK.in" site_id="143601">News State UP/UK</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsTimeBangla.in" site_id="143602">News Time Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NewsX.in" site_id="143624">News X</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Nickelodeon.in" site_id="143625">Nickelodeon</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NickJr.in" site_id="157820">Nick Jr.</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NickelodeonSonic.in" site_id="159124">Sonic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NickHDPlus.in" site_id="159121">Nick HD+</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NKTV24x7.in" site_id="143630">NK TV 24X7</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="NortheastLive.in" site_id="143633">Northeast Live</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ParasGold.in" site_id="143642">Paras Gold One</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PeaceofMindTV.in" site_id="143646">Peace of Mind</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Pitaara.in" site_id="143650">Pitaara TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Pogo.in" site_id="143663">Pogo</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PragNews.in" site_id="143671">Prag News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PrarthanaTV.in" site_id="143620">Prarthana TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PratidinTime.in" site_id="143674">Pratidin Time</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PTCChakde.in" site_id="143681">PTV Chakde</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PTCMusic.in" site_id="143682">PTC Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PTCNews.in" site_id="143683">PTC News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PTCPunjabi.in" site_id="159123">PTC Punjabi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PTCPunjabiGold.in" site_id="143684">PTC Punjabi Gold</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PTCSimran.in" site_id="143685">PTC Simran</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="PunjabiHits.in" site_id="143691">Punjabi Hits</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Ramdhenu.in" site_id="143717">Ramdhenu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Rang.in" site_id="143718">Rang</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Rengoni.in" site_id="143722">Rengoni TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RepublicBangla.in" site_id="143697">Republic Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RepublicTV.in" site_id="143723">Republic TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RepublicBharat.in" site_id="143724">Republic Bharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RomedyNow.in" site_id="143729">Romedy Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="RupasiBangla.in" site_id="143733">Rupasi Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SaamTV.in" site_id="143735">Saam TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SadhnaTV.in" site_id="143736">Sadhna TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SandeshNews.in" site_id="143755">Sandesh News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SangeetBangla.in" site_id="143756">Sangeet Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SangeetBhojpuri.in" site_id="143757">Sangeet Bhojpuri</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SansadTV1.in" site_id="143760">Sansad TV 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SansadTV2.in" site_id="143761">Sansad TV 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SanskarTV.in" site_id="143713">Sanskar</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SantvaniChannel.in" site_id="143763">Santvani TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SatsangTV.in" site_id="143766">Satsang</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ShemarooMarathiBana.in" site_id="143777">Shemaroo Marathibana</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ShemarooTV.in" site_id="143778">Shemaroo TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ShowBox.in" site_id="159097">ShowBox</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ShubhTV.in" site_id="143783">Shubh TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SongdewTV.in" site_id="142920">Songdew</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyAath.in" site_id="157968">Sony Aath</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyBBCEarth.in" site_id="143800">Sony BBC Earth</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyEntertainment.in" site_id="157589">Sony Entertainment</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyMarathi.in" site_id="157970">Sony Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyMax.in" site_id="157590">Sony Max</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyMax2.in" site_id="143801">Sony Max 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyPal.in" site_id="157973">Sony Pal</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyPix.in" site_id="143803">Sony Pix</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonySAB.in" site_id="159125">Sony SAB</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen1.in" site_id="159126">Sony Sports Ten 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen2.in" site_id="159127">Sony Sports Ten 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen3.in" site_id="159128">Sony Sports Ten 3</channel>
   <channel site="jiotv.com" lang="en" xmltv_id="SonySportsTen4.in" site_id="1774">Sony Sports Ten 4</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen5.in" site_id="10000000009310000">Sony Sports Ten 5</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyWah.in" site_id="10000000043750000">Sony Wah</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SonyYay.in" site_id="10000000051840000">Sony Yay</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Sports181.in" site_id="10000000075992500">Sports18 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Sports182.in" site_id="10000000075993004">Sports18 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Sports183.in" site_id="10000000075993005">Sports18 3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Sports18Khel.in" site_id="10000000075992521">Sports18 Khel</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarBharat.in" site_id="10000000053350000">Star Bharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarGold2.in" site_id="10000000009260000">Star Gold 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarGold.in" site_id="10000000000110000">Star Gold</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarGoldSelect.in" site_id="10000000052720000">Star Gold Select</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarJalsha.in" site_id="10000000004370000">Star Jalsha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarMaa.in" site_id="10000000001220000">Star Maa</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarMovies.in" site_id="10000000000100000">Star Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarMoviesSelect.in" site_id="10000000075992764">Star Movies Select</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarPlus.in" site_id="10000000000080000">Star Plus</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarPravah.in" site_id="10000000004700000">Star Pravah</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarSports1.in" site_id="10000000000190000">Star Sports 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarSports1Hindi.in" site_id="10000000002650000">Star Sports 1 HINDI</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarSports2.in" site_id="10000000014200000">Star Sports 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarSports3.in" site_id="10000000061080000">Star Sports 3</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarSportsFirst.in" site_id="10000000053100000">Star Sports First</channel>
-  <channel site="dishtv.in" lang="hi" xmltv_id="StarSports1Hindi.in" site_id="10000000002650000">Star Sports 1 Hindi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarSportsSelect1.in" site_id="10000000027760000">Star Sports Select 1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarSportsSelect2.in" site_id="10000000052670000">Star Sports Select 2</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarUtsav.in" site_id="10000000000130000">Star Utsav</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="StarUtsavMovies.in" site_id="10000000043030000">Star Utsav Movies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SudarshanNews.in" site_id="10000000003290000">Sudarshan News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SunBangla.in" site_id="10000000064090000">Sun Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SunMarathi.in" site_id="10000000075991959">Sun Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="SunTV.in" site_id="10000000000570000">Sun TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TarangMusic.in" site_id="10000000006490000">Tarang Music</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TarangTV.in" site_id="10000000006060000">Tarang</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TheQIndia.us" site_id="10000000075992171">The Q</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TimesNow.in" site_id="10000000000870000">Times Now</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TimesNowNavbharat.in" site_id="10000000075992392">Times Now Navbharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TimesNowWorld.in" site_id="10000000051880000">Times Now World</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TLC.in" site_id="10000000000330000">TLC</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TopperTV.in" site_id="10000000004980000">Topper TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Travelxp.in" site_id="10000000007410000">Travelxp</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TV9Bangla.in" site_id="10000000075990238">TV9 Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TV9Bharatvarsh.in" site_id="10000000065110000">TV9 Bharatvash</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TV9Gujarati.in" site_id="10000000004240000">TV9 Gujarati</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="TV9Marathi.in" site_id="10000000004930000">TV9 Maharashtra</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="VH1.in" site_id="10000000000950000">VH1</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="VIPNews.in" site_id="10000000075992392">VIP News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="VTVNews.in" site_id="10000000007310000">V TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="WION.in" site_id="10000000047630000">WION</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Zee24Ghanta.in" site_id="10000000002490000">Zee 24 Ghanta</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Zee24Kalak.in" site_id="10000000053330000">Zee 24 Kalak</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Zee24Taas.in" site_id="10000000002220000">Zee 24 Taas</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeAction.in" site_id="10000000000960000">Zee Action</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeAnmol.in" site_id="10000000017600000">Zee Anmol</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeAnmolCinema.in" site_id="10000000048680000">Zee Anmol Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBangla.in" site_id="10000000000280000">Zee Bangla</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBanglaCinema.in" site_id="10000000012700000">Zee Bangla Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBollywood.in" site_id="10000000060840000">Zee Bollywood</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBusiness.in" site_id="10000000001140000">Zee Business</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeCafe.in" site_id="10000000000260000">Zee Cafe</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeCinema.in" site_id="10000000000210000">Zee Cinema</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeCinemaAsia.in" site_id="10000000007790000">Zee Cinema Asia</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeCinemalu.in" site_id="10000000048510000">Zee Cinemalu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeClassic.in" site_id="10000000001020000">Zee Classic</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeHindustan.in" site_id="10000000005520000">Zee Bharat</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeKannada.in" site_id="10000000001000000">Zee Kannada</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeMarathi.in" site_id="10000000000220000">Zee Marathi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeNews.in" site_id="10000000000930000">Zee News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeePunjabi.in" site_id="10000000072200000">Zee Punjabi</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeRajasthan.in" site_id="10000000018400000">Zee Rajasthan News</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeSalaam.in" site_id="10000000005820000">Zee Salaam</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeSarthak.in" site_id="10000000009490000">Zee Sartha</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeTalkies.in" site_id="10000000002760000">Zee Talkies</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeTelugu.in" site_id="10000000000250000">Zee Telugu</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeTV.in" site_id="10000000000200000">Zee TV</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeYuva.in" site_id="10000000047760000">Zee Yuva</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="ZeeZest.in" site_id="10000000075990084">Zee Zest</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Zing.in" site_id="10000000000970000">Zing</channel>
-  <channel site="dishtv.in" lang="en" xmltv_id="Zoom.in" site_id="10000000000690000">Zoom</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonySportsTen5.in" site_id="159129">Sony Sports Ten 5</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyWah.in" site_id="157974">Sony Wah</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SonyYay.in" site_id="159100">Sony Yay</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarBharat.in" site_id="159130">Star Bharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarGold2.in" site_id="158297">Star Gold 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarGold.in" site_id="159131">Star Gold</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarGoldSelect.in" site_id="143817">Star Gold Select</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarJalsha.in" site_id="143819">Star Jalsha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarKiran.in" site_id="143820">Star Kiran</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarMaa.in" site_id="143821">Star Maa</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarMovies.in" site_id="143829">Star Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarMoviesSelect.in" site_id="143830">Star Movies Select</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarPlus.in" site_id="143832">Star Plus</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarPravah.in" site_id="143834">Star Pravah</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports1.in" site_id="143837">Star Sports 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports1Hindi.in" site_id="143838">Star Sports 1 Hindi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports2.in" site_id="143845">Star Sports 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports2Hindi.in" site_id="143808">Star Sports 2 Hindi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports2Kannada.in" site_id="143847">Star Sports 2 Kannada</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports2Telugu.in" site_id="158351">Star Sports 2 Telugu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports2Tamil.in" site_id="158352">Star Sports 2 Tamil</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSports3.in" site_id="143846">Star Sports 3</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSportsKhel.in" site_id="143809">Star Sports Khel</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSportsSelect1.in" site_id="143849">Star Sports Select 1</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarSportsSelect2.in" site_id="143851">Star Sports Select 2</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarUtsav.in" site_id="159132">Star Utsav</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="StarUtsavMovies.in" site_id="143856">Star Utsav Movies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SudarshanNews.in" site_id="143870">Sudarshan News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SunBangla.in" site_id="143871">Sun Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SunMarathi.in" site_id="143875">Sun Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SunTV.in" site_id="117852">Sun TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="SuperHangama.us" site_id="143883">Super Hungama</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TarangMusic.in" site_id="143926">Tarang Music</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TarangTV.in" site_id="143927">Tarang</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TheQIndia.us" site_id="144002">The Q</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TimesNow.in" site_id="144006">Times Now</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TimesNowNavbharat.in" site_id="144007">Times Now Navbharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TimesNowWorld.in" site_id="144008">Times Now World</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TLC.in" site_id="123500">TLC</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Travelxp.in" site_id="144015">Travelxp</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TV9Bangla.in" site_id="144026">TV9 Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TV9Bharatvarsh.in" site_id="144027">TV9 Bharatvash</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TV9Gujarati.in" site_id="144028">TV9 Gujarati</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="TV9Marathi.in" site_id="144029">TV9 Maharashtra</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="VTVNews.in" site_id="144083">V TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="WION.in" site_id="144087">WION</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Zee24Ghanta.in" site_id="144431">Zee 24 Ghanta</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Zee24Kalak.in" site_id="144432">Zee 24 Kalak</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Zee24Taas.in" site_id="144433">Zee 24 Taas</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeAction.in" site_id="144434">Zee Action</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeAnmol.in" site_id="144435">Zee Anmol</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeAnmolCinema.in" site_id="144436">Zee Anmol Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBangla.in" site_id="158049">Zee Bangla</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBanglaCinema.in" site_id="144437">Zee Bangla Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBollywood.in" site_id="144438">Zee Bollywood</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeBusiness.in" site_id="144439">Zee Business</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeCafe.in" site_id="144440">Zee Cafe</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeChitramandir.in" site_id="144442">Zee Chitramandir</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeCinema.in" site_id="144443">Zee Cinema</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeCinemalu.in" site_id="144445">Zee Cinemalu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeClassic.in" site_id="144447">Zee Classic</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeHindustan.in" site_id="144450">Zee Bharat</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeKannada.in" site_id="144451">Zee Kannada</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeMarathi.in" site_id="144457">Zee Marathi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeNews.in" site_id="159298">Zee News</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeePunjabi.in" site_id="144464">Zee Punjabi</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeRajasthan.in" site_id="144465">Zee Rajasthan</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeSalaam.in" site_id="144466">Zee Salaam</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeSarthak.in" site_id="144467">Zee Sartha</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeTalkies.in" site_id="144469">Zee Talkies</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeTelugu.in" site_id="144473">Zee Telugu</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeTV.in" site_id="144479">Zee TV</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeYuva.in" site_id="144481">Zee Yuva</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="ZeeZest.in" site_id="144482">Zee Zest</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Zing.in" site_id="144484">Zing</channel>
+  <channel site="dishtv.in" lang="en" xmltv_id="Zoom.in" site_id="157600">Zoom</channel>
   #Indonesia
   <channel site="visionplus.id" lang="id" xmltv_id="AnimaxAsia.sg" site_id="00000000000000000065">Animax</channel>
   <channel site="visionplus.id" lang="id" xmltv_id="ANTV.id" site_id="00000000000000000010">ANTV</channel>
@@ -2819,7 +2816,6 @@
   <channel site="sat.tv" lang="ar" xmltv_id="BayyinatTV.iq" site_id="2#53#قناة بينات">Bayyinat</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlFallujah.iq" site_id="1#41#الفلوجة">Al Fallujah</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlGhadeer.iq" site_id="1#42#الغدير">Al Ghadeer</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="AlHurraIraq.iq" site_id="1#43#الحرة عراق">Al Hurra Iraq</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlIraqiya.iq" site_id="1#43#العراقية">Al Iraqiya</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlIraqiyaNews.iq" site_id="1#43#العراقية الإخبارية">Al Iraqiya News</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="AlIraqiyaEducation.iq" site_id="1#43#العراقية التعليمية">Al Iraqiya Education</channel>
@@ -2874,31 +2870,32 @@
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaThree.ie" site_id="1929/virgin-media-three">Virgin Media Three</channel>
   <channel site="tvireland.ie" lang="en" xmltv_id="VirginMediaTwo.ie" site_id="1209/virgin-media-two">Virgin Media Two</channel>
   #Israel
-  <channel site="yes.co.il" lang="he" xmltv_id="5Sport.il" site_id="PT26">5Sport</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="5Plus.il" site_id="CH54">5Plus</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="5Gold.il" site_id="MU03">5Gold</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="5Live.il" site_id="PT62">5Live</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="5Stars.il" site_id="CH56">5Stars</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="5Sport4K.il" site_id="CH55">5Sport 4K</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="BabyTV.il" site_id="TA02">בייבי</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Bollywood.il" site_id="PT02">Bollywood</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Bollyshow.il" site_id="CH68">Bollyshow</channel>
-  <channel site="yes.co.il" lang="ru" xmltv_id="Channel9.il" site_id="TV50">9 канал</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Channel13.il" site_id="CH36">ערוץ 13</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Channel24.il" site_id="TV67">24 החדש</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="DesignChannel.il" site_id="CH61">ערוץ העיצוב</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="EEntertainment.il" site_id="TV10">E!</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="EgoTotal.il" site_id="PT12">ערוץ אגו</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Eurosport1.il" site_id="PT39">Eurosport 1</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Eurosport2.il" site_id="CH33">Eurosport 2</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="FoodChannel.il" site_id="PT20">ערוץ האוכל</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="5Sport.il" site_id="sport5-hd-il">5Sport</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="5Plus.il" site_id="yes-sport5-plus-il-hd">5Plus</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="5Gold.il" site_id="sport5-gold-il">5Gold</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="5Live.il" site_id="sport5-plus-live-hd-il">5Live</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="5Stars.il" site_id="sport5-stars-il-hd">5Stars</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="5Sport4K.il" site_id="sport5-il-4k">5Sport 4K</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="BabyTV.il" site_id="baby-il">Baby TV</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Bollywood.il" site_id="hot-bollywood-il">Bollywood</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="BollywoodClassics.il" site_id="bollywood-classic-il-hd">Bollywood Classics</channel>
+  <channel site="raspberrytv.net" lang="ru" xmltv_id="Channel9.il" site_id="9-kanal-hd-il">9 канал</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Channel13.il" site_id="13-kanal-il">ערוץ 13</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Channel24.il" site_id="channel24-il-hd">24 החדש</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="DesignChannel.il" site_id="the-design-channel-il-hd">ערוץ העיצוב</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="DiscoveryChannel.il" site_id="discovery-hd-il">Discovery Channel</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="EEntertainment.il" site_id="e-il">E!</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="EgoTotal.il" site_id="ego-total-il">ערוץ אגו</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Eurosport1.il" site_id="eurosport1-il-hd">Eurosport 1</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Eurosport2.il" site_id="eurosport2-il-hd">Eurosport 2</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="FoodChannel.il" site_id="the-food-channel-il">ערוץ האוכל</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Foody.il" site_id="foody-il-hd">Foody</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="GoodLife.il" site_id="TV09">החיים הטובים</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="GoodLife.il" site_id="good-life-il">החיים הטובים</channel>
   <channel site="yes.co.il" lang="ar" xmltv_id="HalaTV.il" site_id="PT63">هلا</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="HealthChannel.il" site_id="PT14">ערוץ בריאות</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="History.il" site_id="TV19">היסטוריה</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="HomePlus.il" site_id="PT41">בית+</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Hop.il" site_id="TV24">הופ!</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="HealthChannel.il" site_id="health-il">ערוץ בריאות</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="History.il" site_id="history-il">היסטוריה</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="HomePlus.il" site_id="home-plus-il">בית+</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Hop.il" site_id="hop-childhood-il">הופ!</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOT3.il" site_id="hot3-hd-il">HOT3</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOT8.il" site_id="hot-8-il-hd">HOT8</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOTComedy.il" site_id="hot-comedy-central-il-hd">HOT Comedy</channel>
@@ -2910,45 +2907,44 @@
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOTEntertainment.il" site_id="entertainment-il">HOT Entertainment</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOTHBO.il" site_id="hot-hbo-il">HOT HBO</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HOTSenior.il" site_id="hot-senior-il-hd">HOT Senior</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="HumourChannel.il" site_id="CH65">ערוץ ההומור</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="InvestigationDiscovery.il" site_id="CH27">Investigation Discovery</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Kan11.il" site_id="CH30">כאן 11</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="KanEducational.il" site_id="CH57">כאן חינוכית</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Keshet12.il" site_id="CH34">קשת 12</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="MusicIL.il" site_id="CH79">ערוץ האח הגדול</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Now14.il" site_id="PT92">עכשיו 14</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="One.il" site_id="TR01">One</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="One2.il" site_id="CH58">One 2</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="HumorChannel.il" site_id="humor-channel-il-hd">Humor Channel</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="i24NEWSHebrew.il" site_id="i24-il">i24NEWS עִברִית</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Junior.il" site_id="junior-il">ג'וניור</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Kan11.il" site_id="11-kanal-il">כאן 11</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="KanEducational.il" site_id="kan23-il">כאן חינוכית</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Keshet12.il" site_id="12-kanal-il">קשת 12</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Luli.il" site_id="luli-il">לולי</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="MusicChannel.il" site_id="music-il-hd">ערוץ האח הגדול</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Now14.il" site_id="14-kanal-il">עכשיו 14</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="One.il" site_id="one-hd-il">One</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="One2.il" site_id="one2-hd-il">One 2</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="OneDoco.il" site_id="one-doco-il-hd">One Doco</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Sport1.il" site_id="PT53">ספורט 1</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Sport2.il" site_id="PT98">ספורט 2</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Sport3.il" site_id="CH09">ספורט 3</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Sport4.il" site_id="CH11">ספורט 4</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="TurkishDrama2.il" site_id="CH80">ערוץ הדרמות הטורקיות 2</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="TurkishDrama3.il" site_id="CH77">ערוץ הדרמות הטורקיות 3</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="TurkishDramaPlus.il" site_id="CH70">ערוץ הדרמות הטורקיות+</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="VivaPremium.il" site_id="CH89">ויוה פרימיום</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Viva.il" site_id="TV20">ויוה</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="VivaPlus.il" site_id="PT60">ויוה+</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="VivaVintage.il" site_id="CH75">ויוה וינטג'</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="WallaPlus.il" site_id="CN06">Walla +</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Yaldut.il" site_id="PT46">ילדות ישראלית</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="YamTichoni.il" site_id="PT72">ים תיכוני</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="YamTichoni2.il" site_id="CN04">הערוץ הים תיכוני 2</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="YamTichoniPlus.il" site_id="CH90">הערוץ הים תיכוני+</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesMoviesDrama.il" site_id="YSA1">yes Movies Drama</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesMoviesAction.il" site_id="YSA2">yes Movies Action</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesMoviesComedy.il" site_id="YSA3">yes Movies Comedy</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesIsraeliCinema.il" site_id="YSAU">yes קולנוע ישראלי</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesPlusCinema.il" site_id="YS19">yes+ Cinema</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesPlusDiamonds.il" site_id="YS20">yes+ Diamonds</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesPopUp.il" site_id="YESI">Yes POP UP</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesDoko.il" site_id="YSAT">yes דוקו</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesTVDrama.il" site_id="YESU">yes TV Drama</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesTVAction.il" site_id="YESV">yes TV Action</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="yesTVComedy.il" site_id="YESP">yes TV Comedy</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="Zoom.il" site_id="PT85">Zoom</channel>
-  <channel site="yes.co.il" lang="he" xmltv_id="i24NEWSHebrew.il" site_id="CN28">i24NEWS עִברִית</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport1.il" site_id="sport1-hd-il">ספורט 1</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport2.il" site_id="sport2-hd-il">ספורט 2</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport3.il" site_id="sport3-hd-il">ספורט 3</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Sport4.il" site_id="sport4-hd-il">ספורט 4</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="TravelChannel.il" site_id="travel-channel-il">Travel Channel</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="TurkishDrama2.il" site_id="turkish-dramas2-il-hd">ערוץ הדרמות הטורקיות 2</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="TurkishDrama3.il" site_id="turkish-dramas3-il-hd">ערוץ הדרמות הטורקיות 3</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="TurkishDramaPlus.il" site_id="turkish-dramas-plus-il">ערוץ הדרמות הטורקיות+</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Viva.il" site_id="viva-il">ויוה</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="VivaPremium.il" site_id="viva-premium-il-hd">ויוה פרימיום</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="VivaPlus.il" site_id="viva-plus-il">ויוה+</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="VivaVintage.il" site_id="viva-vintage-il">ויוה וינטג'</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoni.il" site_id="yamtihoni-il">הערוץ הים תיכוני</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoni2.il" site_id="yam-tichoni2-il-hd">הערוץ הים תיכוני 2</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="YamTichoniPlus.il" site_id="yam-tichoni-plus-hd">הערוץ הים תיכוני+</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesDrama.il" site_id="yes-movies-drama-il-hd">yes Movies Drama</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesAction.il" site_id="yes-movies-action-hd-il">yes Movies Action</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesComedy.il" site_id="yes-movies-comedy-il">yes Movies Comedy</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesMoviesKids.il" site_id="yes-movies-kids-hd-il">yes Movies Kids</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesIsraeliCinema.il" site_id="yes-israel-il">yes קולנוע ישראלי</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesPopUp.il" site_id="pop-up-il-hd">Yes POP UP</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesDoko.il" site_id="yes-docu-il-hd">yes דוקו</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesTVDrama.il" site_id="yes-drama-hd-il">yes TV Drama</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesTVAction.il" site_id="yes-action-hd-il">yes TV Action</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="yesTVComedy.il" site_id="yes-comedy-hd-il">yes TV Comedy</channel>
+  <channel site="raspberrytv.net" lang="he" xmltv_id="Zoom.il" site_id="zoom-il">Zoom</channel>
   #Italy
   <channel site="superguidatv.it" lang="it" xmltv_id="7Gold.it" site_id="italia-7-gold/310">Italia 7 Gold</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="20.it" site_id="DTH#10458">20</channel>
@@ -3705,107 +3701,95 @@
   <channel site="canalplus.com" lang="fr" xmltv_id="ChinguitTV.mr" site_id="mr#180126">Chinguit TV</channel>
   <channel site="canalplus.com" lang="fr" xmltv_id="Elwataniya.mr" site_id="mr#180127">El Watania</channel>
   #Mexico
-  <channel site="reportv.com.ar" lang="es" xmltv_id="adn40.mx" site_id="3282">adn40</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AdrenalinaSports.mx" site_id="2793">Adrenalina Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AdultSwim.mx" site_id="8383">[adult swim]</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AE.mx" site_id="430">A&amp;E</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AMC.mx" site_id="mx#amc">AMC</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AnimalPlanet.mx" site_id="85">Animal Planet</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="APlus.mx" site_id="mx#a-plus">a más+</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AXN.mx" site_id="1122">AXN</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Azteca7.mx" site_id="1091">Azteca 7</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AztecaUno.mx" site_id="1134">Azteca Uno</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AzCimena.mx" site_id="3159">Azteca Cinema</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AzClic.mx" site_id="1806">Azteca Clic</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="AzCorazon.mx" site_id="815">Azteca Corazón</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Bandamax.mx" site_id="502">Bandamax</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="bitMe.mx" site_id="1959">bitMe</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Canal5.mx" site_id="1081">Canal 5</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Canal14.mx" site_id="2779">Canal Catorce</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="OnceMexico.mx" site_id="1088">Canal Once</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Canal22.mx" site_id="1087">Canal 22</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Cartoonito.mx" site_id="422">Cartoonito</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="CartoonNetwork.mx" site_id="402">Cartoon Network</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Cinecanal.mx" site_id="242">Cinecanal</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Cinemax.mx" site_id="1576">Cinemax</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ClaroSports.mx" site_id="5300">Claro Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ComedyCentral.mx" site_id="4217">Comedy Central</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DePelicula.mx" site_id="137">De Película</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryChannel.mx" site_id="3062">Discovery Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryHomeHealth.mx" site_id="1135">Discovery Home &amp; Health</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryKids.mx" site_id="439">Discovery Kids</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryTheater.mx" site_id="mx#discovery-hd-theater">Discovery Theater</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryTurbo.mx" site_id="492">Discovery Turbo</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DiscoveryWorld.mx" site_id="mx#discovery-world-hd">Discovery World</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DisneyChannel.mx" site_id="874">Disney Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DisneyJunior.mx" site_id="817">Disney Junior</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="DistritoComedia.mx" site_id="703">Distrito Comedia</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="EEntertainment.mx" site_id="490">E!</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ElFinancieroBloombergTV.mx" site_id="3085">El Financiero Bloomberg</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ElNu9ve.mx" site_id="1047">El Nu9ve</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ExcelsiorTV.mx" site_id="mx#cadenatres">Excelsior TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN.mx" site_id="1150">ESPN</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN2.mx" site_id="1149">ESPN 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN3.mx" site_id="2336">ESPN 3</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ESPN4.mx" site_id="6869">ESPN 4</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoodNetwork.mx" site_id="3438">Food Network</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Foro.mx" site_id="1080">FOROtv</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports.mx" site_id="577">FOX Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports2.mx" site_id="1266">FOX Sports 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSports3.mx" site_id="1101">FOX Sports 3</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FoxSportsPremium.mx" site_id="7166">FOX Sports Premium</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="FX.mx" site_id="498">FX</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Golden.mx" site_id="474">Golden</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="GoldenEdge.mx" site_id="7414">Golden Edge</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="adn40.mx" site_id="mx#proyecto-40">adn40</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AdultSwim.mx" site_id="mx#tru-tv">[adult swim]</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AE.mx" site_id="mx#a-e-mundo">A&amp;E</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AMC.mx" site_id="mx#amc">AMC</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AnimalPlanet.mx" site_id="mx#animal-planet">Animal Planet</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="APlus.mx" site_id="mx#a-plus">a más+</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AXN.mx" site_id="mx#axn">AXN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Azteca7.mx" site_id="mx#azteca-7">Azteca 7</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AztecaUno.mx" site_id="mx#azteca-13">Azteca Uno</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="AzCorazon.mx" site_id="mx#az-corazon">Azteca Corazón</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Bandamax.mx" site_id="mx#bandamax">Bandamax</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal5.mx" site_id="mx#xh-gc-canal-5">Canal 5</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="OnceMexico.mx" site_id="mx#xeipn-canal-11">Canal Once</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Canal22.mx" site_id="mx#canal-22-conaculta">Canal 22</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cartoonito.mx" site_id="mx#boomerang-cartoon">Cartoonito</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CartoonNetwork.mx" site_id="mx#cartoon-network">Cartoon Network</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cinecanal.mx" site_id="mx#cinecanal">Cinecanal</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Cinemax.mx" site_id="mx#cinemax">Cinemax</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="CineMexicano.mx" site_id="mx#tvc-cine-mexicano-cmc">Cine Mexicano</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ComedyCentral.mx" site_id="mx#comedy-central">Comedy Central</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DePelicula.mx" site_id="mx#de-pelicula-hd">De Película</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryChannel.mx" site_id="mx#discovery-channel">Discovery Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DiscoveryHomeHealth.mx" site_id="mx#discovery-home-and-health">Discovery Home &amp; Health</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Discovery Kids.mx" site_id="mx#discovery-kids">Discovery Kids</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Discovery Theater.mx" site_id="mx#discovery-hd-theater">Discovery Theater</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Discovery World.mx" site_id="mx#discovery-world-hd">Discovery World</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DisneyChannel.mx" site_id="mx#disney">Disney Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DisneyJunior.mx" site_id="mx#disney-jr">Disney Junior</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DisneyXD.mx" site_id="mx#disney-xd">Disney XD</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="DistritoComedia.mx" site_id="mx#distrito-comedia">Distrito Comedia</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="EEntertainment.mx" site_id="mx#entertainment">E!</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ElFinancieroBloombergTV.mx" site_id="mx#el-financiero-bloomberg">El Financiero Bloomberg</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ElGourmet.mx" site_id="mx#el-gourmet">El Gourmet</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ElNu9ve.mx" site_id="mx#galavision">El Nu9ve</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ExcelsiorTV.mx" site_id="mx#cadenatres">Excelsior TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPN.mx" site_id="mx#espn">ESPN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPN2.mx" site_id="mx#espn-2">ESPN 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPN3.mx" site_id="mx#espn-3">ESPN 3</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="ESPN4.mx" site_id="mx#espn-plus-hd">ESPN 4</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="EuropaEuropa.mx" site_id="mx#europa-europa">Europa Europa</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FilmandArts.mx" site_id="mx#film-arts">film&amp;arts</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Foro.mx" site_id="mx#canal-4-foro-tv">FOROtv</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoxSports.mx" site_id="mx#fox-sports">FOX Sports</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoxSports2.mx" site_id="mx#fox-sports-2">FOX Sports 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FoxSports3.mx" site_id="mx#fox-sports-3">FOX Sports 3</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="FX.mx" site_id="mx#fx">FX</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Glitz.mx" site_id="mx#glitz">Glitz</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Golden.mx" site_id="mx#golden">Golden</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="GoldenEdge.mx" site_id="mx#golden-edge">Golden Edge</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="GoldenPremier.mx" site_id="golden_premier">Golden Premier</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HiSports.mx" site_id="8543">Hi! Sports</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBO.mx" site_id="246">HBO</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBO2.mx" site_id="2900">HBO 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOFamily.mx" site_id="335">HBO Family</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOMundi.mx" site_id="1349">HBO Mundi</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOPop.mx" site_id="1378">HBO Pop</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="HBOXtreme.mx" site_id="2688">HBO Xtreme</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="History.mx" site_id="444">History</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="History2.mx" site_id="2473">History 2</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ImagenTV.mx" site_id="2253">Imagen TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="InvestigationDiscovery.mx" site_id="436">Investigation Discovery</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="LasEstrellas.mx" site_id="1079">Las Estrellas</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="MilenioTelevision.mx" site_id="1048">Milenio TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="MTV.mx" site_id="296">MTV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="MXNuestroCine.mx" site_id="3711">MX Nuestro Cine</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="NationalGeographic.mx" site_id="472">National Geographic</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Nickelodeon.mx" site_id="297">Nickelodeon</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="NickJr.mx" site_id="1227">Nick Jr.</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="NUMusic.mx" site_id="mx#canal-nu">Canal NU</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="OnceNinasyNinos.mx" site_id="3136">Once Niñas y Niños</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="ParamountNetwork.mx" site_id="4249">Paramount Network</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBO.mx" site_id="mx#hbo-oeste">HBO</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBO2.mx" site_id="mx#hbo-2">HBO 2</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOFamily.mx" site_id="mx#hbo-family">HBO Family</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOMundi.mx" site_id="mx#max">HBO Mundi</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="HBOPlus.mx" site_id="mx#hbo-plus-mexico">HBO+</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="History.mx" site_id="mx#history">History</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="InvestigationDiscovery.mx" site_id="mx#discovery-id">Investigation Discovery</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="LasEstrellas.mx" site_id="mx#canal-de-las-estrellas-xew">Las Estrellas</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MilenioTelevision.mx" site_id="mx#milenio-tv">Milenio TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="MTV.mx" site_id="mx#m-tv">MTV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NationalGeographic.mx" site_id="mx#national-geographic">National Geographic</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Nickelodeon.mx" site_id="mx#nickelodeon">Nickelodeon</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NickJr.mx" site_id="mx#nick-jr">Nick Jr.</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="NUMusic.mx" site_id="mx#canal-nu">Canal NU</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="PXSports.mx" site_id="px_sports">PX Sports</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="SkyOneMexico.mx" site_id="sky_one_mexico">Sky One</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="SkySportsMexico.mx" site_id="sky_sports_1_mexico">Sky Sports</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="SkySportsLaLiga.mx" site_id="sky_sports_16">Sky Sports LaLiga</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="SkySportsBundesliga.mx" site_id="sky_sports_24">Sky Sports Bundesliga</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="SonyChannel.mx" site_id="447">Sony Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Space.mx" site_id="1370">Space</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="StarChannel.mx" site_id="1212">Star Channel</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="StudioUniversal.mx" site_id="516">Studio Universal</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TCM.mx" site_id="910">TCM</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Teleformula.mx" site_id="1201">Telefórmula</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Telehit.mx" site_id="1564">Telehit</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TelehitMusica.mx" site_id="1565">Telehit Música</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Telemundo.mx" site_id="1152">Telemundo</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TLC.mx" site_id="2766">TLC</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Tlnovelas.mx" site_id="1563">Tlnovelas</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TNT.mx" site_id="442">TNT</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTNovelas.mx" site_id="8200">TNT Novelas</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TNTSeries.mx" site_id="3040">TNT Series</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Tooncast.mx" site_id="880">Tooncast</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TUDN.mx" site_id="947">TUDN</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="SonyChannel.mx" site_id="mx#sony">Sony Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Space.mx" site_id="mx#space">Space</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarChannel.mx" site_id="mx#fox">Star Channel</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StarLife.mx" site_id="mx#fox-life">Star Life</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="StudioUniversal.mx" site_id="mx#studio-universal">Studio Universal</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TCM.mx" site_id="mx#tcm">TCM</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Telehit.mx" site_id="mx#telehit">Telehit</channel>
+  <channel site="gatotv.com" lang="es" xmltv_id="TelehitMusica.mx" site_id="telehit_musica">Telehit Música</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Telemundo.mx" site_id="mx#telemundo">Telemundo</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Tlnovelas.mx" site_id="mx#tlnovelas">Tlnovelas</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TNT.mx" site_id="mx#tnt">TNT</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TNTNovelas.mx" site_id="mx#tbs-veryfunny-pan">TNT Novelas</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="Tooncast.mx" site_id="mx#tooncast">Tooncast</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TUDN.mx" site_id="mx#tdn">TUDN</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="TVCDeportes.mx" site_id="tvc_deportes">TVC Deportes</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="TVUNAM.mx" site_id="1109">TV UNAM</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="Unicable.mx" site_id="1068">Unicable</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="UniversalTV.mx" site_id="449">Universal TV</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="USANetwork.mx" site_id="8329">USA Network</channel>
-  <channel site="reportv.com.ar" lang="es" xmltv_id="WarnerTV.mx" site_id="1133">Warner TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="TVUNAM.mx" site_id="mx#tv-unam">TV UNAM</channel>
+  <channel site="gatotv.com" lang="es" xmltv_id="Unicable.mx" site_id="unicable">Unicable</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="UniversalTV.mx" site_id="mx#universal-channel">Universal TV</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="USANetwork.mx" site_id="mx#fox-sy-fy">USA Network</channel>
+  <channel site="mi.tv" lang="es" xmltv_id="WarnerTV.mx" site_id="mx#warner">Warner TV</channel>
   #Moldova
   <channel site="iptvx.one" lang="ru" xmltv_id="AgroTV.md" site_id="agro-tv-md">Agro TV Moldova</channel>
   <channel site="iptvx.one" lang="ro" xmltv_id="Cinema1.md" site_id="cinema1-md">Cinema 1 MD • Cinema 1 Молдова • Cinema 1</channel>
@@ -7135,7 +7119,6 @@
   <channel site="elcinema.com" lang="ar" xmltv_id="StarWorld.ae" site_id="1329">Star World</channel>
   <channel site="osn.com" lang="ar" xmltv_id="TLC.ae" site_id="TLC">TLC</channel> 
   #News
-  <channel site="sat.tv" lang="ar" xmltv_id="AlHurra.us" site_id="1#43#الحرة">Al Hurra</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="BBCArabic.uk" site_id="1#45#بي بي سي عربي">BBC Arabic</channel>
   <channel site="sat.tv" lang="ar" xmltv_id="CGTNArabic.cn" site_id="1#33#الصين العربية">CGTN العربية</channel>
   <channel site="dstv.com" lang="fr" xmltv_id="CGTNFrench.cn" site_id="nga#449">CGTN Français</channel>
