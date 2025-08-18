@@ -1,39 +1,30 @@
 {
   "name": "epg",
   "scripts": {
-    "act:check": "act pull_request -W .github/workflows/check.yml",
     "act:update": "act workflow_dispatch -W .github/workflows/update.yml",
-    "api:load": "tsx scripts/commands/api/load.ts",
-    "api:generate": "tsx scripts/commands/api/generate.ts",
-    "channels:lint": "tsx scripts/commands/channels/lint.mts",
-    "channels:parse": "tsx scripts/commands/channels/parse.ts",
-    "channels:edit": "tsx scripts/commands/channels/edit.ts",
-    "channels:validate": "tsx scripts/commands/channels/validate.ts",
-    "sites:init": "tsx scripts/commands/sites/init.ts",
-    "sites:update": "tsx scripts/commands/sites/update.ts",
-    "grab": "tsx scripts/commands/epg/grab.ts",
-    "lint": "npx eslint \"{scripts,tests,sites}/**/*.{ts,mts,js}\"",
-    "test": "cross-env TZ=Pacific/Nauru npx jest --runInBand",
-    "postinstall": "skip-postinstall || npm run api:load",
-    "prepare": "husky"
+    "api:load": "npx tsx scripts/commands/api/load.ts",
+    "api:generate": "npx tsx scripts/commands/api/generate.ts",
+    "channels:lint": "npx tsx scripts/commands/channels/lint.ts",
+    "channels:parse": "npx tsx scripts/commands/channels/parse.ts",
+    "channels:editor": "npx tsx scripts/commands/channels/editor.ts",
+    "channels:validate": "npx tsx scripts/commands/channels/validate.ts",
+    "grab": "npx tsx scripts/commands/epg/grab.ts",
+    "serve": "npx serve",
+    "lint": "npx eslint \"{scripts,tests}/**/*.{ts,js}\"",
+    "test": "run-script-os",
+    "test:win32": "SET \"TZ=Pacific/Nauru\" && npx jest --runInBand",
+    "test:default": "TZ=Pacific/Nauru npx jest --runInBand",
+    "postinstall": "npm run api:load"
   },
   "private": true,
+  "author": "Arhey",
   "license": "UNLICENSED",
   "jest": {
-    "setupFiles": [
-      "<rootDir>/node_modules/jest-offline"
-    ],
     "transform": {
-      "^.+\\.(ts|js)$": "@swc/jest"
+      "^.+\\.(ts|js)$": "ts-jest"
     },
-    "testMatch": [
-      "<rootDir>/sites/**/*.test.(js|ts)",
-      "<rootDir>/tests/commands/**/*.test.(js|ts)"
-    ],
-    "testTimeout": 10000,
-    "transformIgnorePatterns": [
-      "<rootDir>/node_modules/(?!parse-duration/.*|@freearhey/core/.*|glob/.*|srcset/.*|balanced-match/.*|minimatch/.*)"
-    ]
+    "testRegex": "(tests|sites)/(.*?/)?.*test.(js|ts)$",
+    "testTimeout": 10000
   },
   "dependencies": {
     "@alex_neo/jest-expect-message": "^1.0.5",
@@ -70,8 +61,8 @@
     "cli-progress": "^3.12.0",
     "commander": "^14.0.0",
     "consola": "^3.4.2",
-    "cross-env": "^10.0.0",
-    "csv-parser": "^3.2.0",
+    "cron": "^2.4.3",
+    "csv-parser": "^3.0.0",
     "cwait": "^1.1.2",
     "dayjs": "^1.11.13",
     "epg-grabber": "^0.41.0",
@@ -82,18 +73,17 @@
     "fs-extra": "^11.3.0",
     "glob": "^11.0.3",
     "globals": "^16.3.0",
+    "googletrans": "^1.0.4",
     "husky": "^9.1.7",
     "iconv-lite": "^0.6.3",
     "inquirer": "^12.8.2",
     "jest": "^30.0.5",
     "jest-offline": "^1.0.1",
     "langs": "^2.0.0",
-    "libxml2-wasm": "^0.5.0",
-    "lodash.orderby": "^4.6.0",
-    "lodash.sortby": "^4.7.0",
-    "lodash.startcase": "^4.4.0",
-    "lodash.uniqby": "^4.7.0",
+    "libxmljs2": "^0.35.0",
+    "lodash": "^4.17.21",
     "luxon": "^3.7.1",
+    "markdown-include": "^0.4.3",
     "mockdate": "^3.0.5",
     "nedb-promises": "^6.2.3",
     "node-cleanup": "^2.1.2",
@@ -119,5 +109,8 @@
     "unzipit": "^1.4.3",
     "uuid": "^11.1.0",
     "wildcard-match": "^5.1.4"
+  },
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
   }
 }
