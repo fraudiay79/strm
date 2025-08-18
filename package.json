@@ -70,6 +70,7 @@
     "cli-progress": "^3.12.0",
     "commander": "^14.0.0",
     "consola": "^3.4.2",
+    "cron": "^2.4.3",
     "cross-env": "^10.0.0",
     "csv-parser": "^3.2.0",
     "cwait": "^1.1.2",
