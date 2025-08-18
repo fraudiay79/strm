@@ -1,14 +1,14 @@
 import { Storage, Collection, DateTime, Logger } from '@freearhey/core'
+import { ChannelsParser, ConfigLoader, ApiChannel, Queue } from './'
 import { SITES_DIR, DATA_DIR } from '../constants'
-import { GrabOptions } from '../commands/epg/grab'
-import { ConfigLoader, Queue } from './'
-import { SiteConfig } from 'epg-grabber'
+import { Channel, SiteConfig } from 'epg-grabber'
 import path from 'path'
+import { GrabOptions } from '../commands/epg/grab'
 
-interface QueueCreatorProps {
+type QueueCreatorProps = {
   logger: Logger
   options: GrabOptions
-  channels: Collection
+  parsedChannels: Collection
 }
 
 export class QueueCreator {
@@ -16,29 +16,41 @@ export class QueueCreator {
   logger: Logger
   sitesStorage: Storage
   dataStorage: Storage
-  channels: Collection
+  parser: ChannelsParser
+  parsedChannels: Collection
   options: GrabOptions
 
-  constructor({ channels, logger, options }: QueueCreatorProps) {
-    this.channels = channels
+  constructor({ parsedChannels, logger, options }: QueueCreatorProps) {
+    this.parsedChannels = parsedChannels
     this.logger = logger
     this.sitesStorage = new Storage()
     this.dataStorage = new Storage(DATA_DIR)
+    this.parser = new ChannelsParser({ storage: new Storage() })
     this.options = options
     this.configLoader = new ConfigLoader()
   }
 
   async create(): Promise<Queue> {
-    let index = 0
+    const channelsContent = await this.dataStorage.json('channels.json')
+    const channels = new Collection(channelsContent).map(data => new ApiChannel(data))
+
     const queue = new Queue()
-    for (const channel of this.channels.all()) {
-      channel.index = index++
+    for (const channel of this.parsedChannels.all()) {
       if (!channel.site || !channel.site_id || !channel.name) continue
+      if (this.options.lang && channel.lang !== this.options.lang) continue
 
       const configPath = path.resolve(SITES_DIR, `${channel.site}/${channel.site}.config.js`)
       const config: SiteConfig = await this.configLoader.load(configPath)
 
-      if (!channel.xmltv_id) {
+      if (channel.xmltv_id) {
+        const found: ApiChannel = channels.first(
+          (_channel: ApiChannel) => _channel.id === channel.xmltv_id
+        )
+        if (found) {
+          channel.icon = found.logo
+          channel.name = found.name
+        }
+      } else {
         channel.xmltv_id = channel.site_id
       }
 
