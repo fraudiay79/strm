@@ -32,8 +32,8 @@ jobs:
           #npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com.channels.xml
           #npm run grab --- --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=guides/allente.no.xml --days=1 --timeout=90000
-          npm run grab --- --site=ipko.tv --maxConnections=5 --output=guides/allente.no.xml --days=1 --timeout=90000
-          #npm run channels:parse --- --config=./sites/ipko.tv/ipko.tv.config.js --output=./sites/ipko.tv/ipko.tv.channels.xml
+          npm run grab --- --site=galamtv.kz --maxConnections=5 --output=guides/allente.no.xml --days=1 --timeout=90000
+          #npm run channels:parse --- --config=./sites/galamtv.kz/galamtv.kz.config.js --output=./sites/galamtv.kz/galamtv.kz.channels.xml
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:ar
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com_ar.channels.xml --set=lang:en
           
@@ -42,6 +42,6 @@ jobs:
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
         git add -f guides/allente.no.xml
-        #git add -f sites/ipko.tv/ipko.tv.channels.xml
+        #git add -f sites/galamtv.kz/galamtv.kz.channels.xml
         git commit -m "Update xml"
         git push -f origin main
