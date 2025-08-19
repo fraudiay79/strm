@@ -66,8 +66,7 @@ module.exports = {
     return data.map(item => ({
       lang: 'sq',
       name: String(item.channel.title),
-      site_id: String(item.channel.id),
-      icon: String(item.channel.logo)
+      site_id: String(item.channel.id)
     }))
   }
 }
