@@ -1,6 +1,5 @@
-import dayjs from 'dayjs'
-import utc from 'dayjs/plugin/utc'
-
+const dayjs = require('dayjs')
+const utc = require('dayjs/plugin/utc')
 dayjs.extend(utc)
 
 const date = {}
@@ -11,4 +10,4 @@ date.getUTC = function (d = null) {
   return dayjs.utc().startOf('d')
 }
 
-export default date
+module.exports = date
