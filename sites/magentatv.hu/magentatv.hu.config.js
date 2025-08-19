@@ -6,14 +6,14 @@ const API_ENDPOINT = 'https://tv-hu-prod.yo-digital.com/bifrost'
 
 const headers = {
   app_key: 'exSJHBiSAN6wAAeqdWLdTUfdTi2PNark',
-  app_version: '02.0.1091',
+  app_version: '02.0.1290',
   'device-id': crypto.randomUUID(),
   'x-request-session-id': crypto.randomUUID(),
   'x-request-tracking-id': crypto.randomUUID(),
   'x-call-type': 'GUEST_USER',
   'x-tv-flow': 'EPG',
   'x-tv-step': 'EPG_SCHEDULES',
-  'x-user-agent': 'web|web|Chrome-131|02.0.1091|1'
+  'x-user-agent': 'web|web|Chrome-139|02.0.1290|1'
 }
 
 module.exports = {
