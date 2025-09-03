@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:3
 #EXT-X-STREAM-INF:PROGRAM-ID=1
-https://cdn02.teletica.com/Repretel11/Stream/playlist.m3u8?wmsAuthSign=c2VydmVyX3RpbWU9OS8zLzIwMjUgMTA6MTQ6MjEgUE0maGFzaF92YWx1ZT0xWVQ0TE5rYUw3YmZETEpEZmJldUJnPT0mdmFsaWRtaW51dGVzPTEmaWQ9dGRtYXg=
+https://api.streann.tech/loadbalancer/services/public/channels-secure/65dd141be4b0140cbf38a2f8/playlist.m3u8
