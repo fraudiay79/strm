@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=2800000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1280x720
-https://vod-c57.interspace.com:443/channel_abr/46/receiver/46_p4/chunks.m3u8?nimblesessionid=53556097&wmsAuthSign=c2VydmVyX3RpbWU9OS8xMS8yMDI1IDU6MDk6NDQgUE0maGFzaF92YWx1ZT1td1p3MU0yUmtIV1RYY0F3b1hFb3NBPT0mdmFsaWRtaW51dGVzPTMwJmlkPTY4YzMwMjU4MjgxZmI=
+#EXT-X-STREAM-INF:BANDWIDTH=2900000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1280x720
+https://vod-c57.interspace.com:443/channel_abr/46/receiver/46_p4/chunks.m3u8?nimblesessionid=53565059&wmsAuthSign=c2VydmVyX3RpbWU9OS8xMS8yMDI1IDY6MTQ6MDcgUE0maGFzaF92YWx1ZT1ibm51a3RvcVJUMmtlTW5Ydjg5a3lBPT0mdmFsaWRtaW51dGVzPTMwJmlkPTY4YzMxMTZmMzJkZDU=
 #EXT-X-STREAM-INF:BANDWIDTH=1100000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1024x576
-https://vod-c57.interspace.com:443/channel_abr/46/receiver/46_p3/chunks.m3u8?nimblesessionid=53556097&wmsAuthSign=c2VydmVyX3RpbWU9OS8xMS8yMDI1IDU6MDk6NDQgUE0maGFzaF92YWx1ZT1td1p3MU0yUmtIV1RYY0F3b1hFb3NBPT0mdmFsaWRtaW51dGVzPTMwJmlkPTY4YzMwMjU4MjgxZmI=
+https://vod-c57.interspace.com:443/channel_abr/46/receiver/46_p3/chunks.m3u8?nimblesessionid=53565059&wmsAuthSign=c2VydmVyX3RpbWU9OS8xMS8yMDI1IDY6MTQ6MDcgUE0maGFzaF92YWx1ZT1ibm51a3RvcVJUMmtlTW5Ydjg5a3lBPT0mdmFsaWRtaW51dGVzPTMwJmlkPTY4YzMxMTZmMzJkZDU=
