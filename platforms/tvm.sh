@@ -10,61 +10,83 @@ fetch_channel_data() {
     
     echo "Fetching data for $channel_name (channel $channel_id)..."
     
-    # Fetch the HTML content
+    # First, get the main page to establish session
+    curl -s -L -c "$cookie_file" -b "$cookie_file" \
+         -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+         "https://tvmi.mt/" > /dev/null
+    
+    # Now fetch the channel page with proper headers
     local html_content
     html_content=$(curl -s -L \
-                      -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" \
-                      -H "accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7" \
-                      -H "accept-language: en-US,en;q=0.9" \
-                      -H "sec-ch-ua: \"Google Chrome\";v=\"140\", \"Not-A.Brand\";v=\"24\", \"Chromium\";v=\"140\"" \
-                      -H "sec-ch-ua-mobile: ?0" \
-                      -H "sec-ch-ua-platform: \"Windows\"" \
-                      -H "sec-fetch-dest: document" \
-                      -H "sec-fetch-mode: navigate" \
-                      -H "sec-fetch-site: same-origin" \
-                      -H "upgrade-insecure-requests: 1" \
+                      -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+                      -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8" \
+                      -H "Accept-Language: en-US,en;q=0.9" \
+                      -H "Accept-Encoding: gzip, deflate, br" \
+                      -H "DNT: 1" \
+                      -H "Connection: keep-alive" \
+                      -H "Upgrade-Insecure-Requests: 1" \
+                      -H "Sec-Fetch-Dest: document" \
+                      -H "Sec-Fetch-Mode: navigate" \
+                      -H "Sec-Fetch-Site: same-origin" \
+                      -H "Cache-Control: max-age=0" \
+                      -H "Referer: https://tvmi.mt/" \
                       -c "$cookie_file" \
                       -b "$cookie_file" \
                       "https://tvmi.mt/live/$channel_id")
     
-    # Debug: Check if we got HTML content
-    if [ -z "$html_content" ]; then
-        echo "  ERROR: No HTML content received"
+    # Save for debugging
+    echo "$html_content" > "debug_${channel_name}.html"
+    
+    # Check if we got meaningful content
+    if [ -z "$html_content" ] || [ ${#html_content} -lt 1000 ]; then
+        echo "  ERROR: Insufficient HTML content received (length: ${#html_content})"
         return 1
     fi
     
-    # Extract the video tag line
+    echo "  HTML content length: ${#html_content}"
+    
+    # Try to find the video tag - be more flexible with the search
     local video_tag
-    video_tag=$(echo "$html_content" | grep -o '<video[^>]*>')
+    video_tag=$(echo "$html_content" | grep -i '<video' | head -1)
     
     if [ -z "$video_tag" ]; then
-        echo "  ERROR: Could not find video tag in HTML"
-        echo "  First 200 chars of HTML: ${html_content:0:200}..."
+        echo "  WARNING: Could not find video tag directly, searching for data-jwt attribute..."
+        # Look for data-jwt attribute anywhere in the HTML
+        video_tag=$(echo "$html_content" | grep -i 'data-jwt=' | head -1)
+    fi
+    
+    if [ -z "$video_tag" ]; then
+        echo "  ERROR: Could not find video tag or data-jwt attribute"
+        echo "  First 500 chars of HTML:"
+        echo "${html_content:0:500}"
         return 1
     fi
     
-    echo "  Found video tag: ${video_tag:0:100}..."
+    echo "  Found tag: ${video_tag:0:150}..."
     
-    # Extract attributes from the video tag
+    # Extract attributes using more robust methods
     local jwt_token
-    jwt_token=$(echo "$video_tag" | grep -o 'data-jwt="[^"]*"' | head -1 | sed 's/data-jwt="//g' | sed 's/"//g')
+    jwt_token=$(echo "$video_tag" | sed -n 's/.*data-jwt="\([^"]*\)".*/\1/p')
     
     local dist_host
-    dist_host=$(echo "$video_tag" | grep -o 'data-dist-host="[^"]*"' | head -1 | sed 's/data-dist-host="//g' | sed 's/"//g')
+    dist_host=$(echo "$video_tag" | sed -n 's/.*data-dist-host="\([^"]*\)".*/\1/p')
     
     local dist_host_alt
-    dist_host_alt=$(echo "$video_tag" | grep -o 'data-dist-host-alt1="[^"]*"' | head -1 | sed 's/data-dist-host-alt1="//g' | sed 's/"//g')
+    dist_host_alt=$(echo "$video_tag" | sed -n 's/.*data-dist-host-alt1="\([^"]*\)".*/\1/p')
     
     local src_rel
-    src_rel=$(echo "$video_tag" | grep -o 'data-src-rel="[^"]*"' | head -1 | sed 's/data-src-rel="//g' | sed 's/"//g')
+    src_rel=$(echo "$video_tag" | sed -n 's/.*data-src-rel="\([^"]*\)".*/\1/p')
     
     echo "  Results:"
-    echo "    JWT: ${jwt_token:0:30}... (length: ${#jwt_token})"
+    echo "    JWT length: ${#jwt_token}"
+    if [ ${#jwt_token} -gt 20 ]; then
+        echo "    JWT sample: ${jwt_token:0:30}..."
+    fi
     echo "    Dist Host: $dist_host"
     echo "    Alt Dist Host: $dist_host_alt"
     echo "    Source Relative: $src_rel"
     
-    # Return values as global variables (since bash functions can't return multiple values easily)
+    # Return values as global variables
     eval "${channel_name}_jwt=\"$jwt_token\""
     eval "${channel_name}_dist_host=\"$dist_host\""
     eval "${channel_name}_dist_host_alt=\"$dist_host_alt\""
