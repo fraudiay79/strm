@@ -33,7 +33,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 tdmax.py
+            python3 echorouk.py
 
       - name: commit and push files
         run: |
