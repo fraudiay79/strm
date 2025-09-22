@@ -3,17 +3,6 @@
 # Cookie file
 cookie_file="cookies.txt"
 
-# Main script execution
-echo "Fetching channel data..."
-
-# Ensure links directory exists
-mkdir -p links/mt
-
-# Create backup of existing files
-cp links/mt/tvm.m3u8 links/mt/tvm.m3u8.bak 2>/dev/null || true
-cp links/mt/tvmnews.m3u8 links/mt/tvmnews.m3u8.bak 2>/dev/null || true
-cp links/mt/tvmsport.m3u8 links/mt/tvmsport.m3u8.bak 2>/dev/null || true
-
 # Function to fetch and parse data for a channel
 fetch_channel_data() {
     local channel_id=$1
@@ -38,12 +27,19 @@ fetch_channel_data() {
                       -b "$cookie_file" \
                       "https://tvmi.mt/live/$channel_id")
     
+    # Debug: Check if we got HTML content
+    if [ -z "$html_content" ]; then
+        echo "  ERROR: No HTML content received"
+        return 1
+    fi
+    
     # Extract the video tag line
     local video_tag
-    video_tag=$(echo "$html_content" | grep -o '<video[^>]*>' | head -1)
+    video_tag=$(echo "$html_content" | grep -o '<video[^>]*>')
     
     if [ -z "$video_tag" ]; then
         echo "  ERROR: Could not find video tag in HTML"
+        echo "  First 200 chars of HTML: ${html_content:0:200}..."
         return 1
     fi
     
@@ -51,52 +47,71 @@ fetch_channel_data() {
     
     # Extract attributes from the video tag
     local jwt_token
-    jwt_token=$(echo "$video_tag" | grep -o 'data-jwt="[^"]*"' | sed 's/data-jwt="//g' | sed 's/"//g')
+    jwt_token=$(echo "$video_tag" | grep -o 'data-jwt="[^"]*"' | head -1 | sed 's/data-jwt="//g' | sed 's/"//g')
     
     local dist_host
-    dist_host=$(echo "$video_tag" | grep -o 'data-dist-host="[^"]*"' | sed 's/data-dist-host="//g' | sed 's/"//g')
+    dist_host=$(echo "$video_tag" | grep -o 'data-dist-host="[^"]*"' | head -1 | sed 's/data-dist-host="//g' | sed 's/"//g')
     
     local dist_host_alt
-    dist_host_alt=$(echo "$video_tag" | grep -o 'data-dist-host-alt1="[^"]*"' | sed 's/data-dist-host-alt1="//g' | sed 's/"//g')
+    dist_host_alt=$(echo "$video_tag" | grep -o 'data-dist-host-alt1="[^"]*"' | head -1 | sed 's/data-dist-host-alt1="//g' | sed 's/"//g')
     
     local src_rel
-    src_rel=$(echo "$video_tag" | grep -o 'data-src-rel="[^"]*"' | sed 's/data-src-rel="//g' | sed 's/"//g')
+    src_rel=$(echo "$video_tag" | grep -o 'data-src-rel="[^"]*"' | head -1 | sed 's/data-src-rel="//g' | sed 's/"//g')
     
-    echo "Results for $channel_name:"
-    echo "  JWT: ${jwt_token:0:50}... (total length: ${#jwt_token})"
-    echo "  Dist Host: $dist_host"
-    echo "  Alt Dist Host: $dist_host_alt"
-    echo "  Source Relative: $src_rel"
-    echo ""
+    echo "  Results:"
+    echo "    JWT: ${jwt_token:0:30}... (length: ${#jwt_token})"
+    echo "    Dist Host: $dist_host"
+    echo "    Alt Dist Host: $dist_host_alt"
+    echo "    Source Relative: $src_rel"
     
-    # Return values
-    echo "$jwt_token"
-    echo "$dist_host"
-    echo "$dist_host_alt"
-    echo "$src_rel"
+    # Return values as global variables (since bash functions can't return multiple values easily)
+    eval "${channel_name}_jwt=\"$jwt_token\""
+    eval "${channel_name}_dist_host=\"$dist_host\""
+    eval "${channel_name}_dist_host_alt=\"$dist_host_alt\""
+    eval "${channel_name}_src_rel=\"$src_rel\""
 }
+
+# Main script execution
+echo "Fetching channel data..."
+
+# Ensure links directory exists
+mkdir -p links/mt
+
+# Create backup of existing files
+cp links/mt/tvm.m3u8 links/mt/tvm.m3u8.bak 2>/dev/null || true
+cp links/mt/tvmnews.m3u8 links/mt/tvmnews.m3u8.bak 2>/dev/null || true
+cp links/mt/tvmsport.m3u8 links/mt/tvmsport.m3u8.bak 2>/dev/null || true
 
 # Fetch data for each channel
 echo "=== TVM ==="
-tvm_results=$(fetch_channel_data "2" "tvm")
-jwt_tvm=$(echo "$tvm_results" | sed -n '1p')
-dist_host_tvm=$(echo "$tvm_results" | sed -n '2p')
-dist_host_alt_tvm=$(echo "$tvm_results" | sed -n '3p')
-src_rel_tvm=$(echo "$tvm_results" | sed -n '4p')
+fetch_channel_data "2" "tvm"
+jwt_tvm="$tvm_jwt"
+dist_host_tvm="$tvm_dist_host"
+dist_host_alt_tvm="$tvm_dist_host_alt"
+src_rel_tvm="$tvm_src_rel"
 
+echo ""
 echo "=== TVM News ==="
-tvmnews_results=$(fetch_channel_data "3" "tvmnews")
-jwt_tvmnews=$(echo "$tvmnews_results" | sed -n '1p')
-dist_host_tvmnews=$(echo "$tvmnews_results" | sed -n '2p')
-dist_host_alt_tvmnews=$(echo "$tvmnews_results" | sed -n '3p')
-src_rel_tvmnews=$(echo "$tvmnews_results" | sed -n '4p')
+fetch_channel_data "3" "tvmnews"
+jwt_tvmnews="$tvmnews_jwt"
+dist_host_tvmnews="$tvmnews_dist_host"
+dist_host_alt_tvmnews="$tvmnews_dist_host_alt"
+src_rel_tvmnews="$tvmnews_src_rel"
 
+echo ""
 echo "=== TVM Sport ==="
-tvmsport_results=$(fetch_channel_data "4" "tvmsport")
-jwt_tvmsport=$(echo "$tvmsport_results" | sed -n '1p')
-dist_host_tvmsport=$(echo "$tvmsport_results" | sed -n '2p')
-dist_host_alt_tvmsport=$(echo "$tvmsport_results" | sed -n '3p')
-src_rel_tvmsport=$(echo "$tvmsport_results" | sed -n '4p')
+fetch_channel_data "4" "tvmsport"
+jwt_tvmsport="$tvmsport_jwt"
+dist_host_tvmsport="$tvmsport_dist_host"
+dist_host_alt_tvmsport="$tvmsport_dist_host_alt"
+src_rel_tvmsport="$tvmsport_src_rel"
+
+echo ""
+echo "=== Summary ==="
+echo "TVM JWT length: ${#jwt_tvm}, Host: $dist_host_tvm"
+echo "TVM News JWT length: ${#jwt_tvmnews}, Host: $dist_host_tvmnews"
+echo "TVM Sport JWT length: ${#jwt_tvmsport}, Host: $dist_host_tvmsport"
+echo ""
 
 # Update the m3u8 files
 update_count=0
@@ -133,10 +148,10 @@ update_m3u8() {
 https://${final_dist_host}/${jwt_token}/live/${channel_id}${final_src_rel}
 EOF
         
-        echo "✓ Updated $channel_name - Host: $final_dist_host, Path: $final_src_rel"
+        echo "✓ Updated $channel_name - JWT length: ${#jwt_token}, Host: $final_dist_host"
         return 0
     else
-        echo "✗ Failed to get valid data for $channel_name"
+        echo "✗ Failed to get valid data for $channel_name (JWT length: ${#jwt_token}, Host: $dist_host)"
         cp "${file_path}.bak" "$file_path" 2>/dev/null || true
         return 1
     fi
@@ -167,10 +182,8 @@ elif [ $update_count -gt 0 ]; then
 else
     echo "❌ Failed to update any M3U8 files"
     echo ""
-    echo "Debugging info:"
-    echo "JWT TVM length: ${#jwt_tvm}"
-    echo "JWT TVM News length: ${#jwt_tvmnews}"
-    echo "JWT TVM Sport length: ${#jwt_tvmsport}"
+    echo "The video tag might not be in the HTML or the structure is different."
+    echo "Please check if curl is receiving the correct HTML content."
     exit 1
 fi
 
