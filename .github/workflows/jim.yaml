@@ -2,7 +2,7 @@ name: Fetch M3U8 via Proxy
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */4 * * *'  # Every 4 hours
+    - cron: '0 */4 * * *'
 
 jobs:
   fetch:
@@ -11,56 +11,61 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
-    - name: Fetch via Proxy
+    - name: Create directories
       run: |
+        mkdir -p platforms/links/fi
+      
+    - name: Fetch via Double Proxy
+      run: |
+        # First, get the M3U8 URL through your proxy
         PROXY_URL="https://bbc.mesutgokhan10.workers.dev/?mediaId=2584964"
-        OUTPUT_DIR="platforms/links/fi"
-        OUTPUT_FILE="$OUTPUT_DIR/jim.m3u8"
-        
-        # Create directory if it doesn't exist
-        mkdir -p "$OUTPUT_DIR"
-        
-        echo "Fetching JSON from proxy..."
         JSON_RESPONSE=$(curl -s "$PROXY_URL")
-        
-        # Extract the m3u8 URL using the correct path
         M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.media.streamUrls.webHls.url')
         
         if [ -n "$M3U8_URL" ] && [ "$M3U8_URL" != "null" ]; then
-            echo "✅ Extracted URL: $M3U8_URL"
+            echo "M3U8 URL: $M3U8_URL"
             
-            # Download m3u8 content
-            echo "Downloading m3u8 content..."
-            curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
-                 -H "Referer: https://www.nelonenmedia.fi/" \
-                 "$M3U8_URL" | \
-            awk -v base="${M3U8_URL%/*}/" '
-            /^[^#].*\.m3u8/ {
-                if ($0 ~ /^https?:\/\//) print $0
-                else print base $0
-                next
-            }
-            { print }' > "$OUTPUT_FILE"
+            # Now modify your Cloudflare Worker to also proxy the M3U8 content
+            # Add this parameter to indicate we want the M3U8 content
+            M3U8_PROXY_URL="https://bbc.mesutgokhan10.workers.dev/?getM3U8=$(echo -n "$M3U8_URL" | base64 -w 0)"
             
-            echo "✅ M3U8 file created successfully at: $OUTPUT_FILE"
-            echo "First few lines:"
-            head -5 "$OUTPUT_FILE"
+            echo "Fetching M3U8 through proxy..."
+            curl -s "$M3U8_PROXY_URL" > platforms/links/fi/jim.m3u8
             
+            # Basic validation
+            if [ -s platforms/links/fi/jim.m3u8 ] && head -1 platforms/links/fi/jim.m3u8 | grep -q "EXTM3U"; then
+                echo "✅ Successfully fetched M3U8"
+            else
+                echo "❌ Failed to fetch valid M3U8"
+                # Fallback: try direct download with more headers
+                curl -s \
+                  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+                  -H "Referer: https://www.nelonenmedia.fi/" \
+                  -H "Origin: https://www.nelonenmedia.fi" \
+                  -H "Accept: application/x-mpegURL, application/vnd.apple.mpegurl, */*" \
+                  "$M3U8_URL" | \
+                awk -v base="${M3U8_URL%/*}/" '
+                /^[^#].*\.m3u8/ {
+                    if ($0 ~ /^https?:\/\//) print $0
+                    else print base $0
+                    next
+                }
+                { print }' > platforms/links/fi/jim.m3u8
+            fi
         else
-            echo "❌ Failed to extract URL"
+            echo "❌ Could not extract M3U8 URL"
             exit 1
         fi
         
-    - name: Commit and push
+    - name: Commit if changed
       run: |
-        OUTPUT_FILE="platforms/links/fi/jim.m3u8"
-        if [ -s "$OUTPUT_FILE" ]; then
+        if [ -s platforms/links/fi/jim.m3u8 ]; then
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add "$OUTPUT_FILE"
-          git diff --staged --quiet || git commit -m "Update FI Jim m3u8 - $(date +'%Y-%m-%d %H:%M')"
+          git add platforms/links/fi/jim.m3u8
+          git diff --staged --quiet || git commit -m "Update Jim M3U8"
           git push
         else
-          echo "❌ $OUTPUT_FILE is empty, skipping commit"
+          echo "File is empty, nothing to commit"
           exit 1
         fi
