@@ -11,14 +11,6 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
-    - name: Setup environment
-      run: |
-        # Test the proxy first
-        echo "Testing proxy connection..."
-        curl -s "https://bbc.mesutgokhan10.workers.dev/?mediaId=2584964" > response.json
-        cat response.json
-        echo -e "\n--- End of response ---"
-        
     - name: Fetch via Proxy
       run: |
         PROXY_URL="https://bbc.mesutgokhan10.workers.dev/?mediaId=2584964"
@@ -26,44 +18,71 @@ jobs:
         echo "Fetching JSON from proxy..."
         JSON_RESPONSE=$(curl -s "$PROXY_URL")
         
-        # Debug: See what we received
-        echo "Raw response:"
-        echo "$JSON_RESPONSE" | head -c 200
-        echo -e "\n"
+        # Debug: Show the full clip.playback structure to see where streamUrls is located
+        echo "=== Full clip.playback structure ==="
+        echo "$JSON_RESPONSE" | jq '.clip.playback' 2>/dev/null || echo "Cannot parse JSON"
         
-        # Try different extraction paths
+        # Try multiple possible paths for the m3u8 URL
+        echo "=== Trying different extraction paths ==="
+        
+        # Path 1: The most likely path based on your earlier structure
         M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.streamUrls.webHls.url // empty')
+        echo "Path 1 result: $M3U8_URL"
         
+        # Path 2: Alternative path
+        M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.hlsUrl // empty')
+        echo "Path 2 result: $M3U8_URL"
+        
+        # Path 3: Look for any URL containing m3u8
+        M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.. | select(.url? != null) | select(.url | contains("m3u8")) | .url' 2>/dev/null | head -1)
+        echo "Path 3 result: $M3U8_URL"
+        
+        # Path 4: Search the entire JSON for m3u8 URLs
+        M3U8_URL=$(echo "$JSON_RESPONSE" | grep -o '"url":"[^"]*m3u8[^"]*"' | head -1 | cut -d'"' -f4)
+        echo "Path 4 result: $M3U8_URL"
+        
+        # Path 5: Show all URLs in the response to help debug
+        echo "=== All URLs in response ==="
+        echo "$JSON_RESPONSE" | jq -r '.. | .url? // empty' 2>/dev/null | grep -v null || echo "No URLs found"
+        
+        # If we still haven't found it, let's examine the streamUrls structure
         if [ -z "$M3U8_URL" ]; then
-          echo "Trying alternative path..."
-          M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.streamUrls.webHls.url // empty')
+            echo "=== streamUrls structure ==="
+            echo "$JSON_RESPONSE" | jq '.clip.playback.streamUrls' 2>/dev/null || echo "No streamUrls found"
+            
+            echo "=== Available keys under clip.playback ==="
+            echo "$JSON_RESPONSE" | jq '.clip.playback | keys' 2>/dev/null || echo "Cannot get keys"
         fi
         
-        if [ -z "$M3U8_URL" ] || [ "$M3U8_URL" = "null" ]; then
-          echo "❌ Failed to extract URL"
-          echo "Available keys in response:"
-          echo "$JSON_RESPONSE" | jq 'keys' 2>/dev/null || echo "Invalid JSON or no keys found"
-          exit 1
+        # Final extraction attempt with the correct path
+        M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.streamUrls.webHls.url // .clip.playback.streamUrls.android.url // .clip.playback.hlsUrl // empty')
+        
+        if [ -n "$M3U8_URL" ] && [ "$M3U8_URL" != "null" ]; then
+            echo "✅ Extracted URL: $M3U8_URL"
+            
+            # Download m3u8 content
+            echo "Downloading m3u8 content..."
+            curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+                 -H "Referer: https://www.nelonenmedia.fi/" \
+                 "$M3U8_URL" | \
+            awk -v base="${M3U8_URL%/*}/" '
+            /^[^#].*\.m3u8/ {
+                if ($0 ~ /^https?:\/\//) print $0
+                else print base $0
+                next
+            }
+            { print }' > jim.m3u8
+            
+            echo "✅ M3U8 file created successfully"
+            echo "First few lines:"
+            head -5 jim.m3u8
+            
+        else
+            echo "❌ Failed to extract URL"
+            echo "=== Full response for manual inspection ==="
+            echo "$JSON_RESPONSE" | jq . 2>/dev/null || echo "$JSON_RESPONSE"
+            exit 1
         fi
-        
-        echo "✅ Extracted URL: $M3U8_URL"
-        
-        # Download m3u8 content
-        echo "Downloading m3u8 content..."
-        curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
-             -H "Referer: https://www.nelonenmedia.fi/" \
-             "$M3U8_URL" | \
-        awk -v base="${M3U8_URL%/*}/" '
-        /^[^#].*\.m3u8/ {
-            if ($0 ~ /^https?:\/\//) print $0
-            else print base $0
-            next
-        }
-        { print }' > jim.m3u8
-        
-        echo "✅ M3U8 file created successfully"
-        echo "First few lines:"
-        head -5 jim.m3u8
         
     - name: Commit and push
       run: |
