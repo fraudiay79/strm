@@ -41,6 +41,7 @@ jobs:
             python3 myvideoge.py
             python3 polska.py
             python3 tdmax.py
+            python3 echorouk.py
             python3 nowtvtr.py > links/nowtvtr.m3u8
             #python3 tv8md.py > links/md/tv8md.m3u8
             sh tvm.sh
