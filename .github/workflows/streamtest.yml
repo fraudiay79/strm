@@ -34,7 +34,7 @@ jobs:
             pwd
             cd ./platforms/
             #python3 echorouk.py
-            bash tvm.sh
+            bash jim.sh
 
       - name: commit and push files
         run: |
