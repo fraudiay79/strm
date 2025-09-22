@@ -1,0 +1,45 @@
+name: Fetch M3U8 via Proxy
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */4 * * *'  # Every 4 hours
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      
+    - name: Fetch via Proxy
+      run: |
+        PROXY_URL="https://bbc.mesutgokhan10.workers.dev/"  # Replace with your actual URL
+        
+        # Get JSON through proxy
+        JSON_RESPONSE=$(curl -s "$PROXY_URL")
+        M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.streamUrls.webHls.url')
+        
+        if [ -n "$M3U8_URL" ] && [ "$M3U8_URL" != "null" ]; then
+          echo "URL extracted via proxy"
+          # Download m3u8 content (this should work now since it comes from proxy IP)
+          curl -s "$M3U8_URL" | \
+          awk -v base="${M3U8_URL%/*}/" '
+          /^[^#].*\.m3u8/ {
+              if ($0 ~ /^https?:\/\//) print $0
+              else print base $0
+              next
+          }
+          { print }' > jim.m3u8
+          echo "✅ M3U8 file updated"
+        else
+          echo "❌ Failed to extract URL"
+          exit 1
+        fi
+        
+    - name: Commit and push
+      run: |
+        git config user.email "actions@github.com"
+        git config user.name "GitHub Actions"
+        git add jim.m3u8
+        git diff --staged --quiet || git commit -m "Update m3u8"
+        git push
