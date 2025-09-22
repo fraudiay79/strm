@@ -1,77 +1,45 @@
 #!/bin/bash
 
-# URL to fetch the JSON data from
 URL="https://mcc.nm-ovp.nelonenmedia.fi/v2/media/2584964"
 OUTPUT_FILE="jim.m3u8"
-TEMP_FILE=$(mktemp)
-DEBUG_FILE="debug_response.json"
 
-echo "Fetching JSON response from: $URL"
+# More comprehensive headers
+curl -s -L \
+  -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+  -H "Accept: application/json, text/plain, */*" \
+  -H "Accept-Language: en-US,en;q=0.9,fi;q=0.8" \
+  -H "Accept-Encoding: gzip, deflate, br" \
+  -H "Referer: https://www.nelonenmedia.fi/" \
+  -H "Origin: https://www.nelonenmedia.fi" \
+  -H "DNT: 1" \
+  -H "Connection: keep-alive" \
+  -H "Sec-Fetch-Dest: empty" \
+  -H "Sec-Fetch-Mode: cors" \
+  -H "Sec-Fetch-Site: same-site" \
+  -H "Pragma: no-cache" \
+  -H "Cache-Control: no-cache" \
+  "$URL" | jq -r '.streamUrls.webHls.url' > url.txt
 
-# First, let's see what the actual response looks like
-curl -s -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36" "$URL" > "$DEBUG_FILE"
+M3U8_URL=$(cat url.txt)
 
-echo "Raw response saved to: $DEBUG_FILE"
-echo "First 200 characters of response:"
-head -c 200 "$DEBUG_FILE"
-echo -e "\n"
-
-# Check if the response is valid JSON and extract the URL using different possible paths
-M3U8_URL=$(cat "$DEBUG_FILE" | jq -r '.streamUrls.webHls.url // .streamUrls.android.url // .streamUrls.apple.url // .streamUrls.hls // .hls_url // .url // empty' 2>/dev/null)
-
-if [ -z "$M3U8_URL" ]; then
-    echo "Trying alternative extraction methods..."
+if [ -n "$M3U8_URL" ] && [ "$M3U8_URL" != "null" ]; then
+    echo "URL extracted: $M3U8_URL"
     
-    # Try to find any URL that contains m3u8
-    M3U8_URL=$(cat "$DEBUG_FILE" | grep -o '"url":[^,]*' | grep m3u8 | head -1 | cut -d'"' -f4)
-fi
-
-if [ -z "$M3U8_URL" ]; then
-    echo "Response content:"
-    cat "$DEBUG_FILE"
-    echo -e "\nError: Could not extract m3u8 URL from the JSON response"
-    echo "Available keys in JSON:"
-    cat "$DEBUG_FILE" | jq -r 'keys[]' 2>/dev/null || cat "$DEBUG_FILE" | jq -r '.streamUrls | keys[]' 2>/dev/null || echo "Cannot parse JSON structure"
-    exit 1
-fi
-
-echo "Extracted m3u8 URL: $M3U8_URL"
-
-# Fetch the m3u8 content
-if curl -s -H "User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36" "$M3U8_URL" -o "$TEMP_FILE"; then
-    echo "Successfully fetched m3u8 content"
-    
-    # Check if the file is actually an m3u8 file
-    if ! head -1 "$TEMP_FILE" | grep -q "EXTM3U"; then
-        echo "Warning: Downloaded content doesn't appear to be a valid m3u8 file"
-        echo "First line: $(head -1 "$TEMP_FILE")"
-    fi
-    
-    # Extract base URL and convert relative URLs to absolute
-    BASE_URL="${M3U8_URL%/*}/"
-    
-    # Process with awk to convert relative URLs
-    awk -v base="$BASE_URL" '
+    curl -s -L \
+      -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+      -H "Referer: https://www.nelonenmedia.fi/" \
+      -H "Origin: https://www.nelonenmedia.fi" \
+      "$M3U8_URL" | \
+    awk -v base="${M3U8_URL%/*}/" '
     /^[^#].*\.m3u8/ {
-        if ($0 ~ /^https?:\/\//) {
-            print $0
-        } else {
-            print base $0
-        }
+        if ($0 ~ /^https?:\/\//) print $0
+        else print base $0
         next
     }
-    { print }' "$TEMP_FILE" > "$OUTPUT_FILE"
+    { print }' > "$OUTPUT_FILE"
     
-    echo "Successfully saved processed m3u8 content to $OUTPUT_FILE"
-    echo "First few lines of output:"
-    head -10 "$OUTPUT_FILE"
-    
-    rm "$TEMP_FILE"
+    echo "Done!"
 else
-    echo "Error: Failed to fetch m3u8 content from the URL"
-    rm "$TEMP_FILE" 2>/dev/null
+    echo "Failed to extract URL"
     exit 1
 fi
-
-# Clean up
-rm "$DEBUG_FILE" 2>/dev/null
