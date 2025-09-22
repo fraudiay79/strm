@@ -3,6 +3,15 @@
 # Cookie file
 cookie_file="cookies.txt"
 
+# Function to extract attribute value from HTML
+extract_attribute() {
+    local html="$1"
+    local attribute="$2"
+    
+    # Use grep with Perl-style regex to properly extract the attribute value
+    echo "$html" | grep -oP "$attribute=\"\K[^\"]*" | head -1
+}
+
 # Function to fetch fresh cookies, JWT token, and distribution host for a specific channel
 fetch_channel_data() {
     local channel_id=$1
@@ -30,24 +39,25 @@ fetch_channel_data() {
     # Debug: Save HTML content for inspection
     echo "$html_content" > "debug_${channel_name}.html"
     
-    # Extract JWT token - look for data-jwt attribute in video tag
+    # Extract attributes using robust parsing
     local jwt_token
-    jwt_token=$(echo "$html_content" | grep -o 'data-jwt="[^"]*"' | head -1 | sed 's/data-jwt="//' | sed 's/"//')
+    jwt_token=$(extract_attribute "$html_content" "data-jwt")
     
-    # Extract distribution host
     local dist_host
-    dist_host=$(echo "$html_content" | grep -o 'data-dist-host="[^"]*"' | head -1 | sed 's/data-dist-host="//' | sed 's/"//')
+    dist_host=$(extract_attribute "$html_content" "data-dist-host")
     
-    # Extract alternative distribution host (fallback)
     local dist_host_alt
-    dist_host_alt=$(echo "$html_content" | grep -o 'data-dist-host-alt1="[^"]*"' | head -1 | sed 's/data-dist-host-alt1="//' | sed 's/"//')
+    dist_host_alt=$(extract_attribute "$html_content" "data-dist-host-alt1")
     
-    # Extract source relative path
     local src_rel
-    src_rel=$(echo "$html_content" | grep -o 'data-src-rel="[^"]*"' | head -1 | sed 's/data-src-rel="//' | sed 's/"//')
+    src_rel=$(extract_attribute "$html_content" "data-src-rel")
     
     echo "Extracted data for $channel_name:"
-    echo "  JWT: ${jwt_token:0:50}..."  # Show first 50 chars only
+    if [ -n "$jwt_token" ]; then
+        echo "  JWT: ${jwt_token:0:60}... (length: ${#jwt_token})"
+    else
+        echo "  JWT: NOT FOUND"
+    fi
     echo "  Dist Host: $dist_host"
     echo "  Alt Dist Host: $dist_host_alt"
     echo "  Source Relative: $src_rel"
@@ -66,8 +76,8 @@ validate_data() {
         return 1
     fi
     
-    if [ "${#jwt}" -lt 50 ]; then
-        echo "  Validation failed: JWT token too short (${#jwt} chars)"
+    if [ "${#jwt}" -lt 100 ]; then  # Reduced minimum length requirement
+        echo "  Validation failed: JWT token too short (${#jwt} chars), expected at least 100"
         return 1
     fi
     
@@ -78,6 +88,46 @@ validate_data() {
     
     echo "  Validation passed: JWT=${#jwt} chars, Host=$dist_host"
     return 0
+}
+
+# Alternative parsing method if the first one fails
+alternative_parse() {
+    local channel_name="$1"
+    local html_file="debug_${channel_name}.html"
+    
+    if [ ! -f "$html_file" ]; then
+        echo ""
+        return
+    fi
+    
+    echo "Trying alternative parsing method for $channel_name..."
+    
+    # Try to find the video tag and extract attributes from it
+    local video_tag
+    video_tag=$(grep -o '<video[^>]*>' "$html_file" | head -1)
+    
+    if [ -n "$video_tag" ]; then
+        echo "Found video tag: ${video_tag:0:100}..."
+        
+        # Extract attributes from the video tag
+        local jwt_token
+        jwt_token=$(echo "$video_tag" | grep -o 'data-jwt="[^"]*"' | sed 's/data-jwt="//' | sed 's/"//')
+        
+        local dist_host
+        dist_host=$(echo "$video_tag" | grep -o 'data-dist-host="[^"]*"' | sed 's/data-dist-host="//' | sed 's/"//')
+        
+        local src_rel
+        src_rel=$(echo "$video_tag" | grep -o 'data-src-rel="[^"]*"' | sed 's/data-src-rel="//' | sed 's/"//')
+        
+        echo "Alternative parse results:"
+        echo "  JWT: ${jwt_token:0:60}... (length: ${#jwt_token})"
+        echo "  Dist Host: $dist_host"
+        echo "  Source Relative: $src_rel"
+        
+        echo "${jwt_token},${dist_host},,${src_rel}"
+    else
+        echo ""
+    fi
 }
 
 # Main script execution
@@ -101,6 +151,31 @@ IFS=',' read -r jwt_tvm dist_host_tvm dist_host_alt_tvm src_rel_tvm <<< "$tvm_da
 IFS=',' read -r jwt_tvmnews dist_host_tvmnews dist_host_alt_tvmnews src_rel_tvmnews <<< "$tvmnews_data"
 IFS=',' read -r jwt_tvmsport dist_host_tvmsport dist_host_alt_tvmsport src_rel_tvmsport <<< "$tvmsport_data"
 
+# If first method failed, try alternative parsing
+if [ "${#jwt_tvm}" -lt 100 ]; then
+    echo "First parsing method failed for TVM, trying alternative..."
+    tvm_data_alt=$(alternative_parse "tvm")
+    if [ -n "$tvm_data_alt" ]; then
+        IFS=',' read -r jwt_tvm dist_host_tvm dummy src_rel_tvm <<< "$tvm_data_alt"
+    fi
+fi
+
+if [ "${#jwt_tvmnews}" -lt 100 ]; then
+    echo "First parsing method failed for TVM News, trying alternative..."
+    tvmnews_data_alt=$(alternative_parse "tvmnews")
+    if [ -n "$tvmnews_data_alt" ]; then
+        IFS=',' read -r jwt_tvmnews dist_host_tvmnews dummy src_rel_tvmnews <<< "$tvmnews_data_alt"
+    fi
+fi
+
+if [ "${#jwt_tvmsport}" -lt 100 ]; then
+    echo "First parsing method failed for TVM Sport, trying alternative..."
+    tvmsport_data_alt=$(alternative_parse "tvmsport")
+    if [ -n "$tvmsport_data_alt" ]; then
+        IFS=',' read -r jwt_tvmsport dist_host_tvmsport dummy src_rel_tvmsport <<< "$tvmsport_data_alt"
+    fi
+fi
+
 # Update the m3u8 files with the correct host and token
 update_count=0
 
@@ -108,12 +183,8 @@ echo ""
 echo "Updating M3U8 files..."
 
 if validate_data "$jwt_tvm" "$dist_host_tvm"; then
-    # Use the main distribution host, fallback to alternative if needed
+    # Use the main distribution host
     final_dist_host_tvm="$dist_host_tvm"
-    if [ -z "$final_dist_host_tvm" ] && [ -n "$dist_host_alt_tvm" ]; then
-        final_dist_host_tvm="$dist_host_alt_tvm"
-        echo "  Using alternative distribution host for TVM: $final_dist_host_tvm"
-    fi
     
     # Use the extracted source relative path or default to /master.m3u8
     if [ -z "$src_rel_tvm" ]; then
@@ -140,10 +211,6 @@ fi
 
 if validate_data "$jwt_tvmnews" "$dist_host_tvmnews"; then
     final_dist_host_tvmnews="$dist_host_tvmnews"
-    if [ -z "$final_dist_host_tvmnews" ] && [ -n "$dist_host_alt_tvmnews" ]; then
-        final_dist_host_tvmnews="$dist_host_alt_tvmnews"
-        echo "  Using alternative distribution host for TVM News: $final_dist_host_tvmnews"
-    fi
     
     if [ -z "$src_rel_tvmnews" ]; then
         final_src_rel_tvmnews="/master.m3u8"
@@ -167,10 +234,6 @@ fi
 
 if validate_data "$jwt_tvmsport" "$dist_host_tvmsport"; then
     final_dist_host_tvmsport="$dist_host_tvmsport"
-    if [ -z "$final_dist_host_tvmsport" ] && [ -n "$dist_host_alt_tvmsport" ]; then
-        final_dist_host_tvmsport="$dist_host_alt_tvmsport"
-        echo "  Using alternative distribution host for TVM Sport: $final_dist_host_tvmsport"
-    fi
     
     if [ -z "$src_rel_tvmsport" ]; then
         final_src_rel_tvmsport="/master.m3u8"
@@ -194,20 +257,22 @@ fi
 
 # Cleanup
 rm -f "$cookie_file"
-rm -f debug_*.html
 rm -f links/mt/*.bak
 
 # Report results
 echo ""
 if [ "$update_count" -eq 3 ]; then
     echo "✅ All M3U8 files updated successfully with dynamic hosts"
+    rm -f debug_*.html
 elif [ "$update_count" -gt 0 ]; then
     echo "⚠️  $update_count/3 M3U8 files updated"
+    echo "Debug files preserved for inspection: debug_*.html"
 else
     echo "❌ Failed to update any M3U8 files"
     echo ""
     echo "Debugging info:"
     echo "Check the debug_*.html files to see what was fetched from the website"
+    echo "The HTML structure might be different than expected."
     exit 1
 fi
 
