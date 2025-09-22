@@ -38,35 +38,18 @@ for i, url in enumerate(urls):
                 m3u8_url = f'https:{m3u8_url_match.group(1)}'
                 print(f'Found m3u8 URL: {m3u8_url}')
                 
-                # Get the master m3u8 content
-                m3u8_response = requests.get(m3u8_url, headers=headers)
-                if m3u8_response.status_code == 200:
-                    m3u8_content = m3u8_response.text
-                    
-                    # Check if this is a master playlist pointing to another m3u8
-                    if 'chunks.m3u8' in m3u8_content:
-                        # Extract the chunks.m3u8 URL
-                        base_url = '/'.join(m3u8_url.split('/')[:-1]) + '/'
-                        chunks_match = re.search(r'chunks\.m3u8[^\s]+', m3u8_content)
-                        if chunks_match:
-                            chunks_url = base_url + chunks_match.group(0)
-                            print(f'Found chunks URL: {chunks_url}')
-                            
-                            # Save the final m3u8 URL to file
-                            output_file = os.path.join(output_dir, f"{names[i]}.txt")
-                            with open(output_file, 'w') as f:
-                                f.write(chunks_url)
-                            print(f'Saved to: {output_file}')
-                        else:
-                            print('Could not extract chunks.m3u8 URL from master playlist')
-                    else:
-                        # If it's already the final m3u8, save it directly
-                        output_file = os.path.join(output_dir, f"{names[i]}.txt")
-                        with open(output_file, 'w') as f:
-                            f.write(m3u8_url)
-                        print(f'Saved to: {output_file}')
-                else:
-                    print(f'Failed to retrieve m3u8 file. Status code: {m3u8_response.status_code}')
+                # Create the m3u8 playlist content
+                m3u8_content = f"""#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=992257,RESOLUTION=1920x1080,CODECS="avc1.4d402a,mp4a.40.2"
+{m3u8_url}"""
+                
+                # Save as .m3u8 file
+                output_file = os.path.join(output_dir, f"{names[i]}.m3u8")
+                with open(output_file, 'w', encoding='utf-8') as f:
+                    f.write(m3u8_content)
+                print(f'Saved m3u8 playlist to: {output_file}')
+                
             else:
                 print('No m3u8 URL found in the page.')
         else:
@@ -76,3 +59,5 @@ for i, url in enumerate(urls):
         print(f'Error processing {names[i]}: {e}')
     
     print('-' * 50)
+
+print("All channels processed!")
