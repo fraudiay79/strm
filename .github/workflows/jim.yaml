@@ -11,35 +11,69 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
       
+    - name: Setup environment
+      run: |
+        # Test the proxy first
+        echo "Testing proxy connection..."
+        curl -s "https://bbc.mesutgokhan10.workers.dev/?mediaId=2584964" > response.json
+        cat response.json
+        echo -e "\n--- End of response ---"
+        
     - name: Fetch via Proxy
       run: |
-        PROXY_URL="https://bbc.mesutgokhan10.workers.dev/"  # Replace with your actual URL
+        PROXY_URL="https://bbc.mesutgokhan10.workers.dev/?mediaId=2584964"
         
-        # Get JSON through proxy
+        echo "Fetching JSON from proxy..."
         JSON_RESPONSE=$(curl -s "$PROXY_URL")
-        M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.streamUrls.webHls.url')
         
-        if [ -n "$M3U8_URL" ] && [ "$M3U8_URL" != "null" ]; then
-          echo "URL extracted via proxy"
-          # Download m3u8 content (this should work now since it comes from proxy IP)
-          curl -s "$M3U8_URL" | \
-          awk -v base="${M3U8_URL%/*}/" '
-          /^[^#].*\.m3u8/ {
-              if ($0 ~ /^https?:\/\//) print $0
-              else print base $0
-              next
-          }
-          { print }' > jim.m3u8
-          echo "✅ M3U8 file updated"
-        else
+        # Debug: See what we received
+        echo "Raw response:"
+        echo "$JSON_RESPONSE" | head -c 200
+        echo -e "\n"
+        
+        # Try different extraction paths
+        M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.streamUrls.webHls.url // empty')
+        
+        if [ -z "$M3U8_URL" ]; then
+          echo "Trying alternative path..."
+          M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.streamUrls.webHls.url // empty')
+        fi
+        
+        if [ -z "$M3U8_URL" ] || [ "$M3U8_URL" = "null" ]; then
           echo "❌ Failed to extract URL"
+          echo "Available keys in response:"
+          echo "$JSON_RESPONSE" | jq 'keys' 2>/dev/null || echo "Invalid JSON or no keys found"
           exit 1
         fi
         
+        echo "✅ Extracted URL: $M3U8_URL"
+        
+        # Download m3u8 content
+        echo "Downloading m3u8 content..."
+        curl -s -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36" \
+             -H "Referer: https://www.nelonenmedia.fi/" \
+             "$M3U8_URL" | \
+        awk -v base="${M3U8_URL%/*}/" '
+        /^[^#].*\.m3u8/ {
+            if ($0 ~ /^https?:\/\//) print $0
+            else print base $0
+            next
+        }
+        { print }' > jim.m3u8
+        
+        echo "✅ M3U8 file created successfully"
+        echo "First few lines:"
+        head -5 jim.m3u8
+        
     - name: Commit and push
       run: |
-        git config user.email "actions@github.com"
-        git config user.name "GitHub Actions"
-        git add jim.m3u8
-        git diff --staged --quiet || git commit -m "Update m3u8"
-        git push
+        if [ -s jim.m3u8 ]; then
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add jim.m3u8
+          git diff --staged --quiet || git commit -m "Update m3u8 - $(date)"
+          git push
+        else
+          echo "❌ jim.m3u8 is empty, skipping commit"
+          exit 1
+        fi
