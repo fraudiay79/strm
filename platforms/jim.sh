@@ -18,16 +18,12 @@ if [ -n "$M3U8_URL" ] && [ "$M3U8_URL" != "null" ]; then
     echo "Extracted m3u8 URL: $M3U8_URL"
     
     if curl -s "$M3U8_URL" -o "$TEMP_FILE"; then
-        # Extract base URL
+        # Extract base URL and convert relative URLs to absolute
         BASE_URL="${M3U8_URL%/*}/"
         
-        # Use awk to process the file
-        awk -v base="$BASE_URL" '
-        /^[^#].*\.m3u8/ && !/^https?:\/\// {
-            print base $0
-            next
-        }
-        { print }' "$TEMP_FILE" > "$OUTPUT_FILE"
+        # Use sed to convert relative URLs to absolute URLs
+        sed -e "s|^\([^#].*\.m3u8\)|$BASE_URL\1|" \
+            -e "s|^\([^#].*\.m3u8?\)|$BASE_URL\1|" "$TEMP_FILE" > "$OUTPUT_FILE"
         
         echo "Successfully saved processed m3u8 content to $OUTPUT_FILE"
         rm "$TEMP_FILE"
