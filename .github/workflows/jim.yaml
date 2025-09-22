@@ -14,6 +14,11 @@ jobs:
     - name: Fetch via Proxy
       run: |
         PROXY_URL="https://bbc.mesutgokhan10.workers.dev/?mediaId=2584964"
+        OUTPUT_DIR="platforms/links/fi"
+        OUTPUT_FILE="$OUTPUT_DIR/jim.m3u8"
+        
+        # Create directory if it doesn't exist
+        mkdir -p "$OUTPUT_DIR"
         
         echo "Fetching JSON from proxy..."
         JSON_RESPONSE=$(curl -s "$PROXY_URL")
@@ -35,35 +40,27 @@ jobs:
                 else print base $0
                 next
             }
-            { print }' > jim.m3u8
+            { print }' > "$OUTPUT_FILE"
             
-            echo "✅ M3U8 file created successfully"
+            echo "✅ M3U8 file created successfully at: $OUTPUT_FILE"
             echo "First few lines:"
-            head -5 jim.m3u8
+            head -5 "$OUTPUT_FILE"
             
         else
             echo "❌ Failed to extract URL"
-            echo "Trying alternative paths..."
-            
-            # Alternative extraction methods
-            M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.media.streamUrls.android.url // empty')
-            echo "Android URL: $M3U8_URL"
-            
-            M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.. | select(.url? != null) | select(.url | contains("m3u8")) | .url' | head -1)
-            echo "First m3u8 URL found: $M3U8_URL"
-            
             exit 1
         fi
         
     - name: Commit and push
       run: |
-        if [ -s jim.m3u8 ]; then
+        OUTPUT_FILE="platforms/links/fi/jim.m3u8"
+        if [ -s "$OUTPUT_FILE" ]; then
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git add jim.m3u8
-          git diff --staged --quiet || git commit -m "Update m3u8 - $(date)"
+          git add "$OUTPUT_FILE"
+          git diff --staged --quiet || git commit -m "Update FI Jim m3u8 - $(date +'%Y-%m-%d %H:%M')"
           git push
         else
-          echo "❌ jim.m3u8 is empty, skipping commit"
+          echo "❌ $OUTPUT_FILE is empty, skipping commit"
           exit 1
         fi
