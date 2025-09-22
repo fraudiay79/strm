@@ -8,6 +8,8 @@ fetch_channel_data() {
     local channel_id=$1
     local channel_name=$2
     
+    echo "Fetching data for $channel_name (channel $channel_id)..."
+    
     # Use curl to handle cookies automatically and get the HTML content
     local html_content
     html_content=$(curl -s -L \
@@ -25,24 +27,27 @@ fetch_channel_data() {
                       -b "$cookie_file" \
                       "https://tvmi.mt/live/$channel_id")
     
-    # Extract JWT token
+    # Debug: Save HTML content for inspection
+    echo "$html_content" > "debug_${channel_name}.html"
+    
+    # Extract JWT token - look for data-jwt attribute in video tag
     local jwt_token
-    jwt_token=$(echo "$html_content" | grep -oE 'data-jwt="[^"]+"' | sed -n 's/.*data-jwt="\([^"]*\)".*/\1/p')
+    jwt_token=$(echo "$html_content" | grep -o 'data-jwt="[^"]*"' | head -1 | sed 's/data-jwt="//' | sed 's/"//')
     
     # Extract distribution host
     local dist_host
-    dist_host=$(echo "$html_content" | grep -oE 'data-dist-host="[^"]+"' | sed -n 's/.*data-dist-host="\([^"]*\)".*/\1/p')
+    dist_host=$(echo "$html_content" | grep -o 'data-dist-host="[^"]*"' | head -1 | sed 's/data-dist-host="//' | sed 's/"//')
     
     # Extract alternative distribution host (fallback)
     local dist_host_alt
-    dist_host_alt=$(echo "$html_content" | grep -oE 'data-dist-host-alt1="[^"]+"' | sed -n 's/.*data-dist-host-alt1="\([^"]*\)".*/\1/p')
+    dist_host_alt=$(echo "$html_content" | grep -o 'data-dist-host-alt1="[^"]*"' | head -1 | sed 's/data-dist-host-alt1="//' | sed 's/"//')
     
     # Extract source relative path
     local src_rel
-    src_rel=$(echo "$html_content" | grep -oE 'data-src-rel="[^"]+"' | sed -n 's/.*data-src-rel="\([^"]*\)".*/\1/p')
+    src_rel=$(echo "$html_content" | grep -o 'data-src-rel="[^"]*"' | head -1 | sed 's/data-src-rel="//' | sed 's/"//')
     
-    echo "Data for $channel_name (channel $channel_id):"
-    echo "  JWT: $jwt_token"
+    echo "Extracted data for $channel_name:"
+    echo "  JWT: ${jwt_token:0:50}..."  # Show first 50 chars only
     echo "  Dist Host: $dist_host"
     echo "  Alt Dist Host: $dist_host_alt"
     echo "  Source Relative: $src_rel"
@@ -55,14 +60,36 @@ fetch_channel_data() {
 validate_data() {
     local jwt="$1"
     local dist_host="$2"
-    if [ -z "$jwt" ] || [ "${#jwt}" -lt 50 ] || [ -z "$dist_host" ]; then
-        return 1  # Invalid data
+    
+    if [ -z "$jwt" ]; then
+        echo "  Validation failed: JWT token is empty"
+        return 1
     fi
-    return 0  # Valid data
+    
+    if [ "${#jwt}" -lt 50 ]; then
+        echo "  Validation failed: JWT token too short (${#jwt} chars)"
+        return 1
+    fi
+    
+    if [ -z "$dist_host" ]; then
+        echo "  Validation failed: Distribution host is empty"
+        return 1
+    fi
+    
+    echo "  Validation passed: JWT=${#jwt} chars, Host=$dist_host"
+    return 0
 }
 
 # Main script execution
 echo "Fetching channel data..."
+
+# Ensure links directory exists
+mkdir -p links/mt
+
+# Create backup of existing files
+cp links/mt/tvm.m3u8 links/mt/tvm.m3u8.bak 2>/dev/null || true
+cp links/mt/tvmnews.m3u8 links/mt/tvmnews.m3u8.bak 2>/dev/null || true
+cp links/mt/tvmsport.m3u8 links/mt/tvmsport.m3u8.bak 2>/dev/null || true
 
 # Fetch data for each channel
 tvm_data=$(fetch_channel_data "2" "tvm")
@@ -76,6 +103,9 @@ IFS=',' read -r jwt_tvmsport dist_host_tvmsport dist_host_alt_tvmsport src_rel_t
 
 # Update the m3u8 files with the correct host and token
 update_count=0
+
+echo ""
+echo "Updating M3U8 files..."
 
 if validate_data "$jwt_tvm" "$dist_host_tvm"; then
     # Use the main distribution host, fallback to alternative if needed
@@ -92,11 +122,20 @@ if validate_data "$jwt_tvm" "$dist_host_tvm"; then
         final_src_rel_tvm="$src_rel_tvm"
     fi
     
-    sed -i "s|https://[^/]*\.tvmi\.mt/[^/]*/live/2/0/index\.m3u8|https://${final_dist_host_tvm}/${jwt_tvm}/live/2${final_src_rel_tvm}|g" links/mt/tvm.m3u8
+    # Create or update the m3u8 file
+    cat > links/mt/tvm.m3u8 << EOF
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=1755600,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+https://${final_dist_host_tvm}/${jwt_tvm}/live/2${final_src_rel_tvm}
+EOF
+    
     echo "✓ Updated TVM - Host: $final_dist_host_tvm, Path: $final_src_rel_tvm"
     update_count=$((update_count + 1))
 else
     echo "✗ Failed to get valid data for TVM"
+    # Restore backup
+    cp links/mt/tvm.m3u8.bak links/mt/tvm.m3u8 2>/dev/null || true
 fi
 
 if validate_data "$jwt_tvmnews" "$dist_host_tvmnews"; then
@@ -112,11 +151,18 @@ if validate_data "$jwt_tvmnews" "$dist_host_tvmnews"; then
         final_src_rel_tvmnews="$src_rel_tvmnews"
     fi
     
-    sed -i "s|https://[^/]*\.tvmi\.mt/[^/]*/live/3/0/index\.m3u8|https://${final_dist_host_tvmnews}/${jwt_tvmnews}/live/3${final_src_rel_tvmnews}|g" links/mt/tvmnews.m3u8
+    cat > links/mt/tvmnews.m3u8 << EOF
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=1755600,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+https://${final_dist_host_tvmnews}/${jwt_tvmnews}/live/3${final_src_rel_tvmnews}
+EOF
+    
     echo "✓ Updated TVM News - Host: $final_dist_host_tvmnews, Path: $final_src_rel_tvmnews"
     update_count=$((update_count + 1))
 else
     echo "✗ Failed to get valid data for TVM News"
+    cp links/mt/tvmnews.m3u8.bak links/mt/tvmnews.m3u8 2>/dev/null || true
 fi
 
 if validate_data "$jwt_tvmsport" "$dist_host_tvmsport"; then
@@ -132,23 +178,36 @@ if validate_data "$jwt_tvmsport" "$dist_host_tvmsport"; then
         final_src_rel_tvmsport="$src_rel_tvmsport"
     fi
     
-    sed -i "s|https://[^/]*\.tvmi\.mt/[^/]*/live/4/0/index\.m3u8|https://${final_dist_host_tvmsport}/${jwt_tvmsport}/live/4${final_src_rel_tvmsport}|g" links/mt/tvmsport.m3u8
+    cat > links/mt/tvmsport.m3u8 << EOF
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-STREAM-INF:BANDWIDTH=1755600,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2"
+https://${final_dist_host_tvmsport}/${jwt_tvmsport}/live/4${final_src_rel_tvmsport}
+EOF
+    
     echo "✓ Updated TVM Sport - Host: $final_dist_host_tvmsport, Path: $final_src_rel_tvmsport"
     update_count=$((update_count + 1))
 else
     echo "✗ Failed to get valid data for TVM Sport"
+    cp links/mt/tvmsport.m3u8.bak links/mt/tvmsport.m3u8 2>/dev/null || true
 fi
 
 # Cleanup
 rm -f "$cookie_file"
+rm -f debug_*.html
+rm -f links/mt/*.bak
 
 # Report results
+echo ""
 if [ "$update_count" -eq 3 ]; then
     echo "✅ All M3U8 files updated successfully with dynamic hosts"
 elif [ "$update_count" -gt 0 ]; then
     echo "⚠️  $update_count/3 M3U8 files updated"
 else
     echo "❌ Failed to update any M3U8 files"
+    echo ""
+    echo "Debugging info:"
+    echo "Check the debug_*.html files to see what was fetched from the website"
     exit 1
 fi
 
