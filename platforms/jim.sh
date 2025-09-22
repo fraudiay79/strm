@@ -18,7 +18,6 @@ JSON_RESPONSE=$(curl -s \
   -H "Referer: $REFERER" \
   -H "Accept: $ACCEPT" \
   -H "Accept-Language: en-US,en;q=0.9" \
-  -H "Origin: https://www.nelonenmedia.fi" \
   "$URL")
 
 # Check if we got a valid response
@@ -28,17 +27,28 @@ if [ -z "$JSON_RESPONSE" ]; then
 fi
 
 echo "API Response received"
-echo "$JSON_RESPONSE" | head -c 200
-echo -e "\n"
 
-# Extract m3u8 URL using jq
-M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.streamUrls.webHls.url // .streamUrls.android.url // empty')
+# Extract m3u8 URL using the correct JSON path
+M3U8_URL=$(echo "$JSON_RESPONSE" | jq -r '.clip.playback.streamUrls.webHls.url // .clip.playback.streamUrls.android.url // .clip.playback.hlsUrl // empty')
 
 if [ -z "$M3U8_URL" ] || [ "$M3U8_URL" = "null" ]; then
-    echo "Error: Could not extract m3u8 URL"
-    echo "Available keys:"
-    echo "$JSON_RESPONSE" | jq 'keys' 2>/dev/null || echo "Invalid JSON"
-    exit 1
+    echo "Error: Could not extract m3u8 URL using standard paths"
+    echo "Trying to explore the JSON structure..."
+    
+    # Let's see what's available under clip.playback
+    echo "clip.playback structure:"
+    echo "$JSON_RESPONSE" | jq '.clip.playback | keys' 2>/dev/null
+    
+    # Try to find any URL that contains m3u8
+    M3U8_URL=$(echo "$JSON_RESPONSE" | grep -o '"url":"[^"]*\.m3u8[^"]*"' | head -1 | cut -d'"' -f4)
+    
+    if [ -z "$M3U8_URL" ]; then
+        echo "Available keys in clip.playback:"
+        echo "$JSON_RESPONSE" | jq '.clip.playback | keys' 2>/dev/null
+        echo "Full clip.playback content:"
+        echo "$JSON_RESPONSE" | jq '.clip.playback' 2>/dev/null
+        exit 1
+    fi
 fi
 
 echo "Extracted m3u8 URL: $M3U8_URL"
@@ -53,12 +63,7 @@ curl -s \
 
 # Check if download was successful
 if [ ! -s "$TEMP_FILE" ]; then
-    echo "Error: Failed to fetch m3u8 content (file empty or 401 error)"
-    echo "HTTP Status:"
-    curl -I -s \
-      -H "User-Agent: $USER_AGENT" \
-      -H "Referer: $REFERER" \
-      "$M3U8_URL" | head -10
+    echo "Error: Failed to fetch m3u8 content (file empty)"
     rm "$TEMP_FILE"
     exit 1
 fi
