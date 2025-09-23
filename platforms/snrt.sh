@@ -16,7 +16,11 @@ for i in "${!files[@]}"; do
     token=$(wget -qO- "$token_url" | grep -oP '(?<=token=)[^&]*')
 
     if [[ -n "$token" ]]; then
-        sed -i "s#token=[^&]*#token=$token#g" "${files[$i]}"
+        # Escape the URL for use in sed
+        escaped_url=$(printf '%s\n' "${urls[$i]}" | sed 's/[[\.*^$()+?{|]/\\&/g')
+        
+        # Replace only the token parameter while preserving the rest of the URL
+        sed -i "s|${escaped_url}?token=[^&]*|${urls[$i]}?token=$token|g" "${files[$i]}"
         echo "Updated token for ${files[$i]}"
     else
         echo "Failed to fetch token for ${files[$i]}"
