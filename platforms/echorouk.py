@@ -6,8 +6,8 @@ urls = ['https://live.dzsecurity.net/live/player/echorouktv', 'https://live.dzse
 names = ["echorouktv", "echorouknews", "ennahartv", "elhayattv"]
 referers = ['https://www.echoroukonline.com/', 'https://www.echoroukonline.com/', 'https://www.ennaharonline.com/', 'https://elhayat.dz/']
 
+# Common headers
 headers = {
-    'Referer': referers,
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
 }
 
@@ -19,7 +19,11 @@ for i, url in enumerate(urls):
     print(f"Processing {names[i]}...")
     
     try:
-        response = requests.get(url, headers=headers)
+        # Create headers with the specific referer for this URL
+        request_headers = headers.copy()
+        request_headers['Referer'] = referers[i]
+        
+        response = requests.get(url, headers=request_headers)
         if response.status_code == 200:
             # Look for the m3u8 URL in the JavaScript code
             m3u8_url_match = re.search(
