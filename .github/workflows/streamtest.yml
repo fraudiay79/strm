@@ -33,9 +33,10 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            #python3 echorouk.py
+            python3 echorouk.py
+            python3 nelonen.py
             #bash jim.sh
-            bash snrt.sh
+            #bash snrt.sh
 
       - name: commit and push files
         run: |
