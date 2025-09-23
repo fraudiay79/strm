@@ -2,8 +2,8 @@ import requests
 import re
 import os
 
-urls = ['https://live.dzsecurity.net/live/player/echorouktv', 'https://live.dzsecurity.net/live/player/echorouknews', 'https://live.dzsecurity.net/live/player/ennahartv']
-names = ["echorouktv", "echorouknews", "ennahartv"]
+urls = ['https://live.dzsecurity.net/live/player/echorouktv', 'https://live.dzsecurity.net/live/player/echorouknews']
+names = ["echorouktv", "echorouknews"]
 referer = 'https://www.echoroukonline.com/'
 
 headers = {
