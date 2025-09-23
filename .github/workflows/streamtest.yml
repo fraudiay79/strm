@@ -35,7 +35,7 @@ jobs:
             cd ./platforms/
             #python3 echorouk.py
             #python3 nelonen.py
-            bash atv.sh
+            python3 atvtr.py > links/atvtr.m3u8
             #bash snrt.sh
 
       - name: commit and push files
