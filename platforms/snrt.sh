@@ -16,11 +16,13 @@ for i in "${!files[@]}"; do
     token=$(wget -qO- "$token_url" | grep -oP '(?<=token=)[^&]*')
 
     if [[ -n "$token" ]]; then
-        # Escape the URL for use in sed
-        escaped_url=$(printf '%s\n' "${urls[$i]}" | sed 's/[[\.*^$()+?{|]/\\&/g')
+        # Extract the channel ID from the URL
+        channel_id=$(echo "${urls[$i]}" | grep -oP '(?<=abr_corp/)[^/]+')
         
-        # Replace only the token parameter while preserving the rest of the URL
-        sed -i "s|${escaped_url}?token=[^&]*|${urls[$i]}?token=$token|g" "${files[$i]}"
+        # Create a more specific pattern for the stream URLs
+        # This matches the specific pattern seen in your example output
+        sed -i "s|\(https://cdn.live.easybroadcast.io/abr_corp/${channel_id}/corp/${channel_id}_[^/]*/chunks_dvr.m3u8\)?token=[^[:space:]]*|\1?token=$token|g" "${files[$i]}"
+        
         echo "Updated token for ${files[$i]}"
     else
         echo "Failed to fetch token for ${files[$i]}"
