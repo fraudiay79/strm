@@ -2,9 +2,9 @@ import requests
 import re
 import os
 
-urls = ['https://live.dzsecurity.net/live/player/echorouktv', 'https://live.dzsecurity.net/live/player/echorouknews']
-names = ["echorouktv", "echorouknews"]
-referer = 'https://www.echoroukonline.com/'
+urls = ['https://live.dzsecurity.net/live/player/echorouktv', 'https://live.dzsecurity.net/live/player/echorouknews', 'https://live.dzsecurity.net/live/player/ennahartv', 'https://live.dzsecurity.net/live/player/elhayattv']
+names = ["echorouktv", "echorouknews", "ennahartv", "elhayattv"]
+referers = ['https://www.echoroukonline.com/', 'https://www.echoroukonline.com/', 'https://www.ennaharonline.com/', 'https://elhayat.dz/']
 
 headers = {
     'Referer': referer,
