@@ -10,23 +10,62 @@ urls=("https://cdn.live.easybroadcast.io/abr_corp/73_aloula_w1dqfwm/playlist_dvr
       "https://cdn.live.easybroadcast.io/abr_corp/73_laayoune_pgagr52/playlist_dvr.m3u8"
       "https://cdn.live.easybroadcast.io/abr_corp/73_tamazight_tccybxt/playlist_dvr.m3u8")
 
+# Set headers
+referer="https://snrt.player.easybroadcast.io/"
+user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
 # Loop through both arrays using index tracking
 for i in "${!files[@]}"; do
     token_url="https://token.easybroadcast.io/all?url=${urls[$i]}"
-    token=$(wget -qO- "$token_url" | grep -oP '(?<=token=)[^&]*')
-
-    if [[ -n "$token" ]]; then
-        # Extract the channel ID from the URL
+    echo "Fetching token for: ${files[$i]}"
+    
+    # Get the full tokenized URL with headers
+    full_tokenized_url=$(wget -qO- --header="Referer: $referer" --header="User-Agent: $user_agent" "$token_url")
+    
+    if [[ -n "$full_tokenized_url" ]]; then
+        echo "Tokenized URL received: $full_tokenized_url"
+        
+        # Extract the channel ID from the original URL
         channel_id=$(echo "${urls[$i]}" | grep -oP '(?<=abr_corp/)[^/]+')
+        echo "Channel ID: $channel_id"
         
-        # Create a more specific pattern for the stream URLs
-        # This matches the specific pattern seen in your example output
-        sed -i "s|\(https://cdn.live.easybroadcast.io/abr_corp/${channel_id}/corp/${channel_id}_[^/]*/chunks_dvr.m3u8\)?token=[^[:space:]]*|\1?token=$token|g" "${files[$i]}"
+        # Create a temporary file for processing
+        temp_file=$(mktemp)
         
-        echo "Updated token for ${files[$i]}"
+        # Process each line of the M3U8 file
+        while IFS= read -r line; do
+            if [[ "$line" =~ ^https:// ]]; then
+                # This is a URL line - extract the base URL path
+                base_url=$(echo "$line" | cut -d'?' -f1)
+                
+                # Extract the quality-specific path part (everything after channel_id)
+                quality_path=$(echo "$base_url" | grep -oP "(?<=${channel_id}/).*")
+                
+                if [[ -n "$quality_path" ]]; then
+                    # Construct the new base URL with the correct structure
+                    new_base_url="https://cdn.live.easybroadcast.io/abr_corp/${channel_id}/${quality_path}"
+                    
+                    # Extract just the query parameters from the tokenized URL
+                    query_params=$(echo "$full_tokenized_url" | cut -d'?' -f2-)
+                    
+                    # Output the new URL
+                    echo "${new_base_url}?${query_params}"
+                else
+                    echo "$line"
+                fi
+            else
+                # This is not a URL line (headers, etc.) - keep as is
+                echo "$line"
+            fi
+        done < "${files[$i]}" > "$temp_file"
+        
+        # Replace the original file with the processed one
+        mv "$temp_file" "${files[$i]}"
+        echo "Successfully updated tokens for ${files[$i]}"
     else
         echo "Failed to fetch token for ${files[$i]}"
     fi
+    echo "---"
 done
 
 exit 0
