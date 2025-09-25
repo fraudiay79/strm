@@ -11,13 +11,13 @@ from tqdm import tqdm
 DEFAULT_CONFIG = [
     {
         "name": "Giniko",
-        "slug": "links",
+        "slug": "strm/platforms/links",
         "url": "https://www.giniko.com/xml/secure/plist.php?ch=CHANNEL_NAME",
         "method": "GET",
         "pattern": "<source.*?src=\"(.*?)\"",
         "expire_duration": "1D",
         "mode": "variant",
-        "output_filter": "token",
+        "output_filter": "wmsAuthSign",  # Changed from "token" to "wmsAuthSign"
         "headers": {},
         "channels": [
             {
@@ -216,25 +216,34 @@ def main():
     # Try to load config from file, fallback to embedded config
     giniko_config = None
     
-    if len(sys.argv) > 1:
-        config_file = sys.argv[1]
-        print(f"Looking for config file: {config_file}")
-        
-        if os.path.isfile(config_file):
-            try:
-                with open(config_file, "r", encoding="utf-8") as f:
-                    giniko_config = json.load(f)
-                print(f"Successfully loaded configuration from {config_file}")
-            except Exception as e:
-                print(f"Error loading config file: {e}")
-                print("Falling back to embedded configuration")
-                giniko_config = DEFAULT_CONFIG
-        else:
-            print(f"Config file {config_file} not found")
+    # Check if we're in the platforms directory or root
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    print(f"Script directory: {script_dir}")
+    
+    # Look for config file in possible locations
+    config_locations = [
+        'giniko.json',
+        'strm/platforms/giniko.json',
+        '../giniko.json'
+    ]
+    
+    config_file_found = None
+    for config_path in config_locations:
+        if os.path.isfile(config_path):
+            config_file_found = config_path
+            break
+    
+    if config_file_found:
+        try:
+            with open(config_file_found, "r", encoding="utf-8") as f:
+                giniko_config = json.load(f)
+            print(f"Successfully loaded configuration from {config_file_found}")
+        except Exception as e:
+            print(f"Error loading config file: {e}")
             print("Falling back to embedded configuration")
             giniko_config = DEFAULT_CONFIG
     else:
-        print("No config file provided, using embedded configuration")
+        print("No config file found, using embedded configuration")
         giniko_config = DEFAULT_CONFIG
     
     print(f"Configuration structure: {[site['name'] for site in giniko_config]}")
@@ -242,8 +251,8 @@ def main():
     # Process each site in configuration
     for site in giniko_config:
         site_name = site.get("name", "Unknown")
-        site_slug = site.get("slug", "links")
-        site_path = os.path.join(site_slug)
+        site_slug = site.get("slug", "strm/platforms/links")
+        site_path = site_slug
         
         print(f"\n{'='*50}")
         print(f"Processing {site_name}...")
@@ -289,15 +298,19 @@ def main():
                     os.remove(channel_file_path)
                 continue
             
-            print(f"✓ Stream URL found")
+            print(f"✓ Stream URL found: {stream_url}")
             
             # Check output filter if specified
             output_filter = site.get("output_filter")
-            if output_filter and output_filter not in stream_url:
-                print(f"✗ Output filter '{output_filter}' not found in URL")
-                if os.path.isfile(channel_file_path):
-                    os.remove(channel_file_path)
-                continue
+            if output_filter:
+                if output_filter in stream_url:
+                    print(f"✓ Output filter '{output_filter}' found in URL")
+                else:
+                    print(f"✗ Output filter '{output_filter}' not found in URL")
+                    # Don't filter out - just warn but continue processing
+                    # if os.path.isfile(channel_file_path):
+                    #     os.remove(channel_file_path)
+                    # continue
             
             # Generate playlist content based on mode
             mode = site.get("mode", "variant")
