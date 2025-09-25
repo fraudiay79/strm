@@ -12,8 +12,15 @@ def get_stream_url(url, method="GET", headers={}):
     Fetch the XML content and extract the m3u8 URL from the LIVE stream
     """
     try:
+        # Set default headers if none provided
+        if not headers:
+            headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36',
+                'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            }
+        
         if method == "GET":
-            response = requests.get(url, headers=headers)
+            response = requests.get(url, headers=headers, timeout=30)
         else:
             print(f"Method {method} is not supported")
             return None
@@ -72,7 +79,10 @@ def playlist_text(url):
     """
     try:
         text = ""
-        response = requests.get(url)
+        headers = {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+        }
+        response = requests.get(url, headers=headers, timeout=30)
         if response.status_code == 200:
             for line in response.iter_lines():
                 line = line.decode('utf-8', errors='ignore')
@@ -84,7 +94,9 @@ def playlist_text(url):
                 else:
                     text += line + "\n"
             return text
-        return ""
+        else:
+            print(f"HTTP Error {response.status_code} fetching playlist from {url}")
+            return ""
     except Exception as e:
         print(f"Error fetching playlist from {url}: {e}")
         return ""
@@ -93,36 +105,61 @@ def main():
     """
     Main function to process all channels and create individual m3u8 files
     """
+    # Check if config file argument is provided
     if len(sys.argv) < 2:
         print("Usage: python giniko.py <config_file>")
+        print("Example: python giniko.py giniko.json")
         sys.exit(1)
     
     config_file = sys.argv[1]
     
+    # Check if file exists
+    if not os.path.isfile(config_file):
+        print(f"Error: Config file '{config_file}' not found")
+        print("Please make sure the file exists in the current directory")
+        sys.exit(1)
+    
     try:
         with open(config_file, "r", encoding="utf-8") as f:
             giniko_config = json.load(f)
+        print(f"Successfully loaded configuration from {config_file}")
     except FileNotFoundError:
         print(f"Error: Config file {config_file} not found")
         return
     except json.JSONDecodeError as e:
         print(f"Error parsing {config_file}: {e}")
         return
+    except Exception as e:
+        print(f"Error reading {config_file}: {e}")
+        return
     
+    # Process each site in configuration
     for site in giniko_config:
-        site_path = os.path.join(site["slug"])
+        site_name = site.get("name", "Unknown")
+        site_slug = site.get("slug", "links")
+        site_path = os.path.join(site_slug)
+        
+        print(f"\nProcessing {site_name}...")
+        print(f"Creating directory: {site_path}")
+        
         os.makedirs(site_path, exist_ok=True)
         
-        print(f"Processing {site['name']}...")
+        channels = site.get("channels", [])
+        if not channels:
+            print("No channels found in configuration")
+            continue
+            
+        print(f"Found {len(channels)} channels to process")
         
-        for channel in tqdm(site["channels"], desc=f"Channels for {site['name']}"):
-            # Create filename using slugify
-            channel_file_path = os.path.join(site_path, slugify(channel["name"].lower()) + ".m3u8")
+        for channel in tqdm(channels, desc=f"Channels"):
+            channel_name = channel.get("name", "unknown")
+            channel_slug = slugify(channel_name.lower())
+            channel_file_path = os.path.join(site_path, f"{channel_slug}.m3u8")
             
             # Build the channel URL by replacing variables
             channel_url = site["url"]
-            for variable in channel["variables"]:
-                channel_url = channel_url.replace(variable["name"], variable["value"])
+            for variable in channel.get("variables", []):
+                channel_url = channel_url.replace(variable['name'], variable['value'])
             
             # Get the stream URL from XML
             stream_url = get_stream_url(
@@ -135,35 +172,46 @@ def main():
                 # Remove existing file if no stream URL found
                 if os.path.isfile(channel_file_path):
                     os.remove(channel_file_path)
+                    print(f"Removed {channel_file_path} - no stream URL found")
                 continue
             
             # Check output filter if specified
-            if site.get("output_filter") and site["output_filter"] not in stream_url:
+            output_filter = site.get("output_filter")
+            if output_filter and output_filter not in stream_url:
                 if os.path.isfile(channel_file_path):
                     os.remove(channel_file_path)
+                    print(f"Removed {channel_file_path} - output filter '{output_filter}' not found in URL")
                 continue
             
             # Generate playlist content based on mode
             mode = site.get("mode", "variant")
+            text = ""
+            
             if mode == "variant":
                 text = playlist_text(stream_url)
             elif mode == "master":
                 bandwidth = site.get("bandwidth", "1000000")
                 text = f"#EXTM3U\n#EXT-X-VERSION:3\n#EXT-X-STREAM-INF:BANDWIDTH={bandwidth}\n{stream_url}\n"
             else:
-                print(f"Wrong or missing playlist mode: {mode}")
-                text = ""
+                print(f"Warning: Unknown playlist mode '{mode}' for channel {channel_name}")
+                # Default to variant mode
+                text = playlist_text(stream_url)
             
             # Write the playlist file
             if text:
-                with open(channel_file_path, "w", encoding="utf-8") as channel_file:
-                    channel_file.write(text)
-                print(f"✓ Created {channel_file_path}")
+                try:
+                    with open(channel_file_path, "w", encoding="utf-8") as channel_file:
+                        channel_file.write(text)
+                    print(f"✓ Created {channel_file_path}")
+                except Exception as e:
+                    print(f"Error writing to {channel_file_path}: {e}")
             else:
                 # Remove file if no content
                 if os.path.isfile(channel_file_path):
                     os.remove(channel_file_path)
-                print(f"✗ No content for {channel['name']}")
+                print(f"✗ No content for {channel_name}")
+
+    print("\nProcessing complete!")
 
 if __name__ == "__main__":
     main()
