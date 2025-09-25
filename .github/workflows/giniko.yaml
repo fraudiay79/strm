@@ -30,17 +30,13 @@ jobs:
         
     - name: Run Giniko script
       run: |
-        cd platforms
+        cd ./platforms/
         python giniko.py
         
     - name: Commit and push if changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git add links/
-        if git diff --staged --quiet; then
-          echo "No changes to commit"
-        else
-          git commit -m "Update Giniko streams $(date +'%Y-%m-%d %H:%M')"
+        git config --local user.email ""
+          git config --local user.name "Stream Ninja 🥷🏽"
+          git add -A
+          git commit -m "updated streams"
           git push
-        fi
