@@ -1,4 +1,4 @@
-name: run streamstest.py
+name: run snrt.sh
 
 on:
   schedule:
