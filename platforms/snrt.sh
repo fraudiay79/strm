@@ -13,6 +13,7 @@ urls=("https://cdn.live.easybroadcast.io/abr_corp/73_aloula_w1dqfwm/playlist_dvr
 
 # Set headers
 referer="https://snrt.player.easybroadcast.io/"
+origin="https://snrt.player.easybroadcast.io"
 user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
 
 # Loop through both arrays using index tracking
@@ -21,7 +22,7 @@ for i in "${!files[@]}"; do
     echo "Fetching token for: ${files[$i]}"
     
     # Get the full tokenized URL with headers
-    full_tokenized_url=$(wget -qO- --header="Referer: $referer" --header="User-Agent: $user_agent" "$token_url")
+    full_tokenized_url=$(wget -qO- --header="Origin: $origin" --header="Referer: $referer" --header="User-Agent: $user_agent" "$token_url")
     
     if [[ -n "$full_tokenized_url" ]]; then
         echo "Tokenized URL received: $full_tokenized_url"
