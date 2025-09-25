@@ -30,6 +30,7 @@ jobs:
         
     - name: Run Giniko script
       run: |
+        cd platforms
         python giniko.py
         
     - name: Commit and push if changes
