@@ -39,9 +39,10 @@ def get_stream_url(url, method="GET", headers={}):
             # Create a dictionary to store key-value pairs
             kv_pairs = {}
             for i in range(min(len(keys), len(strings))):
-                key = keys[i].text
-                value = strings[i].text
-                kv_pairs[key] = value
+                if keys[i] is not None and keys[i].text and i < len(strings) and strings[i] is not None:
+                    key = keys[i].text
+                    value = strings[i].text
+                    kv_pairs[key] = value
             
             # Check if this is the LIVE stream with index.m3u8
             if (kv_pairs.get('id') == 'LIVE' and 
@@ -151,7 +152,7 @@ def main():
             
         print(f"Found {len(channels)} channels to process")
         
-        for channel in tqdm(channels, desc=f"Channels"):
+        for channel in tqdm(channels, desc=f"Processing channels"):
             channel_name = channel.get("name", "unknown")
             channel_slug = slugify(channel_name.lower())
             channel_file_path = os.path.join(site_path, f"{channel_slug}.m3u8")
@@ -161,6 +162,9 @@ def main():
             for variable in channel.get("variables", []):
                 channel_url = channel_url.replace(variable['name'], variable['value'])
             
+            print(f"\nProcessing {channel_name}...")
+            print(f"URL: {channel_url}")
+            
             # Get the stream URL from XML
             stream_url = get_stream_url(
                 channel_url, 
@@ -169,18 +173,20 @@ def main():
             )
             
             if not stream_url:
+                print(f"✗ No stream URL found for {channel_name}")
                 # Remove existing file if no stream URL found
                 if os.path.isfile(channel_file_path):
                     os.remove(channel_file_path)
-                    print(f"Removed {channel_file_path} - no stream URL found")
                 continue
+            
+            print(f"✓ Found stream URL: {stream_url}")
             
             # Check output filter if specified
             output_filter = site.get("output_filter")
             if output_filter and output_filter not in stream_url:
+                print(f"✗ Output filter '{output_filter}' not found in URL for {channel_name}")
                 if os.path.isfile(channel_file_path):
                     os.remove(channel_file_path)
-                    print(f"Removed {channel_file_path} - output filter '{output_filter}' not found in URL")
                 continue
             
             # Generate playlist content based on mode
@@ -188,6 +194,7 @@ def main():
             text = ""
             
             if mode == "variant":
+                print(f"Fetching variant playlist for {channel_name}...")
                 text = playlist_text(stream_url)
             elif mode == "master":
                 bandwidth = site.get("bandwidth", "1000000")
@@ -202,14 +209,14 @@ def main():
                 try:
                     with open(channel_file_path, "w", encoding="utf-8") as channel_file:
                         channel_file.write(text)
-                    print(f"✓ Created {channel_file_path}")
+                    print(f"✓ Successfully created {channel_file_path}")
                 except Exception as e:
                     print(f"Error writing to {channel_file_path}: {e}")
             else:
                 # Remove file if no content
                 if os.path.isfile(channel_file_path):
                     os.remove(channel_file_path)
-                print(f"✗ No content for {channel_name}")
+                print(f"✗ No playlist content for {channel_name}")
 
     print("\nProcessing complete!")
 
