@@ -7,6 +7,104 @@ from urllib.parse import urljoin
 from slugify import slugify
 from tqdm import tqdm
 
+# Default configuration embedded in the script
+DEFAULT_CONFIG = [
+    {
+        "name": "Giniko",
+        "slug": "links",
+        "url": "https://www.giniko.com/xml/secure/plist.php?ch=CHANNEL_NAME",
+        "method": "GET",
+        "pattern": "<source.*?src=\"(.*?)\"",
+        "expire_duration": "1D",
+        "mode": "variant",
+        "output_filter": "token",
+        "headers": {},
+        "channels": [
+            {
+                "name": "arezotv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "440"
+                    }
+                ]
+            },
+            {
+                "name": "1tvafg",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "307"
+                    }
+                ]
+            },
+            {
+                "name": "noortv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "414"
+                    }
+                ]
+            },
+            {
+                "name": "lemar",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "281"
+                    }
+                ]
+            },
+            {
+                "name": "canalalgerie",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "328"
+                    }
+                ]
+            },
+            {
+                "name": "algeria3",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "530"
+                    }
+                ]
+            },
+            {
+                "name": "alwataniya",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "185"
+                    }
+                ]
+            },
+            {
+                "name": "ssudan",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "188"
+                    }
+                ]
+            },
+            {
+                "name": "sudantv",
+                "variables": [
+                    {
+                        "name": "CHANNEL_NAME",
+                        "value": "187"
+                    }
+                ]
+            }
+        ]
+    }
+]
+
 def get_stream_url(url, method="GET", headers={}):
     """
     Fetch the XML content and extract the m3u8 URL from the LIVE stream
@@ -113,39 +211,33 @@ def main():
     Main function to process all channels and create individual m3u8 files
     """
     print("Current working directory:", os.getcwd())
-    print("Files in current directory:", [f for f in os.listdir('.') if f.endswith('.json')])
+    print("Files in current directory:", os.listdir('.'))
     
-    # Check if config file argument is provided
-    if len(sys.argv) < 2:
-        print("Usage: python giniko.py <config_file>")
-        print("Example: python giniko.py giniko.json")
-        print("Please provide the config file as an argument")
-        sys.exit(1)
+    # Try to load config from file, fallback to embedded config
+    giniko_config = None
     
-    config_file = sys.argv[1]
-    print(f"Looking for config file: {config_file}")
+    if len(sys.argv) > 1:
+        config_file = sys.argv[1]
+        print(f"Looking for config file: {config_file}")
+        
+        if os.path.isfile(config_file):
+            try:
+                with open(config_file, "r", encoding="utf-8") as f:
+                    giniko_config = json.load(f)
+                print(f"Successfully loaded configuration from {config_file}")
+            except Exception as e:
+                print(f"Error loading config file: {e}")
+                print("Falling back to embedded configuration")
+                giniko_config = DEFAULT_CONFIG
+        else:
+            print(f"Config file {config_file} not found")
+            print("Falling back to embedded configuration")
+            giniko_config = DEFAULT_CONFIG
+    else:
+        print("No config file provided, using embedded configuration")
+        giniko_config = DEFAULT_CONFIG
     
-    # Check if file exists
-    if not os.path.isfile(config_file):
-        print(f"Error: Config file '{config_file}' not found")
-        print(f"Current directory: {os.getcwd()}")
-        print(f"Available files: {[f for f in os.listdir('.') if f.endswith('.json')]}")
-        sys.exit(1)
-    
-    try:
-        with open(config_file, "r", encoding="utf-8") as f:
-            giniko_config = json.load(f)
-        print(f"Successfully loaded configuration from {config_file}")
-        print(f"Configuration structure: {[site['name'] for site in giniko_config]}")
-    except FileNotFoundError:
-        print(f"Error: Config file {config_file} not found")
-        return
-    except json.JSONDecodeError as e:
-        print(f"Error parsing {config_file}: {e}")
-        return
-    except Exception as e:
-        print(f"Error reading {config_file}: {e}")
-        return
+    print(f"Configuration structure: {[site['name'] for site in giniko_config]}")
     
     # Process each site in configuration
     for site in giniko_config:
