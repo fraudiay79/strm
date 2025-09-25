@@ -3,10 +3,6 @@ name: run snrt.sh
 on:
   schedule:
     - cron: '*/30 * * * *' # Runs in every 30 minutes
-  pull_request:
-      branches:
-        - main
-
   workflow_dispatch:
 
 jobs:
