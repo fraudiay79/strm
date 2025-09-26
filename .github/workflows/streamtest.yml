@@ -35,9 +35,9 @@ jobs:
             pwd
             cd ./platforms/
             #python3 echorouk.py
-            python3 giniko.py giniko.json
+            #python3 giniko.py giniko.json
             #python3 atvtr.py > links/atvtr.m3u8
-            #bash snrt.sh
+            bash alrai.sh
 
       - name: commit and push files
         run: |
