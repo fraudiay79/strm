@@ -1,8 +1,0 @@
-#EXTM3U
-#EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=2104321,FRAME-RATE=25,RESOLUTION=1920x1080,CODECS="avc1.4d0028,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.kwikmotion.com/alraitvpublish/alraitv_source/hdntl=exp=1758975011~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=1758902707~acl=/alraimedialive/alraitv.smil/*~hmac=68ff47baeed7d551a00dbabf79a1bb2ca54e5bfbe501da5b61ede3bd720a2b39/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=1163432,FRAME-RATE=25,RESOLUTION=854x480,CODECS="avc1.77.30,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.kwikmotion.com/alraitvpublish/alraitv_480p/hdntl=exp=1758975011~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=1758902707~acl=/alraimedialive/alraitv.smil/*~hmac=68ff47baeed7d551a00dbabf79a1bb2ca54e5bfbe501da5b61ede3bd720a2b39/chunks.m3u8
-#EXT-X-STREAM-INF:BANDWIDTH=619100,FRAME-RATE=25,RESOLUTION=426x240,CODECS="avc1.42c015,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.kwikmotion.com/alraitvpublish/alraitv_240p/hdntl=exp=1758975011~acl=%2falraimedialive%2falraitv.smil%2f*~data=hdntl~hmac=1758902707~acl=/alraimedialive/alraitv.smil/*~hmac=68ff47baeed7d551a00dbabf79a1bb2ca54e5bfbe501da5b61ede3bd720a2b39/chunks.m3u8
