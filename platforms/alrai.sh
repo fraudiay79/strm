@@ -3,7 +3,7 @@
 # URL to fetch
 URL="https://www.alraimedia.com/livestream/"
 OUTPUT_DIR="links"
-OUTPUT_FILE="$OUTPUT_DIR/alraitv_playlist.m3u8"
+OUTPUT_FILE="$OUTPUT_DIR/alrai.m3u8"
 
 # Create links directory if it doesn't exist
 mkdir -p "$OUTPUT_DIR"
