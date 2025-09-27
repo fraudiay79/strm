@@ -38,13 +38,10 @@ process_channel() {
     http_code=$(curl -s -L -A "$user_agent" -H "Referer: $referer" "$url" -o "$temp_file" -w "%{http_code}")
     
     if [ "$http_code" -eq 200 ]; then
-        echo "Page retrieved successfully"
-        
-        # Improved regex patterns to match the actual URL format
-        # Pattern 1: Look for http://hls-distrib- patterns with token parameter
+        # Look for http://hls-distrib- patterns with token parameter
         local m3u8_url=$(grep -oP 'http://hls-distrib-[^"'\'']+\.m3u8\?e=[0-9]+&token=[^"'\''&]+' "$temp_file" | head -1)
         
-        # Pattern 2: Look for protocol-relative URLs starting with //
+        # If not found, look for protocol-relative URLs
         if [ -z "$m3u8_url" ]; then
             m3u8_url=$(grep -oP '//hls-distrib-[^"'\'']+\.m3u8\?e=[0-9]+&token=[^"'\''&]+' "$temp_file" | head -1)
             if [ -n "$m3u8_url" ]; then
@@ -52,30 +49,8 @@ process_channel() {
             fi
         fi
         
-        # Pattern 3: More generic pattern for any m3u8 URL with token
-        if [ -z "$m3u8_url" ]; then
-            m3u8_url=$(grep -oP '(http|https)://[^"'\'']+\.m3u8\?[^"'\''&]+&token=[^"'\''&]+' "$temp_file" | head -1)
-        fi
-        
-        # Pattern 4: Look for URLs in variable assignments
-        if [ -z "$m3u8_url" ]; then
-            m3u8_url=$(grep -oP 'src\s*:\s*[^"'\'']+\.m3u8\?[^"'\''&]+&token=[^"'\''&]+' "$temp_file" | head -1 | sed 's/src\s*:\s*//')
-        fi
-        
-        # Debug: Show what was found in the HTML
-        echo "Debug - Found m3u8 references:"
-        grep -i "m3u8" "$temp_file" | head -5
-        
         if [ -n "$m3u8_url" ]; then
             echo "Found m3u8 URL: $m3u8_url"
-            
-            # Test if the URL is accessible
-            echo "Testing URL accessibility..."
-            if curl -s -I "$m3u8_url" | head -1 | grep -q "200"; then
-                echo "URL is accessible"
-            else
-                echo "Warning: URL may not be accessible"
-            fi
             
             # Create the m3u8 playlist content
             local m3u8_content="#EXTM3U
@@ -89,8 +64,6 @@ $m3u8_url"
             echo "Saved m3u8 playlist to: $output_file"
         else
             echo "No m3u8 URL found in the page."
-            echo "Debug - First 10 lines of response:"
-            head -10 "$temp_file"
         fi
     else
         echo "Failed to retrieve the page. Status code: $http_code"
