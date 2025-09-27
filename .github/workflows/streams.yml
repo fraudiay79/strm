@@ -54,7 +54,6 @@ jobs:
         run: |
           git config --local user.email ""
           git config --local user.name "Stream Ninja 🥷🏽"
-          git pull origin main --rebase
           git add -A
           git commit -m "updated streams"
           git push
