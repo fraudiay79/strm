@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-STREAM-INF:BANDWIDTH=2100000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x540
-https://live-ak.vimeocdn.com/exp=1759835518~acl=%2F7faad9c9-20c7-48f4-a985-ff0360ac1f13%2F%2A~hmac=7cde2166f6c01898d1b7e6fb307442ea13cd39300af9f23faadaf8cd06648a71/7faad9c9-20c7-48f4-a985-ff0360ac1f13/avc/540p/chunklist.m3u8
+https://live-ak.vimeocdn.com/exp=1759838983~acl=%2F7faad9c9-20c7-48f4-a985-ff0360ac1f13%2F%2A~hmac=0ad1e25bda8a08b27fca299218b90abe68a5eb03b1b7221631e4a48b1b4d6456/7faad9c9-20c7-48f4-a985-ff0360ac1f13/avc/540p/chunklist.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=970000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360
-https://live-ak.vimeocdn.com/exp=1759835518~acl=%2F7faad9c9-20c7-48f4-a985-ff0360ac1f13%2F%2A~hmac=7cde2166f6c01898d1b7e6fb307442ea13cd39300af9f23faadaf8cd06648a71/7faad9c9-20c7-48f4-a985-ff0360ac1f13/avc/360p/chunklist.m3u8
+https://live-ak.vimeocdn.com/exp=1759838983~acl=%2F7faad9c9-20c7-48f4-a985-ff0360ac1f13%2F%2A~hmac=0ad1e25bda8a08b27fca299218b90abe68a5eb03b1b7221631e4a48b1b4d6456/7faad9c9-20c7-48f4-a985-ff0360ac1f13/avc/360p/chunklist.m3u8
 #EXT-X-STREAM-INF:BANDWIDTH=420000,CODECS="avc1.640015,mp4a.40.5",RESOLUTION=426x240
-https://live-ak.vimeocdn.com/exp=1759835518~acl=%2F7faad9c9-20c7-48f4-a985-ff0360ac1f13%2F%2A~hmac=7cde2166f6c01898d1b7e6fb307442ea13cd39300af9f23faadaf8cd06648a71/7faad9c9-20c7-48f4-a985-ff0360ac1f13/avc/240p/chunklist.m3u8
+https://live-ak.vimeocdn.com/exp=1759838983~acl=%2F7faad9c9-20c7-48f4-a985-ff0360ac1f13%2F%2A~hmac=0ad1e25bda8a08b27fca299218b90abe68a5eb03b1b7221631e4a48b1b4d6456/7faad9c9-20c7-48f4-a985-ff0360ac1f13/avc/240p/chunklist.m3u8
