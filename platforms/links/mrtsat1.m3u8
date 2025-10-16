@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=2900000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1280x720
-https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p4/chunks.m3u8?nimblesessionid=64370984&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTYvMjAyNSA2OjE3OjIyIEFNJmhhc2hfdmFsdWU9TGR0NzFpWTQ4NmxPSUV3N0RiMk1Cdz09JnZhbGlkbWludXRlcz0zMCZpZD02OGYwOGRmMmU3NTBl
-#EXT-X-STREAM-INF:BANDWIDTH=1100000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1024x576
-https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p3/chunks.m3u8?nimblesessionid=64370984&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTYvMjAyNSA2OjE3OjIyIEFNJmhhc2hfdmFsdWU9TGR0NzFpWTQ4NmxPSUV3N0RiMk1Cdz09JnZhbGlkbWludXRlcz0zMCZpZD02OGYwOGRmMmU3NTBl
-#EXT-X-STREAM-INF:BANDWIDTH=560000,CODECS="avc1.66.30,mp4a.40.2",RESOLUTION=640x360
-https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p2/chunks.m3u8?nimblesessionid=64370984&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTYvMjAyNSA2OjE3OjIyIEFNJmhhc2hfdmFsdWU9TGR0NzFpWTQ4NmxPSUV3N0RiMk1Cdz09JnZhbGlkbWludXRlcz0zMCZpZD02OGYwOGRmMmU3NTBl
+#EXT-X-STREAM-INF:BANDWIDTH=1200000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1280x720
+https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p4/chunks.m3u8?nimblesessionid=64402068&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTYvMjAyNSA3OjEyOjE1IEFNJmhhc2hfdmFsdWU9RGMraHRiVWwydFV3d2ZCUldjcEREUT09JnZhbGlkbWludXRlcz0zMCZpZD02OGYwOWFjZjdlZTZk
+#EXT-X-STREAM-INF:BANDWIDTH=490000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1024x576
+https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p3/chunks.m3u8?nimblesessionid=64402068&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTYvMjAyNSA3OjEyOjE1IEFNJmhhc2hfdmFsdWU9RGMraHRiVWwydFV3d2ZCUldjcEREUT09JnZhbGlkbWludXRlcz0zMCZpZD02OGYwOWFjZjdlZTZk
+#EXT-X-STREAM-INF:BANDWIDTH=260000,CODECS="avc1.66.30,mp4a.40.2",RESOLUTION=640x360
+https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p2/chunks.m3u8?nimblesessionid=64402068&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTYvMjAyNSA3OjEyOjE1IEFNJmhhc2hfdmFsdWU9RGMraHRiVWwydFV3d2ZCUldjcEREUT09JnZhbGlkbWludXRlcz0zMCZpZD02OGYwOWFjZjdlZTZk
