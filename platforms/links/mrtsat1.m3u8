@@ -1,8 +1,8 @@
 #EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=2700000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1280x720
-https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p4/chunks.m3u8?nimblesessionid=65365744&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTkvMjAyNSAyOjA5OjU3IFBNJmhhc2hfdmFsdWU9Wm9IVDdVMVdzaWo3enRIaUY1RFdlZz09JnZhbGlkbWludXRlcz0zMCZpZD02OGY0ZjEzNWQzZTYw
-#EXT-X-STREAM-INF:BANDWIDTH=1000000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1024x576
-https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p3/chunks.m3u8?nimblesessionid=65365744&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTkvMjAyNSAyOjA5OjU3IFBNJmhhc2hfdmFsdWU9Wm9IVDdVMVdzaWo3enRIaUY1RFdlZz09JnZhbGlkbWludXRlcz0zMCZpZD02OGY0ZjEzNWQzZTYw
-#EXT-X-STREAM-INF:BANDWIDTH=510000,CODECS="avc1.66.30,mp4a.40.2",RESOLUTION=640x360
-https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p2/chunks.m3u8?nimblesessionid=65365744&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTkvMjAyNSAyOjA5OjU3IFBNJmhhc2hfdmFsdWU9Wm9IVDdVMVdzaWo3enRIaUY1RFdlZz09JnZhbGlkbWludXRlcz0zMCZpZD02OGY0ZjEzNWQzZTYw
+#EXT-X-STREAM-INF:BANDWIDTH=2900000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1280x720
+https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p4/chunks.m3u8?nimblesessionid=65373314&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTkvMjAyNSAzOjA5OjM5IFBNJmhhc2hfdmFsdWU9c25obEsrRHpuT25sWURHU1BoVWlMZz09JnZhbGlkbWludXRlcz0zMCZpZD02OGY0ZmYzMzE4YTQ5
+#EXT-X-STREAM-INF:BANDWIDTH=1100000,CODECS="avc1.42001f,mp4a.40.2",RESOLUTION=1024x576
+https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p3/chunks.m3u8?nimblesessionid=65373314&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTkvMjAyNSAzOjA5OjM5IFBNJmhhc2hfdmFsdWU9c25obEsrRHpuT25sWURHU1BoVWlMZz09JnZhbGlkbWludXRlcz0zMCZpZD02OGY0ZmYzMzE4YTQ5
+#EXT-X-STREAM-INF:BANDWIDTH=560000,CODECS="avc1.66.30,mp4a.40.2",RESOLUTION=640x360
+https://vod-c57.interspace.com:443/channel_abr/45/receiver/45_p2/chunks.m3u8?nimblesessionid=65373314&wmsAuthSign=c2VydmVyX3RpbWU9MTAvMTkvMjAyNSAzOjA5OjM5IFBNJmhhc2hfdmFsdWU9c25obEsrRHpuT25sWURHU1BoVWlMZz09JnZhbGlkbWludXRlcz0zMCZpZD02OGY0ZmYzMzE4YTQ5
