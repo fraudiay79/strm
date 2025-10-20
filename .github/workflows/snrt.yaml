@@ -2,7 +2,7 @@ name: run snrt.sh
 
 on:
   schedule:
-    - cron: '*/10 * * * *' # Runs in every 10 minutes
+    - cron: '*/30 * * * *' # Runs in every 30 minutes
   workflow_dispatch:
 
 jobs:
