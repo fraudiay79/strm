@@ -1,12 +1,12 @@
-#!/bin/bash
+#!/usr/bin/env python3
 
-# Directory to save output files
-output_dir="links/ng"
-mkdir -p "$output_dir"
-
-python3 -c "
 import requests
 import json
+import os
+
+# Directory to save output files
+output_dir = "links/ng"
+os.makedirs(output_dir, exist_ok=True)
 
 # Headers for the API request
 headers = {
@@ -77,6 +77,3 @@ with open(output_file, 'w') as f:
 
 print(f'Final m3u8 file created: {output_file}')
 print(f'Final URL: {final_url}')
-"
-
-echo "Script completed successfully!"
