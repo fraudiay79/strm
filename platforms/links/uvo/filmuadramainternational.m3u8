@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Ukrainian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="uk",URI="streams/sessions/df8f63123e85424c99193f5b445c9166/media/playlist-orig.m3u8/fstl=exp=1761075862~acl=%2F10010%2Fdvr%2Fhls%2Ffilmuadramainternational%2F%2A~hmac=69630a51a76fec5350bdf88ebf92003f8ab7b1ada4d81851e4d2ee01b84f258b/1.m3u8"
-#EXT-X-STREAM-INF:BANDWIDTH=3128000,AVERAGE-BANDWIDTH=3186508,CODECS="hvc1.1.2.L90.90,mp4a.40.2",RESOLUTION=1048x576,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/filmuadramainternational/streams/sessions/df8f63123e85424c99193f5b445c9166/media/playlist-orig.m3u8/fstl=exp=1761075862~acl=%2F10010%2Fdvr%2Fhls%2Ffilmuadramainternational%2F%2A~hmac=69630a51a76fec5350bdf88ebf92003f8ab7b1ada4d81851e4d2ee01b84f258b/0.m3u8
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Ukrainian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="uk",URI="streams/sessions/420d74363eb24caebb917b92c98e9949/media/playlist-orig.m3u8/fstl=exp=1761081631~acl=%2F10010%2Fdvr%2Fhls%2Ffilmuadramainternational%2F%2A~hmac=0a372f1db833ed21df8bcdfa662fd8f0bc720c24f1ed2bb26d457d9d8ab67f07/1.m3u8"
+#EXT-X-STREAM-INF:BANDWIDTH=3128000,AVERAGE-BANDWIDTH=3186002,CODECS="hvc1.1.2.L90.90,mp4a.40.2",RESOLUTION=1048x576,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/filmuadramainternational/streams/sessions/420d74363eb24caebb917b92c98e9949/media/playlist-orig.m3u8/fstl=exp=1761081631~acl=%2F10010%2Fdvr%2Fhls%2Ffilmuadramainternational%2F%2A~hmac=0a372f1db833ed21df8bcdfa662fd8f0bc720c24f1ed2bb26d457d9d8ab67f07/0.m3u8
