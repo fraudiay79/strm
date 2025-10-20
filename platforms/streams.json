@@ -11,11 +11,6 @@
             "url": "https://www.dailymotion.com/video/x9a8gdk"
         },
         {
-            "name": "Yemen TV",
-            "slug": "yementv",
-            "url": "https://www.twitch.tv/yemen_01"
-        },
-        {
             "name": "CCN TV6",
             "slug": "ccntv6",
             "url": "https://www.dailymotion.com/video/x7x3klh"
@@ -23,7 +18,7 @@
         {
             "name": "Red Uno Santa Cruz",
             "slug": "redunosc",
-            "url": "https://www.dailymotion.com/video/x9ie7h0"
+            "url": "https://www.dailymotion.com/video/x9n2qyk"
         },
         {
             "name": "Red Uno La Paz",
@@ -131,16 +126,6 @@
             "url": "https://www.twitch.tv/hadramout1"
         },
         {
-            "name": "Samaa News",
-            "slug": "samaanews",
-            "url": "https://www.youtube.com/channel/UCJekW1Vj5fCVEGdye_mBN6Q/live"
-        },
-        {
-            "name": "ПЛЮСПЛЮС",
-            "slug": "plusplus",
-            "url": "https://1plus1.video/tvguide/plusplus/online"
-        },
-        {
             "name": "One TV Togo",
             "slug": "onetvtogo",
             "url": "https://www.twitch.tv/onetvlive1"
@@ -161,16 +146,6 @@
             "url": "https://www.twitch.tv/pboperu"
         },
         {
-            "name": "Panamericana",
-            "slug": "panamericana",
-            "url": "https://kick.com/api/v2/channels/ptv5/livestream"
-        },
-        {
-            "name": "STV",
-            "slug": "stvscotland",
-            "url": "https://player.api.stv.tv/v1/streams/stv/"
-        },
-        {
             "name": "Olympics",
             "slug": "olympics",
             "url": "https://olympics.com/en/live/"
@@ -184,11 +159,6 @@
             "name": "CVM TV",
             "slug": "cvmtv",
             "url": "https://vimeo.com/event/4401057"
-        },
-        {
-            "name": "GBC",
-            "slug": "gbcgi",
-            "url": "https://vimeo.com/event/4156460/embed/interaction"
         },
         {
             "name": "ABC News (AL)",
@@ -276,11 +246,6 @@
             "url": "http://showmax.com.tr/canliyayin"
         },
         {
-            "name": "ATV",
-            "slug": "atv",
-            "url": "https://www.atv.com.tr/canli-yayin"
-        },
-        {
             "name": "Show Türk",
             "slug": "showturk",
             "url": "https://www.showturk.com.tr/canli-yayin/showturk"
@@ -288,7 +253,7 @@
         {
             "name": "Willax",
             "slug": "willax",
-            "url": "https://www.dailymotion.com/video/x7x4dgx"
+            "url": "https://www.dailymotion.com/video/x9s3ad6"
         },
         {
             "name": "ATB (BO)",
@@ -303,17 +268,7 @@
         {
             "name": "Teletuya",
             "slug": "teletuya",
-            "url": "https://www.dailymotion.com/video/x8z1nnq"
-        },
-        {
-            "name": "MRT Sat 1",
-            "slug": "mrtsat1",
-            "url": "https://play.mrt.com.mk/live/45"
-        },
-        {
-            "name": "MRT Sat 2",
-            "slug": "mrtsat2",
-            "url": "https://play.mrt.com.mk/live/46"
+            "url": "https://www.dailymotion.com/video/x9qw3f8"
         },
         {
             "name": "TV47 Kenya",
@@ -351,11 +306,6 @@
             "url": "https://www.dailymotion.com/video/x96x78e"
         },
         {
-            "name": "Canal 8",
-            "slug": "canal8hn",
-            "url": "https://www.twitch.tv/canal8hn"
-        },
-        {
             "name": "Oye TV",
             "slug": "oyetv",
             "url": "https://www.dailymotion.com/video/x8nlwwo"
@@ -378,7 +328,7 @@
         {
             "name": "Telemetro",
             "slug": "telemetro",
-            "url": "https://go.medcom.com.pa/telemetro"
+            "url": "https://www.dailymotion.com/video/x8nlwwo"
         },
         {
             "name": "Télé Maroc",
@@ -404,11 +354,6 @@
             "name": "TVP World",
             "slug": "tvpworld",
             "url": "https://stream.tvp.pl/?channel_id=51656487"
-        },
-        {
-            "name": "TVP Sport",
-            "slug": "tvpsport",
-            "url": "https://vod.tvp.pl/api/products/399702/videos/playlist"
         },
         {
             "name": "Color Visión (DO)",
