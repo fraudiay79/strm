@@ -38,7 +38,7 @@ jobs:
             #python giniko.py giniko.json
             #python mediabay.py mediabay.json
             python streams.py streams.json
-            python3 uvotv.py
+            #python3 uvotv.py
             python3 myvideoge.py
             python3 polska.py
             python3 tdmax.py
