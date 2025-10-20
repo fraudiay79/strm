@@ -2,7 +2,7 @@ name: run uvotv.py
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Runs in every hour
+    - cron: '0 */3 * * *' # Runs in every 3 hours
   pull_request:
       branches:
         - main
