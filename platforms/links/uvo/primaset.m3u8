@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/primaset/streams/sessions/1714a7f8f88840949114a2bee38981fa/media/playlist-orig.m3u8/fstl=exp=1761061209~acl=%2F10010%2Flive%2Fhls%2Fprimaset%2F%2A~hmac=ea968a46193cd6db9c3311eaad2fd96eac0388ee9ebc58d7ba92b5b4acbd9569/0.m3u8

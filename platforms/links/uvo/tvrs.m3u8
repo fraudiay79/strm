@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/tvrs/streams/sessions/98fde0ae38024a4cb39b4e888000d0be/media/playlist-orig.m3u8/fstl=exp=1761061241~acl=%2F10010%2Flive%2Fhls%2Ftvrs%2F%2A~hmac=aab00f36c5495e8fa19731fb3b7a2705be04c08ad157985094e6a5c65c0edfc8/0.m3u8

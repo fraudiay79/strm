@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120431/tm1/streams/sessions/ce4c5def47f748d6b1db51e9efff53ad/media/playlist-orig.m3u8/fstl=exp=1761060934~acl=%2Fhls%2Flive%2F2120431%2Ftm1%2F%2A~hmac=57702938b75ebd4ccb4113d59d5dd6be4fd72f59a456fa73a29cab624e6cec53/0.m3u8

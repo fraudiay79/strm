@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/trsp/streams/sessions/187245e8267241d88200720fd5c0beea/media/playlist-orig.m3u8/fstl=exp=1761061202~acl=%2F10010%2Flive%2Fhls%2Ftrsp%2F%2A~hmac=f5c4359fae868a6e1af347a00f39035db3f0dbe91f389c76f0ae14fbeaf481bb/0.m3u8
