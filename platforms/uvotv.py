@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
 
 import requests
-import json
 import os
 
 # Directory to save output files
 output_dir = "links/ng"
 os.makedirs(output_dir, exist_ok=True)
+
+# Create a session to maintain cookies and headers
+s = requests.Session()
 
 # Headers for the API request
 headers = {
@@ -22,10 +24,14 @@ headers = {
     'sec-fetch-site': 'cross-site',
     'sec-fetch-user': '?1',
     'upgrade-insecure-requests': '1',
-    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+    'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36',
+    'referer': 'https://uvotv.com/'
 }
 
-# Cookies
+# Update session headers
+s.headers.update(headers)
+
+# Cookies to set
 cookies = {
     '_gcl_au': '1.1.1977328394.1759494547',
     '_ga': 'GA1.1.151876816.1759494547',
@@ -46,34 +52,51 @@ cookies = {
     '_ga_9EXRJ4BBQD': 'GS2.1.s1760961683$o12$g1$t1760961920$j60$l0$h0'
 }
 
-# Fetch the JSON data
-api_url = 'https://uvotv.com/api/web/live-channels/v2/1139/url'
-response = requests.get(api_url, headers=headers, cookies=cookies)
-data = response.json()
+# Update session cookies
+s.cookies.update(cookies)
 
-playback_url = data['payload']['playbackUrl']
-print(f'Extracted playback URL: {playback_url}')
+try:
+    # Fetch the JSON data
+    api_url = 'https://uvotv.com/api/web/live-channels/v2/1139/url'
+    print("Fetching API data...")
+    response = s.get(api_url)
+    response.raise_for_status()
+    
+    data = response.json()
+    playback_url = data['payload']['playbackUrl']
+    print(f'Extracted playback URL: {playback_url}')
 
-# Extract base URL
-base_url = playback_url.split('playlist.m3u8')[0]
+    # Extract base URL
+    base_url = playback_url.split('playlist.m3u8')[0]
 
-# Fetch playlist content
-playlist_response = requests.get(playback_url)
-playlist_content = playlist_response.text
+    # Fetch playlist content using the same session
+    print("Fetching playlist content...")
+    playlist_response = s.get(playback_url)
+    playlist_response.raise_for_status()
+    
+    playlist_content = playlist_response.text
+    print(f"Playlist response status: {playlist_response.status_code}")
 
-# Extract header and relative path
-lines = playlist_content.strip().split('\n')
-header_lines = [line for line in lines if line.startswith('#')]
-relative_path = [line for line in lines if not line.startswith('#')][0]
+    # Extract header and relative path
+    lines = playlist_content.strip().split('\n')
+    header_lines = [line for line in lines if line.startswith('#')]
+    relative_path = [line for line in lines if not line.startswith('#')][0]
 
-# Construct final URL
-final_url = base_url + relative_path
+    # Construct final URL
+    final_url = base_url + relative_path
 
-# Write to file
-output_file = 'links/ng/channels_tv.m3u8'
-with open(output_file, 'w') as f:
-    f.write('\n'.join(header_lines) + '\n')
-    f.write(final_url + '\n')
+    # Write to file
+    output_file = 'links/ng/channels_tv.m3u8'
+    with open(output_file, 'w') as f:
+        f.write('\n'.join(header_lines) + '\n')
+        f.write(final_url + '\n')
 
-print(f'Final m3u8 file created: {output_file}')
-print(f'Final URL: {final_url}')
+    print(f'Final m3u8 file created: {output_file}')
+    print(f'Final URL: {final_url}')
+
+except requests.exceptions.RequestException as e:
+    print(f"Error making request: {e}")
+except KeyError as e:
+    print(f"Error parsing JSON response: {e}")
+except Exception as e:
+    print(f"Unexpected error: {e}")
