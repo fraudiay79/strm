@@ -8,13 +8,15 @@ import json
 output_dir = "links/uvo"
 os.makedirs(output_dir, exist_ok=True)
 
-# Read the uvo.json file
+# Read the uvo.json file - it's located in links/uvo directory
+json_file_path = os.path.join(output_dir, 'uvo.json')
+
 try:
-    with open('uvo.json', 'r') as f:
+    with open(json_file_path, 'r') as f:
         channels = json.load(f)
-    print(f"Loaded {len(channels)} channels from uvo.json")
+    print(f"Loaded {len(channels)} channels from {json_file_path}")
 except FileNotFoundError:
-    print("Error: uvo.json file not found in the current directory")
+    print(f"Error: uvo.json file not found at {json_file_path}")
     exit(1)
 except json.JSONDecodeError as e:
     print(f"Error parsing uvo.json: {e}")
