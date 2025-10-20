@@ -1,0 +1,44 @@
+name: run uvotv.py
+
+on:
+  schedule:
+    - cron: '0 */4 * * *' # Runs in every hour
+  pull_request:
+      branches:
+        - main
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps: 
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+            python-version: '3.x' 
+            
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          
+          pwd
+          cd ./platforms/
+          
+          pip3 install -r requirements.txt
+          pip3 install beautifulsoup4
+          pip3 install selenium
+      - name: execute py script 
+        run:  |
+            pwd
+            cd ./platforms/
+            python3 uvotv.py
+      - name: commit and push files
+        run: |
+          git config --local user.email ""
+          git config --local user.name "Stream Ninja 🥷🏽"
+          git pull origin main
+          git add -A
+          git commit -m "updated streams"
+          git push
