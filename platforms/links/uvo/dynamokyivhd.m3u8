@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Russian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="ru",URI="streams/sessions/d4e65fb028544d43a3fe5965194604e8/media/playlist-orig.m3u8/fstl=exp=1761124903~acl=%2Fhls%2Flive%2F2120685%2Fdynamokyivhd%2F%2A~hmac=16ed85e2e50a39b132a9a19f32c4bc514ec61c508a1e4cf4301d01464b65f716/1.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Russian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="ru",URI="streams/sessions/c62d788d1d63490fa69166e8e1670050/media/playlist-orig.m3u8/fstl=exp=1761136784~acl=%2Fhls%2Flive%2F2120685%2Fdynamokyivhd%2F%2A~hmac=09e5074b8a967a0fa4103ca085af274fd23b1fcda2c6cda3dc094f78c4da4900/1.m3u8"
 #EXT-X-STREAM-INF:BANDWIDTH=3128000,AVERAGE-BANDWIDTH=2415810,CODECS="hvc1.1.2.L120.90,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000,VIDEO-RANGE=SDR
-https://live.uvotv.com/hls/live/2120685/dynamokyivhd/streams/sessions/d4e65fb028544d43a3fe5965194604e8/media/playlist-orig.m3u8/fstl=exp=1761124903~acl=%2Fhls%2Flive%2F2120685%2Fdynamokyivhd%2F%2A~hmac=16ed85e2e50a39b132a9a19f32c4bc514ec61c508a1e4cf4301d01464b65f716/0.m3u8
+https://live.uvotv.com/hls/live/2120685/dynamokyivhd/streams/sessions/c62d788d1d63490fa69166e8e1670050/media/playlist-orig.m3u8/fstl=exp=1761136784~acl=%2Fhls%2Flive%2F2120685%2Fdynamokyivhd%2F%2A~hmac=09e5074b8a967a0fa4103ca085af274fd23b1fcda2c6cda3dc094f78c4da4900/0.m3u8

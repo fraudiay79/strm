@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Ukrainian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="uk",URI="streams/sessions/8afd6e9d28aa422995b6c5e34ee19cfc/media/playlist-orig.m3u8/fstl=exp=1761124905~acl=%2Fhls%2Flive%2F2119693%2Fdimtv%2F%2A~hmac=b554fb9b45a778bd782b3a98f1ee9776061d50e2dcfe8d53bdf3a51f465afa16/1.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Ukrainian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="uk",URI="streams/sessions/b4e1abb33cf74aafacbb96dea59b8629/media/playlist-orig.m3u8/fstl=exp=1761136787~acl=%2Fhls%2Flive%2F2119693%2Fdimtv%2F%2A~hmac=a600f87736b08fb4ba3ca177e19e4c6c9f572d8db6c026a2b23fa658d008bfc6/1.m3u8"
 #EXT-X-STREAM-INF:BANDWIDTH=3128000,AVERAGE-BANDWIDTH=3177550,CODECS="hvc1.1.2.L120.90,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000,VIDEO-RANGE=SDR
-https://live.uvotv.com/hls/live/2119693/dimtv/streams/sessions/8afd6e9d28aa422995b6c5e34ee19cfc/media/playlist-orig.m3u8/fstl=exp=1761124905~acl=%2Fhls%2Flive%2F2119693%2Fdimtv%2F%2A~hmac=b554fb9b45a778bd782b3a98f1ee9776061d50e2dcfe8d53bdf3a51f465afa16/0.m3u8
+https://live.uvotv.com/hls/live/2119693/dimtv/streams/sessions/b4e1abb33cf74aafacbb96dea59b8629/media/playlist-orig.m3u8/fstl=exp=1761136787~acl=%2Fhls%2Flive%2F2119693%2Fdimtv%2F%2A~hmac=a600f87736b08fb4ba3ca177e19e4c6c9f572d8db6c026a2b23fa658d008bfc6/0.m3u8
