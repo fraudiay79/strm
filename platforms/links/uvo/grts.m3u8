@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d4015,mp4a.40.2",RESOLUTION=450x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120429/grts/streams/sessions/878493b6c59d4a448938574652b1e6aa/media/playlist-orig.m3u8/fstl=exp=1761081571~acl=%2Fhls%2Flive%2F2120429%2Fgrts%2F%2A~hmac=ece922d6c10c374108bcdef665127a4dfcc085ffbb8ce56e372331cafdddd006/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120429/grts/streams/sessions/51c5124ca4c94c31b5f1d353ec0b7ba1/media/playlist-orig.m3u8/fstl=exp=1761114537~acl=%2Fhls%2Flive%2F2120429%2Fgrts%2F%2A~hmac=49e642cf5b76b6d2b9e6cf3dd2926c8aa44dc311def6169106a70185076aa88a/0.m3u8

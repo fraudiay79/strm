@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="track_0",DEFAULT=NO,AUTOSELECT=YES,URI="streams/sessions/b25018106c06442da71ccb04839429d7/media/playlist-orig.m3u8/fstl=exp=1761104517~acl=%2Fhls%2Flive%2F2119693%2Ffreedomchannels%2F%2A~hmac=c84fb27f37e57986bf596beef79c8c674a1a221f296153cdb324cda044687ca7/1.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="track_0",DEFAULT=NO,AUTOSELECT=YES,URI="streams/sessions/055bd60fe3604ba8a2701af0e5f75df6/media/playlist-orig.m3u8/fstl=exp=1761114589~acl=%2Fhls%2Flive%2F2119693%2Ffreedomchannels%2F%2A~hmac=9998a8db20428d979a80c9b536ac197bbcd17515d14d8633d6f8b3fe7be22bd6/1.m3u8"
 #EXT-X-STREAM-INF:BANDWIDTH=3128000,AVERAGE-BANDWIDTH=3706005,CODECS="hvc1.1.2.L120.90,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000,VIDEO-RANGE=SDR
-https://live.uvotv.com/hls/live/2119693/freedomchannels/streams/sessions/b25018106c06442da71ccb04839429d7/media/playlist-orig.m3u8/fstl=exp=1761104517~acl=%2Fhls%2Flive%2F2119693%2Ffreedomchannels%2F%2A~hmac=c84fb27f37e57986bf596beef79c8c674a1a221f296153cdb324cda044687ca7/0.m3u8
+https://live.uvotv.com/hls/live/2119693/freedomchannels/streams/sessions/055bd60fe3604ba8a2701af0e5f75df6/media/playlist-orig.m3u8/fstl=exp=1761114589~acl=%2Fhls%2Flive%2F2119693%2Ffreedomchannels%2F%2A~hmac=9998a8db20428d979a80c9b536ac197bbcd17515d14d8633d6f8b3fe7be22bd6/0.m3u8
