@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Ukrainian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="uk",URI="streams/sessions/2c29f4dfa4bf4e8ca034eec2e050aab3/media/playlist-orig.m3u8/fstl=exp=1761136785~acl=%2Fhls%2Flive%2F2119693%2Fdacha%2F%2A~hmac=1af65b1424d316eb9328aea397648bb11b4791fd2138c3b00b17b5ad13a7acbe/1.m3u8"
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Ukrainian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="uk",URI="streams/sessions/09890cb434104cf89f80aba9558727ed/media/playlist-orig.m3u8/fstl=exp=1761146520~acl=%2Fhls%2Flive%2F2119693%2Fdacha%2F%2A~hmac=724d1b9a7c53754b8e0df493b60f261486e3917b0e11b6937339b475907be1d7/1.m3u8"
 #EXT-X-STREAM-INF:BANDWIDTH=3128000,AVERAGE-BANDWIDTH=3026782,CODECS="hvc1.1.2.L120.90,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000,VIDEO-RANGE=SDR
-https://live.uvotv.com/hls/live/2119693/dacha/streams/sessions/2c29f4dfa4bf4e8ca034eec2e050aab3/media/playlist-orig.m3u8/fstl=exp=1761136785~acl=%2Fhls%2Flive%2F2119693%2Fdacha%2F%2A~hmac=1af65b1424d316eb9328aea397648bb11b4791fd2138c3b00b17b5ad13a7acbe/0.m3u8
+https://live.uvotv.com/hls/live/2119693/dacha/streams/sessions/09890cb434104cf89f80aba9558727ed/media/playlist-orig.m3u8/fstl=exp=1761146520~acl=%2Fhls%2Flive%2F2119693%2Fdacha%2F%2A~hmac=724d1b9a7c53754b8e0df493b60f261486e3917b0e11b6937339b475907be1d7/0.m3u8
