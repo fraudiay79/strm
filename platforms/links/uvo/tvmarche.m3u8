@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/tvmarche/streams/sessions/7d2325dd14204e9885214be1b7d1ad8a/media/playlist-orig.m3u8/fstl=exp=1761244316~acl=%2F10010%2Flive%2Fhls%2Ftvmarche%2F%2A~hmac=9f41dcd9d062c0f08dc20e9a09de61d2a57b18b77111f0c10ff14f9a6e35b737/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/tvmarche/streams/sessions/790337d7e0d5428181cfdf5d3e10dbff/media/playlist-orig.m3u8/fstl=exp=1761268902~acl=%2F10010%2Flive%2Fhls%2Ftvmarche%2F%2A~hmac=17f3a1fc281748e80b3b9902079069fd77ce818daae87820fff57f60754f532a/0.m3u8
