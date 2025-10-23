@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1088,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/lunatv/streams/sessions/7653443f8ff94b67903ed452c9241a08/media/playlist-orig.m3u8/fstl=exp=1761319346~acl=%2F10010%2Flive%2Fhls%2Flunatv%2F%2A~hmac=b56d67640e9e9cb6d23c702a18ee14a78dc4e100da786766a435db5523ccf542/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/lunatv/streams/sessions/a71d008666044922b9ee8503bdceffa3/media/playlist-orig.m3u8/fstl=exp=1761330631~acl=%2F10010%2Flive%2Fhls%2Flunatv%2F%2A~hmac=d4ff7f38ec803fa4b7c76a6a69073929f2def9ac422e52d5a149b51d5d11fdab/0.m3u8
