@@ -9,44 +9,25 @@ def extract_stream_url(data, channel_name):
     Extract the stream URL from the JSON response.
     """
     try:
-        # For video-stream type (nelonen, hero)
-        if data.get('type') == 'video-stream':
-            if 'media' in data:
-                media = data['media']
-                # Try different possible locations for HLS stream
-                if 'hls' in media:
-                    return media['hls']
-                elif 'url' in media:
-                    return media['url']
-                elif 'streams' in media and len(media['streams']) > 0:
-                    # Look for HLS stream in streams array
-                    for stream in media['streams']:
-                        if stream.get('type') == 'hls' and 'url' in stream:
-                            return stream['url']
-                        elif 'url' in stream:
-                            return stream['url']
+        # For video type (jim, liv) - the stream URL is in clip.playback.media.streamUrls.android.url
+        if data.get('type') == 'video':
+            if ('clip' in data and 
+                'playback' in data['clip'] and 
+                'media' in data['clip']['playback'] and 
+                'streamUrls' in data['clip']['playback']['media'] and 
+                'android' in data['clip']['playback']['media']['streamUrls'] and 
+                'url' in data['clip']['playback']['media']['streamUrls']['android']):
+                return data['clip']['playback']['media']['streamUrls']['android']['url']
         
-        # For video type (jim, liv) - look in clip.playback
-        elif data.get('type') == 'video':
-            if 'clip' in data and 'playback' in data['clip']:
-                playback = data['clip']['playback']
-                if 'hls' in playback:
-                    return playback['hls']
-                elif 'url' in playback:
-                    return playback['url']
-                elif 'streams' in playback and len(playback['streams']) > 0:
-                    for stream in playback['streams']:
-                        if stream.get('type') == 'hls' and 'url' in stream:
-                            return stream['url']
-                        elif 'url' in stream:
-                            return stream['url']
-        
-        # If we still haven't found it, print the full structure for debugging
-        print(f"  Debug - Full media structure for {channel_name}:")
-        if data.get('type') == 'video-stream' and 'media' in data:
-            print(json.dumps(data['media'], indent=2)[:1000])
-        elif data.get('type') == 'video' and 'clip' in data and 'playback' in data['clip']:
-            print(json.dumps(data['clip']['playback'], indent=2)[:1000])
+        # For video-stream type (nelonen, hero) - we need to check the actual structure
+        elif data.get('type') == 'video-stream':
+            if 'media' in data and 'streamUrls' in data['media']:
+                # Try android URL first
+                if 'android' in data['media']['streamUrls'] and 'url' in data['media']['streamUrls']['android']:
+                    return data['media']['streamUrls']['android']['url']
+                # Try webHls as fallback
+                elif 'webHls' in data['media']['streamUrls'] and 'url' in data['media']['streamUrls']['webHls']:
+                    return data['media']['streamUrls']['webHls']['url']
         
         print(f"  Could not find stream URL in response for {channel_name}")
         return None
