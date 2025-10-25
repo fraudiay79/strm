@@ -34,7 +34,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 snrt_test.py
+            python3 nelonen.py
             #python3 giniko.py giniko.json
             #python3 atvtr.py > links/atvtr.m3u8
             #bash uvotv.sh
