@@ -7,30 +7,49 @@ import json
 def extract_stream_url(data, channel_name):
     """
     Extract the stream URL from the JSON response.
-    This function needs to be customized based on the actual API response structure.
     """
     try:
-        print(f"  Debug: Full response structure for {channel_name}:")
-        print(json.dumps(data, indent=2)[:500] + "..." if len(json.dumps(data)) > 500 else json.dumps(data, indent=2))
+        # For video-stream type (nelonen, hero)
+        if data.get('type') == 'video-stream':
+            if 'media' in data:
+                media = data['media']
+                # Try different possible locations for HLS stream
+                if 'hls' in media:
+                    return media['hls']
+                elif 'url' in media:
+                    return media['url']
+                elif 'streams' in media and len(media['streams']) > 0:
+                    # Look for HLS stream in streams array
+                    for stream in media['streams']:
+                        if stream.get('type') == 'hls' and 'url' in stream:
+                            return stream['url']
+                        elif 'url' in stream:
+                            return stream['url']
         
-        # Try common patterns for stream URLs
-        if 'streamUrl' in data:
-            return data['streamUrl']
-        elif 'url' in data:
-            return data['url']
-        elif 'playback' in data and 'url' in data['playback']:
-            return data['playback']['url']
-        elif 'media' in data and 'streams' in data['media'] and len(data['media']['streams']) > 0:
-            return data['media']['streams'][0]['url']
-        elif 'hls' in data:
-            return data['hls']
-        elif 'dash' in data:
-            return data['dash']
-        else:
-            print(f"  Could not find stream URL in response for {channel_name}")
-            # Print all top-level keys to help debug
-            print(f"  Top-level keys: {list(data.keys())}")
-            return None
+        # For video type (jim, liv) - look in clip.playback
+        elif data.get('type') == 'video':
+            if 'clip' in data and 'playback' in data['clip']:
+                playback = data['clip']['playback']
+                if 'hls' in playback:
+                    return playback['hls']
+                elif 'url' in playback:
+                    return playback['url']
+                elif 'streams' in playback and len(playback['streams']) > 0:
+                    for stream in playback['streams']:
+                        if stream.get('type') == 'hls' and 'url' in stream:
+                            return stream['url']
+                        elif 'url' in stream:
+                            return stream['url']
+        
+        # If we still haven't found it, print the full structure for debugging
+        print(f"  Debug - Full media structure for {channel_name}:")
+        if data.get('type') == 'video-stream' and 'media' in data:
+            print(json.dumps(data['media'], indent=2)[:1000])
+        elif data.get('type') == 'video' and 'clip' in data and 'playback' in data['clip']:
+            print(json.dumps(data['clip']['playback'], indent=2)[:1000])
+        
+        print(f"  Could not find stream URL in response for {channel_name}")
+        return None
             
     except Exception as e:
         print(f"  Error extracting stream URL for {channel_name}: {e}")
@@ -69,12 +88,12 @@ s.headers.update(headers)
 successful_channels = []
 failed_channels = []
 
-# Channel IDs mapping (you'll need to update these with the correct IDs)
+# Channel IDs mapping
 channel_ids = {
-    "jim": "2584964",  # Example ID, replace with actual
-    "nelonen": "2584965",  # Example ID, replace with actual  
-    "liv": "2584966",  # Example ID, replace with actual
-    "hero": "2584967"  # Example ID, replace with actual
+    "jim": "2584964",
+    "nelonen": "2584965", 
+    "liv": "2584966",
+    "hero": "2584967"
 }
 
 for channel_name in names:
@@ -97,6 +116,7 @@ for channel_name in names:
         
         data = response.json()
         print(f"  API response received for {channel_name}")
+        print(f"  Response type: {data.get('type')}")
         
         # Extract stream URL from the response
         stream_url = extract_stream_url(data, channel_name)
