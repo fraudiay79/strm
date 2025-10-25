@@ -4,6 +4,38 @@ import requests
 import os
 import json
 
+def extract_stream_url(data, channel_name):
+    """
+    Extract the stream URL from the JSON response.
+    This function needs to be customized based on the actual API response structure.
+    """
+    try:
+        print(f"  Debug: Full response structure for {channel_name}:")
+        print(json.dumps(data, indent=2)[:500] + "..." if len(json.dumps(data)) > 500 else json.dumps(data, indent=2))
+        
+        # Try common patterns for stream URLs
+        if 'streamUrl' in data:
+            return data['streamUrl']
+        elif 'url' in data:
+            return data['url']
+        elif 'playback' in data and 'url' in data['playback']:
+            return data['playback']['url']
+        elif 'media' in data and 'streams' in data['media'] and len(data['media']['streams']) > 0:
+            return data['media']['streams'][0]['url']
+        elif 'hls' in data:
+            return data['hls']
+        elif 'dash' in data:
+            return data['dash']
+        else:
+            print(f"  Could not find stream URL in response for {channel_name}")
+            # Print all top-level keys to help debug
+            print(f"  Top-level keys: {list(data.keys())}")
+            return None
+            
+    except Exception as e:
+        print(f"  Error extracting stream URL for {channel_name}: {e}")
+        return None
+
 # Finnish channels configuration
 names = ["jim", "nelonen", "liv", "hero"]
 output_dir = "links/fi"
@@ -67,7 +99,6 @@ for channel_name in names:
         print(f"  API response received for {channel_name}")
         
         # Extract stream URL from the response
-        # You'll need to adjust this based on the actual JSON structure
         stream_url = extract_stream_url(data, channel_name)
         
         if not stream_url:
@@ -102,26 +133,6 @@ for channel_name in names:
     except Exception as e:
         print(f"  ✗ Unexpected error for {channel_name}: {e}")
         failed_channels.append(channel_name)
-
-def extract_stream_url(data, channel_name):
-    """
-    Extract the stream URL from the JSON response.
-    This function needs to be customized based on the actual API response structure.
-    """
-    try:
-        # Example extraction - you'll need to adjust this based on the actual JSON structure
-        # Common patterns might be:
-        # data['streamUrl']
-        # data['playback']['url'] 
-        # data['media']['streams'][0]['url']
-        
-        # For now, return a placeholder - you need to implement the actual extraction
-        # based on the API response structure for nelonenmedia.fi
-        return None
-        
-    except Exception as e:
-        print(f"  Error extracting stream URL for {channel_name}: {e}")
-        return None
 
 # Print summary
 print(f"\n{'='*50}")
