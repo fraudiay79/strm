@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=900x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120757/horncabletv/streams/sessions/f1abbc6ca48046c28c2de3aafa70771d/media/playlist-orig.m3u8/fstl=exp=1761491955~acl=%2Fhls%2Flive%2F2120757%2Fhorncabletv%2F%2A~hmac=53060a7b8a549c964a908e6cc806457f65f238d3d61df88d210cc54bfd395627/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120757/horncabletv/streams/sessions/601b11fa84e44c6388087df944d4577d/media/playlist-orig.m3u8/fstl=exp=1761513464~acl=%2Fhls%2Flive%2F2120757%2Fhorncabletv%2F%2A~hmac=7c6cdff7b0f446b0d1aaed89269b18705582f14f1076dabce869fe30c1fdde9f/0.m3u8
