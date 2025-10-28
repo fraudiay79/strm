@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120429/stvcameroom/streams/sessions/269225d7aca14db1ba2196bc570bbd51/media/playlist-orig.m3u8/fstl=exp=1761700537~acl=%2Fhls%2Flive%2F2120429%2Fstvcameroom%2F%2A~hmac=3750bb95106e607e5fd63c8db10b2ffa8ff182841ae07585e7dfa45a7c1013af/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120429/stvcameroom/streams/sessions/82f3702f535a43d9be8d648825e65da0/media/playlist-orig.m3u8/fstl=exp=1761709247~acl=%2Fhls%2Flive%2F2120429%2Fstvcameroom%2F%2A~hmac=b51425c889eacaa2fb6a95d498dc949c6a8c1365c105a5d648cb23025a8da121/0.m3u8
