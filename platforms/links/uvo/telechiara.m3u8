@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telechiara/streams/sessions/c98296d9863d47d1baaac3260975c22b/media/playlist-orig.m3u8/fstl=exp=1761796363~acl=%2F10010%2Flive%2Fhls%2Ftelechiara%2F%2A~hmac=a148f45769c0a9b6e93e4330a0acedc25acd7a03babeb1886f402d6212df0d85/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telechiara/streams/sessions/2535d36c239a4751a48702438e0e1d7e/media/playlist-orig.m3u8/fstl=exp=1761805867~acl=%2F10010%2Flive%2Fhls%2Ftelechiara%2F%2A~hmac=fb4a2a4aefe85c58fc44ee2b4c0495573aecec6d7d9bc3ec4c2dd9db55119a99/0.m3u8
