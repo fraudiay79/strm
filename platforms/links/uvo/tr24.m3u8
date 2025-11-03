@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/tr24/streams/sessions/52a90cc690db4ddb8da80a46acd926dd/media/playlist-orig.m3u8/fstl=exp=1762281014~acl=%2F10010%2Flive%2Fhls%2Ftr24%2F%2A~hmac=fac4dc5e8240d8da3eb36e1eac1e3d6c869712f50abcd4f3306ca92d2eec680b/0.m3u8
