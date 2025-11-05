@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120431/sabcnews/streams/sessions/9a5462c5a3fe44b2b3e4763b17083729/media/playlist-orig.m3u8/fstl=exp=1762400579~acl=%2Fhls%2Flive%2F2120431%2Fsabcnews%2F%2A~hmac=fc79817e3a20988319da6e3db69a7e32ff0ca8050878521f89ae18471e678bfd/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120431/sabcnews/streams/sessions/86b3d18455ce425e80a0487595c6757f/media/playlist-orig.m3u8/fstl=exp=1762410359~acl=%2Fhls%2Flive%2F2120431%2Fsabcnews%2F%2A~hmac=1008eeba469d20fda7fad5cbcece8f8b0baf6789a7080d1e10d316d2f51033a7/0.m3u8
