@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120431/telesud/streams/sessions/97defbd91a354a1496fae92e886b2e3e/media/playlist-orig.m3u8/fstl=exp=1762496776~acl=%2Fhls%2Flive%2F2120431%2Ftelesud%2F%2A~hmac=93f17d2733a14c577d8145d6c626d60f9825330af23ce112f649b8c75863c5a1/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120431/telesud/streams/sessions/c8ad2e92f2fe42ca9bc9aca72a14801b/media/playlist-orig.m3u8/fstl=exp=1762518945~acl=%2Fhls%2Flive%2F2120431%2Ftelesud%2F%2A~hmac=6bbd5843045eb0307edaae7ad705184bd7ff4cfca912cea4bb66fdf31712c399/0.m3u8
