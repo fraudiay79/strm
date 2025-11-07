@@ -6686,7 +6686,7 @@
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports7.us" site_id="831591C8-DA65-4528-B837-0E5A147887FB">beIN Sports 7</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports8.us" site_id="9A424246-EC89-43C3-9239-AA3A40540F94">beIN Sports 8</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="beINSportsenEspanol.us" site_id="us#305596635/bein-sports-spanish">beIN Sports ñ</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="beINSports.us" site_id="us#317907389/bein-sports-english">beIN Sports</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="beINSports.us" site_id="us#317907415/bein-sports-hdtv-english">beIN Sports</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="beINSportsXtra.us" site_id="us#3263374126/wkuw-bein-sports-xtra">beIN Sports Xtra</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="beINSportsXtraenEspanol.us" site_id="us#10252984744/wlek-bein-sports-xtra-en-espanol">beIN SPORTS Xtra ñ</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="BET.us" site_id="us#69033776/black-entertainment-television-hdtv-east">BET (East) • BET</channel>
@@ -6794,10 +6794,10 @@
   <channel site="xumo.tv" lang="en" xmltv_id="HallmarkMoviesMore.us" site_id="0#99991709">Hallmark Movies &amp; More</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="HBO.us" site_id="us#69046988/hbo">HBO (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="HBOComedy.us" site_id="us#69047950/hbo-comedy-east">HBO Comedy (East)</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="HBODrama.us" site_id="us#69032052/hbo-signature-east">HBO Drama (East)</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="HBOHits.us" site_id="us#69022958/hbo-2-east">HBO Hits (East)</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="HBODrama.us" site_id="us#69031637/hbo-signature-hdtv-east">HBO Drama (East)</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="HBOHits.us" site_id="us#69031635/hbo-2-hdtv-east">HBO Hits (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="HBOLatino.us" site_id="us#69049701/hbo-latino-east">HBO Latino (East)</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="HBOMovies.us" site_id="us#69047953/hbo-zone-east">HBO Movies (East)</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="HBOMovies.us" site_id="us#69031763/hbo-zone-hdtv-east">HBO Movies (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="HDNetMovies.us" site_id="us#69023291/hdnet-movies">HDNet Movies</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="HeroesandIcons.us" site_id="us#324696701/wrbw-heroes-icons">Heroes &amp; Icons</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="HGTV.us" site_id="us#69027868/home-garden-television-hdtv-east">HGTV (East)</channel>
@@ -6813,6 +6813,7 @@
   <channel site="xumo.tv" lang="en" xmltv_id="IONTV.us" site_id="100#99951158">ION</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="IONMystery.us" site_id="100#99951157">ION Mystery</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="IONPlus.us" site_id="100#9999614">ION Plus</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="JusticeCentral.us" site_id="us#3616914635/justice-central-hdtv-east">Justice Central</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Laff.us" site_id="us#1743663116/laff">Laff</channel>
   <channel site="xumo.tv" lang="en" xmltv_id="LaffMore.us" site_id="100#99951232">Laff More!</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="LawCrime.us" site_id="us#1700359794/kskj-law-crime">Law &amp; Crime</channel>
@@ -6883,7 +6884,6 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="OWN.us" site_id="us#69038977/the-oprah-winfrey-network-east">Oprah Winfrey Network</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="OutdoorChannel.us" site_id="us#69023268/outdoor-channel">Outdoor Channel</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Outlaw.us" site_id="us#69030828/kktv-outlaw">Outlaw</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="OuterMax.us" site_id="us#69032376/outer-max-hdtv">OuterMax</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Ovation.us" site_id="us#69023274/ovation-arts-network">Ovation</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Oxygen.us" site_id="us#69048828/oxygen">Oxygen (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="ParamountNetwork.us" site_id="us#69047065/paramount-network-east">Paramount Network (East)</channel>
@@ -6894,17 +6894,24 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="Pop.us" site_id="us#69047429/pop">Pop</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="PosiTiV.us" site_id="us#69023262/positiv-tv">PosiTiV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="PursuitChannel.us" site_id="us#69033421/pursuit-channel">Pursuit Channel</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="Quest.us" site_id="us#5768422081/wven-quest">Quest (West)</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="Quest.us" site_id="us#5768323485/quest">Quest</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="QVC.us" site_id="us#1719658237/qvc">QVC</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="QVC2.us" site_id="us#679771047/qvc2">QVC2</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="QVC3.us" site_id="us#4190725425/qvc3">QVC3</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="RacerNetwork.us" site_id="us#69026971/racer">Racer Network</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="RealAmericasVoice.us" site_id="SamsungTVPlus/us#USBB1900002KF">Real America&apos;s Voice</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Reelz.us" site_id="us#69028832/reelzchannel">Reelz</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="RETROplex.us" site_id="us#69027422/retroplex">RETROplex</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="RetroTV.us" site_id="us#1762985955/retro-tv">Retro TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Revolt.us" site_id="us#773818056/revolt-hdtv">Revolt</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="RevN.us" site_id="us#69038440/revn">Rev'N</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="RFDTV.us" site_id="us#69021988/rfd-tv">RFD-TV</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="RightNowTV.us" site_id="us#3292072163/kpdr-rightnow-tv">Right Now TV</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="Roar.us" site_id="us#69037674/kttv-roar">Roar</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ScreenPixAction.us" site_id="screenpix-action/34660">ScreenPix: Action</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ScreenPixVoices.us" site_id="screenpix-voices/34662">ScreenPix: Voices</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ScreenPixWesterns.us" site_id="screenpix-westerns/34661">ScreenPix: Westerns</channel>
+  <channel site="tvpassport.com" lang="en" xmltv_id="ScreenPix.us" site_id="screenpix/34659">ScreenPix</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="ScrippsNews.us" site_id="us#3930485075/newsy">Scripps News</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Science.us" site_id="us#69022709/science">Science</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="SECNetwork.us" site_id="us#1134563262/sec-network">SEC Network</channel>
@@ -6915,7 +6922,7 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="ShowtimeFamilyZone.us" site_id="us#69049896/showtime-familyzone-east">Showtime Family Zone</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="ShowtimeNext.us" site_id="us#69049894/showtime-next-east">Showtime Next</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="ShowtimeShowcase.us" site_id="us#69032288/showtime-showcase-east">Showtime Showcase</channel>
-  <channel site="tvpassport.com" lang="en" xmltv_id="SHOxBET.us" site_id="shoxbet-hd-eastern/7110">SHOxBET</channel>
+  <channel site="tvinsider.com" lang="en" xmltv_id="SHOxBET.us" site_id="shoxbet">SHOxBET</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="ShowtimeWomen.us" site_id="us#69049897/showtime-women-east">Showtime Women</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Smile.us" site_id="us#1707850654/smile-of-a-child">Smile</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Smithsonian.us" site_id="us#69030997/smithsonian-channel-hdtv-east">Smithsonian</channel>
@@ -6944,7 +6951,6 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="StoryTV.us" site_id="us#69032554/wciu-story-television">Story TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="SundanceTV.us" site_id="us#69023497/sundancetv-east">SundanceTV (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Syfy.us" site_id="us#69030967/syfy-hdtv">Syfy (East)</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="TBD.us" site_id="us#4545207141/wgfl-tbd-tv">TBD</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="TBN.us" site_id="us#1707850652/tbn">TBN</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="TBNInspire.us" site_id="us#69022085/tbn-inspire">TBN Inspire</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="TBS.us" site_id="us#69046986/tbs-superstation-east">TBS (East)</channel>
