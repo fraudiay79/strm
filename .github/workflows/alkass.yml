@@ -28,8 +28,11 @@ jobs:
         ALKASS_PASSWORD: ${{ secrets.ALKASS_PASSWORD }}
         # OR use token if available:
         # ALKASS_AUTH_TOKEN: ${{ secrets.ALKASS_AUTH_TOKEN }}
-      run: |
-        python alkass.py
+      - name: execute py script 
+        run:  |
+            pwd
+            cd ./platforms/
+            python3 alkass.py
         
     - name: Commit and push if changed
       run: |
