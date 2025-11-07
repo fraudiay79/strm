@@ -36,66 +36,83 @@ def get_livestream_m3u8_url(session, url, channel_name):
             f.write(html_content)
         print(f"📄 Saved HTML to {debug_file}")
         
-        # Method 1: Look for bitmovin player configuration (most likely)
+        # Method 1: Look for bitmovin player configuration with multi-line support
         print("🔍 Searching for bitmovin player configuration...")
-        pattern1 = r'var sourceConfig\s*=\s*({[^}]+})'
-        match1 = re.search(pattern1, html_content)
+        
+        # Enhanced pattern to handle multi-line JavaScript
+        pattern1 = r'var sourceConfig\s*=\s*({[^}]+(?:\s*[^}]+)*\s*})'
+        match1 = re.search(pattern1, html_content, re.DOTALL)
+        
         if match1:
             config_str = match1.group(1)
-            print(f"✅ Found bitmovin config: {config_str[:100]}...")
+            print(f"✅ Found bitmovin config")
+            
+            # Clean the config string - remove extra spaces and normalize quotes
+            config_str = re.sub(r'\s+', ' ', config_str)  # Replace multiple spaces with single space
+            config_str = config_str.replace("'", '"')  # Normalize quotes
+            
             try:
-                # Clean the config string if needed
-                config_str = config_str.replace("'", '"')
                 config = json.loads(config_str)
                 if 'hls' in config:
-                    m3u8_url = config['hls']
-                    print(f"🎯 Found HLS URL via bitmovin config")
+                    m3u8_url = config['hls'].strip()
+                    print(f"🎯 Found HLS URL via bitmovin config JSON")
                     return m3u8_url
             except json.JSONDecodeError as e:
                 print(f"⚠️ JSON parse error: {e}")
-                # Try string extraction as fallback
+                print(f"⚠️ Config string: {config_str[:200]}...")
+                
+                # Fallback: direct string extraction from the config block
                 hls_pattern = r'"hls":\s*"([^"]+)"'
                 hls_match = re.search(hls_pattern, config_str)
                 if hls_match:
-                    m3u8_url = hls_match.group(1)
+                    m3u8_url = hls_match.group(1).strip()
                     print(f"🎯 Found HLS URL via string extraction")
                     return m3u8_url
         
-        # Method 2: Look for direct hls pattern
-        print("🔍 Searching for direct HLS pattern...")
-        pattern2 = r'"hls":\s*"([^"]+)"'
-        matches2 = re.findall(pattern2, html_content)
-        for match in matches2:
-            if '.m3u8' in match:
+        # Method 2: Direct multi-line search for hls pattern in the entire HTML
+        print("🔍 Searching for HLS pattern in entire HTML...")
+        hls_pattern_direct = r'"hls":\s*"([^"]+\.m3u8[^"]*)"'
+        hls_matches = re.findall(hls_pattern_direct, html_content, re.DOTALL)
+        
+        for hls_url in hls_matches:
+            clean_url = hls_url.strip()
+            if clean_url and '.m3u8' in clean_url:
                 print(f"🎯 Found HLS URL via direct pattern")
-                return match
+                return clean_url
         
-        # Method 3: Look for any m3u8 URL
+        # Method 3: Look for any m3u8 URL with multi-line support
         print("🔍 Searching for any m3u8 URL...")
-        pattern3 = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
-        matches3 = re.findall(pattern3, html_content)
-        for match in matches3:
-            print(f"🎯 Found m3u8 URL: {match[:80]}...")
-            return match
+        m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
+        m3u8_matches = re.findall(m3u8_pattern, html_content, re.DOTALL)
         
-        # Method 4: Look for player configuration in script tags
-        print("🔍 Searching in script tags...")
-        script_pattern = r'<script[^>]*>(.*?)</script>'
-        scripts = re.findall(script_pattern, html_content, re.DOTALL)
-        for i, script in enumerate(scripts):
-            if 'hls' in script.lower() and '.m3u8' in script:
-                # Look for hls URL in this script
-                hls_pattern = r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']'
-                hls_matches = re.findall(hls_pattern, script)
-                for hls_url in hls_matches:
-                    print(f"🎯 Found HLS URL in script {i+1}")
-                    return hls_url
+        for match in m3u8_matches:
+            clean_url = match.strip()
+            if clean_url:
+                print(f"🎯 Found m3u8 URL via generic pattern")
+                return clean_url
+        
+        # Method 4: Extract from the specific script block we know exists
+        print("🔍 Searching in specific script blocks...")
+        
+        # Pattern to find the entire script block containing sourceConfig
+        script_block_pattern = r'var sourceConfig\s*=[^;]+;'
+        script_blocks = re.findall(script_block_pattern, html_content, re.DOTALL)
+        
+        for block in script_blocks:
+            if 'hls' in block and '.m3u8' in block:
+                hls_url_match = re.search(r'"hls":\s*"([^"]+)"', block)
+                if hls_url_match:
+                    m3u8_url = hls_url_match.group(1).strip()
+                    print(f"🎯 Found HLS URL in script block")
+                    return m3u8_url
         
         print(f"❌ No m3u8 URL found in HTML for {channel_name}")
         return None
         
     except Exception as e:
         print(f"❌ Error fetching {url}: {e}")
+        import traceback
+        traceback.print_exc()
         return None
 
 def save_m3u8_url(channel_name, m3u8_url, output_dir):
@@ -179,7 +196,7 @@ def main():
         status_icon = "✅" if result['status'] == 'success' else "❌"
         print(f"{status_icon} {result['channel']}: {result['status']}")
         if result['status'] == 'success':
-            print(f"   🔗 {result['url'][:100]}...")
+            print(f"   🔗 {result['url']}")
     
     print(f"\n🎯 Successfully retrieved: {success_count}/{len(channels)} channels")
     
