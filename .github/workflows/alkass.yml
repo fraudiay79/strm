@@ -1,8 +1,7 @@
-name: Update Alkass URLs
+name: Update Al Kass URLs
 
 on:
   workflow_dispatch:  # Allow manual triggers
-  
 
 jobs:
   update-streams:
@@ -28,11 +27,10 @@ jobs:
         ALKASS_PASSWORD: ${{ secrets.ALKASS_PASSWORD }}
         # OR use token if available:
         # ALKASS_AUTH_TOKEN: ${{ secrets.ALKASS_AUTH_TOKEN }}
-      - name: execute py script 
-        run:  |
-            pwd
-            cd ./platforms/
-            python3 alkass.py
+      run: |
+        pwd
+        cd ./platforms/
+        python3 alkass.py
         
     - name: Commit and push if changed
       run: |
