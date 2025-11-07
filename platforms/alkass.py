@@ -3,33 +3,92 @@ import re
 import json
 import os
 import time
-from urllib.parse import urlparse
+import base64
+
+def login_to_alkass(session, auth_token=None, username=None, password=None):
+    """
+    Login to Alkass website using either token or credentials
+    """
+    if auth_token:
+        # If using bearer token authentication
+        session.headers.update({
+            'Authorization': f'Bearer {auth_token}'
+        })
+        print("✅ Using token authentication")
+        return True
+    
+    elif username and password:
+        # Traditional login form
+        login_url = "https://shoof.alkass.net/login"
+        login_data = {
+            'email': username,
+            'password': password,
+        }
+        
+        try:
+            # Get login page first to capture CSRF token if needed
+            response = session.get(login_url)
+            
+            # Look for CSRF token (common in login forms)
+            csrf_pattern = r'name="[^"]*[cC]srf[^"]*" value="([^"]+)"'
+            csrf_match = re.search(csrf_pattern, response.text)
+            if csrf_match:
+                login_data['csrf_token'] = csrf_match.group(1)
+            
+            # Perform login
+            login_headers = {
+                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'Referer': login_url
+            }
+            
+            response = session.post(login_url, data=login_data, headers=login_headers)
+            response.raise_for_status()
+            
+            # Check if login successful
+            if (session.cookies.get('sessionid') or 
+                session.cookies.get('auth_token') or 
+                'dashboard' in response.url.lower()):
+                print("✅ Login successful")
+                return True
+            else:
+                print("❌ Login failed")
+                return False
+                
+        except Exception as e:
+            print(f"❌ Login error: {e}")
+            return False
+    
+    else:
+        print("❌ No authentication method provided")
+        return False
 
 def get_livestream_m3u8_url(session, url, channel_name):
     try:
-        # Send GET request to the website
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Referer': 'https://shoof.alkass.net/'
         }
         
         response = session.get(url, headers=headers)
         response.raise_for_status()
         
-        # Method 1: Search for the hls URL pattern in the HTML
+        # Check if redirected to login
+        if 'login' in response.url.lower():
+            print(f"❌ Access denied for {channel_name}")
+            return None
+        
         html_content = response.text
         
-        # Look for the hls URL in the sourceConfig object
+        # Method 1: Look for hls URL in sourceConfig
         pattern = r'"hls":\s*"([^"]+)"'
         match = re.search(pattern, html_content)
-        
         if match:
-            m3u8_url = match.group(1)
-            return m3u8_url
+            return match.group(1)
         
         # Method 2: Look for bitmovin player configuration
         pattern2 = r'var sourceConfig\s*=\s*({[^}]+})'
         match2 = re.search(pattern2, html_content)
-        
         if match2:
             config_str = match2.group(1)
             try:
@@ -37,26 +96,21 @@ def get_livestream_m3u8_url(session, url, channel_name):
                 if 'hls' in config:
                     return config['hls']
             except json.JSONDecodeError:
-                # If JSON parsing fails, try string extraction
                 hls_pattern = r'"hls":\s*"([^"]+)"'
                 hls_match = re.search(hls_pattern, config_str)
                 if hls_match:
                     return hls_match.group(1)
         
-        # Method 3: Look for any m3u8 URL in the HTML
+        # Method 3: Generic m3u8 search
         m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
         m3u8_matches = re.findall(m3u8_pattern, html_content)
-        
         if m3u8_matches:
             return m3u8_matches[0]
         
         return None
         
-    except requests.RequestException as e:
-        print(f"Error fetching {url}: {e}")
-        return None
     except Exception as e:
-        print(f"An error occurred for {url}: {e}")
+        print(f"❌ Error fetching {url}: {e}")
         return None
 
 def save_m3u8_url(channel_name, m3u8_url, output_dir):
@@ -74,14 +128,34 @@ def save_m3u8_url(channel_name, m3u8_url, output_dir):
         return False
 
 def main():
-    # Create session for persistent connections
+    # Get credentials from environment variables (GitHub Secrets)
+    auth_token = os.getenv('ALKASS_AUTH_TOKEN')
+    username = os.getenv('ALKASS_USERNAME')
+    password = os.getenv('ALKASS_PASSWORD')
+    
+    if not any([auth_token, username, password]):
+        print("❌ No authentication credentials found in environment variables")
+        print("Please set ALKASS_AUTH_TOKEN or ALKASS_USERNAME and ALKASS_PASSWORD")
+        return
+    
+    # Create session
     s = requests.Session()
+    
+    # Authenticate
+    if auth_token:
+        login_success = login_to_alkass(s, auth_token=auth_token)
+    else:
+        login_success = login_to_alkass(s, username=username, password=password)
+    
+    if not login_success:
+        print("❌ Authentication failed")
+        return
     
     # Directory to save output files
     output_dir = "links/qa"
     os.makedirs(output_dir, exist_ok=True)
     
-    # List of channels to process
+    # Channels to process
     channels = [
         {"url": "https://shoof.alkass.net/live?ch=one", "name": "alkass1"},
         {"url": "https://shoof.alkass.net/live?ch=two", "name": "alkass2"},
@@ -91,60 +165,30 @@ def main():
         {"url": "https://shoof.alkass.net/live?ch=six", "name": "alkass6"}
     ]
     
-    print("Fetching livestream m3u8 URLs for all channels...")
+    print("Fetching livestream m3u8 URLs...")
     print(f"Output directory: {output_dir}")
     print("-" * 50)
     
     results = []
-    
     for channel in channels:
         print(f"\nProcessing {channel['name']}...")
         
         m3u8_url = get_livestream_m3u8_url(s, channel['url'], channel['name'])
         
         if m3u8_url:
-            print(f"✅ Live stream m3u8 URL found for {channel['name']}:")
-            print(f"   {m3u8_url}")
-            
-            # Save to file
+            print(f"✅ Found: {m3u8_url}")
             save_m3u8_url(channel['name'], m3u8_url, output_dir)
-            
-            # Optional: Verify the URL is accessible
-            try:
-                verify_response = s.head(m3u8_url, timeout=10)
-                if verify_response.status_code == 200:
-                    print("   ✅ URL is accessible")
-                else:
-                    print(f"   ⚠️ URL returned status code: {verify_response.status_code}")
-            except:
-                print("   ⚠️ Could not verify URL accessibility")
-            
-            results.append({
-                'channel': channel['name'],
-                'url': m3u8_url,
-                'status': 'success'
-            })
+            results.append({'channel': channel['name'], 'status': 'success'})
         else:
-            print(f"❌ Could not find the m3u8 URL for {channel['name']}")
-            results.append({
-                'channel': channel['name'],
-                'url': None,
-                'status': 'failed'
-            })
+            print(f"❌ Not found")
+            results.append({'channel': channel['name'], 'status': 'failed'})
         
-        # Small delay to be respectful to the server
         time.sleep(1)
     
-    # Print summary
+    # Summary
     print("\n" + "=" * 50)
-    print("SUMMARY:")
-    print("=" * 50)
     success_count = sum(1 for r in results if r['status'] == 'success')
-    print(f"Successfully retrieved: {success_count}/{len(channels)} channels")
-    
-    for result in results:
-        status_icon = "✅" if result['status'] == 'success' else "❌"
-        print(f"{status_icon} {result['channel']}: {result['status']}")
+    print(f"Results: {success_count}/{len(channels)} successful")
 
 if __name__ == "__main__":
     main()
