@@ -5,88 +5,141 @@ import os
 import time
 import sys
 from pathlib import Path
+from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 def get_script_directory():
     """Get the directory where the script is located"""
     return Path(__file__).parent
 
-def extract_m3u8_from_html(html_content, channel_name):
-    """Extract m3u8 URL using multiple targeted methods"""
+def setup_selenium_driver():
+    """Setup Selenium Chrome driver"""
+    chrome_options = Options()
+    chrome_options.add_argument('--headless')
+    chrome_options.add_argument('--no-sandbox')
+    chrome_options.add_argument('--disable-dev-shm-usage')
+    chrome_options.add_argument('--disable-gpu')
+    chrome_options.add_argument('--window-size=1920,1080')
+    chrome_options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
     
-    # Method 1: Direct extraction from the specific pattern we see in the HTML
-    print("🔍 Method 1: Direct pattern extraction...")
+    driver = webdriver.Chrome(options=chrome_options)
+    return driver
+
+def extract_m3u8_with_selenium(url, channel_name):
+    """Use Selenium to get fully rendered HTML and extract m3u8"""
+    driver = None
+    try:
+        print(f"🔄 Starting Selenium for {channel_name}...")
+        driver = setup_selenium_driver()
+        
+        print(f"🌐 Loading page: {url}")
+        driver.get(url)
+        
+        # Wait for the page to load and JavaScript to execute
+        wait = WebDriverWait(driver, 20)
+        
+        # Wait for either the video container or script elements to load
+        try:
+            wait.until(EC.presence_of_element_located((By.TAG_NAME, "script")))
+            print("✅ Page loaded successfully")
+        except:
+            print("⚠️ Page loaded but may not have all elements")
+        
+        # Get the fully rendered HTML
+        html_content = driver.page_source
+        
+        # Save the rendered HTML for debugging
+        debug_dir = get_script_directory().parent / "debug"
+        os.makedirs(debug_dir, exist_ok=True)
+        debug_file = debug_dir / f"{channel_name}_selenium.html"
+        with open(debug_file, "w", encoding="utf-8") as f:
+            f.write(html_content)
+        print(f"📄 Saved rendered HTML to {debug_file}")
+        
+        # Try multiple extraction methods on the rendered HTML
+        m3u8_url = extract_from_rendered_html(html_content, channel_name)
+        
+        if m3u8_url:
+            return m3u8_url
+        
+        # If not found in HTML, try to extract from network requests or console logs
+        print("🔍 Checking for m3u8 in network requests...")
+        
+        # Get all script tags content
+        scripts = driver.find_elements(By.TAG_NAME, "script")
+        for i, script in enumerate(scripts):
+            script_content = script.get_attribute("innerHTML")
+            if script_content and 'm3u8' in script_content:
+                print(f"🔍 Found m3u8 in script {i+1}")
+                url_match = re.search(r'https://liveeu-gcps\.alkassdigital\.net/[^\s"\']+\.m3u8[^\s"\']*', script_content)
+                if url_match:
+                    m3u8_url = url_match.group(0)
+                    print(f"✅ Extracted from script: {m3u8_url}")
+                    return m3u8_url
+        
+        return None
+        
+    except Exception as e:
+        print(f"❌ Selenium error for {channel_name}: {e}")
+        return None
+    finally:
+        if driver:
+            driver.quit()
+
+def extract_from_rendered_html(html_content, channel_name):
+    """Extract m3u8 from fully rendered HTML"""
     
-    # The URL pattern we're looking for: https://liveeu-gcps.alkassdigital.net/alkass1-p/main.m3u8?hdnts=...
-    direct_pattern = r'https://liveeu-gcps\.alkassdigital\.net/[^\s"\']+\.m3u8[^\s"\']*'
-    direct_match = re.search(direct_pattern, html_content)
-    if direct_match:
-        m3u8_url = direct_match.group(0).strip()
-        print(f"✅ Found via direct pattern: {m3u8_url[:80]}...")
+    # Method 1: Look for the specific alkassdigital pattern
+    print("🔍 Searching for alkassdigital pattern...")
+    pattern1 = r'https://liveeu-gcps\.alkassdigital\.net/[^\s"\']+\.m3u8[^\s"\']*'
+    match1 = re.search(pattern1, html_content)
+    if match1:
+        m3u8_url = match1.group(0).strip()
+        print(f"✅ Found via alkassdigital pattern: {m3u8_url}")
         return m3u8_url
     
-    # Method 2: Look for the exact hls line in the sourceConfig
-    print("🔍 Method 2: HLS line extraction...")
-    hls_line_pattern = r'"hls":\s*"([^"]+)"'
-    hls_matches = re.findall(hls_line_pattern, html_content)
-    for match in hls_matches:
-        if '.m3u8' in match:
-            m3u8_url = match.strip()
-            print(f"✅ Found via hls line: {m3u8_url[:80]}...")
-            return m3u8_url
-    
-    # Method 3: Find the script block containing sourceConfig and extract manually
-    print("🔍 Method 3: Script block extraction...")
-    script_pattern = r'var sourceConfig\s*=\s*{([^}]+)}'
-    script_match = re.search(script_pattern, html_content, re.DOTALL)
-    if script_match:
-        config_content = script_match.group(1)
-        # Now look for hls in this specific block
-        hls_in_config = re.search(r'"hls":\s*"([^"]+)"', config_content)
-        if hls_in_config:
-            m3u8_url = hls_in_config.group(1).strip()
-            print(f"✅ Found in sourceConfig block: {m3u8_url[:80]}...")
-            return m3u8_url
-    
-    # Method 4: Extract from the entire sourceConfig object including nested content
-    print("🔍 Method 4: Extended sourceConfig extraction...")
-    extended_pattern = r'var sourceConfig\s*=\s*{.*?"hls":\s*"([^"]+)".*?}'
-    extended_match = re.search(extended_pattern, html_content, re.DOTALL)
-    if extended_match:
-        m3u8_url = extended_match.group(1).strip()
-        print(f"✅ Found via extended pattern: {m3u8_url[:80]}...")
-        return m3u8_url
-    
-    # Method 5: Simple string search and context extraction
-    print("🔍 Method 5: String search...")
-    if '.m3u8' in html_content:
-        # Find the position of .m3u8 and extract the URL around it
-        m3u8_pos = html_content.find('.m3u8')
-        if m3u8_pos != -1:
-            # Extract 300 characters before and 100 characters after
-            start = max(0, m3u8_pos - 300)
-            end = min(len(html_content), m3u8_pos + 100)
-            context = html_content[start:end]
-            
-            # Now look for the full URL in this context
-            url_pattern = r'(https?://[^\s"\']+\.m3u8[^\s"\']*)'
-            url_match = re.search(url_pattern, context)
-            if url_match:
-                m3u8_url = url_match.group(1).strip()
-                print(f"✅ Found via context search: {m3u8_url[:80]}...")
+    # Method 2: Look for hls in sourceConfig
+    print("🔍 Searching for sourceConfig...")
+    if 'sourceConfig' in html_content:
+        # Find the sourceConfig object
+        source_config_pattern = r'sourceConfig\s*=\s*{([^}]+)}'
+        match2 = re.search(source_config_pattern, html_content, re.DOTALL)
+        if match2:
+            config_content = match2.group(1)
+            hls_match = re.search(r'"hls":\s*"([^"]+)"', config_content)
+            if hls_match:
+                m3u8_url = hls_match.group(1).strip()
+                print(f"✅ Found in sourceConfig: {m3u8_url}")
                 return m3u8_url
     
-    # Method 6: Look for alkassdigital.net domains with m3u8
-    print("🔍 Method 6: Domain-specific search...")
-    domain_pattern = r'https://liveeu-gcps\.alkassdigital\.net/[^\s"\']*\.m3u8\?[^\s"\']*'
-    domain_match = re.search(domain_pattern, html_content)
-    if domain_match:
-        m3u8_url = domain_match.group(0).strip()
-        print(f"✅ Found via domain pattern: {m3u8_url[:80]}...")
-        return m3u8_url
+    # Method 3: Look for any m3u8 URL
+    print("🔍 Searching for any m3u8 URL...")
+    m3u8_pattern = r'https?://[^\s"\']+\.m3u8[^\s"\']*'
+    matches = re.findall(m3u8_pattern, html_content)
+    for match in matches:
+        if 'alkassdigital' in match:
+            print(f"✅ Found m3u8 URL: {match}")
+            return match
+    
+    # Method 4: Look for player.load() calls
+    print("🔍 Searching for player.load calls...")
+    player_load_pattern = r'player\.load\(([^)]+)\)'
+    player_match = re.search(player_load_pattern, html_content, re.DOTALL)
+    if player_match:
+        load_content = player_match.group(1)
+        hls_match = re.search(r'"hls":\s*"([^"]+)"', load_content)
+        if hls_match:
+            m3u8_url = hls_match.group(1).strip()
+            print(f"✅ Found in player.load: {m3u8_url}")
+            return m3u8_url
     
     return None
 
-def get_livestream_m3u8_url(session, url, channel_name):
+def get_livestream_m3u8_url_requests(session, url, channel_name):
+    """Fallback method using requests"""
     try:
         headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
@@ -95,7 +148,7 @@ def get_livestream_m3u8_url(session, url, channel_name):
             'Referer': 'https://shoof.alkass.net/',
         }
         
-        print(f"🔄 Fetching {channel_name}...")
+        print(f"🔄 Fetching {channel_name} with requests...")
         response = session.get(url, headers=headers, timeout=30)
         
         if response.status_code != 200:
@@ -107,33 +160,15 @@ def get_livestream_m3u8_url(session, url, channel_name):
         # Save HTML for debugging
         debug_dir = get_script_directory().parent / "debug"
         os.makedirs(debug_dir, exist_ok=True)
-        debug_file = debug_dir / f"{channel_name}.html"
+        debug_file = debug_dir / f"{channel_name}_requests.html"
         with open(debug_file, "w", encoding="utf-8") as f:
             f.write(html_content)
         print(f"📄 Saved HTML to {debug_file}")
         
-        # Try to extract m3u8 URL
-        m3u8_url = extract_m3u8_from_html(html_content, channel_name)
-        
-        if m3u8_url:
-            return m3u8_url
-        else:
-            print(f"❌ No m3u8 URL found in HTML for {channel_name}")
-            
-            # Debug: Show a snippet of the HTML where we expect to find the URL
-            if 'sourceConfig' in html_content:
-                source_config_pos = html_content.find('sourceConfig')
-                snippet_start = max(0, source_config_pos - 200)
-                snippet_end = min(len(html_content), source_config_pos + 1000)
-                snippet = html_content[snippet_start:snippet_end]
-                print(f"🔍 Debug snippet around sourceConfig:\n{snippet[:500]}...")
-            
-            return None
+        return extract_from_rendered_html(html_content, channel_name)
         
     except Exception as e:
-        print(f"❌ Error fetching {url}: {e}")
-        import traceback
-        traceback.print_exc()
+        print(f"❌ Requests error for {channel_name}: {e}")
         return None
 
 def save_m3u8_url(channel_name, m3u8_url, output_dir):
@@ -153,17 +188,7 @@ def save_m3u8_url(channel_name, m3u8_url, output_dir):
         return False
 
 def main():
-    print("🚀 Starting Alkass stream URL fetcher...")
-    
-    # Create session with persistent cookies
-    s = requests.Session()
-    
-    # Set headers
-    s.headers.update({
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-        'Accept-Language': 'en-US,en;q=0.9',
-    })
+    print("🚀 Starting Alkass stream URL fetcher with Selenium...")
     
     # Create output directory
     script_dir = get_script_directory()
@@ -172,6 +197,8 @@ def main():
     os.makedirs(output_dir, exist_ok=True)
     
     print(f"📁 Output directory: {output_dir}")
+    print(f"📁 Current working directory: {os.getcwd()}")
+    print(f"📁 Script directory: {script_dir}")
     
     # Channels to process
     channels = [
@@ -187,11 +214,18 @@ def main():
     print("-" * 60)
     
     results = []
+    
+    # First try with Selenium
     for channel in channels:
-        print(f"\n🎬 Processing {channel['name']}...")
+        print(f"\n🎬 Processing {channel['name']} with Selenium...")
         print(f"🌐 URL: {channel['url']}")
         
-        m3u8_url = get_livestream_m3u8_url(s, channel['url'], channel['name'])
+        m3u8_url = extract_m3u8_with_selenium(channel['url'], channel['name'])
+        
+        if not m3u8_url:
+            print(f"🔄 Selenium failed, trying requests...")
+            session = requests.Session()
+            m3u8_url = get_livestream_m3u8_url_requests(session, channel['url'], channel['name'])
         
         if m3u8_url:
             print(f"✅ Found URL: {m3u8_url}")
@@ -201,10 +235,10 @@ def main():
             else:
                 results.append({'channel': channel['name'], 'status': 'save_failed'})
         else:
-            print(f"❌ No stream URL found")
+            print(f"❌ No stream URL found for {channel['name']}")
             results.append({'channel': channel['name'], 'status': 'failed'})
         
-        time.sleep(1)
+        time.sleep(2)
     
     # Summary
     print("\n" + "=" * 60)
