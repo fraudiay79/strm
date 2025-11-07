@@ -4,6 +4,8 @@ const cheerio = require('cheerio')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const doFetch = require('@ntlab/sfetch')
+const FRENCH_CHANNELS = require('./__data__/frenchChannels.js')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -17,10 +19,12 @@ module.exports = {
       'YYYY-MM-DD'
     )}`
   },
-  request: {
-    timeout: 30000,
-    headers: {
-      Cookie: 'cisession=e49ff13191d6875887193cae9e324b44ef85768d;'
+  async request() {
+    return {
+      timeout: 30000,
+      headers: {
+        Cookie: await getCookie()
+      }
     }
   },
   parser: function ({ content }) {
@@ -32,23 +36,23 @@ module.exports = {
       const duration = parseDuration($item)
       const stop = start.add(duration, 'm')
       let title = parseTitle($item)
-      let sub_title = parseSubTitle($item)
-      if (title === 'Movie') {
-        title = sub_title
-        sub_title = null
+      let subtitle = parseSubTitle($item)
+      if (title === 'Movie' || title === 'Cinéma') {
+        title = subtitle
+        subtitle = null
       }
 
       programs.push({
         title,
-        sub_title,
+        subtitle,
         description: parseDescription($item),
-	episode: parseEpisodeNumber($item),
         icon: parseImage($item),
         category: parseCategory($item),
         rating: parseRating($item),
         actors: parseActors($item),
         guest: parseGuest($item),
         director: parseDirector($item),
+        year: parseYear($item),
         start,
         stop
       })
@@ -57,98 +61,110 @@ module.exports = {
     return programs
   },
   async channels() {
+    function wait(ms) {
+      return new Promise(resolve => {
+        setTimeout(resolve, ms)
+      })
+    }
+
     const xml = await axios
       .get('https://www.tvpassport.com/sitemap.stations.xml')
       .then(r => r.data)
       .catch(console.error)
 
-    let channels = []
-
     const $ = cheerio.load(xml)
 
     const elements = $('loc').toArray()
+    const queue = elements.map(el => $(el).text())
+    const total = queue.length
 
-    let total = elements.length
     let i = 1
-    for (let el of elements) {
-      const url = $(el).text()
-      const [, site_id] = url.match(/\/tv\-listings\/stations\/(.*)$/)
+    const channels = []
+
+    await doFetch(queue, async (url, res) => {
+      if (!res) return
+
+      const [, site_id] = url.match(/\/tv-listings\/stations\/(.*)$/)
 
       console.log(`[${i}/${total}]`, url)
 
-      const channelPage = await axios
-        .get(url)
-        .then(r => r.data)
-        .catch(err => console.error(err.message))
+      await wait(1000)
 
-      if (!channelPage) continue
-
-      const $channelPage = cheerio.load(channelPage)
+      const $channelPage = cheerio.load(res)
       const title = $channelPage('meta[property="og:title"]').attr('content')
       const name = title.replace('TV Schedule for ', '')
+      const lang = FRENCH_CHANNELS.has(site_id) ? 'fr' : 'en'
 
       channels.push({
-        lang: 'en',
+        lang,
         site_id,
         name
       })
 
       i++
-    }
+    })
 
     return channels
   }
 }
 
+async function getCookie() {
+  const res = await axios.get('https://www.tvpassport.com/tv-listings')
+  const setCookie = res.headers['set-cookie']
+  if (!setCookie || setCookie.length === 0) return ''
+  const cookies = setCookie.map(cookie => cookie.split(';')[0])
+  return cookies.join('; ')
+}
+
 function parseDescription($item) {
-  return $item('*').data('data-description')
+  return $item('*').data('description')
 }
 
 function parseImage($item) {
-  const showpicture = $item('*').data('data-showPicture')
+  const showpicture = $item('*').data('showpicture')
   const url = new URL(showpicture, 'https://cdn.tvpassport.com/image/show/960x540/')
 
   return url.href
 }
 
 function parseTitle($item) {
-  return $item('*').data('data-showName')
+  return $item('*').data('showname').toString()
 }
 
 function parseSubTitle($item) {
-  return $item('*').data('data-episodeTitle')
+  return $item('*').data('episodetitle').toString() || null
 }
 
-function parseEpisodeNumber($item) {
-  return $item('*').data('data-episodeNumber')
+function parseYear($item) {
+  return $item('*').data('year').toString() || null
 }
 
 function parseCategory($item) {
-  const showtype = $item('*').data('data-showType')
+  const showtype = $item('*').data('showtype')
 
   return showtype ? showtype.split(', ') : []
 }
 
 function parseActors($item) {
-  const cast = $item('*').data('data-cast')
+  const cast = $item('*').data('cast')
 
   return cast ? cast.split(', ') : []
 }
 
 function parseDirector($item) {
-  const director = $item('*').data('data-director')
+  const director = $item('*').data('director')
 
   return director ? director.split(', ') : []
 }
 
 function parseGuest($item) {
-  const guest = $item('*').data('data-guest')
+  const guest = $item('*').data('guest')
 
   return guest ? guest.split(', ') : []
 }
 
 function parseRating($item) {
-  const rating = $item('*').data('data-rating')
+  const rating = $item('*').data('rating')
 
   return rating
     ? {
@@ -159,13 +175,13 @@ function parseRating($item) {
 }
 
 function parseStart($item) {
-  const time = $item('*').data('data-st')
+  const time = $item('*').data('st')
 
   return dayjs.tz(time, 'YYYY-MM-DD HH:mm:ss', 'America/New_York')
 }
 
 function parseDuration($item) {
-  const duration = $item('*').data('data-duration')
+  const duration = $item('*').data('duration')
 
   return parseInt(duration)
 }
