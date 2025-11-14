@@ -6673,14 +6673,14 @@
   <channel site="streamingtvguides.com" lang="en" xmltv_id="AMCPlus.us" site_id="AMCPLUS">AMC+</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="AmericanHeroesChannel.us" site_id="us#69046839/american-heroes-channel">American Heroes Channel</channel> 
   <channel site="ontvtonight.com" lang="en" xmltv_id="AnimalPlanet.us" site_id="us#69047235/animal-planet-east">Animal Planet</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="AntennaTV.us" site_id="us#1714282104/antenna-tv">Antenna TV</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="AntennaTV.us" site_id="us#69039111/wdaf-antenna-tv">Antenna TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Aspire.us" site_id="us#3543331332/aspire-tv-hdtv">aspireTV</channel> 
   <channel site="ontvtonight.com" lang="en" xmltv_id="AWE.us" site_id="us#756273508/a-wealth-of-entertainment">AWE</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="AXSTV.us" site_id="us#1414706180/axstv">AXS TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="BabyFirst.us" site_id="us#69030396/babyfirst-tv">BabyFirst</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="BBCAmerica.us" site_id="us#69044423/bbc-america-east">BBC America</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports3.us" site_id="90E69FC7-AA8C-40F2-B35F-EBD174495F76">beIN Sports 3</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="beINSports4.us" site_id="4974691524/bein-sports-4-bein-connect">beIN Sports 4</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="beINSports4.us" site_id="us#4974691524/bein-sports-4-bein-connect">beIN Sports 4</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports5.us" site_id="A5A48DB1-C00B-4DB9-9FC6-5E5F25C18830">beIN Sports 5</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports6.us" site_id="E56B0905-F99F-4DB1-931E-E6002B530867">beIN Sports 6</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports7.us" site_id="831591C8-DA65-4528-B837-0E5A147887FB">beIN Sports 7</channel>
@@ -6731,7 +6731,7 @@
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN.us" site_id="CSPAN">C-SPAN</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN2.us" site_id="CSPN2HD">C-SPAN 2</channel>
   <channel site="streamingtvguides.com" lang="en" xmltv_id="CSPAN3.us" site_id="CSPN3HD">C-SPAN 3</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="CW.us" site_id="us#69048238/wupa">CW (East)</channel>
+  <channel site="ontvtonight.com" lang="en" xmltv_id="CW.us" site_id="us#69022217/wkcf-hdtv">CW (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Dabl.us" site_id="us#7703165031/wcbs-dabl">Dabl</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Daystar.us" site_id="us#1758222088/daystar">Daystar</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="DestinationAmerica.us" site_id="us#69044143/destination-america">Destination America</channel> 
@@ -6832,6 +6832,7 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="MGMPlusDriveIn.us" site_id="us#69044250/epix-drive-in">MGM+ Drive-In</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MGMPlusMarquee.us" site_id="us#383554609/mgm-marquee-hdtv-east">MGM+ Marquee</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MGMPlusHits.us" site_id="us#69037595/mgm-hits-hdtv-east">MGM+ Hits</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="MidnightPulp.us" site_id="Plex/all#5e20b730f2f8d5003d739db7-5ef4e1b40d9ad000423c4427">Midnight Pulp</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MilitaryHistory.us" site_id="us#69027385/military-history-channel">Military History</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MLBNetwork.us" site_id="us#69032811/mlb-network">MLB Network</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="MLBStrikeZone.us" site_id="us#69031483/mlb-network-strike-zone">MLB Network Strike Zone</channel>
@@ -6877,7 +6878,7 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="NickMusic.us" site_id="us#69021681/nick-music">NickMusic</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Nicktoons.us" site_id="us#69047679/nicktoons-network-east">Nicktoons (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="NostalgiaNetwork.us" site_id="us#11802192052/woft-nostalgia-network">Nostalgia Network</channel>
-  <channel site="streamingtvguides.com" lang="en" xmltv_id="OlympicChannel.us" site_id="OLY">Olympic Channel</channel>
+  <channel site="streamingtvguides.com" lang="en" xmltv_id="OlympicChannel.us" site_id="OLYHD">Olympic Channel</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="OneAmericaNewsNetwork.us" site_id="us#761921048/one-america-news-network">One America News Network</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="OANPlus.us" site_id="us#1718589146/wrjk-one-america-plus">OAN Plus</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="OnTV4U.us" site_id="us#1716558562/ontv4u">OnTV4U</channel>
@@ -6951,6 +6952,7 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="StoryTV.us" site_id="us#69032554/wciu-story-television">Story TV</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="SundanceTV.us" site_id="us#69023497/sundancetv-east">SundanceTV (East)</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="Syfy.us" site_id="us#69030967/syfy-hdtv">Syfy (East)</channel>
+  <channel site="xumo.tv" lang="en" xmltv_id="Tastemade.us" site_id="150#99991202">Tastemade</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="TBN.us" site_id="us#1707850652/tbn">TBN</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="TBNInspire.us" site_id="us#69022085/tbn-inspire">TBN Inspire</channel>
   <channel site="ontvtonight.com" lang="en" xmltv_id="TBS.us" site_id="us#69046986/tbs-superstation-east">TBS (East)</channel>
