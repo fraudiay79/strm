@@ -1,0 +1,9 @@
+#EXTM3U
+#EXT-X-VERSION:3
+#EXT-X-INDEPENDENT-SEGMENTS
+#EXT-X-MEDIA-SEQUENCE:0
+#EXT-X-TARGETDURATION:10
+#EXT-X-PLAYLIST-TYPE:VOD
+#EXTINF:10.0,
+https://live.kwikmotion.com/ksasports3live/ksasports3.smil/playlist_dvr.m3u8?hdnts=exp=1763572562~acl=/ksasports3live/ksasports3.smil/*~hmac=20044c865ecece053fe423ec37586ed1872b28f41667160ec7e4af1947e0d3b5
+#EXT-X-ENDLIST
