@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=256000,CODECS="avc1.64000c,mp4a.40.2",RESOLUTION=224x224,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119690/radiorurale/streams/sessions/8ffe0f01d4f146b495dd50c6225eeac3/media/playlist-orig.m3u8/fstl=exp=1763630464~acl=%2Fhls%2Flive%2F2119690%2Fradiorurale%2F%2A~hmac=d7b68765d0d7a678918c7db55ed81da17501af530b43d359f41c83052752e495/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=256000,CODECS="avc1.640015,mp4a.40.2",RESOLUTION=600x300,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119690/radioburkina/streams/sessions/f45fffa060004b69a7ee8c530766e923/media/playlist-orig.m3u8/fstl=exp=1763642277~acl=%2Fhls%2Flive%2F2119690%2Fradioburkina%2F%2A~hmac=8c039c51a680c205739d3dc5774a45a4123cc8f244fc31b04966fdf5cf452f4f/0.m3u8
