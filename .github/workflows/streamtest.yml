@@ -34,7 +34,7 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            python3 alkass.py
+            python3 oulasa.py
             #python3 giniko.py giniko.json
             #python3 atvtr.py > links/atvtr.m3u8
             #bash uvotv.sh
