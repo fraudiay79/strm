@@ -38,7 +38,7 @@ def extract_hls_url_and_create_m3u8():
         # Create M3U8 file content
         m3u8_content = f"""#EXTM3U
 #EXT-X-VERSION:3
-#EXT-X-STREAM-INF:BANDWIDTH=800000,RESOLUTION=640x360
+#EXT-X-STREAM-INF:BANDWIDTH=5598715,RESOLUTION=1920x1080,FRAME-RATE=25,CODECS="avc1.640028,mp4a.40.2",CLOSED-CAPTIONS=NONE
 {hls_url}"""
         
         # Write to M3U8 file in the output directory
