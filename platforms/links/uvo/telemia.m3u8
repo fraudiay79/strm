@@ -1,0 +1,4 @@
+#EXTM3U
+#EXT-X-VERSION:6
+#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telemia/streams/sessions/c9558bbba8fb449aa389e2c48b32e784/media/playlist-orig.m3u8/fstl=exp=1763738626~acl=%2F10010%2Flive%2Fhls%2Ftelemia%2F%2A~hmac=b6bd605a6be1004f5383d82f716115242a952cab54a12fd1fd0c5254e86ad5d8/0.m3u8
