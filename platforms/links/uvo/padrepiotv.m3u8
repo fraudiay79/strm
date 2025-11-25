@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/padrepiotv/streams/sessions/322e78282a6046c787eec83cc636c274/media/playlist-orig.m3u8/fstl=exp=1764138653~acl=%2F10010%2Flive%2Fhls%2Fpadrepiotv%2F%2A~hmac=bb8e93db5c20ee8dc4b209981db71a159c79941d5e0395ddab7aa0400271b9a9/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=704x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/padrepiotv/streams/sessions/279a91fe727145a8bf92c8135017b7bb/media/playlist-orig.m3u8/fstl=exp=1764149093~acl=%2F10010%2Flive%2Fhls%2Fpadrepiotv%2F%2A~hmac=ee30ad3fe206b8981ea32caae482ead9f03dc1aadf0e0ac84baaee60d663a273/0.m3u8
