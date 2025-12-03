@@ -17,10 +17,11 @@ module.exports = {
     method: 'POST',
     headers: {
       'Host': 'stargate.ipko.tv',
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:121.0) Gecko/20100101 Firefox/121.0',
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36',
       'Accept': 'application/json, text/plain, */*',
       'Accept-Language': 'nl,en-US;q=0.7,en;q=0.3',
       'Content-Type': 'application/json',
+      'Cookie': 'STARGATE_PROD_SERVER_USED=74664b4636919b1e; _ga=GA1.1.1380133182.1764792191; _ga_JH31200EE9=GS2.1.s1764792190$o1$g0$t1764792190$j60$l0$h0',
       'X-AppLayout': '1',
       'x-language': 'sq',
       'Origin': 'https://ipko.tv',
