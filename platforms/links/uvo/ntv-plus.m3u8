@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121972/ntvplus/streams/sessions/ce7e400429e04abeb5d44e3dd95f6bc6/media/playlist-orig.m3u8/fstl=exp=1764906919~acl=%2Fhls%2Flive%2F2121972%2Fntvplus%2F%2A~hmac=5551155ec5dc82abda00796988856da42c720e0cbf6d68118e774009267c6c17/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121972/ntvplus/streams/sessions/3ba337ffed6c46628d1bd1063a0a1674/media/playlist-orig.m3u8/fstl=exp=1764916354~acl=%2Fhls%2Flive%2F2121972%2Fntvplus%2F%2A~hmac=69c0e5ef9b06f0fc5614c5cafa4216ec52ce0a02f80063198e9fd05a08d015a3/0.m3u8
