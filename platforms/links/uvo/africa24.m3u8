@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120430/africa24/streams/sessions/7eb97206c71946599f65de4985806801/media/playlist-orig.m3u8/fstl=exp=1765045537~acl=%2Fhls%2Flive%2F2120430%2Fafrica24%2F%2A~hmac=93e2702fac8d479e30897c0cbcdecd55c4006e2a910252d247cbfdd2a571248a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120430/africa24/streams/sessions/501c8104fbdf4c4f9a51f3bb8650df27/media/playlist-orig.m3u8/fstl=exp=1765055933~acl=%2Fhls%2Flive%2F2120430%2Fafrica24%2F%2A~hmac=f6cccae3614af4da3d946c3a2e046bbb53ad4e684f8b434462f1a8aebf6b9aec/0.m3u8
