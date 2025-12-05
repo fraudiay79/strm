@@ -1,1059 +1,126 @@
 [
   {
-    "name": "Tulsa King",
-    "category": "\ud83c\udd43",
+    "name": "Spartacus: House of Ashur",
+    "category": "\ud83c\udd42",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/rOYLWCdAifpUtPlTf1WHxyaxeMt.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/mNHRGO1gFpR2CYZdANe72kcKq7G.jpg",
-      "plot": "New York mafia capo Dwight \"The General\" Manfredi is released from prison after 25 years and exiled by his boss to set up shop in Tulsa, Oklahoma. Realizing that his mob family may not have his best interests in mind, Dwight slowly builds a crew.",
-      "rating": "8.3",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vNByuzy60v31nmUVPMA8oAtneUK.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/29O1LSRZQyo69WhJQe7CP8zvPP3.jpg",
+      "plot": "What if Ashur had lived, given the ludus where he once bled? In the House of Ashur, he owns the school that once owned him. But Roman politics are deadlier. With Achillia, a fierce gladiatrix, he ignites spectacles that defy the elite.",
+      "rating": "1.0",
       "genre": [
-        "crime",
         "drama",
-        "comedy"
+        "action & adventure"
       ],
       "cast": [
-        "Sylvester Stallone",
-        "Martin Starr",
-        "Jay Will",
-        "Annabella Sciorra",
-        "Neal McDonough"
+        "Nick E. Tarabay",
+        "Graham McTavish",
+        "Tenika Davis",
+        "Jamaica Vaughan",
+        "Ivana Baquero"
       ]
     },
     "seasons": [
       {
         "season": 1,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/qJ579ciJ2vZxVVBJUbz8UwvIGkh.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vNByuzy60v31nmUVPMA8oAtneUK.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Dwight \"The General\" Manfredi is the American Mafia capo from New York City who has just finished serving a 25-year prison sentence. Upon release, Dwight's boss sends him to Tulsa, Oklahoma, to establish criminal operations there.",
-          "year": "2022",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Go West, Old Man",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dOe72mwnTFg6ec4gX8szoNgafEr.jpg",
-              "plot": "Dwight, blindsided by the news that his mob family has nothing left for him in New York, is sent to Tulsa, Oklahoma; as he settles in and surveys his new surroundings, Dwight wastes no time making new associates.",
-              "duration": 2520,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dOe72mwnTFg6ec4gX8szoNgafEr.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Center of the Universe",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2CpHeTMQQJjgIAWXE3VyPeUPmux.jpg",
-              "plot": "Dwight, Tyson, and Bodhi go on a road trip to take care of some business; Stacy does some digging into Dwight's past.",
-              "duration": 2280,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2CpHeTMQQJjgIAWXE3VyPeUPmux.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Caprice",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ntW59Upv7ihGxHgYLTQDNYu5y4b.jpg",
-              "plot": "Dwight takes note of a possible new business opportunity. Later, a routine errand has an explosive, unexpected outcome. Stacy opens up to Dwight about what led her to Tulsa.",
-              "duration": 2400,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ntW59Upv7ihGxHgYLTQDNYu5y4b.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Visitation Place",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jTesVrxg1CkdKYHeQsYDOYDAW2R.jpg",
-              "plot": "At the Tulsa Arena, Dwight and company test out their new plan, until a roadblock forces them to adjust and defend their turf. Tyson and his father argue about his future. Dwight gets an unexpected call.",
-              "duration": 2400,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jTesVrxg1CkdKYHeQsYDOYDAW2R.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Token Joe",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ef8FQKmaxMVyj19JubHl3mgOdIB.jpg",
-              "plot": "Dwight returns to New York under unfortunate circumstances, where his reunion with his daughter and family doesn't go quite as expected. Back in Tulsa, Tyson runs into some trouble. Armand gets some news from Roxy.",
-              "duration": 2220,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ef8FQKmaxMVyj19JubHl3mgOdIB.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Stable",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pvsWgF9Q8KEKq1AAFXqt3mx1YB3.jpg",
-              "plot": "Dwight visits Tina before returning to Tulsa. Pete agrees to send Goodie to Oklahoma, while Roxy tries to keep the FBI at bay. Dwight has an offer for Mitch.",
-              "duration": 2400,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pvsWgF9Q8KEKq1AAFXqt3mx1YB3.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Warr Acres",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bodFvKO9iKvtdzWG2E4MnBRtpRU.jpg",
-              "plot": "Stacy makes a decision that has serious consequences. Dwight and Armand dispose of evidence, and Bodhi proposes a new plan. Tina contemplates her future.",
-              "duration": 2580,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bodFvKO9iKvtdzWG2E4MnBRtpRU.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Adobe Walls",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eCvaXeQvzDjxYPC9Vxv4va7RLGD.jpg",
-              "plot": "Dwight and Bodhi lay out the casino plan for Jimmy. As pressure increases, Dwight, Mitch, and Tyson assemble their team. Stacy confronts Waltrip.",
-              "duration": 2220,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eCvaXeQvzDjxYPC9Vxv4va7RLGD.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Happy Trails",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5kme01g9nQhOwxaLs4corudfpoe.jpg",
-              "plot": "It's all hands on deck as tensions between Dwight's crew and Waltrip escalate past the point of no return. Elsewhere, a flashback reveals what sent Dwight to prison 25 years ago.",
-              "duration": 2220,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5kme01g9nQhOwxaLs4corudfpoe.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/fGvZspAOXxpbcU5TGnJjK9KS3YZ.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In season two, Dwight and his crew continue to build up and defend their growing empire in Tulsa but, just as they get their bearings, they realize that they're not the only ones who want to stake their claim. With looming threats from the Kansas City mob and a very powerful local businessman, Dwight struggles to keep his family and crew safe while keeping track of all his affairs. Plus, he still has unfinished business back in New York.",
-          "year": "2024",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Back in the Saddle",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aKybcN7eYWrsd3oDB0Y1atTDLrq.jpg",
-              "plot": "As Dwight and his crew prepare for the opening of their casino and new weed shop, the law comes knocking.",
-              "duration": 2580,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aKybcN7eYWrsd3oDB0Y1atTDLrq.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Kansas City Blues",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/j7tEgHboQDBgarQOLLVkpmZqf31.jpg",
-              "plot": "A family member from Dwight's past surprises him in Tulsa, meanwhile his newfound success draws attention from the Kansas City Mob.",
-              "duration": 2640,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/j7tEgHboQDBgarQOLLVkpmZqf31.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Oklahoma v. Manfredi",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cWFAqz2f4AucLuVc3qIj3fPYjsK.jpg",
-              "plot": "Dwight has a contentious meeting with Bill Bevilaqua and later finds out his fate in court.",
-              "duration": 2580,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cWFAqz2f4AucLuVc3qIj3fPYjsK.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Heroes and Villains",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/x49IrHqr9ZYLklIG8I2ZSz4TtrN.jpg",
-              "plot": "Dwight and Bodhi explore a new investment opportunity. Meanwhile, Thresher learns how far he can push certain people.",
-              "duration": 2700,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/x49IrHqr9ZYLklIG8I2ZSz4TtrN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Tilting at Windmills",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qcFKPnlM6FIsQA8pLQJ3DxUhbdr.jpg",
-              "plot": "Thresher makes a move on Dwight's crew as tensions rise within the New York City Mob family.",
-              "duration": 2400,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qcFKPnlM6FIsQA8pLQJ3DxUhbdr.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Navigator",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lA1lXgbX08rDgXVgOcKIG8kHKcO.jpg",
-              "plot": "Dwight has a sit-down with Kansas City and New York. Tyson tries to make his family proud but it comes at a price.",
-              "duration": 2280,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lA1lXgbX08rDgXVgOcKIG8kHKcO.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Life Support",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xb3qUdeVgeR95YB8eQHgUz0prnp.jpg",
-              "plot": "Dwight and his crew try to identify who's responsible for the recent attack. Power dynamics within the NYC Mob start to shift.",
-              "duration": 2400,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xb3qUdeVgeR95YB8eQHgUz0prnp.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Under New Management",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pYwQAxFeTVcXcPWHg86Jr9P1NCD.jpg",
-              "plot": "Bevilaqua prepares for revenge. Thresher and Ming discuss a new arrangement.",
-              "duration": 2580,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pYwQAxFeTVcXcPWHg86Jr9P1NCD.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Triad",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2HPELYiW5rhReFwo7CplwY2j4o5.jpg",
-              "plot": "Margaret gets caught up in the middle of Dwight's business as trouble ensues at Fennario Ranch.",
-              "duration": 2220,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2HPELYiW5rhReFwo7CplwY2j4o5.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Reconstruction",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fBGaUvBgaWaAf45898cylageRiz.jpg",
-              "plot": "Dwight and his crew tie up loose ends as their empire expands.",
-              "duration": 2160,
-              "rating": "8.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fBGaUvBgaWaAf45898cylageRiz.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 3,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/ckvMEfC8QojNQemiBdyjT3vZPtP.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In season three, as Dwight's empire expands, so do his enemies and the risks to his crew. Now, he faces his most dangerous adversaries in Tulsa yet: the Dunmires, a powerful old-money family that doesn't play by old-world rules, forcing Dwight to fight for everything he's built and protect his family.",
+          "plot": "",
           "year": "2025",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "Blood and Bourbon",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kVcIMFusIwWQrVwRidDJKBDoqYX.jpg",
-              "plot": "Dwight tries to secure a distillery deal.",
-              "duration": 2880,
-              "rating": "8.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kVcIMFusIwWQrVwRidDJKBDoqYX.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "The Fifty",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pl4h2iMdnfBcsyQZdzXyJlPttuD.jpg",
-              "plot": "Dwight faces threats from Jeremiah Dunmire and the Dixie Mafia.",
-              "duration": 2700,
-              "rating": "8.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pl4h2iMdnfBcsyQZdzXyJlPttuD.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "The G and the OG",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1tSPCXDWj7a98ZLqtd9ztlQloaL.jpg",
-              "plot": "Dwight is forced to work with Agent Musso to take down a terrorist.",
-              "duration": 2880,
-              "rating": "8.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1tSPCXDWj7a98ZLqtd9ztlQloaL.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Staring Down the Barrel",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1cF0plTuMFx0tjL9NHDOHLtvNa5.jpg",
-              "plot": "Dwight rallies his crew to recover the stolen bourbon from Dunmire.",
-              "duration": 2460,
-              "rating": "8.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1cF0plTuMFx0tjL9NHDOHLtvNa5.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "On the Rocks",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hkQOabNWDwdHhX4ytSg6EVsLWe5.jpg",
-              "plot": "Dwight launches his bourbon brand as Dunmire schemes to crash the event.",
-              "duration": 2640,
-              "rating": "8.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hkQOabNWDwdHhX4ytSg6EVsLWe5.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Bubbles",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mkqWRARiYLT0WQL9921yWwdFyE2.jpg",
-              "plot": "Dwight scrambles while facing threats from Dunmire and Quiet Ray.",
-              "duration": 2400,
-              "rating": "8.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mkqWRARiYLT0WQL9921yWwdFyE2.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Art of War",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6MjNEf7gPhsK7NeV7OfQfChP5cV.jpg",
-              "plot": "Dwight moves to reopen his distillery. Tyson, Goodie & Spencer run a sting.",
-              "duration": 2400,
-              "rating": "8.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6MjNEf7gPhsK7NeV7OfQfChP5cV.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Nothing Is Over",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1W3A4cF4Pstx8rZBI3e1rv1cCQt.jpg",
-              "plot": "Dwight uncovers a deadly plan by Dunmire and races to stop it.",
-              "duration": 2460,
-              "rating": "9.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1W3A4cF4Pstx8rZBI3e1rv1cCQt.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Dead Weight",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jRgOHqIt1NEta7mEmCndxS0hYsY.jpg",
-              "plot": "As Dwight expands his liquor empire, Tyson's side hustle draws heat.",
-              "duration": 2400,
-              "rating": "8.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jRgOHqIt1NEta7mEmCndxS0hYsY.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Jesus Lizard",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/imjg5MVfmNnmpJvJzbIh6n6A6Xz.jpg",
-              "plot": "Dwight and his crew gear up for all-out war.",
-              "duration": 2280,
-              "rating": "8.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/imjg5MVfmNnmpJvJzbIh6n6A6Xz.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 4,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_faceNone",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": null,
-          "trailer": ""
-        },
-        "episodes": []
-      }
-    ]
-  },
-  {
-    "name": "Mayor of Kingstown",
-    "category": "\ud83c\udd3c",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6rWIip9MZELAA0SKii5WqsBDCYW.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/39bifj2FNytJ2m1cqOBcWMTKgmV.jpg",
-      "plot": "In a small Michigan town where the business of incarceration is the only thriving industry, the McClusky family are the power brokers between the police, criminals, inmates, prison guards and politicians in a city completely dependent on prisons and the prisoners they contain.",
-      "rating": "7.9",
-      "genre": [
-        "drama",
-        "crime"
-      ],
-      "cast": [
-        "Jeremy Renner",
-        "Hugh Dillon",
-        "Tobi Bamtefa",
-        "Taylor Handley",
-        "Derek Webster"
-      ]
-    },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/p4TQupPl1FSJbktoFLn1899xsrJ.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2021",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "The Mayor of Kingstown",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/x6Wpwp0wbAtL4NkRBd3nZYLxXeN.jpg",
-              "plot": "Brothers Mitch and Mike McLusky navigate Kingstown, home to multiple prisons, as they act as the liaisons between prisoners and the community. When a young guard, Sam, is set up to deliver a letter for a prisoner, Mike works to get him off the hook.",
-              "duration": 3960,
-              "rating": "8.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/x6Wpwp0wbAtL4NkRBd3nZYLxXeN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "The End Begins",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aOLUtzSUq6vwPii7KS8vHrP5zfV.jpg",
-              "plot": "Local gang leader, Bunny is upset when one of his guys gets taken off the yard. Mike brokers a deal, and is later visited by two FBI agents whom Mitch worked for. Milo has instructions for Josef on how to get closer to Mike.",
-              "duration": 3000,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aOLUtzSUq6vwPii7KS8vHrP5zfV.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Simply Murder",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8Z26CvRmab4zAxB6cYM06vEznmk.jpg",
-              "plot": "After a tragic accident has deadly consequences, an all-out manhunt ensues. Meanwhile, Mike reaches out to a former prison contact.",
-              "duration": 3300,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8Z26CvRmab4zAxB6cYM06vEznmk.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Price",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ikYxY5MmnuLa9UL67ZKaeaImdPP.jpg",
-              "plot": "Everyone wants something from Mike, who reminds them who is in control. Iris visits Mike\u2019s office. Mariam and Mike discuss Kyle\u2019s future.",
-              "duration": 2820,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ikYxY5MmnuLa9UL67ZKaeaImdPP.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Orion",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6mhi1jPTpMRUXVHenbqDfxtUE89.jpg",
-              "plot": "Kyle and Ian are questioned by internal affairs in the wake of the shootout. Bunny asks Mike for help with a close family member.",
-              "duration": 2820,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6mhi1jPTpMRUXVHenbqDfxtUE89.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Every Feather",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7N1EJqM2DZ5zx3Uvr2LhGviGBDP.jpg",
-              "plot": "When a fight breaks out on the yard, Sam finds himself in trouble again. Milo goes to extreme lengths to get what he wants. Mike sends a message.",
-              "duration": 3060,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7N1EJqM2DZ5zx3Uvr2LhGviGBDP.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Along Came a Spider",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/b6MI0cf5r1qJ7ZIKERjIZ7YlZL1.jpg",
-              "plot": "Mike pays Milo a visit, looking for answers. Tensions at the men\u2019s prison reach a boiling point. Mike makes a disturbing discovery.",
-              "duration": 3420,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/b6MI0cf5r1qJ7ZIKERjIZ7YlZL1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Devil Is Us",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cVLFu1sjEqHZrkszTnu6XXIqmdc.jpg",
-              "plot": "Kyle and Kingstown PD try to make sense of the crime scene. Mike takes matters into his own hands. Sam makes a costly mistake.",
-              "duration": 3300,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cVLFu1sjEqHZrkszTnu6XXIqmdc.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "The Lie of the Truth",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3PIE3xZXxhZNt0IODZeS93iIGau.jpg",
-              "plot": "Tracy has good news for Kyle. Mike and Iris spend a peaceful day at the cabin, unaware of the trouble escalating back in town.",
-              "duration": 2820,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3PIE3xZXxhZNt0IODZeS93iIGau.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "This Piece of My Soul",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4Xu43AG2I5Lb3Xnn74kb3ZXCYWi.jpg",
-              "plot": "Kingstown Prison descends into total chaos. Mike desperately works to help stop a riot that will have serious consequences for all involved.",
-              "duration": 3060,
-              "rating": "8.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4Xu43AG2I5Lb3Xnn74kb3ZXCYWi.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/d9JSilY7nM3J7LtBMXXNqJ03aDY.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "The struggle for power becomes tougher than ever as the McLuskys work to keep order on all sides of the gate.",
-          "year": "2023",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Never Missed a Pigeon",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/t3fl6S0Rkrs8AvaaFp3LHKkRLi5.jpg",
-              "plot": "In the wake of the Kingstown Prison riot, violence and chaos ensue in the newly formed tent city. Mike and Bunny discuss what must be done to solve the leadership void on the inside. Kyle begins his new job with the Michigan State Police.",
-              "duration": 3180,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/t3fl6S0Rkrs8AvaaFp3LHKkRLi5.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Staring at the Devil",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/Blp8cgmKu6Gs4BoniFESugKhXl.jpg",
-              "plot": "After a power vacuum in tent city spills out into Kingstown, Mike makes a bold move to try and restore order. Iris is uneasy about her new living arrangement. Kyle finds himself in a dangerous situation.",
-              "duration": 2820,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/Blp8cgmKu6Gs4BoniFESugKhXl.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Five at Five",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uiqCmyyPZ7vy6zvkIOM51wVteg8.jpg",
-              "plot": "Mike asks for help in finding Iris, and later takes matters into his own hands. A move by Robert and his team puts Mike's larger plan in jeopardy. Kyle has a request for Kingstown PD.",
-              "duration": 2280,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uiqCmyyPZ7vy6zvkIOM51wVteg8.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Pool",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vhpH5uGTW5Vu7dzFuA7QO9qcaGQ.jpg",
-              "plot": "Mike increases pressure on Evelyn to honor her side of the deal before another unexpected event at tent city. Bunny worries Mike has lost control. Mariam attempts an act of good will.",
-              "duration": 2400,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vhpH5uGTW5Vu7dzFuA7QO9qcaGQ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Kill Box",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kBNZknr7Lxgk2oBY46jOHZaHJqJ.jpg",
-              "plot": "In the wake of the tent city transfer, Mike finds himself in a race to locate Bunny. Kareem surveys the new power structure, and later gets some unsettling news. Kyle contemplates his next move. Milo looks to fix Joseph's mistake.",
-              "duration": 2400,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kBNZknr7Lxgk2oBY46jOHZaHJqJ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Left with the Nose",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kbijzk41OhEOq7Hmvlp3KmKcduu.jpg",
-              "plot": "Mike leverages a favor with the new powers in charge. Bunny finds himself short on patience as Anchor Bay becomes increasingly volatile. Kyle and Mike have a heart to heart. Robert gets some troubling news.",
-              "duration": 2280,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kbijzk41OhEOq7Hmvlp3KmKcduu.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Drones",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/encCZUJl9OiwaNPy0Z3u72X2VAL.jpg",
-              "plot": "Robert, Kyle, and Ian look to get their story straight as the internal affairs investigation looms. In the wake of Lockett's murder, Mike and Evelyn's relationship grows tense. Mike takes care of a problem for Bunny. Tracy worries about Kyle.",
-              "duration": 2100,
-              "rating": "5.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/encCZUJl9OiwaNPy0Z3u72X2VAL.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Santa Jesus",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rPehrh6cYYf4mwSIcKmY1TyX4uz.jpg",
-              "plot": "Mike spends his version of a day off the grid. Ian goes to great lengths to solve a problem. Bunny has a gift for Raphael. Milo speaks to Iris alone.",
-              "duration": 2820,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rPehrh6cYYf4mwSIcKmY1TyX4uz.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Peace in the Valley",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xgYFYGWSmVrao6TRlj7QM5soQeY.jpg",
-              "plot": "Mike and Milo discuss a possible trade. Bunny makes a brazen move and later has a demand for Mike. Mariam looks to track down Jacob. Evelyn is livid with Mike.",
-              "duration": 2220,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xgYFYGWSmVrao6TRlj7QM5soQeY.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Little Green Ant",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hlvBshYU94Tra3I3tDXViRVONxx.jpg",
-              "plot": "It's all hands on deck as the war spills out into the streets of Kingstown. A mistake has serious repercussions. The trust between Mike and Bunny reaches a moment of truth. Iris finds herself with nowhere else to go.",
-              "duration": 2820,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hlvBshYU94Tra3I3tDXViRVONxx.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 3,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lJ1yyRGdwuE10pXgJaV0DvvRUiS.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In season three, a series of explosions rock Kingstown and its citizens, as a new face of the Russian mob sets up shop in the city, and a drug war rages inside and outside prison walls. The pressure is on Mike McLusky to end the war but things get complicated when a familiar face from his incarcerated past threatens to undermine the Mayor's attempts to keep the peace among all factions.",
-          "year": "2024",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Soldier's Heart",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/y24qsdVS7dLMg8DONxaGp7ggTAQ.jpg",
-              "plot": "Tensions are high as tragedy strikes in Kingstown. Meanwhile, a new face of the Russian mob sets up shop in the city.",
-              "duration": 3300,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/y24qsdVS7dLMg8DONxaGp7ggTAQ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Guts",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kITExnHDX0Mh4m70lTAm2CUi6d3.jpg",
-              "plot": "Anchor Bay gets a new inmate as Mike investigates recent deaths both inside and outside of prison walls.",
-              "duration": 2580,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kITExnHDX0Mh4m70lTAm2CUi6d3.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Barbarians at the Gate",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aBWsTXvD7czetlnAsltteHUyzmM.jpg",
-              "plot": "The Mayor makes his presence known to Konstantin. Bunny brings Mike up to speed on a failed assassination attempt.",
-              "duration": 2460,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aBWsTXvD7czetlnAsltteHUyzmM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Rag Doll",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8mKBhe7juxsCTWesaNIbbedLORc.jpg",
-              "plot": "Desperate to confirm the source of a spate of bombings, Mike extends an unlikely olive branch.",
-              "duration": 2460,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8mKBhe7juxsCTWesaNIbbedLORc.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Iris",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kt7AhNfPN1FoBUeeQThWqL24LJ.jpg",
-              "plot": "Danger erupts when Iris confronts her past. The Mayor finds a new chess piece as Bunny and Konstantin's rivalry reaches new heights.",
-              "duration": 2880,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kt7AhNfPN1FoBUeeQThWqL24LJ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Ecotone",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rDKs7uH4IKiQ4DV1aZVQU9i9JGh.jpg",
-              "plot": "After an attack hits close to home, Mike is given an ultimatum that could change everything.",
-              "duration": 2340,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rDKs7uH4IKiQ4DV1aZVQU9i9JGh.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Marya Was Here",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sYbpKIoC0WZNouAQxvEyooUP2eH.jpg",
-              "plot": "An incident on the bridge raises questions across Kingstown. Mike sets a risky plan in motion.",
-              "duration": 2640,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sYbpKIoC0WZNouAQxvEyooUP2eH.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Captain of the Sh*t Out of Luck",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hvR07CJ1nHrcaDF0q3Fe0dLZ3HN.jpg",
-              "plot": "Anchor Bay is attacked from outside its prison walls. Mike takes care of some important business at Kingstown Women's Prison.",
-              "duration": 2760,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hvR07CJ1nHrcaDF0q3Fe0dLZ3HN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Home on the Range",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1efiutqs5RC3WLyzrz3aKWaeahv.jpg",
-              "plot": "Unfinished business haunts Kingstown as the Crips seek revenge at the hospital.",
-              "duration": 3480,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1efiutqs5RC3WLyzrz3aKWaeahv.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Comeuppance",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iCSVls2c0zP30ZyOK56484fdE06.jpg",
-              "plot": "Mike's plan for the warring factions in Kingstown hits turbulence.",
-              "duration": 3900,
-              "rating": "8.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iCSVls2c0zP30ZyOK56484fdE06.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 4,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6rWIip9MZELAA0SKii5WqsBDCYW.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In season four, Mike's control over Kingstown is threatened as new players compete to fill the power vacuum left in the Russians' wake, compelling him to confront the resulting gang war and stop them from swallowing the town. Meanwhile, with those he loves in more danger than ever before, Mike must contend with a headstrong new Warden to protect his own while grappling with demons from his past.",
-          "year": "2025",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Coming 'Round the Mountain",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2CXxqwYe8rRuIwgzvgiX98nXvvu.jpg",
-              "plot": "Mike works every angle to protect his brother.",
-              "duration": 3180,
-              "rating": "9.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2CXxqwYe8rRuIwgzvgiX98nXvvu.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Promises to Keep",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wwkWisR8spLLiFD6if1Y3uHzCFg.jpg",
-              "plot": "Mike sends the prison a message and considers an offer from a legend.",
-              "duration": 3120,
-              "rating": "9.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wwkWisR8spLLiFD6if1Y3uHzCFg.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "People Who Died",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/c0TIHCk9TWYseOH8B4DbL5e1fsg.jpg",
-              "plot": "Mike and Ian discover a coverup that leads to an unexpected source.",
-              "duration": 3180,
-              "rating": "9.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/c0TIHCk9TWYseOH8B4DbL5e1fsg.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Sins of Omission",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zvIMKfJJqelDkteYXkrECk6pM7T.jpg",
-              "plot": "Confronted with the cartel's unexpected strength, Mike responds.",
-              "duration": 3060,
-              "rating": "8.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zvIMKfJJqelDkteYXkrECk6pM7T.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Damned",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hQNizygoeKiPstJDOEd1FNvbtbE.jpg",
-              "plot": "New dangers threaten Mike's family as Callahan comes back into focus.",
-              "duration": 3120,
-              "rating": "9.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hQNizygoeKiPstJDOEd1FNvbtbE.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "#081693",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kZqqbDHZMAfxIZUbAEAcSgYumcO.jpg",
-              "plot": "The cartel war reaches new heights as Mike makes a bargain with the devil.",
-              "duration": 2880,
-              "rating": "9.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kZqqbDHZMAfxIZUbAEAcSgYumcO.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "My Way",
+            "name": "Dominus",
             "info": {
               "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "Mike hatches a plan to grant Kyle's freedom and saddles Ian with an agonizing task. Moses makes a play that sparks brutal consequences for cartel leadership. Callahan explores new avenues to get to Mike.",
-              "duration": 2940,
+              "plot": "Having no memory of his downfall in \"Spartacus: Vengeance,\" Ashur wakes to find himself the owner of the former House of Batiatus; eager to earn the respect and power he's always desired, Ashur must save face by presenting something new to the arena.",
+              "duration": null,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Forsaken",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "Ashur navigates the treacherous waters of the Roman elites while Achillia struggles to acclimate to the brutal life of a gladiator in training.",
+              "duration": null,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Episode 3",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": null,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Episode 4",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": null,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Episode 5",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": null,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Episode 6",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": null,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Episode 7",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": null,
               "rating": "0.0",
               "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
             },
@@ -1063,10 +130,10 @@
           },
           {
             "episode": 8,
-            "name": "Belleville",
+            "name": "Episode 8",
             "info": {
               "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "Mike lays a dangerous trap while a prison break puts the town in peril. Hobbs extends an olive branch to Mike.",
+              "plot": "",
               "duration": null,
               "rating": "0.0",
               "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
@@ -1077,10 +144,10 @@
           },
           {
             "episode": 9,
-            "name": "Teeth and Tissue",
+            "name": "Episode 9",
             "info": {
               "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "After tragedy strikes close to home, Mike risks everything to save his brother. Inside the prison, tensions reach a breaking point, and an active threat forces Cindy's hand.",
+              "plot": "",
               "duration": null,
               "rating": "0.0",
               "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
@@ -1091,10 +158,10 @@
           },
           {
             "episode": 10,
-            "name": "Belly of the Beast",
+            "name": "Episode 10",
             "info": {
               "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "Mike fights to prevent Kyle from following in his footsteps and confronts the demons of his past. Hobbs makes a crucial decision as Bunny gains a new advantage.",
+              "plot": "",
               "duration": null,
               "rating": "0.0",
               "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
