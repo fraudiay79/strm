@@ -1,44 +1,39 @@
 [
   {
-    "name": "Spartacus: House of Ashur",
-    "category": "\ud83c\udd42",
+    "name": "Chappelle's Show",
+    "category": "\ud83c\udd32",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vNByuzy60v31nmUVPMA8oAtneUK.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/29O1LSRZQyo69WhJQe7CP8zvPP3.jpg",
-      "plot": "What if Ashur had lived, given the ludus where he once bled? In the House of Ashur, he owns the school that once owned him. But Roman politics are deadlier. With Achillia, a fierce gladiatrix, he ignites spectacles that defy the elite.",
-      "rating": "1.0",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/aHpTmNU2wLHokoVpzcnh2VQBJOI.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/u6EhNH7o8s6HNmxkBV5X4KuaPQ.jpg",
+      "plot": "Dave Chappelle's singular point of view is unleashed through a combination of laidback stand-up and street-smart sketches.",
+      "rating": "8.1",
       "genre": [
-        "drama",
-        "action & adventure"
+        "comedy"
       ],
       "cast": [
-        "Nick E. Tarabay",
-        "Graham McTavish",
-        "Tenika Davis",
-        "Jamaica Vaughan",
-        "Ivana Baquero"
+        "Dave Chappelle"
       ]
     },
     "seasons": [
       {
         "season": 1,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vNByuzy60v31nmUVPMA8oAtneUK.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/pLK8d2HqwETbKlhWEoQnzu2kHXI.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
           "plot": "",
-          "year": "2025",
+          "year": "2003",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "Dominus",
+            "name": "Black White Supremacist",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "Having no memory of his downfall in \"Spartacus: Vengeance,\" Ashur wakes to find himself the owner of the former House of Batiatus; eager to earn the respect and power he's always desired, Ashur must save face by presenting something new to the arena.",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8DLKrsQRZ4tiLMUok9QJ5KU7sw8.jpg",
+              "plot": "Dave pokes fun at an annoying Mitsubishi car commercial. Dave appears in a video to show Popcopy copy store employees how to annoy the customers. Dave makes a case for hip-hop's degradation of women, which ruins the legacy of Nat King Cole. Learn how to order your very own home stenographer. Dave plays a blind, angry white supremacist who joins the KKK, but doesn't know he's black.",
+              "duration": 1320,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8DLKrsQRZ4tiLMUok9QJ5KU7sw8.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -46,13 +41,13 @@
           },
           {
             "episode": 2,
-            "name": "Forsaken",
+            "name": "Introducing Tyrone Biggums",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "Ashur navigates the treacherous waters of the Roman elites while Achillia struggles to acclimate to the brutal life of a gladiator in training.",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wdAhTdiyLdDu1iLRQYV0GMAeEWv.jpg",
+              "plot": "Dave plays crack addict Tyrone Biggums, who gives a speech to an elementary school classroom. Also featuring musical guest Mos Def.",
+              "duration": 1320,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wdAhTdiyLdDu1iLRQYV0GMAeEWv.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -60,13 +55,13 @@
           },
           {
             "episode": 3,
-            "name": "Episode 3",
+            "name": "Love Those Breasts",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bF7wbcvAvkZLbJ0ghu2UikZmWkK.jpg",
+              "plot": "Dave plays an angel who shows a woman, regretful of her large chest, the error of her ways in \"It's a Wonderful Chest.\" A shopping network spoof finds QVC selling very odd and distasteful items. Dave also shares humorous outtakes from the classic miniseries \"Roots.\" Also featuring musical performer Talib Kweli.",
+              "duration": 1320,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bF7wbcvAvkZLbJ0ghu2UikZmWkK.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -74,13 +69,13 @@
           },
           {
             "episode": 4,
-            "name": "Episode 4",
+            "name": "Slavery Reparations",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bPY7i86fEQnqX35rfFK6Xp6cGpV.jpg",
+              "plot": "Dave gives out awards to women with great \"New York Boobs\" and assesses the problems that would result from offering slavery reparations. Also featuring musical guest Busta Rhymes.",
+              "duration": 1320,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bPY7i86fEQnqX35rfFK6Xp6cGpV.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -88,13 +83,13 @@
           },
           {
             "episode": 5,
-            "name": "Episode 5",
+            "name": "Great Moments in Hookup History",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2z7DzouTF7fyIiT1XjHEc5qHX1g.jpg",
+              "plot": "Dave looks at \"Great Moments in Hook-Up History\" and is an interview guest on \"Inside Chappelle's Show Studio.\" Paul Mooney hosts a segment of \"Ask a Black Dude.\" Redman offers up his new \"Redman Potty Fresh\" toilet cleaner in a commercial, and Dave shows a commercial for \"Rocka Pads.\"",
+              "duration": 1320,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2z7DzouTF7fyIiT1XjHEc5qHX1g.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -102,13 +97,13 @@
           },
           {
             "episode": 6,
-            "name": "Episode 6",
+            "name": "The Mad Real World",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7He8rHAGw4yXfhNjjdFd6TsJBvX.jpg",
+              "plot": "Dave envisions what \"The Real World\" would be like with a black cast that includes one super white man. Also featuring musical performer David Broom.",
+              "duration": 1320,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7He8rHAGw4yXfhNjjdFd6TsJBvX.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -116,13 +111,13 @@
           },
           {
             "episode": 7,
-            "name": "Episode 7",
+            "name": "Wu-Tang Consulting Firm",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5usVoVk4HlQwuoLTSu0MSHxC4by.jpg",
+              "plot": "Dave takes a look at a great moment in hook-up history and shows \"Real Movies\" based on \"The Matrix\" and a grim look at \"Pretty Woman.\" The Wu Tang Clan advertises their new financial firm, and Paul Mooney offers up another segment of \"Ask a Black Dude.\" A Jedi Scandal is exposed. Also featuring music performer Killer Mike.",
+              "duration": 1320,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5usVoVk4HlQwuoLTSu0MSHxC4by.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -130,13 +125,13 @@
           },
           {
             "episode": 8,
-            "name": "Episode 8",
+            "name": "The Return of Tyrone Biggums",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ksvohXYOu1EGDt86d2sBWweMAwz.jpg",
+              "plot": "Dave looks at what really happened behind the scenes of the movies \"Ghost\" and \"Half Baked.\" Dave goes inside the racism present among Hollywood's animal stars. Dave also returns as crackhead Tyrone Biggums, whose friends stage an intervention and take him to a rehab center. Also featuring a musical performance by Slum Village.",
+              "duration": 1320,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ksvohXYOu1EGDt86d2sBWweMAwz.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -144,13 +139,13 @@
           },
           {
             "episode": 9,
-            "name": "Episode 9",
+            "name": "Blackzilla",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/poj9WBGv0eBhy8GN9fRlwjkcThq.jpg",
+              "plot": "Dave invades Japan in the sci-fi-themed \"Blackzilla\" and stars in his own video game. Dave also offers up a look at the \"Player Hater's Ball.\" Also featuring musical performer The Roots.",
+              "duration": 1320,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/poj9WBGv0eBhy8GN9fRlwjkcThq.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -158,13 +153,289 @@
           },
           {
             "episode": 10,
-            "name": "Episode 10",
+            "name": "Inner City Gang Wars",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xooWppbQWRgbbyt8VciC76IZ0sQ.jpg",
+              "plot": "Dave looks at one of the world's greatest wars. He also examines R. Kelly's older videos to point out the future sex crimes that are indicated in the material. Also featuring another segment of \"Ask a Black Dude\" with Paul Mooney and a musical performance by GZA.",
+              "duration": 1320,
+              "rating": "9.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xooWppbQWRgbbyt8VciC76IZ0sQ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 11,
+            "name": "Fisticuffs",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vj3rpUSytMQv7xn7QrdaL6RwWji.jpg",
+              "plot": "Funkmaster Flex hires a rapper, played by Dave, who keeps repeating the same non-lyrical phrases over and over again. Dave visits a kid with cancer, but takes no mercy when he plays the kid at Playstation 2. Dave also buys a camera that has the power to see people's innermost thoughts. Also featuring music performer De La Soul.",
+              "duration": 1320,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vj3rpUSytMQv7xn7QrdaL6RwWji.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 12,
+            "name": "Trading Spouses",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xMaii8qLaJNuRLlBHfeAx3PJ7hL.jpg",
+              "plot": "Dave delves into what would happen if couples attempted \"Trading Spouses\" and introduces a new family-oriented form of marijuana which contains no THC. Also featuring musical guest Blackstar.",
+              "duration": 1320,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xMaii8qLaJNuRLlBHfeAx3PJ7hL.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/zzomZKH0fCAcyq6NxPftRYbdS3k.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "",
+          "year": "2004",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "The Racial Draft",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lAJzuv1WjznXneOF4Ln4LotVCOR.jpg",
+              "plot": "Dave runs for office and offers a look at life in slow motion. Dave also plays Samuel L Jackson in a beer commercial, and co-commentates on the first-ever \"Racial Draft.\"",
+              "duration": 1320,
+              "rating": "9.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lAJzuv1WjznXneOF4Ln4LotVCOR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Niggar Family",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7zhVWWRQ5MvktctwrEiC1XXfeVp.jpg",
+              "plot": "Dave looks at what it would be like to have a black version of watermelon-smashing comedian Gallagher. Paul Mooney plays \"Negrodamus\" and Dave plays Calvin, who gets a job at WacArnolds. Also featuring music performer DMX.",
+              "duration": 1320,
+              "rating": "9.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7zhVWWRQ5MvktctwrEiC1XXfeVp.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "White People Can't Dance",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/h5iu3NCNlg6UIPG76Fv9XUJXUz6.jpg",
+              "plot": "Dave Chappelle examines the age-old myth about white people's inability to dance. Dave tries out a new sleep aid. The Three Daves: A retrospective look at Dave at age 18, 24 and 30.",
+              "duration": 1320,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/h5iu3NCNlg6UIPG76Fv9XUJXUz6.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "True Hollywood Stories - Rick James",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jLgJzJYtN252aORqK461njudb3R.jpg",
+              "plot": "Dave unveils the Love Contract and offers up the True Hollywood Story of actor Charlie Murphy, along with musical guest Ludacris.",
+              "duration": 1320,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jLgJzJYtN252aORqK461njudb3R.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "True Hollywood Stories - Prince",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pvdbT75cDQgEgwVYUXI33y9mAEg.jpg",
+              "plot": "Paul Mooney provides answers about the mysteries of life as \"Negrodamus.\" \"Charlie Murphy's True Hollywood Story\" focuses on Prince, as he takes to the basketball court. Also featuring musical guest Cee-Lo.",
+              "duration": 1320,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pvdbT75cDQgEgwVYUXI33y9mAEg.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "If The Internet Were Real",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7Qg4GslQEe7rKkGT5enK7ZEhUIg.jpg",
+              "plot": "Dave examines what the daily life of rapper Lil John might be like and tries to imagine how the internet would look if it was an actual place. Also featuring musical guest Anthony Hamilton.",
+              "duration": 1320,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7Qg4GslQEe7rKkGT5enK7ZEhUIg.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "World Series of Dice",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9w5i8eh2TW6BRcnTAl1zLLb1cra.jpg",
+              "plot": "Dave and his friends have a mishap at the drive-thru. A look at the World Series of Dice. Also featuring musical guests Common and Kanye West.",
+              "duration": 1320,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9w5i8eh2TW6BRcnTAl1zLLb1cra.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "I Know Black People",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yTvHIRJNZn55j0sNhjQLRXl5MME.jpg",
+              "plot": "Dave hosts the game show \"I Know Black People\" and offers up another look at \"When Keeping it Real Goes Wrong.\" Also featuring musical performer Erykah Badu.",
+              "duration": 1320,
+              "rating": "9.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yTvHIRJNZn55j0sNhjQLRXl5MME.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Oprah's Baby Daddy",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/csFJxuIbCVmbSeu0ZCzgOpEiFHI.jpg",
+              "plot": "Dave thinks Oprah is pregant with his child. Dave also goes into his experience as a member of the O.J. Simpson trial jury. Also featuring musical guest Wyclef.",
+              "duration": 1320,
+              "rating": "9.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/csFJxuIbCVmbSeu0ZCzgOpEiFHI.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Making Da Band",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4Y96Ym6vzIXUyjWr4lMKUQh9hry.jpg",
+              "plot": "Dave takes a closer look at the P. Diddy-produced reality television show called \"Making Da Band\" and introduces a new children's show called \"Kneehigh Park.\" Also featuring musical guests Snoop Dogg, and Wyclef and Q-Tip.",
+              "duration": 1320,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4Y96Ym6vzIXUyjWr4lMKUQh9hry.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 11,
+            "name": "Greatest Misses",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/A3Kz7ZuQALaaiydZH2242tjXoU9.jpg",
+              "plot": "Dave introduces skits that were too crazy to make the cut, including footage of a trip to the Nelson Mandela bootcamp for teenagers. Dave also imagines what it would be like if the whole world was gay. Also featuring musical guests Kanye West and Mos Def.",
+              "duration": 1320,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/A3Kz7ZuQALaaiydZH2242tjXoU9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 12,
+            "name": "The Wayne Brady Show",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jXDp3tEUEiRYP1A1Updpraqq3rB.jpg",
+              "plot": "Dave quits his show at Comedy Central and is promptly replaced by comedian Wayne Brady. Dave returns as crackhead Tyrone Biggums, who appears as a guest on \"Fear Factor.\" Dave also hangs out with Wayne Brady, who proves to be unexpectedly menacing. Also featuring music performer Talib Kweli.",
+              "duration": 1320,
+              "rating": "9.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jXDp3tEUEiRYP1A1Updpraqq3rB.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 13,
+            "name": "Black Bush",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/LNmz00niNNW8UxsKdLItsQZJeG.jpg",
+              "plot": "Dave looks at recent world events and tries to assess the way things would have gone had President Bush been black. Dave takes a look back at the first black person in history to use a white toilet. Dave also examines a moment in the life of Lil Jon when he plays the rapper while talking to the real Lil Jon on the phone. Also featuring a musical performance by Big Boi.",
+              "duration": 1320,
+              "rating": "9.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/LNmz00niNNW8UxsKdLItsQZJeG.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/qFjCK7UTsnn5c4bEhbIAA3uTrHl.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Three \"lost\" episodes of Dave Chappelle's hilarious sketch comedy show turn up in this collection of laughs -- and it's a good thing someone finally found them. Dave's in top form as he mines all manner of controversial material for humor.",
+          "year": "2006",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Lost Episode 1",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/755ygNOzE8gzKnC7KYMG1ke8Q2D.jpg",
+              "plot": "Dave looks to enact vengeance on everyone who has done him wrong in the past after signing a sweet new deal. Meanwhile, people suddenly charge him a lot more money for even the most trivial things that used to cost very little.",
+              "duration": 1320,
+              "rating": "10.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/755ygNOzE8gzKnC7KYMG1ke8Q2D.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Lost Episode 2",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kICRCTbsJddv8otWaEckN3sVS5S.jpg",
+              "plot": "Dave hits the campaign trail as yell-happy presidential candidate Howard Dean and assumes the role of an antagonistic Gary Coleman. He also attempts to elude a crop of persistent racial stereotype pixies.",
+              "duration": 1320,
+              "rating": "10.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kICRCTbsJddv8otWaEckN3sVS5S.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Lost Episode 3",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uHdtxPYdRrP1Hafs6TPNeTSutLo.jpg",
+              "plot": "Dave meets the powerful Show Business and offers a look at a bunch of monsters who have seen their share of discrimination.",
+              "duration": 1320,
+              "rating": "9.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uHdtxPYdRrP1Hafs6TPNeTSutLo.jpg"
             },
             "video": "",
             "drm": "clearkey",
