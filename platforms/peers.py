@@ -70,8 +70,8 @@ tv_id = [
     "tv21", "tv1000_action", "tv_1000_rus_kino", "viasat_explorer", "viasat_nature", "viasat_sport_hd", "tv1000_comedy_hd", "tv1000_megahit_hd",
     "tv1000_premium_hd", "viasat_golf_hd", "zee-tv", "zoopark", "avto_24", "auto_plus", "v_gostyah_u_skazki",
     "time", "detskij_mir", "dialogi_o_rybalke", "dom_kino", "dom_kino_premium", "dorama", "drive", "jv", "eurokino", "zoo_tv", "khl", "kxl_hd", "boets",
-    "match_nash_sport", "otvrus", "ots", "1kanal_hd", "friday", "5kanal", "rentv", "sts_love", "futbol_hd", "perec", "shalun",
-    "exxxotica_hd", "russkayanoch", "playboy_tv_18", "red_lips_hd", "karusel", "mama", "muz_tvnew", "tv3", "tnt_hd", "utv", "nts"
+    "match_nash_sport", "otvrus", "ots", "1kanal_hd", "friday", "5kanal", "rentv", "ren_tv_hd", "sts_love", "futbol_hd", "perec", "shalun",
+    "exxxotica_hd", "russkayanoch", "playboy_tv_18", "red_lips_hd", "karusel", "mama", "muz_tvnew", "tv3", "tnt_hd", "utv", "nts","mir_basketbola"
 ]
 
 # Corresponding names for the output files
@@ -82,8 +82,8 @@ names = [
     "tv21", "tv1000action", "tv1000ruskino", "vijuexplorer", "vijunature", "vijusport", "vijucomedy", "vijumegahit",
     "vijupremiere", "vijuserial", "indiya", "zoopark", "avto24", "autoplus", "vgostyahuskazki",
     "vremya", "detskijmir", "dialogiorybalke", "domkino", "domkinopremium", "dorama", "drive", "jv", "eurokino", "zootv", "khl", "khlprime", "boets",
-    "strana", "otvrus", "ots", "1kanal", "friday", "5kanal", "rentv", "stslove", "futbol", "che", "shalun", "otica", "russnoch", "pbtv", "redl", "karusel",
-    "mama", "muztv", "tv3", "tnt", "utv", "nts"
+    "strana", "otvrus", "ots", "1kanal", "friday", "5kanal", "rentv", "rentvhd", "stslove", "futbol", "che", "shalun", "otica", "russnoch", "pbtv", "redl", "karusel",
+    "mama", "muztv", "tv3", "tnt", "utv", "nts", "mirbasketbola"
 ]
 
 # Mapping TV channel IDs to corresponding file names
