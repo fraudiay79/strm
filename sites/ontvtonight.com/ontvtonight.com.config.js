@@ -65,7 +65,7 @@ module.exports = {
           const title = parseText($('.inner-heading.sub h2'))
           const subTitle = parseText($('.tab-pane > h4 > strong'))
           const description = parseText($('.tab-pane > .tvbody > p'))
-          const icon = $('.program-media-image img, .show-page-image img').attr('src');
+          const icon = $('.program-media-image img, img.show-page-image, .show-page-image img').attr('src');
           const category = $('.schedule-attributes-genres span').toArray().map(el => $(el).text()).slice(0, 3)
           const casts = $('.single-cast-head:not([id])').toArray().map(el => {
             const cast = { name: parseText($(el).find('a')) }
