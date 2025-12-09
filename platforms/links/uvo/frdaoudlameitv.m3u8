@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/10010/dvr/hls/frdaoudlameitv/streams/sessions/7cc772dc251c40c6ad622d1780ff425d/media/playlist-orig.m3u8/fstl=exp=1765370504~acl=%2F10010%2Fdvr%2Fhls%2Ffrdaoudlameitv%2F%2A~hmac=dad116718e6aee4ff8d994632633720c6be59ac3ca1509632e5517cc11bdc575/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/frdaoudlameitv/streams/sessions/abe8ce96ca9647a3a07312f8e8d67e3c/media/playlist-orig.m3u8/fstl=exp=1765380310~acl=%2F10010%2Fdvr%2Fhls%2Ffrdaoudlameitv%2F%2A~hmac=a2befee4015de960bcf0ed38349e8eeba9746cf2c69a4332d2bfccc5db7452ab/0.m3u8
