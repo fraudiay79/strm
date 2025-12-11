@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telereggio/streams/sessions/610ab3dae2984ca088bed97c9b11059f/media/playlist-orig.m3u8/fstl=exp=1765553233~acl=%2F10010%2Flive%2Fhls%2Ftelereggio%2F%2A~hmac=13db27656def5e51360b52177cdf924c2f3d1bfaea93bf5295cd2e9d9f02d9f6/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telereggio/streams/sessions/08ddf7728fff4957931c3399ac0f3b6c/media/playlist-orig.m3u8/fstl=exp=1765574777~acl=%2F10010%2Flive%2Fhls%2Ftelereggio%2F%2A~hmac=2577a3c13cee56f055014c483f899632919e445e1a5795b9eeb1839b25009fc9/0.m3u8

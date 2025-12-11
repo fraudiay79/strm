@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/trcmodena/streams/sessions/4195bc38415547b59bd9babcbedf4fbd/media/playlist-orig.m3u8/fstl=exp=1765553232~acl=%2F10010%2Flive%2Fhls%2Ftrcmodena%2F%2A~hmac=1244840628261a3b2260ef683ee128315f434ba36b452ea3ed971360f98df3ff/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/trcmodena/streams/sessions/31f731b8d4574edcafc1e44fdc7b28e0/media/playlist-orig.m3u8/fstl=exp=1765574776~acl=%2F10010%2Flive%2Fhls%2Ftrcmodena%2F%2A~hmac=e031b763d01230ca0748dae50c66f434bd665afcaa54ff26e92587087aaa414b/0.m3u8
