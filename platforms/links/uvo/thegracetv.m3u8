@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2000000,CODECS="avc1.4d4029,",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/hls/live/2119688/thegracetv/streams/sessions/081b5335e12b42acaedc038e0451a4c8/media/playlist-orig.m3u8/fstl=exp=1765790489~acl=%2Fhls%2Flive%2F2119688%2Fthegracetv%2F%2A~hmac=73b509d93f2c5e787d768af07d82be8eb939c586e5c794bceb6f936a21a8d625/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4029,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
+https://live.uvotv.com/hls/live/2119688/thegracetv/streams/sessions/ade72f9c5b6646b59a1f2e90b8e45838/media/playlist-orig.m3u8/fstl=exp=1765811968~acl=%2Fhls%2Flive%2F2119688%2Fthegracetv%2F%2A~hmac=e5cea582d8927ba3bbd0ddd2da0cc9c4fa53e828a0e22cce3c6bc2c1d6fb6f7e/0.m3u8
