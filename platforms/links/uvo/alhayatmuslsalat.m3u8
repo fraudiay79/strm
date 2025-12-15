@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",CLOSED-CAPTIONS=NONE,FRAME-RATE=8350.000
-https://live.uvotv.com/hls/live/2120913/alhayatmuslsalat/streams/sessions/24f8443de041402ca62b570b4c464e56/media/playlist-orig.m3u8/fstl=exp=1765833568~acl=%2Fhls%2Flive%2F2120913%2Falhayatmuslsalat%2F%2A~hmac=0b8534b49592567abb4e49444fae9cfffc51c7ebd2c1795a91b392a5ebb95d44/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120913/alhayatmuslsalat/streams/sessions/a78b34d73a544818aaf900a9994be9d4/media/playlist-orig.m3u8/fstl=exp=1765848480~acl=%2Fhls%2Flive%2F2120913%2Falhayatmuslsalat%2F%2A~hmac=06ddad87d995436fbbfd3d91a995f17aa914444fe5e02db7de1cb629e728aa95/0.m3u8
