@@ -2,12 +2,12 @@
 Attempt 1 to fetch https://www.jurnaltv.md/page/live
 Successfully fetched the page
 Found m3u8 URL with pattern: file:\s*"([^"]+\.m3u8[^"]*)"
-URL: https://live.cdn.jurnaltv.md/JurnalTV_HD/index.m3u8?token=e4f72da8eef52cd1b47faaba874c0f4e4f2d4363
+URL: https://live.cdn.jurnaltv.md/JurnalTV_HD/index.m3u8?token=3753f0ffbd2008d95b1c8dcecb7360d6788e260e
 
 === Success! Generated m3u8 content ===
 #EXTM3U
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1740000,BANDWIDTH=2160000,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-tracks-v2a1/mono.ts.m3u8?token=e4f72da8eef52cd1b47faaba874c0f4e4f2d4363
-#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2780000,BANDWIDTH=3460000,RESOLUTION=1024x576,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-tracks-v1a1/mono.ts.m3u8?token=e4f72da8eef52cd1b47faaba874c0f4e4f2d4363
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1840000,BANDWIDTH=2290000,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
+tracks-v2a1/mono.ts.m3u8?token=3753f0ffbd2008d95b1c8dcecb7360d6788e260e
+#EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2960000,BANDWIDTH=3680000,RESOLUTION=1024x576,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
+tracks-v1a1/mono.ts.m3u8?token=3753f0ffbd2008d95b1c8dcecb7360d6788e260e
 
