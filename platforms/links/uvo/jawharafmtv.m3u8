@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120681/jawharafmtv/streams/sessions/c359e9d394d84d7a82a46aa287fa7837/media/playlist-orig.m3u8/fstl=exp=1766193773~acl=%2Fhls%2Flive%2F2120681%2Fjawharafmtv%2F%2A~hmac=59aee259fcc9f31c137e84563fe212b7be49c3ed7f22dbc039400ffd17c8449b/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120681/jawharafmtv/streams/sessions/5f38aa19222d467c93729007f89c28d0/media/playlist-orig.m3u8/fstl=exp=1766203009~acl=%2Fhls%2Flive%2F2120681%2Fjawharafmtv%2F%2A~hmac=1c7e2a84d3c4c58ff86ec049f373ca7b93e37e86004dda472bd41986285c5e70/0.m3u8
