@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120430/balafontv/streams/sessions/ae351bef936b4cc383fee211fe2723be/media/playlist-orig.m3u8/fstl=exp=1765370376~acl=%2Fhls%2Flive%2F2120430%2Fbalafontv%2F%2A~hmac=335a763cebbca65ea41a46f49f1ce38d3b51549d17422bd610f4695ec033fda7/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120430/balafontv/streams/sessions/8f8371adac384bb5adb017048eb6a6c3/media/playlist-orig.m3u8/fstl=exp=1766548792~acl=%2Fhls%2Flive%2F2120430%2Fbalafontv%2F%2A~hmac=dce913f7c291e06559b708805cbb7a0fb7a044ebc9799ce3766e2cd16380ad11/0.m3u8
