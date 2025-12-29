@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120913/al-naharone/streams/sessions/ff01c7d418594abaaacc42547026291c/media/playlist-orig.m3u8/fstl=exp=1767119358~acl=%2Fhls%2Flive%2F2120913%2Fal-naharone%2F%2A~hmac=f85d6d5429ce204d2ac385ed15f56525fcd443c0bc16937dfb2600d8ebdb739f/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120913/al-naharone/streams/sessions/c001a225d8d941668b96854082750966/media/playlist-orig.m3u8/fstl=exp=1767129564~acl=%2Fhls%2Flive%2F2120913%2Fal-naharone%2F%2A~hmac=2507c80e833c91b0eb342aeba3cd35d782423d237d1af3fc4799abb69054bc7b/0.m3u8

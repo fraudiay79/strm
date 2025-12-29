@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121502/gloomchannel/streams/sessions/68cc2957cb4f4378a79e7b77b1367bdf/media/playlist-orig.m3u8/fstl=exp=1767119337~acl=%2Fhls%2Flive%2F2121502%2Fgloomchannel%2F%2A~hmac=1ff7af60cb94ec4cec190c27e1dd019de30c3bfd9adced72886c2df1f7f546d7/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121502/gloomchannel/streams/sessions/50eb0f8904b14b3389e4bfa00983bffb/media/playlist-orig.m3u8/fstl=exp=1767129541~acl=%2Fhls%2Flive%2F2121502%2Fgloomchannel%2F%2A~hmac=5e18b44f22c97522e653499b824d665aa2d0df68d1d985945901a305437b5173/0.m3u8
