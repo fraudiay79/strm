@@ -1,44 +1,45 @@
 [
   {
-    "name": "The Man in the High Castle",
-    "category": "\ud83c\udd3c",
+    "name": "Ripper Street",
+    "category": "\ud83c\udd41",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/xhoDZbMNeyCA0BGPZQsdIiO43Dp.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/pLio7Lod6YoNMM7ybFVjIJjwIxe.jpg",
-      "plot": "Explore what it would be like if the Allied Powers had lost WWII, and Japan and Germany ruled the United States. Based on Philip K. Dick's award-winning novel.",
-      "rating": "7.5",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6w8yKYsA7RkuyauW224kBZQebFt.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/snSylVifJ29t7mxiIi5dxi6x2q2.jpg",
+      "plot": "A drama set in the East End of London in 1889, during the aftermath of the \"Ripper\" murders. The action centres around the notorious H Division \u2013 the police precinct from hell \u2013 which is charged with keeping order in the chaotic streets of Whitechapel. Ripper Street explores the lives of characters trying to recover from the Ripper's legacy, from crimes that have not only irretrievably altered their lives, but the very fabric of their city. At the drama's heart our detectives try to bring a little light into the dark world they inhabit.",
+      "rating": "7.4",
       "genre": [
-        "sci-fi & fantasy",
-        "drama"
+        "drama",
+        "mystery",
+        "crime"
       ],
       "cast": [
-        "Alexa Davalos",
-        "Rufus Sewell",
-        "Joel de la Fuente",
-        "Jason O'Mara",
-        "Brennan Brown"
+        "Matthew Macfadyen",
+        "Adam Rothenberg",
+        "MyAnna Buring",
+        "Charlene McKenna",
+        "Matthew Lewis"
       ]
     },
     "seasons": [
       {
         "season": 1,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/84wrlrNYTZUZrrTqSZZvbzuJOl7.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/kGj1AHzBcFM7bvZLyoUjiEX5xM0.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": " Some 20 years after that loss, the United States and much of the world has now been split between Japan and Germany, the major hegemonic states. But the tension between these two powers is mounting, and this stress is playing out in the western U.S.",
-          "year": "2015",
+          "plot": "Haunted by the failure to catch London's most evil killer, Jack the Ripper, Inspector Edmund Reid now heads up the notorious H Division - the toughest police district in the East End.",
+          "year": "2012",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "The New World",
+            "name": "I Need Light",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gmKb3bfxSCEx6VNkqV0Hrbp4U54.jpg",
-              "plot": "Joe Blake, a resistance fighter, leaves German New York with cargo for neutral Colorado. In Japanese San Francisco, Juliana Crane receives footage of the Allies winning the war and a bus ticket to Colorado from her sister. There, she meets Joe. Joe reveals a dark secret.",
-              "duration": 3600,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gmKb3bfxSCEx6VNkqV0Hrbp4U54.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cEhhcusOAHGAmEHXMRA7CgEPhHa.jpg",
+              "plot": "When a woman is found murdered, Chief Inspector Abberline believes Jack the Ripper has returned.",
+              "duration": 3120,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cEhhcusOAHGAmEHXMRA7CgEPhHa.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -46,13 +47,13 @@
           },
           {
             "episode": 2,
-            "name": "Sunrise",
+            "name": "In My Protection",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/q5G62oBsxLMlMXdVGDY6gqjLPRH.jpg",
-              "plot": "Juliana and Joe are becoming closer and closer in the neutral Rocky Mountain states. Juliana finds a job in a local cafe and receives information of a mysterious King James bible in a local bookshop. Frank is tortured and interrogateed by the Japanese Occupation Military Police back home to know about Juliana's whereabouts.",
-              "duration": 3600,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/q5G62oBsxLMlMXdVGDY6gqjLPRH.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rhYn4LYDwaCdNLOLRLZItkAxeq9.jpg",
+              "plot": "A toymaker is beaten to death, and a possible culprit refuses to deny the charge.",
+              "duration": 3120,
+              "rating": "6.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rhYn4LYDwaCdNLOLRLZItkAxeq9.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -60,13 +61,13 @@
           },
           {
             "episode": 3,
-            "name": "The Illustrated Woman",
+            "name": "The King Came Calling",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/z1y8RRlgVCMt91X8imtY7jG4HOl.jpg",
-              "plot": "Joe and Juliana must act quickly as a vicious bounty hunter known as The Marshal arrives in Canon City. Tagomi makes plans with Wegener to pass valuable secrets from the Reich, and Frank plots his revenge against the Japanese.",
-              "duration": 3480,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/z1y8RRlgVCMt91X8imtY7jG4HOl.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/arnzuKNEMUwjmglC2acCIFhwhnt.jpg",
+              "plot": "Deliberate contamination is suspected in a sudden cholera outbreak . Emily's search for a charity patron proves difficult.",
+              "duration": 3120,
+              "rating": "6.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/arnzuKNEMUwjmglC2acCIFhwhnt.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -74,13 +75,13 @@
           },
           {
             "episode": 4,
-            "name": "Revelations",
+            "name": "The Good of This City",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3fPRfmyBi7owTGFcRwV9NV5JW2r.jpg",
-              "plot": "Joe is increasingly torn between duty and his growing feelings for Juliana. While Ed tries to stop Frank from making an irrevocable decision, Smith's investigation is interrupted when he has trouble with his witness, and Tagomi's plan goes awry as events take a dramatic turn at the Crown Prince's speech.",
-              "duration": 3240,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3fPRfmyBi7owTGFcRwV9NV5JW2r.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/12UUKDim0CjitmpVAZrsR7ZZTeJ.jpg",
+              "plot": "The brutal clearing of a local slum for the underground railway reveals an almost indecipherable murder scene and an unreliable slum girl witness. Lucy Eames, beautiful and disturbed, is the unlikely key to a Byzantine web of conspiracy.",
+              "duration": 3120,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/12UUKDim0CjitmpVAZrsR7ZZTeJ.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -88,13 +89,13 @@
           },
           {
             "episode": 5,
-            "name": "The New Normal",
+            "name": "The Weight of One Man's Heart",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3HEN2uVjAlEDrjyK0WmYQoMo24G.jpg",
-              "plot": "Juliana returns home, only to discover new clues that lead her closer to unraveling the mystery behind the films. Meanwhile, Joe faces a tough debriefing upon his return home. Kido begins his investigation into the events surrounding the Crown Prince's speech, while Tagomi and Wegener make a last-ditch attempt to complete their mission.",
-              "duration": 3000,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3HEN2uVjAlEDrjyK0WmYQoMo24G.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oYIJEzxJOeoTamcjw8QNKihuyZl.jpg",
+              "plot": "A string of brilliantly masterminded robberies keeps Reid and his team busy and leads to a blast from the past for Drake when he is confronted by his former army colonel. As the net closes in on the robbers, the sergeant finds his loyalties put to the test.",
+              "duration": 3120,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oYIJEzxJOeoTamcjw8QNKihuyZl.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -102,13 +103,13 @@
           },
           {
             "episode": 6,
-            "name": "Three Monkeys",
+            "name": "Tournament of Shadows",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hy9DHmen6ocrIaUgQjTJExxBJGm.jpg",
-              "plot": "Joe celebrates VA day at Smith's house. Juliana accepts a job working for Tagomi as she continues her search for answers. Smith invites an old friend to join the celebrations with surprising results.",
-              "duration": 3360,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hy9DHmen6ocrIaUgQjTJExxBJGm.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg",
+              "plot": "As the dock strike of August '89 takes hold of the city, the killing of a Jewish anarchist leads Reid and the team into the heartless chicanery of the British government's fight against distant empires and global terrorism.",
+              "duration": 3120,
+              "rating": "6.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -116,13 +117,13 @@
           },
           {
             "episode": 7,
-            "name": "Truth",
+            "name": "A Man of My Company",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5UIAa4IFQwHb546xxXGZWoigQSs.jpg",
-              "plot": "Juliana makes a startling discovery about her sister's death. Frank reflects on recent events and makes an important decision about his future, and Tagomi gains greater insight into Juliana's past.",
-              "duration": 3360,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5UIAa4IFQwHb546xxXGZWoigQSs.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg",
+              "plot": "International haulage tycoon TP Swift arrives in town to acquire an ailing shipping line, accompanied by a team of private detectives, who proceed to cut a violent swathe through the borough on a mission of vengeance. As Reid focuses on the murder of an engine inventor, Jackson and Susan's past comes back to haunt them, bringing their future in Whitechapel - and their very lives - into question.",
+              "duration": 3120,
+              "rating": "6.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -130,41 +131,13 @@
           },
           {
             "episode": 8,
-            "name": "End of the World",
+            "name": "What Use Our Work?",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uZujAyCEVB6ql2rLAMuOrO2u7iO.jpg",
-              "plot": "Juliana and Frank make plans to escape the Pacific States, only to be dragged back into danger by Joe as he tries to retrieve a new film. Meanwhile, Smith's loyalty is put to the ultimate test when confronted with a startling family discovery.",
-              "duration": 3300,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uZujAyCEVB6ql2rLAMuOrO2u7iO.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Kindness",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ef0ygQRCQviKGGDWuG5DfDllX77.jpg",
-              "plot": "With time running out, a desperate Frank is forced to put his life on the line to help Joe. The pieces finally fall into place for Smith as he uncovers who was behind the assassination attempt. Tagomi is devastated when he's confronted with the consequences of his scheming, and Kido's investigation takes a dramatic turn when he makes an important discovery.",
-              "duration": 3000,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ef0ygQRCQviKGGDWuG5DfDllX77.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "A Way Out",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ytb5YR5XE66UxMyMb1aUocw38vy.jpg",
-              "plot": "As revelations abound, Juliana is forced to make the hardest decision of her life. Wegener returns to Germany to carry out his mission. Smith risks becoming the prey as he goes hunting with his assassin, and Kido desperately tries to close his investigation before his time runs out.",
-              "duration": 3600,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ytb5YR5XE66UxMyMb1aUocw38vy.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/v39RHKIISjGI9evBuJoIbLbhTOe.jpg",
+              "plot": "Reid is adrift, his team in pieces and Leman Street shaken to its foundations following recent events. A kidnapping offers him cause to assemble his men and tackle the white slavery ring operating in their midst. But Reid is gripped by a growing obsession that this leads back to the terrible secret from his own past.",
+              "duration": 3120,
+              "rating": "6.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/v39RHKIISjGI9evBuJoIbLbhTOe.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -175,22 +148,22 @@
       {
         "season": 2,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/1vqHGCzlE6vFKN5XolUX2tPcHLT.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vX96sZi5H2auocthKnO9WTkWgop.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "After giving Joe the film, Juliana is forced to flee the fury of the Resistance while embarking on a new path to save her home from destruction. Joe confronts his absent father in Berlin, who is not as he seems. Smith wrestles with what to do about his ill son. Frank takes a gamble with his life in a bid to save Ed. Tagomi's life is turned upside down by his \"travel\" to an alternative world.",
-          "year": "2016",
+          "plot": "The memory of Jack the Ripper may have faded but the Whitechapel streets he walked are more dangerous than ever.",
+          "year": "2013",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "The Tiger's Cave",
+            "name": "Pure as the Driven",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/18GPOnGCFi81FPmZHrBVzHtA3EY.jpg",
-              "plot": "When Julianna allows Joe to flee from the hands of the Resistance, she is questioned on her loyalty, Obergruppenf\u00fchrer John Smith returns with news on the event that almost led to his death and Trade Minister Tagomi is overwhelmed by the vision of life if the Nazis had failed to win World War 2.",
-              "duration": 3480,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/18GPOnGCFi81FPmZHrBVzHtA3EY.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/b6aQbAdlFb2yc8fCatOFQGC9XP4.jpg",
+              "plot": "Jack the Ripper may be fading into memory, but east London has found no peace. An investigation into the assault of a policeman leads DI Reid and the men of H-Division to the newly-emergent Chinatown, where Jackson discovers evidence of a new and devastatingly powerful opiate. Reid fears a new kind of hell is to be released onto his streets.",
+              "duration": 3120,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/b6aQbAdlFb2yc8fCatOFQGC9XP4.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -198,13 +171,13 @@
           },
           {
             "episode": 2,
-            "name": "The Road Less Traveled",
+            "name": "Am I Not Monstrous?",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/j2dIeVEQ77CUZo9Mu1kx3dpRrcZ.jpg",
-              "plot": "After narrowly escaping death, Juliana discovers a family secret that could have global implications - and leads her to make a life-changing decision. Kido, Tagomi, and Frank all take dangerous risks, while back in New York, Joe settles into a normal routine, only to have it turned upside down when Smith gives him the opportunity he's waited for his whole life.",
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nlCrrYv9F5Qp8UqlDDu7vYVSh41.jpg",
+              "plot": "A young woman is found murdered at the London Hospital and the only clue to her identity is an unusual deformity. The hunt for her killer takes Reid and the team into the shadowy netherworld of the freakshows, where they must seek the help of Joseph Merrick, aka the Elephant Man. Reinforcements for H-Division arrive in the form of DC Albert Flight.",
               "duration": 3120,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/j2dIeVEQ77CUZo9Mu1kx3dpRrcZ.jpg"
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nlCrrYv9F5Qp8UqlDDu7vYVSh41.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -212,13 +185,13 @@
           },
           {
             "episode": 3,
-            "name": "Travelers",
+            "name": "Become Man",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/OE5s3ZChWFzSuRYsFLTQJ3bU87.jpg",
-              "plot": "Fighting to acclimatize to the strange new world of Nazi New York, Juliana seeks out the one person she thinks she can trust: Joe Blake. Angry and defiant after Juliana's departure, Frank is drawn to the Resistance movement and its charismatic leader. Joe confronts his own identity when he finally meets his father.",
-              "duration": 3600,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/OE5s3ZChWFzSuRYsFLTQJ3bU87.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ieGUBK87F45ocwmUXwxfuXEaJv2.jpg",
+              "plot": "The abduction of a prominent member of the London County Council introduces Reid to Councilor Jane Cobden, the first woman appointed to the LCC - because it appears the kidnappers are radical supporters of Cobden's aims. Long Susan is taken by force to the gang's hideout, and she soon finds herself growing sympathetic to her captors' lives and aims.",
+              "duration": 3120,
+              "rating": "5.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ieGUBK87F45ocwmUXwxfuXEaJv2.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -226,13 +199,13 @@
           },
           {
             "episode": 4,
-            "name": "Escalation",
+            "name": "Dynamite and a Woman",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mwOXCYBaGtyTqAvxppXLhBjwqu2.jpg",
-              "plot": "Juliana discovers she's far from safe from the Resistance in the Reich. Smith confronts the reality of the lengths he's willing to go to in order to protect his son. And another father - Joe's - tries to persuade him to give Berlin a chance. Frank also has a decision to make: how far is he prepared to go to help the Resistance cause?",
-              "duration": 3240,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mwOXCYBaGtyTqAvxppXLhBjwqu2.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mNyNJk5RE4vlkWebw2reT9XGTnT.jpg",
+              "plot": "An Irish bomber is sprung from prison and barely a day later a prominent opponent of the Home Rule movement is murdered. Chief Inspector Abberline is convinced that the Irish Republican Brotherhood is active once more and orders Reid to send the Irish DC Flight undercover into Whitechapel's Irish community.",
+              "duration": 3120,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mNyNJk5RE4vlkWebw2reT9XGTnT.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -240,13 +213,13 @@
           },
           {
             "episode": 5,
-            "name": "Duck and Cover",
+            "name": "Threads of Silk and Gold",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4jF82ue3sNrnx3QTQERxSPzN8lD.jpg",
-              "plot": "Joe learns a truth about his past that makes him question everything. The rift between Frank and Ed widens as Frank is drawn further into the Resistance. In order to assure her safety, Juliana must betray someone close to her.",
-              "duration": 3480,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4jF82ue3sNrnx3QTQERxSPzN8lD.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6VsJP8wxZdhulRyyrvn01Q2Gbr3.jpg",
+              "plot": "An investigation into the brutal murder of a Telegraph Boy reveal a vice racket being run from the offices of the GPO. A ledger leads Reid to the centre of the one of London\u2019s most august financial institutions, Barings Bank.",
+              "duration": 3120,
+              "rating": "5.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6VsJP8wxZdhulRyyrvn01Q2Gbr3.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -254,13 +227,13 @@
           },
           {
             "episode": 6,
-            "name": "Kintsugi",
+            "name": "A Stronger Loving World",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/duOONOvwCnIN5bJmcMCr1gkk2G4.jpg",
-              "plot": "Nicole introduces Joe to an unexpected side of Berlin, that leads him down a new path. On her new mission, Juliana inserts herself into the Smith's inner circle. Tagomi is finally reunited with his family, only to be faced with the prospect of losing them again.",
-              "duration": 3300,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/duOONOvwCnIN5bJmcMCr1gkk2G4.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kYkVupyIaDVuFBbF1Q2mq8vkMGR.jpg",
+              "plot": "Churches and synagogues are being burnt and desecrated in Whitechapel and Reid suspects the same hand behind the various attacks. Meanwhile, the all-too-brief domestic happiness that Sergeant Drake has enjoyed is disrupted by the arrival of a friend from his wife Bella's past, the mysterious and charismatic scholar, Gabriel Cain.",
+              "duration": 3120,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kYkVupyIaDVuFBbF1Q2mq8vkMGR.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -268,13 +241,13 @@
           },
           {
             "episode": 7,
-            "name": "Land O' Smiles",
+            "name": "Our Betrayal (1)",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9moxY31xdaJxYjR4I8VqYm15yHz.jpg",
-              "plot": "As Juliana worms closer to the Smiths, she discovers a dangerous secret. Childan and Ed get themselves in a sticky situation as they try to settle the Yakuza debt. On a Resistance mission, Frank uncovers a Japanese plan that could realize his worst nightmare.",
-              "duration": 3180,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9moxY31xdaJxYjR4I8VqYm15yHz.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lkzg6xTNrt56nf0qMQI9foKTxWq.jpg",
+              "plot": "A valuable symbol of the British Empire\u2019s wealth shows up in the form of an uncut diamond. It is a jewel \u2018freed\u2019 from the diamond monopoly of De Graal by one Daniel Judge, Captain Jackson\u2019s untrustworthy older brother. Reid and Flight find themselves being drawn to the plight of a local craftsman defrauded of his work and income by a scam that is set to return H Division to the malign influence of Detective Inspector Jedediah Shine.",
+              "duration": 3120,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lkzg6xTNrt56nf0qMQI9foKTxWq.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -282,41 +255,13 @@
           },
           {
             "episode": 8,
-            "name": "Loose Lips",
+            "name": "Our Betrayal (2)",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6VGCKM18oUwNOfEfg77aOxtaLDk.jpg",
-              "plot": "Juliana gathers intel for the Resistance that could trigger WWIII. When the political situation in Berlin becomes unsafe, Joe must make a choice that could put his life in danger. Frank learns the truth about Juliana, leading him to question his newfound Resistance family.",
-              "duration": 3600,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6VGCKM18oUwNOfEfg77aOxtaLDk.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Detonation",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/brOYsKBASO2haetBy3DiEF1OlPi.jpg",
-              "plot": "Tagomi faces a dilemma: to stay with his family or return to the world he left behind. Desperate to escape the Reich, Juliana strikes a final, dangerous deal with the Resistance. When Ed reveals a secret that puts the Resistance plan in jeopardy, Frank must decide how to deal with his best friend's betrayal.",
-              "duration": 3360,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/brOYsKBASO2haetBy3DiEF1OlPi.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Fallout",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/odh1P7a2Y6DADQ9WAp8KcarIx4.jpg",
-              "plot": "Tagomi enlists Kido in a deception to save Japan from destruction. As Smith's life crumbles around him, he makes a dangerously bold play to hold onto his power. Joe tries to do the right thing but suffers the ultimate betrayal. Juliana must make a heart-wrenching choice that will shape the future of the world.",
-              "duration": 3600,
-              "rating": "8.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/odh1P7a2Y6DADQ9WAp8KcarIx4.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yD40geJ3UMiOIYSpST6W93UlwBd.jpg",
+              "plot": "Death and violence comes to Whitechapel once again. Some decayed and murdered bodies are discovered in a slum tenement, and the advanced stages of the police divisional boxing championship reveals the vengeful ferocity to be seen within the ranks of the police force.",
+              "duration": 3120,
+              "rating": "5.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yD40geJ3UMiOIYSpST6W93UlwBd.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -327,22 +272,22 @@
       {
         "season": 3,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/A2HugTnJ2ONNd0VjH6tfJyLDnoD.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/uQYvJG0ryWK1tRlxnFDkyF2pzgq.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Juliana uncovers a dangerous Nazi plan for ultimate supremacy. Can she convince others to join her in stopping it? Or is it already too late? Though recently celebrated by Himmler, Smith finds that the dangers to his family continue. As the GNR takes retaliatory measures toward the JPS, tensions rise and Tagomi tries to broker peace. A haunted Kido searches for old enemies.",
-          "year": "2018",
+          "plot": "After a locomotive disaster, Reid's iron grip on 'H' Division begins to unravel.",
+          "year": "2014",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "Now More Than Ever, We Care About You",
+            "name": "Whitechapel Terminus",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fsZD3J8UgQe36C2WHvguFeCGco4.jpg",
-              "plot": "Juliana Crain makes a new acquaintance in the Neutral Zone - an Irish fixer named Wyatt - and soon finds herself on the run and seeking Tagomi's aid. The Japanese test an atomic bomb. Joe Blake is sent on a diplomatic mission to San Francisco. Kido hires a new sergeant. Nicole Dormer arrives in New York to head a new propaganda campaign. The Smiths struggle with the aftermath of Thomas' death.",
-              "duration": 4200,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fsZD3J8UgQe36C2WHvguFeCGco4.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7NXz04lR5aE7lFYSRcKbFTaAQ6T.jpg",
+              "plot": "Reid and Long Susan are set on a collision course after a locomotive disaster.",
+              "duration": 3540,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7NXz04lR5aE7lFYSRcKbFTaAQ6T.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -350,13 +295,13 @@
           },
           {
             "episode": 2,
-            "name": "Imagine Manchuria",
+            "name": "The Beating of Her Wings",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iFlgQ2NOw5Twypc1WWBqjWUctyN.jpg",
-              "plot": "Juliana recognizes that her and Tagomi's fates are intertwined. Tagomi and Admiral Inokuchi realize the Reich is imposing a covert oil embargo on the Pacific States. Reichsmarschall Rockwell and J. Edgar Hoover plot against John Smith. Helen starts therapy to cope with her grief over Thomas, and takes drastic action to protect her family. Kido and Tagomi clash over Juliana.",
-              "duration": 3240,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iFlgQ2NOw5Twypc1WWBqjWUctyN.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9nOhA3EhZjL1n3qzEIaL86yeNFL.jpg",
+              "plot": "A murder inquiry in a curiosity shop reveals a secret dungeon and signs of a captive girl.",
+              "duration": 3540,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9nOhA3EhZjL1n3qzEIaL86yeNFL.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -364,13 +309,13 @@
           },
           {
             "episode": 3,
-            "name": "Sens\u00f4 K\u00f4i",
+            "name": "Ashes and Diamonds",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ef8EwUXoikr7cKcstmWKMpsUQbq.jpg",
-              "plot": "Juliana and Tagomi pursue the mysteries of the films and Juliana reunites with an old friend. Childan is anxious to return to San Francisco now that the reprisals have stopped, but a potential new romance makes Ed reluctant to leave. Kido receives intelligence that sets him on a new path. Smith finds himself celebrated by Nazi high society at a screening of Nicole's new film about Thomas.",
-              "duration": 3540,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ef8EwUXoikr7cKcstmWKMpsUQbq.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/s2rvrYuLPvLehENeVQamVPrNenH.jpg",
+              "plot": "Alex le Shayne, a mysterious clairvoyant is found dead at the local performance place. Jackson presumes poison has a part to play. As Reid is missing Drake steps in to investigate. Elsewhere Susan continues to care for Mathilda and plans to send her to Switzerland.",
+              "duration": 3480,
+              "rating": "7.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/s2rvrYuLPvLehENeVQamVPrNenH.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -378,13 +323,13 @@
           },
           {
             "episode": 4,
-            "name": "Sabra",
+            "name": "Your Father, My Friend",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wU45MxTHg1QhHedW7qGMw63Tanp.jpg",
-              "plot": "A new community fights for survival in the Neutral Zone. Juliana and Joe get reacquainted, while Joe continues his undercover work for Himmler. Wyatt drops in on Juliana in San Francisco. Smith's past rises up to haunt him. Ed and Childan face a challenge on their way home to San Francisco. As tensions between the Reich and the Empire rise, Tagomi finds his life may be in danger.",
-              "duration": 3300,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wU45MxTHg1QhHedW7qGMw63Tanp.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/w9oJC1XWWlokWtXRDNStJDcZkjq.jpg",
+              "plot": "Ghosts of Whitechapel's past come alive, setting our heroes on a path of destruction.",
+              "duration": 3540,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/w9oJC1XWWlokWtXRDNStJDcZkjq.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -392,13 +337,13 @@
           },
           {
             "episode": 5,
-            "name": "The New Colossus",
+            "name": "Heavy Boots",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qPTAvros4aXV00uchPTSoPI5TTV.jpg",
-              "plot": "As the Reichsf\u00fchrer continues to provoke the Japanese Pacific States, Juliana barely escapes a deadly situation and discovers a trove of Nazi secrets. John Smith tangles with his political adversary. The Nazis prepare for \"Year Zero.\" Joe and Juliana come to a turning point in their relationship.",
-              "duration": 3300,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qPTAvros4aXV00uchPTSoPI5TTV.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1uVCetTuBTolcT6rBXr5FEm1EaJ.jpg",
+              "plot": "A destructive gang of youths unleash hell upon the streets, but it's not until daylight breaks that the true horror of their brutal work is revealed. The trail leads the team of H Division into the heartland of one of the city's oldest trades - the London Breweries - where conflicted loyalties reign, and grief and anger create a potent concoction.",
+              "duration": 3540,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1uVCetTuBTolcT6rBXr5FEm1EaJ.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -406,13 +351,13 @@
           },
           {
             "episode": 6,
-            "name": "History Ends",
+            "name": "The Incontrovertible Truth",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uN0cJ5t5TFxArqdZKa8mG2jiyeh.jpg",
-              "plot": "With Wyatt's aid, Juliana flees San Francisco with the stolen Nazi secrets. Childan can finally return home; Ed decides to stay in the Neutral Zone. Tagomi makes revelations to Kido that change Kido's perspective. John Smith's career takes a turn.",
-              "duration": 3480,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uN0cJ5t5TFxArqdZKa8mG2jiyeh.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zfEdcQyOJ4ZVjOw3LBC4cOdPYKM.jpg",
+              "plot": "The recovering Reid finds the unconscious Lady Vera Montacute in Whitechapel next to the corpse of a flower seller.",
+              "duration": 3540,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zfEdcQyOJ4ZVjOw3LBC4cOdPYKM.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -420,13 +365,13 @@
           },
           {
             "episode": 7,
-            "name": "Excess Animus",
+            "name": "Live Free, Live True",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/901qYOw8mMZEaJehR4VT2CSlZpQ.jpg",
-              "plot": "Juliana embarks on a mission to stop the Nazis - a mission that reunites her with old friends. Thelma and Nicole grow closer, despite the risks. Smith learns more about the Nazis' efforts into alt-world travel. Kido demands Tagomi come clean about the films and his ability to travel. Kido coaxes crucial intelligence from Childan.",
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wLDfbINbMFTkkyoQ5ldOrdfi5iR.jpg",
+              "plot": "The murder of a chemist lifts the lid on a backstreet abortion racket.",
               "duration": 3540,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/901qYOw8mMZEaJehR4VT2CSlZpQ.jpg"
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wLDfbINbMFTkkyoQ5ldOrdfi5iR.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -434,41 +379,13 @@
           },
           {
             "episode": 8,
-            "name": "Kasumi (Through the Mists)",
+            "name": "The Peace of Edmund Reid",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xSiXf73O4NNR2s7rXO5px2yMJWx.jpg",
-              "plot": "Juliana realizes time might be running out, but recruiting supporters continues to prove challenging. Tagomi finds himself in a dangerous life-or-death struggle. In therapy, Helen Smith crosses a line. Kido pursues his target in the Neutral Zone.",
-              "duration": 3000,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xSiXf73O4NNR2s7rXO5px2yMJWx.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Baku",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gV4kmrfZyj1qn0nDbuQtwIYL4Y9.jpg",
-              "plot": "Juliana and Wyatt's mission takes them farther east and dangerously close to the center of a top-secret Nazi project. Trying to improve relations between their sides, Tagomi reaches out to Smith. Smith makes a crucial discovery. Kido finds closure.",
-              "duration": 3300,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gV4kmrfZyj1qn0nDbuQtwIYL4Y9.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Jahr Null",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1uLbLQpodQjqDIkWrSxA1ou9sgv.jpg",
-              "plot": "Juliana's attempt to stop the Nazis lands her in a precarious position. Himmler and John Smith lead a lavish celebration of Year Zero. Amid a series of successes, Smith faces a setback. Kido returns to San Francisco with a prize, performs an act of kindness for a friend. Tagomi makes a difficult decision. Ed returns to San Francisco and reconnects with Childan.",
-              "duration": 3480,
-              "rating": "8.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1uLbLQpodQjqDIkWrSxA1ou9sgv.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jvorQAdxLVPawPyZeqB42NxZy9c.jpg",
+              "plot": "When an American journalist is killed in Whitechapel, his story threatens the peace.",
+              "duration": 3540,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jvorQAdxLVPawPyZeqB42NxZy9c.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -479,22 +396,22 @@
       {
         "season": 4,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/gk1vHe7shtBMccdF2clfrm9p4Fr.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/k5z7xjeBznazwewXdWFbhkOtlWT.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Juliana Crain is on a mission to take down Reichsmarschall Smith, as the Nazis use the Die Nebenwelt Portal to infiltrate other worlds. Helen Smith struggles to protect her fractured family. Chief Inspector Kido is caught between the Imperial Army and the Royal Family as the Japanese Empire faces its greatest challenge. Amid these tensions, a new rebel force rises: the Black Communist Resistance.",
-          "year": "2019",
+          "plot": "In 1897, Reid has given up his detective work and lives in Hampton-on-Sea with Matilda. When his old friend Isaac is accused of murder, he is drawn back to Whitechapel to investigate. Meanwhile Drake is now head inspector of Whitechapel and still employs Jackson who has given up his drinking and gambling in order to save money to free Susan from prison.",
+          "year": "2016",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "Hexagram 64",
+            "name": "The Strangers' Home",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cg522Cp0YOvf2dZbDu1h1R0DPkR.jpg",
-              "plot": "Juliana Crain finds herself in a new world. In the wake of an attack on Trade Minister Tagomi, Chief Inspector Kido begins a crackdown against the suspected culprits: the Black Communist Rebellion. John Smith leads a military incursion into the Neutral Zone to capture Wyatt Price and his rebel army. Helen Smith\u2019s new independence is tested as John comes to claim his daughters.",
-              "duration": 3540,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cg522Cp0YOvf2dZbDu1h1R0DPkR.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mXiwmhARpENKN7kndSAKuIFriq7.jpg",
+              "plot": "Reid must return to Whitechapel to covertly re-investigate a case made by Drake and Jackson.",
+              "duration": 7800,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mXiwmhARpENKN7kndSAKuIFriq7.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -502,13 +419,13 @@
           },
           {
             "episode": 2,
-            "name": "Every Door Out...",
+            "name": "Some Conscience Lost",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mW6YW3bKSjbOEz0a4m2v623lU8m.jpg",
-              "plot": "John Smith receives key intelligence from his officers at the Die Nebenwelt complex, while back at home he struggles with the changing dynamics of his family. Bell Mallory and the BCR join forces with Wyatt Price\u2019s rebels. Kido tries to bond with his estranged son, Toru. Childan makes a connection with his Japanese assistant. Juliana discovers an enemy in one world can be a friend in another.",
-              "duration": 3660,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mW6YW3bKSjbOEz0a4m2v623lU8m.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qyhuA1hsM2XaoSaowkxZDZbxySz.jpg",
+              "plot": "Reid struggles to adapt on his first day back at H Division under Drake\u2019s command.",
+              "duration": 4020,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qyhuA1hsM2XaoSaowkxZDZbxySz.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -516,13 +433,13 @@
           },
           {
             "episode": 3,
-            "name": "The Box",
+            "name": "A White World Made Red",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/v71m6nbuodNAI59XMiVX3L27Vt.jpg",
-              "plot": "Wyatt\u2019s rebels and the BCR join forces to attack Tokyo\u2019s elite at Robert Childan\u2019s auction. Helen comes back to the Reich to protect her children. Kido receives an unexpected call from the Yakuza. Smith sends an assassin to kill Juliana.",
-              "duration": 2760,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/v71m6nbuodNAI59XMiVX3L27Vt.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bPv6vgtDFUbYdOKPnx4j5q5mSmk.jpg",
+              "plot": "Jackson feels the heat when a double murder throws light upon his recent illicit activities.",
+              "duration": 3900,
+              "rating": "7.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bPv6vgtDFUbYdOKPnx4j5q5mSmk.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -530,13 +447,13 @@
           },
           {
             "episode": 4,
-            "name": "Happy Trails",
+            "name": "Men of Iron, Men of Smoke",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cmO4AdK3lMwIbBmJsjIilQRkVvo.jpg",
-              "plot": "John and Helen host Himmler and his wife for dinner, along with a new and dangerous threat from Berlin, Obergruppenf\u00fchrer Goertzmann. Juliana returns to the High Castle world, arriving in the ruins of what is now known as \u201cThe District of Contamination.\u201d Kido is forced to turn against the Crown Princess by his general. A captive Hawthorne Abendsen shares some new tales from the High Castle.",
-              "duration": 2880,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cmO4AdK3lMwIbBmJsjIilQRkVvo.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oPpXC5LRtXtd8cchXzq4uVI93vM.jpg",
+              "plot": "When a footballer is brutally murdered, a key suspect is a man close to Drake's heart.",
+              "duration": 3960,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oPpXC5LRtXtd8cchXzq4uVI93vM.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -544,13 +461,13 @@
           },
           {
             "episode": 5,
-            "name": "Mauvaise Foi",
+            "name": "No Wolves in Whitechapel",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nHB2zSk3R7CrJ9lWuDDxy2DajC7.jpg",
-              "plot": "John Smith is forced to confront the choices he\u2019s made. The Empire attempts secret peace talks with the BCR. Kido arrests a traitor, threatening to divide the Japanese against themselves. Helen is assigned a new security minder. Juliana reunites with Wyatt to plan the fall of the American Reich.",
-              "duration": 3060,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nHB2zSk3R7CrJ9lWuDDxy2DajC7.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/g92sJAJ4VTXeWjHHHjcsDQWe5kw.jpg",
+              "plot": "Drake's life unravels as he questions whether he sent an innocent man to the gallows.",
+              "duration": 3840,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/g92sJAJ4VTXeWjHHHjcsDQWe5kw.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -558,69 +475,109 @@
           },
           {
             "episode": 6,
-            "name": "All Serious Daring",
+            "name": "Edmund Reid Did This",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9y1TmwbdVCM706UNUSlBWGKBwuy.jpg",
-              "plot": "John Smith discovers that one can get lost on the path not taken. Juliana attempts to decode hidden messages from Abendsen. Amid voices of dissent, Bell devises a new strategy for the BCR. Kido must decide where his true loyalties lie, even if it costs him the Empire.",
-              "duration": 2820,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9y1TmwbdVCM706UNUSlBWGKBwuy.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9Dq4LCZTw84v3zPWYzNTA7YD3iH.jpg",
+              "plot": "The walls close in on Reid as a secret from his past threatens to destroy his future in Whitechapel.",
+              "duration": 3780,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9Dq4LCZTw84v3zPWYzNTA7YD3iH.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/7Rx7eZE59e56kLVDy8rzEGyMKQ3.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Returning to a dark secret they all share and to a Whitechapel terrorised by an all too familiar horror, Series Five sees the show\u2019s heroes take on a serial killer with subhuman desires, but a superhuman ability to avoid being apprehended.",
+          "year": "2016",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Closed Casket",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/su1F5NqZXELNczxCZWKD9LTc9Er.jpg",
+              "plot": "Reid - on the run from the police - must find a way to bring down Assistant Commissioner Augustus Dove.",
+              "duration": 3600,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/su1F5NqZXELNczxCZWKD9LTc9Er.jpg"
             },
             "video": "",
             "drm": "clearkey",
             "drmkey": ""
           },
           {
-            "episode": 7,
-            "name": "No Masters But Ourselves",
+            "episode": 2,
+            "name": "A Brittle Thread",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2R99cK1xzVm48DusJYjH8VRtknL.jpg",
-              "plot": "The BCR launches a massive assault across the JPS, and Kido finds the fate of the Empire in his hands. Childan becomes a captive of the Kempeitai. Helen resolves to support her husband by re-entering public life. Juliana and Wyatt arrive in New York to plan a daring new strategy against Smith.",
-              "duration": 2760,
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/92lYSO1ewIRukb6f4JRkS0E7bfB.jpg",
+              "plot": "Reid and Dove engage the press in their battle for the hearts and minds of the people of Whitechapel.",
+              "duration": 3660,
               "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2R99cK1xzVm48DusJYjH8VRtknL.jpg"
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/92lYSO1ewIRukb6f4JRkS0E7bfB.jpg"
             },
             "video": "",
             "drm": "clearkey",
             "drmkey": ""
           },
           {
-            "episode": 8,
-            "name": "Hitler Has Only Got One Ball",
+            "episode": 3,
+            "name": "All The Glittering Blades",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2uncMmOWh5Ugri7DQm0Uqq5XhGH.jpg",
-              "plot": "Juliana\u2019s instincts about Helen are put to the ultimate test. As San Francisco evacuates, Kido goes in search of his son, only to find himself a captive. A letter arrives, forever changing Childan and Yukiko\u2019s lives. The BCR receives an unexpected offer of help from the Yakuza. Abendsen condemns Smith with his final prediction.",
-              "duration": 3060,
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qGfWjspQxAGqSG9bEWzDom94VBQ.jpg",
+              "plot": "The serial killer - Nathaniel Dove - is hid in the Hackney Marshes, but how long can he stay out of trouble?",
+              "duration": 4440,
               "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2uncMmOWh5Ugri7DQm0Uqq5XhGH.jpg"
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qGfWjspQxAGqSG9bEWzDom94VBQ.jpg"
             },
             "video": "",
             "drm": "clearkey",
             "drmkey": ""
           },
           {
-            "episode": 9,
-            "name": "For Want of a Nail",
+            "episode": 4,
+            "name": "The Dreaming Dead",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yBbDjHvktprYKWxFH3isTgTWBqu.jpg",
-              "plot": "Smith and Helen\u2019s true loyalties are placed on trial by an old nemesis. The BCR struggles to maintain order across the JPS. Kido is forced to confront his atrocities. Bands of roving vigilantes threaten Childan and Yukiko.",
-              "duration": 3060,
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/90lK0FOrIOp4z5jK3Y4q99NUAaM.jpg",
+              "plot": "Thatcher discovers a fresh lead of a double murder committed by Nathaniel, giving Reid cause for hope.",
+              "duration": 3840,
               "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yBbDjHvktprYKWxFH3isTgTWBqu.jpg"
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/90lK0FOrIOp4z5jK3Y4q99NUAaM.jpg"
             },
             "video": "",
             "drm": "clearkey",
             "drmkey": ""
           },
           {
-            "episode": 10,
-            "name": "Fire from the Gods",
+            "episode": 5,
+            "name": "A Last Good Act",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/m29gncK2KoqLdUjQrsk98uhMdi9.jpg",
-              "plot": "On the brink of an inevitable Nazi invasion, the BCR brace for impact as Kido races against the clock to find his son. Childan offers everything he has to make his way back to Yukiko. Helen is forced to choose whether or not to betray her husband, as she and Smith travel by high speed train to the Portal - with Juliana and Wyatt lying in wait.",
-              "duration": 3540,
-              "rating": "5.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/m29gncK2KoqLdUjQrsk98uhMdi9.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1sFTthFJuvXaxR3xAsuFQerrT6a.jpg",
+              "plot": "With Reid locked in the cells it seems that all hope is lost, but is there time for one last roll of the dice?",
+              "duration": 4020,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1sFTthFJuvXaxR3xAsuFQerrT6a.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Occurrence Reports",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/samuUlGX9MlDNS1ntWtrlGgQfwJ.jpg",
+              "plot": "Reid must finally bring Augustus Dove to justice, but also find his peace in Whitechapel.",
+              "duration": 4560,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/samuUlGX9MlDNS1ntWtrlGgQfwJ.jpg"
             },
             "video": "",
             "drm": "clearkey",
