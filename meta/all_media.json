@@ -1,45 +1,43 @@
 [
   {
-    "name": "Ripper Street",
-    "category": "\ud83c\udd41",
+    "name": "Euphoria",
+    "category": "\ud83c\udd34",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6w8yKYsA7RkuyauW224kBZQebFt.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/snSylVifJ29t7mxiIi5dxi6x2q2.jpg",
-      "plot": "A drama set in the East End of London in 1889, during the aftermath of the \"Ripper\" murders. The action centres around the notorious H Division \u2013 the police precinct from hell \u2013 which is charged with keeping order in the chaotic streets of Whitechapel. Ripper Street explores the lives of characters trying to recover from the Ripper's legacy, from crimes that have not only irretrievably altered their lives, but the very fabric of their city. At the drama's heart our detectives try to bring a little light into the dark world they inhabit.",
-      "rating": "7.4",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/3Q0hd3heuWwDWpwcDkhQOA6TYWI.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
+      "plot": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+      "rating": "8.3",
       "genre": [
-        "drama",
-        "mystery",
-        "crime"
+        "drama"
       ],
       "cast": [
-        "Matthew Macfadyen",
-        "Adam Rothenberg",
-        "MyAnna Buring",
-        "Charlene McKenna",
-        "Matthew Lewis"
+        "Zendaya",
+        "Hunter Schafer",
+        "Sydney Sweeney",
+        "Jacob Elordi",
+        "Alexa Demie"
       ]
     },
     "seasons": [
       {
         "season": 1,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/kGj1AHzBcFM7bvZLyoUjiEX5xM0.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/5mi3aRl16yKmfpQJMzvqN5TXkdA.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Haunted by the failure to catch London's most evil killer, Jack the Ripper, Inspector Edmund Reid now heads up the notorious H Division - the toughest police district in the East End.",
-          "year": "2012",
+          "plot": "Euphoria follows a group of high schoolers as they explore the worlds of drugs, sexuality, and violence.",
+          "year": "2019",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "I Need Light",
+            "name": "Pilot",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cEhhcusOAHGAmEHXMRA7CgEPhHa.jpg",
-              "plot": "When a woman is found murdered, Chief Inspector Abberline believes Jack the Ripper has returned.",
-              "duration": 3120,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cEhhcusOAHGAmEHXMRA7CgEPhHa.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/u59av3aNA9zLXxBvy40hAQzJ2Hw.jpg",
+              "plot": "Seventeen-year-old Rue returns home from rehab with no plans to stay clean. She meets Jules, who's new in town, at a party at McKay's house. Nate gets in McKay's head when McKay takes an interest in Cassie. Nate and Maddy, who have broken up once again, attempt to make each other jealous. Meanwhile, Kat is pressured to lose something big.",
+              "duration": 3240,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/u59av3aNA9zLXxBvy40hAQzJ2Hw.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -47,13 +45,13 @@
           },
           {
             "episode": 2,
-            "name": "In My Protection",
+            "name": "Stuntin' Like My Daddy",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rhYn4LYDwaCdNLOLRLZItkAxeq9.jpg",
-              "plot": "A toymaker is beaten to death, and a possible culprit refuses to deny the charge.",
-              "duration": 3120,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rhYn4LYDwaCdNLOLRLZItkAxeq9.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4NCKs8RMxevYrBzuqGI4usEprUL.jpg",
+              "plot": "On the first day of school, Rue's excited about her new friend, Jules, but struggles to put the past behind her and gets into trouble at Fezco's. Nate becomes obsessed with Maddy's hookup, Tyler, while trying to get back together with Maddy. Kat finds out that a video of her has surfaced online. McKay takes the stress of college out on Cassie.",
+              "duration": 3600,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4NCKs8RMxevYrBzuqGI4usEprUL.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -61,13 +59,13 @@
           },
           {
             "episode": 3,
-            "name": "The King Came Calling",
+            "name": "Made You Look",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/arnzuKNEMUwjmglC2acCIFhwhnt.jpg",
-              "plot": "Deliberate contamination is suspected in a sudden cholera outbreak . Emily's search for a charity patron proves difficult.",
-              "duration": 3120,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/arnzuKNEMUwjmglC2acCIFhwhnt.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5mimFhtPvrIlmEdRsevtnCSSvon.jpg",
+              "plot": "Kat decides to try camming and has her first session. Jules starts falling for a boy online and asks Rue to help her take some nudes. Maddy finds something odd on Nate's phone. Cassie and McKay  spend the weekend at his school and go to a party at the frat he's rushing. Rue is confronted about her lies at NA.",
+              "duration": 3420,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5mimFhtPvrIlmEdRsevtnCSSvon.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -75,13 +73,13 @@
           },
           {
             "episode": 4,
-            "name": "The Good of This City",
+            "name": "Shook Ones Pt. II",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/12UUKDim0CjitmpVAZrsR7ZZTeJ.jpg",
-              "plot": "The brutal clearing of a local slum for the underground railway reveals an almost indecipherable murder scene and an unreliable slum girl witness. Lucy Eames, beautiful and disturbed, is the unlikely key to a Byzantine web of conspiracy.",
-              "duration": 3120,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/12UUKDim0CjitmpVAZrsR7ZZTeJ.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/CkshIxWHj1yI0Xqh84dgDfAAfG.jpg",
+              "plot": "Rue tries to get clean for Jules and chaperones Gia at the carnival. Jules encounters Cal with his family. Cassie and Maddy, annoyed at their boyfriends, decide to do molly together. Kat hangs out with Ethan until she misreads a situation. Nate reveals who he really is.",
+              "duration": 3300,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/CkshIxWHj1yI0Xqh84dgDfAAfG.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -89,13 +87,13 @@
           },
           {
             "episode": 5,
-            "name": "The Weight of One Man's Heart",
+            "name": "'03 Bonnie and Clyde",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oYIJEzxJOeoTamcjw8QNKihuyZl.jpg",
-              "plot": "A string of brilliantly masterminded robberies keeps Reid and his team busy and leads to a blast from the past for Drake when he is confronted by his former army colonel. As the net closes in on the robbers, the sergeant finds his loyalties put to the test.",
-              "duration": 3120,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oYIJEzxJOeoTamcjw8QNKihuyZl.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3ff187LdnqgrrOQWlzGShPR5sLS.jpg",
+              "plot": "In the aftermath of the carnival, Maddy and Nate are forced to deal with a police investigation. Jules begins to feel pressured by her role in Rue's sobriety. Kat ignores a confused Ethan and embraces her new lifestyle. Cassie ries to distance herself from Daniel and focus on her relationship with McKay. Cal worries about how his actions have affected his sons.",
+              "duration": 3180,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3ff187LdnqgrrOQWlzGShPR5sLS.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -103,13 +101,13 @@
           },
           {
             "episode": 6,
-            "name": "Tournament of Shadows",
+            "name": "The Next Episode",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg",
-              "plot": "As the dock strike of August '89 takes hold of the city, the killing of a Jewish anarchist leads Reid and the team into the heartless chicanery of the British government's fight against distant empires and global terrorism.",
-              "duration": 3120,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/40TkPAIhEhZkSOB7EIeaysAb6Ni.jpg",
+              "plot": "On Halloween, Rue worries about her reliance on Jules, while Jules starts exhibiting concerning behavior. McKay questions his future in football. After a weird night with McKay, Cassie spends time with Daniel. Business is booming for Kat as she continues to push Ethan away. Nate comes up with a plan to get his life back on track.",
+              "duration": 3000,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/40TkPAIhEhZkSOB7EIeaysAb6Ni.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -117,13 +115,13 @@
           },
           {
             "episode": 7,
-            "name": "A Man of My Company",
+            "name": "The Trials and Tribulations of Trying to Pee While Depressed",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg",
-              "plot": "International haulage tycoon TP Swift arrives in town to acquire an ailing shipping line, accompanied by a team of private detectives, who proceed to cut a violent swathe through the borough on a mission of vengeance. As Reid focuses on the murder of an engine inventor, Jackson and Susan's past comes back to haunt them, bringing their future in Whitechapel - and their very lives - into question.",
-              "duration": 3120,
-              "rating": "6.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wLUUTwGneroAVXWNyd1FDPiWNHR.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vMQsSORQsV2tfUw1ezyGiCbO6l8.jpg",
+              "plot": "Rue gets depressed and watches 22 straight episodes of a British reality show.\u200b Jules goes to visit an old friend. Cassie looks for advice in the aftermath of Halloween night.",
+              "duration": 3540,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vMQsSORQsV2tfUw1ezyGiCbO6l8.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -131,13 +129,13 @@
           },
           {
             "episode": 8,
-            "name": "What Use Our Work?",
+            "name": "And Salt the Earth Behind You",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/v39RHKIISjGI9evBuJoIbLbhTOe.jpg",
-              "plot": "Reid is adrift, his team in pieces and Leman Street shaken to its foundations following recent events. A kidnapping offers him cause to assemble his men and tackle the white slavery ring operating in their midst. But Reid is gripped by a growing obsession that this leads back to the terrible secret from his own past.",
-              "duration": 3120,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/v39RHKIISjGI9evBuJoIbLbhTOe.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kLsHM3fxgYMPw4Cwg3oZDAnenV2.jpg",
+              "plot": "In the Season One Finale, it's the winter formal at East Highland.",
+              "duration": 3900,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kLsHM3fxgYMPw4Cwg3oZDAnenV2.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -148,22 +146,22 @@
       {
         "season": 2,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vX96sZi5H2auocthKnO9WTkWgop.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/jtnfNzqZwN4E32FGGxx1YZaBWWf.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "The memory of Jack the Ripper may have faded but the Whitechapel streets he walked are more dangerous than ever.",
-          "year": "2013",
+          "plot": "The lines between fantasy and reality begin to blur as Kat contemplates ending her relationship and Jules, craving Rue's affection, ponders hers. Rue pursues a new dangerous business venture as she sinks deep into her addiction, largely caused by her guilt-ridden new friend Eliott. Cassie struggles with her celibacy and starts to drift, while Lexi pours herself into mounting a school play. Nate is in full redemption, trying to redeem the mistakes of his father.",
+          "year": "2022",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "Pure as the Driven",
+            "name": "Trying to Get to Heaven Before They Close the Door",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/b6aQbAdlFb2yc8fCatOFQGC9XP4.jpg",
-              "plot": "Jack the Ripper may be fading into memory, but east London has found no peace. An investigation into the assault of a policeman leads DI Reid and the men of H-Division to the newly-emergent Chinatown, where Jackson discovers evidence of a new and devastatingly powerful opiate. Reid fears a new kind of hell is to be released onto his streets.",
-              "duration": 3120,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/b6aQbAdlFb2yc8fCatOFQGC9XP4.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8rW1LANR14YRkT8poSziWOiRa5U.jpg",
+              "plot": "Rue and Jules cross paths for the first time since Christmas as East Highland rings in the new year.",
+              "duration": 3660,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8rW1LANR14YRkT8poSziWOiRa5U.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -171,13 +169,13 @@
           },
           {
             "episode": 2,
-            "name": "Am I Not Monstrous?",
+            "name": "Out of Touch",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nlCrrYv9F5Qp8UqlDDu7vYVSh41.jpg",
-              "plot": "A young woman is found murdered at the London Hospital and the only clue to her identity is an unusual deformity. The hunt for her killer takes Reid and the team into the shadowy netherworld of the freakshows, where they must seek the help of Joseph Merrick, aka the Elephant Man. Reinforcements for H-Division arrive in the form of DC Albert Flight.",
-              "duration": 3120,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nlCrrYv9F5Qp8UqlDDu7vYVSh41.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8SVh38IfkMbqSaPEoauR8tl8gDu.jpg",
+              "plot": "As the semester kicks off, Jules questions Rue and Elliot's new friendship. While Cal hunts for answers, Nate makes a tough decision. The lines between fantasy and reality begin to blur as Kat ponders her relationship, and Maddy contemplates the decision to end hers.",
+              "duration": 3420,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8SVh38IfkMbqSaPEoauR8tl8gDu.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -185,13 +183,13 @@
           },
           {
             "episode": 3,
-            "name": "Become Man",
+            "name": "Ruminations: Big and Little Bullys",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ieGUBK87F45ocwmUXwxfuXEaJv2.jpg",
-              "plot": "The abduction of a prominent member of the London County Council introduces Reid to Councilor Jane Cobden, the first woman appointed to the LCC - because it appears the kidnappers are radical supporters of Cobden's aims. Long Susan is taken by force to the gang's hideout, and she soon finds herself growing sympathetic to her captors' lives and aims.",
-              "duration": 3120,
-              "rating": "5.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ieGUBK87F45ocwmUXwxfuXEaJv2.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nibFSc6mQLHeFAkfKEifnObtYRR.jpg",
+              "plot": "Rue pursues a new business venture, Cassie settles into a routine, and Cal finds a target.",
+              "duration": 3600,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nibFSc6mQLHeFAkfKEifnObtYRR.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -199,13 +197,13 @@
           },
           {
             "episode": 4,
-            "name": "Dynamite and a Woman",
+            "name": "You Who Cannot See, Think of Those Who Can",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mNyNJk5RE4vlkWebw2reT9XGTnT.jpg",
-              "plot": "An Irish bomber is sprung from prison and barely a day later a prominent opponent of the Home Rule movement is murdered. Chief Inspector Abberline is convinced that the Irish Republican Brotherhood is active once more and orders Reid to send the Irish DC Flight undercover into Whitechapel's Irish community.",
-              "duration": 3120,
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nuTsLlLNacklbITyQPRvKOAtXlg.jpg",
+              "plot": "At Maddy\u2019s birthday party, relationships are celebrated and questioned. Meanwhile, Jules turns to Elliot for advice and Cal takes a trip down memory lane.",
+              "duration": 3660,
               "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mNyNJk5RE4vlkWebw2reT9XGTnT.jpg"
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nuTsLlLNacklbITyQPRvKOAtXlg.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -213,13 +211,13 @@
           },
           {
             "episode": 5,
-            "name": "Threads of Silk and Gold",
+            "name": "Stand Still Like the Hummingbird",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6VsJP8wxZdhulRyyrvn01Q2Gbr3.jpg",
-              "plot": "An investigation into the brutal murder of a Telegraph Boy reveal a vice racket being run from the offices of the GPO. A ledger leads Reid to the centre of the one of London\u2019s most august financial institutions, Barings Bank.",
-              "duration": 3120,
-              "rating": "5.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6VsJP8wxZdhulRyyrvn01Q2Gbr3.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/g90PNNYusg548V8wncsK4lUb1rY.jpg",
+              "plot": "Fate has a way of catching up with those who try to outrun it.",
+              "duration": 3180,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/g90PNNYusg548V8wncsK4lUb1rY.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -227,13 +225,13 @@
           },
           {
             "episode": 6,
-            "name": "A Stronger Loving World",
+            "name": "A Thousand Little Trees of Blood",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kYkVupyIaDVuFBbF1Q2mq8vkMGR.jpg",
-              "plot": "Churches and synagogues are being burnt and desecrated in Whitechapel and Reid suspects the same hand behind the various attacks. Meanwhile, the all-too-brief domestic happiness that Sergeant Drake has enjoyed is disrupted by the arrival of a friend from his wife Bella's past, the mysterious and charismatic scholar, Gabriel Cain.",
-              "duration": 3120,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kYkVupyIaDVuFBbF1Q2mq8vkMGR.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/a4FJJ4jPpYc34jmtXzgm2uAS6V7.jpg",
+              "plot": "As relationships with mothers are tested, Rue tries to recover. Meanwhile, Lexi questions the possible backlash from her play, and Nate celebrates his newfound freedom.",
+              "duration": 3420,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/a4FJJ4jPpYc34jmtXzgm2uAS6V7.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -241,13 +239,13 @@
           },
           {
             "episode": 7,
-            "name": "Our Betrayal (1)",
+            "name": "The Theater and Its Double",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lkzg6xTNrt56nf0qMQI9foKTxWq.jpg",
-              "plot": "A valuable symbol of the British Empire\u2019s wealth shows up in the form of an uncut diamond. It is a jewel \u2018freed\u2019 from the diamond monopoly of De Graal by one Daniel Judge, Captain Jackson\u2019s untrustworthy older brother. Reid and Flight find themselves being drawn to the plight of a local craftsman defrauded of his work and income by a scam that is set to return H Division to the malign influence of Detective Inspector Jedediah Shine.",
-              "duration": 3120,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lkzg6xTNrt56nf0qMQI9foKTxWq.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1qXV8oAPhIqkqaNouwb9JC28SfV.jpg",
+              "plot": "Art imitates life as the East Highland crew watches their complicated dynamics reflected in Lexi's long-awaited play. Meanwhile, Fezco gets ready to attend.",
+              "duration": 3480,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1qXV8oAPhIqkqaNouwb9JC28SfV.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -255,13 +253,13 @@
           },
           {
             "episode": 8,
-            "name": "Our Betrayal (2)",
+            "name": "All My Life, My Heart Has Yearned for a Thing I Cannot Name",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yD40geJ3UMiOIYSpST6W93UlwBd.jpg",
-              "plot": "Death and violence comes to Whitechapel once again. Some decayed and murdered bodies are discovered in a slum tenement, and the advanced stages of the police divisional boxing championship reveals the vengeful ferocity to be seen within the ranks of the police force.",
-              "duration": 3120,
-              "rating": "5.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yD40geJ3UMiOIYSpST6W93UlwBd.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/po4G5fgneIoiuk7TWlvcusWM1HS.jpg",
+              "plot": "As the show goes on, fragments of memories collide with the present and future.",
+              "duration": 3660,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/po4G5fgneIoiuk7TWlvcusWM1HS.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -272,318 +270,13 @@
       {
         "season": 3,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/uQYvJG0ryWK1tRlxnFDkyF2pzgq.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/AgVczwdyZreBiE704HsjtoLtFEJ.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "After a locomotive disaster, Reid's iron grip on 'H' Division begins to unravel.",
-          "year": "2014",
+          "plot": "",
+          "year": null,
           "trailer": ""
         },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Whitechapel Terminus",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7NXz04lR5aE7lFYSRcKbFTaAQ6T.jpg",
-              "plot": "Reid and Long Susan are set on a collision course after a locomotive disaster.",
-              "duration": 3540,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7NXz04lR5aE7lFYSRcKbFTaAQ6T.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "The Beating of Her Wings",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9nOhA3EhZjL1n3qzEIaL86yeNFL.jpg",
-              "plot": "A murder inquiry in a curiosity shop reveals a secret dungeon and signs of a captive girl.",
-              "duration": 3540,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9nOhA3EhZjL1n3qzEIaL86yeNFL.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Ashes and Diamonds",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/s2rvrYuLPvLehENeVQamVPrNenH.jpg",
-              "plot": "Alex le Shayne, a mysterious clairvoyant is found dead at the local performance place. Jackson presumes poison has a part to play. As Reid is missing Drake steps in to investigate. Elsewhere Susan continues to care for Mathilda and plans to send her to Switzerland.",
-              "duration": 3480,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/s2rvrYuLPvLehENeVQamVPrNenH.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Your Father, My Friend",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/w9oJC1XWWlokWtXRDNStJDcZkjq.jpg",
-              "plot": "Ghosts of Whitechapel's past come alive, setting our heroes on a path of destruction.",
-              "duration": 3540,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/w9oJC1XWWlokWtXRDNStJDcZkjq.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Heavy Boots",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1uVCetTuBTolcT6rBXr5FEm1EaJ.jpg",
-              "plot": "A destructive gang of youths unleash hell upon the streets, but it's not until daylight breaks that the true horror of their brutal work is revealed. The trail leads the team of H Division into the heartland of one of the city's oldest trades - the London Breweries - where conflicted loyalties reign, and grief and anger create a potent concoction.",
-              "duration": 3540,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1uVCetTuBTolcT6rBXr5FEm1EaJ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Incontrovertible Truth",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zfEdcQyOJ4ZVjOw3LBC4cOdPYKM.jpg",
-              "plot": "The recovering Reid finds the unconscious Lady Vera Montacute in Whitechapel next to the corpse of a flower seller.",
-              "duration": 3540,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zfEdcQyOJ4ZVjOw3LBC4cOdPYKM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Live Free, Live True",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wLDfbINbMFTkkyoQ5ldOrdfi5iR.jpg",
-              "plot": "The murder of a chemist lifts the lid on a backstreet abortion racket.",
-              "duration": 3540,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wLDfbINbMFTkkyoQ5ldOrdfi5iR.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Peace of Edmund Reid",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jvorQAdxLVPawPyZeqB42NxZy9c.jpg",
-              "plot": "When an American journalist is killed in Whitechapel, his story threatens the peace.",
-              "duration": 3540,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jvorQAdxLVPawPyZeqB42NxZy9c.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 4,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/k5z7xjeBznazwewXdWFbhkOtlWT.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In 1897, Reid has given up his detective work and lives in Hampton-on-Sea with Matilda. When his old friend Isaac is accused of murder, he is drawn back to Whitechapel to investigate. Meanwhile Drake is now head inspector of Whitechapel and still employs Jackson who has given up his drinking and gambling in order to save money to free Susan from prison.",
-          "year": "2016",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "The Strangers' Home",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mXiwmhARpENKN7kndSAKuIFriq7.jpg",
-              "plot": "Reid must return to Whitechapel to covertly re-investigate a case made by Drake and Jackson.",
-              "duration": 7800,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mXiwmhARpENKN7kndSAKuIFriq7.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Some Conscience Lost",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qyhuA1hsM2XaoSaowkxZDZbxySz.jpg",
-              "plot": "Reid struggles to adapt on his first day back at H Division under Drake\u2019s command.",
-              "duration": 4020,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qyhuA1hsM2XaoSaowkxZDZbxySz.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "A White World Made Red",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bPv6vgtDFUbYdOKPnx4j5q5mSmk.jpg",
-              "plot": "Jackson feels the heat when a double murder throws light upon his recent illicit activities.",
-              "duration": 3900,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bPv6vgtDFUbYdOKPnx4j5q5mSmk.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Men of Iron, Men of Smoke",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oPpXC5LRtXtd8cchXzq4uVI93vM.jpg",
-              "plot": "When a footballer is brutally murdered, a key suspect is a man close to Drake's heart.",
-              "duration": 3960,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oPpXC5LRtXtd8cchXzq4uVI93vM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "No Wolves in Whitechapel",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/g92sJAJ4VTXeWjHHHjcsDQWe5kw.jpg",
-              "plot": "Drake's life unravels as he questions whether he sent an innocent man to the gallows.",
-              "duration": 3840,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/g92sJAJ4VTXeWjHHHjcsDQWe5kw.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Edmund Reid Did This",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9Dq4LCZTw84v3zPWYzNTA7YD3iH.jpg",
-              "plot": "The walls close in on Reid as a secret from his past threatens to destroy his future in Whitechapel.",
-              "duration": 3780,
-              "rating": "8.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9Dq4LCZTw84v3zPWYzNTA7YD3iH.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 5,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/7Rx7eZE59e56kLVDy8rzEGyMKQ3.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Returning to a dark secret they all share and to a Whitechapel terrorised by an all too familiar horror, Series Five sees the show\u2019s heroes take on a serial killer with subhuman desires, but a superhuman ability to avoid being apprehended.",
-          "year": "2016",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Closed Casket",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/su1F5NqZXELNczxCZWKD9LTc9Er.jpg",
-              "plot": "Reid - on the run from the police - must find a way to bring down Assistant Commissioner Augustus Dove.",
-              "duration": 3600,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/su1F5NqZXELNczxCZWKD9LTc9Er.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "A Brittle Thread",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/92lYSO1ewIRukb6f4JRkS0E7bfB.jpg",
-              "plot": "Reid and Dove engage the press in their battle for the hearts and minds of the people of Whitechapel.",
-              "duration": 3660,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/92lYSO1ewIRukb6f4JRkS0E7bfB.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "All The Glittering Blades",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qGfWjspQxAGqSG9bEWzDom94VBQ.jpg",
-              "plot": "The serial killer - Nathaniel Dove - is hid in the Hackney Marshes, but how long can he stay out of trouble?",
-              "duration": 4440,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qGfWjspQxAGqSG9bEWzDom94VBQ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Dreaming Dead",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/90lK0FOrIOp4z5jK3Y4q99NUAaM.jpg",
-              "plot": "Thatcher discovers a fresh lead of a double murder committed by Nathaniel, giving Reid cause for hope.",
-              "duration": 3840,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/90lK0FOrIOp4z5jK3Y4q99NUAaM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "A Last Good Act",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1sFTthFJuvXaxR3xAsuFQerrT6a.jpg",
-              "plot": "With Reid locked in the cells it seems that all hope is lost, but is there time for one last roll of the dice?",
-              "duration": 4020,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1sFTthFJuvXaxR3xAsuFQerrT6a.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Occurrence Reports",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/samuUlGX9MlDNS1ntWtrlGgQfwJ.jpg",
-              "plot": "Reid must finally bring Augustus Dove to justice, but also find his peace in Whitechapel.",
-              "duration": 4560,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/samuUlGX9MlDNS1ntWtrlGgQfwJ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
+        "episodes": []
       }
     ]
   }
