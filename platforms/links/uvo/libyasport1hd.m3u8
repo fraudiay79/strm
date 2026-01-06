@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",CLOSED-CAPTIONS=NONE,FRAME-RATE=8350.000
-https://live.uvotv.com/hls/live/2120977/libyasport1hd/streams/sessions/1b4e95e61dc5414e93364a24b647e69b/media/playlist-orig.m3u8/fstl=exp=1767810646~acl=%2Fhls%2Flive%2F2120977%2Flibyasport1hd%2F%2A~hmac=33b04fc6fdb2bf1e9807e083ce397a037760ff2187e794ff783281fbec88aad2/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120977/libyasport1hd/streams/sessions/2dd7d5d091674f33bef3d03386dd31ed/media/playlist-orig.m3u8/fstl=exp=1767820991~acl=%2Fhls%2Flive%2F2120977%2Flibyasport1hd%2F%2A~hmac=4022480169b926433d603c26efb72d4799579ed1a2cf810e340526e11339e983/0.m3u8
