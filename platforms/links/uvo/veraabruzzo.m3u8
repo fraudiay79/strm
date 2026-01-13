@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/veraabruzzo/streams/sessions/80cef497face4d988d4c3b8a98828ce0/media/playlist-orig.m3u8/fstl=exp=1768394662~acl=%2F10010%2Flive%2Fhls%2Fveraabruzzo%2F%2A~hmac=486ffd42f2e3d851956b6493b377ae86ffe67b6ab0535222a398398ebc27c252/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/veraabruzzo/streams/sessions/eea86f9602584c30b218a57d2dce7246/media/playlist-orig.m3u8/fstl=exp=1768404338~acl=%2F10010%2Flive%2Fhls%2Fveraabruzzo%2F%2A~hmac=da876ef16f253eb573502c951f238384a48fc5783afb0dfb7e7e47d735800f16/0.m3u8
