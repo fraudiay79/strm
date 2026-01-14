@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",CLOSED-CAPTIONS=NONE,FRAME-RATE=8350.000
-https://live.uvotv.com/hls/live/2120683/zahratv/streams/sessions/8461d1cf12894e4bb3f34e36b4422c6f/media/playlist-orig.m3u8/fstl=exp=1768469307~acl=%2Fhls%2Flive%2F2120683%2Fzahratv%2F%2A~hmac=86d84910645568cfbcc23c10ce0e408adb645b07e175b80873e34bbbf9d3bc03/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120683/zahratv/streams/sessions/b7d6100cbfcc4017ad9a778fa7d3728a/media/playlist-orig.m3u8/fstl=exp=1768480885~acl=%2Fhls%2Flive%2F2120683%2Fzahratv%2F%2A~hmac=a1ec19024720aa3a2ee012a1685b342cce4a83ae42422ca2a0d8030ead92508a/0.m3u8
