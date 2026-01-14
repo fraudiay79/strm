@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telespazio/streams/sessions/9ed72d47e6ea4757b4986d544bd015a2/media/playlist-orig.m3u8/fstl=exp=1768469484~acl=%2F10010%2Flive%2Fhls%2Ftelespazio%2F%2A~hmac=cc25197b6d146ccebb5be5936ca91f189eae4e1020b9d743815f5a06659a3408/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telespazio/streams/sessions/b6002050319c4037902aa51f2b747c96/media/playlist-orig.m3u8/fstl=exp=1768490825~acl=%2F10010%2Flive%2Fhls%2Ftelespazio%2F%2A~hmac=7f8157946278efb435cb200ab375d9f46484589a4372e5ecef29b86e379a4038/0.m3u8
