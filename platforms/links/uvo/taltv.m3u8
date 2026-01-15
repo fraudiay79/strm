@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119695/taltv/streams/sessions/507c60ca921d4902bc64284eea919b78/media/playlist-orig.m3u8/fstl=exp=1768576952~acl=%2Fhls%2Flive%2F2119695%2Ftaltv%2F%2A~hmac=e063b7113efe091ba32ee604e8f1e3c2c4abfc692c16fb67143256671a02b484/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119695/taltv/streams/sessions/bba34fca097c4b53abe9e913b543db18/media/playlist-orig.m3u8/fstl=exp=1768588371~acl=%2Fhls%2Flive%2F2119695%2Ftaltv%2F%2A~hmac=a6f0b7a6d7f306aec2d1ceeb502bb1f3470ab7b75ee7f90695476acacd08c5d9/0.m3u8
