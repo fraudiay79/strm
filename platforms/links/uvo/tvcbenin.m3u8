@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120684/tvcbenin/streams/sessions/bfc06e1cfb0e4615b89946b1de1dff29/media/playlist-orig.m3u8/fstl=exp=1768613149~acl=%2Fhls%2Flive%2F2120684%2Ftvcbenin%2F%2A~hmac=6ddf3c23cc946d1d9314581a281e3d7e71411358e11811ff04bf2f147860de2d/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120684/tvcbenin/streams/sessions/fd80095e03c04d5483ae0787bdf43c26/media/playlist-orig.m3u8/fstl=exp=1768622471~acl=%2Fhls%2Flive%2F2120684%2Ftvcbenin%2F%2A~hmac=051f75c38e165ac6e19e4241a2e1577a0300dbed194fc6ab7a14080de85a5f3f/0.m3u8
