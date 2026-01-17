@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x442,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120430/metrotv/streams/sessions/92534094777840419bc1ec40a726f1fb/media/playlist-orig.m3u8/fstl=exp=1768749525~acl=%2Fhls%2Flive%2F2120430%2Fmetrotv%2F%2A~hmac=a85baab30d8e5cd5283b3a012bedfa18cd78d04c7dea85e86a11f98eebc92c22/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120430/metrotv/streams/sessions/58fe1dda46d84e6b893794567d22927a/media/playlist-orig.m3u8/fstl=exp=1768760795~acl=%2Fhls%2Flive%2F2120430%2Fmetrotv%2F%2A~hmac=af1e307c37c320d44d7b5b47fac4b8b22db064cece95d809a63978dbf270f3b0/0.m3u8
