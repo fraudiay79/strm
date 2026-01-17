@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119696/kamemetv/streams/sessions/a68b2fb5997148b7a85cdd387eed9d9e/media/playlist-orig.m3u8/fstl=exp=1768727995~acl=%2Fhls%2Flive%2F2119696%2Fkamemetv%2F%2A~hmac=e5fe52ef587b7533d0aba5389616648de246e20f6268f7397946f6dcf39afec3/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119696/kamemetv/streams/sessions/e0e4413ca33d4c5080dace3d044c12bc/media/playlist-orig.m3u8/fstl=exp=1768739864~acl=%2Fhls%2Flive%2F2119696%2Fkamemetv%2F%2A~hmac=6c3f26f404d8383941f42cfd82edc5122a67334ba9e402619e38cadad1979d2c/0.m3u8
