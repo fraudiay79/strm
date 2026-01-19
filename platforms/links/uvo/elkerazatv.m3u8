@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/hls/live/2119197/elkerazatv/streams/sessions/9eeda648c9854403bddd8de002c685f1/media/playlist-orig.m3u8/fstl=exp=1768836066~acl=%2Fhls%2Flive%2F2119197%2Felkerazatv%2F%2A~hmac=3ffb71220fbb7f00b1ef4b9f4994aac84c244d7446399402eb164769f3cf73f8/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.42c028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE
+https://live.uvotv.com/hls/live/2119197/elkerazatv/streams/sessions/ecb1312882064074b34ef83dbcc1887a/media/playlist-orig.m3u8/fstl=exp=1768922726~acl=%2Fhls%2Flive%2F2119197%2Felkerazatv%2F%2A~hmac=530fc7b5efac3c94529a7f8e8fddf8e358cf81f18119ffc70389867485f95c95/0.m3u8
