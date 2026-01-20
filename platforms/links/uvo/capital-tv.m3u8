@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121972/capitaltv/streams/sessions/830fde3d2b3346c1b61f106d593ca236/media/playlist-orig.m3u8/fstl=exp=1768968580~acl=%2Fhls%2Flive%2F2121972%2Fcapitaltv%2F%2A~hmac=c5a3969d72ab38b90cc0903d47060bc188bce05b3784904f7c6ac3c3ca2d400e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121972/capitaltv/streams/sessions/0a4776e00caa470b81daffb95c06974a/media/playlist-orig.m3u8/fstl=exp=1768977352~acl=%2Fhls%2Flive%2F2121972%2Fcapitaltv%2F%2A~hmac=ca9e39165f2a0ba186e8a8dbd5e46e49abefbb6a096a3d631c8c1441d7730539/0.m3u8
