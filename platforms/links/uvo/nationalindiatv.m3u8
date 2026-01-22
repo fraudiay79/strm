@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121045/nationalindiatv/streams/sessions/06aec134bb424f42b9697bdaf574519c/media/playlist-orig.m3u8/fstl=exp=1769172306~acl=%2Fhls%2Flive%2F2121045%2Fnationalindiatv%2F%2A~hmac=4d3fb5ad26ff84f5d41a01edb353050c4c994459b20fc7a8f1834f05f9e2fdd6/0.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=0,BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/nationalindiatv/streams/sessions/1c043df8115241a4805c695b877b8307/media/playlist-orig.m3u8/fstl=exp=1769182218~acl=%2F10010%2Fdvr%2Fhls%2Fnationalindiatv%2F%2A~hmac=33a3cc39ab80a5a839adf0b29585223191f0d14944acd62ed767f1ad71252688/0.m3u8
