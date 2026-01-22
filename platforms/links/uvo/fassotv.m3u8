@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=854x480,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120428/fassotv/streams/sessions/189a726000f546e8b5df39d0b009b1ed/media/playlist-orig.m3u8/fstl=exp=1769117140~acl=%2Fhls%2Flive%2F2120428%2Ffassotv%2F%2A~hmac=0493865535b2e7f4beee1eaed00cfe33bb7274a3f388743fb094f41d083cf7ab/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120428/fassotv/streams/sessions/018af49ae7894b59a4f84438bd71e2e7/media/playlist-orig.m3u8/fstl=exp=1769149860~acl=%2Fhls%2Flive%2F2120428%2Ffassotv%2F%2A~hmac=3a60908ce5818217e2f09f1843161b09afed05979bd73a3b4b8a0bc5cd7bbe73/0.m3u8
