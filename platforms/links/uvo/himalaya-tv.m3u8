@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x406,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121972/himalayatv/streams/sessions/95408620b43343499427ddb1c1292a9f/media/playlist-orig.m3u8/fstl=exp=1769365815~acl=%2Fhls%2Flive%2F2121972%2Fhimalayatv%2F%2A~hmac=6382bedef2aa1c4a73ee57de2f94adbc4da81f391554a923c6631562100ac532/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121972/himalayatv/streams/sessions/ad97e29586784be58386d7d2fa3ca44e/media/playlist-orig.m3u8/fstl=exp=1769375976~acl=%2Fhls%2Flive%2F2121972%2Fhimalayatv%2F%2A~hmac=c20b2e6af518a923ffdb1e6a83ca789a50a302b7ebff21ff849791a25f8020ef/0.m3u8
