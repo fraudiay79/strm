@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119688/anandtv/streams/sessions/fc8c31317c234d8cba2eba689165cabd/media/playlist-orig.m3u8/fstl=exp=1769279545~acl=%2Fhls%2Flive%2F2119688%2Fanandtv%2F%2A~hmac=529cdd80a022e82543b20daeb3266b31710efe119d5aa84a36394361fca1611c/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119688/anandtv/streams/sessions/9f495b57ff034defab6077b6307bef4f/media/playlist-orig.m3u8/fstl=exp=1769304366~acl=%2Fhls%2Flive%2F2119688%2Fanandtv%2F%2A~hmac=6c8ca652abe1cb21581777e535aeced682c07067407cc76eb129322334d9ffa9/0.m3u8
