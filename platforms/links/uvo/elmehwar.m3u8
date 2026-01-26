@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/elmehwar/streams/sessions/8e61ef3900c24451b0204d916127dde5/media/playlist-orig.m3u8/fstl=exp=1769527720~acl=%2F10010%2Fdvr%2Fhls%2Felmehwar%2F%2A~hmac=87868542cb861db62332a48581a64e952cbcbcd74d2d5d38a0ea7d42e21667e8/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/elmehwar/streams/sessions/1e31b86812c942908d178bf9e0b1a518/media/playlist-orig.m3u8/fstl=exp=1769538839~acl=%2F10010%2Fdvr%2Fhls%2Felmehwar%2F%2A~hmac=ae646ac44e92aa5d6ddac75dd966e2ce9c6058adf988a2d9f12c0c50448dfe67/0.m3u8
