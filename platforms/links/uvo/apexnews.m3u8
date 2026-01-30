@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/apexnews/streams/sessions/d0737fc2221741ee82bc9c6b51e51c25/media/playlist-orig.m3u8/fstl=exp=1769842003~acl=%2F10010%2Fdvr%2Fhls%2Fapexnews%2F%2A~hmac=423b1ab98cf871f081c2a270d10ce90e294e0eeb402fbd6545bf91428dbc953a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/apexnews/streams/sessions/71b1dc92c5b54e91bdf747693ec2e700/media/playlist-orig.m3u8/fstl=exp=1769852328~acl=%2F10010%2Fdvr%2Fhls%2Fapexnews%2F%2A~hmac=64ee853cf9e2b2609643a78f2e3a4c310cc1d9833467269ebb2c00f974c5ba44/0.m3u8

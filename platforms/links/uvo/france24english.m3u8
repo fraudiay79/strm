@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=720x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120684/france24english/streams/sessions/9dd389bc69994b41adb30db10cf97ed7/media/playlist-orig.m3u8/fstl=exp=1769841947~acl=%2Fhls%2Flive%2F2120684%2Ffrance24english%2F%2A~hmac=16ebc61b754ca2613a0c4e34f6e7b5bc77fd102fdce427b7606aba3522e2bd81/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120684/france24english/streams/sessions/be4e78a1f6e1413ea7bf52c76a49e70e/media/playlist-orig.m3u8/fstl=exp=1769852265~acl=%2Fhls%2Flive%2F2120684%2Ffrance24english%2F%2A~hmac=9044b69ae09534a1a8b31a9b44df0b209446c8ca41363fd83eb09ffdfa83ca09/0.m3u8

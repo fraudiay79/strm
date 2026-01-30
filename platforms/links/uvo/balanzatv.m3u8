@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119033/balanzatv/streams/sessions/f04caf0736cc4ca8aeed8862663380e5/media/playlist-orig.m3u8/fstl=exp=1769841873~acl=%2Fhls%2Flive%2F2119033%2Fbalanzatv%2F%2A~hmac=a08961ee96858da1cd9bc96c6a36ea3ecf066f8638877e44fa932cc5a24ca372/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119033/balanzatv/streams/sessions/12b61fcddcc24cac91c06810c0ef7499/media/playlist-orig.m3u8/fstl=exp=1769852192~acl=%2Fhls%2Flive%2F2119033%2Fbalanzatv%2F%2A~hmac=a8759875d96a1725f30fc90e5ae0805a039c0ea806c315d785dae8df8ac3109f/0.m3u8
