@@ -41,6 +41,7 @@ jobs:
             #python3 uvotv.py
             python3 myvideoge.py
             python3 polska.py
+            python3 nn.py
             python3 tdmax.py
             #bash echorouk.sh
             python3 nelonen.py
