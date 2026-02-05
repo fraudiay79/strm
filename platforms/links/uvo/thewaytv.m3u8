@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.42c028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/10010/dvr/hls/thewaytv/streams/sessions/80a3f39932a349828848f3dc15d9631f/media/playlist-orig.m3u8/fstl=exp=1770403624~acl=%2F10010%2Fdvr%2Fhls%2Fthewaytv%2F%2A~hmac=68d4e8723919f01f701ee372fbceadc6a72bab14d6972ff4ceef558dc918df38/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
+https://live.uvotv.com/10010/dvr/hls/thewaytv/streams/sessions/7ad3371ef41847afa03bddfdbe8dcbe3/media/playlist-orig.m3u8/fstl=exp=1770413367~acl=%2F10010%2Fdvr%2Fhls%2Fthewaytv%2F%2A~hmac=cdef761d8c7488f8e288fc8da8a07770a08f06c305b799fa991fd8b914662e98/0.m3u8
