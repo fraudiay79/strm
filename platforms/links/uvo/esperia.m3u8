@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/esperia/streams/sessions/134fbde1f3fb476d88120a979b626c2c/media/playlist-orig.m3u8/fstl=exp=1770469077~acl=%2F10010%2Flive%2Fhls%2Fesperia%2F%2A~hmac=19dac7f5bc1cf5a2c37ccea62d97bd07e1caef09472b155dd98ab69c57022c05/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/esperia/streams/sessions/b8c2638170c746a5b21c3fd55a373b6e/media/playlist-orig.m3u8/fstl=exp=1770478823~acl=%2F10010%2Flive%2Fhls%2Fesperia%2F%2A~hmac=b33b10fc3de180b5aaf9a828f30a1cad052939b65504a9d3f5568064f689e629/0.m3u8
