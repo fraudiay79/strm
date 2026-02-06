@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/tvcnews/streams/sessions/91d8aec94f004d859ec61bb9aff20673/media/playlist-orig.m3u8/fstl=exp=1770447057~acl=%2F10010%2Fdvr%2Fhls%2Ftvcnews%2F%2A~hmac=5084184ac3c152fc3b9bcce62cb4aac32ac83e7f27fb8ebfd21a72a1bf88df2a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/tvcnews/streams/sessions/68a8ff5b0db744e1845f3c8fbb08ba25/media/playlist-orig.m3u8/fstl=exp=1770457164~acl=%2F10010%2Fdvr%2Fhls%2Ftvcnews%2F%2A~hmac=2571decdc2c8af62cfe06274404122f441f5d769d48ae23acfb9c6756ef3cb48/0.m3u8

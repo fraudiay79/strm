@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119194/kicctv/streams/sessions/6ea0aa3dfebc4796bcdb68e4d3e27eac/media/playlist-orig.m3u8/fstl=exp=1770447096~acl=%2Fhls%2Flive%2F2119194%2Fkicctv%2F%2A~hmac=5e36ede7e8a1210a360857c23859128497c0ac824b20792b81e144317801b379/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119194/kicctv/streams/sessions/3bfcb4cf2b7842ce942eba17848d96d0/media/playlist-orig.m3u8/fstl=exp=1770457204~acl=%2Fhls%2Flive%2F2119194%2Fkicctv%2F%2A~hmac=bbe6b18d7d85d2a845ee3bbea0255aed98fff991f2351c83eec29ce6309fc6d7/0.m3u8

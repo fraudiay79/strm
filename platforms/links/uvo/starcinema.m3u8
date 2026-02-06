@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/starcinema/streams/sessions/8d2bd0310eb04db7aa0412636a4cf548/media/playlist-orig.m3u8/fstl=exp=1770447188~acl=%2F10010%2Fdvr%2Fhls%2Fstarcinema%2F%2A~hmac=76b3cef8f62dc87ea2fb5ac58052cbf49d998009c20685fa1f07794e8954ea2a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/starcinema/streams/sessions/680160474d26495f94fb1898fda2dac5/media/playlist-orig.m3u8/fstl=exp=1770457309~acl=%2F10010%2Fdvr%2Fhls%2Fstarcinema%2F%2A~hmac=5020ae0a13093e6bad6bc4776f2da1a25212378de8c54abbc1a75af160e79766/0.m3u8

@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119176/miracletv/streams/sessions/c352c56adf254928a4f877bd18dd197b/media/playlist-orig.m3u8/fstl=exp=1770447054~acl=%2Fhls%2Flive%2F2119176%2Fmiracletv%2F%2A~hmac=69b631bd7276bdeedd913de1dd31768f281d6a3ad79086668ffd9c7248d1554e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119176/miracletv/streams/sessions/05d85a15aa794b338c81078fda02865d/media/playlist-orig.m3u8/fstl=exp=1770457160~acl=%2Fhls%2Flive%2F2119176%2Fmiracletv%2F%2A~hmac=cd95476661d4839281a5a354aeff90006173574fcf72991cb97b795f915abf61/0.m3u8

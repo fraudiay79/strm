@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/apostroftv/streams/sessions/fcd36076764140a09ab52b766e19c87c/media/playlist-orig.m3u8/fstl=exp=1770447188~acl=%2F10010%2Fdvr%2Fhls%2Fapostroftv%2F%2A~hmac=2da6710de57af371309c240a01eb8a2e3c1799f27b0ae3235ff677e441dcf115/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/apostroftv/streams/sessions/b6b3701d939f495299bc0f378de58e23/media/playlist-orig.m3u8/fstl=exp=1770457308~acl=%2F10010%2Fdvr%2Fhls%2Fapostroftv%2F%2A~hmac=6caa9af2b033df5f416af6108ffc124c0417b4557bdd1964e4a742ac772407e5/0.m3u8
