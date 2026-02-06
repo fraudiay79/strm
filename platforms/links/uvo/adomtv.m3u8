@@ -1,4 +1,4 @@
 #EXTM3U
-## Generated with Setrix 2.15.0.40 Rev: STR-4279_audio_model c03357f03 (eu-setrix-h339:TR:85:GS)
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,RESOLUTION=440x360,CODECS="avc1.640015,mp4a.40.2",FRAME-RATE=25,CLOSED-CAPTIONS=NONE
-https://nyc.streampool.net/10010/dvr/hls/adomtv/0_0_2000_128/spntl=id=fiOvYp2sxN0-NmHrr315rCw~hmac=5ab71333dd2220055e47980ad6615fef2e585ef97943953bd7b30321704221a8/index_0.m3u8
+## Generated with Rix 1.25.1.11 Rev.: main_fix_device_id_ad_detection 6742fad5d -g (45...22-encoding_85)
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,RESOLUTION=440x360,CODECS="avc1.4d4015,mp4a.40.2",FRAME-RATE=25,CLOSED-CAPTIONS=NONE
+https://nyc.streampool.net/10010/dvr/hls/adomtv/0_0_2000_128/spntl=id=fiOvYp2sxN0-M8Tm_JcAVgU~hmac=83e9319890a074baef8e8bf6453e3cea8ed1d7013576bb1a4bad504145bbf352/index_0.m3u8
