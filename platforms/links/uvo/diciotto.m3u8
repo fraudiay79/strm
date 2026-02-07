@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/diciotto/streams/sessions/5eaf459d1c7a4ed3a0a71a9c11a10fdf/media/playlist-orig.m3u8/fstl=exp=1770554636~acl=%2F10010%2Flive%2Fhls%2Fdiciotto%2F%2A~hmac=29c95ec9bf99f48220570148ced63afa57fe1a9d93878e226438659626f0161e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d402a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/diciotto/streams/sessions/088dceb124a14465ae8fe1ece88013cb/media/playlist-orig.m3u8/fstl=exp=1770575630~acl=%2F10010%2Flive%2Fhls%2Fdiciotto%2F%2A~hmac=9d1110bef7908881ff85db7a0776a5d9569138b0173dd67b19144bc8a76c9400/0.m3u8
