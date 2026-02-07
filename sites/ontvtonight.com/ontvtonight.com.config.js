@@ -24,6 +24,24 @@ module.exports = {
     return url
   },
   
+  request: {
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Connection': 'keep-alive',
+      'Upgrade-Insecure-Requests': '1',
+      'Sec-Fetch-Dest': 'document',
+      'Sec-Fetch-Mode': 'navigate',
+      'Sec-Fetch-Site': 'same-origin',
+      'Sec-Fetch-User': '?1',
+      'Cache-Control': 'max-age=0',
+      'Referer': 'https://www.ontvtonight.com/guide/'
+    },
+    timeout: 30000
+  },
+  
   async parser({ content, date, channel }) {
     const programs = []
 
@@ -35,7 +53,11 @@ module.exports = {
         const td = $(el).find('td:eq(1)')
         const title = td.find('h5 a')
         if (detailedGuide) {
-          queues.push(title.attr('href'))
+          const href = title.attr('href')
+          if (href) {
+            const fullUrl = href.startsWith('http') ? href : `https://www.ontvtonight.com${href}`
+            queues.push(fullUrl)
+          }
         } else {
           const subtitle = td.find('h6')
           const time = $(el).find('td:nth-child(1) > h5')
@@ -65,7 +87,7 @@ module.exports = {
           const title = parseText($('.inner-heading.sub h2'))
           const subTitle = parseText($('.tab-pane > h4 > strong'))
           const description = parseText($('.tab-pane > .tvbody > p'))
-          const icon = $('.program-media-image img, img.show-page-image, .show-page-image img').attr('src');
+          const icon = $('.program-media-image img, img.show-page-image, .show-page-image img').attr('src')
           const category = $('.schedule-attributes-genres span').toArray().map(el => $(el).text()).slice(0, 3)
           const casts = $('.single-cast-head:not([id])').toArray().map(el => {
             const cast = { name: parseText($(el).find('a')) }
@@ -75,7 +97,7 @@ module.exports = {
             }
             return cast
           })
-          const [start, stop] = parseStartStop(date, time, channel);
+          const [start, stop] = parseStartStop(date, time, channel)
           let season, episode
           if (subTitle) {
             const [, ses, epi] = subTitle.match(/Season (\d+), Episode (\d+)/) || [null, null]
@@ -170,41 +192,70 @@ module.exports = {
     }
 
     const channels = []
+    const headers = {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+      'Accept-Language': 'en-US,en;q=0.9',
+      'Accept-Encoding': 'gzip, deflate, br',
+      'Connection': 'keep-alive',
+      'Upgrade-Insecure-Requests': '1',
+      'Sec-Fetch-Dest': 'document',
+      'Sec-Fetch-Mode': 'navigate',
+      'Sec-Fetch-Site': 'same-origin',
+      'Sec-Fetch-User': '?1',
+      'Content-Type': 'application/x-www-form-urlencoded'
+    }
+
     for (let provider of providers[country]) {
       for (let zipcode of zipcodes[country]) {
         for (let region of regions[country]) {
           let url = 'https://www.ontvtonight.com'
           if (country === 'us') url += '/guide/schedule'
           else url += `/${country}/guide/schedule`
-          const data = await axios
-            .post(url, null, {
-              params: {
-                provider,
-                region,
-                zipcode,
-                TVperiod: 'Night',
-                date: dayjs().format('YYYY-MM-DD'),
-                st: 0,
-                is_mobile: 1
-              }
-            })
-            .then(r => r.data)
-            .catch(console.log)
+          
+          const params = new URLSearchParams({
+            provider,
+            region: region || '',
+            zipcode: zipcode || '',
+            TVperiod: 'Night',
+            date: dayjs().format('YYYY-MM-DD'),
+            st: 0,
+            is_mobile: 1
+          }).toString()
 
-          const $ = cheerio.load(data)
-          $('.channelname').each((i, el) => {
-            let name = $(el).find('center > a:eq(1)').text()
-            name = name.replace(/\-\-/gi, '-')
-            const url = $(el).find('center > a:eq(1)').attr('href')
-            if (!url) return
-            const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/)
+          try {
+            const data = await axios
+              .post(url, params, {
+                headers: headers,
+                timeout: 30000
+              })
+              .then(r => r.data)
+              .catch(err => {
+                console.log(`Error fetching ${url}: ${err.message}`)
+                return null
+              })
 
-            channels.push({
-              lang: 'en',
-              name,
-              site_id: `${country}#${number}/${slug}`
-            })
-          })
+            if (data) {
+              const $ = cheerio.load(data)
+              $('.channelname').each((i, el) => {
+                let name = $(el).find('center > a:eq(1)').text()
+                name = name.replace(/\-\-/gi, '-')
+                const url = $(el).find('center > a:eq(1)').attr('href')
+                if (!url) return
+                const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/) || []
+
+                if (number && slug) {
+                  channels.push({
+                    lang: 'en',
+                    name,
+                    site_id: `${country}#${number}/${slug}`
+                  })
+                }
+              })
+            }
+          } catch (error) {
+            console.log(`Error processing provider ${provider}, zipcode ${zipcode}, region ${region}: ${error.message}`)
+          }
         }
       }
     }
@@ -229,7 +280,7 @@ function parseTime(date, time, channel) {
     au: 'Australia/Sydney',
     ca: 'America/Toronto',
     us: 'America/New_York'
-  };
+  }
   const region = (channel.site_id || '').split('#')[0]
   const dateString = `${date.format('YYYY-MM-DD')} ${time}`
 
@@ -237,27 +288,38 @@ function parseTime(date, time, channel) {
 }
 
 function parseText($item) {
+  if (!$item || !$item.length) return null
   let text = $item.text()
     .replace(/\t/g, '')
     .replace(/\n/g, ' ')
     .trim()
-  while (true) {
-    if (text.match(/  /)) {
-      text = text.replace(/  /g, ' ')
-      continue
-    }
-    break
+  while (text.includes('  ')) {
+    text = text.replace(/  /g, ' ')
   }
-
-  return text
+  return text || null
 }
-
 
 async function doFetch(queues, cb) {
   const axios = require('axios')
 
+  const headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Connection': 'keep-alive',
+    'Upgrade-Insecure-Requests': '1',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'Cache-Control': 'max-age=0',
+    'Referer': 'https://www.ontvtonight.com/guide/'
+  }
+
   let n = Math.min(nworker, queues.length)
   const workers = []
+  
   const adjustWorker = () => {
     if (queues.length > workers.length && workers.length < nworker) {
       let nw = Math.min(nworker, queues.length)
@@ -267,37 +329,32 @@ async function doFetch(queues, cb) {
       }
     }
   }
+  
   const createWorker = () => {
     while (workers.length < n) {
       startWorker()
     }
   }
+  
   const startWorker = () => {
-    const worker = () => {
+    const worker = async () => {
       if (queues.length) {
-        const queue = queues.shift()
-        const done = res => {
-          if (res) {
-            cb(queue, res)
+        const url = queues.shift()
+        try {
+          const response = await axios.get(url, {
+            headers: headers,
+            timeout: 30000,
+            maxRedirects: 5
+          })
+          
+          if (response.data) {
+            cb(url, response.data)
             adjustWorker()
           }
-          worker()
+        } catch (error) {
+          console.log(`Error fetching ${url}: ${error.message}`)
         }
-        const url = typeof queue === 'string' ? queue : queue.u
-        const params = typeof queue === 'object' && queue.params ? queue.params : {}
-        const method = typeof queue === 'object' && queue.m ? queue.m : 'get'
-        debug(`fetch %s with %s`, url, JSON.stringify(params))
-        if (method === 'post') {
-          axios
-            .post(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        } else {
-          axios
-            .get(url, params)
-            .then(response => done(response.data))
-            .catch(console.error)
-        }
+        worker()
       } else {
         workers.splice(workers.indexOf(worker), 1)
       }
@@ -305,12 +362,14 @@ async function doFetch(queues, cb) {
     workers.push(worker)
     worker()
   }
+  
   createWorker()
+  
   await new Promise(resolve => {
     const interval = setInterval(() => {
       if (workers.length === 0) {
         clearInterval(interval)
-        resolve();
+        resolve()
       }
     }, 500)
   })
