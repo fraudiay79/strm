@@ -32,15 +32,15 @@ jobs:
           #npm run grab -- --channels=./epg/channels/ma.channels.xml --output=guides/allente.no.xml --days=2 --maxConnections=20 --timeout=90000
           #npm run channels:parse --- --config=./sites/gracenote.com/gracenote.com.config.js --output=./sites/gracenote.com/gracenote.com.channels.xml
           #npm run grab --- --channels=sites/mi.tv/mi.tv_ar.channels.xml --output=guides/allente.no.xml --days=1 --timeout=90000
-          #npm run grab --- --site=galamtv.kz --maxConnections=5 --output=guides/allente.no.xml --days=1 --timeout=90000
+          npm run grab --- --site=ontvtonight.com --maxConnections=5 --output=guides/allente.no.xml --days=1 --timeout=90000
           #npm run channels:parse --- --config=./sites/galamtv.kz/galamtv.kz.config.js --output=./sites/galamtv.kz/galamtv.kz.channels.xml
-          npm run channels:parse --- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml --set=lang:en
+          #npm run channels:parse --- --config=sites/starhubtvplus.com/starhubtvplus.com.config.js --output=sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml --set=lang:en
           
     - name: Commit changes
       run: |
         git config --local user.email "your-email@example.com"
         git config --local user.name "Your Name"
-        #git add -f guides/allente.no.xml
-        git add -f sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml
+        git add -f guides/allente.no.xml
+        #git add -f sites/starhubtvplus.com/starhubtvplus.com_en.channels.xml
         git commit -m "Update xml"
         git push -f origin main
