@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/10010/live/hls/reteitalia/streams/sessions/003b114bf86446f599118871a1e370f2/media/playlist-orig.m3u8/fstl=exp=1770717764~acl=%2F10010%2Flive%2Fhls%2Freteitalia%2F%2A~hmac=28c3cbe5645aff7117e8a4d8d498775192972b2cbc93824402283f18c506c9ea/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/reteitalia/streams/sessions/6dd60f10385d4a6da1b82da8f70805de/media/playlist-orig.m3u8/fstl=exp=1770728690~acl=%2F10010%2Flive%2Fhls%2Freteitalia%2F%2A~hmac=06c6fcd90c3018202fe50a2ea50246bc7b19978b016ac1103a4eaca71cfe1e0e/0.m3u8
