@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/rts2/streams/sessions/b547f8de08aa4ce3b28729eea78f4eb0/media/playlist-orig.m3u8/fstl=exp=1770759423~acl=%2F10010%2Fdvr%2Fhls%2Frts2%2F%2A~hmac=5c075a99234478491505cf1a3f8d219eda68f783a08f7c3bfdac6d9016c10fad/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/rts2/streams/sessions/59f65e8b99fc4260957ebd8e3d001328/media/playlist-orig.m3u8/fstl=exp=1770775713~acl=%2F10010%2Fdvr%2Fhls%2Frts2%2F%2A~hmac=3a7068b20755a5ff5aeed9c32ca4f4f5a73ed4a2b8c495ce3d94ffbf369a4cb6/0.m3u8
