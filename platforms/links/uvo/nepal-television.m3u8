@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/hls/live/2121972/nepaltelevision/streams/sessions/46d2d45fee56460ca56743eab810ca76/media/playlist-orig.m3u8/fstl=exp=1770793397~acl=%2Fhls%2Flive%2F2121972%2Fnepaltelevision%2F%2A~hmac=20432831b648405aa127958390b77a65671ed5b01b17d58c8c8a7e49aca590d4/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121972/nepaltelevision/streams/sessions/16f18521546749d29446a00cfdbbb088/media/playlist-orig.m3u8/fstl=exp=1770836839~acl=%2Fhls%2Flive%2F2121972%2Fnepaltelevision%2F%2A~hmac=143299a6ebf12b9291a45907e3e4b3129588ec059f538607367697b11e09a4f2/0.m3u8
