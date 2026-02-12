@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/freedomchannels/streams/sessions/d735906cd8fc462ebbe14d55575fd280/media/playlist-orig.m3u8/fstl=exp=1770975954~acl=%2F10010%2Fdvr%2Fhls%2Ffreedomchannels%2F%2A~hmac=924f2e622d8df927cd68486672ffda9120cee5d74ef7f8c73a8cc779708cf782/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/freedomchannels/streams/sessions/5c82b6afcb4f4d45a952a21409c297bb/media/playlist-orig.m3u8/fstl=exp=1770987792~acl=%2F10010%2Fdvr%2Fhls%2Ffreedomchannels%2F%2A~hmac=aac964021f331f5b77bcf32926aae7da8766035ca39b5283404de9f64a054b7c/0.m3u8
