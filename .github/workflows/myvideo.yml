@@ -31,7 +31,7 @@ jobs:
           cd ./platforms/
           python3 tv8md.py > links/md/tv8md.m3u8
           python3 jurnaltv.py > links/md/jurnaltv.m3u8
-          python3 tego.py
+          #python3 tego.py
           python3 itvuz.py
           python3 peers.py
           python3 myvideoaz.py myvideoaz.json
