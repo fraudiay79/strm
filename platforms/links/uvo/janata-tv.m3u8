@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121972/janatatv/streams/sessions/d6abc3b2ca2940a48d7075ba65e9e8e7/media/playlist-orig.m3u8/fstl=exp=1771266980~acl=%2Fhls%2Flive%2F2121972%2Fjanatatv%2F%2A~hmac=c572c4bcb997854b40bd2faf542df1648230e7d768444ca6931648331f0881a1/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1024x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121972/janatatv/streams/sessions/929d85d71dbf4f10b5c7b47a9871fb86/media/playlist-orig.m3u8/fstl=exp=1771353721~acl=%2Fhls%2Flive%2F2121972%2Fjanatatv%2F%2A~hmac=3ab23ea64d63036fe103e490263bd26e7eb848c5ef5005e6feab4135a9a4c999/0.m3u8
