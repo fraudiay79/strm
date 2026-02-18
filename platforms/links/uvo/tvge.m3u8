@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120430/tvge/streams/sessions/6d267d8d31ae4ef8adee4d1a89f04bc2/media/playlist-orig.m3u8/fstl=exp=1771476658~acl=%2Fhls%2Flive%2F2120430%2Ftvge%2F%2A~hmac=b04cfa47886105ed94efb2f96b709ac2d82ce3eb7cbca842f76144b4789819c8/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120430/tvge/streams/sessions/43f9d9b2562a4bd4a9357a8b598f436d/media/playlist-orig.m3u8/fstl=exp=1771516155~acl=%2Fhls%2Flive%2F2120430%2Ftvge%2F%2A~hmac=a6890b86d3c77fa15ee9b1f25fdd45ce0c99e242d37a5b5514c32da4e48bce23/0.m3u8
