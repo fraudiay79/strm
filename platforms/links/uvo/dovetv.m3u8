@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119176/dovetv/streams/sessions/8dc7defd979f49ad9136c187cac9e7dc/media/playlist-orig.m3u8/fstl=exp=1771484339~acl=%2Fhls%2Flive%2F2119176%2Fdovetv%2F%2A~hmac=78864f003471747ed4998b64ef32b55ba23f12fcd029688649f8d95ea29b8b7a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119176/dovetv/streams/sessions/3140c62f55654eca9be6eae80413da0a/media/playlist-orig.m3u8/fstl=exp=1771505928~acl=%2Fhls%2Flive%2F2119176%2Fdovetv%2F%2A~hmac=c2ee701e7e05fa713275bbe1287eb25f4741fabc41de4a15a7f7ede27340474e/0.m3u8
