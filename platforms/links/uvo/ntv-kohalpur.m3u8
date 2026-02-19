@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121972/ntvkohalpur/streams/sessions/c734933e848648748ff194780b3ce5d2/media/playlist-orig.m3u8/fstl=exp=1771580688~acl=%2Fhls%2Flive%2F2121972%2Fntvkohalpur%2F%2A~hmac=f0bb8a010d1a76874b38d3166bac34ff185028839b55941c8a99fd3b4db2935c/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121972/ntvkohalpur/streams/sessions/1c869682e29246b7afd3075ef79218fd/media/playlist-orig.m3u8/fstl=exp=1771592645~acl=%2Fhls%2Flive%2F2121972%2Fntvkohalpur%2F%2A~hmac=3242acc482f0eaf48f0eb8dde7ea786eee7c7206432cbee88950f3f8f5d60bfc/0.m3u8
