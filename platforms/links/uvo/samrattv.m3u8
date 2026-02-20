@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121045/samrattv/streams/sessions/affd1b6d250648b695c70057fd848335/media/playlist-orig.m3u8/fstl=exp=1771678511~acl=%2Fhls%2Flive%2F2121045%2Fsamrattv%2F%2A~hmac=ef3325da10ee2a89768d7814de0fa867dfdbb70024af7ef28ac88cf572f1d891/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121045/samrattv/streams/sessions/2dc27ed86beb4134a1437e399b0b532c/media/playlist-orig.m3u8/fstl=exp=1771688234~acl=%2Fhls%2Flive%2F2121045%2Fsamrattv%2F%2A~hmac=15165b34ee3df0e1e3e78a9ad892459465624d547a06e8fd6d52c56802047f42/0.m3u8

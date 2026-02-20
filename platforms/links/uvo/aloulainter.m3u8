@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/aloulainter/streams/sessions/451f67a6bc234db8b4caedb7a1eb5e55/media/playlist-orig.m3u8/fstl=exp=1771678486~acl=%2F10010%2Fdvr%2Fhls%2Faloulainter%2F%2A~hmac=91c9525ba32eb64ba99a922010060abb3001de8ea9c9dd74fa4f14affb081482/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/aloulainter/streams/sessions/be05635b681b45f0bcba37c0d8cf9984/media/playlist.m3u8/fstl=exp=1771688212~acl=%2F10010%2Fdvr%2Fhls%2Faloulainter%2F%2A~hmac=3a4dd74c1e8806656cecd8161fad3465305240e764b20ebbf8114f2e98e7b2dd/0.m3u8

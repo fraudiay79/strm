@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/filmuadramainternational/streams/sessions/e9185ca136d44027b560966888f638fd/media/playlist-orig.m3u8/fstl=exp=1771678489~acl=%2F10010%2Fdvr%2Fhls%2Ffilmuadramainternational%2F%2A~hmac=c623bea223c52040983d2eee1a1ce0f7061214d387d6c3af7327f2050f7a7db0/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/filmuadramainternational/streams/sessions/2e6be5ddbfc341e080c60951073bca3c/media/playlist.m3u8/fstl=exp=1771688214~acl=%2F10010%2Fdvr%2Fhls%2Ffilmuadramainternational%2F%2A~hmac=98da7f4d588cffd49fe7214d9285df8d0e4b7117eb31b23bff9f8cb026059d32/0.m3u8
