@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120757/alhadathalyoum/streams/sessions/a9fb701c77964eaba417de7fc6160802/media/playlist-orig.m3u8/fstl=exp=1771656836~acl=%2Fhls%2Flive%2F2120757%2Falhadathalyoum%2F%2A~hmac=14cf734a0c157fbefc4d2eb242fcb3961a0a34c5a84543bf33134705be0489fc/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120757/alhadathalyoum/streams/sessions/0771fde3ea1d455db551a4da05f610b9/media/playlist-orig.m3u8/fstl=exp=1771666765~acl=%2Fhls%2Flive%2F2120757%2Falhadathalyoum%2F%2A~hmac=a12fb71fec028301b873a39234ed7015d9b68d9e8078b8828774a6b8eb31eecc/0.m3u8

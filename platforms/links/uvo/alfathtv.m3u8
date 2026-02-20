@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120913/alfathtv/streams/sessions/1f1d0fe2e29747e49d50cc2dce4aa0cf/media/playlist-orig.m3u8/fstl=exp=1771656843~acl=%2Fhls%2Flive%2F2120913%2Falfathtv%2F%2A~hmac=ec25f1c0d2db9051ec350b4cfec90a0be2ee2c97a1a3fcc25a7a3761b7761728/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120913/alfathtv/streams/sessions/dccc2e01941e49e79530a11f06c3ca8a/media/playlist-orig.m3u8/fstl=exp=1771666771~acl=%2Fhls%2Flive%2F2120913%2Falfathtv%2F%2A~hmac=1d64d3d7c09ca3ad5d21484d327dab2c737cdd9941d2c16f467f3d1b84e2fd01/0.m3u8
