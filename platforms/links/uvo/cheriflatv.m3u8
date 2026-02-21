@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x442,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119033/cheriflatv/streams/sessions/87d41dd1f48d426b81d9dcc280a5bfff/media/playlist-orig.m3u8/fstl=exp=1771764048~acl=%2Fhls%2Flive%2F2119033%2Fcheriflatv%2F%2A~hmac=aaa39ef14427ddc62e22a27fc7219f87c1ff7449887bc750264247a65e931d2b/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119033/cheriflatv/streams/sessions/91ace563b51c47cf91d180d739bdc796/media/playlist-orig.m3u8/fstl=exp=1771773726~acl=%2Fhls%2Flive%2F2119033%2Fcheriflatv%2F%2A~hmac=15d401002b7fd65be86b273804b498df227d24daaa30ff83fe5b3d1b91f9f480/0.m3u8
