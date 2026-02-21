@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/alieftv/streams/sessions/d7a91252864241daab68b051257ca532/media/playlist-orig.m3u8/fstl=exp=1771752507~acl=%2F10010%2Fdvr%2Fhls%2Falieftv%2F%2A~hmac=20ac712be110c233438d28f5b0c3d90490853080adcb8cdd8fe9e32be32f49a4/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/alieftv/streams/sessions/a976721e46324033b5bd8a5aca5beb4e/media/playlist-orig.m3u8/fstl=exp=1771764147~acl=%2F10010%2Fdvr%2Fhls%2Falieftv%2F%2A~hmac=07a1ee2c270c55b4050de56deb0e2b1d65a8fbdac8efb629bf6030d4ddbe31e5/0.m3u8

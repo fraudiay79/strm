@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/sunnews/streams/sessions/f8ac6a9581734dcf99fbcfbf88b7c2e3/media/playlist-orig.m3u8/fstl=exp=1771752506~acl=%2F10010%2Fdvr%2Fhls%2Fsunnews%2F%2A~hmac=a903547ad66a5bfff552bc46974dbfc70218080cf56b12075fcc815666d6dc7c/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/sunnews/streams/sessions/743cbc2b2bc84cd8b9abaafc0eb113f0/media/playlist-orig.m3u8/fstl=exp=1771764146~acl=%2F10010%2Fdvr%2Fhls%2Fsunnews%2F%2A~hmac=b5a3125c8a4d3f2cf5e1b293a3b5a3b3487f4af3c29459a405723ddbde61e519/0.m3u8

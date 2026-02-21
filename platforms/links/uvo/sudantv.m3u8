@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119051/sudantv/streams/sessions/b61648be366a490e9c158d6847137a1a/media/playlist-orig.m3u8/fstl=exp=1771752495~acl=%2Fhls%2Flive%2F2119051%2Fsudantv%2F%2A~hmac=3dc481082eb7867778aaa583f3b01cc56b5bdb1fa40dfbaee6801372e53bcf8f/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119051/sudantv/streams/sessions/ffb792e437eb47cfae1485f2ce76ee7b/media/playlist-orig.m3u8/fstl=exp=1771764134~acl=%2Fhls%2Flive%2F2119051%2Fsudantv%2F%2A~hmac=fd0c4595c0e2c682430b0d01532d8aecd532d5747661728fe3bd8118dedbc3b3/0.m3u8

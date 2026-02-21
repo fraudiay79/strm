@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120977/nileculture/streams/sessions/fd05f1f469ac4e1da7bb606c2135996f/media/playlist-orig.m3u8/fstl=exp=1771752489~acl=%2Fhls%2Flive%2F2120977%2Fnileculture%2F%2A~hmac=497fb6ec05abac3ae64303f87ff3d3128895aff4c25bc49756d02f2bd8e36bc1/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120977/nileculture/streams/sessions/35ce2550e5b04e07aa42248963202d8d/media/playlist-orig.m3u8/fstl=exp=1771764128~acl=%2Fhls%2Flive%2F2120977%2Fnileculture%2F%2A~hmac=ad35078ef6dc2c653cc451521d19f913fd9c180c81e230a7f94c4092fc0535ff/0.m3u8

@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/planetfun/streams/sessions/96577c67b97e4fc783178ec81b836a8d/media/playlist-orig.m3u8/fstl=exp=1771752519~acl=%2F10010%2Fdvr%2Fhls%2Fplanetfun%2F%2A~hmac=17054f5f04bf10516654ebaf84cf969c808ebec17a38e0af25e826d3b4741b04/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/planetfun/streams/sessions/df2a2f98e530413db4d59671e4a318cb/media/playlist-orig.m3u8/fstl=exp=1771764161~acl=%2F10010%2Fdvr%2Fhls%2Fplanetfun%2F%2A~hmac=d99ad9fe236f92a9602dd8995b42c7773ca3973c73b9649f163b0885d0aee97e/0.m3u8
