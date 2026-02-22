@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120686/hannibaltv/streams/sessions/0b1503f8f4fd4535a7d48d9b4eb6ad92/media/playlist-orig.m3u8/fstl=exp=1771850637~acl=%2Fhls%2Flive%2F2120686%2Fhannibaltv%2F%2A~hmac=28d9c5855bab3069708ee4c865cf857fef457e549a9df6cbea92c087de10f3b8/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120686/hannibaltv/streams/sessions/65122f090f6143ab9ce0759828ca6d60/media/playlist-orig.m3u8/fstl=exp=1771871605~acl=%2Fhls%2Flive%2F2120686%2Fhannibaltv%2F%2A~hmac=3d920a36237e174b6bc7fb7d35c7e83653cbf5b28843b40314fee09e2549f3dc/0.m3u8
