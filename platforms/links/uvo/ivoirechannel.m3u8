@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/ivoirechannel/streams/sessions/d58b245beaa547bca6a7434aad5fab92/media/playlist-orig.m3u8/fstl=exp=1771871535~acl=%2F10010%2Fdvr%2Fhls%2Fivoirechannel%2F%2A~hmac=43c69edd1fa00560a09ba3cd1d576137cef506b0851ced495cc2adeb74c150bb/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/ivoirechannel/streams/sessions/5062cd0b22d04217a139953830451411/media/playlist-orig.m3u8/fstl=exp=1771881732~acl=%2F10010%2Fdvr%2Fhls%2Fivoirechannel%2F%2A~hmac=c1084fb78d9a610d9f28303624ba797427429143a207c6e19b4051b1592e6e3d/0.m3u8
