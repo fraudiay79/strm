@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x540,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/canal2international/streams/sessions/de9982a95a434a329749280c781cb576/media/playlist-orig.m3u8/fstl=exp=1772045892~acl=%2F10010%2Fdvr%2Fhls%2Fcanal2international%2F%2A~hmac=9521d9049e12a778d3329df76633f91d3311847f4f55e31df74a03d555f7aaec/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/canal2international/streams/sessions/b58347b485c84123b505882d5ed5e6e9/media/playlist-orig.m3u8/fstl=exp=1772055106~acl=%2F10010%2Fdvr%2Fhls%2Fcanal2international%2F%2A~hmac=9d0e0a095b69dfbd836249131759163175114bfe37ea3dd88d27e01e58d8cf08/0.m3u8
