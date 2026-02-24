@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120913/cbcdrama/streams/sessions/7570c95260154bceaf4bf67397f25a37/media/playlist-orig.m3u8/fstl=exp=1772002715~acl=%2Fhls%2Flive%2F2120913%2Fcbcdrama%2F%2A~hmac=680597423f3e7e3b18dc1fd30eee98a41ec1c7b65d2d555823d1780a3d6bc789/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120913/cbcdrama/streams/sessions/828b21e7ba194c13af6ba35545a512b3/media/playlist-orig.m3u8/fstl=exp=1772013048~acl=%2Fhls%2Flive%2F2120913%2Fcbcdrama%2F%2A~hmac=6583209e4ef425145b2da1fe1686c8a0cd870ca70bd5607eb1083bcaa3af8dd2/0.m3u8
