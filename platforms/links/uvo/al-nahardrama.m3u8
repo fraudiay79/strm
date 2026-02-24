@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120913/al-nahardrama/streams/sessions/80aea2e4646c4357863c00c8bf247350/media/playlist-orig.m3u8/fstl=exp=1771969406~acl=%2Fhls%2Flive%2F2120913%2Fal-nahardrama%2F%2A~hmac=a1fd962a72ec371922e8ddaf045dc4226bfcdcf5f76dd612f90950262bf08a01/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120913/al-nahardrama/streams/sessions/8433d7759c6945adabf478f3cd56848c/media/playlist-orig.m3u8/fstl=exp=1771995105~acl=%2Fhls%2Flive%2F2120913%2Fal-nahardrama%2F%2A~hmac=e106ef9d8b2913f2bc223136c9cc39d9df788686df03cd83806c35f186108c95/0.m3u8
