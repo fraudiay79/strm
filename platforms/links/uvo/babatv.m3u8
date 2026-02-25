@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x442,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119695/babatv/streams/sessions/1d79e9803e6d4983a110e86fc752a60e/media/playlist-orig.m3u8/fstl=exp=1768727988~acl=%2Fhls%2Flive%2F2119695%2Fbabatv%2F%2A~hmac=b95fcb66fa3593acfe4aa09a5c87efabb63259f3bb358e1b5d12cded48584e6f/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119695/babatv/streams/sessions/4ee38a3690c84f45b83597ae044143f1/media/playlist-orig.m3u8/fstl=exp=1772132623~acl=%2Fhls%2Flive%2F2119695%2Fbabatv%2F%2A~hmac=efaeb45859c0b987f97b8d00c9cfe3409fe554a19cf1c5e9d5b80de847ad0238/0.m3u8
