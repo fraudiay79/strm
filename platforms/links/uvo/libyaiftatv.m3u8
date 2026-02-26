@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x432,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120686/libyaiftatv/streams/sessions/abc259af166848df9dc1e349149d607d/media/playlist-orig.m3u8/fstl=exp=1772185629~acl=%2Fhls%2Flive%2F2120686%2Flibyaiftatv%2F%2A~hmac=7158e1465f58472a8b28077ec5a4c738704cb61d18dee16fb2c8578f25c02f29/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120686/libyaiftatv/streams/sessions/feca29d8d3c347e2ab20ad54ad094f9c/media/playlist-orig.m3u8/fstl=exp=1772197307~acl=%2Fhls%2Flive%2F2120686%2Flibyaiftatv%2F%2A~hmac=354955919ef98e36be7c7bbb584b96c1e6deeff43701e5b25130c94168c23869/0.m3u8
