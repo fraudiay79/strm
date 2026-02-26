@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119695/esperance/streams/sessions/073c4746798f4d7bb09a91e1a7467382/media/playlist-orig.m3u8/fstl=exp=1772197188~acl=%2Fhls%2Flive%2F2119695%2Fesperance%2F%2A~hmac=f3160e2d864a9f1be1e9757d4f6147b0fe0e108ed558ea87364093fbd66bde82/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119695/esperance/streams/sessions/ed069039581949efb4611a95b5f37cf6/media/playlist-orig.m3u8/fstl=exp=1772207534~acl=%2Fhls%2Flive%2F2119695%2Fesperance%2F%2A~hmac=ea2df79f05c5c5850371bbb990fa1e4dc793ae147a5b8efe774b9b577f8b4e69/0.m3u8
