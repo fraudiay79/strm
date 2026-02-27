@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120431/bantambatv/streams/sessions/cdcdb74e39f84ac4b92697d178f760e0/media/playlist-orig.m3u8/fstl=exp=1772271547~acl=%2Fhls%2Flive%2F2120431%2Fbantambatv%2F%2A~hmac=14e780bf565a21a11884c6f7e20b91fc7380057cd64c084df476c19b472c3fe2/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120431/bantambatv/streams/sessions/dad127dc9587467fa54fb8ef13f0d517/media/playlist-orig.m3u8/fstl=exp=1772283229~acl=%2Fhls%2Flive%2F2120431%2Fbantambatv%2F%2A~hmac=6f362d3459951099ed12ec227946eb24c0f6abf5d229404c930cac03d35c4a96/0.m3u8
