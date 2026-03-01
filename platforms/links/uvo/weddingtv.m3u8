@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/weddingtv/streams/sessions/c84a6f0f000e41d189870b86c331fd20/media/playlist-orig.m3u8/fstl=exp=1772433989~acl=%2F10010%2Flive%2Fhls%2Fweddingtv%2F%2A~hmac=acf35942dd385c4a26a9a738267f4791f168e992b760a3423a93e69e118044c3/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1280x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/weddingtv/streams/sessions/40107c5a378b41e689c680b2046422bc/media/playlist-orig.m3u8/fstl=exp=1772443816~acl=%2F10010%2Flive%2Fhls%2Fweddingtv%2F%2A~hmac=05ffc1e681bcc4d7c75bd7f838dd6e249819eeadc6b2bb78a25b34512a3ceecb/0.m3u8
