@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120681/tunisna/streams/sessions/45b36b901e604cdda7d23b042ff10e9c/media/playlist-orig.m3u8/fstl=exp=1772617196~acl=%2Fhls%2Flive%2F2120681%2Ftunisna%2F%2A~hmac=ea8f4ee598b01d2d774fbd3d5b373f1a497040d2cb08ec65419bd169fa035404/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120681/tunisna/streams/sessions/9958ec19fcc94849a2fbf8e8d72efa96/media/playlist-orig.m3u8/fstl=exp=1772628743~acl=%2Fhls%2Flive%2F2120681%2Ftunisna%2F%2A~hmac=f24ff46f420b9c0a036f52f4d124bdbec36c4a25f865687cade31469f0675625/0.m3u8

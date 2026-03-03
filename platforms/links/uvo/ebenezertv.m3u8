@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119176/ebenezertv/streams/sessions/c5a95238a1bc4c4fa95827b60fe7cbbc/media/playlist-orig.m3u8/fstl=exp=1772617159~acl=%2Fhls%2Flive%2F2119176%2Febenezertv%2F%2A~hmac=f3503d8a399ebc3e9b05e59e210b7de580d55f80efe4dc465143e8e39d69aef1/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119176/ebenezertv/streams/sessions/18773a6e281d43ef8b5f33b4ecba1825/media/playlist-orig.m3u8/fstl=exp=1772628716~acl=%2Fhls%2Flive%2F2119176%2Febenezertv%2F%2A~hmac=0dffb5949706a0e0618b8e4358c94f30b2ff579b645fb1b5c35ce37193df14bb/0.m3u8

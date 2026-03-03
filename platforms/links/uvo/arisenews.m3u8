@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119194/arisenews/streams/sessions/ed284e10f5d044b6b926674233bce029/media/playlist-orig.m3u8/fstl=exp=1772606840~acl=%2Fhls%2Flive%2F2119194%2Farisenews%2F%2A~hmac=9edd0ffee0e478ba1e94b11db1aaa0305a0cf9160177caa68d7c0597b1f60165/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119194/arisenews/streams/sessions/e162d4d777a440f1bc91123eb50aebe1/media/playlist-orig.m3u8/fstl=exp=1772628729~acl=%2Fhls%2Flive%2F2119194%2Farisenews%2F%2A~hmac=fc946b770626816a7dab11da2ecd59e939a0b53a7c7e34785c8239ab128c5d35/0.m3u8

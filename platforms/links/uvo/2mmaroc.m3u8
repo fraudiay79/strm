@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/2mmaroc/streams/sessions/2566b40f5cda4cbcae1e6a9dbac75c7c/media/playlist-orig.m3u8/fstl=exp=1772617191~acl=%2F10010%2Fdvr%2Fhls%2F2mmaroc%2F%2A~hmac=e64537fc8d9f95b40ee0a3a07ac74db6b71d5f72be706d30325e8f64c640dbc0/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3256000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/2mmaroc/streams/sessions/8918c53fea7f4a87a007eab0749ca657/media/playlist-orig.m3u8/fstl=exp=1772628738~acl=%2F10010%2Fdvr%2Fhls%2F2mmaroc%2F%2A~hmac=03d8e1c90a8f123d23aa5615f3d14e4e5a30b1c3643523c960de68ba401f6e39/0.m3u8

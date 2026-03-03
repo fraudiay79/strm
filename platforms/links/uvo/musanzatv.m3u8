@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119689/musanzatv/streams/sessions/146587241b284df59cb3a961c1bb377a/media/playlist-orig.m3u8/fstl=exp=1772617168~acl=%2Fhls%2Flive%2F2119689%2Fmusanzatv%2F%2A~hmac=523a4ee837b0ce44d36d6c7b6d955ebcc0fb194c7fe6ceeeaf3e897d3178890e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119689/musanzatv/streams/sessions/57a8d5244f724227935ebecedf0ff8c9/media/playlist-orig.m3u8/fstl=exp=1772628724~acl=%2Fhls%2Flive%2F2119689%2Fmusanzatv%2F%2A~hmac=b6b36b64993beddd6e9a68f0580cab5829282b8bfdef60f86f7cd315d36e3626/0.m3u8
