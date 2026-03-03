@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120427/floratv/streams/sessions/4e15945fe82d4eeab1b65ea59619ced0/media/playlist-orig.m3u8/fstl=exp=1772649922~acl=%2Fhls%2Flive%2F2120427%2Ffloratv%2F%2A~hmac=cffcabf8533554dfed6f8f49b96a83f0f127ecdf568951deb805c5815aa3e575/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120427/floratv/streams/sessions/bccd34f92be04e8299e668cc74be6e6b/media/playlist-orig.m3u8/fstl=exp=1772660009~acl=%2Fhls%2Flive%2F2120427%2Ffloratv%2F%2A~hmac=72ba98ea7f22df70b69ff0600a597b534629b555c42b3ff443f022123063ab44/0.m3u8

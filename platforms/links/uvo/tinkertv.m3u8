@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120427/tinkertv/streams/sessions/18b1e852f6d846c7a8627719492b6c5e/media/playlist-orig.m3u8/fstl=exp=1772649921~acl=%2Fhls%2Flive%2F2120427%2Ftinkertv%2F%2A~hmac=dff4400a10c45c75989f4f61671779936cf2b2e833755eb703f977a8b6e90b54/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120427/tinkertv/streams/sessions/14e6fcbad0004c4fbb73b85d9383cf2d/media/playlist-orig.m3u8/fstl=exp=1772660007~acl=%2Fhls%2Flive%2F2120427%2Ftinkertv%2F%2A~hmac=ec94890027b5656e0adbb0aa98cb86604c4104bd33ae07bc415b350df8cb473e/0.m3u8
