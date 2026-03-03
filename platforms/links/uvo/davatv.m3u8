@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120682/davatv/streams/sessions/8d9148f5e9234b5796473d832f48dece/media/playlist-orig.m3u8/fstl=exp=1772617205~acl=%2Fhls%2Flive%2F2120682%2Fdavatv%2F%2A~hmac=6c3f04db5ae40cdfbc9d27ad191d61cc8c17db1f8089848a21dc2e03dc590a95/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120682/davatv/streams/sessions/01188cff830049d08182689218faac55/media/playlist-orig.m3u8/fstl=exp=1772639091~acl=%2Fhls%2Flive%2F2120682%2Fdavatv%2F%2A~hmac=b23fbe563f1322e9b9f50aec3ebd89c2727da3394b4eafeb3459d5cb0cffcd2c/0.m3u8
