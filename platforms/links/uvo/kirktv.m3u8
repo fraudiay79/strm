@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x406,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120427/kirktv/streams/sessions/3dbeda94caee4a8892884978e53a54b1/media/playlist-orig.m3u8/fstl=exp=1768728002~acl=%2Fhls%2Flive%2F2120427%2Fkirktv%2F%2A~hmac=8d96e9b895d2214f00890bdcbe537e398926af92c42037810c7058d6376ea84e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120427/kirktv/streams/sessions/b442195898d540ddb47b76e41b34b2af/media/playlist-orig.m3u8/fstl=exp=1772736365~acl=%2Fhls%2Flive%2F2120427%2Fkirktv%2F%2A~hmac=aca0bd4c1e6e7b3f7af3e181cfeca82bd824494f0114e7a3eefe9dc97b957a7f/0.m3u8
