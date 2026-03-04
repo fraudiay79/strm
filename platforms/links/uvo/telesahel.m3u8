@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119033/telesahel/streams/sessions/5bb94ea3cc3b449b9ce36d9d43744138/media/playlist-orig.m3u8/fstl=exp=1772725045~acl=%2Fhls%2Flive%2F2119033%2Ftelesahel%2F%2A~hmac=5502266e4cce5acfdd4d9d13cdc867664ebf5399d499c681a46cfb777e7985cf/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119033/telesahel/streams/sessions/31cac081a40f422685d803d781fcca56/media/playlist-orig.m3u8/fstl=exp=1772746272~acl=%2Fhls%2Flive%2F2119033%2Ftelesahel%2F%2A~hmac=6b124f71897c5add51c4c40bf8838396c415bf167d9fb0b147b654ea0214726c/0.m3u8
