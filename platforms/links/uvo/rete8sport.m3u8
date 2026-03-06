@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/rete8sport/streams/sessions/a849784c13754796a29e985b005bd390/media/playlist-orig.m3u8/fstl=exp=1772832900~acl=%2F10010%2Flive%2Fhls%2Frete8sport%2F%2A~hmac=fc73344f5c9271d7199a59661308663010016dccb0d1a6b40f35fd68292f4d5e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/rete8sport/streams/sessions/a96c93af5c834c1e83a465f2a3e83e40/media/playlist-orig.m3u8/fstl=exp=1772858624~acl=%2F10010%2Flive%2Fhls%2Frete8sport%2F%2A~hmac=9f4a2de2fc03b9b9f851eee5df965624b18b19c92390788ae89be2d2dd2d4047/0.m3u8
