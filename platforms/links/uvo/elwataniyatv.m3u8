@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120682/elwataniyatv/streams/sessions/75c9d20ae6fd4f54ba13c3bede60093f/media/playlist-orig.m3u8/fstl=exp=1773004768~acl=%2Fhls%2Flive%2F2120682%2Felwataniyatv%2F%2A~hmac=fe7863574024190736835534a171b4a205d2866a0f41636d9aacf4a49b66e76b/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119693/elwataniyatv/streams/sessions/f4fe2796633c40899bbb8fef3b96f70e/media/playlist-orig.m3u8/fstl=exp=1773038426~acl=%2Fhls%2Flive%2F2119693%2Felwataniyatv%2F%2A~hmac=900aebb25298c395b32ff947ba9ca8085e02d5677c230286694246d9c0960ee3/0.m3u8
