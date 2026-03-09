@@ -6,6 +6,11 @@
     },
     "channels": [
         {
+            "name": "Telefuturo Dominica",
+            "slug": "telefuturodo",
+            "url": "https://www.dailymotion.com/video/x9imtbq"
+        },
+        {
             "name": "Azteca Honduras",
             "slug": "aztecahn",
             "url": "https://www.dailymotion.com/video/x9saemc"
@@ -91,61 +96,6 @@
             "url": "https://www.bgonair.bg/tvonline"
         },
         {
-            "name": "BNT1",
-            "slug": "bnt1",
-            "url": "https://tv.bnt.bg/bnt1"
-        },
-        {
-            "name": "BNT2",
-            "slug": "bnt2",
-            "url": "https://tv.bnt.bg/bnt2"
-        },
-        {
-            "name": "BNT3",
-            "slug": "bnt3",
-            "url": "https://tv.bnt.bg/bnt3"
-        },
-        {
-            "name": "BNT4",
-            "slug": "bnt4",
-            "url": "https://tv.bnt.bg/bnt4"
-        },
-        {
-            "name": "LNK",
-            "slug": "lnklt",
-            "url": "https://lnk.lt/tiesiogiai#lnk"
-        },
-        {
-            "name": "BTV",
-            "slug": "btvlt",
-            "url": "https://lnk.lt/tiesiogiai#btv"
-        },
-        {
-            "name": "2TV",
-            "slug": "2tvlt",
-            "url": "https://lnk.lt/tiesiogiai#2tv"
-        },
-        {
-            "name": "Info TV",
-            "slug": "infolt",
-            "url": "https://lnk.lt/tiesiogiai#infotv"
-        },
-        {
-            "name": "TV1",
-            "slug": "tv1lt",
-            "url": "https://lnk.lt/tiesiogiai#tv1"
-        },
-        {
-            "name": "LTV1",
-            "slug": "ltv1lv",
-            "url": "https://replay.lsm.lv/lv/skaties/tiesraide/ltv1"
-        },
-        {
-            "name": "LTV7",
-            "slug": "ltv7lv",
-            "url": "https://replay.lsm.lv/lv/skaties/tiesraide/ltv7"
-        },
-        {
             "name": "Hadhramaut",
             "slug": "hadhramaut",
             "url": "https://www.twitch.tv/hadramout1"
@@ -154,11 +104,6 @@
             "name": "One TV Togo",
             "slug": "onetvtogo",
             "url": "https://www.twitch.tv/onetvlive1"
-        },
-        {
-            "name": "DBS TV",
-            "slug": "dbstvstlucia",
-            "url": "https://www.twitch.tv/dbstvstlucia"
         },
         {
             "name": "Aden TV",
@@ -241,26 +186,6 @@
             "url": "https://www.twitch.tv/elbaladtv"
         },
         {
-            "name": "MRTV",
-            "slug": "mrtv",
-            "url": "https://www.twitch.tv/livestreamingmrtv"
-        },
-        {
-            "name": "MITV",
-            "slug": "mitv",
-            "url": "https://www.twitch.tv/mitvlivestream"
-        },
-        {
-            "name": "MRT News",
-            "slug": "mrtnews",
-            "url": "https://www.twitch.tv/mrtvnewslive"
-        },
-        {
-            "name": "El Nueve",
-            "slug": "elnueve",
-            "url": "https://www.twitch.tv/elnueveok"
-        },
-        {
             "name": "Al Rassoul",
             "slug": "alrassoul",
             "url": "https://www.twitch.tv/alrassoulchannel"
@@ -274,11 +199,6 @@
             "name": "Show Türk",
             "slug": "showturk",
             "url": "https://www.showturk.com.tr/canli-yayin/showturk"
-        },
-        {
-            "name": "Willax",
-            "slug": "willax",
-            "url": "https://www.dailymotion.com/video/x9s3ad6"
         },
         {
             "name": "ATB (BO)",
