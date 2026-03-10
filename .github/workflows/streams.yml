@@ -45,6 +45,8 @@ jobs:
             python3 tdmax.py
             #bash echorouk.sh
             python3 nelonen.py
+            python3 lci.py > links/lci.m3u8
+            python3 royanews.py > links/royanews.m3u8
             python3 nowtvtr.py > links/nowtvtr.m3u8
             #python3 tv8md.py > links/md/tv8md.m3u8
             #sh tvm.sh
