@@ -3,7 +3,7 @@ import re
 import json
 
 base_url = "https://guxaykcuao.erbvr.com/royanews/"
-url = "https://roya.tv/live-stream/21"
+url = "https://ticket.roya-tv.com/api/v5/fastchannel/21"
 
 s = requests.Session()
 resplink = s.get(url)
