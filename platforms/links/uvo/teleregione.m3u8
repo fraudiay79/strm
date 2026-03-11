@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/10010/live/hls/teleregione/streams/sessions/b49c386feb934bdeb7a15938785c2a61/media/playlist-orig.m3u8/fstl=exp=1773308560~acl=%2F10010%2Flive%2Fhls%2Fteleregione%2F%2A~hmac=58ba3529d612f91e6a8b1562f13e6ff50ab2869d37bf3316822b987e4ba7e6ae/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/teleregione/streams/sessions/f4d808fe62dc424aa1ac9e641cc6ecaa/media/playlist-orig.m3u8/fstl=exp=1773320222~acl=%2F10010%2Flive%2Fhls%2Fteleregione%2F%2A~hmac=d97759ac47a847b73c65a44c31ddcf16acc41c31a12116ef3922ddd8b5c3b5ef/0.m3u8
