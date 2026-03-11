@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/tltcanale77/streams/sessions/29f9acfcef61470bbf590c75344845d1/media/playlist-orig.m3u8/fstl=exp=1773290752~acl=%2F10010%2Flive%2Fhls%2Ftltcanale77%2F%2A~hmac=6dff9551a01a59b7b0c33793180c8930d7528950cd15b864aa747a5007ebb601/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/tltcanale77/streams/sessions/abe29f9fe08c4ccb9982fda4a9fd6c70/media/playlist-orig.m3u8/fstl=exp=1773308562~acl=%2F10010%2Flive%2Fhls%2Ftltcanale77%2F%2A~hmac=d659d8b55c6136797171cd0a2495385ba1de3dd1a6b13286adce69a12439e902/0.m3u8
