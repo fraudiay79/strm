@@ -1,3470 +1,522 @@
 [
   {
-    "name": "Berlin Station",
+    "name": "Argylle",
+    "category": "\ud83c\udd30",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/siduVKgOnABO4WH4lOwPQwaGwJp.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/mY3CRicUMaX3Btxv8yspud75UJu.jpg",
+      "plot": "When the plots of reclusive author Elly Conway's fictional espionage novels begin to mirror the covert actions of a real-life spy organization, quiet evenings at home become a thing of the past. Accompanied by her cat Alfie and Aidan, a cat-allergic spy, Elly races across the world to stay one step ahead of the killers as the line between Conway's fictional world and her real one begins to blur.",
+      "director": [
+        "Matthew Vaughn"
+      ],
+      "cast": [
+        "Henry Cavill",
+        "Bryce Dallas Howard",
+        "Sam Rockwell",
+        "Bryan Cranston",
+        "Catherine O'Hara",
+        "Sofia Boutella"
+      ],
+      "trailer": "Sy6eNs3EW3E",
+      "rating": "6.0",
+      "year": "2024"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "The Banker",
     "category": "\ud83c\udd31",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/zn26BiTyU3LjQVB36ZQWtVBWseD.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/nEAnoMHXb1qeePbaxE1Kmv7gvh2.jpg",
-      "plot": "A contemporary spy series that follows Daniel Miller, an undercover agent at the CIA station in Berlin, Germany.",
-      "rating": "7.2",
-      "genre": [
-        "action & adventure",
-        "drama"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/biXzsw22U6vSd0XktmZwAOc4uik.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/3ciAiEBD4yxZYoXMxEnZF6Q0u58.jpg",
+      "plot": "In the 1960s, two entrepreneurs hatch an ingenious business plan to fight for housing integration\u2014and equal access to the American Dream.",
+      "director": [
+        "George Nolfi"
       ],
       "cast": [
-        "Richard Armitage",
-        "Rhys Ifans",
-        "Richard Jenkins",
-        "Michelle Forbes",
-        "Leland Orser"
-      ]
+        "Anthony Mackie",
+        "Samuel L. Jackson",
+        "Nicholas Hoult",
+        "Nia Long",
+        "Scott Johnson",
+        "Jessie T. Usher"
+      ],
+      "trailer": "J_-nk9-sMus",
+      "rating": "7.6",
+      "year": "2020"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/qjmYFMbX3oAYCABgFeFcm2hLE2F.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Daniel Miller has just arrived at the CIA foreign station in Berlin, Germany with a clandestine mission: to uncover the source of a leak who has supplied information to a now-famous whistleblower named Thomas Shaw. Guided by veteran Hector DeJean, Daniel learns to contend with the rough-and-tumble world of the field agent: agent-running, deception, the dangers and moral compromises. As he dives deeper into the German capital's hall of mirrors and uncovers the threads of a conspiracy that leads back to Washington, Daniel wonders: Can anyone ever be the same after a posting to Berlin?",
-          "year": "2016",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Station to Station",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/51ko0gJcMyIEJVPp9EIuxC5XDax.jpg",
-              "plot": "CIA Officer Daniel Miller arrives in Berlin on a clandestine mission to unearth an anonymous whistleblower, alias Thomas Shaw, and reunites with his old friend Hector DeJean. As Daniel gets closer to Shaw, his quarry reacts in murderous fashion.",
-              "duration": 3180,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/51ko0gJcMyIEJVPp9EIuxC5XDax.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Lights Don't Run on Loyalty",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9yM6dIMSopu2AtoLc0X2OCSxtEd.jpg",
-              "plot": "As Daniel pursues Shaw, Station Chief Steven Frost and his associates Valerie Edwards and Robert Kirsch gather intelligence on a Georgian Islamic radical in order to avoid an extraordinary rendition by Langley. By episode\u2019s end, Hector surprises us all.",
-              "duration": 3180,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9yM6dIMSopu2AtoLc0X2OCSxtEd.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Riverrun Dry",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/opAy2CIBRUtgMGt5NuEyD2joYIg.jpg",
-              "plot": "Frost and Kirsch worry their secrets will be unearthed when Langley investigators sweep Berlin Station to ferret out fodder for future Shaw leaks. Meanwhile, Daniel's hunt for the mole is put at risk.",
-              "duration": 3240,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/opAy2CIBRUtgMGt5NuEyD2joYIg.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "By Way of Deception",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lXOt0i0zSDF8FrGQ3zpuOHjxsJG.jpg",
-              "plot": "Daniel and Hector embark on a dangerous operation to track down Shaw. Meanwhile, Valerie finds out the truth behind Iosava, and Frost and Kirsch deliberate future plans for themselves and the rest of Berlin Station.",
-              "duration": 3420,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lXOt0i0zSDF8FrGQ3zpuOHjxsJG.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Unter Druck",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lC1EdgFg37zfefSsjJoR4nZin4N.jpg",
-              "plot": "Daniel teams up with Esther Krug of the BfV to prevent the next Shaw leak involving a foreign defector. Valerie and Robert spar over strategy as her investigation into Iosava gains traction; Hector gets a late-night visit from Shirley Pimple.",
-              "duration": 3120,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lC1EdgFg37zfefSsjJoR4nZin4N.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Just Decisions",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rjTyBUIOYEPbuNEnnFXZeSxeOD5.jpg",
-              "plot": "Valerie's investigation into Aleksandre and Ruth Iosava comes to a head in a German/American sting Operation involving Clare Itani, a CIA Officer and Hector\u2019s lover. Langley's unannounced participation moves things from bad to worse.",
-              "duration": 3120,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rjTyBUIOYEPbuNEnnFXZeSxeOD5.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Proof of Life",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6v3mLHUpSj5YzXpVrZmm0wJghcm.jpg",
-              "plot": "Frost must pick up the pieces after the Iosava Operation goes sour while Robert explores a different angle. Hector goes rogue but brings Daniel with him, preempting a crucial moment of clarity.",
-              "duration": 2940,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6v3mLHUpSj5YzXpVrZmm0wJghcm.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "False Negative",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nzUAjqDL16YXeVjjlSJqjUvYwZZ.jpg",
-              "plot": "Repercussions from the Iosava debacle leave Frost in the shadows and the Station in disarray as Robert embraces a new role. Hector finds himself in the hot seat, Valerie reveals a secret of her own\u2013\u2013and Daniel inches closer to the truth.",
-              "duration": 3060,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nzUAjqDL16YXeVjjlSJqjUvYwZZ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Thomas Shaw",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/p0qiyt2psIyLS1vY82eNvocOEMN.jpg",
-              "plot": "The mystery of Shaw's true identity finally solved, Daniel confronts his own conscience as he learns the origins of \"Thomas Shaw\"; Valerie\u2019s suspicions about Robert further escalate rising tensions between them, and Kelly Frost suddenly becomes an integral part of the team.",
-              "duration": 3540,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/p0qiyt2psIyLS1vY82eNvocOEMN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Oratorio Berlin",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eSXWsNlkjAei3003Na335mgUE1F.jpg",
-              "plot": "Daniel assembles the crew as they piece together the extent of Langley's involvement in the Iosava rendition. Steven and Kelly Frost reunite against the odds; Hector pursues a new approach for his atonement \u2013 and the Thomas Shaw mantle is passed.",
-              "duration": 3180,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eSXWsNlkjAei3003Na335mgUE1F.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/eximBzEr4EUmeWcdNN1tXQm53Ca.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Season 2 opens in the thick of a New World Order that has taken root and is steadily deepening. In the wake of the Far Right tide sweeping across continental Europe, Germany finds itself on the precipice of a pivotal election. Alt-Right party leader Katerina Gerhardt has capitalized on the refugee crisis and economic strife to woo disillusioned voters fed up with the status quo, seemingly poised for a big win. Our heroes at Berlin Station must determine the nature of the threat she poses, and what role they should play. Is Katerina is a viable candidate with a controversial message who should be protected by the democratic process? Or, as preliminary evidence suggests, is she colluding with terrorists?",
-          "year": "2017",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Everything's Gonna Be Alt-Right",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gLhh2boBXdqx8V98SK2agj4REVI.jpg",
-              "plot": "Under the direction of new Chief of Staff BB Yates, Daniel Miller, Robert Kirsch, Valerie Edwards and the rest of Berlin Station embark on an unsanctioned operation to uncover a possible Far Right terrorist attack.",
-              "duration": 3060,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gLhh2boBXdqx8V98SK2agj4REVI.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Right Here, Right Now",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yt8lpmbr28bJIVKFLEYZshpivwM.jpg",
-              "plot": "In a 24-hour episode set completely in Spain, Daniel uses Hector to further his mission with Otto, much to Hector's dismay.",
-              "duration": 3060,
-              "rating": "8.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yt8lpmbr28bJIVKFLEYZshpivwM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Right to the Heart",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/154CO7fciPniInSwPssNqlWD1KU.jpg",
-              "plot": "Valerie works to obtain intel on the Far Right while Robert's teenage son Noah arrives in Berlin and asks questions. Meanwhile, Frost agrees to the Ambassador's request to spy on Berlin Station.",
-              "duration": 3120,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/154CO7fciPniInSwPssNqlWD1KU.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Do the Right Thing",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/g6B9hf1kTPhjxKQ2LT38Rqgau97.jpg",
-              "plot": "BB Yates's past is revealed while she juggles keeping Berlin Station's Far Right operation covert or revealing it to Ambassador Hanes; Daniel discovers a lack of trust between Otto Ganz and his daughter.",
-              "duration": 3360,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/g6B9hf1kTPhjxKQ2LT38Rqgau97.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Right of Way",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pDHD5ORUBUzkqwuQQhjKRNwmzwF.jpg",
-              "plot": "The Station's sting operation to catch the Far Right in an arms deal goes horribly awry, with Otto Ganz escaping. Meanwhile, Robert and Frost make plans to investigate the money trail behind the PfD's nefarious dealings.",
-              "duration": 2940,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pDHD5ORUBUzkqwuQQhjKRNwmzwF.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Right Hook",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uJKbfbJ40kUNLZa0CU0RM9P76np.jpg",
-              "plot": "Robert and Frost travel to Norway to investigate the illegal money trail leading to PfD; BB and Valerie devise a new plan involving a member of the Far Right; Daniel deals with the psychological consequences of his mission.",
-              "duration": 3000,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uJKbfbJ40kUNLZa0CU0RM9P76np.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Right and Wrong",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/veUiweUE4yvmW1KaRhtNuEmDgIP.jpg",
-              "plot": "April weighs telling Robert about Hector's assassination plot; Daniel tries to arrange safe passage out of Berlin for Hector with help from Esther.",
-              "duration": 2640,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/veUiweUE4yvmW1KaRhtNuEmDgIP.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Righteous One",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/orsCh4gNjToMKWLPtsyhMDosiVM.jpg",
-              "plot": "Hector is wanted by German authorities for the assassination of Katerina Gerhardt, but Berlin Station begins to discover there is more at play than a jaded ex-CIA officer.",
-              "duration": 3000,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/orsCh4gNjToMKWLPtsyhMDosiVM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Winners Right the History Books",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qJuOv4xaeWeBBvsxze6Cdwmgp9T.jpg",
-              "plot": "Berlin Station continues to search for the truth behind Katerina Gerhardt's assassination and Nick Fischer's role in it, as a protest outside the US Embassy and calls to turn Hector over escalate.",
-              "duration": 3360,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qJuOv4xaeWeBBvsxze6Cdwmgp9T.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 3,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/wvOczcMcDEkpaDkbpNmlMh033uB.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In season 3, newly promoted to Chief of Station, Valerie Edwards sends Daniel Miller and Robert Kirsch on a diplomatic mission to Estonia, where they uncover signs of an impending Russian invasion, threatening to destabilize the NATO Alliance. Daniel stays behind to search for the truth, but goes MIA during his mission. The rest of the team, joined by Special Activities Case Officer Rafael Torres, must work to unravel the conspiracy and bring Daniel home.",
-          "year": "2018",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Aut Concilio Aut Ense",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/t4Cn6ccBawIuv0Nj7wwKzuf6CnO.jpg",
-              "plot": "Valerie Edwards sends Daniel Miller and Robert Kirsch on an urgent mission, where they meet renegade CIA Officer Rafael Torres, and uncover signs of a covert invasion.",
-              "duration": 3300,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/t4Cn6ccBawIuv0Nj7wwKzuf6CnO.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Fire Knows Nothing of Mercy",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zrids2nnf8GINYUQoZabEHZ0Nx6.jpg",
-              "plot": "Berlin Station follows up on the evidence Kirsch brought home from his mission, crystallizing their theory about a possible upcoming invasion.",
-              "duration": 3120,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zrids2nnf8GINYUQoZabEHZ0Nx6.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "The Old Lie",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7GduAAWVUBMFbR35WXRl1Qojjjl.jpg",
-              "plot": "The Station enlists Rafael Torres to track down a missing comrade's, Daniel Miller's last known location, leading him to hostile territory. Kirsch visits an old friend.",
-              "duration": 3000,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7GduAAWVUBMFbR35WXRl1Qojjjl.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "If You Swear, You'll Catch No Fish",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dXOteCXeZjKKVGhSoLht3Zq5zz7.jpg",
-              "plot": "The explosion of a fishing boat is detected. CIA agent Rafael Torres violates the order of the Station Chief of Berlin Station, and retrieves the burned body that he believes is of missing CIA agent Daniel Miller.",
-              "duration": 2940,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dXOteCXeZjKKVGhSoLht3Zq5zz7.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "The Dream of the Four Policemen",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ijx55lA3oCxI6EC0VW0I6a78XNT.jpg",
-              "plot": "Kirsch and Torres must risk their lives to secure their fallen comrade's location. When B.B. Yates returns to Berlin, the Station must decide whether or not they can trust an emissary of the Oval Office.",
-              "duration": 3000,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ijx55lA3oCxI6EC0VW0I6a78XNT.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "In Cold Hell",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8Mk1BKpYNPONny60NAg4swsqVvh.jpg",
-              "plot": "Valerie and B.B. rally the support of the 14-Eyes, a powerful intelligence collective. Kirsch and April, using Sofia as bait, trap Sergei. Kirsch offers to swap Sergei for Daniel. April comes clean to her asset, securing the tech for U.S. interests. Esther activates Bruno, a German Special Operator, to locate Daniel. Frost introduces Torres to Hector, whose new identity as a roofer to oligarchs provides a way to infiltrate the Russian elite. Frost investigates one of the soldiers formerly under Krik's command to gain kompromat from his war days.",
-              "duration": 3240,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8Mk1BKpYNPONny60NAg4swsqVvh.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "The Eye Fears When It Is Done to See",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sD7JEt4sKo5b8SuKI6zS4UExqaL.jpg",
-              "plot": "Valerie is stunned when B.B. betrays her and votes against the 14-Eyes invoking Article 5. April faces the loss of the tech when her assets are arrested and face deportation. Kirsch's spy swap goes horribly awry when Bruno, Esther's officer, is exchanged instead of Daniel. Platov invites Hector and Torres to Krik's dacha, forcing them to navigate the treacherous world of Russian oligarchs. Their mission is upended when Hector falls out of favor with Krik and finds himself human prey in their evening hunt, along with one other prisoner: Daniel.",
-              "duration": 3120,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sD7JEt4sKo5b8SuKI6zS4UExqaL.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Green Dacha",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hNqC7ClusXGA8tAajbaHmwMMuit.jpg",
-              "plot": "Daniel and Hector are being hunted by Vassily Krik. They manage to find shelter in a green house in the woods where a well-kept secret will be revealed.",
-              "duration": 2880,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hNqC7ClusXGA8tAajbaHmwMMuit.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "End of War",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4ORAjm0pNl2HV8OucD14sZt1vRb.jpg",
-              "plot": "Frost volunteers with Valerie's reluctant consent to rescue Daniel from Krik's estate. When Daniel confronts Frost about his past alias as \"Diver\" shots are fired. Hector is a secret witness. Krik is arrested by his government. Daniel's body is dumped on the streets of Berlin. Torres uses his cover as a ruse to get Platov to Germany. The Estonian communications network is hijacked, but Sofia can only use her master password by returning to her country.",
-              "duration": 3180,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4ORAjm0pNl2HV8OucD14sZt1vRb.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Book of the Fallen",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/f6EBHvXsTXDBoElImP1UndW7gAV.jpg",
-              "plot": "Mere hours remain before enemy forces topple the Estonian government. Without Langley's backing, Berlin Station acts alone in one final desperate push to prevent the fall of a nation.",
-              "duration": 3180,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/f6EBHvXsTXDBoElImP1UndW7gAV.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   },
   {
-    "name": "Dark Matter",
-    "category": "\ud83c\udd33",
+    "name": "Causeway",
+    "category": "\ud83c\udd32",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/c6MRUtPk0nEPQ9FBD9RdRKt2rIm.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/wFEAy4xRes1eeclsu7Z73Vzz7ET.jpg",
-      "plot": "Jason Dessen is abducted into an alternate version of his life. To get back to his true family, he embarks on a harrowing journey to save them from the most terrifying foe imaginable: himself.",
-      "rating": "7.8",
-      "genre": [
-        "sci-fi & fantasy",
-        "drama"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/bUzKIqFIS05Ss31zRTfZfHJIgDP.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/e3GJaLTXrKzFAMB2kIQtzgadBHw.jpg",
+      "plot": "A US soldier suffers a traumatic brain injury while fighting in Afghanistan and struggles to adjust to life back home in New Orleans. When she meets local mechanic James, the pair begin to forge an unexpected bond.",
+      "director": [
+        "Lila Neugebauer"
       ],
       "cast": [
-        "Joel Edgerton",
-        "Jennifer Connelly",
-        "Alice Braga",
-        "Jimmi Simpson",
-        "Dayo Okeniyi"
-      ]
+        "Jennifer Lawrence",
+        "Brian Tyree Henry",
+        "Linda Emond",
+        "Jayne Houdyshell",
+        "Stephen McKinley Henderson",
+        "Russell Harvard"
+      ],
+      "trailer": "i-iIkeMqXXE",
+      "rating": "6.5",
+      "year": "2022"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/c6MRUtPk0nEPQ9FBD9RdRKt2rIm.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2024",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Are You Happy in Your Life?",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3e4BWgbMXr8LQtFzuOrnLEQgeHH.jpg",
-              "plot": "Physics professor and family man Jason Dessen is abducted from everything he loves.",
-              "duration": 2880,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3e4BWgbMXr8LQtFzuOrnLEQgeHH.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Trip of a Lifetime",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tGDNcydJxlu448Mc5Qkdmw2NzWz.jpg",
-              "plot": "Jason wakes to a life that makes no sense\u2014he doesn't have a family and he's created something extraordinary.",
-              "duration": 3540,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tGDNcydJxlu448Mc5Qkdmw2NzWz.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "The Box",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ovSSE8DjAWsVlI3uBTluRZPiYu3.jpg",
-              "plot": "Leighton and Amanda show Jason his groundbreaking invention. Daniela and Jason2 throw a dinner party.",
-              "duration": 3180,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ovSSE8DjAWsVlI3uBTluRZPiYu3.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Corridor",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1HPXVsf4VVLOLGT7J768LKsmI4a.jpg",
-              "plot": "Jason and Amanda fight to stay alive in the dangerous Corridor. Jason2 makes some life changes and visits an old friend.",
-              "duration": 3780,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1HPXVsf4VVLOLGT7J768LKsmI4a.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Worldless",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vBAi4tIHSYLiEBL3L1XGIublBNf.jpg",
-              "plot": "As they learn more about the Box, Jason and Amanda see alternate versions of their lives. Jason2 begins training a potential investor.",
-              "duration": 3540,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vBAi4tIHSYLiEBL3L1XGIublBNf.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Superposition",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/403D3xWsC7yQQaeV1EJF3R6iiCZ.jpg",
-              "plot": "Daniela suspects something's not right with her husband. Jason and Amanda grow closer.",
-              "duration": 3480,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/403D3xWsC7yQQaeV1EJF3R6iiCZ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "In the Fires of Dead Stars",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2KHUbO3DrLjtoHzX2o1sbPm22yz.jpg",
-              "plot": "Jason and Amanda visit a breathtaking world. To hide the truth from Daniela, Jason2 takes desperate action.",
-              "duration": 3300,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2KHUbO3DrLjtoHzX2o1sbPm22yz.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Jupiter",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9t6UGyGDiQoQosJdgNxJekAz1WN.jpg",
-              "plot": "Panicked and cornered, Jason2 tells Daniela and Charlie they need to leave town immediately.",
-              "duration": 3060,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9t6UGyGDiQoQosJdgNxJekAz1WN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Entanglement",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vPF7XksXz8DIS2FJF31SZ1f3XRR.jpg",
-              "plot": "The Dessens' world comes crashing down.",
-              "duration": 3720,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vPF7XksXz8DIS2FJF31SZ1f3XRR.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   },
   {
-    "name": "Foundation",
+    "name": "Emancipation",
+    "category": "\ud83c\udd34",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/s9sUK1vAaOcxJfKzNTszrNkPhkH.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/1jZ3wNpON50whGEH7YOcTQrU45B.jpg",
+      "plot": "Inspired by the gripping true story of a man who would do anything for his family\u2014and for freedom. When Peter, an enslaved man, risks his life to escape and return to his family, he embarks on a perilous journey of love and endurance.",
+      "director": [
+        "Antoine Fuqua"
+      ],
+      "cast": [
+        "Will Smith",
+        "Ben Foster",
+        "Charmaine Bingwa",
+        "Gilbert Owuor",
+        "Ronnie Gene Blevins",
+        "Aaron Moten"
+      ],
+      "trailer": "C3yHUpR7yv8",
+      "rating": "7.8",
+      "year": "2022"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Eternity",
+    "category": "\ud83c\udd34",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/o8pg20G67BGmQvRkXwstNre062J.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/fuacZLpnohQtLD0AhtCErcPVL98.jpg",
+      "plot": "In an afterlife where souls have one week to decide where to spend eternity, Joan is faced with the impossible choice between the man she spent her life with and her first love, who died young and has waited decades for her to arrive.",
+      "director": [
+        "David Freyne"
+      ],
+      "cast": [
+        "Elizabeth Olsen",
+        "Miles Teller",
+        "Callum Turner",
+        "Da'Vine Joy Randolph",
+        "John Early",
+        "Barry Primus"
+      ],
+      "trailer": "GzkoY6hUvQQ",
+      "rating": "7.0",
+      "year": "2025"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "The Family Plan",
     "category": "\ud83c\udd35",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/tg9I5pOY4M9CKj8U0cxVBTsm5eh.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/7NNNXo0qG2SqH4JoG7GPvJ2hzes.jpg",
-      "plot": "Follow a band of exiles on their monumental journey to save humanity and rebuild civilization amid the fall of the Galactic Empire.",
-      "rating": "7.7",
-      "genre": [
-        "sci-fi & fantasy",
-        "drama"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/jLLtx3nTRSLGPAKl4RoIv1FbEBr.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/arNhhBd88bP3Bjoe4HT8MFE1JQA.jpg",
+      "plot": "Dan Morgan is many things: a devoted husband, a loving father, a celebrated car salesman. He's also a former assassin. And when his past catches up to his present, he's forced to take his unsuspecting family on a road trip unlike any other.",
+      "director": [
+        "Simon Cellan Jones"
       ],
       "cast": [
-        "Jared Harris",
-        "Lee Pace",
-        "Lou Llobell",
-        "Laura Birn",
-        "Cassian Bilton"
-      ]
+        "Mark Wahlberg",
+        "Michelle Monaghan",
+        "Maggie Q",
+        "Zoe Colletti",
+        "Van Crosby",
+        "Ciar\u00e1n Hinds"
+      ],
+      "trailer": "ns8weNznn1Y",
+      "rating": "7.2",
+      "year": "2023"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/l0yRJT7DjMd7WA3Qos9dJpkHDUx.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Follow a band of exiles on their monumental journey to save humanity and rebuild civilization amid the fall of the Galactic Empire.",
-          "year": "2021",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "The Emperor's Peace",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eYwAsUtxMxyGv1qJ9asMftaqjUE.jpg",
-              "plot": "Gaal Dornick leaves her life in Synnax behind when the galaxy's greatest mathematician, Hari Seldon, invites her to Trantor.",
-              "duration": 4200,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eYwAsUtxMxyGv1qJ9asMftaqjUE.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Preparing to Live",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uC0BRA2QgSKZnswPAdaw1u5UwWf.jpg",
-              "plot": "The Foundation makes the long journey to Terminus as Gaal and Raych grow closer. The Empire faces a difficult decision.",
-              "duration": 3720,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uC0BRA2QgSKZnswPAdaw1u5UwWf.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "The Mathematician's Ghost",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cU2elll7NKNGnXxmDPSFntlJnul.jpg",
-              "plot": "Brother Dusk reflects on his legacy as he prepares for ascension. The Foundation arrives on Terminus and finds a mysterious object.",
-              "duration": 3000,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cU2elll7NKNGnXxmDPSFntlJnul.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Barbarians at the Gate",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/k0sNoraOGogMPnzn68Ws973PtEN.jpg",
-              "plot": "Salvor faces off with an enemy of the Empire. Brothers Day and Dusk are at odds, while Brother Dawn wrestles with his truth.",
-              "duration": 2760,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/k0sNoraOGogMPnzn68Ws973PtEN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Upon Awakening",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dIjF3UqGq0Rqa0yJ6QpMQtpo3xu.jpg",
-              "plot": "A flashback reveals the origin of Gaal\u2019s conflict between faith and science. The standoff on Terminus takes an unfortunate turn.",
-              "duration": 3240,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dIjF3UqGq0Rqa0yJ6QpMQtpo3xu.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Death and the Maiden",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/v7E6LyZoEgNwtCwS2l17Q0irFZf.jpg",
-              "plot": "Brother Day meets Zephyr Halima\u2014a would-be leader who opposes the Empire. Brother Dusk grows suspicious of Brother Dawn.",
-              "duration": 3360,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/v7E6LyZoEgNwtCwS2l17Q0irFZf.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Mysteries and Martyrs",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xFFvPC2E2pvItVpz6VHdSD8WxJ1.jpg",
-              "plot": "The Anacreons and their hostages board the fabled Invictus warship. The bond between Brother Dawn and Azura intesifies.",
-              "duration": 2940,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xFFvPC2E2pvItVpz6VHdSD8WxJ1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Missing Piece",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lTr4e8NpKN60X3fd24FAxiY32WB.jpg",
-              "plot": "Brother Day embarks on a journey that no other Cleon has ever attempted. Salvor prepares to make the ultimate sacrifice to return home.",
-              "duration": 3420,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lTr4e8NpKN60X3fd24FAxiY32WB.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "The First Crisis",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oB5uoHXfPIFeDkmfSrHL8SdxAAS.jpg",
-              "plot": "On Terminus, Salvor witnesses how powerful the null field has become. Brother Dawn makes a daring choice.",
-              "duration": 3480,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oB5uoHXfPIFeDkmfSrHL8SdxAAS.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "The Leap",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tJXAQitxYZ4QjghdgDJrKPsbJUx.jpg",
-              "plot": "An unexpected ally helps Salvor broker an alliance. A confrontation between the Brothers leads to unthinkable consequences.",
-              "duration": 3600,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tJXAQitxYZ4QjghdgDJrKPsbJUx.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/1AZERr7KEJBpcchQ6vFcbUUC0Zw.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "More than a century after the events in the Season 1 finale, tension mounts throughout the galaxy. As the ruling dynasty begins to unravel, a young queen plots her revenge. Meanwhile, a colony of people with special abilities poses a new threat. And it\u2019s all leading toward a collision course for war.\u2028",
-          "year": "2023",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "In Seldon's Shadow",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tLNS2wdCSAFmPmunZo1P5WQg0Pi.jpg",
-              "plot": "Hari finds himself trapped in a mysterious prison. An assassination attempt leaves Day shaken. Gaal and Salvor devise an escape plan.",
-              "duration": 3000,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tLNS2wdCSAFmPmunZo1P5WQg0Pi.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "A Glimpse of Darkness",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hOF35xreGykyz32jsPCZQKiLXNB.jpg",
-              "plot": "Gaal has a disturbing vision. Day's bond with Queen Sareth grows stronger. The Vault opens and reveals a cryptic message.",
-              "duration": 3180,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hOF35xreGykyz32jsPCZQKiLXNB.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "King and Commoner",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vuUsc3ROf2fWWcQ1d5Zonm85KmE.jpg",
-              "plot": "The Empire recruits Bel Riose to investigate the resurgent Foundation. Hari leads Gaal and Salvor to a desert planet.",
-              "duration": 3240,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vuUsc3ROf2fWWcQ1d5Zonm85KmE.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Where the Stars Are Scattered Thinly",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4yMVqiszhhX38NetKQCKEijcHnq.jpg",
-              "plot": "Queen Sareth and Dawn share a moment as she tries to learn more about Day. Brothers Constant and Poly bring Hober Mallow to Terminus.",
-              "duration": 3180,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4yMVqiszhhX38NetKQCKEijcHnq.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "The Sighted and the Seen",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/53dsfLChOJKy6Nq7ujzPvCf1wM1.jpg",
-              "plot": "Gaal, Salvor, and Hari arrive on Ignis and meet the source of the strange signal they've been tracking. Dawn and Dusk are suspicious of Day.",
-              "duration": 2880,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/53dsfLChOJKy6Nq7ujzPvCf1wM1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Why the Gods Made Wine",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qH7tvEWcfvt6UrkJAw50cCx0lr7.jpg",
-              "plot": "Day and Queen Sareth make an announcement. Tellem sows seeds of distrust between Gaal and Hari. Hober Mallow reaches his destination.",
-              "duration": 3540,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qH7tvEWcfvt6UrkJAw50cCx0lr7.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "A Necessary Death",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9Q6kNbwsGUyircoQqe2lV6TnW4m.jpg",
-              "plot": "Salvor begins to question the Mentalics' motives. Hober Mallow\u2019s proposal to the Spacers meets resistance. Brothers Constant and Poly stand trial.",
-              "duration": 3240,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9Q6kNbwsGUyircoQqe2lV6TnW4m.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Last Empress",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6GYAXHmylEJY2K3Oeqgux7CO89J.jpg",
-              "plot": "Enjoiner Rue confides in Dusk about her distrust of Demerzel. Hober Mallow pulls a daring move. Day sets course for Terminus and the Foundation.",
-              "duration": 3660,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6GYAXHmylEJY2K3Oeqgux7CO89J.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Long Ago, Not Far Away",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/TdUee5ZozmAkQYIW3vguNOLy5u.jpg",
-              "plot": "Dusk and Enjoiner Rue learn Demerzel's origin and true purpose. Tellem's plans for Gaal take a dark turn. On Terminus, Day confronts Dr. Seldon.",
-              "duration": 3720,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/TdUee5ZozmAkQYIW3vguNOLy5u.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Creation Myths",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rDBBUToa28804yhpI5A1Qlu0E6P.jpg",
-              "plot": "Gaal, Salvor, and Hari chart a new path forward on Ignis. Demerzel heads to Trantor, taking actions that will change Empire forever.",
-              "duration": 3240,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rDBBUToa28804yhpI5A1Qlu0E6P.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 3,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/tg9I5pOY4M9CKj8U0cxVBTsm5eh.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "152 years after the events of season two, The Foundation has become increasingly established far beyond its humble beginnings while the Cleonic Dynasty's Empire has dwindled. As both of these galactic powers forge an uneasy alliance, a threat to the entire galaxy appears in the fearsome form of a warlord known as \"The Mule,\" whose sights are set on ruling the universe by use of physical and military force as well as mind control. It\u2019s anyone's guess who will win, who will lose, who will live and who will die as Hari Seldon, Gaal Dornick, the Cleons and Demerzel play a potentially deadly game of intergalactic chess.",
-          "year": "2025",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "A Song for the End of Everything",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9YXWjKj6SDCaE3SaWbyfjjrPJIt.jpg",
-              "plot": "A mysterious new pirate with terrifying abilities\u2014known as the Mule\u2014catches the attention of the Foundation and Empire.",
-              "duration": 3120,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9YXWjKj6SDCaE3SaWbyfjjrPJIt.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Shadows in the Math",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wJGsaCKAQYwSnD972hWsPKTn13W.jpg",
-              "plot": "Gaal and Hari advance their plans on Ignis. Empire grapples with an unforeseen prediction. Pritcher enlists help to investigate the Mule.",
-              "duration": 2940,
-              "rating": "5.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wJGsaCKAQYwSnD972hWsPKTn13W.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "When a Book Finds You",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1NAH40bTLHuAPNdpRK9TRdhFEsG.jpg",
-              "plot": "An unexpected alliance is formed. Pritcher, Bayta, and Toran come face-to-face with the Mule. Demerzel seeks spiritual guidance.",
-              "duration": 3060,
-              "rating": "5.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1NAH40bTLHuAPNdpRK9TRdhFEsG.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Stress of Her Regard",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fwTUbKEki6eO6z6zIPkvrUbQpjd.jpg",
-              "plot": "Demerzel struggles with the paradox of her programming. Pritcher's true loyalties are revealed. Day sets off on a quest for answers.",
-              "duration": 2940,
-              "rating": "5.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fwTUbKEki6eO6z6zIPkvrUbQpjd.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Where Tyrants Spend Eternity",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4243bk9E9odifNWS8HNJCWiGfiO.jpg",
-              "plot": "Day enters uncharted territory. Dawn and Gaal put their plan in motion. Magnifico's worth becomes clear. Demerzel attempts to restore power.",
-              "duration": 2820,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4243bk9E9odifNWS8HNJCWiGfiO.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Shape of Time",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vnGCFHmCWi4jimCF78mZpOsK2tb.jpg",
-              "plot": "A long-awaited reunion turns violent. Day looks for Song. On New Terminus, the Vault opens\u2014and the Mule takes aim.",
-              "duration": 2700,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vnGCFHmCWi4jimCF78mZpOsK2tb.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Foundation's End",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ka66SFrROXRhnyJeMjBE5jZHGp8.jpg",
-              "plot": "Chaos and destruction rain down on New Terminus. Back on Trantor, Dusk and Quent unite to assess the state of the galaxy.",
-              "duration": 3600,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ka66SFrROXRhnyJeMjBE5jZHGp8.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Skin in the Game",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hBNYVvVkU1mMgJh5Do7ol8Ck4gi.jpg",
-              "plot": "Gaal and the Second Foundation reckon with the fall of New Terminus. Day faces judgment on Mycogen. Dusk's ascension looms.",
-              "duration": 2820,
-              "rating": "6.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hBNYVvVkU1mMgJh5Do7ol8Ck4gi.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "The Paths That Choose Us",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6fmWveBPYdcAKxMT7tEGVZLvYJx.jpg",
-              "plot": "Gaal confronts the power of the Mule's conversions. Dusk resorts to drastic measures. Demerzel searches for clarity about the future.",
-              "duration": 2820,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6fmWveBPYdcAKxMT7tEGVZLvYJx.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "The Darkness",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eFNDKhD0uNFH04yAXjVoNnyoWdR.jpg",
-              "plot": "Gaal and the Second Foundation take the fight to the Mule as Empire's legacy suffers a catastrophic blow.",
-              "duration": 3120,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eFNDKhD0uNFH04yAXjVoNnyoWdR.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   },
   {
-    "name": "Hijack",
-    "category": "\ud83c\udd37",
+    "name": "The Family Plan 2",
+    "category": "\ud83c\udd35",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/2C51clnxQdiqPDeqQlXcUx70hse.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/aRZ7k1M3AdjVv8n3Fi6cAkEdpYY.jpg",
-      "plot": "Expert negotiator Sam Nelson is in for the ride of his life\u2014and so is everyone on board with him\u2014after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
-      "rating": "7.6",
-      "genre": [
-        "drama"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/semFxuYx6HcrkZzslgAkBqfJvZk.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/7nAVXGHHtaNcdsqvDXmY6R9N0fG.jpg",
+      "plot": "Now that Dan's assassin days are behind him, all he wants for Christmas is quality time with his kids. But when he learns his daughter has her own plans, he books a family trip to London\u2014putting them all in the crosshairs of an unexpected enemy.",
+      "director": [
+        "Simon Cellan Jones"
       ],
       "cast": [
-        "Idris Elba",
-        "Christine Adams",
-        "Albrecht Schuch",
-        "Christian N\u00e4the",
-        "Clare-Hope Ashitey"
-      ]
+        "Mark Wahlberg",
+        "Michelle Monaghan",
+        "Kit Harington",
+        "Zoe Colletti",
+        "Van Crosby",
+        "Theodore Lindsey"
+      ],
+      "trailer": "dqolYtJGuf4",
+      "rating": "6.5",
+      "year": "2025"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lLFIaNuiptWMd9QZzJI3Ku8moVM.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2023",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Final Call",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gIzSsyW2DAxIssSv3Qk6qd8FCkW.jpg",
-              "plot": "Sam Nelson gets on a flight to London hoping to win back his ex-wife, but something on board feels wrong\u2014and his suspicions are confirmed.",
-              "duration": 2760,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gIzSsyW2DAxIssSv3Qk6qd8FCkW.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "3 Degrees",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7o0b41bEX3kq6jvXkf8V8ZiqtGe.jpg",
-              "plot": "Spotting an opportunity, Sam executes a plan to get a covert message to authorities on the ground.",
-              "duration": 2640,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7o0b41bEX3kq6jvXkf8V8ZiqtGe.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Draw a Blank",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nfvs5t9ZhNdqGzM9xy1x690qQCu.jpg",
-              "plot": "As the UK\u2019s counterterrorism unit learns of Flight KA29, Sam gets involved in a risky plan to take on the hijackers.",
-              "duration": 2880,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nfvs5t9ZhNdqGzM9xy1x690qQCu.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Not Responding",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lBYdBUUE02droTsU9m7sPrAMNZ.jpg",
-              "plot": "An incident team in Westminster scrambles to intercept fighter jets. Sam tries contacting the ground once more when a hijacker is injured.",
-              "duration": 2700,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lBYdBUUE02droTsU9m7sPrAMNZ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Less Than an Hour",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oj1owiW7T9aFvcbkLwFjI4XMTsI.jpg",
-              "plot": "Sam attempts to convince the hijackers to land the plane. A list of demands reveals who\u2019s behind the hijacking.",
-              "duration": 2760,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oj1owiW7T9aFvcbkLwFjI4XMTsI.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Comply Slowly",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zfoX4Mt6BUeWlq7wb8N9fM9Tcdo.jpg",
-              "plot": "Faced with an impossible decision, the passengers ready themselves for a fight.",
-              "duration": 3060,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zfoX4Mt6BUeWlq7wb8N9fM9Tcdo.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Brace Brace Brace",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/f45gWvRxuIwBQOdG6uJxNzDPb9d.jpg",
-              "plot": "A new threat emerges on board as Sam struggles to control the chaos unfolding around him.",
-              "duration": 3120,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/f45gWvRxuIwBQOdG6uJxNzDPb9d.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/2C51clnxQdiqPDeqQlXcUx70hse.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In the second season, a Berlin underground train and its commuters are taken hostage, while authorities scramble to save hundreds of lives. Sam Nelson is at the heart of the crisis on board, where one wrong decision could spell disaster.",
-          "year": "2026",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Signal",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/siwv9ppq5RB0LC0JQHsZ7TNFtuo.jpg",
-              "plot": "Two years after Flight KA29's hijacking, Sam Nelson is thrust into another life-threatening ordeal\u2014but this time it's personal.",
-              "duration": 2580,
-              "rating": "5.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/siwv9ppq5RB0LC0JQHsZ7TNFtuo.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Control",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fZH41wZyEcm1NG9Suh7U8dofidI.jpg",
-              "plot": "Sam urges Otto to keep his cool as passengers begin to suspect something is wrong. Police Chief Winter races to mount a response.",
-              "duration": 2760,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fZH41wZyEcm1NG9Suh7U8dofidI.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Baggage",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iru58j4Jnu2waZOibP82dqQigkD.jpg",
-              "plot": "Berlin police scramble to contain the situation. Sam pressures Winter to meet his demands. Marsha discovers she's being watched.",
-              "duration": 3300,
-              "rating": "6.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iru58j4Jnu2waZOibP82dqQigkD.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Switch",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jA8I0fAdgcx8JbtgI1E5gQOCQKD.jpg",
-              "plot": "A shocking turn of events forces Sam to make a gesture of good faith. In London, Daniel calls on a friend to help look into what's happening in Berlin.",
-              "duration": 2700,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jA8I0fAdgcx8JbtgI1E5gQOCQKD.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Outage",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5GyxB9WJoUCXR2r2K4MioCPWQ7E.jpg",
-              "plot": "Anger and frustration among the passengers begin to boil over\u2014just as Sam comes to a frightening realization.",
-              "duration": 2400,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5GyxB9WJoUCXR2r2K4MioCPWQ7E.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Junction",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pTRmId8cx2EJgTX0LezDgqD3EDW.jpg",
-              "plot": "To avoid further disaster, Sam must work with an unlikely ally. The enemy closes in on Marsha as Zahra and Daniel fear they've reached a dead end.",
-              "duration": 2640,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pTRmId8cx2EJgTX0LezDgqD3EDW.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Contact",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/g3hxstaJeFMwmbUlV8fGs7bZ0zv.jpg",
-              "plot": "Sam gambles on a dangerous tactic in hopes of outsmarting the police. Armed with new intel, Olivia tries to influence Winter's next move.",
-              "duration": 2640,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/g3hxstaJeFMwmbUlV8fGs7bZ0zv.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Terminal",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3ISI61Eqvvmud4S6LRyE0kb5LBV.jpg",
-              "plot": "With the handover imminent, Sam is prepared to put his life on the line to save Marsha\u2014and expose the truth.",
-              "duration": 3000,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3ISI61Eqvvmud4S6LRyE0kb5LBV.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   },
   {
-    "name": "The Morning Show",
-    "category": "\ud83c\udd3c",
+    "name": "Finch",
+    "category": "\ud83c\udd35",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/y9x2R87yt2U616736NJrP0d56dt.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/uMsTtNaUEWOE2q64m8zthBIMgen.jpg",
-      "plot": "A behind-the-scenes look at the lives of the people who help America wake up in the morning, exploring the unique challenges faced by the men and women who carry out this daily televised ritual.",
-      "rating": "7.7",
-      "genre": [
-        "drama"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/eEJtzD1F05xDipFEDY98CTH5yZn.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/uoc358GH6Yl7TufbUKHkETPu64B.jpg",
+      "plot": "On a post-apocalyptic Earth, a robot, built to protect the life of his dying creator's beloved dog, learns about life, love, friendship, and what it means to be human.",
+      "director": [
+        "Miguel Sapochnik"
       ],
       "cast": [
-        "Jennifer Aniston",
-        "Reese Witherspoon",
-        "Billy Crudup",
-        "Mark Duplass",
-        "Karen Pittman"
-      ]
-    },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/qnKGIa6MsLIhze1znD0HLriqmxv.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2019",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "In the Dark Night of the Soul It's Always 3:30 in the Morning",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/LLA11omdJMR2fFSK37OyRarwyl.jpg",
-              "plot": "America's favorite morning news show is thrown into crisis when it becomes the news.",
-              "duration": 3780,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/LLA11omdJMR2fFSK37OyRarwyl.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "A Seat at the Table",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/35zwk4QrmD0kfqNkF5cX86WmPdK.jpg",
-              "plot": "Alex engages in contract negotiations as she prepares to accept an award. Bradley is courted for a new opportunity.",
-              "duration": 3300,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/35zwk4QrmD0kfqNkF5cX86WmPdK.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Chaos Is the New Cocaine",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aQnUtJyha1kNLZwtzkOZYZedh4Y.jpg",
-              "plot": "In a weekend of turmoil, TMS scrambles to prepare for its new future.",
-              "duration": 3180,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aQnUtJyha1kNLZwtzkOZYZedh4Y.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "That Woman",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4cAbe8KbuvwXeiv4ZJxYfJFuHf1.jpg",
-              "plot": "TMS experiences severe growing pains as it embarks on a new era.",
-              "duration": 3000,
-              "rating": "8.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4cAbe8KbuvwXeiv4ZJxYfJFuHf1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "No One's Gonna Harm You, Not While I'm Around",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7D2IPXDpqkZvb3jlB3NUlZX8DRc.jpg",
-              "plot": "A looming article threatens to upend the TMS power structure.",
-              "duration": 3840,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7D2IPXDpqkZvb3jlB3NUlZX8DRc.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Pendulum Swings",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zOWvzG2dEsbDe4Vpvyji8dypX1r.jpg",
-              "plot": "TMS covers the California wildfires, while Alex and Bradley struggle to keep their relationship from going up in flames.",
-              "duration": 3360,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zOWvzG2dEsbDe4Vpvyji8dypX1r.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Open Waters",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vhLWMrEyI301YBXCe4su5gFAVUu.jpg",
-              "plot": "Bradley is presented with an opportunity that could jeopardize her tenuous, newfound bond with Alex. Meanwhile, Jason and Alex share the news about their divorce with their daughter Lizzy, which she understandably doesn't take too well.",
-              "duration": 3420,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vhLWMrEyI301YBXCe4su5gFAVUu.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Lonely at the Top",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qdbToqS5m2pCXUKtH7jqtJmx8n7.jpg",
-              "plot": "TMS celebrates the birthday of one of their own as the country struggles with a tragic event.",
-              "duration": 3660,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qdbToqS5m2pCXUKtH7jqtJmx8n7.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Play the Queen",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gO8stHiBwm3jn45OuQZVkpX7YK2.jpg",
-              "plot": "New alliances are formed and old bonds are revived as TMS is forced to reckon with its past.",
-              "duration": 3600,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gO8stHiBwm3jn45OuQZVkpX7YK2.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "The Interview",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8mDAIuphLCPkUgxe1ZvAcQUa3Wb.jpg",
-              "plot": "TMS faces a fateful day as a plan to shake up UBA is set in motion.",
-              "duration": 3960,
-              "rating": "8.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8mDAIuphLCPkUgxe1ZvAcQUa3Wb.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/jKjbVTNKXrC2yFdy1xQxpPOiXjI.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Picking up after the explosive events of season one, season two finds \"The Morning Show\" team emerging from the wreckage of Alex and Bradley's actions, to a new UBA and a world in flux, where identity is everything and the chasm between who we present as and who we really are comes into play.",
-          "year": "2021",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "My Least Favorite Year",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hPLPPp6KhPQJy58WbxDe8lHb2Ej.jpg",
-              "plot": "Controversy and betrayal strike TMS as a new year approaches. Alex faces a difficult decision.",
-              "duration": 3180,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hPLPPp6KhPQJy58WbxDe8lHb2Ej.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "It's Like the Flu",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/p7oQkhVIk0yy7qFcuHQdTQnHjF2.jpg",
-              "plot": "Stars struggle to accept new roles. The TMS crew comes together for an important dinner.",
-              "duration": 3120,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/p7oQkhVIk0yy7qFcuHQdTQnHjF2.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Laura",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4EbdhmqFv1rTcCILLKSyk9oLmsl.jpg",
-              "plot": "Bradley covers the start of campaign season while Alex prepares for her big moment.",
-              "duration": 3180,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4EbdhmqFv1rTcCILLKSyk9oLmsl.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Kill the Fatted Calf",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/opiT8Qu9f2eQUyo8nE8Bl9RT7vg.jpg",
-              "plot": "A potential tabloid leak creates moral complications. A debate-moderator role becomes hotly contested.",
-              "duration": 3420,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/opiT8Qu9f2eQUyo8nE8Bl9RT7vg.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Ghosts",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ypnMWwkU1GSSqVw2nZCyMUntUIN.jpg",
-              "plot": "The UBA team head to Vegas, where past misdeeds continue to haunt them.",
-              "duration": 3300,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ypnMWwkU1GSSqVw2nZCyMUntUIN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "A Private Person",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5WesHVha6WvJEfHdinMYOFJQ3Tk.jpg",
-              "plot": "TMS welcomes a new face. Bradley gets a surprise visit.",
-              "duration": 3240,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5WesHVha6WvJEfHdinMYOFJQ3Tk.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "La Amara Vita",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lNa2gEkb4gSJxhc8Lf76Wby0qhs.jpg",
-              "plot": "Alex takes a trip to finally find closure.",
-              "duration": 3060,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lNa2gEkb4gSJxhc8Lf76Wby0qhs.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Confirmations",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sSm7oNOc2xo2K2WI2a6qIxmyt0L.jpg",
-              "plot": "TMS races to report an unconfirmed story.",
-              "duration": 3360,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sSm7oNOc2xo2K2WI2a6qIxmyt0L.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Testimony",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/p8QO6MagM2PVzUB6AZRRJZbhq00.jpg",
-              "plot": "Alex and Bradley try to accept change as a new book promises shocking revelations.",
-              "duration": 3480,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/p8QO6MagM2PVzUB6AZRRJZbhq00.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Fever",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7oArsNe9z2IiJLREsvPuRQK3aDG.jpg",
-              "plot": "TMS covers a growing crisis that turns personal for Alex and Bradley.",
-              "duration": 3660,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7oArsNe9z2IiJLREsvPuRQK3aDG.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 3,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/oTfAheayTCWoselYuty8D6Lem2t.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "The future of the network is thrown into question and loyalties are pushed to the brink when a tech titan takes an interest in UBA. Unexpected alliances form, private truths are weaponized and everyone is forced to confront their core values both in and out of the newsroom.",
-          "year": "2023",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "The K\u00e1rm\u00e1n Line",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9FB7WFFj2HG8LFXS9z197p4mCzf.jpg",
-              "plot": "A bold proposal to shore up a financially-challenged UBA meets with opposition, as Alex and Bradley discover their autonomy has limits.",
-              "duration": 3300,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9FB7WFFj2HG8LFXS9z197p4mCzf.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Ghost in the Machine",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uZiGl6LOMlZ2mz4IQu09GkwI9m8.jpg",
-              "plot": "Technical difficulties provoke chaos at UBA. Buried secrets surface as Alex forms a surprising alliance.",
-              "duration": 3000,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uZiGl6LOMlZ2mz4IQu09GkwI9m8.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "White Noise",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rXVZdMfUSDxHP7kD65fFTmjw0bM.jpg",
-              "plot": "When a contract negotiation becomes public, the old and new guards clash. Chris takes center stage.",
-              "duration": 3240,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rXVZdMfUSDxHP7kD65fFTmjw0bM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Green Light",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lBFlHwQ5PD4HFJXO1IQYB2p4TpM.jpg",
-              "plot": "The UBA Upfront brings everyone together for a party in the Hamptons. Bradley and Alex each revisit a problematic relationship.",
-              "duration": 3180,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lBFlHwQ5PD4HFJXO1IQYB2p4TpM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Love Island",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bhJShVW4gBW6z0rqqWRwnC6gAJt.jpg",
-              "plot": "Unexpected connections emerge while the world is in lockdown.",
-              "duration": 3240,
-              "rating": "6.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bhJShVW4gBW6z0rqqWRwnC6gAJt.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Stanford Student",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lcPSpEzolEoePyWjNhaqO0LFLEZ.jpg",
-              "plot": "A pivotal interview complicates the Hyperion-UBA deal. Stella debates whether to reveal her history with Paul.",
-              "duration": 3300,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lcPSpEzolEoePyWjNhaqO0LFLEZ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Strict Scrutiny",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kTtOw2tAoDthGsfscMMhAQdH6Tf.jpg",
-              "plot": "Harsh reality collides with an opulent night celebrating fashion. Cory and Bradley visit a crucial player in the potential sale of UBA.",
-              "duration": 3240,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kTtOw2tAoDthGsfscMMhAQdH6Tf.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "DNF",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xK5uUsPkMsK2ObX3sKZb6TZEx8J.jpg",
-              "plot": "Alex and Chip disagree on how to manage rumors about her private life. Bradley begins an investigation that could upend the deal.",
-              "duration": 3300,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xK5uUsPkMsK2ObX3sKZb6TZEx8J.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Update Your Priors",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/n4Zbi9tRiFFOJwsLMs9e4CiM247.jpg",
-              "plot": "A line is drawn as Alex and Bradley are forced to choose sides. Cory scrambles for stable ground.",
-              "duration": 2820,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/n4Zbi9tRiFFOJwsLMs9e4CiM247.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "The Overview Effect",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zUJPF8SBWp2uBjmIejAscgwH4HQ.jpg",
-              "plot": "The Hyperion-UBA deal comes to a vote. Bradley faces her past as Alex considers her future in the new world order.",
-              "duration": 3420,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zUJPF8SBWp2uBjmIejAscgwH4HQ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 4,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/y9x2R87yt2U616736NJrP0d56dt.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In spring 2024, almost two years after the events of season three and with the UBA-NBN merger complete, the newsroom must grapple with newfound responsibility, hidden motives and the elusive nature of truth in a polarized America. In a world rife with deepfakes, conspiracy theories and corporate cover-ups \u2014 who can you trust? And how can you know what's actually real?",
-          "year": "2025",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "My Roman Empire",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/k0rofYvHdMnSD7XMUqp50bmsJzG.jpg",
-              "plot": "As UBN prepares for the 2024 Games in Paris, an unexpected crisis throws the network into chaos.",
-              "duration": 3360,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/k0rofYvHdMnSD7XMUqp50bmsJzG.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "The Revolution Will Be Televised",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vWTICw2shIoRq1pqCh49ATVfHLr.jpg",
-              "plot": "Alex fights to prove her innocence. A ghost from the network's past surfaces with a disturbing story.",
-              "duration": 3120,
-              "rating": "6.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vWTICw2shIoRq1pqCh49ATVfHLr.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Tipping Point",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uVLOfC5L2097WROMQzr7jNm5bjN.jpg",
-              "plot": "Alex is blindsided by a surprise reunion when she attends a conference on climate change. Bradley meets her source. Mia interviews for a promotion.",
-              "duration": 2880,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uVLOfC5L2097WROMQzr7jNm5bjN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Love the Questions",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9HumJHKmkZCYiLTqcXWVVidDFrW.jpg",
-              "plot": "A breaking news story pushes the understaffed TMS crew to the brink.",
-              "duration": 2820,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9HumJHKmkZCYiLTqcXWVVidDFrW.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Amari",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hxLw9gYNZdBlb8nS40TjU5gtiIT.jpg",
-              "plot": "Chris confronts her past as online rumors swirl. Mia devises a new strategy.",
-              "duration": 3480,
-              "rating": "5.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hxLw9gYNZdBlb8nS40TjU5gtiIT.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "If Then",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1fteommq15iOBJvzAD9fnPSwu6f.jpg",
-              "plot": "Stella prepares for a make-or-break 2024 Games presentation during tense talent negotiations.",
-              "duration": 3360,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1fteommq15iOBJvzAD9fnPSwu6f.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Person of Interest",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kEr7q8Nm8CA11LeGVt2zDeQCHNG.jpg",
-              "plot": "Yanko and Bradley's loyalties are tested when Claire resurfaces.",
-              "duration": 3240,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kEr7q8Nm8CA11LeGVt2zDeQCHNG.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Parent Trap",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hHHT4HQYiGkipMSNz51C5xMSy3D.jpg",
-              "plot": "Alex and Cory confront the meaning of legacy. Bradley's investigation takes a dangerous new turn.",
-              "duration": 2820,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hHHT4HQYiGkipMSNz51C5xMSy3D.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Un Bel Di",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7YocMvYhR9v3c5a5jgeAvvsxgkF.jpg",
-              "plot": "A night at the opera provides cover for a secret rendezvous.",
-              "duration": 2700,
-              "rating": "5.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7YocMvYhR9v3c5a5jgeAvvsxgkF.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Knowing Violation",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aWdYmBdrl1ipTMS3uxqfkYzhlBW.jpg",
-              "plot": "Alex lays everything on the line to bring Bradley home.",
-              "duration": 3360,
-              "rating": "6.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aWdYmBdrl1ipTMS3uxqfkYzhlBW.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Pluribus",
-    "category": "\ud83c\udd3f",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/z7Nga7Q9IGFWs5OEduY2gGFxnX3.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/ulm1ex4JFYJByyaPyqTr47MFyEQ.jpg",
-      "plot": "The most miserable person on Earth must save the world from happiness.",
-      "rating": "7.9",
-      "genre": [
-        "drama",
-        "sci-fi & fantasy"
+        "Tom Hanks",
+        "Caleb Landry Jones",
+        "Oscar Avila",
+        "Lora Martinez-Cunningham",
+        "Marie Wagenman",
+        "Emily Jones"
       ],
-      "cast": [
-        "Rhea Seehorn",
-        "Karolina Wydra",
-        "Carlos-Manuel Vesga"
-      ]
-    },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/nrM2xFUfKJJEmZzd5d7kohT2G0C.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Pluribus follows Albuquerque author Carol Sturka, who is one of only 13 people in the world immune to the effects of the \"Joining\", an event in which an extraterrestrial virus transformed the rest of humanity into a peaceful and content hive mind known as the \"Others\". The hive mind happily accommodates the wishes of those who remain unaffected, but admits that it will ultimately seek to assimilate them when it learns how to do so. Carol is adamantly against their efforts as she searches for a way to reverse the Joining.",
-          "year": "2025",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "We Is Us",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5abqAAPKjFDqmNwLb0sCtGlS8aj.jpg",
-              "plot": "An astronomer's discovery turns the planet upside down. Carol Sturka, a curmudgeonly novelist, is terrified by this strange new world.",
-              "duration": 3420,
-              "rating": "8.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5abqAAPKjFDqmNwLb0sCtGlS8aj.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Pirate Lady",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3uTzBoc6zkcKRexqB6nEhQYOglb.jpg",
-              "plot": "A curiously familiar face introduces Carol to the bizarre new normal. A gathering in Europe brings strangers together...and causes friction.",
-              "duration": 3780,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3uTzBoc6zkcKRexqB6nEhQYOglb.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Grenade",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/b2PaM8KcHLS2TIwQOyTSyiIn9FF.jpg",
-              "plot": "The World just wants to help\u2014which infuriates Carol. A heart-to-heart conversation ends with a bang.",
-              "duration": 2640,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/b2PaM8KcHLS2TIwQOyTSyiIn9FF.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Please, Carol",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7HyFmXC7ydtA4aKzlimCPGLcdxJ.jpg",
-              "plot": "Carol tests the boundaries of this weirdly honest world at the expense of her ego. Far away, a resolute individual learns he's not alone.",
-              "duration": 2760,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7HyFmXC7ydtA4aKzlimCPGLcdxJ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Got Milk",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7dQXHMP7irZNis7erI8mHL3p8Ve.jpg",
-              "plot": "Carol doubles down on her investigation\u2014loneliness be damned. Meanwhile, howls in the night reveal a new source of danger.",
-              "duration": 2760,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7dQXHMP7irZNis7erI8mHL3p8Ve.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "HDP",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/u7RyWMcyi3Fhyr5UPlyYFuVJTYP.jpg",
-              "plot": "Carol shares a horrific discovery and learns new truths in the process. Mr. Diabat\u00e9 lives life to the fullest in Sin City.",
-              "duration": 3000,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/u7RyWMcyi3Fhyr5UPlyYFuVJTYP.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "The Gap",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kcIF01S5674EzsvwyNE2oY9Y65Q.jpg",
-              "plot": "Manousos begins a dangerous trek to meet Carol. Returning home from Las Vegas, Carol gets creative with her rebellion.",
-              "duration": 2760,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kcIF01S5674EzsvwyNE2oY9Y65Q.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Charm Offensive",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/d3uHwrDjnyfXv6Vradm88Xw2nV1.jpg",
-              "plot": "Carol takes a different tack with The Others and discovers more than she anticipated. Manousos awakens in unfamiliar surroundings.",
-              "duration": 2580,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/d3uHwrDjnyfXv6Vradm88Xw2nV1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "La Chica o El Mundo",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gykreh1ZKPlQDucTvrNOYf7Ccxp.jpg",
-              "plot": "Manousos arrives in Albuquerque and complications ensue. Carol visits the last best place on Earth.",
-              "duration": 3480,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gykreh1ZKPlQDucTvrNOYf7Ccxp.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Presumed Innocent",
-    "category": "\ud83c\udd3f",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/7MXg0BxuSRWz2yKc03M40du2mrc.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/dzsg5Akwfw1lsVoaPmvLcLSrKkh.jpg",
-      "plot": "A horrific murder upends the Chicago Prosecuting Attorney's Office when one of its own is suspected of the crime\u2014leaving the accused fighting to keep his family together.",
-      "rating": "7.9",
-      "genre": [
-        "drama",
-        "mystery"
-      ],
-      "cast": [
-        "Jake Gyllenhaal",
-        "Ruth Negga",
-        "Bill Camp",
-        "O-T Fagbenle",
-        "Chase Infiniti"
-      ]
-    },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6dDcbijeoXucCTlVUfWTTz99rOb.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2024",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Bases Loaded",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nG9kygKDYrbKM4gNreTaZk84tCQ.jpg",
-              "plot": "Chief deputy prosecutor Rusty Sabich is determined to investigate the horrific murder of his colleague Carolyn Polhemus.",
-              "duration": 2880,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nG9kygKDYrbKM4gNreTaZk84tCQ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "People vs. Rozat Sabich",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hQgUmyAwHWRYV6RyjBw7MwvNLKk.jpg",
-              "plot": "Tommy Molto continues to build his case as Raymond comes to Rusty's defense.",
-              "duration": 2820,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hQgUmyAwHWRYV6RyjBw7MwvNLKk.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Discovery",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/im6qJkB3hZndsN92CcTIJTx5C7s.jpg",
-              "plot": "Rusty learns of the evidence against him. Barbara looks to protect herself and her family as new secrets emerge.",
-              "duration": 2760,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/im6qJkB3hZndsN92CcTIJTx5C7s.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Burden",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wlYThH2FlhyAvGi7wibNM8cjfBJ.jpg",
-              "plot": "Kyle is confronted about his whereabouts the night of the murder. Tommy questions Carolyn's son when the case takes a complicated turn.",
-              "duration": 2760,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wlYThH2FlhyAvGi7wibNM8cjfBJ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Pregame",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1mR0aIzuTOdEZUzhlt9S9raWuvV.jpg",
-              "plot": "Raymond insists Rusty is innocent, but the weight of the looming trial pushes the Sabich family to its breaking point.",
-              "duration": 2640,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1mR0aIzuTOdEZUzhlt9S9raWuvV.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Elements",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1nVTENXKVan5VLlYRbyEyum7I88.jpg",
-              "plot": "The trial begins. Startling events inside the courtroom threaten to derail proceedings.",
-              "duration": 2760,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1nVTENXKVan5VLlYRbyEyum7I88.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "The Witness",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pkWW0OyEHtMHX1PnaYk0vaJTTkK.jpg",
-              "plot": "Rusty is forced to pivot his legal strategy. Tommy receives a disturbing message.",
-              "duration": 2760,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pkWW0OyEHtMHX1PnaYk0vaJTTkK.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Verdict",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kcJQGT2sUqnjfurajDaW0cdfX9D.jpg",
-              "plot": "The truth behind Carolyn's murder is revealed.",
-              "duration": 3180,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kcJQGT2sUqnjfurajDaW0cdfX9D.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Shantaram",
-    "category": "\ud83c\udd42",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6FZCmmAdszkEFLAoibEuJPDhW40.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/ayiJge5DPDaSXAjdzuTSFGWmjHn.jpg",
-      "plot": "Escaped convict Lin Ford flees to the teeming streets of 1980s Bombay, looking to disappear. Working as a medic for the city's poor and neglected, Lin finds unexpected love, connection, and courage on the long road to redemption.",
-      "rating": "7.4",
-      "genre": [
-        "crime",
-        "drama",
-        "action & adventure"
-      ],
-      "cast": [
-        "Charlie Hunnam",
-        "Shubham Saraf",
-        "Antonia Desplat",
-        "Elektra Jansson-Kilbey",
-        "Fayssal Bazzi"
-      ]
-    },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6FZCmmAdszkEFLAoibEuJPDhW40.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2022",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "The Three Nos",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sOIM80nSQYmzkBXoiAmyIMR44Mr.jpg",
-              "plot": "After escaping an Australian prison, Lin embraces a new life in India, where he soon becomes entangled in a web of love and deceit.",
-              "duration": 3600,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sOIM80nSQYmzkBXoiAmyIMR44Mr.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Down and Out",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bgkMIWSyZatOPzi5nbh24tTYzfz.jpg",
-              "plot": "A desperate Lin needs new documents as his friendship with Prabhu grows. Karla reveals Lisa's secret and wrestles with her feelings for Lin.",
-              "duration": 3120,
-              "rating": "6.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bgkMIWSyZatOPzi5nbh24tTYzfz.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Strange Bedfellows",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/AjHMrYuJywBy4zTEuYqep81zxMG.jpg",
-              "plot": "When a catastrophe hits Sagar Wada, Lin steps in as the community's doctor. Zhou's ambitions rise, and Khader pulls Lin into the fold.",
-              "duration": 3120,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/AjHMrYuJywBy4zTEuYqep81zxMG.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Bad Medicine",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jDUZ78XwiCUoLMTsYAYFo0yH10V.jpg",
-              "plot": "Lin finds his priorities pulled in two directions: the people of Sagar Wada and Khader's underground network.",
-              "duration": 3180,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jDUZ78XwiCUoLMTsYAYFo0yH10V.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "The Sin in the Crime",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/j7q6QDKQt85RyrtG58GEDzsR6qU.jpg",
-              "plot": "Tensions mount between Maurizio and Lin. Qasim Ali fears what Lin's friendship with Abdullah means. Meanwhile, Lin and Karla grow closer.",
-              "duration": 2880,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/j7q6QDKQt85RyrtG58GEDzsR6qU.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Dead Man Walking",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dN3YqRS2LvgqmNqKU3Fa9cfTywH.jpg",
-              "plot": "Kavita gets closer to discovering the truth about Lin. Modena ignores Lisa's warnings about Maurizio. Lin and Vikram attempt to save Didier.",
-              "duration": 3120,
-              "rating": "5.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dN3YqRS2LvgqmNqKU3Fa9cfTywH.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Apo Vai Pranah",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ciY7pJpVLgj3q1nJBt6ViFGwXI8.jpg",
-              "plot": "As cholera hits Sagar Wada, Lin tries to fight the outbreak. Khader gains leverage over Pandey, and Maurizio expands his business.",
-              "duration": 2760,
-              "rating": "4.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ciY7pJpVLgj3q1nJBt6ViFGwXI8.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Like in the Time of Cholera",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pyMCYyDEo2pST1AzXKHeDxmLw8F.jpg",
-              "plot": "Karla nurses a deliriously sick Lin back to health, complicating things between them even more. Lin seeks Khader's help, much to Qasim Ali's disdain.",
-              "duration": 3360,
-              "rating": "5.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pyMCYyDEo2pST1AzXKHeDxmLw8F.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Should I Stay or Should I Go",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nRPq8ACzpJAwM7la7bI7VhI68ef.jpg",
-              "plot": "Prabhu looks forward to a future with Parvati. Pandey's love for Sunita is tested. Kavita, Raheem, and Nightingale close in on Lin.",
-              "duration": 3480,
-              "rating": "4.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nRPq8ACzpJAwM7la7bI7VhI68ef.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Dig Two Graves",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rZe60F75czAYdhtIXdlNsxCCPMD.jpg",
-              "plot": "Lin's past catches up with him when Nightingale arrives. Later, Lin makes a shocking discovery. Karla offers Kavita information for the article.",
-              "duration": 2760,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rZe60F75czAYdhtIXdlNsxCCPMD.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 11,
-            "name": "Banquet of Consequences",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2EPw2s7H6shmPKl65dGQ8wM8WP1.jpg",
-              "plot": "Zhou initiates war. Khader tries to stop Kavita's article from printing. Maurizio seeks revenge. Lin says his goodbyes.",
-              "duration": 2640,
-              "rating": "6.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2EPw2s7H6shmPKl65dGQ8wM8WP1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 12,
-            "name": "All the Way from There Just to Get to Here",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sKgkDKD9w3zG5qiiWVmvTNuFJwo.jpg",
-              "plot": "Kavita's article goes to print, causing an all-out battle. Lin seizes an opportunity to escape.",
-              "duration": 3060,
-              "rating": "4.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sKgkDKD9w3zG5qiiWVmvTNuFJwo.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "name": "Shrinking",
-    "category": "\ud83c\udd42",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/zEFKMNPBKq6JG7uuDkzTQ9WwErn.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/hI9z1UuNhBthvkm3iJ8m3zv43Pf.jpg",
-      "plot": "Jimmy is struggling to grieve the loss of his wife while being a dad, friend, and therapist. He decides to try a new approach with everyone in his path: unfiltered, brutal honesty. Will it make things better\u2014or unleash uproarious chaos?",
+      "trailer": "-0bYWnP3jH4",
       "rating": "7.8",
-      "genre": [
-        "drama",
-        "comedy"
-      ],
-      "cast": [
-        "Jason Segel",
-        "Harrison Ford",
-        "Jessica Williams",
-        "Luke Tennie",
-        "Michael Urie"
-      ]
+      "year": "2021"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/jFUZebOjrjZfvg7ZSrc19GvTRTg.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2023",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Coin Flip",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mIl6yUHc7F1KVCWbK0I5TOo7I93.jpg",
-              "plot": "Jimmy, a therapist mourning his wife, takes a more proactive approach with his patients in the hopes that helping them will help himself.",
-              "duration": 2280,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mIl6yUHc7F1KVCWbK0I5TOo7I93.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Fortress of Solitude",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mM1qdH1lxctW7TY2w3Mw4sRrXlX.jpg",
-              "plot": "To get Sean out of legal trouble, Jimmy reconnects with his estranged best friend\u2014while trying to hide it all from Paul.",
-              "duration": 1920,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mM1qdH1lxctW7TY2w3Mw4sRrXlX.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Fifteen Minutes",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3MkSfbHjRRwTsEaGQxWwxwLNThw.jpg",
-              "plot": "Jimmy witnesses Gaby in a compromising situation. Paul advises Alice on how to deal with her grief while facing a loss of his own.",
-              "duration": 1860,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3MkSfbHjRRwTsEaGQxWwxwLNThw.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Potatoes",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jLeO41uWVj0AK26a7i3lrPzcmMB.jpg",
-              "plot": "As things spiral at work, Jimmy confronts Liz for interfering in his life. Paul struggles with whether to tell his daughter his diagnosis.",
-              "duration": 2040,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jLeO41uWVj0AK26a7i3lrPzcmMB.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Woof",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lLRi9NQrI2sXPDCoRgtO6bvqnUl.jpg",
-              "plot": "When Jimmy hits a roadblock with Sean, he doesn\u2019t have Paul to consult for advice. Brian makes an announcement about his relationship.",
-              "duration": 1800,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lLRi9NQrI2sXPDCoRgtO6bvqnUl.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Imposter Syndrome",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/10XDAjenLiTlXWaY1644IIHZecf.jpg",
-              "plot": "At Alice\u2019s urging, Jimmy agrees to host a party. Gaby struggles with her post-divorce libido. Liz recommends medical marijuana to Paul.",
-              "duration": 1800,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/10XDAjenLiTlXWaY1644IIHZecf.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Apology Tour",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2KEUNPwG1vMSoVyfelOUbZkKG4.jpg",
-              "plot": "Jimmy attempts damage control after his party. Paul\u2019s daughter pays another visit. Liz and Sean discover they have something in common.",
-              "duration": 1800,
-              "rating": "7.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2KEUNPwG1vMSoVyfelOUbZkKG4.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Boop",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oKdbvFmfbEgVA11HupqPeJfHsZb.jpg",
-              "plot": "Paul and Brian come to Jimmy\u2019s aid when Alice starts acting out. Liz and Sean support Gaby by accompanying her to an event.",
-              "duration": 1740,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oKdbvFmfbEgVA11HupqPeJfHsZb.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Moving Forward",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2HeyqVqzBOr6xtANa78qkrujuW3.jpg",
-              "plot": "Jimmy encourages an ambivalent Paul to accept a career achievement award. Sean approaches Liz with a business proposal.",
-              "duration": 2160,
-              "rating": "6.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2HeyqVqzBOr6xtANa78qkrujuW3.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Closure",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7Fgt8txB1aQy6f1MjTlE4ofAkYJ.jpg",
-              "plot": "As Brian's wedding approaches, Alice takes issue with how Jimmy is living his life. Liz learns a secret.",
-              "duration": 2040,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7Fgt8txB1aQy6f1MjTlE4ofAkYJ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/mLEBTTD3D3hjhpKMIzSjNi7nNGM.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Jimmy struggles with telling his daughter the truth about her mother's death, Paul faces worsening Parkinson's symptoms, and Gaby deals with her divorce, all while their personal and professional lives become more intertwined and complicated.",
-          "year": "2024",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Jimmying",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zOvQWIQ62fKJMxdJv5yncBGTL2K.jpg",
-              "plot": "Jimmy grapples with his guilt over Grace. Paul makes a decision about his relationship. Liz tries to help Gaby find balance in her busy life.",
-              "duration": 2040,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zOvQWIQ62fKJMxdJv5yncBGTL2K.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "I Love Pain",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4NfzutHGtN5y7yvhWy2htgwk9XO.jpg",
-              "plot": "Paul and Jimmy disagree about Sean's treatment plan. Gaby's sister asks for her help. Liz has an idea for boosting business at the food truck.",
-              "duration": 2040,
-              "rating": "6.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4NfzutHGtN5y7yvhWy2htgwk9XO.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Psychological Something-ism",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/r3O3rCf0TsISG4tYcWEW7Mg5Hge.jpg",
-              "plot": "Jimmy and Brian help Grace deal with unexpected news. Paul and Julie face her past. Liz worries she's come between Sean and his dad.",
-              "duration": 2100,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/r3O3rCf0TsISG4tYcWEW7Mg5Hge.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Made You Look",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wJiVozA9xLUqZOPDQoqO24M9JCY.jpg",
-              "plot": "Paul challenges Jimmy to show restraint with Sean. Derek introduces Gaby to a friend. Liz advises Brian about parenthood.",
-              "duration": 2160,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wJiVozA9xLUqZOPDQoqO24M9JCY.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Honesty Era",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kjixTIukp5RG9FN9HcloNdgA8cV.jpg",
-              "plot": "Jimmy helps Alice cope with a huge mistake. Gaby goes home for a family crisis. Liz runs into an old flame.",
-              "duration": 2040,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kjixTIukp5RG9FN9HcloNdgA8cV.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "In a Lonely Place",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1dILAIiozZbCKh3eIVhAIzufdcY.jpg",
-              "plot": "Paul and Jimmy look for Sean's dad. Gaby tries to keep Liz from sinking. Alice is surprised to find out who Brian has been spending time with.",
-              "duration": 2100,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1dILAIiozZbCKh3eIVhAIzufdcY.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Get in the Sea",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wRVjypqcGMxDB4gFKARHTlr06hR.jpg",
-              "plot": "Jimmy spends the day with a patient. Brian crashes Gaby's date. Liz heads down a dangerous path.",
-              "duration": 2160,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wRVjypqcGMxDB4gFKARHTlr06hR.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Last Drink",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mx1viGDNnZ0ibcwIrpFpgDYNmlX.jpg",
-              "plot": "Jimmy faces Alice's secret. Liz and Derek are at a crossroads. Paul worries about his health.",
-              "duration": 2340,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mx1viGDNnZ0ibcwIrpFpgDYNmlX.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Full Grown Dude Face",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ue7UWEmXGR6SbmWJOvoGKdwEu6H.jpg",
-              "plot": "While trying to stay out of Alice's business, Jimmy has to \"Jimmy\" an insecure Brian. Gaby leans on Paul for advice after her sister drops a bomb.",
-              "duration": 2040,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ue7UWEmXGR6SbmWJOvoGKdwEu6H.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Changing Patterns",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/guYNqQ5Zar8V9hgTWvYJ0kiEadG.jpg",
-              "plot": "Jimmy tries to give Alice the perfect 18th birthday. Paul helps Gaby with a huge decision.",
-              "duration": 2100,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/guYNqQ5Zar8V9hgTWvYJ0kiEadG.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 11,
-            "name": "The Drugs Don't Work",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oFKWsZiPUcf8lUecj3CjOYkDAIu.jpg",
-              "plot": "Paul encourages Jimmy to seek help. Brian and Derek take Sean to look for a new place. Gaby struggles with her guest list for Thanksgiving.",
-              "duration": 2160,
-              "rating": "8.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oFKWsZiPUcf8lUecj3CjOYkDAIu.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 12,
-            "name": "The Last Thanksgiving",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nwLBJQsvsihWTfRi1bZzZP2RKoj.jpg",
-              "plot": "Jimmy takes Paul's advice about Alice. Liz finally finds her purpose. Gaby hosts Thanksgiving dinner.",
-              "duration": 2700,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nwLBJQsvsihWTfRi1bZzZP2RKoj.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 3,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/zEFKMNPBKq6JG7uuDkzTQ9WwErn.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Jimmy and his rag-tag crew pick up the pieces of last season, forcing them to reckon with grief, second chances, and the messy road toward healing. With old clients still reeling and a few new faces entering the fold",
-          "year": "2026",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "My Bad",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ktwNnZppviKPoR8F0dFxRAIG9b1.jpg",
-              "plot": "Jimmy grapples with being an empty nester and feeling torn about Alice's major life choice. Paul faces fresh challenges with his Parkinson's.",
-              "duration": 3840,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ktwNnZppviKPoR8F0dFxRAIG9b1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Happiness Mission",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/Aw5S5sCtGBtSxuWBU2HjkFE4Sis.jpg",
-              "plot": "The gang unites to support Paul during a health setback. Jimmy and Alice help Louis take a big step. Liz and Derek make a tough choice.",
-              "duration": 2100,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/Aw5S5sCtGBtSxuWBU2HjkFE4Sis.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "D-Day",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lzOCcdmKQpumNaeue0R6ZVFkpvM.jpg",
-              "plot": "Jimmy and Liz show up for Brian and Charlie when Ava goes into labor. Sean reconnects with his ex Marisol.",
-              "duration": 2160,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lzOCcdmKQpumNaeue0R6ZVFkpvM.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Field",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/z6RyxhyoYLo2yXYykwzg92dKDA1.jpg",
-              "plot": "Gaby invites Jimmy to speak to her class. When Derek ends up in the hospital, Liz has issues with their son. Paul has an important realization.",
-              "duration": 2160,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/z6RyxhyoYLo2yXYykwzg92dKDA1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Hold Your Horsies",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iRVfxvWcLbbydbpYsD2V5m6ogtR.jpg",
-              "plot": "Jimmy and Meg unite over their love for Paul. Gaby considers her future with Derrick #2. Marisol pushes Sean and Alice out of their comfort zones.",
-              "duration": 1980,
-              "rating": "8.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iRVfxvWcLbbydbpYsD2V5m6ogtR.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Dereks Don't Die",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rrYTzXMKYEfdDg7ANgfL2oaGijy.jpg",
-              "plot": "When Derek's health takes a turn for the worse, Jimmy helps Liz cope. Meg comes clean with Paul. Gaby makes progress with Maya.",
-              "duration": 2040,
-              "rating": "8.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rrYTzXMKYEfdDg7ANgfL2oaGijy.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "I Will Be Grape",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5iHciuNYqV7TNPTzIFILFyZ1mZ1.jpg",
-              "plot": "Alice and Jimmy celebrate Tia's birthday. Liz's mother-in-law visits. Paul ponders his legacy.",
-              "duration": 2040,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5iHciuNYqV7TNPTzIFILFyZ1mZ1.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Depression Diet",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/do7KAIXihFAoDsrumqlg4fRLzdN.jpg",
-              "plot": "Jimmy finally goes on a first date with Sofi. Gaby has a crisis of confidence. Liz learns more about Brian's living situation.",
-              "duration": 2040,
-              "rating": "1.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/do7KAIXihFAoDsrumqlg4fRLzdN.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "Daddy Issues",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/itUhha5t4V5I5o6EvT9fFNrVJP6.jpg",
-              "plot": "Jimmy is stressed out by his father's presence. Sean grapples with the fallout of his decision. Paul helps Gaby start something new.",
-              "duration": 2040,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/itUhha5t4V5I5o6EvT9fFNrVJP6.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "The Bodyguard of Sadness",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": 2220,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 11,
-            "name": "And That's Our Time",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
-              "plot": "",
-              "duration": null,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   },
   {
-    "name": "Silo",
-    "category": "\ud83c\udd42",
+    "name": "Fly Me to the Moon",
+    "category": "\ud83c\udd35",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/c2OijvbFEXBW1onbzuvENr4CGQB.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/4XccmjsOmQZw8S2iW1wvlvmb5v1.jpg",
-      "plot": "In a ruined and toxic future, thousands live in a giant silo deep underground. After its sheriff breaks a cardinal rule and residents die mysteriously, engineer Juliette starts to uncover shocking secrets and the truth about the silo.",
-      "rating": "8.1",
-      "genre": [
-        "sci-fi & fantasy",
-        "drama"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/gjk8YdXpItoC1in53FCrZMFIuBx.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/4ItXEyVPj6wb9AdhsltcqYE6f5f.jpg",
+      "plot": "Sparks fly in all directions as marketing maven Kelly Jones, brought in to fix NASA's public image, wreaks havoc on Apollo 11 launch director Cole Davis' already difficult task of putting a man on the moon. When the White House deems the mission too important to fail, Jones is directed to stage a fake moon landing as backup, and the countdown truly begins.",
+      "director": [
+        "Greg Berlanti"
       ],
       "cast": [
-        "Rebecca Ferguson",
-        "Common",
-        "Harriet Walter",
-        "Chinaza Uche",
-        "Avi Nash"
-      ]
+        "Scarlett Johansson",
+        "Channing Tatum",
+        "Woody Harrelson",
+        "Ray Romano",
+        "Jim Rash",
+        "Anna Garcia"
+      ],
+      "trailer": "1ZO5k948MkY",
+      "rating": "6.8",
+      "year": "2024"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/qcUzKCQX79LxbRLrk6Ssw2b5mjD.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "In a bleak dystopian future, humanity clings to survival deep underground within the confines of a colossal silo. Juliette, an engineer tasked with unraveling the mystery behind the death of a colleague, uncovers startling secrets that threaten the very fabric of their enclosed world.",
-          "year": "2023",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Freedom Day",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rpZhJcWPpyLvPC5Vid61GD6JHVu.jpg",
-              "plot": "Sheriff Becker's plans for the future are thrown off course after his wife meets a hacker with information about the silo.",
-              "duration": 3600,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rpZhJcWPpyLvPC5Vid61GD6JHVu.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Holston's Pick",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bRYHFClG8YkTJTy8fx73hgCd8Ac.jpg",
-              "plot": "Juliette, an engineer, pieces together what might have led to a co-worker's mysterious death.",
-              "duration": 2880,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bRYHFClG8YkTJTy8fx73hgCd8Ac.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Machines",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8hQB4jxk9ydj55Mrl9sY95smV7.jpg",
-              "plot": "In her hunt for a new sheriff, Mayor Jahns clashes with Bernard. Juliette strikes a deal to keep the generator running.",
-              "duration": 3780,
-              "rating": "7.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8hQB4jxk9ydj55Mrl9sY95smV7.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "Truth",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/x3fMuXhTx5f91tQgjXNzopo5B5g.jpg",
-              "plot": "Juliette tries gaining the trust of Deputy Marnes as they work to uncover the truth about recent tragedies.",
-              "duration": 2760,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/x3fMuXhTx5f91tQgjXNzopo5B5g.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "The Janitor's Boy",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yzLUNo2jU82N5rdRG0xZ2A2ed79.jpg",
-              "plot": "Sims appoints Billings as chief deputy to keep tabs on Juliette, whose efforts to solve two murders lead to a showdown.",
-              "duration": 3060,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yzLUNo2jU82N5rdRG0xZ2A2ed79.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Relic",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/k5UxYAS4Xmcsn3GZdCklXGMIBMd.jpg",
-              "plot": "During her investigation, Juliette uncovers disturbing secrets about someone she thought she knew.",
-              "duration": 3060,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/k5UxYAS4Xmcsn3GZdCklXGMIBMd.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "The Flamekeepers",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ukzV8BZbjlIU6WOKdoZqhHMg2yi.jpg",
-              "plot": "Bernard seeks Juliette's cooperation as he grows increasingly concerned about the silo's security. Juliette asks her father for a favor.",
-              "duration": 2880,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ukzV8BZbjlIU6WOKdoZqhHMg2yi.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "Hanna",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sZaeOvZYS4evALQtm2wfC3eJxit.jpg",
-              "plot": "New information causes Juliette to see her family's past differently\u2014and she finally gains access to the silo's biggest secrets.",
-              "duration": 2640,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sZaeOvZYS4evALQtm2wfC3eJxit.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "The Getaway",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mogTf95jiLdvSXwnjpQcIs6Wxh2.jpg",
-              "plot": "Racked with guilt, Billings sets off on a personal mission, only to discover a mind-blowing clue from Juliette.",
-              "duration": 2640,
-              "rating": "8.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mogTf95jiLdvSXwnjpQcIs6Wxh2.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Outside",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qcqkEv0S8Re5V2UV9LFUWzHYyq3.jpg",
-              "plot": "Juliette's fate seems sealed when certain truths finally come to light.",
-              "duration": 2700,
-              "rating": "8.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qcqkEv0S8Re5V2UV9LFUWzHYyq3.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      },
-      {
-        "season": 2,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/wuNxRmBF1OJDtbcs9d14hZxg8WL.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Stranded outside her silo with a failing suit, Juliette Nichols races against time, stunned to find another silo nearby that could be her only hope for survival. Meanwhile, unrest brews inside her original silo as Bernard Holland rallies citizens to maintain order amid rising questions about their world. As Juliette faces unexpected dangers near the new silo, hidden truths about the silos\u2019 origins and the world beyond begin to surface, deepening the mystery.",
-          "year": "2024",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "The Engineer",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kB5wWdEknKlBJ8iGEYQyTJWTSZv.jpg",
-              "plot": "Juliette finds sanctuary in a silo long ago destroyed by war, thinking she's alone.",
-              "duration": 3120,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kB5wWdEknKlBJ8iGEYQyTJWTSZv.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Order",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gB2lEpKUvTshTdq00IRjQHFgG4J.jpg",
-              "plot": "In Silo 18, shock and unrest take hold in the wake of Juliette doing what no one's done before.",
-              "duration": 2760,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gB2lEpKUvTshTdq00IRjQHFgG4J.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "Solo",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dY1nJnRuuhC0stZqNWShBYqk93H.jpg",
-              "plot": "Bernard turns to Judge Meadows for help. Billings begins to wonder if he's being lied to. Juliette finally meets the man in the vault.",
-              "duration": 3480,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dY1nJnRuuhC0stZqNWShBYqk93H.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Harmonium",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lSsLzD8eVZaju4XUGmoTGSvZq2C.jpg",
-              "plot": "Juliette sets out on a dangerous quest to retrieve a suit so she can return home and save her silo. Mechanical plans a meeting with Judge Meadows.",
-              "duration": 3540,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lSsLzD8eVZaju4XUGmoTGSvZq2C.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Descent",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/y2KEcaL7GLj5uYXP0t7C0d0R5B6.jpg",
-              "plot": "Sims finds himself with a new position. Juliette learns Solo isn't being honest. Bernard and Lukas make an important discovery.",
-              "duration": 3240,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/y2KEcaL7GLj5uYXP0t7C0d0R5B6.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "Barricades",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aAPo83kOC5mfgcOado49ijWITVo.jpg",
-              "plot": "Bernard enacts a plan to root out Knox, Shirley, and Walker. Billings takes a stand. Solo saves Juliette's life and wants something in return.",
-              "duration": 2880,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aAPo83kOC5mfgcOado49ijWITVo.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "The Dive",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/z60fohHAWgfhpVjZRZq4M1Itw7Z.jpg",
-              "plot": "Lukas is assigned a mission. Mechanical sends a powerful message. Juliette embarks on a perilous descent\u2014and confronts a new danger.",
-              "duration": 3360,
-              "rating": "7.3",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/z60fohHAWgfhpVjZRZq4M1Itw7Z.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Book of Quinn",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/krzYmEQZ3ugR5MFqOMQJrv2pcnh.jpg",
-              "plot": "Juliette discovers something's happened to Solo. Bernard makes an offer to Walker. Lukas meets with Salvador Quinn's descendants.",
-              "duration": 3120,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/krzYmEQZ3ugR5MFqOMQJrv2pcnh.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "The Safeguard",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aNgT4AEffmGwiabRD03riCz1aWr.jpg",
-              "plot": "Billings' faith is shaken. Lukas heads to the down deep. Knox identifies the traitor. Juliette uncovers the truth about Solo's past.",
-              "duration": 3840,
-              "rating": "7.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aNgT4AEffmGwiabRD03riCz1aWr.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 10,
-            "name": "Into the Fire",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/coz4XyEQ59IbkJ3UYB9Nr8UW8ur.jpg",
-              "plot": "The rebels make their move\u2014and so does Juliette.",
-              "duration": 3900,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/coz4XyEQ59IbkJ3UYB9Nr8UW8ur.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   },
   {
-    "name": "Spy City",
+    "name": "Fountain of Youth",
+    "category": "\ud83c\udd35",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/4iWjGghUj2uyHo2Hyw8NFBvsNGm.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/arGs8D4RfUfsk7vMiMjDi6Mtabv.jpg",
+      "plot": "A treasure-hunting mastermind assembles a team for a life-changing adventure. But to outwit and outrun threats at every turn, he'll need someone even smarter than he is: his estranged sister.",
+      "director": [
+        "Guy Ritchie"
+      ],
+      "cast": [
+        "John Krasinski",
+        "Natalie Portman",
+        "Eiza Gonz\u00e1lez",
+        "Domhnall Gleeson",
+        "Arian Moayed",
+        "Laz Alonso"
+      ],
+      "trailer": "-7S28bH8iDs",
+      "rating": "6.3",
+      "year": "2025"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Ghosted",
+    "category": "\ud83c\udd36",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/pp3QUzMXfP7q0ocmE1b15FH6PQ6.jpg",
+      "plot": "Salt-of-the-earth Cole falls head over heels for enigmatic Sadie\u2014but then makes the shocking discovery that she's a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world.",
+      "director": [
+        "Dexter Fletcher"
+      ],
+      "cast": [
+        "Chris Evans",
+        "Ana de Armas",
+        "Adrien Brody",
+        "Mike Moh",
+        "Amy Sedaris",
+        "Tate Donovan"
+      ],
+      "trailer": "IAdCsNtEuBU",
+      "rating": "6.9",
+      "year": "2023"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "The Greatest Beer Run Ever",
+    "category": "\ud83c\udd36",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/ggf37TpcKaxwguhvtNn6MQpyqBn.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/7bjaAcbrJDVvdF2Uew6rGp9Tp05.jpg",
+      "plot": "Chickie wants to support his friends fighting in Vietnam, so he does something wild\u2014personally bring them American beer. What starts as a well-meaning journey quickly changes Chickie's life and perspective.",
+      "director": [
+        "Peter Farrelly"
+      ],
+      "cast": [
+        "Zac Efron",
+        "Russell Crowe",
+        "Kyle Allen",
+        "Bill Murray",
+        "Jake Picking",
+        "Will Ropp"
+      ],
+      "trailer": "NqxziDlZOIo",
+      "rating": "7.5",
+      "year": "2022"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Greyhound",
+    "category": "\ud83c\udd36",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/kjMbDciooTbJPofVXgAoFjfX8Of.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/xXBnM6uSTk6qqCf0SRZKXcga9Ba.jpg",
+      "plot": "A first-time captain leads a convoy of allied ships carrying thousands of soldiers across the treacherous waters of the \"Black Pit\" to the front lines of WWII. With no air cover protection for 5 days, the captain and his convoy must battle the surrounding enemy Nazi U-boats in order to give the allies a chance to win the war.",
+      "director": [
+        "Aaron Schneider"
+      ],
+      "cast": [
+        "Tom Hanks",
+        "Stephen Graham",
+        "Rob Morgan",
+        "Josh Wiggins",
+        "Tom Brittney",
+        "Elisabeth Shue"
+      ],
+      "trailer": "5Byeq_hyh2U",
+      "rating": "7.4",
+      "year": "2020"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "The Instigators",
+    "category": "\ud83c\udd38",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/dnYWsIFDmygCjNg65rY3uBymx81.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/aA5B2OsN6rccwnhn8TEG4m4V3jI.jpg",
+      "plot": "Rory and Cobby are unlikely partners thrown together for a heist. But when it goes awry, they team up with an unusual accomplice \u2014 Rory's therapist \u2014 to outrun police, backward bureaucrats, and a vengeful crime boss.",
+      "director": [
+        "Doug Liman"
+      ],
+      "cast": [
+        "Matt Damon",
+        "Casey Affleck",
+        "Ving Rhames",
+        "Jack Harlow",
+        "Michael Stuhlbarg",
+        "Alfred Molina"
+      ],
+      "trailer": "X5oqpxi3U7M",
+      "rating": "6.2",
+      "year": "2024"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Luck",
+    "category": "\ud83c\udd3b",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/1HOYvwGFioUFL58UVvDRG6beEDm.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/sKvQUSyqsFq8e1ts6oo3Xp3dPH2.jpg",
+      "plot": "Suddenly finding herself in the never-before-seen Land of Luck, the unluckiest person in the world must unite with the magical creatures there to turn her luck around.",
+      "director": [
+        "Peggy Holmes"
+      ],
+      "cast": [
+        "Eva Noblezada",
+        "Simon Pegg",
+        "Jane Fonda",
+        "Whoopi Goldberg",
+        "Colin O'Donoghue",
+        "Lil Rel Howery"
+      ],
+      "trailer": "xSG5UX0EQVg",
+      "rating": "7.7",
+      "year": "2022"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Raymond & Ray",
+    "category": "\ud83c\udd41",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/fdKZmSQHD17JjGUYkluhpttgJRi.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/mifoXrO18fyEBPYn9UqNduunod9.jpg",
+      "plot": "Half brothers Raymond and Ray reunite when their estranged father dies\u2014and discover that his final wish was for them to dig his grave. Together, they process who they've become as men, both because of their father and in spite of him.",
+      "director": [
+        "Rodrigo Garc\u00eda"
+      ],
+      "cast": [
+        "Ewan McGregor",
+        "Ethan Hawke",
+        "Maribel Verd\u00fa",
+        "Sophie Okonedo",
+        "Vondie Curtis-Hall",
+        "Todd Louiso"
+      ],
+      "trailer": "3fzW5DpoApg",
+      "rating": "6.2",
+      "year": "2022"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Swan Song",
     "category": "\ud83c\udd42",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/aJZF8UweljPpUOdedfHttBGK0nU.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/3E7JFbtap6Vi6hDBiGpH6UI4vjZ.jpg",
-      "plot": "After a defector is murdered, British agent Fielding Scott is assigned to track down a mole in his own ranks in 1961 Berlin. His investigation leads him into a deadly web of crime, betrayal and paranoia. Who can Scott trust in the city of spies?",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/zzCdikGD9Qa5NT8lZtUv9dXNgsm.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/4iMURVQCxjyMH8Vr1Wd3GCsxE06.jpg",
+      "plot": "In the near future, Cameron Turner is diagnosed with a terminal illness. Presented with an experimental solution to shield his wife and son from grief, he grapples with altering their fate in this thought-provoking exploration of love, loss, and sacrifice.",
+      "director": [
+        "Benjamin Cleary"
+      ],
+      "cast": [
+        "Mahershala Ali",
+        "Naomie Harris",
+        "Awkwafina",
+        "Glenn Close",
+        "Adam Beach",
+        "Lee Shorten"
+      ],
+      "trailer": "LxftqrrlSqc",
       "rating": "7.1",
-      "genre": [
-        "drama",
-        "war & politics"
+      "year": "2021"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Tetris",
+    "category": "\ud83c\udd43",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/4F2QwCOYHJJjecSvdOjStuVLkpu.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/4avmIRBBOs9b4DKoenf8SWWJJP7.jpg",
+      "plot": "In 1988, American video game salesman Henk Rogers discovers the video game Tetris. When he sets out to bring the game to the world, he enters a dangerous web of lies and corruption behind the Iron Curtain.",
+      "director": [
+        "Jon S. Baird"
       ],
       "cast": [
-        "Dominic Cooper",
-        "Johanna Wokalek",
-        "Leonie Benesch",
-        "Ben M\u00fcnchow",
-        "Romane Portail"
-      ]
+        "Taron Egerton",
+        "Nikita Efremov",
+        "Sofia Lebedeva",
+        "Anthony Boyle",
+        "Ben Miles",
+        "Ken Yamamura"
+      ],
+      "trailer": "-BLM1naCfME",
+      "rating": "7.6",
+      "year": "2023"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/aJZF8UweljPpUOdedfHttBGK0nU.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2020",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "Operation Beethoven",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2uyG6UUkOzmo7R0y6vFz8XTNxa3.jpg",
-              "plot": "1961. Disgraced British spy, Fielding Scott, is given a chance to redeem himself in Berlin. He has to organise the defection of an East German scientist. Everything goes disastrously wrong.",
-              "duration": 2880,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2uyG6UUkOzmo7R0y6vFz8XTNxa3.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Out Of The Past",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tk6zon4cmb3W6UKuYRjlqqtxQQV.jpg",
-              "plot": "The fatal fiasco of the \"Beethoven\" defection has consequences. Fielding is tasked with finding and eliminating the traitor. Fielding begins to recruit his own private army.",
-              "duration": 2880,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tk6zon4cmb3W6UKuYRjlqqtxQQV.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "My Enemy's Enemy",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hrx3pBuUw1yC4a2Zv4C29bB3IYZ.jpg",
-              "plot": "Fielding's Berlin life is unraveling; he decides to \"go rogue\" and provoke the Russians into retaliating. At the same time he is now being blackmailed over his affair with Severine.",
-              "duration": 2880,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hrx3pBuUw1yC4a2Zv4C29bB3IYZ.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "The Flower Market",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2UH6PdNfPm5RRJ8WZIIFt0O1Ild.jpg",
-              "plot": "Fielding's clever plan seems to be working. The Russians are agitated, running scared. A date is mentioned for the first time - Sunday, August 13th. What will happen in Berlin on that day?",
-              "duration": 2880,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2UH6PdNfPm5RRJ8WZIIFt0O1Ild.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "Dark Imaginings",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kNNW2iWPo8jewXppXZjseUny57J.jpg",
-              "plot": "Fielding feels threatened and drops out of sight. Three urgent questions preoccupy him - the Beirut photograph; Severine's obsession with Udo Hoff; and the date - Sunday, August 13th.",
-              "duration": 2880,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kNNW2iWPo8jewXppXZjseUny57J.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Wall",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jVRJe0o3OgZJEUB0pFGKhhT2gVD.jpg",
-              "plot": "Fielding, reeling from the death of Severine, knows he has more to do\u2014he must avenge Severine's death. Fielding unmasks the traitor and all the Berlin mysteries are explained.",
-              "duration": 2880,
-              "rating": "0.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jVRJe0o3OgZJEUB0pFGKhhT2gVD.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "The Tragedy of Macbeth",
+    "category": "\ud83c\udd43",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/tDNJEhcLbX3jIk3BMCur9pCdaVD.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/lMjY6kMBOHhloz2Ul16fLJn8xuw.jpg",
+      "plot": "Macbeth, the Thane of Glamis, receives a prophecy from a trio of witches that one day he will become King of Scotland. Consumed by ambition and spurred to action by his wife, Macbeth murders his king and takes the throne for himself.",
+      "director": [
+        "Joel Coen"
+      ],
+      "cast": [
+        "Denzel Washington",
+        "Frances McDormand",
+        "Alex Hassell",
+        "Bertie Carvel",
+        "Brendan Gleeson",
+        "Corey Hawkins"
+      ],
+      "trailer": "ptqe7s6pO7g",
+      "rating": "6.9",
+      "year": "2021"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
+  },
+  {
+    "name": "Wolfs",
+    "category": "\ud83c\udd46",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vOX1Zng472PC2KnS0B9nRfM8aaZ.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/kU0DJMhKjNZAkL60Z8k0KfZ81w2.jpg",
+      "plot": "Hired to cover up a high-profile crime, a fixer soon finds his night spiralling out of control when he's forced to work with an unexpected counterpart.",
+      "director": [
+        "Jon Watts"
+      ],
+      "cast": [
+        "George Clooney",
+        "Brad Pitt",
+        "Austin Abrams",
+        "Amy Ryan",
+        "Poorna Jagannathan",
+        "Zlatko Buri\u0107"
+      ],
+      "trailer": "5RSUcuGIiI0",
+      "rating": "6.5",
+      "year": "2024"
+    },
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   }
 ]
