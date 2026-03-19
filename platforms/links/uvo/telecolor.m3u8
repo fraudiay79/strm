@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telecolor/streams/sessions/3f990c67381b41a6b31f67255aa83c84/media/playlist-orig.m3u8/fstl=exp=1773999882~acl=%2F10010%2Flive%2Fhls%2Ftelecolor%2F%2A~hmac=f90750eff9674bf806d9da7cacdd5528e2fc527f6b64f08b203d9273bbaed976/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telecolor/streams/sessions/ed0bb3a15082498894ec7439adaad91e/media/playlist-orig.m3u8/fstl=exp=1774011772~acl=%2F10010%2Flive%2Fhls%2Ftelecolor%2F%2A~hmac=6c7128a16e0691843a5ee878c4149ec87d9409774b09e867e2dea12a10c7aa49/0.m3u8

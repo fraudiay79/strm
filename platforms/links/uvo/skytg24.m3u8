@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/skytg24/streams/sessions/e87add47a2a64e3f829f864031d8274b/media/playlist-orig.m3u8/fstl=exp=1773989885~acl=%2F10010%2Flive%2Fhls%2Fskytg24%2F%2A~hmac=dbb265efc37284bd2fc36679fdce4db32fe3a6fbfe8bd20091b523895c6970de/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/skytg24/streams/sessions/32fed8771bb5401eb8d5b0f42bdbdcba/media/playlist-orig.m3u8/fstl=exp=1774011766~acl=%2F10010%2Flive%2Fhls%2Fskytg24%2F%2A~hmac=7b938ce285ffb8f265b695d964a1e9eab80cfb03d00f62ebdb6d128a6fff951e/0.m3u8

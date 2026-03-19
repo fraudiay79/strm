@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/canale168/streams/sessions/8621b27bdd944ebfa8ab58c4b9cc3aa2/media/playlist-orig.m3u8/fstl=exp=1773999859~acl=%2F10010%2Flive%2Fhls%2Fcanale168%2F%2A~hmac=6e587c0874884f0ba50af241dfb5a3ac8983d8811af7ec12cf7ba9303a08c2d7/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/canale168/streams/sessions/0d41465fe25441a48517133d0a56f339/media/playlist-orig.m3u8/fstl=exp=1774011751~acl=%2F10010%2Flive%2Fhls%2Fcanale168%2F%2A~hmac=16bbf7dddcad71fb8500a7aac12291bbe23dd6e15b710490bd1f0d6a24bd3cb9/0.m3u8

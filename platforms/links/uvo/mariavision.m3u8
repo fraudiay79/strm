@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/mariavision/streams/sessions/4b20b49e057540528dfe0f57c0639c3b/media/playlist-orig.m3u8/fstl=exp=1773999857~acl=%2F10010%2Flive%2Fhls%2Fmariavision%2F%2A~hmac=afa16b25531644765ba268c54d0e86af9d3956edb1b8a0fdddcaf15f4224521f/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/mariavision/streams/sessions/1c6e8faccddf4a67b972615913b4b6ca/media/playlist-orig.m3u8/fstl=exp=1774011750~acl=%2F10010%2Flive%2Fhls%2Fmariavision%2F%2A~hmac=5007b1b3fb418e521403eec57128f8aea1f6c2032e54e8454f5060ce30bb52e2/0.m3u8

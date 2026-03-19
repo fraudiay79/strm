@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d401e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/rtctelecalabria/streams/sessions/bb4443f757994746a473885b25229064/media/playlist-orig.m3u8/fstl=exp=1773999890~acl=%2F10010%2Flive%2Fhls%2Frtctelecalabria%2F%2A~hmac=522f777af522e2c2c325b57cd3994142dada63b6c70280c88ca1e4734b815ec3/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/rtctelecalabria/streams/sessions/2b11d306d7dd4cf2a3afe25a04c54ff7/media/playlist-orig.m3u8/fstl=exp=1774011779~acl=%2F10010%2Flive%2Fhls%2Frtctelecalabria%2F%2A~hmac=ca9d4dbc070118906413d9dfa3c493f6812a5d17e445758b6233297edd38117e/0.m3u8

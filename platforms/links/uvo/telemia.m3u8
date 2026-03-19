@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telemia/streams/sessions/383dace336f8444b809067b7ae7c8b46/media/playlist-orig.m3u8/fstl=exp=1773982495~acl=%2F10010%2Flive%2Fhls%2Ftelemia%2F%2A~hmac=de27c558fb12599170c47ef53916e9049acff2eb458a8faa90311c2506be2e11/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telemia/streams/sessions/8d38e3dfb51743b38c28b2236fd5d094/media/playlist-orig.m3u8/fstl=exp=1774011779~acl=%2F10010%2Flive%2Fhls%2Ftelemia%2F%2A~hmac=6fc1a32f5577eb6a1fb6476c5fe9e7963b6393a726bfbc51819a021825553f1d/0.m3u8

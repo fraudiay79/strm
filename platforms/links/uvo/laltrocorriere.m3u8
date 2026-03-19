@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.4d4020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/laltrocorriere/streams/sessions/fd0dde993f9d4b02992d393d743c8354/media/playlist-orig.m3u8/fstl=exp=1773999913~acl=%2F10010%2Flive%2Fhls%2Flaltrocorriere%2F%2A~hmac=026571aced49cce3f007c5a12c148739fedc1a60755a792e58b76796613929ee/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/laltrocorriere/streams/sessions/58a6376f93234bdfb0188f75a64f3d9a/media/playlist-orig.m3u8/fstl=exp=1774011797~acl=%2F10010%2Flive%2Fhls%2Flaltrocorriere%2F%2A~hmac=fd3025e71012a33aebd3b2c115bf216185ab51695f56bd918e611c0327d8fa4c/0.m3u8
