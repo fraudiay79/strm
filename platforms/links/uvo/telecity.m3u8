@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telecity/streams/sessions/1c49fb3f381f4d66bcc3abc9aabbbce6/media/playlist-orig.m3u8/fstl=exp=1774422310~acl=%2F10010%2Flive%2Fhls%2Ftelecity%2F%2A~hmac=c70b2cb181344cd14f9727cbd19600d0abb89df0c665b6734fc5ca114703cbca/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telecity/streams/sessions/97769ede2a5f4a07bb593e22dd3053de/media/playlist-orig.m3u8/fstl=exp=1774432665~acl=%2F10010%2Flive%2Fhls%2Ftelecity%2F%2A~hmac=6d5e53cdd6bede8e171a0fabf305fb76cfc39f72eab5a4069811f4781f7d2ace/0.m3u8

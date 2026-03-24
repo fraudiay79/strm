@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/teleshopping/streams/sessions/1ffdd934a44c4a4ca2937902cb008e65/media/playlist-orig.m3u8/fstl=exp=1774422289~acl=%2F10010%2Flive%2Fhls%2Fteleshopping%2F%2A~hmac=6b474da68a135b7bec6ce665a1f9b7585f919fec839ad7f70fcb77bb55ebda76/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/teleshopping/streams/sessions/7656d44ee4804a41ae6e48e7f040f8cd/media/playlist-orig.m3u8/fstl=exp=1774432644~acl=%2F10010%2Flive%2Fhls%2Fteleshopping%2F%2A~hmac=0823827a60c6f93e5899b3fa041a7c5cf7632733ae22a4ffe47619cec901d495/0.m3u8

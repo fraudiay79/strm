@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/laconair/streams/sessions/49551b21f6a54008bd0c5519afd13481/media/playlist-orig.m3u8/fstl=exp=1774422319~acl=%2F10010%2Flive%2Fhls%2Flaconair%2F%2A~hmac=d7280066f3c49981d3b2352c2fed87e278434ba83f04c8fb060b6b2476aeebeb/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
+https://live.uvotv.com/10010/live/hls/laconair/streams/sessions/13f6ea96be7e47d5a4009439f1fb53d4/media/playlist-orig.m3u8/fstl=exp=1774432673~acl=%2F10010%2Flive%2Fhls%2Flaconair%2F%2A~hmac=589425e91bc925e1b340a46f86ed0860870a2ee2c0677dc0a5e81dda4d3c39bb/0.m3u8

@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/teleromagna/streams/sessions/0fafce7dd41645f79332e4c814b933b4/media/playlist-orig.m3u8/fstl=exp=1774422328~acl=%2F10010%2Flive%2Fhls%2Fteleromagna%2F%2A~hmac=6fc1ac3349e2847384fdad38925065d627d264f3309618ccac15c08fee8aa34c/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/teleromagna/streams/sessions/3672c739aa724da38cfe6a3f701f4eb1/media/playlist-orig.m3u8/fstl=exp=1774432682~acl=%2F10010%2Flive%2Fhls%2Fteleromagna%2F%2A~hmac=9d57f338fcd968c22e88bcccb213226b6a5b54f0e28ec82bc6bb0480a68e3006/0.m3u8

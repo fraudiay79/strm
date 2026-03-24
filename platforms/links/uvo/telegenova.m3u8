@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telegenova/streams/sessions/5b6c2037ddfe4d19a1b4ce196f45af28/media/playlist-orig.m3u8/fstl=exp=1774422311~acl=%2F10010%2Flive%2Fhls%2Ftelegenova%2F%2A~hmac=e0dcda0a02992b8732e2d7ec535204b9802f30a3ef1d38c3d99d5a9301e15887/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telegenova/streams/sessions/c92c8507fe714611a46065d81c1199a3/media/playlist-orig.m3u8/fstl=exp=1774432665~acl=%2F10010%2Flive%2Fhls%2Ftelegenova%2F%2A~hmac=4550af99e822a933d997034954a22bf5a7d84bf9879fdb5e4be61605d14b02cb/0.m3u8

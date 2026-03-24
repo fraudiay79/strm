@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/orlertv/streams/sessions/bd1accbb40bd40cc8386989fcb0b82ca/media/playlist-orig.m3u8/fstl=exp=1774422291~acl=%2F10010%2Flive%2Fhls%2Forlertv%2F%2A~hmac=014f3b371ca94a234cf0cf00cde9f0aa91ac455eab5a62530b542e3c2b308613/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/orlertv/streams/sessions/5816cf31af5c4eeca5ba9811d2a640c6/media/playlist-orig.m3u8/fstl=exp=1774432646~acl=%2F10010%2Flive%2Fhls%2Forlertv%2F%2A~hmac=e99a3ae3c23f40879e87230577a855b57c681e272998ebcee7f53f2a6ecf2b75/0.m3u8

@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/boingplus/streams/sessions/7060c6a69d224eaf92515ef08b9c6dd7/media/playlist-orig.m3u8/fstl=exp=1774422284~acl=%2F10010%2Flive%2Fhls%2Fboingplus%2F%2A~hmac=53fa5cd8a3ac63c1abad46dee1961b663fa5568073a861518d9e0b33a4b59673/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/boingplus/streams/sessions/334677dd36da4f2194dfb7f8363cfa62/media/playlist-orig.m3u8/fstl=exp=1774432640~acl=%2F10010%2Flive%2Fhls%2Fboingplus%2F%2A~hmac=9cda3267273e14725c98ec2e1245b00e6eaf0e1df75a7db16dacc42a5b7d2bd1/0.m3u8

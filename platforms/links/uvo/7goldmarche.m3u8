@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=960x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/7goldmarche/streams/sessions/fc59a3584ea2459097d2b80eaa758227/media/playlist-orig.m3u8/fstl=exp=1774422324~acl=%2F10010%2Flive%2Fhls%2F7goldmarche%2F%2A~hmac=355af1cef6a8f1bf5c72c78e35643f08e4876d77d4d0c705713483fb4a69246d/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/7goldmarche/streams/sessions/54e6e7f9ec634fee91f2f8df01d32bae/media/playlist-orig.m3u8/fstl=exp=1774432678~acl=%2F10010%2Flive%2Fhls%2F7goldmarche%2F%2A~hmac=f7b8fdab89586b59ca2f9e63043a9fcd71e03906167c320bee7bdcfddc8facc2/0.m3u8

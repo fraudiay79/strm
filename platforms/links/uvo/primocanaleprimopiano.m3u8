@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/primocanaleprimopiano/streams/sessions/077f80fd1eaf49ca9a38c3c2b40426ad/media/playlist-orig.m3u8/fstl=exp=1774422312~acl=%2F10010%2Flive%2Fhls%2Fprimocanaleprimopiano%2F%2A~hmac=dd6dc6166f54052c3a6f220ec5e10a21cb28022760c481801c4943a9eb7a7c0b/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/primocanaleprimopiano/streams/sessions/97b6807396d049f584d4f1c337a4ed6d/media/playlist-orig.m3u8/fstl=exp=1774432666~acl=%2F10010%2Flive%2Fhls%2Fprimocanaleprimopiano%2F%2A~hmac=35e5c89fbd34193f448b37f92f00c5b20dd0a800414994172a99e48c5c8d1a3a/0.m3u8

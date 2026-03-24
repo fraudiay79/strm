@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/luxurychannel137/streams/sessions/433887ea1af34f58a3f8d16c8300d7e2/media/playlist-orig.m3u8/fstl=exp=1774422308~acl=%2F10010%2Flive%2Fhls%2Fluxurychannel137%2F%2A~hmac=08878370d0bfb8b100ef0b2f62f67c38f1b1b9892411bce143b386938453cad4/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=640000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/luxurychannel137/streams/sessions/c20ca76b2cbd44868dc3455d15ad81f8/media/playlist-orig.m3u8/fstl=exp=1774432663~acl=%2F10010%2Flive%2Fhls%2Fluxurychannel137%2F%2A~hmac=8c0affb95ad3d5f3ebd1fc46efec4b2432a3ea533e60e342f274253a66bca61a/0.m3u8

@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=704x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/primafree/streams/sessions/e0095d4cf4fa47ec82be165b419a9b12/media/playlist-orig.m3u8/fstl=exp=1774422286~acl=%2F10010%2Flive%2Fhls%2Fprimafree%2F%2A~hmac=b209456adae40da8c072ad6982af2d9baf72897603c5c839b53468a5919be236/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/primafree/streams/sessions/0ab92544753f4296be567d5feb2399e0/media/playlist-orig.m3u8/fstl=exp=1774432641~acl=%2F10010%2Flive%2Fhls%2Fprimafree%2F%2A~hmac=4f93b6c050bc54b210a727baf32a33e39941c6b9c1d9314b39e4d6969479b01b/0.m3u8
