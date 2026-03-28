@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2119194/echorouktv/streams/sessions/ef25b131d33b4e2282a185631db9a8e9/media/playlist-orig.m3u8/fstl=exp=1774788520~acl=%2Fhls%2Flive%2F2119194%2Fechorouktv%2F%2A~hmac=8fcd0ad27a4adfce7089b2628553d3c1bf5330e5bb8ab3cb89234e2976c2310d/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=3128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119194/echorouktv/streams/sessions/9cd191eb320c448eab79d9ebb2edd648/media/playlist-orig.m3u8/fstl=exp=1774798118~acl=%2Fhls%2Flive%2F2119194%2Fechorouktv%2F%2A~hmac=892990e0f3a91d9d0242ae53e638415591a2415c3a58877b211659c9d7bfacf3/0.m3u8
