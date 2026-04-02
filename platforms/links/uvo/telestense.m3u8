@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telestense/streams/sessions/a385873b840f4544aeb2a47bf9a44a37/media/playlist-orig.m3u8/fstl=exp=1775221799~acl=%2F10010%2Flive%2Fhls%2Ftelestense%2F%2A~hmac=6df19912a82991e5f912004ee90e05350c816e49a827991976ed057b39dcff8b/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telestense/streams/sessions/8fbb83e04bf94e6f9a8d021d0465314d/media/playlist-orig.m3u8/fstl=exp=1775232126~acl=%2F10010%2Flive%2Fhls%2Ftelestense%2F%2A~hmac=3a7464a36c17ed6d36a370f3824d6e0de5def79d7d157e024eab0cadea537690/0.m3u8
