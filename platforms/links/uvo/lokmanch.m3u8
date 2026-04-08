@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121044/lokmanch/streams/sessions/ca887440772f4fc6a00cf21ef4c42aa4/media/playlist-orig.m3u8/fstl=exp=1775700542~acl=%2Fhls%2Flive%2F2121044%2Flokmanch%2F%2A~hmac=be487a90b804d67f998272bbdeb087c9d08be5f649e35630b17c6b4ae750f5a2/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121044/lokmanch/streams/sessions/f5c502d49d4447c09d12da1ba0144b9f/media/playlist-orig.m3u8/fstl=exp=1775711516~acl=%2Fhls%2Flive%2F2121044%2Flokmanch%2F%2A~hmac=e32c21cad5b70325876931976b74472a786fc7a3d400e54f06fcb162d75cafa1/0.m3u8
