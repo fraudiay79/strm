@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telenuovo/streams/sessions/333dbf969fcf488ca6dfcb893ee2e3c1/media/playlist-orig.m3u8/fstl=exp=1776634511~acl=%2F10010%2Flive%2Fhls%2Ftelenuovo%2F%2A~hmac=b35f5daffe853f67c9c22efd667e47a81d37f5624b7ecf9266f94cbdc7ae956a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/telenuovo/streams/sessions/e20706a8f4c845b7ae988cb1d05c1c7f/media/playlist-orig.m3u8/fstl=exp=1776662929~acl=%2F10010%2Flive%2Fhls%2Ftelenuovo%2F%2A~hmac=5fb1610a926cc1a44ec5792851e1e30ca4aeebf28346d17218f1524bc19af491/0.m3u8
