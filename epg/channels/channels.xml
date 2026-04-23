@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <channels>
   #Afghanistan
-  <channel site="arianaafgtv.com" lang="en" xmltv_id="ArianaAfghanistanTV.af" site_id="#">Ariana Afghanistan TV</channel>
   <channel site="arianatelevision.com" lang="en" xmltv_id="ATNNational.af" site_id="#">ATN</channel>
   #Albania
   <channel site="ipko.tv" lang="sq" xmltv_id="3Plus.al" site_id="3PLUS">Tring 3+ • 3+</channel>
@@ -539,10 +538,10 @@
   <channel site="reportv.com.ar" lang="es" xmltv_id="TVU.bo" site_id="1870">TVU</channel>
   <channel site="reportv.com.ar" lang="es" xmltv_id="UnitelSantaCruz.bo" site_id="6340">Unitel</channel>
   #Bosnia
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="24Kitchen.ba" site_id="118">24Kitchen</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="24Kitchen.ba" site_id="iptv#ch-153-24-kitchen">24Kitchen</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="AgroTV.ba" site_id="iptv#ch-147-agro-tv">Agro TV</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="AlJazeeraBalkans.ba" site_id="657">Al Jazeera Balkans</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="AlternativnaTV.ba" site_id="32">Alternativna TV</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="AlJazeeraBalkans.ba" site_id="iptv#ch-25-al-jazeera-balkans">Al Jazeera Balkans</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="AlternativnaTV.ba" site_id="iptv#ch-13-atv-hd">Alternativna TV</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="AnimalPlanet.ba" site_id="iptv#ch-125-animal-planet">Animal Planet</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaEsport.ba" site_id="iptv#ch-406-arena-esport-hd">Arena Esport</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaFight.ba" site_id="iptv#ch-465-arena-fight-hd">Arena Fight</channel>
@@ -556,61 +555,61 @@
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport5.ba" site_id="iptv#ch-56-arena-sport-4">Arena Sport 4</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport4.ba" site_id="iptv#ch-arena-sport-5">Arena Sport 5</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="ArenaSport6.ba" site_id="iptv#ch-arena-sport-6">Arena Sport 6</channel>
-  <channel site="epg.unitedgroup" lang="en" xmltv_id="BabyTV.uk" site_id="1678">Baby TV</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="BabyTV.uk" site_id="iptv#ch-85-baby-tv">Baby TV</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="BalkanTripTV.rs" site_id="iptv#ch-461-balkan-trip-hd">Balkan Trip</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BHT1.ba" site_id="198">BHT 1</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BloombergAdria.rs" site_id="1648">Bloomberg Adria</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BN.ba" site_id="449">BN</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="BHT1.ba" site_id="iptv#ch-15-bht">BHT 1</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="BloombergAdria.rs" site_id="iptv#ch-bloomberg-adria-hd">Bloomberg Adria</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="BN.ba" site_id="iptv#ch-289-bn-hd">BN</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="BN2.ba" site_id="iptv#ch-468-bn-2">BN 2</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="BNMusic.ba" site_id="201">BN Music</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Cinemax.ba" site_id="63">Cinemax</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Cinemax2.ba" site_id="64">Cinemax 2</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="DiscoveryChannel.ba" site_id="776">Discovery Channel</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="BNMusic.ba" site_id="iptv#ch-472-bn-music">BN Music</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Cinemax.ba" site_id="iptv#ch-104-cinemax">Cinemax</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Cinemax2.ba" site_id="iptv#ch-106-cinemax-2">Cinemax 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="DiscoveryChannel.ba" site_id="iptv#ch-123-discovery-channel">Discovery Channel</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="EnglishClubTV.uk" site_id="iptv#ch-227-english-club-tv">English Club TV</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Eurosport1.ba" site_id="84">Eurosport 1</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Eurosport2.ba" site_id="1505">Eurosport 2</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="FaceTV.ba" site_id="471">Face TV</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="FederalnaTV.ba" site_id="33">Federalna</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Eurosport1.ba" site_id="iptv#ch-79-eurosport-1-hd">Eurosport 1</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Eurosport2.ba" site_id="iptv#ch-80-eurosport-2-hd">Eurosport 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="FaceTV.ba" site_id="iptv#ch-37-face-tv">Face TV</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="FederalnaTV.ba" site_id="iptv#ch-225-ftv">Federalna</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="FightNetwork.ba" site_id="iptv#ch-67-fight-network">Fight Network</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayat.ba" site_id="466">Hayat</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayat2.ba" site_id="299">Hayat 2</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HayatFolk.ba" site_id="495">Hayat Folk</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HayatMusic.ba" site_id="496">Hayat Music</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Hayatovci.ba" site_id="494">Hayatovci</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HBO.ba" site_id="60">HBO</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HBO2.ba" site_id="61">HBO 2</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HBO3.ba" site_id="62">HBO 3</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="HemaTV.ba" site_id="200">Hema TV</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="History.ba" site_id="99">History</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="History2.ba" site_id="115">History 2</channel>
-  <channel site="epg.unitedgroup" lang="en" xmltv_id="JimJamEurope.uk" site_id="1382">Jim Jam</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="Minimax.ba" site_id="1511">Minimax</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="N1.ba" site_id="199">N1</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Hayat.ba" site_id="iptv#ch-263-hayat-hd">Hayat</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Hayat2.ba" site_id="iptv#ch-83-hayat-plus">Hayat 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="HayatFolk.ba" site_id="iptv#ch-223-hayat-folk">Hayat Folk</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="HayatMusic.ba" site_id="iptv#ch-222-hayat-music">Hayat Music</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Hayatovci.ba" site_id="iptv#ch-100-hayatovci">Hayatovci</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="HBO.ba" site_id="iptv#ch-101-hbo">HBO</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="HBO2.ba" site_id="iptv#ch-102-hbo-2">HBO 2</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="HBO3.ba" site_id="iptv#ch-103-hbo-3">HBO 3</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="HemaTV.ba" site_id="iptv#ch-93-hema-tv">Hema TV</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="History.ba" site_id="iptv#ch-118-history">History</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="History2.ba" site_id="iptv#ch-134-history2">History 2</channel>
+  <channel site="mtel.ba" lang="en" xmltv_id="JimJamEurope.uk" site_id="iptv#ch-271-jim-jam">Jim Jam</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="Minimax.ba" site_id="iptv#ch-89-minimax">Minimax</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="N1.ba" site_id="199">N1</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="NationalGeographic.ba" site_id="iptv#ch-119-national-geographic">National Geographic</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="NationalGeographicWild.ba" site_id="iptv#ch-121-national-geographic-wild">National Geographic Wild</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="Nickelodeon.ba" site_id="iptv#ch-94-nickelodeon">Nickelodeon</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="NickJr.ba" site_id="iptv#ch-95-nick-jr">Nick Jr.</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="NickToons.ba" site_id="iptv#ch-424-nicktoons">NickToons</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="NovaBH.ba" site_id="1494">Nova BH</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OBN.ba" site_id="30">OBN</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanal.ba" site_id="748">O Kanal</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanalPlus.ba" site_id="1096">O Kanal Plus</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="OKanalMusic.ba" site_id="1097">O Kanal Music</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="NovaBH.ba" site_id="iptv#ch-14-nova-bh-hd">Nova BH</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="OBN.ba" site_id="iptv#ch-obn-hd">OBN</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="OKanal.ba" site_id="iptv#ch-26-o-kanal">O Kanal</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="OKanalPlus.ba" site_id="iptv#ch-o-kanal-plus-hd">O Kanal Plus</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="OKanalMusic.ba" site_id="iptv#ch-o-kanal-music-hd">O Kanal Music</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="OTVValentino.ba" site_id="iptv#ch-439-otv-valentino">OTV Valentino</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="PinkBH.ba" site_id="587">Pink BH</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="PinkBH.ba" site_id="iptv#ch-4-pink">Pink BH</channel>
   <channel site="mtel.ba" lang="bs" xmltv_id="PremierLeagueTV.uk" site_id="iptv#ch-premier-league-tv-hd">Premier League TV</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTLKockica.hr" site_id="1495">RTL Kockica</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTRS.ba" site_id="31">РТРС</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="RTRSPlus.ba" site_id="653">РТРС Plus</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarChannel.a" site_id="56">Star Channel</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarCrime.ba" site_id="58">Star Crime</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarLife.ba" site_id="57">Star Life</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="StarMovies.ba" site_id="59">Star Movies</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="TravelChannel.ba" site_id="125">Travel Channel</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="TropikTV.ba" site_id="1526">Tropik TV</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="ViasatExplore.ba" site_id="730">Viasat Explore</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="ViasatHistory.ba" site_id="731">Viasat History</channel>
-  <channel site="epg.unitedgroup" lang="bs" xmltv_id="ViasatNature.ba" site_id="732">Viasat Nature</channel>  
+  <channel site="mtel.ba" lang="bs" xmltv_id="RTLKockica.hr" site_id="iptv#ch-466-rtl-kockica-hd">RTL Kockica</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="RTRS.ba" site_id="iptv#ch-11-rtrs">РТРС</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="RTRSPlus.ba" site_id="iptv#ch-18-rtrs-plus">РТРС Plus</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="StarChannel.a" site_id="iptv#ch-114-fox">Star Channel</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="StarCrime.ba" site_id="iptv#ch-117-fox-crime">Star Crime</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="StarLife.ba" site_id="iptv#ch-116-fox-life">Star Life</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="StarMovies.ba" site_id="59">Star Movies</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="TravelChannel.ba" site_id="iptv#ch-332-travel-channel">Travel Channel</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="TropikTV.ba" site_id="iptv#ch-399-tropik-tv-hd">Tropik TV</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ViasatExplore.ba" site_id="iptv#ch-137-viasat-explore">Viasat Explore</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ViasatHistory.ba" site_id="iptv#ch-138-viasat-history">Viasat History</channel>
+  <channel site="mtel.ba" lang="bs" xmltv_id="ViasatNature.ba" site_id="iptv#ch-135-viasat-nature">Viasat Nature</channel>  
   #Brazil
   <channel site="mi.tv" lang="pt" xmltv_id="AE.br" site_id="br#a-e">A&amp;E</channel>
   <channel site="mi.tv" lang="pt" xmltv_id="AgroMais.br" site_id="br#agromais-hd">Agromais</channel>
@@ -2557,11 +2556,6 @@
   <channel site="novatv.is" lang="is" xmltv_id="Althingi.is" site_id="bb5a5095_2F3486c">Alþingi</channel>
   <channel site="novatv.is" lang="is" xmltv_id="RUV.is" site_id="f492c60f_2F3486c">RÚV</channel>
   <channel site="novatv.is" lang="is" xmltv_id="RUV2.is" site_id="64a1209e_2F3486c">RÚV 2</channel>
-  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport.is" site_id="46888998">Síminn Sport</channel>
-  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport2.is" site_id="46888999">Síminn Sport 2</channel>
-  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport3.is" site_id="46890006">Síminn Sport 3</channel>
-  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport4.is" site_id="46890007">Síminn Sport 4</channel>
-  <channel site="siminn.is" lang="is" xmltv_id="SiminnSport5.is" site_id="46889000">Síminn Sport 5</channel>
   <channel site="novatv.is" lang="is" xmltv_id="SjonvarpSimans.is" site_id="20ca7c07_2F3486c">Sjónvarp Símans</channel>
   <channel site="novatv.is" lang="is" xmltv_id="Syn.is" site_id="ddb92ca7_2F3486c">Sýn</channel>
   <channel site="syn.is" lang="is" xmltv_id="SynSport.is" site_id="synsport">Sýn Sport</channel>
@@ -4134,70 +4128,70 @@
   <channel site="tvgids.nl" lang="nl" xmltv_id="ZiggoSport6.nl" site_id="ziggosport6">Ziggo Sport 6</channel>
   <channel site="ziggogo.tv" lang="nl" xmltv_id="ZiggoTV.nl" site_id="NL_000013_019327">Ziggo TV</channel>
   #New Zealand
-  <channel site="sky.co.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="76">Animal Planet</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="BBCEarth.nz" site_id="74">BBC Earth</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="BBCUKTV.nz" site_id="7">UKTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Bravo.nz" site_id="12">Bravo</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CartoonNetwork.au" site_id="102">Cartoon Network</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CBeebies.au" site_id="103">CBeebies</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CGTN.cn" site_id="310">CGTN</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CGTNDocumentary.cn" site_id="309">CGTN Documentary</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ComedyCentral.au" site_id="11">Comedy Central</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CountryTV.nz" site_id="81">Country TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="71">Crime + Investigation</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="DaystarTV.us" site_id="202">Daystar TV Network</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="DiscoveryChannel.nz" site_id="70">Discovery Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="DiscoveryTurbo.nz" site_id="75">Discovery Turbo</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="eden.nz" site_id="13">eden</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="edenPlus1.nz" site_id="505">eden +1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN2.au" site_id="61">ESPN2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ESPN.au" site_id="60">ESPN</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="FaceTV.nz" site_id="83">Face TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="HGTV.nz" site_id="21">HGTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="RealHistory.nz" site_id="73">Real History</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="18">Investigation Discovery</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="JONES.nz" site_id="8">JONES!</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Living.nz" site_id="17">Living Channel</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="MTV.nz" site_id="15">MTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="101">Nick</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="NickJr.au" site_id="104">Nick Jr.</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ParliamentTV.nz" site_id="86">Parliament TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyOpen.nz" site_id="4">Sky Open</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Rialto.nz" site_id="39">Rialto</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Rush.nz" site_id="24">Rush</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SBNTV.au" site_id="203">SBN</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="ShineTV.nz" site_id="201">Shine TV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Sky5.nz" site_id="5">Sky 5</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyArena.nz" site_id="65">Sky Arena</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyArts.nz" site_id="20">Sky Arts</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesAction.nz" site_id="32">Sky Movies Action</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesClassics.nz" site_id="34">Sky Movies Classic</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesComedy.nz" site_id="31">Sky Movies Comedy</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesFamily.nz" site_id="36">Sky Movies Family</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesGreats.nz" site_id="33">Sky Movies Greats</channel>    
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkyMoviesPremiere.nz" site_id="30">Sky Movies Premiere</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport1.nz" site_id="51">Sky Sport 1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport2.nz" site_id="52">Sky Sport 2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport3.nz" site_id="53">Sky Sport 3</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport4.nz" site_id="54">Sky Sport 4</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport5.nz" site_id="55">Sky Sport 5</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport6.nz" site_id="56">Sky Sport 6</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport7.nz" site_id="57">Sky Sport 7</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport8.nz" site_id="58">Sky Sport 8</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySport9.nz" site_id="59">Sky Sport 9</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SkySportSelect.nz" site_id="50">Sky Sport Select</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="SoHo.nz" site_id="10">SoHo</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TABTrackside1.nz" site_id="62">TAB Trackside 1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TABTrackside2.nz" site_id="63">TAB Trackside 2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TeReo.nz" site_id="82">Te Reo</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Three.nz" site_id="3">Three</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TLC.nz" site_id="16">TLC</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ1.nz" site_id="1">TVNZ 1</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZ2.nz" site_id="2">TVNZ 2</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="TVNZDUKE.nz" site_id="23">TVNZ DUKE</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="UniversalTV.nz" site_id="210">UniversalTV</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="Vibe.nz" site_id="6">Vibe</channel>
-  <channel site="sky.co.nz" lang="en" xmltv_id="WhakaataMaori.nz" site_id="19">Whakaata Māori</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="SkyGo/epg#sky.76">Animal Planet</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="BBCEarth.nz" site_id="SkyGo/epg#sky.74">BBC Earth</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="BBCUKTV.nz" site_id="SkyGo/epg#sky.7">UKTV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Bravo.nz" site_id="SkyGo/epg#sky.12">Bravo</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CartoonNetwork.au" site_id="SkyGo/epg#sky.102">Cartoon Network</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CBeebies.au" site_id="SkyGo/epg#sky.103">CBeebies</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CGTN.cn" site_id="SkyGo/epg#sky.310">CGTN</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CGTNDocumentary.cn" site_id="SkyGo/epg#sky.309">CGTN Documentary</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ComedyCentral.au" site_id="SkyGo/epg#sky.11">Comedy Central</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CountryTV.nz" site_id="SkyGo/epg#sky.81">Country TV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="SkyGo/epg#sky.71">Crime + Investigation</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DaystarTV.us" site_id="SkyGo/epg#sky.202">Daystar TV Network</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryChannel.nz" site_id="SkyGo/epg#sky.70">Discovery Channel</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryTurbo.nz" site_id="SkyGo/epg#sky.75">Discovery Turbo</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="eden.nz" site_id="SkyGo/epg#sky.13">eden</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="edenPlus1.nz" site_id="SkyGo/epg#sky.505">eden +1</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN2.au" site_id="SkyGo/epg#sky.61">ESPN2</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN.au" site_id="SkyGo/epg#sky.60">ESPN</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FaceTV.nz" site_id="SkyGo/epg#sky.83">Face TV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="HGTV.nz" site_id="SkyGo/epg#sky.21">HGTV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="RealHistory.nz" site_id="SkyGo/epg#sky.73">Real History</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="SkyGo/epg#sky.18">Investigation Discovery</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="JONES.nz" site_id="SkyGo/epg#sky.8">JONES!</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Living.nz" site_id="SkyGo/epg#sky.17">Living Channel</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="MTV.nz" site_id="SkyGo/epg#sky.15">MTV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="SkyGo/epg#sky.101">Nick</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="NickJr.au" site_id="SkyGo/epg#sky.104">Nick Jr.</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ParliamentTV.nz" site_id="SkyGo/epg#sky.86">Parliament TV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyOpen.nz" site_id="SkyGo/epg#sky.4">Sky Open</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Rialto.nz" site_id="SkyGo/epg#sky.39">Rialto</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Rush.nz" site_id="SkyGo/epg#sky.24">Rush</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SBNTV.au" site_id="SkyGo/epg#sky.203">SBN</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ShineTV.nz" site_id="SkyGo/epg#sky.201">Shine TV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Sky5.nz" site_id="SkyGo/epg#sky.5">Sky 5</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyArena.nz" site_id="SkyGo/epg#sky.65">Sky Arena</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyArts.nz" site_id="SkyGo/epg#sky.20">Sky Arts</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyMoviesAction.nz" site_id="SkyGo/epg#sky.32">Sky Movies Action</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyMoviesClassics.nz" site_id="SkyGo/epg#sky.34">Sky Movies Classic</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyMoviesComedy.nz" site_id="SkyGo/epg#sky.31">Sky Movies Comedy</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyMoviesFamily.nz" site_id="SkyGo/epg#sky.36">Sky Movies Family</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyMoviesGreats.nz" site_id="SkyGo/epg#sky.33">Sky Movies Greats</channel>    
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyMoviesPremiere.nz" site_id="SkyGo/epg#sky.30">Sky Movies Premiere</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport1.nz" site_id="SkyGo/epg#sky.51">Sky Sport 1</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport2.nz" site_id="SkyGo/epg#sky.52">Sky Sport 2</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport3.nz" site_id="SkyGo/epg#sky.53">Sky Sport 3</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport4.nz" site_id="SkyGo/epg#sky.54">Sky Sport 4</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport5.nz" site_id="SkyGo/epg#sky.55">Sky Sport 5</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport6.nz" site_id="SkyGo/epg#sky.56">Sky Sport 6</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport7.nz" site_id="SkyGo/epg#sky.57">Sky Sport 7</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport8.nz" site_id="SkyGo/epg#sky.58">Sky Sport 8</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySport9.nz" site_id="SkyGo/epg#sky.59">Sky Sport 9</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkySportSelect.nz" site_id="SkyGo/epg#sky.50">Sky Sport Select</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SoHo.nz" site_id="SkyGo/epg#sky.10">SoHo</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TABTrackside1.nz" site_id="SkyGo/epg#sky.62">TAB Trackside 1</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TABTrackside2.nz" site_id="SkyGo/epg#sky.63">TAB Trackside 2</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TeReo.nz" site_id="SkyGo/epg#sky.82">Te Reo</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Three.nz" site_id="SkyGo/epg#sky.3">Three</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TLC.nz" site_id="SkyGo/epg#sky.16">TLC</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TVNZ1.nz" site_id="SkyGo/epg#sky.1">TVNZ 1</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TVNZ2.nz" site_id="SkyGo/epg#sky.2">TVNZ 2</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TVNZDUKE.nz" site_id="SkyGo/epg#sky.23">TVNZ DUKE</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="UniversalTV.nz" site_id="SkyGo/epg#sky.210">UniversalTV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Vibe.nz" site_id="SkyGo/epg#sky.6">Vibe</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="WhakaataMaori.nz" site_id="SkyGo/epg#sky.19">Whakaata Māori</channel>
   #Nigeria
   <channel site="startimestv.com" lang="en" xmltv_id="AforevoTV.ng" site_id="615">Aforevo TV</channel>
   <channel site="dstv.com" lang="en" xmltv_id="AfricaMagicEpic.ng" site_id="nga#152">Africa Magic Epic</channel>
@@ -4370,22 +4364,22 @@
   <channel site="gatotv.com" lang="es" xmltv_id="Trece.py" site_id="13_de_paraguay">Trece</channel>
   <channel site="gatotv.com" lang="es" xmltv_id="Unicanal.py" site_id="unicanal">Unicanal</channel>
   #Peru
-  <channel site="mi.tv" lang="es" xmltv_id="AmericaTelevision.pe" site_id="pe#america-television">América Televisión</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ATV.pe" site_id="pe#atv">ATV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="ATVPlus.pe" site_id="pe#atv-1">ATV +</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="AmericaTelevision.pe" site_id="lch2202">América Televisión</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ATV.pe" site_id="lch2211">ATV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ATVPlus.pe" site_id="lch2220">ATV +</channel>
   <channel site="mi.tv" lang="es" xmltv_id="ATVSur.pe" site_id="pe#atv-sur">ATV Sur</channel>
   <channel site="mi.tv" lang="es" xmltv_id="BethelTV.pe" site_id="hn#bethel">Bethel</channel>
   <channel site="tv.movistar.com.pe" lang="es" xmltv_id="ExitosaTV.pe" site_id="lch6311">Exitosa TV</channel>
   <channel site="tv.movistar.com.pe" lang="es" xmltv_id="GolPeru.pe" site_id="lch2425">GolPeru</channel>
   <channel site="mi.tv" lang="es" xmltv_id="NexTV.pe" site_id="pe#nex-tv">NexTV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="LaTele.pe" site_id="pe#la-tele">La Tele</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Latina.pe" site_id="pe#frecuencia-latina">Latina</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="LaTele.pe" site_id="lch2218">La Tele</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Latina.pe" site_id="lch2207">Latina</channel>
   <channel site="tv.movistar.com.pe" lang="es" xmltv_id="MovistarDeportes.pe" site_id="lch3298">M+ Deportes</channel>
   <channel site="tv.movistar.com.pe" lang="es" xmltv_id="MovistarPlus.pe" site_id="lch3302">M+ Plus</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="PanamericanaTV.pe" site_id="pe#panamericana-tv">Panamericana TV</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="TVPeru.pe" site_id="pe#tv-peru">TV Perú</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="PanamericanaTV.pe" site_id="lch2209">Panamericana TV</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="TVPeru.pe" site_id="lch2210">TV Perú</channel>
   <channel site="tv.movistar.com.pe" lang="es" xmltv_id="TVPeruNoticias.pe" site_id="lch2214">TV Perú Noticias</channel>
-  <channel site="mi.tv" lang="es" xmltv_id="Willax.pe" site_id="pe#willax">Willax</channel>
+  <channel site="tv.movistar.com.pe" lang="es" xmltv_id="Willax.pe" site_id="lch5614">Willax</channel>
   #Phillipines
   <channel site="mysky.com.ph" lang="en" xmltv_id="A2Z.ph" site_id="323">A2Z</channel>
   <channel site="mysky.com.ph" lang="en" xmltv_id="ANC.ph" site_id="27">ANC</channel>
@@ -5197,14 +5191,14 @@
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="MBCMax.sa" site_id="400924">MBC Max</channel>
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="MBCPersia.sa" site_id="418308">MBC Persia</channel>
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="MBCPlusDrama.sa" site_id="387296">MBC Plus Drama</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="RotanaKhalijia.sa" site_id="1#33#روتانا خليجية">Rotana Khalijia</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="RotanaDrama.sa" site_id="1#33#روتانا دراما">Rotana Drama</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="RotanaCinemaKSA.sa" site_id="1#33#روتانا سينما السعودية">Rotana Cinema KSA</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="RotanaClassic.sa" site_id="1#33#روتانا كلاسيك">Rotana Classic</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="RotanaClip.sa" site_id="1#33#روتانا كليب">Rotana Clip</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="RotanaComedy.sa" site_id="1358">Rotana Comedy</channel>
-  <channel site="elcinema.com" lang="ar" xmltv_id="RotanaKids.sa" site_id="1356">Rotana Kids</channel>
-  <channel site="sat.tv" lang="ar" xmltv_id="RotanaMusic.sa" site_id="1#33#روتانا موسيقى">Rotana Music</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaKhalijia.sa" site_id="435">Rotana Khalijia</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaDrama.sa" site_id="436">Rotana Drama</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaCinemaKSA.sa" site_id="431">Rotana Cinema KSA</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaClassic.sa" site_id="438">Rotana Classic</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaClip.sa" site_id="443">Rotana Clip</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaComedy.sa" site_id="437">Rotana Comedy</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaKids.sa" site_id="441">Rotana Kids</channel>
+  <channel site="rotana.net" lang="ar" xmltv_id="RotanaMusic.sa" site_id="444">Rotana Music</channel>
   <channel site="elcinema.com" lang="ar" xmltv_id="RotanaPlus.sa" site_id="1365">Rotana+</channel>
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="SBC.sa" site_id="946940">SBC</channel>
   <channel site="shahid.mbc.net" lang="ar" xmltv_id="Spacetoon.sa" site_id="409390">Spacetoon</channel>
