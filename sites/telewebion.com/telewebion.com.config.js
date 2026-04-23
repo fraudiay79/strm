@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   url({ channel, date }) {
-    return `https://gateway.telewebion.com/kandoo/channel/getChannelEpisodesByDate/?ChannelDescriptor=${channel.site_id}&FromDate=${date.startOf('day').format('YYYY-MM-DDTHH:mm:ss')}&ToDate=${date.endOf('day').format('YYYY-MM-DDTHH:mm:ss')}&IsClip=false&First=24&Offset=0`
+    return `https://gateway.telewebion.ir/kandoo/channel/getChannelEpisodesByDate/?ChannelDescriptor=${channel.site_id}&FromDate=${date.startOf('day').format('YYYY-MM-DDTHH:mm:ss')}&ToDate=${date.endOf('day').format('YYYY-MM-DDTHH:mm:ss')}&IsClip=false&First=24&Offset=0`
   },
   parser: function ({ content }) {
     let programs = []
@@ -46,7 +46,7 @@ module.exports = {
   async channels() {
     const axios = require('axios')
     const data = await axios
-      .get(`https://gateway.telewebion.com/kandoo/channel/getChannelsList/?NumOfItems=300&v=1.6.9`)
+      .get(`https://gateway.telewebion.ir/kandoo/channel/getChannelsList/?NumOfItems=300&v=4.5.6`)
       .then(r => r.data)
       .catch(console.log)
 
