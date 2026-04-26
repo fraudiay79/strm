@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119693/saileelatv/streams/sessions/60ea017d51954fcfa914b4289b40257d/media/playlist-orig.m3u8/fstl=exp=1777283662~acl=%2Fhls%2Flive%2F2119693%2Fsaileelatv%2F%2A~hmac=193a65e9603f82ab85e34428a78f6729d2b41fd245412643a65a31975c86ab47/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119693/saileelatv/streams/sessions/6b3322ed9b06422ab64bf2b01e969ea0/media/playlist-orig.m3u8/fstl=exp=1777325822~acl=%2Fhls%2Flive%2F2119693%2Fsaileelatv%2F%2A~hmac=ae399aba64f99fbe6cdb90ec97e72a15cf0a8c0df15d5b48ba329b63eefbe0ea/0.m3u8
