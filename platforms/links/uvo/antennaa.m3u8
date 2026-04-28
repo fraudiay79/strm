@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120757/antennaa/streams/sessions/eaee76cfb98542299b35ec9932e088cc/media/playlist-orig.m3u8/fstl=exp=1777481488~acl=%2Fhls%2Flive%2F2120757%2Fantennaa%2F%2A~hmac=06b8533f3bd0080f45afc535526150ca2cfaaff7a3c374f99b2939eaaf62e260/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120757/antennaa/streams/sessions/9b8f13041dab4825927448540437b4e7/media/playlist-orig.m3u8/fstl=exp=1777491003~acl=%2Fhls%2Flive%2F2120757%2Fantennaa%2F%2A~hmac=7dcc2fc1c3ec7971db1422fd6c58e583b7d5cf75340e932a99f9ae8fd961e97f/0.m3u8
