@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120430/voxafrica/streams/sessions/496aaf188eec4a0bb04f183393b7e2aa/media/playlist-orig.m3u8/fstl=exp=1777566437~acl=%2Fhls%2Flive%2F2120430%2Fvoxafrica%2F%2A~hmac=92686816d100ed07a8803cc5c079ebe8269ede753751c8c7a17a4334a29b2e21/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120430/voxafrica/streams/sessions/b371d92923004d89a0360108eb49de9c/media/playlist-orig.m3u8/fstl=exp=1777576877~acl=%2Fhls%2Flive%2F2120430%2Fvoxafrica%2F%2A~hmac=f63f21ebf0cd1071fabc78ede4c781e62af780ddde12b465e92ad8240dec2e99/0.m3u8
