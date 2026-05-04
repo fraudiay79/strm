@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120684/renouveautv/streams/sessions/fe88ac6d9fec4e5eb0a52b5671ba7740/media/playlist-orig.m3u8/fstl=exp=1777961413~acl=%2Fhls%2Flive%2F2120684%2Frenouveautv%2F%2A~hmac=a6240976b8867b665a80008d7fa6f2d5a34988e2fd6733e942e623661c29a4a6/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/hls/live/2120684/renouveautv/streams/sessions/fc68eec17b5a43978358f2bae4abddd0/media/playlist-orig.m3u8/fstl=exp=1777979043~acl=%2Fhls%2Flive%2F2120684%2Frenouveautv%2F%2A~hmac=43a24fca430d53e1b23e2a7f3865175b1ecf88beddf03bd7640435aaeca69a0f/0.m3u8
