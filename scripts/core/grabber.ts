@@ -129,7 +129,7 @@ export class Grabber {
     const batchData = JSON.stringify(this.currentBatchPrograms)
 
     try {
-      await this.storage.store(batchFile, batchData)
+      await this.storage.save(batchFile, batchData)
       this.batchCounter++
       this.currentBatchPrograms = [] // Clear current batch from memory
 
