@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2119051/attesiatv/streams/sessions/4649b6ed349c40d694ac8895b9e8faf6/media/playlist-orig.m3u8/fstl=exp=1778054666~acl=%2Fhls%2Flive%2F2119051%2Fattesiatv%2F%2A~hmac=81e7435c937e0687c8e2625c888b6db77883fee881973acd9d03efc565f37bde/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119051/attesiatv/streams/sessions/c6e828faf4564ac189007e67853c934e/media/playlist-orig.m3u8/fstl=exp=1778064216~acl=%2Fhls%2Flive%2F2119051%2Fattesiatv%2F%2A~hmac=0fc99bf7451e67865ff4620e9904e85519b3a7207ed769f7bbb5ee8baecf0ddf/0.m3u8
