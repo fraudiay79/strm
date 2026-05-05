@@ -10,7 +10,7 @@ jobs:
 
     steps:
     - name: checkout repository
-      uses: actions/checkout@v4.1.7
+      uses: actions/checkout@v4
 
     - name: Set up Python
       uses: actions/setup-python@v5
@@ -18,13 +18,13 @@ jobs:
         python-version: '3.x'
 
     - name: Set up Node
-      uses: actions/setup-node@v4.0.2
+      uses: actions/setup-node@v4
       with:
-           node-version: 22
+           node-version: 20
 
     - name: npm grab epg
       env:
-        NODE_OPTIONS: --max-old-space-size=8192
+        NODE_OPTIONS: --max-old-space-size=7168 --expose-gc
       run: |
           npm install
           npm install oauth-1.0a
