@@ -23,10 +23,12 @@ jobs:
            node-version: 22
 
     - name: npm grab epg
+      env:
+        NODE_OPTIONS: --max-old-space-size=4096
       run: |
           npm install
           npm install oauth-1.0a
-          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
+          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=10 --timeout=90000
           
     - name: Commit changes
       run: |
