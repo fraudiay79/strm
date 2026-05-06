@@ -53,21 +53,17 @@ const paths = {
 }
 
 const globalHeaders = {
-  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36',
-  'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8',
-  'Accept-Language': 'fr-FR,fr;q=0.6',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'Accept': 'application/json, text/plain, */*',
+  'Accept-Language': 'fr-FR,fr;q=0.9,en;q=0.8',
   'Accept-Encoding': 'gzip, deflate, br',
-  'Pragma': 'no-cache',
-  'Priority': 'u=0, i',
-  'Sec-CH-UA': '"Not:A-Brand";v="99", "Brave";v="145", "Chromium";v="145"',
-  'sec-ch-ua-mobile': '?0',
-  'sec-ch-ua-platform': '"Windows"',
-  'sec-fetch-dest': 'document',
-  'sec-fetch-mode': 'navigate',
-  'sec-fetch-site': 'none',
-  'sec-fetch-user': '?1',
-  'sec-gpc': '1',
-  'upgrade-insecure-requests': '1'
+  'Referer': 'https://www.canalplus.com/',
+  'Origin': 'https://www.canalplus.com',
+  'DNT': '1',
+  'Connection': 'keep-alive',
+  'Sec-Fetch-Dest': 'empty',
+  'Sec-Fetch-Mode': 'cors',
+  'Sec-Fetch-Site': 'same-site'
 }
 
 // Per-region token caching to avoid multiple concurrent calls and redundant token fetches
@@ -94,33 +90,60 @@ module.exports = {
             tokenPending[currentRegion] = undefined
           }
           return result
+        }).catch(err => {
+          console.error(`Failed to get token for region ${currentRegion}:`, err.message)
+          tokenPending[currentRegion] = undefined
+          return null
         })
       }
       await tokenPending[currentRegion]
     }
 
+    // If token is null (authentication failed), return null to skip this channel
+    if (!tokenCache[currentRegion]?.token) {
+      console.warn(`No token available for region ${currentRegion}, skipping channel ${site_id}`)
+      return null
+    }
+
     const path = currentRegion === 'pl' ? 'mycanalint' : 'mycanal'
     const diff = date.diff(dayjs.utc().startOf('d'), 'd')
-    const token = tokenCache[currentRegion]?.token
+    const token = tokenCache[currentRegion].token
 
     return `https://hodor.canalplus.pro/api/v2/${path}/channels/${token}/${site_id}/broadcasts/day/${diff}`
   },
   request: {
     headers() {
       return globalHeaders
-    }
+    },
+    timeout: 10000
   },
   async parser({ content }) {
-    const items = parseItems(content)
+    if (!content) return []
+    
+    let data
+    try {
+      data = JSON.parse(content)
+    } catch (err) {
+      console.error('Failed to parse content:', err.message)
+      return []
+    }
+    
+    const items = parseItems(data)
+    if (!items.length) return []
 
-    // Parallel loading of all program details
-    const detailsArray = await Promise.all(items.map(loadProgramDetails))
+    // Parallel loading of all program details with error handling
+    const detailsArray = await Promise.all(items.map(item => loadProgramDetails(item).catch(err => {
+      console.error('Failed to load program details:', err.message)
+      return {}
+    })))
 
     const programs = items.map((item, i) => {
       const info = parseInfo(detailsArray[i])
       const start = parseStart(item)
+      if (!start) return null
+      
       return {
-        title: item.title,
+        title: item.title || 'TBA',
         description: parseDescription(info),
         image: parseImage(info),
         actors: parseCast(info, 'Avec :'),
@@ -133,7 +156,7 @@ module.exports = {
         start,
         stop: null
       }
-    })
+    }).filter(p => p !== null) // Remove null entries
 
     // Sort programs by start time and set stop time of each program to the start time of the next one
     for (let i = 0; i < programs.length - 1; i++) {
@@ -153,18 +176,25 @@ module.exports = {
     const pathSegment = location ? `${zone}/${location}` : zone || country
     const url = `https://secure-webtv-static.canal-plus.com/metadata/${pathSegment}/all/v2.2/globalchannels.json`
 
-    const data = await axios
-      .get(url)
-      .then(r => r.data)
-      .catch(console.log)
+    try {
+      const data = await axios.get(url, { timeout: 10000 }).then(r => r.data)
+      
+      if (!data || !data.channels || !Array.isArray(data.channels)) {
+        console.warn(`No channels data for country ${country}`)
+        return []
+      }
 
-    return data.channels
-      .filter(channel => channel.name !== '.')
-      .map(channel => ({
-        lang: 'fr',
-        site_id: country === 'fr' ? `#${channel.id}` : `${country}#${channel.id}`,
-        name: channel.name
-      }))
+      return data.channels
+        .filter(channel => channel.name && channel.name !== '.')
+        .map(channel => ({
+          lang: 'fr',
+          site_id: country === 'fr' ? `#${channel.id}` : `${country}#${channel.id}`,
+          name: channel.name
+        }))
+    } catch (err) {
+      console.error(`Failed to fetch channels for ${country}:`, err.message)
+      return []
+    }
   }
 }
 
@@ -180,16 +210,40 @@ async function parseToken(country) {
     url = `https://hodor.canalplus.pro/api/v2/mycanal/authenticate.json/webapp/6.0?experiments=beta-test-one-tv-guide:control&offerZone=${zone}&offerLocation=${location}`
   }
 
-  const data = await axios
-    .get(url, { headers: globalHeaders, timeout: 5000 })
-    .then(r => r.data)
-    .catch(console.error)
-
-  return { country, token: data?.token }
+  try {
+    const response = await axios.get(url, { 
+      headers: globalHeaders, 
+      timeout: 10000,
+      // Don't automatically throw on 403, we'll handle it
+      validateStatus: status => status < 500
+    })
+    
+    // Check if we got HTML instead of JSON (bot protection)
+    if (response.headers['content-type']?.includes('text/html')) {
+      console.error(`Token endpoint returned HTML for ${country} - likely blocked by bot protection`)
+      return { country, token: null }
+    }
+    
+    if (response.status === 403) {
+      console.error(`Token endpoint returned 403 for ${country} - access forbidden`)
+      return { country, token: null }
+    }
+    
+    const data = response.data
+    if (!data || !data.token) {
+      console.warn(`No token in response for ${country}`)
+      return { country, token: null }
+    }
+    
+    return { country, token: data.token }
+  } catch (err) {
+    console.error(`Failed to fetch token for ${country}:`, err.message)
+    return { country, token: null }
+  }
 }
 
 function parseStart(item) {
-  return item?.startTime ? dayjs(item.startTime) : null
+  return item?.startTime ? dayjs.utc(item.startTime) : null
 }
 
 function parseImage(info) {
@@ -206,23 +260,29 @@ function parseInfo(data) {
 
 async function loadProgramDetails(item) {
   if (!item?.onClick?.URLPage) return {}
-  return axios
-    .get(item.onClick.URLPage, { headers: globalHeaders })
-    .then(r => r.data)
-    .catch(console.error)
+  
+  try {
+    const response = await axios.get(item.onClick.URLPage, { 
+      headers: globalHeaders,
+      timeout: 10000
+    })
+    return response.data
+  } catch (err) {
+    console.error(`Failed to load program details for ${item.title}:`, err.message)
+    return {}
+  }
 }
 
-function parseItems(content) {
-  const data = JSON.parse(content)
+function parseItems(data) {
   if (!data || !Array.isArray(data.timeSlices)) return []
-  return data.timeSlices.flatMap(s => s.contents)
+  return data.timeSlices.flatMap(s => s.contents || [])
 }
 
 function parseCast(info, type) {
   if (!info?.personnalities) return []
   const group = info.personnalities.find(i => i.prefix === type)
   if (!group) return []
-  return group.personnalitiesList.map(p => p.title)
+  return group.personnalitiesList?.map(p => p.title) || []
 }
 
 function parseDate(info) {
