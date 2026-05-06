@@ -20,23 +20,41 @@ module.exports = {
   },
   async parser({ content, channel, date }) {
     const programs = []
+    
+    // Check if we have content to parse
     if (!content) return []
-    const parsed = typeof content === 'string' ? JSON.parse(content) : content
-    if (!Array.isArray(parsed.entries)) return []
+    
+    // Parse the JSON content safely
+    let parsed
+    try {
+      parsed = typeof content === 'string' ? JSON.parse(content) : content
+    } catch (err) {
+      console.error(`Failed to parse JSON for channel ${channel.site_id}:`, err.message)
+      return []
+    }
+    
+    // Validate the parsed structure
+    if (!parsed || !Array.isArray(parsed.entries)) return []
     const entries = parsed.entries
 
-    // fetch other segments
+    // Fetch other segments (6, 12, 18 hours ahead)
     let segments = [
       module.exports.url({ date, segment: 6 }),
       module.exports.url({ date, segment: 12 }),
       module.exports.url({ date, segment: 18 })
     ]
+    
+    // Fetch additional segments with error handling
     await doFetch(segments, (url, res) => {
-      if (Array.isArray(res.entries)) {
+      // CRITICAL FIX: Check if res exists before accessing its properties
+      if (res && Array.isArray(res.entries)) {
         entries.push(...res.entries)
+      } else if (!res) {
+        console.warn(`Failed to fetch segment: ${url}`)
       }
     })
 
+    // Collect events for this channel
     let events = []
     entries
       .filter(item => item.channelId === channel.site_id)
@@ -50,11 +68,19 @@ module.exports = {
         )
       })
 
+    // Remove duplicate events by start time
     events = uniqBy(events, 'startTime')
 
-    // fetch detailed guide
+    // Fetch detailed guide information for each event
     if (events.length) {
       await doFetch(events, (url, res) => {
+        // CRITICAL FIX: Check if res exists before processing
+        if (!res) {
+          console.warn(`Failed to fetch event details: ${url}`)
+          return
+        }
+        
+        // Add the program with all available details
         programs.push({
           title: res.title,
           subTitle: res.episodeName,
@@ -78,25 +104,27 @@ module.exports = {
   async channels() {
     const channels = []
     const axios = require('axios')
-    const res = await axios
-      .get(
+    
+    try {
+      const res = await axios.get(
         'https://spark-prod-nl.gnp.cloud.ziggogo.tv/eng/web/linear-service/v2/channels?cityId=65535&language=en&productClass=Orion-DASH&platform=web'
       )
-      .then(r => r.data)
-      .catch(console.error)
-
-    if (Array.isArray(res)) {
-      channels.push(
-        ...res
-          .filter(item => !item.isHidden)
-          .map(item => {
-            return {
-              lang: 'nl',
-              site_id: item.id,
-              name: item.name
-            }
-          })
-      )
+      
+      if (Array.isArray(res.data)) {
+        channels.push(
+          ...res.data
+            .filter(item => !item.isHidden)
+            .map(item => {
+              return {
+                lang: 'nl',
+                site_id: item.id,
+                name: item.name
+              }
+            })
+        )
+      }
+    } catch (err) {
+      console.error('Failed to fetch channels:', err.message)
     }
 
     return channels
