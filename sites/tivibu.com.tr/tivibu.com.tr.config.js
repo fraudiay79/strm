@@ -7,94 +7,159 @@ dayjs.extend(timezone)
 module.exports = {
   site: 'tivibu.com.tr',
   timezone: 'Europe/Istanbul',
-  days: 7,
+  days: 2, // Reduced from 7 as INI notes it's "very slow"
+  
   url({ date, channel }) {
-    // For channel listing - first request to get CSRF token and channel data
+    // Return the main page URL to get CSRF token
     return 'https://www.tivibu.com.tr/'
   },
+  
   request: {
-    method: 'POST',
     timeout: 60000,
-    cache: {
-      ttl: 60 * 60 * 1000 // 1 hour
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+      'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8',
+      'Accept-Encoding': 'gzip, deflate, br'
     }
   },
+  
   async parser({ content, channel, date }) {
     let programs = []
     
-    // First, get CSRF token
-    const csrfToken = extractCsrfToken(content)
-    
-    // For each channel, we need to make a POST request to GetMultiPrevueData
-    const startDate = date.clone()
-    const endDate = date.clone().add(this.days, 'day')
-    
-    const postData = {
-      channelColumnCode: '020000',
-      channelDateBegin: startDate.format('YYYY.MM.DD') + ' 00:00:00',
-      channelDateEnd: endDate.format('YYYY.MM.DD') + ' 23:59:59',
-      channelSearchValue: '',
-      pageNo: '1' // Multiple page requests might be needed
-    }
-    
-    // Make POST request for program data
-    const response = await makePostRequest(postData, csrfToken)
-    
-    if (response && response.data) {
-      programs = parsePrograms(response.data, channel, date)
+    try {
+      // Extract CSRF token from the HTML
+      const csrfToken = extractCsrfToken(content)
+      if (!csrfToken) {
+        console.error('Could not extract CSRF token')
+        return programs
+      }
+      
+      // Calculate date range (grab as few days as necessary)
+      const startDate = date.clone()
+      const endDate = date.clone().add(this.days - 1, 'day')
+      
+      // For each day in the range (the API might need separate requests per day)
+      for (let d = 0; d < this.days; d++) {
+        const currentDate = date.clone().add(d, 'day')
+        const formattedDate = currentDate.format('YYYY.MM.DD')
+        
+        // Prepare POST data
+        const postData = new URLSearchParams({
+          channelColumnCode: '020000',
+          channelDateBegin: `${formattedDate} 00:00:00`,
+          channelDateEnd: `${formattedDate} 23:59:59`,
+          channelSearchValue: '',
+          pageNo: '1'
+        })
+        
+        // Make the POST request for this day
+        const response = await makePostRequest(postData, csrfToken)
+        
+        if (response && response.data && typeof response.data === 'object') {
+          const dayPrograms = parseProgramsForChannel(response.data, channel, currentDate)
+          programs.push(...dayPrograms)
+        }
+      }
+      
+      // Sort by start time and remove duplicates
+      programs.sort((a, b) => a.start - b.start)
+      
+    } catch (error) {
+      console.error(`Error parsing data for channel ${channel.site_id}:`, error.message)
     }
     
     return programs
   },
+  
   async channels() {
     const axios = require('axios')
     
-    // Initial request to get CSRF token and channel list
-    const initialResponse = await axios.get('https://www.tivibu.com.tr/')
-    const csrfToken = extractCsrfToken(initialResponse.data)
-    
-    // Make POST request to get channel list
-    const postData = {
-      channelColumnCode: '020000',
-      channelDateBegin: dayjs().format('YYYY.MM.DD') + ' 00:00:00',
-      channelDateEnd: dayjs().format('YYYY.MM.DD') + ' 23:59:59',
-      channelSearchValue: '',
-      pageNo: '1'
-    }
-    
-    const channelsResponse = await axios.post(
-      'https://www.tivibu.com.tr/Channel/GetMultiPrevueData',
-      new URLSearchParams(postData),
-      {
+    try {
+      // First, get the main page to extract CSRF token
+      const initialResponse = await axios.get('https://www.tivibu.com.tr/', {
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
-          'RequestVerificationToken': csrfToken,
-          'Accept-Encoding': 'gzip,deflate,br'
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9'
         }
-      }
-    )
-    
-    let channels = []
-    
-    if (channelsResponse.data && channelsResponse.data.channelListViewModel) {
-      channelsResponse.data.channelListViewModel.forEach(channel => {
-        channels.push({
-          lang: 'tr',
-          site_id: channel.channelCode,
-          name: channel.channelName,
-          logo: channel.channelImage
-        })
       })
+      
+      const csrfToken = extractCsrfToken(initialResponse.data)
+      if (!csrfToken) {
+        console.error('Could not extract CSRF token for channel listing')
+        return []
+      }
+      
+      // Make POST request to get channel list
+      const today = dayjs().format('YYYY.MM.DD')
+      const postData = new URLSearchParams({
+        channelColumnCode: '020000',
+        channelDateBegin: `${today} 00:00:00`,
+        channelDateEnd: `${today} 23:59:59`,
+        channelSearchValue: '',
+        pageNo: '1'
+      })
+      
+      const channelsResponse = await axios.post(
+        'https://www.tivibu.com.tr/Channel/GetMultiPrevueData',
+        postData,
+        {
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+            'RequestVerificationToken': csrfToken,
+            'X-Requested-With': 'XMLHttpRequest',
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+            'Accept': 'application/json, text/javascript, */*; q=0.01',
+            'Accept-Language': 'tr-TR,tr;q=0.9',
+            'Referer': 'https://www.tivibu.com.tr/'
+          },
+          timeout: 30000
+        }
+      )
+      
+      let channels = []
+      
+      // Parse channel list from response
+      if (channelsResponse.data && channelsResponse.data.channelListViewModel) {
+        channelsResponse.data.channelListViewModel.forEach(channel => {
+          if (channel.channelCode && channel.channelName) {
+            channels.push({
+              lang: 'tr',
+              site_id: channel.channelCode,
+              name: channel.channelName.trim(),
+              logo: channel.channelImage || null
+            })
+          }
+        })
+      }
+      
+      console.log(`Found ${channels.length} channels`)
+      return channels
+      
+    } catch (error) {
+      console.error('Error fetching channels:', error.message)
+      return []
     }
-    
-    return channels
   }
 }
 
 function extractCsrfToken(html) {
-  // Extract CSRF token from HTML
-  const match = html.match(/name="CSRF-TOKEN-TVBUDNBX!-FORM" value="([^"]+)"/)
-  return match ? match[1] : ''
+  // Try multiple patterns to find the CSRF token
+  const patterns = [
+    /name="CSRF-TOKEN-TVBUDNBX!-FORM" value="([^"]+)"/,
+    /name="__RequestVerificationToken" value="([^"]+)"/,
+    /RequestVerificationToken["']?\s*:\s*["']([^"']+)["']/,
+    /X-CSRF-TOKEN-TVBUDNBX%21=([^;]+)/
+  ]
+  
+  for (const pattern of patterns) {
+    const match = html.match(pattern)
+    if (match && match[1]) {
+      return decodeURIComponent(match[1])
+    }
+  }
+  
+  return null
 }
 
 async function makePostRequest(postData, csrfToken) {
@@ -103,73 +168,119 @@ async function makePostRequest(postData, csrfToken) {
   try {
     const response = await axios.post(
       'https://www.tivibu.com.tr/Channel/GetMultiPrevueData',
-      new URLSearchParams(postData),
+      postData,
       {
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
           'RequestVerificationToken': csrfToken,
-          'Accept-Encoding': 'gzip,deflate,br'
+          'X-Requested-With': 'XMLHttpRequest',
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'application/json, text/javascript, */*; q=0.01',
+          'Accept-Language': 'tr-TR,tr;q=0.9',
+          'Referer': 'https://www.tivibu.com.tr/'
         },
-        timeout: 60000
+        timeout: 30000
       }
     )
     return response
   } catch (error) {
-    console.error('Error making POST request:', error.message)
+    if (error.response) {
+      console.error(`POST request failed with status ${error.response.status}`)
+    } else {
+      console.error(`POST request error: ${error.message}`)
+    }
     return null
   }
 }
 
-function parsePrograms(data, channel, date) {
+function parseProgramsForChannel(data, channel, date) {
   let programs = []
   
-  if (!data || !data.length) return programs
+  if (!data || !Array.isArray(data)) {
+    return programs
+  }
   
   // Find the channel data
   const channelData = data.find(item => item.channelCode === channel.site_id)
-  if (!channelData || !channelData.prevues) return programs
+  if (!channelData || !channelData.prevues || !Array.isArray(channelData.prevues)) {
+    return programs
+  }
   
   channelData.prevues.forEach(prevue => {
-    // Parse start time
+    if (!prevue.exactBeginTime || !prevue.exactEndTime) {
+      return
+    }
+    
+    // Parse start and stop times
     let start = parseTime(prevue.exactBeginTime)
     let stop = parseTime(prevue.exactEndTime)
     
-    // Handle rating
-    let rating = parseRating(prevue.ratingId)
+    if (!start || !stop) {
+      return
+    }
     
-    programs.push({
-      title: prevue.prevueName || '',
-      description: prevue.description || '',
-      category: prevue.genre || '',
+    const program = {
+      title: prevue.prevueName || 'No Title',
       start: start,
-      stop: stop,
-      icon: prevue.prevueImage || '',
-      rating: rating ? { system: 'TR', value: rating } : null
-    })
+      stop: stop
+    }
+    
+    // Add optional fields if they exist
+    if (prevue.description) {
+      program.description = prevue.description
+    }
+    
+    if (prevue.genre) {
+      program.category = prevue.genre
+    }
+    
+    if (prevue.prevueImage) {
+      program.icon = prevue.prevueImage
+    }
+    
+    if (prevue.ratingId) {
+      const rating = parseRating(prevue.ratingId)
+      if (rating) {
+        program.rating = { system: 'TR', value: rating }
+      }
+    }
+    
+    programs.push(program)
   })
-  
-  // Sort by start time
-  programs.sort((a, b) => a.start - b.start)
   
   return programs
 }
 
 function parseTime(timeString) {
-  // Time format from API: "2024-01-15T14:30:00" or similar
   if (!timeString) return null
   
-  // Handle different possible formats
-  let formattedTime = timeString
-  if (timeString.includes('T')) {
-    formattedTime = timeString.replace('T', ' ')
-    if (formattedTime.includes('Z')) {
-      formattedTime = formattedTime.replace('Z', '')
+  try {
+    // Handle ISO format: "2024-01-15T14:30:00"
+    let formattedTime = timeString
+    
+    if (timeString.includes('T')) {
+      formattedTime = timeString.replace('T', ' ')
     }
-    // Truncate milliseconds if present
+    
+    // Remove timezone info if present
+    formattedTime = formattedTime.replace(/[+-]\d{2}:?\d{2}$/, '')
+    formattedTime = formattedTime.replace('Z', '')
+    
+    // Remove milliseconds if present
     formattedTime = formattedTime.split('.')[0]
+    
+    // Parse with timezone
+    const parsed = dayjs.tz(formattedTime, 'YYYY-MM-DD HH:mm:ss', 'Europe/Istanbul')
+    
+    if (!parsed.isValid()) {
+      return null
+    }
+    
+    return parsed.utc()
+  } catch (error) {
+    console.error(`Error parsing time "${timeString}":`, error.message)
+    return null
   }
-  
-  return dayjs.tz(formattedTime, 'YYYY-MM-DD HH:mm:ss', 'Europe/Istanbul').utc()
 }
 
 function parseRating(ratingId) {
@@ -179,14 +290,12 @@ function parseRating(ratingId) {
     'generalAudience': '0+',
     'plus7': '7+',
     'plus13': '13+',
-    'plus18': '18+'
+    'plus18': '18+',
+    'GA': '0+',
+    '7+': '7+',
+    '13+': '13+',
+    '18+': '18+'
   }
   
-  return ratingMap[ratingId] || null
-}
-
-// Helper function to get subpage numbers (for pagination)
-function getSubpageNumbers() {
-  // Returns array [1, 2, 3, ... 12] as per original INI
-  return Array.from({ length: 12 }, (_, i) => i + 1)
+  return ratingMap[ratingId] || ratingMap[ratingId.toLowerCase()] || null
 }
