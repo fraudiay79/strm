@@ -9,19 +9,35 @@ module.exports = {
   timezone: 'Europe/Istanbul',
   days: 2,
   
-  async parser({ channel, date }) {
+  // Required url function - returns the URL to fetch
+  url({ channel, date }) {
+    // Return a placeholder URL - we'll make the actual request in the parser
+    return 'https://www.tivibu.com.tr/canli-tv'
+  },
+  
+  // Optional request configuration
+  request: {
+    timeout: 60000,
+    headers: {
+      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9',
+      'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8'
+    }
+  },
+  
+  async parser({ content, channel, date }) {
     let programs = []
     
     try {
-      // First, get a valid session and CSRF token
-      const { csrfToken, cookieString } = await getSession()
+      // First, get a valid session and CSRF token from the content
+      const { csrfToken, cookieString } = await getSessionFromContent(content)
       
       if (!csrfToken) {
         console.error('Could not get CSRF token for channel:', channel.site_id)
         return programs
       }
       
-      // Calculate date range (grab as few days as necessary - API returns all data at once)
+      // Calculate date range
       const startDate = date.clone()
       const endDate = date.clone().add(this.days - 1, 'day')
       
@@ -55,11 +71,19 @@ module.exports = {
   
   async channels() {
     const axios = require('axios')
-    const cheerio = require('cheerio')
     
     try {
       // Get session first
-      const { csrfToken, cookieString } = await getSession()
+      const response = await axios.get('https://www.tivibu.com.tr/canli-tv', {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9',
+          'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8'
+        },
+        timeout: 30000
+      })
+      
+      const { csrfToken, cookieString } = await getSessionFromContent(response.data)
       
       // Fetch channel list using the API
       const today = dayjs().format('YYYY.MM.DD')
@@ -71,12 +95,12 @@ module.exports = {
         pageNo: '1'
       })
       
-      const response = await makeMultiPrevueRequest(postData, csrfToken, cookieString)
+      const apiResponse = await makeMultiPrevueRequest(postData, csrfToken, cookieString)
       
       let channels = []
       
-      if (response && response.channelListViewModel) {
-        response.channelListViewModel.forEach(channel => {
+      if (apiResponse && apiResponse.channelListViewModel) {
+        apiResponse.channelListViewModel.forEach(channel => {
           if (channel.channelCode && channel.channelName) {
             channels.push({
               lang: 'tr',
@@ -91,7 +115,7 @@ module.exports = {
       console.log(`Found ${channels.length} channels on tivibu.com.tr`)
       
       if (channels.length === 0) {
-        return await getChannelsFromHTML()
+        return await getChannelsFromHTML(response.data)
       }
       
       return channels
@@ -103,23 +127,11 @@ module.exports = {
   }
 }
 
-async function getSession() {
+async function getSessionFromContent(html) {
   const axios = require('axios')
   
   try {
-    // First, get the main page to establish a session
-    const initialResponse = await axios.get('https://www.tivibu.com.tr/canli-tv', {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9',
-        'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8'
-      },
-      timeout: 30000,
-      withCredentials: true
-    })
-    
     // Extract CSRF token from HTML
-    const html = initialResponse.data
     let csrfToken = null
     
     // Look for the CSRF token in hidden input
@@ -128,20 +140,26 @@ async function getSession() {
       csrfToken = tokenMatch[1]
     }
     
-    // Extract cookies from response headers
-    const cookies = initialResponse.headers['set-cookie']
-    const cookieString = cookies ? cookies.map(c => c.split(';')[0]).join('; ') : ''
+    // Also try to get cookies from the response if this was from a request
+    let cookieString = ''
     
     return { csrfToken, cookieString }
     
   } catch (error) {
-    console.error('Error getting session:', error.message)
+    console.error('Error getting session from content:', error.message)
     return { csrfToken: null, cookieString: '' }
   }
 }
 
 async function makeMultiPrevueRequest(postData, csrfToken, cookieString) {
   const axios = require('axios')
+  
+  // If no CSRF token, try to get one
+  if (!csrfToken) {
+    const session = await getSession()
+    csrfToken = session.csrfToken
+    cookieString = session.cookieString
+  }
   
   try {
     const response = await axios.post(
@@ -150,19 +168,13 @@ async function makeMultiPrevueRequest(postData, csrfToken, cookieString) {
       {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
-          'RequestVerificationToken': csrfToken,
+          'RequestVerificationToken': csrfToken || '',
           'X-Requested-With': 'XMLHttpRequest',
           'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
           'Accept': 'application/json, text/javascript, */*; q=0.01',
           'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8',
           'Referer': 'https://www.tivibu.com.tr/canli-tv',
           'Origin': 'https://www.tivibu.com.tr',
-          'sec-ch-ua': '"Google Chrome";v="147", "Not.A/Brand";v="8", "Chromium";v="147"',
-          'sec-ch-ua-mobile': '?0',
-          'sec-ch-ua-platform': '"Windows"',
-          'sec-fetch-dest': 'empty',
-          'sec-fetch-mode': 'cors',
-          'sec-fetch-site': 'same-origin',
           'Cookie': cookieString
         },
         timeout: 30000,
@@ -174,19 +186,13 @@ async function makeMultiPrevueRequest(postData, csrfToken, cookieString) {
   } catch (error) {
     if (error.response) {
       console.error(`Request failed with status ${error.response.status}`)
-      if (error.response.status === 400) {
-        console.error('  This may require authentication or might be rate-limited')
-      }
-    } else {
-      console.error(`Request error:`, error.message)
     }
     return null
   }
 }
 
-async function getChannelsFromHTML() {
+async function getSession() {
   const axios = require('axios')
-  const cheerio = require('cheerio')
   
   try {
     const response = await axios.get('https://www.tivibu.com.tr/canli-tv', {
@@ -195,10 +201,45 @@ async function getChannelsFromHTML() {
         'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9',
         'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8'
       },
-      timeout: 30000
+      timeout: 30000,
+      withCredentials: true
     })
     
-    const $ = cheerio.load(response.data)
+    const html = response.data
+    const tokenMatch = html.match(/name="CSRF-TOKEN-TVBUDNBX!-FORM" value="([^"]+)"/)
+    const csrfToken = tokenMatch ? tokenMatch[1] : null
+    
+    const cookies = response.headers['set-cookie']
+    const cookieString = cookies ? cookies.map(c => c.split(';')[0]).join('; ') : ''
+    
+    return { csrfToken, cookieString }
+    
+  } catch (error) {
+    console.error('Error getting session:', error.message)
+    return { csrfToken: null, cookieString: '' }
+  }
+}
+
+async function getChannelsFromHTML(htmlContent) {
+  const cheerio = require('cheerio')
+  
+  try {
+    let html = htmlContent
+    
+    if (!html) {
+      const axios = require('axios')
+      const response = await axios.get('https://www.tivibu.com.tr/canli-tv', {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9',
+          'Accept-Language': 'tr-TR,tr;q=0.9,en;q=0.8'
+        },
+        timeout: 30000
+      })
+      html = response.data
+    }
+    
+    const $ = cheerio.load(html)
     const channels = []
     
     // Extract channels from the HTML
@@ -239,12 +280,10 @@ function parsePrograms(prevueList, date) {
   }
   
   prevueList.forEach(prevue => {
-    // Skip if missing required fields
     if (!prevue.beginTime || !prevue.endTime || !prevue.prevueName) {
       return
     }
     
-    // Parse begin and end times
     let start = parseDateTime(prevue.beginTime)
     let stop = parseDateTime(prevue.endTime)
     
@@ -258,7 +297,6 @@ function parsePrograms(prevueList, date) {
       stop: stop
     }
     
-    // Add optional fields
     if (prevue.description && prevue.description.trim()) {
       program.description = prevue.description.trim()
     }
@@ -288,10 +326,8 @@ function parseDateTime(dateTimeString) {
   if (!dateTimeString) return null
   
   try {
-    // Format from API: "2026.05.06 23:25:00" or "2026.05.06 23:25"
     let formatted = dateTimeString.replace(/\./g, '-')
     
-    // Ensure seconds are present
     if (formatted.split(':').length === 2) {
       formatted = `${formatted}:00`
     }
@@ -304,7 +340,6 @@ function parseDateTime(dateTimeString) {
     
     return parsed.utc()
   } catch (error) {
-    console.error(`Error parsing date/time "${dateTimeString}":`, error.message)
     return null
   }
 }
@@ -316,45 +351,23 @@ function parseRating(ratingId) {
     'generalAudience': '0+',
     'plus7': '7+',
     'plus13': '13+',
-    'plus18': '18+',
-    'GA': '0+',
-    '7+': '7+',
-    '13+': '13+',
-    '18+': '18+'
+    'plus18': '18+'
   }
   
-  return ratingMap[ratingId] || ratingMap[ratingId.toLowerCase()] || null
+  return ratingMap[ratingId] || null
 }
 
 function getFallbackChannels() {
-  // Return known working channels from the HTML
   return [
     { lang: 'tr', site_id: 'ch00000000000000001358', name: 'TİVİBU TANITIM' },
-    { lang: 'tr', site_id: 'ch00000000000000001481', name: 'BENİM KANALIM' },
     { lang: 'tr', site_id: 'ch00000000000000002187', name: 'TARİH TV' },
     { lang: 'tr', site_id: 'ch00000000000000001258', name: 'SİNEMA TV' },
-    { lang: 'tr', site_id: 'ch00000000000000002783', name: 'SİNEMA 2' },
-    { lang: 'tr', site_id: 'ch00000000000000001259', name: 'SİNEMA YERLİ' },
-    { lang: 'tr', site_id: 'ch00000000000000002784', name: 'SİNEMA YERLİ 2' },
-    { lang: 'tr', site_id: 'ch00000000000000001263', name: 'SİNEMA AKSİYON' },
-    { lang: 'tr', site_id: 'ch00000000000000002803', name: 'SİNEMA AKSİYON 2' },
-    { lang: 'tr', site_id: 'ch00000000000000001281', name: 'SİNEMA KOMEDİ' },
-    { lang: 'tr', site_id: 'ch00000000000000002785', name: 'SİNEMA KOMEDİ 2' },
-    { lang: 'tr', site_id: 'ch00000000000000001271', name: 'SİNEMA AİLE' },
-    { lang: 'tr', site_id: 'ch00000000000000002786', name: 'SİNEMA AİLE 2' },
-    { lang: 'tr', site_id: 'ch00000000000000001262', name: 'SİNEMA 1001' },
-    { lang: 'tr', site_id: 'ch00000000000000002813', name: 'SİNEMA 1002' },
     { lang: 'tr', site_id: 'ch00000000000000001266', name: 'TRT 1' },
     { lang: 'tr', site_id: 'ch00000000000000001166', name: 'KANAL D' },
     { lang: 'tr', site_id: 'ch00000000000000001017', name: 'ATV' },
     { lang: 'tr', site_id: 'ch00000000000000001230', name: 'SHOW TV' },
     { lang: 'tr', site_id: 'ch00000000000000001162', name: 'NOW' },
     { lang: 'tr', site_id: 'ch00000000000000001170', name: 'STAR TV' },
-    { lang: 'tr', site_id: 'ch00000000000000001351', name: 'TV8' },
-    { lang: 'tr', site_id: 'ch00000000000000001307', name: 'TRT HABER' },
-    { lang: 'tr', site_id: 'ch00000000000000001221', name: 'NTV' },
-    { lang: 'tr', site_id: 'ch00000000000000001021', name: 'A HABER' },
-    { lang: 'tr', site_id: 'ch00000000000000001092', name: 'CNN TÜRK' },
-    { lang: 'tr', site_id: 'ch00000000000000001159', name: 'HABERTÜRK' }
+    { lang: 'tr', site_id: 'ch00000000000000001351', name: 'TV8' }
   ]
 }
