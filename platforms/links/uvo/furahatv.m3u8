@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/furahiatv/streams/sessions/fbf994d053604612a72c3a19a621534b/media/playlist-orig.m3u8/fstl=exp=1778322114~acl=%2F10010%2Fdvr%2Fhls%2Ffurahiatv%2F%2A~hmac=ad0b759ca2f1bbef4db256986669744cea332cfd8bf20689c8a7aec760de1506/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120681/furahatv/streams/sessions/4eb0970b71d7430fb586226a1d64d03b/media/playlist-orig.m3u8/fstl=exp=1778333228~acl=%2Fhls%2Flive%2F2120681%2Ffurahatv%2F%2A~hmac=8924fcedc1da7bc03a969856bf5249bb7ec55f045d6fcc794f726b280e397fe6/0.m3u8
