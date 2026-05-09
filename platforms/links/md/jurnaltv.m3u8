@@ -1,11 +1,11 @@
 === Trying main approach ===
 Attempt 1 to fetch https://www.jurnaltv.md/page/live
 Successfully fetched the page
-Found token: e700dd495baa1779b29e93fcd94ea64fc905e31c
+Found token: 6edb06ceeacc207465e40ee125e30f429bc9ba6c
 
 === Success! Generated m3u8 content ===
 #EXTM3U
 #EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=1850000,BANDWIDTH=2310000,RESOLUTION=640x360,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.cdn.jurnaltv.md/JurnalTV_HD/tracks-v2a1/mono.ts.m3u8?token=e700dd495baa1779b29e93fcd94ea64fc905e31c
+https://live.cdn.jurnaltv.md/JurnalTV_HD/tracks-v2a1/mono.ts.m3u8?token=6edb06ceeacc207465e40ee125e30f429bc9ba6c
 #EXT-X-STREAM-INF:AVERAGE-BANDWIDTH=2860000,BANDWIDTH=3580000,RESOLUTION=1024x576,FRAME-RATE=25.000,CODECS="avc1.4d4029,mp4a.40.2",CLOSED-CAPTIONS=NONE
-https://live.cdn.jurnaltv.md/JurnalTV_HD/tracks-v1a1/mono.ts.m3u8?token=e700dd495baa1779b29e93fcd94ea64fc905e31c
+https://live.cdn.jurnaltv.md/JurnalTV_HD/tracks-v1a1/mono.ts.m3u8?token=6edb06ceeacc207465e40ee125e30f429bc9ba6c
