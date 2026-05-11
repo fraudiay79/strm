@@ -1,5 +1,3040 @@
 [
   {
+    "name": "Better Call Saul",
+    "category": "\ud83c\udd31",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/zjg4jpK1Wp2kiRvtt5ND0kznako.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/og2jKploGHYnCz68vV1nRSEE0xV.jpg",
+      "plot": "Six years before Saul Goodman meets Walter White. We meet him when the man who will become Saul Goodman is known as Jimmy McGill, a small-time lawyer searching for his destiny, and, more immediately, hustling to make ends meet. Working alongside, and, often, against Jimmy, is \u201cfixer\u201d Mike Ehrmantraut. The series tracks Jimmy\u2019s transformation into Saul Goodman, the man who puts \u201ccriminal\u201d in \u201ccriminal lawyer\".",
+      "rating": "8.7",
+      "genre": [
+        "crime",
+        "drama"
+      ],
+      "cast": [
+        "Bob Odenkirk",
+        "Jonathan Banks",
+        "Rhea Seehorn",
+        "Tony Dalton",
+        "Giancarlo Esposito"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/bAbZBZmz25Lqk8A8mwMWzAkvlAj.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Jimmy McGill was a small-time lawyer, hustling to make ends meet. This is how the search for his destiny and the story of Saul Goodman collide.",
+          "year": "2015",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Uno",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kXPlwZm3RefxpSU5E3Mu4Yyvn40.jpg",
+              "plot": "Jimmy works his magic in the courtroom. Unexpected inspiration leads him to an unconventional pursuit of potential clients.",
+              "duration": 3240,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kXPlwZm3RefxpSU5E3Mu4Yyvn40.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Mijo",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wOkddHcnj8Fae8VbLbKMh641HHy.jpg",
+              "plot": "As his troubles escalate to a boiling point, Jimmy finds himself in dire straits. An act of carelessness puts Chuck at risk.",
+              "duration": 2820,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wOkddHcnj8Fae8VbLbKMh641HHy.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Nacho",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xF1LKhLd0xAcddb9HrgAJ2W6gav.jpg",
+              "plot": "Jimmy pulls out all the stops to prove that his dangerous client is innocent, even though it causes some friction with Kim.",
+              "duration": 2880,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xF1LKhLd0xAcddb9HrgAJ2W6gav.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Hero",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1effMQQBq8BhBQXeqLNFcr8RGVb.jpg",
+              "plot": "Jimmy devises a bold plan to obtain new clients, but must face consequences when his relationships become strained.",
+              "duration": 2820,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1effMQQBq8BhBQXeqLNFcr8RGVb.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Alpine Shepherd Boy",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/854TkmG8cP00FmIR8QjTsa0ajVE.jpg",
+              "plot": "Alarming news disrupts Jimmy's efforts at drumming up new business, forcing him to make a difficult choice.",
+              "duration": 2700,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/854TkmG8cP00FmIR8QjTsa0ajVE.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Five-O",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7tSG2a6GSQyEcWH3P5e4zNqjVZO.jpg",
+              "plot": "Mike's tragic past comes back to haunt him, and he's forced to seek help from an unusual source. Jimmy's moral compass is put to the test.",
+              "duration": 2580,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7tSG2a6GSQyEcWH3P5e4zNqjVZO.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Bingo",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/f1MVCLlx6pOS3DJo4qRLVCNRuSX.jpg",
+              "plot": "Jimmy meets with potential new clients. Then, when given the opportunity to do the right thing, he cashes in a favor from an unlikely ally.",
+              "duration": 2880,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/f1MVCLlx6pOS3DJo4qRLVCNRuSX.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "RICO",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5vpI6D2n4zma4xqQBRq2Bz3tHu5.jpg",
+              "plot": "Jimmy shows Chuck that he's willing to do almost anything to win a case, even if it means getting his hands dirty.",
+              "duration": 2880,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5vpI6D2n4zma4xqQBRq2Bz3tHu5.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Pimento",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iCMwMQstYZz8SRsiULMtiiP2xes.jpg",
+              "plot": "Chuck urges Jimmy to accept a harsh truth. Meanwhile, a deal threatens to go off the rails when Mike's ability to complete a job is called into question.",
+              "duration": 2880,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iCMwMQstYZz8SRsiULMtiiP2xes.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Marco",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eUl8LoEhEtIy0kdyvwgo2ZNSH9B.jpg",
+              "plot": "In the aftermath of recent events, Jimmy seizes an opportunity to reconnect with an old friend. Chuck adjusts to a new way of life.",
+              "duration": 3000,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eUl8LoEhEtIy0kdyvwgo2ZNSH9B.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/4NDwAQjFD8bTOsMKxYdl8IK10R9.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Jimmy McGill returns with a new outlook on life and growing appetites that will push his career -- and his relationships -- into uncharted territory.",
+          "year": "2016",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Switch",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bLx6Ow42rtFGJ0missJEfwUN4yF.jpg",
+              "plot": "Jimmy and Kim's relationship takes a new turn. Mike decides it's for the best to sever his affiliation with an unrestrained associate.",
+              "duration": 2820,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bLx6Ow42rtFGJ0missJEfwUN4yF.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Cobbler",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wRVKkfXsyhLAzpRC7J8Uek5dYg3.jpg",
+              "plot": "To keep a potentially messy situation from unraveling, Mike brokers a deal. Jimmy works to exonerate an eccentric client.",
+              "duration": 2880,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wRVKkfXsyhLAzpRC7J8Uek5dYg3.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Amarillo",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/o3euy8qB8AErKQcVHRrGWV1Xtiq.jpg",
+              "plot": "Jimmy's client outreach efforts thrive, and he exhibits new heights of showmanship. Mike is perplexed by daughter-in-law Stacey's troubling news.",
+              "duration": 2580,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/o3euy8qB8AErKQcVHRrGWV1Xtiq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Gloves Off",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rtVuaHImiLxvnffNASJbF4Q3F89.jpg",
+              "plot": "Jimmy's actions unexpectedly create waves for Kim. Mike cautiously weighs a lucrative proposal that might bring about dire consequences.",
+              "duration": 2640,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rtVuaHImiLxvnffNASJbF4Q3F89.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Rebecca",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hU120urNKVue1UIX25EXPTVBOcB.jpg",
+              "plot": "Jimmy becomes frustrated with his restrictive work environment. Kim pulls out all the stops to dig herself out of a seemingly bottomless hole at HHM.",
+              "duration": 2760,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hU120urNKVue1UIX25EXPTVBOcB.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Bali Ha'i",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aUZtWB6MGftmrttpvfkc7GcGMtF.jpg",
+              "plot": "Jimmy finds comfort in familiarity. Kim receives a life-changing proposal. When he is threatened, Mike finds himself pushed to the limit.",
+              "duration": 2820,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aUZtWB6MGftmrttpvfkc7GcGMtF.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Inflatable",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1RumrNbk6ZAGB5U1YqQR6h96u77.jpg",
+              "plot": "Mike's growing frustration shows when his hand is forced, but with Jimmy's help, he works to keep the peace. Meanwhile, Jimmy boldly forges a new path forward.",
+              "duration": 2580,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1RumrNbk6ZAGB5U1YqQR6h96u77.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Fifi",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/43SruAr8U7y2qteRb9OaSTesQzy.jpg",
+              "plot": "Mike aims to settle the score with an enemy; an unexpected opportunity presents itself to Jimmy.",
+              "duration": 2940,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/43SruAr8U7y2qteRb9OaSTesQzy.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Nailed",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7Q9JaQ63y3diwZ6HVebbMLfH9sc.jpg",
+              "plot": "Mike takes a methodical approach to his mission. Someone questions Chuck's capabilities. Jimmy faces a personal dilemma.",
+              "duration": 3000,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7Q9JaQ63y3diwZ6HVebbMLfH9sc.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Klick",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zit4sAsSYOnpk5MOcceRiQf0VTj.jpg",
+              "plot": "Jimmy must make a hard choice. Mike takes control of matters. Hamlin delivers shocking news.",
+              "duration": 2940,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zit4sAsSYOnpk5MOcceRiQf0VTj.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/dHIMW3CkL21jYWtsHiAdwkCjAej.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Jimmy resorts to ever more desperate measures to keep his law career afloat, while Mike is drawn into the orbit of a mysterious new figure.",
+          "year": "2017",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Mabel",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gABmDo0yc5A9Rqpx7ebzvxMTTRg.jpg",
+              "plot": "Jimmy and Chuck's relationship deteriorates. Kim feels the pressure of running her own firm. Mike investigates the note left on his car.",
+              "duration": 3120,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gABmDo0yc5A9Rqpx7ebzvxMTTRg.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Witness",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/buKhfwuOyXv5ZbZSlkWz0pR6Il5.jpg",
+              "plot": "Jimmy and Kim hire an assistant. Mike seeks out a mysterious acquaintance. Chuck uses the law to gain an advantage over Jimmy.",
+              "duration": 3120,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/buKhfwuOyXv5ZbZSlkWz0pR6Il5.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Sunk Costs",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gGm2dT0m297MGdFjcdBRRYVosF5.jpg",
+              "plot": "Jimmy decides to represent a new client to Kim's dismay. Mike meets a formidable ally who gives a tempting offer.",
+              "duration": 2760,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gGm2dT0m297MGdFjcdBRRYVosF5.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Sabrosito",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pFjMOyhgP8HCwkRG34ZD8C0VTDz.jpg",
+              "plot": "Jimmy asks a favor of Mike; new complications disrupt Salamancas' business. Chuck and Jimmy struggle with a compromise.",
+              "duration": 2880,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pFjMOyhgP8HCwkRG34ZD8C0VTDz.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Chicanery",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rsYlkD587vrj6fp1DToyQ9PpjJ6.jpg",
+              "plot": "Kim and Jimmy face off with an adversary. Jimmy looks to Chuck's past to secure his future. Jimmy loses an ally and gains another.",
+              "duration": 3000,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rsYlkD587vrj6fp1DToyQ9PpjJ6.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Off Brand",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lAEikpCAspgsGAaNpnbyxXHO6nj.jpg",
+              "plot": "Jimmy has a new endeavor. Chuck pushes himself to the limit. Nacho finds himself in a power struggle.",
+              "duration": 2880,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lAEikpCAspgsGAaNpnbyxXHO6nj.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Expenses",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jqVsNTUU6uhgjIpxzTgOa8U1teK.jpg",
+              "plot": "Jimmy tries to settle debts. Nacho reunites with an acquaintance. Mike helps Stacey with a project and makes a connection.",
+              "duration": 3180,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jqVsNTUU6uhgjIpxzTgOa8U1teK.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Slip",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pnOBvxBuWqNNGrU36PU5xg2Np8t.jpg",
+              "plot": "Jimmy is pushed to desperate measures. Nacho picks up a new skill. Mike explores an alliance. Kim stands up to Hamlin.",
+              "duration": 2940,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pnOBvxBuWqNNGrU36PU5xg2Np8t.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Fall",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1I5fgW7h62PsDmMGpThHJ0tSdg3.jpg",
+              "plot": "Jimmy visits an old friend and takes up a new pastime. Chuck and Hamlin spar over the future of the firm. Kim faces challenges at work.",
+              "duration": 3000,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1I5fgW7h62PsDmMGpThHJ0tSdg3.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Lantern",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/taQ9Ci2lMSbRCqT3ehKlvJyDoB0.jpg",
+              "plot": "Kim takes time off. Jimmy tries to make amends. Nacho gambles with his future. Hamlin pushes Chuck to make a decision.",
+              "duration": 3420,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/taQ9Ci2lMSbRCqT3ehKlvJyDoB0.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/8zvIqLFOrBymKKI3L2W1AH8YZQI.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "As Jimmy copes with a shocking loss, a series of shady schemes propel him deeper into the criminal world -- and closer to his life as Saul Goodman.",
+          "year": "2018",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Smoke",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gcG57V96qWemZYCwfW7osDXl4f2.jpg",
+              "plot": "Jimmy struggles to cope with Chuck's tragic death. Mike ponders his role at Madrigal. Howard makes a startling confession.",
+              "duration": 2940,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gcG57V96qWemZYCwfW7osDXl4f2.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Breathe",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qlNNq4SiVwmgxrZLaO9Xoph7UgN.jpg",
+              "plot": "Jimmy seeks new employment. Gus navigates the fallout from Hector's collapse. Kim endeavors to support Jimmy in the wake of Chuck's death.",
+              "duration": 2760,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qlNNq4SiVwmgxrZLaO9Xoph7UgN.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Something Beautiful",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/j2PhqbOQCfEIcZoKlBHe6oHO70I.jpg",
+              "plot": "Jimmy puts a risky plan into motion. As alliances shift, Nacho finds himself in the crosshairs. Kim contemplates her future.",
+              "duration": 2580,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/j2PhqbOQCfEIcZoKlBHe6oHO70I.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Talk",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/x3gDoGCY4JTWDkm2GQQTwiZBFrH.jpg",
+              "plot": "A restless Jimmy embarks on a new endeavor while Mike burns bridges. Kim pursues her bliss. Nacho tries to survive a turf war.",
+              "duration": 2820,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/x3gDoGCY4JTWDkm2GQQTwiZBFrH.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Quite a Ride",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sA6ZZA1VELtpQAnRxZtFhagiPgL.jpg",
+              "plot": "Jimmy identifies a new market for his talents. Mike vets a potential partnership. Kim drives a hard bargain.",
+              "duration": 3180,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sA6ZZA1VELtpQAnRxZtFhagiPgL.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Pi\u00f1ata",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/y8lB4NeGWqlRfVtULraOiarXPAl.jpg",
+              "plot": "While Jimmy dreams of Wexler-McGill, Kim makes a bold move. Mike puts a plan into motion for Gus.",
+              "duration": 2880,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/y8lB4NeGWqlRfVtULraOiarXPAl.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Something Stupid",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/drxVhOlWzRp4V9rrcGZIEqrhwG6.jpg",
+              "plot": "Jimmy expands his business, but runs into a problem that only Kim can solve. Gus intervenes in Hector's medical care. Mike deals with a setback.",
+              "duration": 2520,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/drxVhOlWzRp4V9rrcGZIEqrhwG6.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Coushatta",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/prdfPctjYisErdRPE9MY5lhFaYt.jpg",
+              "plot": "Jimmy goes to great lengths to right a wrong, as Kim pulls out all the stops for a case. Mike lets his team blow off steam. Nacho receives a visitor.",
+              "duration": 3180,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/prdfPctjYisErdRPE9MY5lhFaYt.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Wiedersehen",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dsZZClwZHFqAUK6VjVIuPOwtxfS.jpg",
+              "plot": "Jimmy and Kim unburden themselves, risking their relationship in the process. Nacho is forced to make the rounds with Lalo. Mike has cause to worry.",
+              "duration": 3300,
+              "rating": "8.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dsZZClwZHFqAUK6VjVIuPOwtxfS.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Winner",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3MGD5ySNFm3FktUh6eoZwMwkDkC.jpg",
+              "plot": "Jimmy turns the page on his reputation. Lalo tracks a loose end in Gus' operation. Mike is forced to make a difficult decision.",
+              "duration": 3660,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3MGD5ySNFm3FktUh6eoZwMwkDkC.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/dZHa2vUtYNQ81KV38eHGjn0P4JE.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Changing his name to Saul Goodman, Jimmy recruits a new crop of clients. Kim wrestles with a moral dilemma at work. Lalo's feud with Gus heats up.",
+          "year": "2020",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Magic Man",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/s3dkWr75dnprdINXDJwbLj5K2k4.jpg",
+              "plot": "Now doing business as Saul Goodman, Jimmy unveils an unorthodox strategy for client development that tests Kim's tolerance of his new legal persona. Lalo searches for the mysterious Michael, only to discover a problem within his own operation.",
+              "duration": 3300,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/s3dkWr75dnprdINXDJwbLj5K2k4.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "50% Off",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/q5tMB6Ho3SEc4hOtsb8LNCeq24o.jpg",
+              "plot": "Jimmy's promotional stunt has unintended consequences. Nacho takes extreme measures to earn Lalo's trust. Saul is a success at the courthouse but still has yet to win Kim over. Simmering with rage and self-loathing, Mike loses his temper.",
+              "duration": 2760,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/q5tMB6Ho3SEc4hOtsb8LNCeq24o.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Guy for This",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dUeK8mFafhyqC2Q8R4dV8SNjU7l.jpg",
+              "plot": "Jimmy's business enters uncharted territory. Kim's confidence is tested when she's faced with a legal problem only she can solve. Nacho navigates increased pressure from Gus. Mike continues to spiral.",
+              "duration": 3300,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dUeK8mFafhyqC2Q8R4dV8SNjU7l.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Namaste",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/r2r0dRdlofscCZQkEVbjGXP27tk.jpg",
+              "plot": "As Jimmy doubles down on Saul Goodman, a deeply conflicted Kim brings him an interesting proposition, Gus makes a sacrifice in order to play the long game, and Mike attempts to smooth things over with his family.",
+              "duration": 2820,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/r2r0dRdlofscCZQkEVbjGXP27tk.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Dedicado a Max",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rN7cb9q43B46iwzLsfe7O1FA7eL.jpg",
+              "plot": "Mike takes an impromptu trip out of town. As she and Jimmy grow closer over their campaign to help a client, Kim makes a surprising call.",
+              "duration": 3060,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rN7cb9q43B46iwzLsfe7O1FA7eL.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Wexler v. Goodman",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cdrY5PlUUmWBxn5z2nTHKCeRI2o.jpg",
+              "plot": "Kim tries to pump the brakes on Jimmy's latest scheme, but it may be too late to stop Saul. Mike turns the heat up on Lalo. Nacho attempts to enlist support from above.",
+              "duration": 3120,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cdrY5PlUUmWBxn5z2nTHKCeRI2o.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "JMM",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/AjgRDPeKEWlvZf3oCiFKOvn0Jm4.jpg",
+              "plot": "Jimmy and Kim build a legal firewall with help from Huell. Kim sets things straight with her clients as Jimmy is compromised by his. Gus, at war on all fronts, calms troubled waters in service of his plot to build an empire. Mike does damage control.",
+              "duration": 2880,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/AjgRDPeKEWlvZf3oCiFKOvn0Jm4.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Bagman",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xAq4k14KeWACbpALOCcF8q4ZPZL.jpg",
+              "plot": "When a simple errand for a client goes sideways, Jimmy is pushed to the limit. Mike takes measures to contain the wrath of the cartel. Lalo gets an unexpected visitor.",
+              "duration": 3300,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xAq4k14KeWACbpALOCcF8q4ZPZL.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Bad Choice Road",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7Z5gCUKmZrU6KRBOpPjOOAI2htH.jpg",
+              "plot": "In the wake of Jimmy's traumatic misadventure, Kim takes stock of what is important. Jimmy attempts to return to business as usual, but it's more difficult than anticipated. Gus and Mike set a plan in motion.",
+              "duration": 3600,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7Z5gCUKmZrU6KRBOpPjOOAI2htH.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Something Unforgivable",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xQIhr0zJ7Qczpr1FsahK6hC9TgE.jpg",
+              "plot": "Jimmy and Kim make a sideways move that takes a serious turn. Nacho gets closer to the cartel than he'd like.",
+              "duration": 3660,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xQIhr0zJ7Qczpr1FsahK6hC9TgE.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 6,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/wKTzWgDaHxjdMhZ3zsVEF5eXVvX.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "From the cartel to the courthouse, from Albuquerque to Omaha, season six tracks Jimmy, Saul and Gene as well as Jimmy's complex relationship with Kim, who is in the midst of her own existential crisis. Meanwhile, Mike, Gus, Nacho and Lalo are locked into a game of cat and mouse with mortal stakes.",
+          "year": "2022",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Wine and Roses",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/spRkg6Qa2X4C856KOMlRGQHg6cE.jpg",
+              "plot": "Nacho runs for his life. Jimmy and Kim hatch a plan. Mike questions his allegiances.",
+              "duration": 3360,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/spRkg6Qa2X4C856KOMlRGQHg6cE.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Carrot and Stick",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aMoqX2ow6AciTelNl5V3rrQC0GB.jpg",
+              "plot": "Harsh realities dawn on Nacho. Gus investigates his suspicions.",
+              "duration": 3600,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aMoqX2ow6AciTelNl5V3rrQC0GB.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Rock and Hard Place",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/boQ8tjHdabQB6TXEDgJux7gEzSW.jpg",
+              "plot": "Still on the run, Nacho is forced to choose where his loyalties lie. Jimmy doubles down.",
+              "duration": 2820,
+              "rating": "9.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/boQ8tjHdabQB6TXEDgJux7gEzSW.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Hit and Run",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7HpwZI1aurKvZkvntDobhL79CNA.jpg",
+              "plot": "Gus takes extreme measures. Jimmy and Kim enlist a local pro to put on a show.",
+              "duration": 2700,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7HpwZI1aurKvZkvntDobhL79CNA.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Black and Blue",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eLzCnY2dlAtCar9J35ribD7nzAt.jpg",
+              "plot": "While business booms for Jimmy, the vise tightens on the cat-and-mouse game between Gus and Lalo.",
+              "duration": 3120,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eLzCnY2dlAtCar9J35ribD7nzAt.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Axe and Grind",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/48SkTDWOgXt1hjc5rE0pT9QlAGA.jpg",
+              "plot": "Kim and Jimmy enlist a knowledgeable contact. Howard scrutinizes Jimmy's business practices.",
+              "duration": 2700,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/48SkTDWOgXt1hjc5rE0pT9QlAGA.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Plan and Execution",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/flVUI98wSTtLmYDCx81gowleQTe.jpg",
+              "plot": "Jimmy and Kim deal with a last-minute snag. Howard's investigation finally yields results.",
+              "duration": 3060,
+              "rating": "9.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/flVUI98wSTtLmYDCx81gowleQTe.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Point and Shoot",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/j00SYyNwv9agYN4gxW1f5AYFrhG.jpg",
+              "plot": "An unexpected visitor forces Jimmy and Kim to face the consequences of their actions.",
+              "duration": 3000,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/j00SYyNwv9agYN4gxW1f5AYFrhG.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Fun and Games",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/60qtAptwYKQnXriCB1wR2f6sTp4.jpg",
+              "plot": "Gus attempts to smooth things over with the cartel while Mike ties up loose ends.",
+              "duration": 3420,
+              "rating": "8.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/60qtAptwYKQnXriCB1wR2f6sTp4.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Nippy",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wZuBaYUf0hs9hxNUdTMO8aU9b6q.jpg",
+              "plot": "A lost dog leads to a new friend. A new player gets in the game.",
+              "duration": 3120,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wZuBaYUf0hs9hxNUdTMO8aU9b6q.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 11,
+            "name": "Breaking Bad",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7gp9Zjm6cpmv1w58ZNmxITBZa8E.jpg",
+              "plot": "Emboldened by recent successes, partners throw caution to the wind and escalate their enterprise to new levels.",
+              "duration": 3480,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7gp9Zjm6cpmv1w58ZNmxITBZa8E.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 12,
+            "name": "Waterworks",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eeNijlYY7NQEqHLp8ZqlLfGDtXV.jpg",
+              "plot": "The stakes are raised when a discovery is made that will send shockwaves far and wide.",
+              "duration": 3540,
+              "rating": "8.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eeNijlYY7NQEqHLp8ZqlLfGDtXV.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 13,
+            "name": "Saul Gone",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aZFwz8FaM9MXFqwakFnhhNjYZSv.jpg",
+              "plot": "Revelations. Regrets. RICO violations. Jimmy's worlds \u2014 and identities \u2014 converge in one final showdown.",
+              "duration": 4200,
+              "rating": "9.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aZFwz8FaM9MXFqwakFnhhNjYZSv.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Euphoria",
+    "category": "\ud83c\udd34",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/mez2Z3WqlPKNXpi7mWoiiE5guE9.jpg",
+      "plot": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+      "rating": "8.3",
+      "genre": [
+        "drama"
+      ],
+      "cast": [
+        "Zendaya",
+        "Hunter Schafer",
+        "Sydney Sweeney",
+        "Jacob Elordi",
+        "Alexa Demie"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/5mi3aRl16yKmfpQJMzvqN5TXkdA.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+          "year": "2019",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Pilot",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/u59av3aNA9zLXxBvy40hAQzJ2Hw.jpg",
+              "plot": "Seventeen-year-old Rue returns home from rehab with no plans to stay clean.",
+              "duration": 3240,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/u59av3aNA9zLXxBvy40hAQzJ2Hw.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Stuntin' Like My Daddy",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4NCKs8RMxevYrBzuqGI4usEprUL.jpg",
+              "plot": "On the first day of school, Rue has a new friend, Jules, but struggles to put the past behind her.",
+              "duration": 3600,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4NCKs8RMxevYrBzuqGI4usEprUL.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Made You Look",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sgs0AMFBHPenfwIsxqLSGqbnOhw.jpg",
+              "plot": "Kat starts camming. Jules falls for a boy online. Rue is confronted at NA, and Cassie visits McKay at college.",
+              "duration": 3420,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sgs0AMFBHPenfwIsxqLSGqbnOhw.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Shook Ones Pt. II",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/CkshIxWHj1yI0Xqh84dgDfAAfG.jpg",
+              "plot": "Rue, trying to get clean for Jules, chaperones Gia at the carnival. Jules encounters Cal with his family.",
+              "duration": 3300,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/CkshIxWHj1yI0Xqh84dgDfAAfG.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "'03 Bonnie and Clyde",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3ff187LdnqgrrOQWlzGShPR5sLS.jpg",
+              "plot": "Maddy and Nate must deal with a police investigation. Rue and Jules each reflect on their relationship.",
+              "duration": 3180,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3ff187LdnqgrrOQWlzGShPR5sLS.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "The Next Episode",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/40TkPAIhEhZkSOB7EIeaysAb6Ni.jpg",
+              "plot": "On Halloween, Rue worries about her reliance on Jules when she starts acting strange.",
+              "duration": 3000,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/40TkPAIhEhZkSOB7EIeaysAb6Ni.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "The Trials and Tribulations of Trying to Pee While Depressed",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vMQsSORQsV2tfUw1ezyGiCbO6l8.jpg",
+              "plot": "Rue gets depressed and watches 22 straight episodes of a British reality show.\u200b Jules visits an old friend.",
+              "duration": 3540,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vMQsSORQsV2tfUw1ezyGiCbO6l8.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "And Salt the Earth Behind You",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kLsHM3fxgYMPw4Cwg3oZDAnenV2.jpg",
+              "plot": "It's the winter formal at East Highland.",
+              "duration": 3900,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kLsHM3fxgYMPw4Cwg3oZDAnenV2.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/jtnfNzqZwN4E32FGGxx1YZaBWWf.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "The lines between fantasy and reality begin to blur as Kat contemplates ending her relationship and Jules, craving Rue's affection, ponders hers. Rue pursues a new dangerous business venture as she sinks deep into her addiction, largely caused by her guilt-ridden new friend Eliott. Cassie struggles with her celibacy and starts to drift, while Lexi pours herself into mounting a school play. Nate is in full redemption, trying to redeem the mistakes of his father.",
+          "year": "2022",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Trying to Get to Heaven Before They Close the Door",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8rW1LANR14YRkT8poSziWOiRa5U.jpg",
+              "plot": "Rue and Jules cross paths for the first time since Christmas as East Highland rings in the new year.",
+              "duration": 3660,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8rW1LANR14YRkT8poSziWOiRa5U.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Out of Touch",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nee4LaQLFGSiMeBomd3xKjj9ysI.jpg",
+              "plot": "As the new semester kicks off, Jules questions Rue and Elliot\u2019s new friendship, while Cal hunts for answers.",
+              "duration": 3420,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nee4LaQLFGSiMeBomd3xKjj9ysI.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Ruminations: Big and Little Bullys",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nibFSc6mQLHeFAkfKEifnObtYRR.jpg",
+              "plot": "Rue pursues a new business venture, Cassie settles into a routine, and Cal finds a target.",
+              "duration": 3600,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nibFSc6mQLHeFAkfKEifnObtYRR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "You Who Cannot See, Think of Those Who Can",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nuTsLlLNacklbITyQPRvKOAtXlg.jpg",
+              "plot": "Jules and Elliot grow closer, Maddy celebrates her birthday and Cal takes a trip down memory lane.",
+              "duration": 3660,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nuTsLlLNacklbITyQPRvKOAtXlg.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Stand Still Like the Hummingbird",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/muzj1UxcvashpXQGwpAXDtRJf98.jpg",
+              "plot": "Fate has a way of catching up with those who try to outrun it.",
+              "duration": 3180,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/muzj1UxcvashpXQGwpAXDtRJf98.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "A Thousand Little Trees of Blood",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/a4FJJ4jPpYc34jmtXzgm2uAS6V7.jpg",
+              "plot": "Rue tries to recover, Lexi questions putting on her play and Nate celebrates his newfound freedom.",
+              "duration": 3420,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/a4FJJ4jPpYc34jmtXzgm2uAS6V7.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "The Theater and Its Double",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1qXV8oAPhIqkqaNouwb9JC28SfV.jpg",
+              "plot": "Art imitates life as the East Highland crew watches their complicated dynamics play out onstage.",
+              "duration": 3480,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1qXV8oAPhIqkqaNouwb9JC28SfV.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "All My Life, My Heart Has Yearned for a Thing I Cannot Name",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/po4G5fgneIoiuk7TWlvcusWM1HS.jpg",
+              "plot": "As the show goes on, fragments of memories collide with the present and future.",
+              "duration": 3660,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/po4G5fgneIoiuk7TWlvcusWM1HS.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/aJrG7OkoTMPWG5c8opz8a93AZPY.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Five years have passed for the former students of East Highland High, and life for them has underwent serious changes.",
+          "year": "2026",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Andale",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hbz0xyNFagcXKcBAYbxDJ31wn9M.jpg",
+              "plot": "A few years after high school, Rue's debts finally catch up with her. Hoping to finance her dream wedding, Cassie tries to become internet famous \u2013 to the disapproval of Nate, who's juggling the demands of running Cal's business.",
+              "duration": 3720,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hbz0xyNFagcXKcBAYbxDJ31wn9M.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "America My Dream",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zihcg1uqGZLotlSBCzGmv125XfC.jpg",
+              "plot": "Maddy arrived in the city with no money, a suitcase full of clothes, and a plan.",
+              "duration": 3600,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zihcg1uqGZLotlSBCzGmv125XfC.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Ballad of Paladin",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pjzzBxorSBsEkvVsISvIuP8aVaa.jpg",
+              "plot": "While in art school, Jules learns she can fund her dreams by going on dates with rich men. Having worked her way up in Alamo's organization, Rue is sent on a special mission with Bishop. Meanwhile, Cassie's storybook wedding doesn't go as planned.",
+              "duration": 3600,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pjzzBxorSBsEkvVsISvIuP8aVaa.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Kitty Likes to Dance",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1DpoRaiA7weWvLSL4PsZPPHwmvI.jpg",
+              "plot": "Rue is offered a risky deal that draws her deeper into Alamo's world. While Nate battles the city council, Maddy gives Cassie a mission that could skyrocket her new career, and Lexi enlists Jules to create an original painting for LA Nights.",
+              "duration": 3720,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1DpoRaiA7weWvLSL4PsZPPHwmvI.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "This Little Piggy",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8jbiRbDPLpfcS8D1SeanKiDdbG9.jpg",
+              "plot": "She would never say it out loud, but Nate going broke finally granted Cassie permission to follow her dreams.",
+              "duration": 3660,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8jbiRbDPLpfcS8D1SeanKiDdbG9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Stand Still and See",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": 3780,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Rain or Shine",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": 4800,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "In God We Trust",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": null,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "For All Mankind",
+    "category": "\ud83c\udd35",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/JP3DItWMbrrLiKR5AYUfpsNf2b.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/9OQ5BIITkJwRJo9JA6AlCfJIGBQ.jpg",
+      "plot": "Explore an aspirational world where NASA and the space program remained a priority and a focal point of our hopes and dreams as told through the lives of NASA astronauts, engineers, and their families.",
+      "rating": "7.7",
+      "genre": [
+        "drama",
+        "sci-fi & fantasy",
+        "war & politics"
+      ],
+      "cast": [
+        "Toby Kebbell",
+        "Mireille Enos",
+        "Edi Gathegi",
+        "Cynthy Wu",
+        "Coral Pe\u00f1a"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lvYajilzbVUkj5QBmAD8v1qz0g4.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Explore an aspirational world where NASA and the space program remained a priority and a focal point of our hopes and dreams as told through the lives of NASA astronauts, engineers, and their families.",
+          "year": "2019",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Red Moon",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/frCjSLPWXcAEqaBxH0MjgCbSx1C.jpg",
+              "plot": "NASA is in crisis as the Soviets land the first man on the moon in 1969, the beginning of an alternate history.",
+              "duration": 3900,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/frCjSLPWXcAEqaBxH0MjgCbSx1C.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "He Built the Saturn V",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wzS11xHVyQ0QapkwHbEShUJnZQe.jpg",
+              "plot": "Director von Braun opposes President Nixon's directive, with dire consequences.",
+              "duration": 3720,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wzS11xHVyQ0QapkwHbEShUJnZQe.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Nixon's Women",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9SsJXu7BIRqd10eu9pzdm4OsV0c.jpg",
+              "plot": "Deke must recruit female astronauts after Russia lands a woman on the moon.",
+              "duration": 3720,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9SsJXu7BIRqd10eu9pzdm4OsV0c.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Prime Crew",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zwsgucFhhTsAuC4UH5ckFbmXhWP.jpg",
+              "plot": "A training accident spurs a national debate about women astronauts.",
+              "duration": 3720,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zwsgucFhhTsAuC4UH5ckFbmXhWP.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Into the Abyss",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/q8sMUt3JAFYp5zcGp2x3A9fKqkA.jpg",
+              "plot": "Ed and the crew change Apollo 15's landing site after lunar ice is detected.",
+              "duration": 3600,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/q8sMUt3JAFYp5zcGp2x3A9fKqkA.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Home Again",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wfcd5CQ1X2AZMLmQm9zrp4GYrC4.jpg",
+              "plot": "A launchpad accident leads to delayed missions and FBI background checks.",
+              "duration": 3600,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wfcd5CQ1X2AZMLmQm9zrp4GYrC4.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Hi Bob",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pJmMJjYnXBf8g217McdA59zDgfw.jpg",
+              "plot": "Ed, Gordo, and Danielle struggle with an extended Jamestown mission.",
+              "duration": 3540,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pJmMJjYnXBf8g217McdA59zDgfw.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Rupture",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iXe5Pow00sh5pvdYAlT9w93ftCs.jpg",
+              "plot": "NASA preps a Jamestown relief mission, while Karen waits for news at the hospital.",
+              "duration": 3420,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iXe5Pow00sh5pvdYAlT9w93ftCs.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Bent Bird",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qAmXiD6DvLeGO3AowxpyYKJ5wpJ.jpg",
+              "plot": "A crisis in space puts the Apollo 24 and 25 crews in peril.",
+              "duration": 2880,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qAmXiD6DvLeGO3AowxpyYKJ5wpJ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "A City Upon a Hill",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/50knWydiQ9C8gUquGliDRC31h3j.jpg",
+              "plot": "Ed handles a trespasser. Ellen and Deke chart a new course without Mission Control.",
+              "duration": 4560,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/50knWydiQ9C8gUquGliDRC31h3j.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/w5r3AG9Etva4IcyMhVn6TYl577l.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Season two picks up in 1983, the height of the Cold War, with tensions between the United States and the USSR at their peak. The Department of Defense has moved into Mission Control, and the militarization of NASA becomes central to several characters\u2019 stories: some fight it, some use it as an opportunity to advance their own interests, and some find themselves at the height of a conflict that may lead to nuclear war.",
+          "year": "2021",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Every Little Thing",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/yuCu8oKWRn5KNmmXPDP1oghko63.jpg",
+              "plot": "Nearly a decade later, technology and lunar exploration have taken huge strides\u2014but a solar storm threatens the astronauts on Jamestown.",
+              "duration": 3360,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/yuCu8oKWRn5KNmmXPDP1oghko63.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Bleeding Edge",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mSUuMg2o6omqVs83r4BbYXgAwXC.jpg",
+              "plot": "Margo must lead a seemingly impossible mission. Danielle wants to return to the moon. Gordo grapples with life on Earth.",
+              "duration": 3360,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mSUuMg2o6omqVs83r4BbYXgAwXC.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Rules of Engagement",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xvz3ddXbqmcdZO7lujrB6wymwb9.jpg",
+              "plot": "A dispute on the moon prompts NASA officials to consider arming astronauts. Ed\u2019s past comes back to haunt him.",
+              "duration": 3600,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xvz3ddXbqmcdZO7lujrB6wymwb9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Pathfinder",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sMah25eXkvmMksudY8TQO4M0B6x.jpg",
+              "plot": "With a little help from Molly, Ed plans a career change\u2014as his old Jamestown crewmates Gordo and Danielle struggle.",
+              "duration": 3600,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sMah25eXkvmMksudY8TQO4M0B6x.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Weight",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2CqJcVeQAFUjvYKMnBiDfddx36H.jpg",
+              "plot": "Ed's reckless behavior at NASA shakes the foundation of the Baldwin family. Tracy attempts to readapt to life in space.",
+              "duration": 3480,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2CqJcVeQAFUjvYKMnBiDfddx36H.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Best-Laid Plans",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sfrV0TIaOM151QvzJYfL1vgsG5h.jpg",
+              "plot": "American astronauts and NASA leadership prepare for a new mission with unlikely partners. Ellen gets in touch with an old friend.",
+              "duration": 3540,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sfrV0TIaOM151QvzJYfL1vgsG5h.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Don't Be Cruel",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eLKQoeoXjc255BQWm34z2o1o4bf.jpg",
+              "plot": "Ellen is challenged by her new role. Margo\u2019s allegiances are put to the test. Karen explores new opportunities\u2014personally and professionally.",
+              "duration": 3720,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eLKQoeoXjc255BQWm34z2o1o4bf.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "And Here's to You",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/b6tfCJKHMcJRlzeV0ZS2GdLFbsz.jpg",
+              "plot": "Gordo returns to space. Molly faces an upsetting new reality. Aleida confronts her first major hurdle at work.",
+              "duration": 4140,
+              "rating": "6.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/b6tfCJKHMcJRlzeV0ZS2GdLFbsz.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Triage",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6dXfCMJLXriUQR0BX66ocZbG0kc.jpg",
+              "plot": "The rivalry between American astronauts and Soviet cosmonauts intensifies as last-minute changes impact the Pathfinder mission plan.",
+              "duration": 3360,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6dXfCMJLXriUQR0BX66ocZbG0kc.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "The Grey",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xmlAfz45cCbYC8AJMnJGfhnR9LP.jpg",
+              "plot": "Tensions between the U.S. and the Soviet Union reach an all-time high on the moon, throwing multiple missions into jeopardy.",
+              "duration": 4560,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xmlAfz45cCbYC8AJMnJGfhnR9LP.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/xRYCjD9IQmzKXr23JfuA7kNA0nI.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "The propulsive third season takes viewers to a new decade, moving into the early \u201990s with a high-octane race to a new planetary frontier: Mars. The Red Planet becomes the new front in the space race not only for the US and the Soviet Union, but also an unexpected new entrant with a lot to prove and even more at stake. Our characters find themselves going head-to-head as their ambitions for Mars come into conflict and their loyalties are tested, creating a pressure cooker that builds to a climactic conclusion.",
+          "year": "2022",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Polaris",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wBwxrxyFuTyumkfTbfBKlHAqVB1.jpg",
+              "plot": "Nearly 10 years have passed. Danielle and Ed attend a celebration, where things take a terrifying turn.",
+              "duration": 3720,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wBwxrxyFuTyumkfTbfBKlHAqVB1.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Game Changer",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7gN7zOrkA9nfSlAC0tvebYk4Bmm.jpg",
+              "plot": "A commercial spaceflight company makes an announcement. The choice over who'll command the Mars mission leads to a shift in personnel.",
+              "duration": 3900,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7gN7zOrkA9nfSlAC0tvebYk4Bmm.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "All In",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qe0QFqg8ioG0EViJnpGFhi7yDnx.jpg",
+              "plot": "As NASA scrambles to prepare for the launch to Mars, Margo is confronted with a harsh personal reality.",
+              "duration": 3840,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qe0QFqg8ioG0EViJnpGFhi7yDnx.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Happy Valley",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nRNswhCQOrijh91HJPkSKwF8SOJ.jpg",
+              "plot": "A surprise maneuver during the journey to Mars provokes desperate measures.",
+              "duration": 3300,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nRNswhCQOrijh91HJPkSKwF8SOJ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Seven Minutes of Terror",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xQGaF72xP3xeMZS7JY2J1nIxeFA.jpg",
+              "plot": "The race to land first on Mars brings together unexpected allies.",
+              "duration": 4020,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xQGaF72xP3xeMZS7JY2J1nIxeFA.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "New Eden",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/x7aqktplalQB6lU1x3OisDVyITX.jpg",
+              "plot": "The astronauts move quickly to build Martian bases.",
+              "duration": 3840,
+              "rating": "5.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/x7aqktplalQB6lU1x3OisDVyITX.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Bring It Down",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iXrlEq1fjHaNjUvOQmoeaevPJhp.jpg",
+              "plot": "A joint mission brings about conflict between crew members.",
+              "duration": 3660,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iXrlEq1fjHaNjUvOQmoeaevPJhp.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "The Sands of Ares",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uB7dpov3WlSfmEXNBChBld6JXYS.jpg",
+              "plot": "After a sudden crisis, the Martian crews pull together.",
+              "duration": 4020,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uB7dpov3WlSfmEXNBChBld6JXYS.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Coming Home",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xbrN5tGenWyz0TH5vuCXXNOF22k.jpg",
+              "plot": "Plans to leave Mars are complicated by an unforeseen issue.",
+              "duration": 3000,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xbrN5tGenWyz0TH5vuCXXNOF22k.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Stranger in a Strange Land",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nUcNEzu8qDhxoe2BFRA18gGhPtV.jpg",
+              "plot": "The Martian crew debates how to save the life of one of their own.",
+              "duration": 5100,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nUcNEzu8qDhxoe2BFRA18gGhPtV.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/fIo0AlwLS0LvcCmnBGsrLLVx38u.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Rocketing into the new millennium in the eight years since season three, Happy Valley has rapidly expanded its footprint on Mars by turning former foes into partners. Now 2003, the focus of the space program has turned to the capture and mining of extremely valuable, mineral-rich asteroids that could change the future of both Earth and Mars. But simmering tensions between the residents of the now-sprawling international base threaten to undo everything they are working towards.",
+          "year": "2023",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Glasnost",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qr66Z18mfbA5f4PXS36xcXLYLQd.jpg",
+              "plot": "Eight years later, a new mission begins: Capture an asteroid. Aleida and Danielle are still haunted by events from the past.",
+              "duration": 4260,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qr66Z18mfbA5f4PXS36xcXLYLQd.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Have a Nice Sol",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uUIR6Lu5ZJGKUEelzhPEILJ0ZsO.jpg",
+              "plot": "New Helios employees arrive on Mars as NASA undergoes major changes.",
+              "duration": 3360,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uUIR6Lu5ZJGKUEelzhPEILJ0ZsO.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Bear Hug",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/s8Jchby9KqSwDievIvxKcONDXvj.jpg",
+              "plot": "Miles tries to make ends meet. Margo finds herself pulled into a dangerous situation.",
+              "duration": 4440,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/s8Jchby9KqSwDievIvxKcONDXvj.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "House Divided",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mEwhcGHYzmd1Qla7G0EFNrw1x7y.jpg",
+              "plot": "An accident on Mars strains relationships, while Miles embarks on a risky venture.",
+              "duration": 3720,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mEwhcGHYzmd1Qla7G0EFNrw1x7y.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Goldilocks",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/o2vZVXqVoKToWlObPiQQGLPtFDO.jpg",
+              "plot": "A discovery sends teams across Earth and Mars scrambling for answers.",
+              "duration": 3600,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/o2vZVXqVoKToWlObPiQQGLPtFDO.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Leningrad",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2mttslqGBC9MAm1Xp1Y9a1xHkAr.jpg",
+              "plot": "Unlikely partnerships are formed at a high-stakes international conference.",
+              "duration": 3540,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2mttslqGBC9MAm1Xp1Y9a1xHkAr.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Crossing the Line",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8hAEjRnKYJkCNg3O0UHZHX7ed8a.jpg",
+              "plot": "A group on Mars takes drastic measures. Margo grapples with a new assignment.",
+              "duration": 2760,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8hAEjRnKYJkCNg3O0UHZHX7ed8a.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Legacy",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/r8rn7L4qOxnBuRXo2hjEmDIe6mk.jpg",
+              "plot": "Plans are made with interplanetary ramifications. Ed begins working with an unexpected partner.",
+              "duration": 3300,
+              "rating": "6.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/r8rn7L4qOxnBuRXo2hjEmDIe6mk.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Brazil",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jKIfAoB2bgytGA7je4louhRaLNo.jpg",
+              "plot": "Things start to go awry just as an important mission approaches a critical juncture.",
+              "duration": 3000,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jKIfAoB2bgytGA7je4louhRaLNo.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Perestroika",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bv9mDXZYpubGg0tLwBl2aPwEa1g.jpg",
+              "plot": "Tensions on Earth and Mars come to a head.",
+              "duration": 4860,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bv9mDXZYpubGg0tLwBl2aPwEa1g.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 5,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/nUeOu6DULVMvPzAzetqkUyZXRQ4.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Season five of picks up in the 2010s, years since the Goldilocks asteroid heist. Happy Valley has grown into a thriving colony with thousands of residents and a base for new missions that will take us even further into the solar system. But with the nations of Earth now demanding law and order on the Red Planet, friction continues to build between the people who live on Mars and their former home.",
+          "year": "2026",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "First Light",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3MoS4yUk21uk3gNgSCSoC8WpuyA.jpg",
+              "plot": "Nine years after the Goldilocks asteroid heist, Happy Valley has grown into a thriving colony. But an unsettling discovery threatens their peace.",
+              "duration": 3540,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3MoS4yUk21uk3gNgSCSoC8WpuyA.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Hard Six",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3HiJm0cxrWzjJ2Kglwd2y8etriO.jpg",
+              "plot": "Ed rallies Happy Valley's residents in support of one of their own. Kelly refuses to back down from an opportunity.",
+              "duration": 2760,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3HiJm0cxrWzjJ2Kglwd2y8etriO.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Home",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7mGR0mqHIw1mfiaw6L2fTCex6ip.jpg",
+              "plot": "The consequences of Ed's actions begin to play out. Aleida finds an unexpected solution to her problem.",
+              "duration": 3600,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7mGR0mqHIw1mfiaw6L2fTCex6ip.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Open Source",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/h6Z8B5DPnZW6ztNQPOpBcP9BCER.jpg",
+              "plot": "Alex takes Ed's advice and finds a new project to focus on: a job at Helios.",
+              "duration": 3420,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/h6Z8B5DPnZW6ztNQPOpBcP9BCER.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Svoboda",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vJbCJdX3sFVZNZFTfEBBCBWiyVu.jpg",
+              "plot": "Chaos erupts on Mars following a shocking revelation.",
+              "duration": 3180,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vJbCJdX3sFVZNZFTfEBBCBWiyVu.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "No Sudden Moves",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4kcf79uwo6t4UhCt5sHYobq6USP.jpg",
+              "plot": "A desperate group of Marsies tries to rectify a dangerous situation.",
+              "duration": 2940,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4kcf79uwo6t4UhCt5sHYobq6USP.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "The Sirens of Titan",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dBJHN8EixKSZhNAarQnQB7PzrMM.jpg",
+              "plot": "A fatal miscalculation puts the Titan mission in jeopardy. Dev makes a drastic decision.",
+              "duration": 3120,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dBJHN8EixKSZhNAarQnQB7PzrMM.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Brave New World",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/43fE8dN3T1HSOXcp1eF3c29iGTo.jpg",
+              "plot": "The Titan crew weighs a risky move, while Mars struggles to keep up morale.",
+              "duration": 3180,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/43fE8dN3T1HSOXcp1eF3c29iGTo.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Sons and Daughters",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": 2640,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "This Land Is Our Land",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": 4200,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Gen V",
+    "category": "\ud83c\udd36",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/uuot1N5AgZ7xRCKgm4ZCwOhgIJu.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/tldMHeR7UnihV5ffrxxM8cDhbtT.jpg",
+      "plot": "At America's only college for superheroes, gifted students put their moral boundaries to the test, competing for the university's top ranking, and a chance to join The Seven, Vought International's elite superhero team. When the school's dark secrets come to light, they must decide what kind of heroes they want to become.",
+      "rating": "7.7",
+      "genre": [
+        "action & adventure",
+        "drama",
+        "sci-fi & fantasy"
+      ],
+      "cast": [
+        "Jaz Sinclair",
+        "Lizze Broadway",
+        "Maddie Phillips",
+        "London Thor",
+        "Derek Luh"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/uuot1N5AgZ7xRCKgm4ZCwOhgIJu.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "",
+          "year": "2023",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "God U.",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tzWMqlYUprbPSSdcsg9cea2p4oI.jpg",
+              "plot": "Congratulations! You have been chosen for admission to Godolkin University! We're thrilled to be a part of your journey to discovering what kind of super you are! Since its founding in 1965, God U has produced some of the best and brightest superheroes the world has ever known, including three members of The Seven! And who knows? Maybe you'll be next!",
+              "duration": 3540,
+              "rating": "7.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tzWMqlYUprbPSSdcsg9cea2p4oI.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "First Day",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jZI9jDanZtpUVXvMvMhwM2SsTA8.jpg",
+              "plot": "The Godolkin University Mental Health Hotline would like to remind students at this difficult time that you are not alone. You might be bulletproof on the outside, but you're not on the inside. Our caring staff is trained to deal with the specific emotional needs of superheroes and they're here to help you. If you need to talk to someone, help is just a phone call or vMessage away. #GodUCares",
+              "duration": 2940,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jZI9jDanZtpUVXvMvMhwM2SsTA8.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "#ThinkBrink",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/b6DkuAT76n7kCWFVaEQgBTzOGIT.jpg",
+              "plot": "You're invited to the #ThinkBrink Memorial Gala and Fundraiser tonight at Godolkin University! Make sure to dress your best when the doors open at 7PM and you hit the red carpet! Then join the world's hottest superheroes and celebrities for selfies and complimentary champagne, and enjoy a touching tribute video to the legendary Professor Brinkerhoff, featuring A-Train, The Deep, and Polarity!",
+              "duration": 3120,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/b6DkuAT76n7kCWFVaEQgBTzOGIT.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "The Whole Truth",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iQ3kqALdrEGM0kd2eepLfOQO6ve.jpg",
+              "plot": "The Godolkin University Police Department is seeking any information on the person or persons who violated the Polarity statue in the groin/genital area last night outside the School of Crimefighting. If you have any information, please contact @GodUPD.",
+              "duration": 2820,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iQ3kqALdrEGM0kd2eepLfOQO6ve.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Welcome to the Monster Club",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/t43wgdzZGwtpjKPx1VYPuEIr7Yz.jpg",
+              "plot": "REWARD! Last night, The Incredible Steve attended an off-campus party where his penis was lost. He just wants it back, so his family is offering a $10,000 REWARD for its safe return, no questions asked. Please contact the Godolkin Daily Classifieds Office or the Lost-and-Found Desk at the Godolkin Student Union.",
+              "duration": 2460,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/t43wgdzZGwtpjKPx1VYPuEIr7Yz.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Jumanji",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tv1AG7Q6nPLGvsrwD6eGEUmhI8s.jpg",
+              "plot": "The Godolkin University School of Crimefighting is excited to announce its newest course offering: THE PSYCHOLOGY OF SUPERVILLAINS! By studying the most well-known example of a supervillain, Soldier Boy, the course will investigate what makes a superhero go bad, from their flawed origin story, to the vices and moral compromises that lead them astray! Space is limited! Sign up today!",
+              "duration": 2460,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tv1AG7Q6nPLGvsrwD6eGEUmhI8s.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Sick",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/t5WpmjtkPa2ZuOMHckIl3hjs9pm.jpg",
+              "plot": "Calling all God U #Hometeamers! Today we\u2019re protesting Socialist Victoria Neuman\u2019s town hall on campus! Let\u2019s show Neuman and her Supe-hating woke mob that we won\u2019t put up with their anti-Superhero agenda! THEY WILL NOT CONTROL US! #MakeAmericaSuperAgain #SupeLivesMatter",
+              "duration": 2940,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/t5WpmjtkPa2ZuOMHckIl3hjs9pm.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Guardians of Godolkin",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aEdQumnn5qP4axyBaOT4pWBuGwR.jpg",
+              "plot": "If you or a human loved one have been injured or killed while working at Godolkin University, you may be entitled to financial compensation. Hundreds of human employees have been victimized by Godolkin students, but the law offices of Bremmer & Bremmer have won them millions in personal injury and wrongful death lawsuits. Contact us for a free consultation at 1-888-177-2774. Know your rights!",
+              "duration": 2340,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aEdQumnn5qP4axyBaOT4pWBuGwR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/tEv842Nd5uMSavURG4aQO1pNtst.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "As America adjusts to Homelander's reign, at Godolkin University, the new Dean preaches a course to make students more powerful than ever. Cate and Sam are heroes, while Marie, Jordan, and Emma return to class, after months of trauma. War is brewing between Humans and Supes and our crew learns of a secret program from the 60s that may be significant to today. And, somehow, Marie is a part of it.",
+          "year": "2025",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "New Year, New U",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jWve032C7J8ihewCffdJplIadT5.jpg",
+              "plot": "Welcome to a new year at God U! Check out all the super security upgrades around campus! Hear from our new fearless leader, Dean Cipher, during a special welcome assembly! Reunite with old friends in our brand new Victoria Neuman Student Union, and make new friends through our revitalized, robust Greek life! This year will be way better than last year, and we can't wait!",
+              "duration": 3000,
+              "rating": "6.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jWve032C7J8ihewCffdJplIadT5.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Justice Never Forgets",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7l5FVtcBPatqvIITkrbJ3jJnQIq.jpg",
+              "plot": "Think you're a history buff? Think again! Even a know-it-all will learn a thing or two in the God U Archives. To book a six hour educational adventure led by the world's best archivist, contact Kyle@remembererforever.com.",
+              "duration": 2760,
+              "rating": "5.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7l5FVtcBPatqvIITkrbJ3jJnQIq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "H Is for Human",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fOuSprYHJUntOvLZUtbTT79VXNy.jpg",
+              "plot": "*This is a campus wide reminder.* All student flyers must be approved by God U administrators before they are posted to community bulletin boards. Please submit all text and graphics to the Office of Student Life ATTN: Stacey, at least 24 hours before posting your flyer. Campus security is actively monitoring all public areas for unapproved signage and inappropriate content.",
+              "duration": 3300,
+              "rating": "5.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fOuSprYHJUntOvLZUtbTT79VXNy.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Bags",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rQ7tPQXqg6lIfoHGOYmqjbnBhmT.jpg",
+              "plot": "Congratulations! You secured a VIP ticket to the big fight! Attendees assume all liabilities. You may appear on camera or come in contact with bodily fluids. As a reminder, The Vought International Hotel and Spa forbids outside beverages and gender neutral bathrooms. Enjoy your VIP Experience!",
+              "duration": 2940,
+              "rating": "6.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rQ7tPQXqg6lIfoHGOYmqjbnBhmT.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Kids Are Not All Right",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3Jvumfs7hb1jWlh3mUUsjtEvbb1.jpg",
+              "plot": "Facility Code 5827 - USE OF POWERS STRICTLY PROHIBITED. Facility Code 3567 - HANDS MUST BE VISIBLE AT ALL TIMES Facility Code 843 - ANY PERSONAL ITEM DEEMED AN ENHANCEMENT TO YOUR POWER SET WILL BE CONFISCATED. Facility Code 2536 - RESTRAINT TECHNOLOGIES ACTIVE IN ALL AREAS. Facility Code - 9832 - ALL DETAINEES SUBJECT TO BODY CAVITY SEARCH AT ANY TIME.",
+              "duration": 2940,
+              "rating": "6.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3Jvumfs7hb1jWlh3mUUsjtEvbb1.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Cooking Lessons",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gYUmyPuxpSGK6xFs2rGCfrWmw3V.jpg",
+              "plot": "Worried about the coming culture war and apocalypse? Ride it out in style and comfort! Sustainable septic systems AND Feng Shui! Blast proof and billionaire approved! The world may be burning, but you'll be 35 feet underground with a glass of \u201982 Bordeaux! Act now before it's too late",
+              "duration": 2760,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gYUmyPuxpSGK6xFs2rGCfrWmw3V.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Hell Week",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iaiSxumV0ArufaCD1l4D19n1CYh.jpg",
+              "plot": "A Reminder from the Office of Student Conduct: God U strictly prohibits hazing. Students should never be called demeaning names, forced to wear humiliating clothes, or treated like any animal. If you see something, say something! No one will call you a narc.",
+              "duration": 2520,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iaiSxumV0ArufaCD1l4D19n1CYh.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Trojan",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hWCvDCjkCQNLLOWva45sYw3qMfR.jpg",
+              "plot": "Hello {{FirstName}} {{LastName}}. You've been selected for the 10:30 AM session.** Please be on time. Once a session begins, students may not leave for any reason. Check in with Vance outside of the Advanced Seminar Room when you arrive. Good luck! ** By accepting this invitation, you assume inherent risks involved with this activity including but not limited to physical harm, injury, or death.",
+              "duration": 2820,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hWCvDCjkCQNLLOWva45sYw3qMfR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Imperfect Women",
+    "category": "\ud83c\udd38",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/pIR9b3gFNyhhV9QRHexJyZcEhut.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/1RejXo8s6ot7ZbrgR8J16DVaaTi.jpg",
+      "plot": "After a murder shatters the lives of three best friends, their decades-long bond is tested when an investigation reveals betrayals and shocking truths.",
+      "rating": "6.2",
+      "genre": [
+        "drama",
+        "mystery",
+        "crime"
+      ],
+      "cast": [
+        "Elisabeth Moss",
+        "Kerry Washington",
+        "Kate Mara",
+        "Joel Kinnaman",
+        "Corey Stoll"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/wW7rimhnokiQ8V6ha6VKIwHg8IV.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "When Nancy Hennessy is murdered, she leaves behind two best friends, an adoring husband and daughter, and a secret lover whose identity she took to the grave. Nancy was gorgeous, wealthy, and cherished by those who knew her\u2015from the outside, her life was perfect. But as the investigation into her death flounders and her friends Eleanor and Mary wrestle with their grief, dark details surface that reveal how little they knew their friend, each other, and maybe even themselves.",
+          "year": "2026",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Eleanor",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wHEhQezHZEtcNM246JTpZ98ZYEG.jpg",
+              "plot": "Eleanor and Mary process their friend's gut-wrenching death.",
+              "duration": 2880,
+              "rating": "4.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wHEhQezHZEtcNM246JTpZ98ZYEG.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Crush",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tXsyxSXE2aRqgM621afITJxHj53.jpg",
+              "plot": "Eleanor distracts herself from grief as an old temptation reemerges.",
+              "duration": 2820,
+              "rating": "3.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tXsyxSXE2aRqgM621afITJxHj53.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Monster",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6ajzik1rybURUgCdaKszoGr2a5Y.jpg",
+              "plot": "Secrets come to light, forcing Eleanor to confront her mistakes.",
+              "duration": 2580,
+              "rating": "4.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6ajzik1rybURUgCdaKszoGr2a5Y.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Nancy",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uHFV9L4Hmap0fj5dcEqZ42E3tU4.jpg",
+              "plot": "Nancy loses control at her annual New Year's party.",
+              "duration": 2400,
+              "rating": "4.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uHFV9L4Hmap0fj5dcEqZ42E3tU4.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Louise",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hvfUAEjhtv0KiZU4reObLFUMIj9.jpg",
+              "plot": "Nancy's lifelong passion for dance leads to an unexpected connection.",
+              "duration": 2940,
+              "rating": "4.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hvfUAEjhtv0KiZU4reObLFUMIj9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Mary",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8RfmPFeJUChFAihqvQ5mB9iIpX2.jpg",
+              "plot": "After a startling discovery, Mary struggles to square reality with perception.",
+              "duration": 2640,
+              "rating": "3.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8RfmPFeJUChFAihqvQ5mB9iIpX2.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Fabulation",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8CzDjkZ9ttjQayIxFyooQ21RnPa.jpg",
+              "plot": "Mary and Eleanor's quest for justice runs into complications.",
+              "duration": 2640,
+              "rating": "4.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8CzDjkZ9ttjQayIxFyooQ21RnPa.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "The Bridge",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/p8C1hMq3LQSLck5OJr71u5sf47B.jpg",
+              "plot": "As new information emerges, Mary and Eleanor risk it all to expose the truth and find closure.",
+              "duration": 2940,
+              "rating": "4.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/p8C1hMq3LQSLck5OJr71u5sf47B.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Margo's Got Money Troubles",
+    "category": "\ud83c\udd3c",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/fRR0Ho2c1nFJQiXWg4LNIgRPbg0.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/r1lGjwTRF0RGYFHzvt3SupArmRy.jpg",
+      "plot": "The daughter of a former Hooter's waitress and an ex-pro wrestler, Margo is a recent college dropout and aspiring writer. Faced with a new baby, mounting pile of bills, and dwindling number of ways to pay them, Margo must find a way forward.",
+      "rating": "7.8",
+      "genre": [
+        "drama",
+        "comedy"
+      ],
+      "cast": [
+        "Elle Fanning",
+        "Nick Offerman",
+        "Greg Kinnear",
+        "Thaddea Graham",
+        "Michelle Pfeiffer"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/4gGA20HCyXn8X06LwpV1zIYuUFh.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "",
+          "year": "2026",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "The Hungry Ghost",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xc7rZSzaokaB7kmtYTDrtACoEdq.jpg",
+              "plot": "Margo is left reeling when her first year of college is derailed, forcing her to make a tough decision that changes everything.",
+              "duration": 2160,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xc7rZSzaokaB7kmtYTDrtACoEdq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Homecoming",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xUwVCH0Q6jUcfTLJrav9Vnl7sYn.jpg",
+              "plot": "Margo brings baby Bodhi home. Shyanne bets on her future as Jinx re-enters the picture.",
+              "duration": 2280,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xUwVCH0Q6jUcfTLJrav9Vnl7sYn.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Jinxed",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6pBngCovB08KHgXa0RTyTIWbLWD.jpg",
+              "plot": "Margo explores a new line of work while Jinx settles in. Shyanne and Kenny find themselves at a creative crossroads.",
+              "duration": 2520,
+              "rating": "9.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6pBngCovB08KHgXa0RTyTIWbLWD.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Buddies",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/p3AUoI8HxDUTlhpzN0o7vAUjxeJ.jpg",
+              "plot": "Worlds collide as Margo makes new friends. Jinx reunites with his wrestling roots.",
+              "duration": 2160,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/p3AUoI8HxDUTlhpzN0o7vAUjxeJ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Flamingoes",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vXK91CXm4lU7MYPgx2y5m7plQ4v.jpg",
+              "plot": "Vegas. Baby.",
+              "duration": 2700,
+              "rating": "7.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vXK91CXm4lU7MYPgx2y5m7plQ4v.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Grudge Match",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/YfUzyTTo6s8BYyvPw7oMvDeMT8.jpg",
+              "plot": "Plans to expand HungryGhost's digital empire are halted when secrets divide Margo's family.",
+              "duration": 2400,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/YfUzyTTo6s8BYyvPw7oMvDeMT8.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Lariat Takedown",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/953VktNxGcWDaVBPpN8C5dw59F.jpg",
+              "plot": "Margo goes head-to-head with Mark. Jinx and Susie have a rough day.",
+              "duration": 2220,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/953VktNxGcWDaVBPpN8C5dw59F.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Lock and Load",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gYBvXyWlovhjB72rZhK59KI5v4m.jpg",
+              "plot": "",
+              "duration": 2460,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gYBvXyWlovhjB72rZhK59KI5v4m.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Your Friends & Neighbors",
+    "category": "\ud83c\udd48",
+    "info": {
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lcp63INKEsVHUly9eayx7gEEOcG.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/d8LvQj79fgowZkX4NTZaEG3NwsH.jpg",
+      "plot": "When a financial titan suddenly finds himself divorced and jobless, he starts robbing his wealthy neighbors to stay afloat. Stealing from his own social circle strangely exhilarates him\u2014but he gradually gets tangled in a deadly web.",
+      "rating": "7.6",
+      "genre": [
+        "drama",
+        "crime"
+      ],
+      "cast": [
+        "Jon Hamm",
+        "Amanda Peet",
+        "Olivia Munn",
+        "Hoon Lee",
+        "Mark Tallman"
+      ]
+    },
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lo01EVDVrpGqd0fFWP4RBIQe4OK.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "",
+          "year": "2025",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "This Is What Happens",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wKEwttJlAjKhTMIXVSNPS4SezY.jpg",
+              "plot": "After losing his high-powered job, Coop attends a neighbor's barbecue, where he faces his ex-wife Mel and makes a surprising choice.",
+              "duration": 3420,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wKEwttJlAjKhTMIXVSNPS4SezY.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Deuce",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ybLXIrqYd860lYNLMb3sIP55LDF.jpg",
+              "plot": "After an unsuccessful job interview, Coop pawns a stolen watch.",
+              "duration": 2880,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ybLXIrqYd860lYNLMb3sIP55LDF.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Theoretical Herpes",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9doVVS9QqkjjxC5a8mKKqAs6KHR.jpg",
+              "plot": "Nick throws a party for the neighborhood men, leading to tension between Coop and Paul. The women take a self-defense class.",
+              "duration": 3000,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9doVVS9QqkjjxC5a8mKKqAs6KHR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Literal Dragons",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zzxEDYJZMVnWbpAL0ciW985L5H9.jpg",
+              "plot": "An unlikely alliance begins. Nick throws Mel a surprise birthday party, where she connects with Coop.",
+              "duration": 3420,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zzxEDYJZMVnWbpAL0ciW985L5H9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "This Tourist Has Balls",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iedGvHSh7SO0IBerlZlCVwwooUQ.jpg",
+              "plot": "Coop and Elena sell a stolen painting. Barney tries to hide his financial struggles from his in-laws. Coop makes a discovery at Sam's home.",
+              "duration": 3060,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iedGvHSh7SO0IBerlZlCVwwooUQ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "The Things You Lost Along the Way",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1tSN4YtIQKbzlWqmzZvzBcqESj3.jpg",
+              "plot": "After being investigated, Coop sets off on a college tour with Mel and their kids while Elena attempts to get ahold of him.",
+              "duration": 2940,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1tSN4YtIQKbzlWqmzZvzBcqESj3.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "The First Honest Thing",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xQi8wj5EO9A2AO9v7j7frnsc4Y1.jpg",
+              "plot": "Detective Lin makes a discovery at the crime scene. Coop plays hardball with Kat. Chivo puts Elena in a tough spot.",
+              "duration": 3060,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xQi8wj5EO9A2AO9v7j7frnsc4Y1.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "When Did We Become These People?",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qrpPMEsIB7aZQXRLYC7w1tChglh.jpg",
+              "plot": "Coop tries getting back what he's lost. Mel and Sam clash. Coop, Nick, and Barney have a boys' night.",
+              "duration": 2940,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qrpPMEsIB7aZQXRLYC7w1tChglh.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Everything Becomes Symbol and Irony",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cA5jJifibMVW48uZWpDV6BFy4Ag.jpg",
+              "plot": "Coop fights for his freedom.",
+              "duration": 3720,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cA5jJifibMVW48uZWpDV6BFy4Ag.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/4Gcp8ecyV7jVzKFonn5AMEF6Sg3.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "In season two, Andrew Cooper doubles down on his life as an unlikely suburban thief, until the arrival of a new neighbor threatens to expose his secrets and place his family at risk.",
+          "year": "2026",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "We're Here Until We're Not",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1K8Zw52TkvObE2OqKYTtWUkdwTc.jpg",
+              "plot": "The arrival of a charming billionaire neighbor disrupts Westmont Village. Coop finds himself with an unexpected new partner in crime.",
+              "duration": 3540,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1K8Zw52TkvObE2OqKYTtWUkdwTc.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Lady Bits",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kEqjEw5OtCYyeR6F5xE75K3OB65.jpg",
+              "plot": "A surprise party for Tori goes awry, causing a rift in the Cooper family. Sam struggles with her alienation from the community.",
+              "duration": 3180,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kEqjEw5OtCYyeR6F5xE75K3OB65.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "We Were Never Supposed to Get This Old",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cXRz241o7dRK9eF6l0oASJc1tuX.jpg",
+              "plot": "Ashe offers Coop a deal he can't refuse. Mel feuds with her neighbors over their new dog. Sam goes on a date.",
+              "duration": 3180,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cXRz241o7dRK9eF6l0oASJc1tuX.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "The Bread of Affliction",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aWimIbgbIo0bxhP1sN9cgK6WfSU.jpg",
+              "plot": "Hari and Gretchen's Passover seder brings the neighborhood together for wine, food, and drama.",
+              "duration": 3420,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aWimIbgbIo0bxhP1sN9cgK6WfSU.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Halfway to Invisible",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/djqGUjMqU7AxqYAbfxnCo2Be7wO.jpg",
+              "plot": "Barney deals with Ashe's audit of Nick's Strong Ass Gym. Coop and Jack travel overseas to woo a big investor. Nick throws a housewarming party.",
+              "duration": 3540,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/djqGUjMqU7AxqYAbfxnCo2Be7wO.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "For Everything Else, There Was Bowling",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/htfy0mGyz1dzvX9j7dowdXVtept.jpg",
+              "plot": "Coop and his family navigate a fraught funeral service and wake.",
+              "duration": 2520,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/htfy0mGyz1dzvX9j7dowdXVtept.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Out East",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oMOWpYQbjiNgGf5gPFZHyVFVmCV.jpg",
+              "plot": "Coop and Sam attend a wild weekend at Ashe's Hamptons estate. Mel takes things too far in her battle with the neighbors.",
+              "duration": 3420,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oMOWpYQbjiNgGf5gPFZHyVFVmCV.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "I Feel Lost Without Me",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": 3420,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Propaganda from the Cowardly",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": 3240,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "The Night of the Hunter",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2None",
+              "plot": "",
+              "duration": 3360,
+              "rating": "0.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_faceNone"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
+  },
+  {
     "name": "Argylle",
     "category": "\ud83c\udd30",
     "info": {
@@ -107,7 +3142,7 @@
     "name": "Eternity",
     "category": "\ud83c\udd34",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/o8pg20G67BGmQvRkXwstNre062J.jpg",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/yiwGcjfDKXD5PqQnyKUU9kspWQQ.jpg",
       "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/fuacZLpnohQtLD0AhtCErcPVL98.jpg",
       "plot": "In an afterlife where souls have one week to decide where to spend eternity, Joan is faced with the impossible choice between the man she spent her life with and her first love, who died young and has waited decades for her to arrive.",
       "director": [
@@ -211,7 +3246,7 @@
     "name": "Fly Me to the Moon",
     "category": "\ud83c\udd35",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/gjk8YdXpItoC1in53FCrZMFIuBx.jpg",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lb0XDH6LbkYwzbHTqjsUNZTLXMS.jpg",
       "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/4ItXEyVPj6wb9AdhsltcqYE6f5f.jpg",
       "plot": "Sparks fly in all directions as marketing maven Kelly Jones, brought in to fix NASA's public image, wreaks havoc on Apollo 11 launch director Cole Davis' already difficult task of putting a man on the moon. When the White House deems the mission too important to fail, Jones is directed to stage a fake moon landing as backup, and the countdown truly begins.",
       "director": [
@@ -238,7 +3273,7 @@
     "category": "\ud83c\udd35",
     "info": {
       "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/4iWjGghUj2uyHo2Hyw8NFBvsNGm.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/arGs8D4RfUfsk7vMiMjDi6Mtabv.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/aESb695wTIF0tB7RTGRebnYrjFK.jpg",
       "plot": "A treasure-hunting mastermind assembles a team for a life-changing adventure. But to outwit and outrun threats at every turn, he'll need someone even smarter than he is: his estranged sister.",
       "director": [
         "Guy Ritchie"
@@ -356,7 +3391,7 @@
         "Alfred Molina"
       ],
       "trailer": "X5oqpxi3U7M",
-      "rating": "6.2",
+      "rating": "6.1",
       "year": "2024"
     },
     "video": "",
@@ -498,7 +3533,7 @@
     "category": "\ud83c\udd46",
     "info": {
       "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vOX1Zng472PC2KnS0B9nRfM8aaZ.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/kU0DJMhKjNZAkL60Z8k0KfZ81w2.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/nSVwus6Vcnw06zqKAa1ioacrpUF.jpg",
       "plot": "Hired to cover up a high-profile crime, a fixer soon finds his night spiralling out of control when he's forced to work with an unexpected counterpart.",
       "director": [
         "Jon Watts"
