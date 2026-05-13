@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119695/westnile/streams/sessions/3f000a2350494bbab9228425e0b1d7e0/media/playlist-orig.m3u8/fstl=exp=1778726946~acl=%2Fhls%2Flive%2F2119695%2Fwestnile%2F%2A~hmac=62267ce08ab7386c648e94f197f2b82536f418217dd9c26ae107a941eeea0f5e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119695/westnile/streams/sessions/c0bd7e50762e405489b074c6a4a5a8f3/media/playlist-orig.m3u8/fstl=exp=1778739939~acl=%2Fhls%2Flive%2F2119695%2Fwestnile%2F%2A~hmac=034fbdbd3cdf29e729764185db59f7a5bd98bd60f2d98ac57c12a6e4324b00be/0.m3u8
