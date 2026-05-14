@@ -23,12 +23,12 @@ module.exports = {
     if (region && region !== 'us') url += `/${region}`
     url += `/guide/listings/channel/${channelId}.html?dt=${date.format('YYYY-MM-DD')}`
     
-    console.log(`Generated URL for ${channel.name}: ${url}`)
+    debug(`Generated URL for ${channel.name}: ${url}`)
     return url
   },
   
   request: {
-    method: 'GET',  // Explicitly set GET method
+    method: 'GET',
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -51,56 +51,111 @@ module.exports = {
     const programs = []
     
     if (!content) {
-      console.log(`No content for ${channel.name}`)
+      debug(`No content for ${channel.name}`)
       return programs
     }
     
     try {
       const $ = cheerio.load(content)
       
-      // Check if we got a valid schedule page
-      if ($('table#channel-schedule').length === 0) {
-        console.log(`No schedule table found for ${channel.name}`)
+      // Find the schedule table - works for US, Canada, and Australia
+      let scheduleTable = null
+      
+      // Try different selectors based on site structure
+      if ($('table#channel-schedule').length) {
+        scheduleTable = $('table#channel-schedule')
+      } else if ($('table.table').length) {
+        scheduleTable = $('table.table')
+      } else if ($('.table').length) {
+        scheduleTable = $('.table')
+      } else if ($('table').length && $('table').find('th:contains("Time")').length) {
+        scheduleTable = $('table').first()
+      }
+      
+      if (!scheduleTable || scheduleTable.length === 0) {
+        debug(`No schedule table found for ${channel.name}`)
         return programs
       }
       
       // Collect all program data from the main schedule
       const programRows = []
       
-      $('table#channel-schedule > tbody > tr').toArray().forEach(el => {
-        const timeCell = $(el).find('td:eq(0)')
-        const programCell = $(el).find('td:eq(1)')
-        const timeText = timeCell.find('h5').text().trim()
+      scheduleTable.find('tbody > tr').toArray().forEach(el => {
+        const cells = $(el).find('td')
+        if (cells.length < 2) return
         
-        if (!timeText) return // Skip if no time
+        const timeCell = $(cells[0])
+        const programCell = $(cells[1])
         
-        const titleLink = programCell.find('h5 a')
-        const title = parseText(titleLink)
+        // Get time text (works for all formats)
+        let timeText = timeCell.find('h5').text().trim()
+        if (!timeText) timeText = timeCell.text().trim()
+        if (!timeText) return
         
-        if (!title) return // Skip if no title
+        // Get title (works for all formats)
+        let title = null
+        const titleLink = programCell.find('h5 a, a')
+        if (titleLink.length) {
+          title = parseText(titleLink)
+        } else {
+          title = parseText(programCell.find('h5'))
+          if (!title) title = parseText(programCell.clone().children().remove().end())
+        }
+        if (!title) return
         
-        const subtitle = parseText(programCell.find('h6'))
-        
-        // Extract episode info if present
-        let season, episode
-        const episodeText = programCell.find('h6 i').text()
-        if (episodeText) {
-          const seasonMatch = episodeText.match(/Season (\d+)/i)
-          const episodeMatch = episodeText.match(/Episode (\d+)/i)
-          if (seasonMatch) season = parseInt(seasonMatch[1])
-          if (episodeMatch) episode = parseInt(episodeMatch[1])
+        // Get subtitle (works for all formats including Canadian French)
+        let subtitle = null
+        const subtitleElem = programCell.find('h6, .episode-title, .program-subtitle')
+        if (subtitleElem.length) {
+          subtitle = parseText(subtitleElem)
+        } else {
+          // For Canadian format where subtitle is in the text
+          const cellText = programCell.text()
+          const titleEnd = cellText.indexOf(title)
+          if (titleEnd >= 0) {
+            let remaining = cellText.substring(titleEnd + title.length).trim()
+            if (remaining && !remaining.match(/^\d+:\d+\s*(am|pm)/i)) {
+              subtitle = remaining.replace(/\s*-\s*Season.*$/i, '').trim()
+            }
+          }
         }
         
-        // Check if it's a movie (has movie badge)
-        const isMovie = programCell.find('img[alt="TV Movie"]').length > 0
+        // Extract episode info (works for Canadian format with "Season X, Episode Y")
+        let season, episode
+        const episodeText = programCell.text()
         
-        // Get the detail page URL
+        // Try multiple patterns for season/episode
+        const seasonPatterns = [
+          /Season\s*(\d+)[,\s]+Episode\s*(\d+)/i,
+          /Saison\s*(\d+)[,\s]+Épisode\s*(\d+)/i,  // French Canadian
+          /S(\d+):E(\d+)/i,
+          /\(Season\s*(\d+),\s*Episode\s*(\d+)\)/i
+        ]
+        
+        for (const pattern of seasonPatterns) {
+          const match = episodeText.match(pattern)
+          if (match) {
+            season = parseInt(match[1])
+            episode = parseInt(match[2])
+            break
+          }
+        }
+        
+        // Check if it's a movie (look for year in parentheses)
+        const isMovie = title.match(/\(\d{4}\)/) !== null || 
+                        programCell.find('img[alt="TV Movie"]').length > 0 ||
+                        episodeText.includes('(2023)') || 
+                        episodeText.includes('(2024)') ||
+                        episodeText.includes('(2025)') ||
+                        episodeText.includes('(2026)')
+        
+        // Get the detail page URL if available
         const href = titleLink.attr('href')
         
         programRows.push({
           timeText,
-          title,
-          subtitle: subtitle ? subtitle.replace(/\s*-\s*Season.*$/i, '').trim() : null,
+          title: title.replace(/\s*\(\d{4}\)\s*$/, '').trim(), // Remove year from title for movies
+          subtitle: subtitle,
           season,
           episode,
           isMovie,
@@ -109,7 +164,7 @@ module.exports = {
       })
       
       if (programRows.length === 0) {
-        console.log(`No program rows found for ${channel.name}`)
+        debug(`No program rows found for ${channel.name}`)
         return programs
       }
       
@@ -131,7 +186,7 @@ module.exports = {
           }
         }
         
-        // Estimate duration
+        // Calculate duration based on next program
         let duration = 30 // default 30 minutes
         if (program.isMovie) {
           duration = 120 // movies typically 2 hours
@@ -153,30 +208,35 @@ module.exports = {
         const programObj = {
           title: program.title,
           subTitle: program.subtitle,
-          season: program.season,
-          episode: program.episode,
           start,
           stop
         }
+        
+        // Add season/episode if available
+        if (program.season) programObj.season = program.season
+        if (program.episode) programObj.episode = program.episode
         
         // Add movie indicator if applicable
         if (program.isMovie) {
           programObj.category = ['Movie']
         }
         
-        // If detailed guide is enabled and we have a detail URL
+        // Only fetch details for non-movie programs with a detail URL
         if (detailedGuide && program.href && !program.isMovie) {
           try {
             const detailContent = await fetchDetailPage(program.href)
             if (detailContent) {
               const $detail = cheerio.load(detailContent)
               
-              // Extract detailed information
-              const description = parseText($detail('.tab-pane > .tvbody > p, .program-description, .description'));
-              const icon = $detail('.program-media-image img, img.show-page-image, .show-page-image img, .channel-logo img').attr('src');
+              // Extract detailed information with multiple selector fallbacks
+              const description = parseText(
+                $detail('.tab-pane > .tvbody > p, .program-description, .description, .show-description')
+              );
+              
+              const icon = $detail('.program-media-image img, img.show-page-image, .show-page-image img, .channel-logo img, .show-image img').attr('src');
               
               // Extract categories/genres
-              const category = $detail('.schedule-attributes-genres span, .genre-tags a, .genres a').toArray()
+              const category = $detail('.schedule-attributes-genres span, .genre-tags a, .genres a, .show-genres span').toArray()
                 .map(el => $(el).text().trim())
                 .filter(c => c)
                 .slice(0, 3);
@@ -187,11 +247,11 @@ module.exports = {
               
               // Extract cast and crew
               const casts = [];
-              $detail('.single-cast-head:not([id]), .cast-member, .actor-item').toArray().forEach(el => {
+              $detail('.single-cast-head:not([id]), .cast-member, .actor-item, .cast-list li').toArray().forEach(el => {
                 const name = parseText($(el).find('a, .cast-name, .name'));
                 const roleText = $(el).text();
                 const [, role] = roleText.match(/\((.*)\)/) || [null, null];
-                if (name && name !== 'More') {
+                if (name && name !== 'More' && name !== 'Add') {
                   casts.push({
                     name: name,
                     role: role ? role.trim() : null
@@ -217,7 +277,7 @@ module.exports = {
               await new Promise(resolve => setTimeout(resolve, 100));
             }
           } catch (error) {
-            // Silent fail for detail pages - we already have basic info
+            // Silent fail for detail pages
             debug(`Detail fetch failed for ${program.title}: ${error.message}`);
           }
         }
@@ -227,13 +287,13 @@ module.exports = {
       
       // Ensure last program has a stop time (add 30 minutes)
       if (programs.length > 0 && !programs[programs.length - 1].stop) {
-        programs[programs.length - 1].stop = programs[programs.length - 1].start.add(30, 'minutes');
+        programs[programs.length - 1].stop = programs[programs.length - 1].start.add(30, 'minutes')
       }
       
-      console.log(`Parsed ${programs.length} programs for ${channel.name}`);
+      debug(`Parsed ${programs.length} programs for ${channel.name}`)
       
     } catch (error) {
-      console.log(`Error parsing content for ${channel.name}: ${error.message}`);
+      console.log(`Error parsing content for ${channel.name}: ${error.message}`)
     }
     
     return programs
@@ -394,7 +454,7 @@ async function fetchDetailPage(url) {
   try {
     const response = await axios.get(url, {
       headers: headers,
-      timeout: 15000, // Shorter timeout for detail pages
+      timeout: 15000,
       maxRedirects: 5
     })
     
@@ -412,15 +472,21 @@ function parseTime(date, time, channel) {
     us: 'America/New_York'
   }
   const region = (channel.site_id || '').split('#')[0]
-  const dateString = `${date.format('YYYY-MM-DD')} ${time}`
   
-  // Handle AM/PM times
-  let parsedTime = time.toLowerCase()
-  if (!parsedTime.includes('am') && !parsedTime.includes('pm')) {
-    // Assume 24-hour format? Unlikely for this site
-    parsedTime = parsedTime + (parseInt(time.split(':')[0]) >= 12 ? 'pm' : 'am')
+  let timeStr = time.toLowerCase().trim()
+  
+  // Handle times without AM/PM (common in Canadian and Australian listings)
+  if (!timeStr.includes('am') && !timeStr.includes('pm')) {
+    const hour = parseInt(timeStr.split(':')[0])
+    if (hour >= 12) {
+      timeStr = timeStr + 'pm'
+    } else {
+      timeStr = timeStr + 'am'
+    }
   }
-
+  
+  const dateString = `${date.format('YYYY-MM-DD')} ${timeStr}`
+  
   return dayjs.tz(dateString, 'YYYY-MM-DD h:mm a', timezones[region])
 }
 
