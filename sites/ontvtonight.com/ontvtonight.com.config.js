@@ -9,8 +9,11 @@ dayjs.extend(utc)
 dayjs.extend(timezone)
 dayjs.extend(customParseFormat)
 
-const detailedGuide = true
-const nworker = 25
+const detailedGuide = false // Set to false to avoid extra requests that might trigger rate limiting
+const nworker = 5 // Reduced from 25 to avoid overwhelming the server
+const retryCount = 3
+const retryDelay = 2000 // 2 seconds between retries
+const requestDelay = 500 // 0.5 second delay between requests
 
 module.exports = {
   site: 'ontvtonight.com',
@@ -23,7 +26,6 @@ module.exports = {
     if (region && region !== 'us') url += `/${region}`
     url += `/guide/listings/channel/${channelId}.html?dt=${date.format('YYYY-MM-DD')}`
     
-    debug(`Generated URL for ${channel.name}: ${url}`)
     return url
   },
   
@@ -36,15 +38,13 @@ module.exports = {
       'Accept-Encoding': 'gzip, deflate, br',
       'Connection': 'keep-alive',
       'Upgrade-Insecure-Requests': '1',
-      'Sec-Fetch-Dest': 'document',
-      'Sec-Fetch-Mode': 'navigate',
-      'Sec-Fetch-Site': 'same-origin',
-      'Sec-Fetch-User': '?1',
       'Cache-Control': 'max-age=0',
       'Referer': 'https://www.ontvtonight.com/guide/'
     },
     timeout: 30000,
-    maxRedirects: 5
+    maxRedirects: 5,
+    retry: retryCount,
+    delay: requestDelay
   },
   
   async parser({ content, date, channel }) {
@@ -221,67 +221,6 @@ module.exports = {
           programObj.category = ['Movie']
         }
         
-        // Only fetch details for non-movie programs with a detail URL
-        if (detailedGuide && program.href && !program.isMovie) {
-          try {
-            const detailContent = await fetchDetailPage(program.href)
-            if (detailContent) {
-              const $detail = cheerio.load(detailContent)
-              
-              // Extract detailed information with multiple selector fallbacks
-              const description = parseText(
-                $detail('.tab-pane > .tvbody > p, .program-description, .description, .show-description')
-              );
-              
-              const icon = $detail('.program-media-image img, img.show-page-image, .show-page-image img, .channel-logo img, .show-image img').attr('src');
-              
-              // Extract categories/genres
-              const category = $detail('.schedule-attributes-genres span, .genre-tags a, .genres a, .show-genres span').toArray()
-                .map(el => $(el).text().trim())
-                .filter(c => c)
-                .slice(0, 3);
-              
-              if (category.length > 0) {
-                programObj.category = category;
-              }
-              
-              // Extract cast and crew
-              const casts = [];
-              $detail('.single-cast-head:not([id]), .cast-member, .actor-item, .cast-list li').toArray().forEach(el => {
-                const name = parseText($(el).find('a, .cast-name, .name'));
-                const roleText = $(el).text();
-                const [, role] = roleText.match(/\((.*)\)/) || [null, null];
-                if (name && name !== 'More' && name !== 'Add') {
-                  casts.push({
-                    name: name,
-                    role: role ? role.trim() : null
-                  });
-                }
-              });
-              
-              if (casts.length > 0) {
-                programObj.actor = casts.filter(c => c.role === 'Actor' || (!c.role && c.name)).map(c => c.name).slice(0, 5);
-                programObj.director = casts.filter(c => c.role === 'Director').map(c => c.name);
-                programObj.presenter = casts.filter(c => c.role === 'Presenter').map(c => c.name);
-              }
-              
-              if (description) {
-                programObj.description = description;
-              }
-              
-              if (icon) {
-                programObj.icon = icon;
-              }
-              
-              // Add a small delay to avoid overwhelming the server
-              await new Promise(resolve => setTimeout(resolve, 100));
-            }
-          } catch (error) {
-            // Silent fail for detail pages
-            debug(`Detail fetch failed for ${program.title}: ${error.message}`);
-          }
-        }
-        
         programs.push(programObj)
       }
       
@@ -422,8 +361,11 @@ module.exports = {
                 }
               })
             }
+            
+            // Add delay between requests to avoid rate limiting
+            await new Promise(resolve => setTimeout(resolve, requestDelay))
+            
           } catch (error) {
-            // Silent fail for individual requests
             debug(`Error processing provider ${provider}: ${error.message}`)
           }
         }
@@ -436,32 +378,27 @@ module.exports = {
   }
 }
 
-// Helper function to fetch detail pages with proper error handling
-async function fetchDetailPage(url) {
+// Helper function to fetch with retry logic
+async function fetchWithRetry(url, headers, retries = retryCount) {
   const axios = require('axios')
   
-  const headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Language': 'en-US,en;q=0.9',
-    'Accept-Encoding': 'gzip, deflate, br',
-    'Connection': 'keep-alive',
-    'Referer': 'https://www.ontvtonight.com/guide/',
-    'Cache-Control': 'max-age=0',
-    'Upgrade-Insecure-Requests': '1'
-  }
-  
-  try {
-    const response = await axios.get(url, {
-      headers: headers,
-      timeout: 15000,
-      maxRedirects: 5
-    })
-    
-    return response.data
-  } catch (error) {
-    // Silent fail - we don't want to spam logs with detail page errors
-    return null
+  for (let i = 0; i < retries; i++) {
+    try {
+      const response = await axios.get(url, {
+        headers: headers,
+        timeout: 30000,
+        maxRedirects: 5
+      })
+      return response
+    } catch (error) {
+      if (i === retries - 1) throw error
+      if (error.response && error.response.status === 405) {
+        // If we get a 405, wait longer before retry (rate limiting)
+        await new Promise(resolve => setTimeout(resolve, retryDelay * 2))
+      } else {
+        await new Promise(resolve => setTimeout(resolve, retryDelay))
+      }
+    }
   }
 }
 
@@ -500,7 +437,7 @@ function parseText($item) {
   return text || null
 }
 
-// Keep doFetch for compatibility but not used in new parser
+// Keep for compatibility
 async function doFetch(queues, cb) {
   const axios = require('axios')
 
