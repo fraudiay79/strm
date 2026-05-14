@@ -13,7 +13,7 @@ const detailedGuide = false // Set to false to avoid extra requests that might t
 const nworker = 5 // Reduced from 25 to avoid overwhelming the server
 const retryCount = 3
 const retryDelay = 2000 // 2 seconds between retries
-const requestDelay = 500 // 0.5 second delay between requests
+const requestDelay = 2000 // 2 second delay between requests
 
 module.exports = {
   site: 'ontvtonight.com',
