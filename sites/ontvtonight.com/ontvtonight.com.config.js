@@ -44,90 +44,139 @@ module.exports = {
   
   async parser({ content, date, channel }) {
     const programs = []
-
+    
     if (content) {
-      const queues = []
       const $ = cheerio.load(content)
-
-      $('table.table > tbody > tr').toArray().forEach(el => {
-        const td = $(el).find('td:eq(1)')
-        const title = td.find('h5 a')
-        if (detailedGuide) {
-          const href = title.attr('href')
-          if (href) {
-            const fullUrl = href.startsWith('http') ? href : `https://www.ontvtonight.com${href}`
-            queues.push(fullUrl)
-          }
-        } else {
-          const subtitle = td.find('h6')
-          const time = $(el).find('td:nth-child(1) > h5')
-          let start = parseTime(date, time.text().trim(), channel)
-          const prev = programs[programs.length - 1]
-          if (prev) {
-            if (start.isBefore(prev.start)) {
-              start = start.add(1, 'd')
-              date = date.add(1, 'd')
-            }
-            prev.stop = start
-          }
-          const stop = start.add(30, 'm')
-          programs.push({
-            title: parseText(title),
-            subTitle: parseText(subtitle),
-            start,
-            stop
-          })
+      
+      // First, collect all program data from the main schedule
+      const programRows = []
+      
+      $('table#channel-schedule > tbody > tr').toArray().forEach(el => {
+        const timeCell = $(el).find('td:eq(0)')
+        const programCell = $(el).find('td:eq(1)')
+        const timeText = timeCell.find('h5').text().trim()
+        const titleLink = programCell.find('h5 a')
+        const title = parseText(titleLink)
+        const subtitle = parseText(programCell.find('h6'))
+        
+        // Extract episode info if present
+        let season, episode
+        const episodeText = programCell.find('h6 i').text()
+        if (episodeText) {
+          const [, ses, epi] = episodeText.match(/Season (\d+), Episode (\d+)/) || [null, null]
+          if (ses) season = parseInt(ses)
+          if (epi) episode = parseInt(epi)
         }
-      })
-
-      if (queues.length) {
-        await doFetch(queues, (url, res) => {
-          const $ = cheerio.load(res)
-          const time = $('center > h5 > b').text()
-          const title = parseText($('.inner-heading.sub h2'))
-          const subTitle = parseText($('.tab-pane > h4 > strong'))
-          const description = parseText($('.tab-pane > .tvbody > p'))
-          const icon = $('.program-media-image img, img.show-page-image, .show-page-image img').attr('src')
-          const category = $('.schedule-attributes-genres span').toArray().map(el => $(el).text()).slice(0, 3)
-          const casts = $('.single-cast-head:not([id])').toArray().map(el => {
-            const cast = { name: parseText($(el).find('a')) }
-            const [, role] = $(el).text().match(/\((.*)\)/) || [null, null]
-            if (role) {
-              cast.role = role
-            }
-            return cast
-          })
-          const [start, stop] = parseStartStop(date, time, channel)
-          let season, episode
-          if (subTitle) {
-            const [, ses, epi] = subTitle.match(/Season (\d+), Episode (\d+)/) || [null, null]
-            if (ses) {
-              season = parseInt(ses)
-            }
-            if (epi) {
-              episode = parseInt(epi)
-            }
-          }
-          programs.push({
-            title,
-            subTitle,
-            description,
-            icon,
-            category,
-            season,
-            episode,
-            actor: casts.filter(c => c.role === 'Actor').map(c => c.name).slice(0, 3),
-            director: casts.filter(c => c.role === 'Director').map(c => c.name),
-            presenter: casts.filter(c => c.role === 'Presenter').map(c => c.name),
-            start,
-            stop
-          })
+        
+        // Check if it's a movie (has movie badge)
+        const isMovie = programCell.find('img[alt="TV Movie"]').length > 0
+        
+        // Get the detail page URL
+        const href = titleLink.attr('href')
+        
+        programRows.push({
+          timeText,
+          title,
+          subtitle: subtitle ? subtitle.split(' - ')[0] : null, // Clean subtitle
+          season,
+          episode,
+          isMovie,
+          href: href ? (href.startsWith('http') ? href : `https://www.ontvtonight.com${href}`) : null
         })
+      })
+      
+      // Process programs in order to set correct start/stop times
+      for (let i = 0; i < programRows.length; i++) {
+        const program = programRows[i]
+        let start = parseTime(date, program.timeText, channel)
+        
+        // Adjust for date rollover
+        if (i > 0) {
+          const prevStart = programs[i - 1].start
+          if (start.isBefore(prevStart)) {
+            start = start.add(1, 'd')
+          }
+          // Set previous program's stop time
+          programs[i - 1].stop = start
+        }
+        
+        // Estimate duration (default 2 hours for movies, 30 mins for shows)
+        let duration = program.isMovie ? 120 : 30
+        if (i < programRows.length - 1) {
+          const nextTime = parseTime(date, programRows[i + 1].timeText, channel)
+          let nextStart = nextTime
+          if (nextStart.isBefore(start)) {
+            nextStart = nextStart.add(1, 'd')
+          }
+          duration = nextStart.diff(start, 'minutes')
+        }
+        
+        const stop = start.add(duration, 'minutes')
+        
+        // Create base program object
+        const programObj = {
+          title: program.title,
+          subTitle: program.subtitle,
+          season: program.season,
+          episode: program.episode,
+          start,
+          stop
+        }
+        
+        // If detailed guide is enabled and we have a detail URL, fetch additional info
+        if (detailedGuide && program.href && !program.isMovie) {
+          try {
+            const detailContent = await fetchDetailPage(program.href)
+            if (detailContent) {
+              const $detail = cheerio.load(detailContent)
+              
+              // Extract detailed information
+              const description = parseText($detail('.tab-pane > .tvbody > p, .program-description'));
+              const icon = $detail('.program-media-image img, img.show-page-image, .show-page-image img').attr('src');
+              
+              // Extract categories/genres
+              const category = $detail('.schedule-attributes-genres span, .genre-tags a').toArray()
+                .map(el => $(el).text())
+                .slice(0, 3);
+              
+              // Extract cast and crew
+              const casts = [];
+              $detail('.single-cast-head:not([id]), .cast-member').toArray().forEach(el => {
+                const name = parseText($(el).find('a, .cast-name'));
+                const roleText = $(el).text();
+                const [, role] = roleText.match(/\((.*)\)/) || [null, null];
+                if (name) {
+                  casts.push({
+                    name: name,
+                    role: role || null
+                  });
+                }
+              });
+              
+              // Update program with detailed info
+              programObj.description = description;
+              programObj.icon = icon;
+              programObj.category = category;
+              programObj.actor = casts.filter(c => c.role === 'Actor' || (!c.role && c.name)).map(c => c.name).slice(0, 3);
+              programObj.director = casts.filter(c => c.role === 'Director').map(c => c.name);
+              programObj.presenter = casts.filter(c => c.role === 'Presenter').map(c => c.name);
+              
+              // Add a small delay to avoid overwhelming the server
+              await new Promise(resolve => setTimeout(resolve, 100));
+            }
+          } catch (error) {
+            console.log(`Error fetching details for ${program.title}: ${error.message}`);
+            // Continue with basic info if detail fetch fails
+          }
+        }
+        
+        programs.push(programObj)
       }
     }
-
+    
     return programs
   },
+  
   async channels({ country }) {
     const axios = require('axios')
     const _ = require('lodash')
@@ -202,16 +251,16 @@ module.exports = {
       'Sec-Fetch-Dest': 'document',
       'Sec-Fetch-Mode': 'navigate',
       'Sec-Fetch-Site': 'same-origin',
-      'Sec-Fetch-User': '?1',
-      'Content-Type': 'application/x-www-form-urlencoded'
+      'Sec-Fetch-User': '?1'
     }
 
     for (let provider of providers[country]) {
       for (let zipcode of zipcodes[country]) {
         for (let region of regions[country]) {
-          let url = 'https://www.ontvtonight.com'
-          if (country === 'us') url += '/guide/schedule'
-          else url += `/${country}/guide/schedule`
+          // Build URL with query parameters instead of POST body
+          let baseUrl = 'https://www.ontvtonight.com'
+          if (country === 'us') baseUrl += '/guide/schedule'
+          else baseUrl += `/${country}/guide/schedule`
           
           const params = new URLSearchParams({
             provider,
@@ -221,22 +270,20 @@ module.exports = {
             date: dayjs().format('YYYY-MM-DD'),
             st: 0,
             is_mobile: 1
-          }).toString()
+          })
+          
+          const url = `${baseUrl}?${params.toString()}`
 
           try {
-            const data = await axios
-              .post(url, params, {
+            const response = await axios
+              .get(url, {  // Changed from POST to GET
                 headers: headers,
-                timeout: 30000
-              })
-              .then(r => r.data)
-              .catch(err => {
-                console.log(`Error fetching ${url}: ${err.message}`)
-                return null
+                timeout: 30000,
+                maxRedirects: 5
               })
 
-            if (data) {
-              const $ = cheerio.load(data)
+            if (response.data) {
+              const $ = cheerio.load(response.data)
               $('.channelname').each((i, el) => {
                 let name = $(el).find('center > a:eq(1)').text()
                 name = name.replace(/\-\-/gi, '-')
@@ -255,12 +302,56 @@ module.exports = {
             }
           } catch (error) {
             console.log(`Error processing provider ${provider}, zipcode ${zipcode}, region ${region}: ${error.message}`)
+            // Continue with next iteration instead of failing completely
+            continue
           }
         }
       }
     }
 
     return _.uniqBy(channels, 'site_id')
+  }
+}
+
+// Helper function to fetch detail pages with proper error handling
+async function fetchDetailPage(url) {
+  const axios = require('axios')
+  
+  const headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Connection': 'keep-alive',
+    'Referer': 'https://www.ontvtonight.com/guide/',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'same-origin',
+    'Sec-Fetch-User': '?1',
+    'Cache-Control': 'max-age=0',
+    'Upgrade-Insecure-Requests': '1'
+  }
+  
+  try {
+    const response = await axios.get(url, {
+      headers: headers,
+      timeout: 30000,
+      maxRedirects: 5,
+      validateStatus: function(status) {
+        return status === 200 // Only resolve for 200 status
+      }
+    })
+    
+    return response.data
+  } catch (error) {
+    if (error.response) {
+      console.log(`Detail page fetch failed for ${url}: Status ${error.response.status}`)
+    } else if (error.request) {
+      console.log(`Detail page fetch failed for ${url}: No response received`)
+    } else {
+      console.log(`Detail page fetch failed for ${url}: ${error.message}`)
+    }
+    return null
   }
 }
 
