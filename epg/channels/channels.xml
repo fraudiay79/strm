@@ -31,12 +31,9 @@
   <channel site="ipko.tv" lang="sq" xmltv_id="FilmMax.al" site_id="MAXHD">Film Max</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="FilmThriller.al" site_id="FILMTHRILLER">Film Thriller</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="FilmStinet.al" site_id="STINET">Film Stinët</channel>
-  <channel site="tvprofil.com" lang="sq" xmltv_id="FilmBoxExtra.al" site_id="al/programacioni#filmbox-extra">FilmBox Extra</channel>
-  <channel site="tvprofil.com" lang="sq" xmltv_id="FilmBoxStars.al" site_id="al/programacioni#filmbox-plus">FilmBox Stars</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="Info24.al" site_id="al/programacioni#info24-albania">Info24</channel>
   <channel site="tvprofil.com" lang="sq" xmltv_id="INTV.al" site_id="al/programacioni#intv-al">INTV</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="JuniorTV.al" site_id="JUNIORTV">Junior TV</channel>
-  <channel site="tvprofil.com" lang="sq" xmltv_id="Kanal7.al" site_id="al/programacioni#tring-kanal-7">Tring Kanal 7</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="Kanali7.al" site_id="KANALI7">Kanali 7</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="KlanMusic.al" site_id="KLANMUSIC">Klan Music</channel>
   <channel site="ipko.tv" lang="sq" xmltv_id="KlanNews.al" site_id="KLANNEWS">Klan News</channel>
@@ -323,8 +320,8 @@
   <channel site="i.mjh.nz" lang="en" xmltv_id="ABCEntertains.au" site_id="au/Sydney/epg#mjh-abc-tv-plus">ABC Entertains</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="ABCTV.au" site_id="au/Sydney/epg#mjh-abc-nsw">ABC TV</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="BloombergTV.au" site_id="au/Adelaide/epg#mjh-btv-FAST">Bloomberg TV</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="C31Melbourne.au" site_id="au#2469/c31">Channel 31</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="Channel44.au" site_id="au#2471/44-adelaide">Channel 44</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="C31Melbourne.au" site_id="au/Melbourne/epg#mjh-c31">Channel 31</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Channel44.au" site_id="au/Adelaide/epg#mjh-c44">Channel 44</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="7.au" site_id="au/Sydney/epg#mjh-seven-syd">Seven</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="9.au" site_id="au/Sydney/epg#mjh-channel-9-nsw">Channel 9</channel>
   <channel site="i.mjh.nz" lang="en" xmltv_id="Nickelodeon.au" site_id="au/Brisbane/epg#mjh-10shake-qld">Nickelodeon</channel>
@@ -338,75 +335,72 @@
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports1.au" site_id="164C0EDA-EBCE-4AA6-9DDA-D603E0948B9F">beIN Sports 1</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports2.au" site_id="63A30D9C-609D-4A30-8730-2CA391DF287A">beIN Sports 2</channel>
   <channel site="beinsports.com" lang="en" xmltv_id="beINSports3.au" site_id="2E8A6222-8D90-4291-81E3-AF2F72557746">beIN Sports 3</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="AE.au" site_id="AE/AES">A&amp;E</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="AnimalPlanet.au" site_id="Animal-Planet/ANI">Animal Planet</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="ANT1Pacific.gr" site_id="Antenna-Pacific/ANT">Antenna Pacific</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Arena.au" site_id="Arena/ARN">Arena</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="AuroraTV.au" site_id="Aurora/AUR">Aurora</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="BBCEarth.au" site_id="BBC-Earth/BBK">BBC Earth</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="BBCFirst.au" site_id="BBC-First/BSF">BBC First</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="BBCUKTV.au" site_id="UKTV/UKT">UKTV</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="BoxSets.au" site_id="BoxSets/BXS">BoxSets</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="CBeebies.au" site_id="Cbeebies/CBE">Cbeebies</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="ClubMTV.au" site_id="Club-MTV/VH1">Club MTV</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="CMT.au" site_id="CMT/CMT">CMT</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="CRIMEINVESTIGATION/CIN">Crime+Investigation</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Daystar.au" site_id="Daystar/DAS">Daystar</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="DiscoveryChannel.au" site_id="Discovery-Channel/DIS">Discovery Channel</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="DiscoveryTurbo.au" site_id="Discovery-Turbo/DIT">Discovery Turbo</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Docos.au" site_id="Docos/SAR">Docos</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="DreamWorks.au" site_id="DreamWorks/DRM">DreamWorks</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="ESPN.au" site_id="ESPN/ESP">ESPN</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="ESPN2.au" site_id="ESPN2/ES2">ESPN 2</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="ExpoChannel.au" site_id="EXPO/EXP">Expo Channel</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Fox8.au" site_id="FOX8/FOX">FOX8</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Classics.au" site_id="Classics/FKC">Classics</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Comedy.au" site_id="Comedy/HIT">Comedy</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxCricket.au" site_id="FOX-CRICKET/FS1">FOX Cricket</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Crime.au" site_id="Crime/IOI">Crime</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxFooty.au" site_id="Fox-Footy/FAF">FOX Footy</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxLeague.au" site_id="FOX-LEAGUE/SP2">FOX League</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelOne.au" site_id="Foxtel-One/F1S">Foxtel One</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SciFi.au" site_id="Sci-Fi/FIS">Sci Fi</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Showcase.au" site_id="Showcase/SHC">Showcase</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Sleuth.au" site_id="Sleuth/FSU">Sleuth</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxSports503.au" site_id="FOX-SPORTS-503/FS3">FOX Sports 503</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxSports505.au" site_id="FOX-SPORTS-505/FSP">FOX Sports 505</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxSports506.au" site_id="FOX-SPORTS-506/SPS">FOX Sports 506</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxSportsNews.au" site_id="Fox-Sports-News/FSN">FOX Sports News</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxSportsMorePlus.au" site_id="Fox-Sports-More/FSS">FOX Sports More</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesAction.au" site_id="Foxtel-Movies-Action/SHA">Foxtel Movies Action</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesComedy.au" site_id="Foxtel-Movies-Comedy/SHY">Foxtel Movies Comedy</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesDrama.au" site_id="Foxtel-Movies-Drama/MO6">Foxtel Movies Drama</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesFamily.au" site_id="Foxtel-Movies-Family/SHF">Foxtel Movies Family</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesGreats.au" site_id="Foxtel-Movies-Greats/GRR">Foxtel Movies Greats</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesHits.au" site_id="Foxtel-Movies-Hits/MVS">Foxtel Movies Hits</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesPremiere.au" site_id="Foxtel-Movies-Premiere/SHO">Foxtel Movies Premiere</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesRomance.au" site_id="Foxtel-Movies-Romance/SHD">Foxtel Movies Romance</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="FoxtelMoviesThriller.au" site_id="Foxtel-Movies-Thriller/SHH">Foxtel Movies Thriller</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="History.au" site_id="HISTORY/HST">History</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="Investigation-Discovery/DID">Investigation Discovery</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="LifeStyle.au" site_id="LifeStyle/LST">LifeStyle</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="LifestyleFood.au" site_id="LifeStyle-Food/FOD">LifeStyle Food</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="LifestyleHome.au" site_id="LifeStyle-Home/LHO">LifeStyle Home</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="LMN.au" site_id="Lifetime-Movie-Network/LMS">Lifetime Movie Network</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="MTVHits.au" site_id="MTV-Hits/TMF">MTV Hits</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="MTV80s.au" site_id="MTV-80s/MTC">MTV 80s</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="NickMusic.au" site_id="Nick-Music/NMU">Nick Music</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="Racingcom.au" site_id="RACINGCOM/RTV">Racing.com</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="RaiItaliaAustralia.it" site_id="RAI-ITALIA/RAI">Rai Italia</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="RealLife.au" site_id="Real-Life/RLS">Real Life</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SkyNews.au" site_id="SKY-News/SKY">Sky News</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SkyNewsExtra.au" site_id="Sky-News-Extra/ASP">Sky News Extra</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SkyNewsWeatherChannel.au" site_id="SKY-Weather/FXW">Sky Weather</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SkyRacing1.au" site_id="SKY-Racing/SRA">Sky Racing 1</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SkyRacing2.au" site_id="SKY-Racing-2/SR2">Sky Racing 2</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SkyThoroughbredCentral.au" site_id="SKY-Tbred-Cent-HD/SRH">Sky Racing Thoroughbred Central</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="SonLife.us" site_id="SonLife/SLT">SonLife</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="TBNInspire.us" site_id="TBN-Inspire/HLT">TBN Inspire</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="TLC.au" site_id="TLC/DTA">TLC</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="TVSN.au" site_id="TVSN/TVS">TVSN</channel>
-  <channel site="foxtel.com.au" lang="en" xmltv_id="UniversalTV.au" site_id="Universal-TV/HAL">Universal TV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="AE.au" site_id="AE/AES">A&amp;E</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="AnimalPlanet.au" site_id="Foxtel/epg#ANI">Animal Planet</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ANT1Pacific.gr" site_id="Foxtel/epg#ANT">Antenna Pacific</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Arena.au" site_id="Foxtel/epg#ARN">Arena</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="AuroraTV.au" site_id="Foxtel/epg#AUR">Aurora</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="BBCEarth.au" site_id="Foxtel/epg#BBK">BBC Earth</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="BBCFirst.au" site_id="Foxtel/epg#BSF">BBC First</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="BBCUKTV.au" site_id="Foxtel/epg#UKT">UKTV</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="BoxSets.au" site_id="Foxtel/epg#BXS">BoxSets</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CBeebies.au" site_id="Foxtel/epg#CBE">Cbeebies</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CMT.au" site_id="Foxtel/epg#CMT">CMT</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="CrimePlusInvestigation.au" site_id="Foxtel/epg#CIN">Crime+Investigation</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Daystar.au" site_id="Foxtel/epg#DAS">Daystar</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryChannel.au" site_id="Foxtel/epg#DIS">Discovery Channel</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DiscoveryTurbo.au" site_id="Foxtel/epg#DIT">Discovery Turbo</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Docos.au" site_id="Foxtel/epg#SAR">Docos</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="DreamWorks.au" site_id="Foxtel/epg#DRM">DreamWorks</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN.au" site_id="Foxtel/epg#ESP">ESPN</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ESPN2.au" site_id="Foxtel/epg#ES2">ESPN 2</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="ExpoChannel.au" site_id="Foxtel/epg#EXP">Expo Channel</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Fox8.au" site_id="Foxtel/epg#FOX">FOX8</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Classics.au" site_id="Foxtel/epg#FKC">Classics</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Comedy.au" site_id="Foxtel/epg#HIT">Comedy</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxCricket.au" site_id="Foxtel/epg#FS1">FOX Cricket</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Crime.au" site_id="Foxtel/epg#IOI">Crime</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxFooty.au" site_id="Foxtel/epg#FAF">FOX Footy</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxLeague.au" site_id="Foxtel/epg#SP2">FOX League</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelOne.au" site_id="Foxtel/epg#F1S">Foxtel One</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SciFi.au" site_id="Foxtel/epg#FIS">Sci Fi</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Showcase.au" site_id="Foxtel/epg#SHC">Showcase</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Sleuth.au" site_id="Foxtel/epg#FSU">Sleuth</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSports503.au" site_id="Foxtel/epg#FS3">FOX Sports 503</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSports505.au" site_id="Foxtel/epg#FSP">FOX Sports 505</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSports506.au" site_id="Foxtel/epg#SPS">FOX Sports 506</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSportsNews.au" site_id="Foxtel/epg#FSN">FOX Sports News</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxSportsMorePlus.au" site_id="Foxtel/epg#FSS">FOX Sports More</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesAction.au" site_id="Foxtel/epg#SHA">Foxtel Movies Action</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesComedy.au" site_id="Foxtel/epg#SHY">Foxtel Movies Comedy</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesDrama.au" site_id="Foxtel/epg#MO6">Foxtel Movies Drama</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesFamily.au" site_id="Foxtel/epg#SHF">Foxtel Movies Family</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesGreats.au" site_id="Foxtel/epg#GRR">Foxtel Movies Greats</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesHits.au" site_id="Foxtel/epg#MVS">Foxtel Movies Hits</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesPremiere.au" site_id="Foxtel/epg#SHO">Foxtel Movies Premiere</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesRomance.au" site_id="Foxtel/epg#SHD">Foxtel Movies Romance</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="FoxtelMoviesThriller.au" site_id="Foxtel/epg#SHH">Foxtel Movies Thriller</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="History.au" site_id="Foxtel/epg#HST">History</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="InvestigationDiscovery.au" site_id="Foxtel/epg#DID">Investigation Discovery</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="LifeStyle.au" site_id="Foxtel/epg#LST">LifeStyle</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="LifestyleFood.au" site_id="Foxtel/epg#FOD">LifeStyle Food</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="LifestyleHome.au" site_id="Foxtel/epg#LHO">LifeStyle Home</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="LMN.au" site_id="Foxtel/epg#LMS">Lifetime Movie Network</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="NickMusic.au" site_id="Foxtel/epg#NMU">Nick Music</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="Racingcom.au" site_id="Foxtel/epg#RTV">Racing.com</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="RaiItaliaAustralia.it" site_id="Foxtel/epg#RAI">Rai Italia</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="RealLife.au" site_id="Foxtel/epg#RLS">Real Life</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyNews.au" site_id="Foxtel/epg#SKY">Sky News</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyNewsExtra.au" site_id="Foxtel/epg#ASP">Sky News Extra</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyNewsWeatherChannel.au" site_id="Foxtel/epg#FXW">Sky Weather</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyRacing1.au" site_id="Foxtel/epg#SRA">Sky Racing 1</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyRacing2.au" site_id="Foxtel/epg#SR2">Sky Racing 2</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SkyThoroughbredCentral.au" site_id="Foxtel/epg#SRH">Sky Racing Thoroughbred Central</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="SonLife.us" site_id="Foxtel/epg#SLT">SonLife</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TBNInspire.us" site_id="Foxtel/epg#HLT">TBN Inspire</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TLC.au" site_id="Foxtel/epg#DTA">TLC</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="TVSN.au" site_id="Foxtel/epg#TVS">TVSN</channel>
+  <channel site="i.mjh.nz" lang="en" xmltv_id="UniversalTV.au" site_id="Foxtel/epg#HAL">Universal TV</channel>
   #Austria
   <channel site="magentatv.at" lang="de" xmltv_id="ATV.at" site_id="206965288109">ATV</channel>
   <channel site="magentatv.at" lang="de" xmltv_id="ATV2.at" site_id="206965800229">ATV 2</channel>
@@ -2522,8 +2516,6 @@
   <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLHarom.hu" site_id="RTL_HAROM">RTL Három</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLKetto.hu" site_id="RTL_KETTO">RTL Kettő</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="RTLOtthon.hu" site_id="RTLOTTHON">RTL Otthon</channel>
-  <channel site="magentatv.hu" lang="hu" xmltv_id="SkyShowtime1.hu" site_id="23661">SkyShowtime 1</channel>
-  <channel site="magentatv.hu" lang="hu" xmltv_id="SkyShowtime2.hu" site_id="23662">SkyShowtime 2</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="ŠlágerOriginal.hu" site_id="SLAGERTV">Sláger Originál</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="SorozatPlus.hu" site_id="SOROZATPLUSSZ">Sorozat+</channel>
   <channel site="tvmustra.hu" lang="hu" xmltv_id="SorozatKlub.hu" site_id="SOROZATKLUB">Sorozat Klub</channel>
@@ -2993,7 +2985,7 @@
   <channel site="raspberrytv.net" lang="he" xmltv_id="FoodChannel.il" site_id="the-food-channel-il">ערוץ האוכל</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="Foody.il" site_id="foody-il-hd">Foody</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="GoodLife.il" site_id="good-life-il">החיים הטובים</channel>
-  <channel site="yes.co.il" lang="ar" xmltv_id="HalaTV.il" site_id="PT63">هلا</channel>
+  <channel site="epgshare01.online" lang="ar" xmltv_id="HalaTV.il" site_id="IL1#HALA.TV.il">هلا</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HealthChannel.il" site_id="health-il">ערוץ בריאות</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="History.il" site_id="history-il">היסטוריה</channel>
   <channel site="raspberrytv.net" lang="he" xmltv_id="HomePlus.il" site_id="home-plus-il">בית+</channel>
@@ -3107,12 +3099,6 @@
   <channel site="guidatv.sky.it" lang="it" xmltv_id="NickJr.it" site_id="DTH#461">Nick Jr.</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="Nove.it" site_id="DTH#9753">Nove</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="PescaeCaccia.it" site_id="DTH#6220">Pesca e Caccia</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="PremiumAction.it" site_id="premium-action/premium/205">Premium Action</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCinema1.it" site_id="premium-cinema-1/premium/445">Premium Cinema 1</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCinema2.it" site_id="premium-cinema-2/premium/447">Premium Cinema 2</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCinema3.it" site_id="premium-cinema-3/premium/448">Premium Cinema 3</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="PremiumCrime.it" site_id="premium-crime/premium/202">Premium Crime</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="PremiumStories.it" site_id="premium-stories/premium/204">Premium Stories</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="QVC.it" site_id="DTH#6626">QVC</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="R101TV.it" site_id="r101/463">R101</channel>
   <channel site="superguidatv.it" lang="it" xmltv_id="Radio105TV.it" site_id="radio-105/460">Radio 105</channel>
@@ -3141,7 +3127,7 @@
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyArte.it" site_id="DTH#7767">Sky Arte</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyAtlantic.it" site_id="DTH#9095">Sky Atlantic</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaAction.it" site_id="DTH#9050">Sky Cinema Action</channel>
-  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaCollection.it" site_id="83677976/sky-cinema-collection">Sky Cinema Collection</channel>
+  <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaCollection.it" site_id="DTH#9047">Sky Cinema Collection</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaComedy.it" site_id="DTH#9039">Sky Cinema Comedy</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaDrama.it" site_id="DTH#10518">Sky Cinema Drama</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyCinemaDue.it" site_id="DTH#9034">Sky Cinema Due</channel>
@@ -3156,18 +3142,11 @@
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyInvestigation.it" site_id="DTH#11246">Sky Investigation</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyMeteo24.it" site_id="DTH#321">Sky Meteo24</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkyNature.it" site_id="DTH#11242">Sky Nature</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila1.it" site_id="primafila-1/sky-primafila/168">Primafila 1</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila2.it" site_id="primafila-2/sky-primafila/169">Primafila 2</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila3.it" site_id="primafila-3/sky-primafila/170">Primafila 3</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila4.it" site_id="primafila-4/sky-primafila/171">Primafila 4</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="SkyPrimafila5.it" site_id="primafila-5/sky-primafila/172">Primafila 5</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySerie.it" site_id="DTH#11244">Sky Serie</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySport24.it" site_id="DTH#929">Sky Sport 24</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportAction.it" site_id="sky-sport-action-hd/sky-sport/573">Sky Sport Action</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportArena.it" site_id="DTH#7507">Sky Sport Arena</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportCalcio.it" site_id="DTH#9113">Sky Sport Calcio</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportF1.it" site_id="DTH#9096">Sky Sport F1</channel>
-  <channel site="superguidatv.it" lang="it" xmltv_id="SkySportFootball.it" site_id="sky-sport-football-hd/sky-sport/39">Sky Sport Football</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportGolf.it" site_id="DTH#10254">Sky Sport Golf</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportMax.it" site_id="DTH#9103">Sky Sport Max</channel>
   <channel site="guidatv.sky.it" lang="it" xmltv_id="SkySportMotoGP.it" site_id="DTH#8434">Sky Sport MotoGP</channel>
@@ -3206,7 +3185,6 @@
   <channel site="ontvtonight.com" lang="en" xmltv_id="FlowSports.jm" site_id="us#1864921428/flow-sports-caribbean">Flow Sports</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="PBCJamaicaTV.jm" site_id="JM1#PBC.Jamaica.jm">PBC Jamaica</channel>
   <channel site="tvpassport.com" lang="en" xmltv_id="SportsMax.jm" site_id="sportsmax/9959">SportsMax</channel>
-  <channel site="ontvtonight.com" lang="en" xmltv_id="SportsMax2.jm" site_id="us#663196076/sportsmax-2">SportsMax 2</channel>
   <channel site="epgshare01.online" lang="en" xmltv_id="TVJ.jm" site_id="JM1#Television.Jamaica.jm">TVJ</channel>
   #Japan
   <channel site="tvguide.myjcom.jp" lang="ja" xmltv_id="AnimalPlanet.jp" site_id="120_186_65406">アニマルプラネット</channel>
@@ -6558,11 +6536,6 @@
   <channel site="sky.com" lang="en" xmltv_id="LondonLive.uk" site_id="5090">London Live</channel>
   <channel site="sky.com" lang="en" xmltv_id="More4.uk" site_id="3340">More4</channel>
   <channel site="sky.com" lang="en" xmltv_id="MTV.uk" site_id="2501">MTV</channel>
-  <channel site="sky.com" lang="en" xmltv_id="MTV80s.uk" site_id="2509">MTV 80s</channel>
-  <channel site="sky.com" lang="en" xmltv_id="MTVHits.uk" site_id="2506">MTV Hits</channel>
-  <channel site="sky.com" lang="en" xmltv_id="MTVMusic.uk" site_id="2512">MTV Music</channel>
-  <channel site="sky.com" lang="en" xmltv_id="MTV90s.uk" site_id="2508">MTV 90s</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="MTVLive.uk" site_id="1762/mtv-live-hd">MTV Live</channel>
   <channel site="sky.com" lang="en" xmltv_id="MUTV.uk" site_id="1003">MUTV</channel>
   <channel site="sky.com" lang="en" xmltv_id="NationalGeographic.uk" site_id="1806">National Geographic</channel>
   <channel site="sky.com" lang="en" xmltv_id="NationalGeographicWild.uk" site_id="1847">National Geographic Wild</channel>
@@ -6639,13 +6612,6 @@
   <channel site="sky.com" lang="en" xmltv_id="TNTSports2.uk" site_id="3627">TNT Sports 2</channel>
   <channel site="sky.com" lang="en" xmltv_id="TNTSports3.uk" site_id="3629">TNT Sports 3</channel>
   <channel site="sky.com" lang="en" xmltv_id="TNTSports4.uk" site_id="4040">TNT Sports 4</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports5.uk" site_id="1955/tnt-sports-5">TNT Sports 5</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports6.uk" site_id="1956/tnt-sports-6">TNT Sports 6</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports7.uk" site_id="1957/tnt-sports-7">TNT Sports 7</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports8.uk" site_id="1958/tnt-sports-8">TNT Sports 8</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports9.uk" site_id="1959/tnt-sports-9">TNT Sports 9</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSports10.uk" site_id="1960/tnt-sports-10">TNT Sports 10</channel>
-  <channel site="mytelly.co.uk" lang="en" xmltv_id="TNTSportsUltimate.uk" site_id="1954/tnt-sports-ultimate">TNT Sports Ultimate</channel>
   <channel site="sky.com" lang="en" xmltv_id="TogetherTV.uk" site_id="1872">Together TV</channel>
   <channel site="sky.com" lang="en" xmltv_id="Travelxp.in" site_id="1226">Travelxp</channel>
   <channel site="sky.com" lang="en" xmltv_id="TrueCrime.uk" site_id="3352">True Crime</channel>
