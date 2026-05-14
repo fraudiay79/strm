@@ -17,14 +17,18 @@ module.exports = {
   days: 2,
   url: function ({ date, channel }) {
     const [region, id] = (channel.site_id || '').split('#')
+    // Extract just the number part from id (remove anything after /)
+    const channelId = id.split('/')[0]
     let url = 'https://www.ontvtonight.com'
     if (region && region !== 'us') url += `/${region}`
-    url += `/guide/listings/channel/${id}.html?dt=${date.format('YYYY-MM-DD')}`
-
+    url += `/guide/listings/channel/${channelId}.html?dt=${date.format('YYYY-MM-DD')}`
+    
+    console.log(`Generated URL for ${channel.name}: ${url}`)
     return url
   },
   
   request: {
+    method: 'GET',  // Explicitly set GET method
     headers: {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
       'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
@@ -39,33 +43,52 @@ module.exports = {
       'Cache-Control': 'max-age=0',
       'Referer': 'https://www.ontvtonight.com/guide/'
     },
-    timeout: 30000
+    timeout: 30000,
+    maxRedirects: 5
   },
   
   async parser({ content, date, channel }) {
     const programs = []
     
-    if (content) {
+    if (!content) {
+      console.log(`No content for ${channel.name}`)
+      return programs
+    }
+    
+    try {
       const $ = cheerio.load(content)
       
-      // First, collect all program data from the main schedule
+      // Check if we got a valid schedule page
+      if ($('table#channel-schedule').length === 0) {
+        console.log(`No schedule table found for ${channel.name}`)
+        return programs
+      }
+      
+      // Collect all program data from the main schedule
       const programRows = []
       
       $('table#channel-schedule > tbody > tr').toArray().forEach(el => {
         const timeCell = $(el).find('td:eq(0)')
         const programCell = $(el).find('td:eq(1)')
         const timeText = timeCell.find('h5').text().trim()
+        
+        if (!timeText) return // Skip if no time
+        
         const titleLink = programCell.find('h5 a')
         const title = parseText(titleLink)
+        
+        if (!title) return // Skip if no title
+        
         const subtitle = parseText(programCell.find('h6'))
         
         // Extract episode info if present
         let season, episode
         const episodeText = programCell.find('h6 i').text()
         if (episodeText) {
-          const [, ses, epi] = episodeText.match(/Season (\d+), Episode (\d+)/) || [null, null]
-          if (ses) season = parseInt(ses)
-          if (epi) episode = parseInt(epi)
+          const seasonMatch = episodeText.match(/Season (\d+)/i)
+          const episodeMatch = episodeText.match(/Episode (\d+)/i)
+          if (seasonMatch) season = parseInt(seasonMatch[1])
+          if (episodeMatch) episode = parseInt(episodeMatch[1])
         }
         
         // Check if it's a movie (has movie badge)
@@ -77,7 +100,7 @@ module.exports = {
         programRows.push({
           timeText,
           title,
-          subtitle: subtitle ? subtitle.split(' - ')[0] : null, // Clean subtitle
+          subtitle: subtitle ? subtitle.replace(/\s*-\s*Season.*$/i, '').trim() : null,
           season,
           episode,
           isMovie,
@@ -85,23 +108,35 @@ module.exports = {
         })
       })
       
+      if (programRows.length === 0) {
+        console.log(`No program rows found for ${channel.name}`)
+        return programs
+      }
+      
       // Process programs in order to set correct start/stop times
       for (let i = 0; i < programRows.length; i++) {
         const program = programRows[i]
+        
         let start = parseTime(date, program.timeText, channel)
         
         // Adjust for date rollover
-        if (i > 0) {
+        if (i > 0 && programs[i - 1] && programs[i - 1].start) {
           const prevStart = programs[i - 1].start
           if (start.isBefore(prevStart)) {
             start = start.add(1, 'd')
           }
           // Set previous program's stop time
-          programs[i - 1].stop = start
+          if (programs[i - 1] && !programs[i - 1].stop) {
+            programs[i - 1].stop = start
+          }
         }
         
-        // Estimate duration (default 2 hours for movies, 30 mins for shows)
-        let duration = program.isMovie ? 120 : 30
+        // Estimate duration
+        let duration = 30 // default 30 minutes
+        if (program.isMovie) {
+          duration = 120 // movies typically 2 hours
+        }
+        
         if (i < programRows.length - 1) {
           const nextTime = parseTime(date, programRows[i + 1].timeText, channel)
           let nextStart = nextTime
@@ -109,6 +144,7 @@ module.exports = {
             nextStart = nextStart.add(1, 'd')
           }
           duration = nextStart.diff(start, 'minutes')
+          if (duration <= 0) duration = 30 // fallback
         }
         
         const stop = start.add(duration, 'minutes')
@@ -123,7 +159,12 @@ module.exports = {
           stop
         }
         
-        // If detailed guide is enabled and we have a detail URL, fetch additional info
+        // Add movie indicator if applicable
+        if (program.isMovie) {
+          programObj.category = ['Movie']
+        }
+        
+        // If detailed guide is enabled and we have a detail URL
         if (detailedGuide && program.href && !program.isMovie) {
           try {
             const detailContent = await fetchDetailPage(program.href)
@@ -131,47 +172,68 @@ module.exports = {
               const $detail = cheerio.load(detailContent)
               
               // Extract detailed information
-              const description = parseText($detail('.tab-pane > .tvbody > p, .program-description'));
-              const icon = $detail('.program-media-image img, img.show-page-image, .show-page-image img').attr('src');
+              const description = parseText($detail('.tab-pane > .tvbody > p, .program-description, .description'));
+              const icon = $detail('.program-media-image img, img.show-page-image, .show-page-image img, .channel-logo img').attr('src');
               
               // Extract categories/genres
-              const category = $detail('.schedule-attributes-genres span, .genre-tags a').toArray()
-                .map(el => $(el).text())
+              const category = $detail('.schedule-attributes-genres span, .genre-tags a, .genres a').toArray()
+                .map(el => $(el).text().trim())
+                .filter(c => c)
                 .slice(0, 3);
+              
+              if (category.length > 0) {
+                programObj.category = category;
+              }
               
               // Extract cast and crew
               const casts = [];
-              $detail('.single-cast-head:not([id]), .cast-member').toArray().forEach(el => {
-                const name = parseText($(el).find('a, .cast-name'));
+              $detail('.single-cast-head:not([id]), .cast-member, .actor-item').toArray().forEach(el => {
+                const name = parseText($(el).find('a, .cast-name, .name'));
                 const roleText = $(el).text();
                 const [, role] = roleText.match(/\((.*)\)/) || [null, null];
-                if (name) {
+                if (name && name !== 'More') {
                   casts.push({
                     name: name,
-                    role: role || null
+                    role: role ? role.trim() : null
                   });
                 }
               });
               
-              // Update program with detailed info
-              programObj.description = description;
-              programObj.icon = icon;
-              programObj.category = category;
-              programObj.actor = casts.filter(c => c.role === 'Actor' || (!c.role && c.name)).map(c => c.name).slice(0, 3);
-              programObj.director = casts.filter(c => c.role === 'Director').map(c => c.name);
-              programObj.presenter = casts.filter(c => c.role === 'Presenter').map(c => c.name);
+              if (casts.length > 0) {
+                programObj.actor = casts.filter(c => c.role === 'Actor' || (!c.role && c.name)).map(c => c.name).slice(0, 5);
+                programObj.director = casts.filter(c => c.role === 'Director').map(c => c.name);
+                programObj.presenter = casts.filter(c => c.role === 'Presenter').map(c => c.name);
+              }
+              
+              if (description) {
+                programObj.description = description;
+              }
+              
+              if (icon) {
+                programObj.icon = icon;
+              }
               
               // Add a small delay to avoid overwhelming the server
               await new Promise(resolve => setTimeout(resolve, 100));
             }
           } catch (error) {
-            console.log(`Error fetching details for ${program.title}: ${error.message}`);
-            // Continue with basic info if detail fetch fails
+            // Silent fail for detail pages - we already have basic info
+            debug(`Detail fetch failed for ${program.title}: ${error.message}`);
           }
         }
         
         programs.push(programObj)
       }
+      
+      // Ensure last program has a stop time (add 30 minutes)
+      if (programs.length > 0 && !programs[programs.length - 1].stop) {
+        programs[programs.length - 1].stop = programs[programs.length - 1].start.add(30, 'minutes');
+      }
+      
+      console.log(`Parsed ${programs.length} programs for ${channel.name}`);
+      
+    } catch (error) {
+      console.log(`Error parsing content for ${channel.name}: ${error.message}`);
     }
     
     return programs
@@ -243,21 +305,18 @@ module.exports = {
     const channels = []
     const headers = {
       'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
-      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+      'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
       'Accept-Language': 'en-US,en;q=0.9',
       'Accept-Encoding': 'gzip, deflate, br',
       'Connection': 'keep-alive',
       'Upgrade-Insecure-Requests': '1',
-      'Sec-Fetch-Dest': 'document',
-      'Sec-Fetch-Mode': 'navigate',
-      'Sec-Fetch-Site': 'same-origin',
-      'Sec-Fetch-User': '?1'
+      'Referer': 'https://www.ontvtonight.com/'
     }
 
     for (let provider of providers[country]) {
       for (let zipcode of zipcodes[country]) {
         for (let region of regions[country]) {
-          // Build URL with query parameters instead of POST body
+          // Build URL with query parameters
           let baseUrl = 'https://www.ontvtonight.com'
           if (country === 'us') baseUrl += '/guide/schedule'
           else baseUrl += `/${country}/guide/schedule`
@@ -275,41 +334,45 @@ module.exports = {
           const url = `${baseUrl}?${params.toString()}`
 
           try {
-            const response = await axios
-              .get(url, {  // Changed from POST to GET
-                headers: headers,
-                timeout: 30000,
-                maxRedirects: 5
-              })
+            const response = await axios.get(url, {
+              headers: headers,
+              timeout: 30000,
+              maxRedirects: 5
+            })
 
             if (response.data) {
               const $ = cheerio.load(response.data)
               $('.channelname').each((i, el) => {
                 let name = $(el).find('center > a:eq(1)').text()
-                name = name.replace(/\-\-/gi, '-')
-                const url = $(el).find('center > a:eq(1)').attr('href')
-                if (!url) return
-                const [, number, slug] = url.match(/\/(\d+)\/(.*)\.html$/) || []
-
-                if (number && slug) {
-                  channels.push({
-                    lang: 'en',
-                    name,
-                    site_id: `${country}#${number}/${slug}`
-                  })
+                name = name.replace(/\-\-/gi, '-').trim()
+                const channelUrl = $(el).find('center > a:eq(1)').attr('href')
+                if (!channelUrl) return
+                
+                // Extract channel ID from URL
+                const match = channelUrl.match(/\/(\d+)\/(.*)\.html$/)
+                if (match) {
+                  const [, number, slug] = match
+                  if (number && slug) {
+                    channels.push({
+                      lang: 'en',
+                      name: name,
+                      site_id: `${country}#${number}`
+                    })
+                  }
                 }
               })
             }
           } catch (error) {
-            console.log(`Error processing provider ${provider}, zipcode ${zipcode}, region ${region}: ${error.message}`)
-            // Continue with next iteration instead of failing completely
-            continue
+            // Silent fail for individual requests
+            debug(`Error processing provider ${provider}: ${error.message}`)
           }
         }
       }
     }
 
-    return _.uniqBy(channels, 'site_id')
+    const uniqueChannels = _.uniqBy(channels, 'site_id')
+    console.log(`Found ${uniqueChannels.length} channels for ${country}`)
+    return uniqueChannels
   }
 }
 
@@ -324,10 +387,6 @@ async function fetchDetailPage(url) {
     'Accept-Encoding': 'gzip, deflate, br',
     'Connection': 'keep-alive',
     'Referer': 'https://www.ontvtonight.com/guide/',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'same-origin',
-    'Sec-Fetch-User': '?1',
     'Cache-Control': 'max-age=0',
     'Upgrade-Insecure-Requests': '1'
   }
@@ -335,35 +394,15 @@ async function fetchDetailPage(url) {
   try {
     const response = await axios.get(url, {
       headers: headers,
-      timeout: 30000,
-      maxRedirects: 5,
-      validateStatus: function(status) {
-        return status === 200 // Only resolve for 200 status
-      }
+      timeout: 15000, // Shorter timeout for detail pages
+      maxRedirects: 5
     })
     
     return response.data
   } catch (error) {
-    if (error.response) {
-      console.log(`Detail page fetch failed for ${url}: Status ${error.response.status}`)
-    } else if (error.request) {
-      console.log(`Detail page fetch failed for ${url}: No response received`)
-    } else {
-      console.log(`Detail page fetch failed for ${url}: ${error.message}`)
-    }
+    // Silent fail - we don't want to spam logs with detail page errors
     return null
   }
-}
-
-function parseStartStop(date, time, channel) {
-  const [s, e] = time.split(' - ')
-  const start = parseTime(date, s, channel)
-  let stop = parseTime(date, e, channel)
-  if (stop.isBefore(start)) {
-    stop = stop.add(1, 'd')
-  }
-
-  return [start, stop]
 }
 
 function parseTime(date, time, channel) {
@@ -374,8 +413,15 @@ function parseTime(date, time, channel) {
   }
   const region = (channel.site_id || '').split('#')[0]
   const dateString = `${date.format('YYYY-MM-DD')} ${time}`
+  
+  // Handle AM/PM times
+  let parsedTime = time.toLowerCase()
+  if (!parsedTime.includes('am') && !parsedTime.includes('pm')) {
+    // Assume 24-hour format? Unlikely for this site
+    parsedTime = parsedTime + (parseInt(time.split(':')[0]) >= 12 ? 'pm' : 'am')
+  }
 
-  return dayjs.tz(dateString, 'YYYY-MM-DD H:mm a', timezones[region])
+  return dayjs.tz(dateString, 'YYYY-MM-DD h:mm a', timezones[region])
 }
 
 function parseText($item) {
@@ -383,28 +429,21 @@ function parseText($item) {
   let text = $item.text()
     .replace(/\t/g, '')
     .replace(/\n/g, ' ')
+    .replace(/\s+/g, ' ')
     .trim()
-  while (text.includes('  ')) {
-    text = text.replace(/  /g, ' ')
-  }
   return text || null
 }
 
+// Keep doFetch for compatibility but not used in new parser
 async function doFetch(queues, cb) {
   const axios = require('axios')
 
   const headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36',
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
     'Accept-Language': 'en-US,en;q=0.9',
     'Accept-Encoding': 'gzip, deflate, br',
     'Connection': 'keep-alive',
-    'Upgrade-Insecure-Requests': '1',
-    'Sec-Fetch-Dest': 'document',
-    'Sec-Fetch-Mode': 'navigate',
-    'Sec-Fetch-Site': 'same-origin',
-    'Sec-Fetch-User': '?1',
-    'Cache-Control': 'max-age=0',
     'Referer': 'https://www.ontvtonight.com/guide/'
   }
 
@@ -443,7 +482,7 @@ async function doFetch(queues, cb) {
             adjustWorker()
           }
         } catch (error) {
-          console.log(`Error fetching ${url}: ${error.message}`)
+          // Silent fail
         }
         worker()
       } else {
