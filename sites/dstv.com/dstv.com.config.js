@@ -3,6 +3,7 @@ const dayjs = require('dayjs')
 const utc = require('dayjs/plugin/utc')
 const timezone = require('dayjs/plugin/timezone')
 const customParseFormat = require('dayjs/plugin/customParseFormat')
+const uniqBy = require('lodash.uniqby')
 
 dayjs.extend(utc)
 dayjs.extend(timezone)
@@ -45,8 +46,7 @@ module.exports = {
     return programs
   },
   async channels({ country }) {
-    const _ = require('lodash')
-
+    
     const countries = {
       ao: 'ago',
       bj: 'ben',
@@ -114,7 +114,7 @@ module.exports = {
       })
     })
 
-    return _.uniqBy(channels, 'site_id')
+    return uniqBy(channels, 'site_id')
   }
 }
 
@@ -126,7 +126,7 @@ function parseTime(time, channel) {
     bfa: 'Africa/Ouagadougou',
     bdi: 'Africa/Bujumbura',
     cmr: 'Africa/Douala',
-    cpv: 'Atlantic/Cape_Verde',
+    cpv: 'CVT',
     tcd: 'Africa/Ndjamena',
     caf: 'Africa/Bangui',
     com: 'Indian/Comoro',
@@ -134,7 +134,7 @@ function parseTime(time, channel) {
     dji: 'Africa/Djibouti',
     gnq: 'Africa/Malabo',
     eri: 'Africa/Asmara',
-    swz: 'Africa/Johannesburg',
+    swz: 'SAST',
     eth: 'Africa/Addis_Ababa',
     gap: 'Africa/Libreville',
     gmb: 'Africa/Banjul',
