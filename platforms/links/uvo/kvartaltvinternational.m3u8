@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Russian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="ru",URI="streams/sessions/d95f0fcec1464ccca31835ac249f88bb/media/playlist-orig.m3u8/fstl=exp=1778883011~acl=%2F10010%2Fdvr%2Fhls%2Fkvartaltvinternational%2F%2A~hmac=7aa1b4d324d94303364b884aa9282350bd2a242c8c25a4c9f3b9e88942a238ee/1.m3u8",CHANNELS="2"
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,AVERAGE-BANDWIDTH=2302362,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.077,VIDEO-RANGE=SDR
-https://live.uvotv.com/10010/dvr/hls/kvartaltvinternational/streams/sessions/d95f0fcec1464ccca31835ac249f88bb/media/playlist-orig.m3u8/fstl=exp=1778883011~acl=%2F10010%2Fdvr%2Fhls%2Fkvartaltvinternational%2F%2A~hmac=7aa1b4d324d94303364b884aa9282350bd2a242c8c25a4c9f3b9e88942a238ee/0.m3u8
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="Russian",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="ru",URI="streams/sessions/c8287225e4a249da9a6fc598030902b1/media/playlist-orig.m3u8/fstl=exp=1778899893~acl=%2F10010%2Fdvr%2Fhls%2Fkvartaltvinternational%2F%2A~hmac=6131f94b811c840d6ffd3a6be9f85097377f54cdead51cdf74f4307ad2c2321f/1.m3u8",CHANNELS="2"
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,AVERAGE-BANDWIDTH=2302433,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.077,VIDEO-RANGE=SDR
+https://live.uvotv.com/10010/dvr/hls/kvartaltvinternational/streams/sessions/c8287225e4a249da9a6fc598030902b1/media/playlist-orig.m3u8/fstl=exp=1778899893~acl=%2F10010%2Fdvr%2Fhls%2Fkvartaltvinternational%2F%2A~hmac=6131f94b811c840d6ffd3a6be9f85097377f54cdead51cdf74f4307ad2c2321f/0.m3u8
