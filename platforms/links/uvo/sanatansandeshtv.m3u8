@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/hls/live/2121045/sanatansandeshtv/streams/sessions/0a93ad7c3d3042fea3c6f8ec2bb654c8/media/playlist-orig.m3u8/fstl=exp=1778883039~acl=%2Fhls%2Flive%2F2121045%2Fsanatansandeshtv%2F%2A~hmac=43689a2bb85d27e964100af8497e0b539f1efacdea31f7ede2223970a75a8750/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=24.000
+https://live.uvotv.com/hls/live/2121045/sanatansandeshtv/streams/sessions/267f5d44ec3d40c4b1b24df5b8251387/media/playlist-orig.m3u8/fstl=exp=1778930527~acl=%2Fhls%2Flive%2F2121045%2Fsanatansandeshtv%2F%2A~hmac=b1e23e3681e4716e6135d92a1e1395978475a234422e9e6a6f49917aef829c1e/0.m3u8
