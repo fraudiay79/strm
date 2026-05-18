@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2120682/ghimemtv/streams/sessions/00e179a517384cad845dfb1732059da0/media/playlist-orig.m3u8/fstl=exp=1779173849~acl=%2Fhls%2Flive%2F2120682%2Fghimemtv%2F%2A~hmac=59de39b3a81bf1ecefcca61cd7ffb9d42ef882a1f486856b67d07db33a57f9cd/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120682/ghimemtv/streams/sessions/7753ab41f8674cbf819fd06f0286c42b/media/playlist-orig.m3u8/fstl=exp=1779211791~acl=%2Fhls%2Flive%2F2120682%2Fghimemtv%2F%2A~hmac=093ca6c65acc51fac1c30ed20a74c040d4cd3391e44d7be9064db6177ee61976/0.m3u8
