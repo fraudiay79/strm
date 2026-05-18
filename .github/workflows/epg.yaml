@@ -37,7 +37,7 @@ jobs:
       env:
         NODE_OPTIONS: --max-old-space-size=7168 --expose-gc
       run: |
-          npm ci
+          npm install  # This will work even with outdated lock file
           npm install oauth-1.0a
           npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml.gz --days=2 --maxConnections=20 --timeout=60000
           
@@ -46,9 +46,10 @@ jobs:
           git config user.name "🧟 Brainz"
           git config user.email "brainz@users.noreply.github.com"
           git add -f epg/epg-channels.xml.gz
+          git add package-lock.json  # Commit updated lock file
           git status
           if git diff --staged --quiet; then
-            echo "No EPG changes to commit"
+            echo "No changes to commit"
             exit 0
           else
             git commit -m "update epg $(date +'%Y-%m-%d')"
