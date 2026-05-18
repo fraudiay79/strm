@@ -10,23 +10,34 @@ jobs:
 
     steps:
     - name: checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
 
     - name: Set up Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: '3.x'
 
     - name: Set up Node
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
-           node-version: 20
+        node-version: 20
+
+    - name: Cache Node.js dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          node_modules
+          ~/.npm
+        key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+          ${{ runner.os }}-
 
     - name: npm grab epg
       env:
         NODE_OPTIONS: --max-old-space-size=7168 --expose-gc
       run: |
-          npm install
+          npm ci
           npm install oauth-1.0a
           npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml.gz --days=2 --maxConnections=20 --timeout=60000
           
@@ -35,5 +46,11 @@ jobs:
           git config user.name "🧟 Brainz"
           git config user.email "brainz@users.noreply.github.com"
           git add -f epg/epg-channels.xml.gz
-          git commit -m "updated epg" || echo "No changes to commit"
-          git push -f origin main
+          git status
+          if git diff --staged --quiet; then
+            echo "No EPG changes to commit"
+            exit 0
+          else
+            git commit -m "update epg $(date +'%Y-%m-%d')"
+            git push origin main
+          fi
