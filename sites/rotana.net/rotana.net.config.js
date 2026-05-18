@@ -131,7 +131,7 @@ function parseProgram(item, result) {
   }
   const img = $('.row > div > img')
   if (img.length) {
-    item.image = img.attr('src')
+    item.icon = img.attr('src')
   }
   delete item.program
   return item
