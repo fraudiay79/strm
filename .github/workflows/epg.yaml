@@ -11,8 +11,6 @@ jobs:
     steps:
     - name: checkout repository
       uses: actions/checkout@v6
-      with:
-        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v6
@@ -22,49 +20,18 @@ jobs:
     - name: Set up Node
       uses: actions/setup-node@v6
       with:
-        node-version: 20
-
-    - name: Cache Node.js dependencies
-      uses: actions/cache@v4
-      with:
-        path: |
-          node_modules
-          ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-          ${{ runner.os }}-
+           node-version: 24
 
     - name: npm grab epg
-      env:
-        NODE_OPTIONS: --max-old-space-size=7168 --expose-gc
       run: |
           npm install
           npm install oauth-1.0a
-          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml.gz --days=2 --maxConnections=20 --timeout=60000
+          npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml --days=2 --maxConnections=20 --timeout=90000
           
-    - name: Commit EPG only
+    - name: Commit changes
       run: |
           git config user.name "🧟 Brainz"
-          git config user.email "brainz@users.noreply.github.com"
-          
-          # Pull latest changes from remote
-          git pull origin main --no-rebase --no-edit
-          
-          # Discard all changes except EPG file
-          git reset --hard HEAD
-          
-          # Add only the EPG file
+          git config user.email "<>"
           git add -f epg/epg-channels.xml.gz
-          
-          # Check if EPG file has changes
-          if git diff --staged --quiet; then
-            echo "No EPG changes to commit"
-            exit 0
-          fi
-          
-          # Commit only the EPG file
-          git commit -m "update epg $(date +'%Y-%m-%d')"
-          
-          # Push to remote
-          git push origin main
+          git commit -m "updated epg"
+          git push -f origin main
