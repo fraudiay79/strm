@@ -10,7 +10,7 @@ jobs:
     steps:
     
       - name: checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         
       - name: checkout iptv-org/epg repo
         uses: actions/checkout@v6
@@ -28,7 +28,6 @@ jobs:
 
       - name: commit
         run: |
-          git pull
-          cd epg && git add .
+          git add -f epg/epg-channels.xml.gz
           git commit -m "Update EPG"
-          git push origin main
+          git push -f origin main
