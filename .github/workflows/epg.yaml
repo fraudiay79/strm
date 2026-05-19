@@ -11,6 +11,8 @@ jobs:
     steps:
     - name: checkout repository
       uses: actions/checkout@v6
+      with:
+        fetch-depth: 0
 
     - name: Set up Python
       uses: actions/setup-python@v6
@@ -37,21 +39,32 @@ jobs:
       env:
         NODE_OPTIONS: --max-old-space-size=7168 --expose-gc
       run: |
-          npm install  # This will work even with outdated lock file
+          npm install
           npm install oauth-1.0a
           npm run grab -- --channels=./epg/channels/channels.xml --gzip --output=./epg/epg-channels.xml.gz --days=2 --maxConnections=20 --timeout=60000
           
-    - name: Commit changes
+    - name: Commit EPG only
       run: |
           git config user.name "🧟 Brainz"
           git config user.email "brainz@users.noreply.github.com"
+          
+          # Pull latest changes from remote
+          git pull origin main --no-rebase --no-edit
+          
+          # Discard all changes except EPG file
+          git reset --hard HEAD
+          
+          # Add only the EPG file
           git add -f epg/epg-channels.xml.gz
-          git add package-lock.json  # Commit updated lock file
-          git status
+          
+          # Check if EPG file has changes
           if git diff --staged --quiet; then
-            echo "No changes to commit"
+            echo "No EPG changes to commit"
             exit 0
-          else
-            git commit -m "update epg $(date +'%Y-%m-%d')"
-            git push origin main
           fi
+          
+          # Commit only the EPG file
+          git commit -m "update epg $(date +'%Y-%m-%d')"
+          
+          # Push to remote
+          git push origin main
