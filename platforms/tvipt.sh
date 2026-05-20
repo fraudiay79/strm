@@ -6,8 +6,9 @@ file3="links/pt/tviint.m3u8"
 file4="links/pt/vplus.m3u8"
 file5="links/pt/tvificcao.m3u8"
 file6="links/pt/tvireality.m3u8"
+file7="links/pt/tviafrica.m3u8"
 
-for file in "$file1" "$file2" "$file3"; do
+for file in "$file1" "$file2" "$file3" "$file4" "$file5" "$file6" "$file7"; do
   sed -i "s#wmsAuthSign=[^&]*#wmsAuthSign=$(wget -qO- https://services.iol.pt/matrix?userId -o /dev/null)#g" "$file"
 done
 exit 0
