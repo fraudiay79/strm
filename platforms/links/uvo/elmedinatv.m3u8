@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2120682/elmedinatv/streams/sessions/4e129032f8294518963311fd9bedc1be/media/playlist-orig.m3u8/fstl=exp=1779451926~acl=%2Fhls%2Flive%2F2120682%2Felmedinatv%2F%2A~hmac=c06dc626376d23d39430d76574ccfd914ab054c5357c4d36915afe75aae7f057/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120682/elmedinatv/streams/sessions/e522afd78eef4c2aa9ebf8ca4ea172db/media/playlist-orig.m3u8/fstl=exp=1779470994~acl=%2Fhls%2Flive%2F2120682%2Felmedinatv%2F%2A~hmac=557de1dade9dfec4e2b53cae84a882d1e3ef1d3c74151efc3eb456453ab9ec7e/0.m3u8
