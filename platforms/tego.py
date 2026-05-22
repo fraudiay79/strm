@@ -9,6 +9,7 @@ TOKEN_URL = "https://api.siberapi.com/sso/get_guest_token.php?app_id=1"
 STREAMING_URLS = [
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/1?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/2?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
+    "https://mw.siberapi.com/api/ui/stb/v3/Channels/3?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/4?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/27?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
     "https://mw.siberapi.com/api/ui/stb/v3/Channels/5?device_id=AA:AA:AA:AA:AA:AA&device=web&application_id=1",
@@ -22,7 +23,7 @@ STREAMING_URLS = [
 ]
 
 # Corresponding names for output files
-NAMES = ["ttt", "synergy", "wpg10", "lfntt", "jaagriti", "trinitytv", "bhaktitv", "ibntv", "wacktv", "abstv", "ietv", "plustv"]
+NAMES = ["ttt", "synergy", "gayelle", "wpg10", "lfntt", "jaagriti", "trinitytv", "bhaktitv", "ibntv", "wacktv", "abstv", "ietv", "plustv"]
 
 # Directory to save output files
 OUTPUT_DIR = "links/tt"
