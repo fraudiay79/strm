@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2120681/tunisiaeduc/streams/sessions/e4df23c71b66478583cdd72f3bed582f/media/playlist-orig.m3u8/fstl=exp=1779649551~acl=%2Fhls%2Flive%2F2120681%2Ftunisiaeduc%2F%2A~hmac=a947efd7cbaaea0c9293a2bfdede722ee3fb9baf5b83ea03e52798c44b1fe054/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120681/tunisiaeduc/streams/sessions/0c1893a509114a048248b777b19c7f0d/media/playlist-orig.m3u8/fstl=exp=1779659564~acl=%2Fhls%2Flive%2F2120681%2Ftunisiaeduc%2F%2A~hmac=e554717d16a2389b79f5b3b1e54f3aa3c6a3fb5ddecc9d7177a9f9bf3ea5ca20/0.m3u8
