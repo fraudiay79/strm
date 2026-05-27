@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/telemax/streams/sessions/82de805ef2cc4cdaa55cbb573f0ba85d/media/playlist-orig.m3u8/fstl=exp=1779999199~acl=%2F10010%2Flive%2Fhls%2Ftelemax%2F%2A~hmac=690082fc51bc6817d7bb749ebff8c2abc949b870ecb0ab0951116f11fab4e260/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/telemax/streams/sessions/22a9f85b3bda423ebec2e26d698d6d4e/media/playlist-orig.m3u8/fstl=exp=1780007488~acl=%2F10010%2Flive%2Fhls%2Ftelemax%2F%2A~hmac=0e0f90a67002d1295cb73b1139daf480774fcae512037e471f571a65bbab6ee9/0.m3u8
