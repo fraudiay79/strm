@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2119691/wasafitv/streams/sessions/c71f6b5e2fa344789607ffaaf130aef0/media/playlist-orig.m3u8/fstl=exp=1780233791~acl=%2Fhls%2Flive%2F2119691%2Fwasafitv%2F%2A~hmac=e1a6e04dfba21aa59f31eb0affcfe55cfda6d249ab8787b9fd5cd889a543364c/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119691/wasafitv/streams/sessions/1fdcacec11f74298a6bcb78d39189af3/media/playlist-orig.m3u8/fstl=exp=1780243411~acl=%2Fhls%2Flive%2F2119691%2Fwasafitv%2F%2A~hmac=25a3ecff1eb29610128fc32b75a4d8633f4f5f098d3b0a69177a8042bce87c9f/0.m3u8
