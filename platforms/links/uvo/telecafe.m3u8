@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/telecafe/streams/sessions/f02909c241d748009add49384d7a54c5/media/playlist-orig.m3u8/fstl=exp=1778133390~acl=%2F10010%2Fdvr%2Fhls%2Ftelecafe%2F%2A~hmac=7a9c95bdc90249593578ebdb176d52a8a28fabdec330e2cdd20cd66e13da98d3/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
+https://live.uvotv.com/10010/dvr/hls/telecafe/streams/sessions/5c4dc8bc495345268f09be1b5a362857/media/playlist-orig.m3u8/fstl=exp=1780606493~acl=%2F10010%2Fdvr%2Fhls%2Ftelecafe%2F%2A~hmac=55c3ebe5ce6d6d01e9bbb79280b400b5fd76a652567d316edd7fc89f9997e467/0.m3u8
