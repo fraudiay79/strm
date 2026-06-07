@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/10010/live/hls/sportitalia/streams/sessions/59e52b140c0b4ce281ba691a09aa2c5e/media/playlist-orig.m3u8/fstl=exp=1780946463~acl=%2F10010%2Flive%2Fhls%2Fsportitalia%2F%2A~hmac=74d5950a0bcb8fd444344e55871bf5ca742e750e903cd8c78dead04fc528a8fb/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/sportitalia/streams/sessions/5a5c2b8b926449cd8f7038faae1e085e/media/playlist-orig.m3u8/fstl=exp=1780956332~acl=%2F10010%2Flive%2Fhls%2Fsportitalia%2F%2A~hmac=962e46a5676ddebae8d3458da4061a20a95ab4db057d42f8c74ce21cd8d49191/0.m3u8
