@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/hls/live/2120427/joyprime/streams/sessions/0c3c5526fe4547cca102479e239118b2/media/playlist-orig.m3u8/fstl=exp=1781001995~acl=%2Fhls%2Flive%2F2120427%2Fjoyprime%2F%2A~hmac=ae0b748f5a900acb49a52c827f8b9429a005f9da1e16b40b65145b99952a7447/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120427/joyprime/streams/sessions/6123b7e09786469cb63f36c8154aaadb/media/playlist-orig.m3u8/fstl=exp=1781019810~acl=%2Fhls%2Flive%2F2120427%2Fjoyprime%2F%2A~hmac=bebac8ef15a2e8eb01e1a66813d22cc58b58b97ffcfd65e72d1de439e1882fbc/0.m3u8
