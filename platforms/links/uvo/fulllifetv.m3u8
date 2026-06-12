@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2120683/fulllifetv/streams/sessions/5d0f4e8352db494b82104df57a86ad4d/media/playlist-orig.m3u8/fstl=exp=1781362363~acl=%2Fhls%2Flive%2F2120683%2Ffulllifetv%2F%2A~hmac=deac151b5a20790a365bdd5ff2eb21e3527cf7b41bacbc0cfd4620c8727980a1/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120683/fulllifetv/streams/sessions/15d0d66c46e34954831a8e6f006a87f0/media/playlist-orig.m3u8/fstl=exp=1781381253~acl=%2Fhls%2Flive%2F2120683%2Ffulllifetv%2F%2A~hmac=1ab03cffbee93e21b5c93d7a6ef7b2c35c3b49abe641224b3631c6af1ff540cd/0.m3u8
