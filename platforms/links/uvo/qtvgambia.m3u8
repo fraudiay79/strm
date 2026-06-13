@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120429/qtvgambia/streams/sessions/d42454315f934e95bf2470f041833c65/media/playlist-orig.m3u8/fstl=exp=1781435656~acl=%2Fhls%2Flive%2F2120429%2Fqtvgambia%2F%2A~hmac=f2ce6062552abd0af549696de87874e1ccbb16de9d532ffacdf73e3d26707690/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120429/qtvgambia/streams/sessions/1fed098e6de447c180d829dadb713a19/media/playlist-orig.m3u8/fstl=exp=1781445276~acl=%2Fhls%2Flive%2F2120429%2Fqtvgambia%2F%2A~hmac=672d6ba5a4f434b6ebf4adb02dcca9ac117e10f472da0296df5f5e482d81a0e4/0.m3u8
