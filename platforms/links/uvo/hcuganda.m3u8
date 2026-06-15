@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2119176/hcuganda/streams/sessions/35d7611ef36a4da09426c8c5866e197a/media/playlist-orig.m3u8/fstl=exp=1781630064~acl=%2Fhls%2Flive%2F2119176%2Fhcuganda%2F%2A~hmac=ed1519c3d14e003bf3cccd1856a86e22aa8c4a39c5e9770a3b04604596df64fe/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119176/hcuganda/streams/sessions/a7d7a763eeb646fda8134532e5abe95f/media/playlist-orig.m3u8/fstl=exp=1781643096~acl=%2Fhls%2Flive%2F2119176%2Fhcuganda%2F%2A~hmac=76c3f6904f3534da5dc255bac4bb4cf3e7e55ea2bbe19a3cd66f593d3b058663/0.m3u8
