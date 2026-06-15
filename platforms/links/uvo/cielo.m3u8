@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/cielo/streams/sessions/4dda70695f17461ea8e880316c8c228a/media/playlist-orig.m3u8/fstl=exp=1781561447~acl=%2F10010%2Flive%2Fhls%2Fcielo%2F%2A~hmac=b90ec78ca1af5db2dc1cc87a5d98dff20bcf4d4a060cf4da91315c082a41dbe9/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/cielo/streams/sessions/08e9aa914e014a1ead35e3330900f0b3/media/playlist-orig.m3u8/fstl=exp=1781611176~acl=%2F10010%2Flive%2Fhls%2Fcielo%2F%2A~hmac=0b3b9a537e8b10aea54c0b304f7d191c55bdefd52867ea3c1f9fdfa0b15c155b/0.m3u8
