@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/10010/dvr/hls/gtvsports/streams/sessions/8c8ad942e71242fd9e590924507641b8/media/playlist-orig.m3u8/fstl=exp=1781813359~acl=%2F10010%2Fdvr%2Fhls%2Fgtvsports%2F%2A~hmac=773a566eaf88bf75e119efcd29ef18e596e897f5bfa631e7e040e48a72f8253a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/gtvsports/streams/sessions/3342364edb5c4df29d662e236494fc78/media/playlist-orig.m3u8/fstl=exp=1781840190~acl=%2F10010%2Fdvr%2Fhls%2Fgtvsports%2F%2A~hmac=d89a0a8013cd5826cf275c86f105b6a9b68b4dc344c2f80965ce1a97605f119d/0.m3u8
