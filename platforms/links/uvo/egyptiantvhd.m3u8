@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2120757/egyptiantvhd/streams/sessions/0c65c0b0e22249928fa75fe24b869135/media/playlist-orig.m3u8/fstl=exp=1782121560~acl=%2Fhls%2Flive%2F2120757%2Fegyptiantvhd%2F%2A~hmac=eb6180b23fd76731f662cdfb6691b7aa4a2e30d5fe0d22d5448462c9fc05bbea/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120757/egyptiantvhd/streams/sessions/d61fb45123b74bebac5bdadcc0ad9c80/media/playlist-orig.m3u8/fstl=exp=1782137013~acl=%2Fhls%2Flive%2F2120757%2Fegyptiantvhd%2F%2A~hmac=1d4a1baa48522082c48180b68b9fc699d5d38f75e7e7cb1c83ce8b3b58e69a00/0.m3u8
