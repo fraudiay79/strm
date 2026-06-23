@@ -2,7 +2,7 @@ name: run snrt.sh
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs in every 30 minutes
+    - cron: '*/5 * * * *' # Runs in every 5 minutes
   workflow_dispatch:
 
 jobs:
@@ -30,8 +30,8 @@ jobs:
         run:  |
             pwd
             cd ./platforms/
-            #bash snrt.sh
-            python3 snrt_test.py
+            bash snrt.sh
+            #python3 snrt_test.py
 
       - name: commit and push files
         run: |
