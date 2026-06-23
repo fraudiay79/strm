@@ -1,44 +1,45 @@
 [
   {
-    "name": "Bad Monkey",
+    "name": "Battlestar Galactica",
     "category": "\ud83c\udd31",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lUGG3lxIF3f2N796t4aHmxDhLK5.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/yj8g84iczcJVg3zCxVGpfdEMMxg.jpg",
-      "plot": "A detective turned restaurant inspector in Southern Florida is pulled into a world of greed and corruption after a tourist finds a severed arm while fishing. And yes, there's a monkey.",
-      "rating": "7.2",
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/99PJSbcO2LeM10uOGWeFihNp77j.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/sEjNaoENrqIZONKNn1iLFB0Us9k.jpg",
+      "plot": "When an old enemy, the Cylons, resurface and obliterate the 12 colonies, the crew of the aged Galactica protect a small civilian fleet - the last of humanity - as they journey toward the fabled 13th colony, Earth.",
+      "rating": "8.2",
       "genre": [
-        "comedy",
-        "crime"
+        "sci-fi & fantasy",
+        "action & adventure",
+        "drama"
       ],
       "cast": [
-        "Vince Vaughn",
-        "L. Scott Caldwell",
-        "Rob Delaney",
-        "Meredith Hagner",
-        "Natalie Martinez"
+        "Edward James Olmos",
+        "Mary McDonnell",
+        "Jamie Bamber",
+        "Katee Sackhoff",
+        "James Callis"
       ]
     },
     "seasons": [
       {
         "season": 1,
         "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/lUGG3lxIF3f2N796t4aHmxDhLK5.jpg",
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/15yduQrVfLyeAqU1gXNAYGOor4J.jpg",
           "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "Andrew Yancy has been bounced from the Miami Police Department and is now a health inspector in the Keys. After stumbling upon a case that begins with a human arm fished up by tourists, he realizes that if he can prove murder, he'll be back in. He just needs to get past a trove of Floridian oddballs and one bad monkey.",
-          "year": "2024",
+          "plot": "Season 1 picks up where the miniseries left off. After engaging in a losing battle against the Cylons, humanity's last remnants are forced to flee under the protection of their one remaining warship, the outdated Battlestar Galactica. Pursued by the Cylons-some of whom have now taken human form-Commander Adama and President Roslin lead these last remnants of humanity in search of a new home - a planet called Earth.",
+          "year": "2004",
           "trailer": ""
         },
         "episodes": [
           {
             "episode": 1,
-            "name": "The Floating-Human-Body-Parts Capital of America",
+            "name": "33",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/7jxH5dObSr6GHbFyNcMOLdJnS5k.jpg",
-              "plot": "When tourists on a fishing charter in Key West, Florida, discover a human arm, suspended detective Andrew Yancy takes the case.",
-              "duration": 3420,
-              "rating": "7.4",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/7jxH5dObSr6GHbFyNcMOLdJnS5k.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rmCx0A4T1F93777iRaOKtivb0ud.jpg",
+              "plot": "In the wake of the Cylon sneak attack, the ragtag fleet of human survivors is forced to play a deadly game of cat-and-mouse with their pursuers. Every 33 minutes, they make a jump to a new location. And every 33 minutes, the Cylons manage to find them. The pilots are on the brink of exhaustion, relying on artificial stimulants to keep fighting, and the civilians are beginning to doubt the leadership of Commander Adama and President Roslin.",
+              "duration": 2700,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rmCx0A4T1F93777iRaOKtivb0ud.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -46,13 +47,13 @@
           },
           {
             "episode": 2,
-            "name": "A Hundred Bucks Says You Won't",
+            "name": "Water",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nNxZ2OYDFr3YjpRISup12JB5zxP.jpg",
-              "plot": "Caitlin meets with Yancy to discuss her suspicions about her stepmother Eve. Yancy learns of Eve's secret boyfriend.",
-              "duration": 2760,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nNxZ2OYDFr3YjpRISup12JB5zxP.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/awMNMgIgLo5GseO8lZZMKhfBIEC.jpg",
+              "plot": "Lt. Sharon Valerii wakes up soaking wet in the tool room with an explosive charge in her duffel bag. Shortly afterward, a mysterious explosion destroys all the port-side water tanks on Galactica, creating a crisis for the entire fleet. Sharon can't remember a thing, but all the evidence points to her as a saboteur. She confesses her concern to Chief Tyrol, but he can't believe she's responsible.",
+              "duration": 2640,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/awMNMgIgLo5GseO8lZZMKhfBIEC.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -60,13 +61,13 @@
           },
           {
             "episode": 3,
-            "name": "Nobody Said He Was Alvin Einstein",
+            "name": "Bastille Day",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8NaQ2IiugoArETYFxAhIyYYx9BG.jpg",
-              "plot": "Yancy and Rosa continue their search for more information about Nick. Caitlin confronts Eve, leading to a shocking revelation.",
-              "duration": 3060,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8NaQ2IiugoArETYFxAhIyYYx9BG.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/a2EsmIXilVlstOmTDHB3vaLTcqY.jpg",
+              "plot": "The fleet has found a source of water, but who will take on the difficult and dangerous job of mining it from the icy planet? Commander Adama and President Roslin send Lee to the Astral Queen, a prisoner transport ship, with an offer for its inmates: Volunteer for this mission and earn \"freedom points\".",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/a2EsmIXilVlstOmTDHB3vaLTcqY.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -74,13 +75,13 @@
           },
           {
             "episode": 4,
-            "name": "Nothing's Wrong with It, I Just Don't Need It Anymore",
+            "name": "Act of Contrition",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mtijsfb374VtJjOeB7s74eTCGZx.jpg",
-              "plot": "A flashback reveals Eve and Nick's origins, how Yancy got suspended, and Nick and Izzy's nefarious business dealings.",
-              "duration": 3480,
-              "rating": "7.7",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mtijsfb374VtJjOeB7s74eTCGZx.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/88EK04cYCjHYsFcDS1qXtGrj7cJ.jpg",
+              "plot": "After a flight deck accident kills 13 pilots and wounds many others, Kara is thrust into service as a flight instructor and ordered to turn a group of civilian pilots and academy washouts into full-fledged Viper pilots.",
+              "duration": 2640,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/88EK04cYCjHYsFcDS1qXtGrj7cJ.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -88,13 +89,13 @@
           },
           {
             "episode": 5,
-            "name": "That Damn Arm Is Back",
+            "name": "You Can't Go Home Again",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/w7C6YhBSSTuu0pDOBEQqRDLGD6z.jpg",
-              "plot": "Yancy makes a crucial realization as he goes into hiding. The Dragon Queen asks Egg about Neville.",
-              "duration": 2580,
-              "rating": "6.8",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/w7C6YhBSSTuu0pDOBEQqRDLGD6z.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/n4ypvV4KZ8qksB5ONf5bPvS2c4a.jpg",
+              "plot": "When Lt. Kara Thrace goes missing in action after encountering a Cylon patrol while on a training mission, Commander Adama feels responsible \u2014 especially in light of her recent admission that she blames herself for his son Zak's death.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/n4ypvV4KZ8qksB5ONf5bPvS2c4a.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -102,13 +103,13 @@
           },
           {
             "episode": 6,
-            "name": "Yo, Would You Tell Ms. Chase I Still Love Her Like Crazy",
+            "name": "Litmus",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5HyS43aIWighz6nSYR0Pon57jQz.jpg",
-              "plot": "In need of help, Yancy turns to Rogelio. Bonnie goes on the run. The Dragon Queen confronts Nick and Eve.",
-              "duration": 2820,
-              "rating": "7.6",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5HyS43aIWighz6nSYR0Pon57jQz.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6lW06xfc5IOb77Ijog9jO85tHVP.jpg",
+              "plot": "When a new copy of Doral, a Cylon who had been previously exposed while serving as the Galactica's public-relations officer, sneaks aboard and blows himself up, killing three people, Commander Adama and President Roslin must finally make public the terrifying secret known only to a select few: Cylons now look like humans.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6lW06xfc5IOb77Ijog9jO85tHVP.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -116,13 +117,13 @@
           },
           {
             "episode": 7,
-            "name": "A Total Cat Person",
+            "name": "Six Degrees of Separation",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xip2vIpyQMZmM1tSarOLuf7njdv.jpg",
-              "plot": "Rogelio and Yancy find themselves in an explosive situation. Eve negotiates with the Dragon Queen.",
-              "duration": 2520,
-              "rating": "7.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xip2vIpyQMZmM1tSarOLuf7njdv.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/76NJJQvroMM7JKIRO4By3kFWIBp.jpg",
+              "plot": "When Baltar and the Number Six who lives in his head have a falling out, she abandons him, only to surface a short while later aboard the Galactica. But now she's called Shelley Godfrey, everyone can see her, and she's telling them that she has evidence, passed on by the late Dr. Amarak, that will prove Baltar sold out the human race to the Cylons.",
+              "duration": 2640,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/76NJJQvroMM7JKIRO4By3kFWIBp.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -130,13 +131,13 @@
           },
           {
             "episode": 8,
-            "name": "The Russian Mob Is Very Active in Key West",
+            "name": "Flesh and Bone",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xPsLJHqXs8STjhxtL0cyywwuqud.jpg",
-              "plot": "With Caitlin and Rosa's help, Yancy cooks up a new plan to get Nick and Eve back to Miami.",
-              "duration": 2580,
-              "rating": "7.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xPsLJHqXs8STjhxtL0cyywwuqud.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8AsTsntFjyTYvx508NeRCbsHIfF.jpg",
+              "plot": "A Cylon, who calls himself Leoben, is discovered on one of the ships in the fleet. Commander Adama sends Kara to interrogate him \u2014 or, rather, it. The Cylon tells Kara that he planted a nuclear device on one of the ships. Although she doesn't believe it, Kara passes on the warning.",
+              "duration": 2640,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8AsTsntFjyTYvx508NeRCbsHIfF.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -144,13 +145,13 @@
           },
           {
             "episode": 9,
-            "name": "You Really Don't Want to Kill This Scrumptious Little Puppy",
+            "name": "Tigh Me Up, Tigh Me Down",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5gcpl8mkhqQ4XMS9GmKWyP6PDqT.jpg",
-              "plot": "Yancy learns that his plan has gone awry, leaving Rosa in danger. Eve and the Dragon Queen have a reckoning.",
-              "duration": 2400,
-              "rating": "7.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5gcpl8mkhqQ4XMS9GmKWyP6PDqT.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/sF3JZddv7u9iIJtyWQ5Hh19Ptpk.jpg",
+              "plot": "President Roslin's fears that Commander Adama is a Cylon are stoked when she learns he's making secret wireless calls to other ships. Then, to make things worse, a single Cylon raider appears near the Galactica and begins acting strangely after being damaged in battle.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/sF3JZddv7u9iIJtyWQ5Hh19Ptpk.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -158,13 +159,931 @@
           },
           {
             "episode": 10,
-            "name": "We're in the Memory-Making Business",
+            "name": "The Hand of God",
             "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lZ4caalQSJqnK7QHBpczdF6apCp.jpg",
-              "plot": "The aftermath of the reckoning has shocking repercussions.",
-              "duration": 2400,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lZ4caalQSJqnK7QHBpczdF6apCp.jpg"
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rthSiHBHltFOUW8oECnXAYON5Uq.jpg",
+              "plot": "As its fuel supply dwindles, the fleet must seek out a new supply of tylium ore or risk becoming sitting ducks to any Cylon attack. A recon patrol finds an asteroid full of the fuel, but there's a catch \u2014 the Cylons have found it first and established a heavily guarded refining plant.",
+              "duration": 2640,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rthSiHBHltFOUW8oECnXAYON5Uq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 11,
+            "name": "Colonial Day",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kqJ4CaKjSErPSKbd4H172pp1w7S.jpg",
+              "plot": "When President Roslin calls an Interim Quorum of the Twelve Colonies, she discovers that democracy brings its ugly stepsisters \u2014 politics and deadly intrigue \u2014 to the party. Tom Zarek, the charismatic convicted terrorist, is elected as the delegate from Sagittaron and immediately proposes elections for the vice-presidency.",
+              "duration": 2640,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kqJ4CaKjSErPSKbd4H172pp1w7S.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 12,
+            "name": "Kobol's Last Gleaming (1)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/a8YRuR1qOm8ANHAwzFba7UiS5F9.jpg",
+              "plot": "While flying a supply patrol, Crashdown and Sharon Valerii discover a bountiful planet that can support human life. Indeed, it might be Kobol, the legendary \"home of the gods.\" The discovery prompts Commander Adama to send a ground team to investigate; it also gives new life to President Roslin's belief that she is a tool of destiny and that this discovery, like her rapidly spreading cancer, is part of an ancient prophecy.",
+              "duration": 2640,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/a8YRuR1qOm8ANHAwzFba7UiS5F9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 13,
+            "name": "Kobol's Last Gleaming (2)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dCkip1v6yh2LNTF1alwrdLQAq1L.jpg",
+              "plot": "When Commander Adama learns that Kara disobeyed orders and Jumped to Caprica on orders from President Roslin, he demands the president's resignation, with the implied threat of a military coup. Roslin refuses his demand and sparks a confrontation.",
+              "duration": 2640,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dCkip1v6yh2LNTF1alwrdLQAq1L.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/24GUqGmpAXfGZ12OSDCsVro9DOr.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Picking up where the first season left off, season 2 continues to chronicle the adventures of a ragtag fleet of humans, the sole survivors of a devastating nuclear attack by the robot Cylons. But it soon becomes clear that more threatens this fragile society than external forces. Massive fear, paranoia, and political ambition \u2014 all classic plagues to developing civilizations \u2014 wear away at the already-fatigued fleet.",
+          "year": "2005",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Scattered",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vQttLi1KPXju9FICRfN0mr0LQL8.jpg",
+              "plot": "With Adama out of action, Colonel Tigh takes his position as commander of the Galactica. Boomer is in jail, and the cat's out of the bag - she's a Cylon.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vQttLi1KPXju9FICRfN0mr0LQL8.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Valley of Darkness",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5If0bjF4iYFP96rIfMWrddLfxH8.jpg",
+              "plot": "Tigh has to work with Lee to defeat a Cylon boarding party that threatens to take over Galactica and destroy the fleet.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5If0bjF4iYFP96rIfMWrddLfxH8.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Fragged",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nLFYUqAFa6YP4v1hXAi6gBsbgZv.jpg",
+              "plot": "Democracy is brought back to the fleet and soon with it come hardball politics and potentially deadly intrigue.",
+              "duration": 2640,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nLFYUqAFa6YP4v1hXAi6gBsbgZv.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Resistance",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fmVLMofTPozkoGc8C9mCRGlNvFU.jpg",
+              "plot": "Tigh imposes martial law and threatens to split the fleet as Lee works to free President Roslin and organize democratic resistance.",
+              "duration": 2640,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fmVLMofTPozkoGc8C9mCRGlNvFU.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Farm",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vz2cBjXZGjIlTwgVlGnHW05jY1Y.jpg",
+              "plot": "Adama and Roslin fight for the hearts and minds of the fleet's population, as Starbuck finds herself trapped in a supposed resistance hospital.",
+              "duration": 2640,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vz2cBjXZGjIlTwgVlGnHW05jY1Y.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Home (1)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4t7JFh8mGSJas9hEiutZ3xRPzuv.jpg",
+              "plot": "President Roslin's fragile coalition is put to the test in the first part of a two-part story. Apollo, who has sided with Roslin, runs into a conflict with Zarek and his accomplice Meier.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4t7JFh8mGSJas9hEiutZ3xRPzuv.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Home (2)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bLJAt911PzhcQIKNqHeLkXL42yl.jpg",
+              "plot": "Adama heads to Kobol to find Roslin, reassembles the fleet and heads down to Kobol himself to find the presidential party in search of the \"Tomb of Athena\" which allegedly leads to Earth. Apollo hangs out with Starbuck , Zarek tries to keep his cronie off plotting with Boomer who is unaware of tension building between Helo and Tyrol.",
+              "duration": 2640,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bLJAt911PzhcQIKNqHeLkXL42yl.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Final Cut",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/peHONCLj52l4oY6Ey0lekcZ7cDg.jpg",
+              "plot": "A reporter is sent to Galactica to chronicle the harsh realities of life during wartime.",
+              "duration": 2640,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/peHONCLj52l4oY6Ey0lekcZ7cDg.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Flight of the Phoenix",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rhdZS1MsIUbWeI5BC9TsIPTbuCy.jpg",
+              "plot": "Sharon informs Adama that the Galatica has been infected with a computer virus that is tampering with the basic ship functions and is scanning them for weaknesses. All this is preparation for a major assault by the Cylon Raiders. So with the clock ticking, Commander Adama must pull himself together and decide: Can he trust Sharon?",
+              "duration": 2640,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rhdZS1MsIUbWeI5BC9TsIPTbuCy.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Pegasus",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/orEwvT6DpH2SgBtuS7vnAzYzYel.jpg",
+              "plot": "Battlestar Galactica was not the only Battlestar to have survived the cylon attack, The Battlestar Pegasus also survived.",
+              "duration": 2640,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/orEwvT6DpH2SgBtuS7vnAzYzYel.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 11,
+            "name": "Resurrection Ship (1)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vR0JLjTCM5P4n69w0OyWJzhj3BZ.jpg",
+              "plot": "The Battlestars Galactica and Pegasus face a new Cylon target, a \"Resurrection\" ship, while a power struggle threatens to result in all-out war among the human fleet.",
+              "duration": 2640,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vR0JLjTCM5P4n69w0OyWJzhj3BZ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 12,
+            "name": "Resurrection Ship (2)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aCZqO1qU5nPhKTqlTzzjLUkUyP9.jpg",
+              "plot": "The struggle between Adama and Cain is temporarily put on hold while the two Battlestars combine forces for an assault on the Cylon Resurrection Ship. Apollo faces a momentous decision and Baltar takes an interest in Gina, the Cylon prisoner.",
+              "duration": 2640,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aCZqO1qU5nPhKTqlTzzjLUkUyP9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 13,
+            "name": "Epiphanies",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cOaEynsad4mEg65fHFoTwsfa6iu.jpg",
+              "plot": "As President Roslin nears death, Dr. Gaius Baltar must be groomed for the worst case scenario. Roslin orders the death of Sharon's unborn child. A sabotaged Viper leads to an investigation that uncovers a movement of people seeking peace with the Cylons.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cOaEynsad4mEg65fHFoTwsfa6iu.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 14,
+            "name": "Black Market",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gLus7rav1VPn1GjvgEWKxhnb0PB.jpg",
+              "plot": "Pegasus' new commander Fisk is murdered by black marketeers, and Lee is charged with solving the crime. Roslin seeks to stamp out the black market by introducing new trade regulations.",
+              "duration": 2640,
+              "rating": "6.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gLus7rav1VPn1GjvgEWKxhnb0PB.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 15,
+            "name": "Scar",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5JZL9jYdOjLZOmebKybZr4ZzRxt.jpg",
+              "plot": "A crazed Cylon Raider attacks the Colonial fleet in a series of hit-and-run attacks. Overworked Viper pilots must defend a mining operation from this Raider that they nickname \"Scar.\"",
+              "duration": 2640,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5JZL9jYdOjLZOmebKybZr4ZzRxt.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 16,
+            "name": "Sacrifice",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qsafRWRSzoEqDTN3pDyAMPqMe5F.jpg",
+              "plot": "A woman takes hostages on Cloud Nine and demands that Adama turn over Sharon in order to avenge her husband's death at the hands of the Cylons.",
+              "duration": 2640,
+              "rating": "7.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qsafRWRSzoEqDTN3pDyAMPqMe5F.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 17,
+            "name": "The Captain's Hand",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8IZ3StIsVU7Sb8dI8ehMgs9mdJz.jpg",
+              "plot": "Apollo assists in the search for a missing Raptor team as the new commander of the Pegasus grows increasingly unstable.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8IZ3StIsVU7Sb8dI8ehMgs9mdJz.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 18,
+            "name": "Downloaded",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1cNQHWZ8I8jDa8WRh9ejixx7rqU.jpg",
+              "plot": "After Boomer's consciousness is downloaded into a new body following her death, she struggles with her new life on Cylon-occupied Caprica. Number Six is asked to help Boomer adjust to her new role in Cylon society.",
+              "duration": 2640,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1cNQHWZ8I8jDa8WRh9ejixx7rqU.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 19,
+            "name": "Lay Down Your Burdens (1)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6t80RHtwo4PumNUkeoMiXqHtfxZ.jpg",
+              "plot": "Chief Tyrol is plagued by terrifying dreams and seeks the aid of a priest. Kara leads a rescue mission to Caprica. Roslin and Baltar go head-to-head in a presidential debate that changes dramatically with the discovery of a habitable planet.",
+              "duration": 2640,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6t80RHtwo4PumNUkeoMiXqHtfxZ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 20,
+            "name": "Lay Down Your Burdens (2)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kv8UGskDcRBOKzaZpBTNTUD2FWd.jpg",
+              "plot": "When Baltar wins the vote, Roslin considers stealing the election because she believes he is a Cylon collaborator.",
+              "duration": 4080,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kv8UGskDcRBOKzaZpBTNTUD2FWd.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/fzM8LWSnErEidclEOjwZdiw4KQz.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Season 3 picks up where last season's cliffhanger finale left off, the Galactica crew discovers a habitable planet, but things become even further complicated when the Cylons, led by Caprica Six and Sharon, find the planet and offer humanity a stunning proposal of peace.",
+          "year": "2006",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "Occupation",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1BKZ7gDuaJOhbkB0KT7oA2qzbYY.jpg",
+              "plot": "Tigh, Tyrol and Anders lead the Resistance on New Caprica to increasingly deadly attacks against the Cylons. Kara finds herself trapped in a new life with Leoben Conoy, and Duck makes a fateful decision. Meanwhile on Galactica, Adama struggles with the question of whether to return to New Caprica to mount a rescue attempt.",
+              "duration": 2640,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1BKZ7gDuaJOhbkB0KT7oA2qzbYY.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Precipice",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bV8acPNCtNdPE73L0D6fSsrPqB6.jpg",
+              "plot": "Adama plans to return to New Caprica and drop off a surprising person to act as a liaison between Galactica and the Resistance. Tigh's insistence on the use of suicide bombers and ever escalating violence stuns even the fellow leaders of the Resistance. Eventually, the suicide bombings cause the Cylon occupiers to crackdown on their human subjects.",
+              "duration": 2640,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bV8acPNCtNdPE73L0D6fSsrPqB6.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Exodus (1)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lan8sfYrRxbjG7ZfYansuliZxG7.jpg",
+              "plot": "Sharon helps the Resistance on New Caprica as Adama leads Galactica on a dangerous rescue operation. Tyrol races to save Cally from the execution squad. Meanwhile Anders uncovers treachery among the humans. Number Three meets the Oracle Selloi after having strange dreams about the temple.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lan8sfYrRxbjG7ZfYansuliZxG7.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Exodus (2)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rTWmgxn1PAwecRUWNd6E2A8ceB4.jpg",
+              "plot": "Tigh must decide the fate of his wife Ellen after the assistance she rendered to the Cylons. Lee struggles with his assignment to protect the civilian fleet on its journey toward Earth while Adama returns to New Caprica with just the Galactica. The Resistance coordinates an attack on the Cylons just as Galactica arrives. As the Cylons begin to lose control, Number Three vows to put a final end to the New Caprican experiment.",
+              "duration": 2640,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rTWmgxn1PAwecRUWNd6E2A8ceB4.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "Collaborators",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ezoLyrzagSw9XYYdbRa76SfI9Bo.jpg",
+              "plot": "Tyrol participates in the Circle, a secret tribunal on Galactica that tries and convicts in absentia those accused of collaborating with the Cylons during the Occupation. The death sentences--administered without the knowledge of Roslin or Adama--begin to weigh on Tyrol's conscience. Baltar faces a similar jury among the Cylons, who must decide whether he is allowed to stay with them.",
+              "duration": 2640,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ezoLyrzagSw9XYYdbRa76SfI9Bo.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Torn",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/q2WX6YmLe89UOdLjpHwVgmwckHH.jpg",
+              "plot": "Lingering feelings of rage lead Saul Tigh and Kara Thrace to cause problems aboard Galactica between the survivors from New Caprica and those who stayed with the fleet during the Occupation. Baltar assists the Cylons in an attempt to stay alive and uncovers details about Cylon civilization. A Cylon baseship falls victim to a mysterious disease.",
+              "duration": 2640,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/q2WX6YmLe89UOdLjpHwVgmwckHH.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "A Measure of Salvation",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8e7JQBUZso9PLvh7JP9THSovlS7.jpg",
+              "plot": "Apollo formulates a plan that threatens the very existence of the Cylon culture. Adama and Roslin must decide whether to follow through on the plan to use a biological weapon against the Cylons. D'Anna Biers (Number Three) believes Baltar knows who created the virus that infected and disabled the Cylon baseship. She is willing to take extreme measures to learn the truth.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8e7JQBUZso9PLvh7JP9THSovlS7.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Hero",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lFPGQtFu1pp1CCytAHy4V4YyhtP.jpg",
+              "plot": "A figure from Adama's past returns to haunt him. His return raises questions about why the Cylons launched their initial attack against the Twelve Colonies.",
+              "duration": 2640,
+              "rating": "7.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lFPGQtFu1pp1CCytAHy4V4YyhtP.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Unfinished Business",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dEgHRsKp8KffT5jXzR78mNWhB2v.jpg",
+              "plot": "Adama stages a boxing tournament on the Galactica to help the crew relax. The competitive atmosphere sets off a brutal match between Kara and Lee. Flashbacks from New Caprica reveal the origin and nature of their dispute.",
+              "duration": 2640,
+              "rating": "6.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dEgHRsKp8KffT5jXzR78mNWhB2v.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "The Passage",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/2tyVBTOAuYroQx55QHNJr4ZxYLz.jpg",
+              "plot": "The Colonial fleet faces starvation when the food-processing machines are contaminated. Kat plays a vital role in the success or failure of the \"Passage\" through space.",
+              "duration": 2640,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/2tyVBTOAuYroQx55QHNJr4ZxYLz.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 11,
+            "name": "The Eye of Jupiter",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mWAnzqq6XjRN3qzOQDrQ1V5Fp2U.jpg",
+              "plot": "Tyrol discovers the Temple of Five on the algae planet. The temple may hold the Eye of Jupiter, which is believed to show the way to Earth. The Cylons take a keen interest in the discovery. Athena learns that her baby, Hera, may still be alive. Lee relies on Anders to help build civilian support for the protection of the Eye. His relationship with Kara complicates matters.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mWAnzqq6XjRN3qzOQDrQ1V5Fp2U.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 12,
+            "name": "Rapture",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/f1Llg4aepiro1WPi0EybRbuDZaV.jpg",
+              "plot": "D'Anna/Number Three squares off against Adama over the Temple of the Five. Athena asks for Helo's aid in her plan to rescue Hera. On the algae planet, Apollo orders Dee to leave her defended position in order to save Kara. Anders helps Apollo to hold off the Cylon Centurion attack. Another copy of D'Anna finds the Temple and continues her search for the identities of the Final Five. Her messianic complex begins to concern the other Cylons.",
+              "duration": 2640,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/f1Llg4aepiro1WPi0EybRbuDZaV.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 13,
+            "name": "Taking a Break from All Your Worries",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ui4PSkbScb61s9KVSSfEwB5agJN.jpg",
+              "plot": "Now on board Galactica, Baltar faces charges of treason. He contemplates suicide with the help of Number Six. Questions remain about his true identity. Is he a Cylon or isn't he? Apollo shows off the new drinking establishment on Galactica, Joe's Bar, to Tyrol. Apollo thinks about Kara and wonders whether his marriage to Dee is worth saving.",
+              "duration": 2640,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ui4PSkbScb61s9KVSSfEwB5agJN.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 14,
+            "name": "The Woman King",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/ilMGYQorYmgToVufO9CHqqSsQM9.jpg",
+              "plot": "The Sagittarons allege that a doctor is discriminating against them. As Helo investigates, he becomes concerned that the doctor may even be murdering patients. Meanwhile, Athena unwittingly brings Hera to the doctor for treatment.",
+              "duration": 2640,
+              "rating": "7.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/ilMGYQorYmgToVufO9CHqqSsQM9.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 15,
+            "name": "A Day in the Life",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1i0tT601dgqGatStcLKTNkrmsp6.jpg",
+              "plot": "Chief Tyrol and his wife Cally become trapped in a malfunctioning airlock. Adama remembers his late wife Carolanne as he marks his wedding anniversary. His relationship with President Roslin continues to become more friendly and personal.",
+              "duration": 2640,
+              "rating": "6.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1i0tT601dgqGatStcLKTNkrmsp6.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 16,
+            "name": "Dirty Hands",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/up7jZHwmpSFPF2ljmSJHFchVEFi.jpg",
+              "plot": "Amid a heated labor dispute, Tyrol asks the imprisoned Baltar for advice. Seelix becomes involved after she is turned down for flight training.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/up7jZHwmpSFPF2ljmSJHFchVEFi.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 17,
+            "name": "Maelstrom",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dD5jh8CUzgGSXhwCq8jO0uWgD2W.jpg",
+              "plot": "Kara continues to have dreams about Leoben Conoy and the mandala she painted at her old apartment on Caprica. While on patrol in her Viper, she encounters a Cylon Heavy Raider. When Tyrol cannot verify Kara's claim that the Cylon ship struck the Viper, Admiral Adama and Lee become concerned about her mental stability.",
+              "duration": 2640,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dD5jh8CUzgGSXhwCq8jO0uWgD2W.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 18,
+            "name": "The Son Also Rises",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/16qQXGiXsuUOgFvAtzoKC5jmqis.jpg",
+              "plot": "When Baltar's representatives face assassination attempts, Adama asks Lee to protect Baltar's lawyer. After taking on the assignment, Lee seeks to play an active role in Baltar's defense.",
+              "duration": 2640,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/16qQXGiXsuUOgFvAtzoKC5jmqis.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 19,
+            "name": "Crossroads (1)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/m8d2qRzHleV1OolSDMXcHmzm2RH.jpg",
+              "plot": "Baltar's trial testimony threatens the very stability of the fleet. Lee assists Romo Lampkin in Baltar's defense. Some in the fleet begin to feel that Baltar is divine. Though he dismisses such beliefs, Number Six suggests that the followers may know more about his true nature than Baltar does himself.",
+              "duration": 2640,
+              "rating": "7.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/m8d2qRzHleV1OolSDMXcHmzm2RH.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 20,
+            "name": "Crossroads (2)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zNoZFH4Zjm6WBdrIlQxnvJiJPmR.jpg",
+              "plot": "As Baltar's trial comes to a conclusion, key members of the fleet discover that they may be the Final Five Cylons. Tigh attempts to decipher the strange music he is hearing in his head, while a Cylon fleet approaches.",
+              "duration": 2640,
+              "rating": "8.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zNoZFH4Zjm6WBdrIlQxnvJiJPmR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 4,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/2RwQPZnISj0KWxhJUVV3mlbKqN4.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "As season 4 begins, the last remnants of humanity continue their search for a new home. Galactica\u2019s crew attempts to make sense of the inexplicable while four members of the fleet are still reeling from past revelations.",
+          "year": "2008",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "He That Believeth in Me",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tycc0si6hFwZB6zXl6BLhUlG3dV.jpg",
+              "plot": "During the Cylon attack, Sam Anders has a strange encounter with a Cylon Raider. The crew of the Galactica view Starbuck's return with suspicion and doubt. Gaius Baltar takes refuge with a group of women who believe he has the power to heal others.",
+              "duration": 2640,
+              "rating": "8.1",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tycc0si6hFwZB6zXl6BLhUlG3dV.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Six of One",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jxLLe5gVfxHKYj9aVWuvJdNEgEv.jpg",
+              "plot": "The Cylons learn that the Final Five are in the Colonial fleet. Some of the Cylons want the Cavil model to stop lobotomizing the Raider ships. Starbuck desperately tries to convince the others that the fleet is going the wrong way in their search for Earth.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jxLLe5gVfxHKYj9aVWuvJdNEgEv.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Ties That Bind",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cwdi3gtLlETWbPY9jizrqcHcgnE.jpg",
+              "plot": "Kara Thrace seeks her own path in the search for Earth while the Cylons face the threat of sentient Centurions. A member of Galactica's crew learns a dark secret about a loved one.",
+              "duration": 2640,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cwdi3gtLlETWbPY9jizrqcHcgnE.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Escape Velocity",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/nJBwyNSk19vUk9zvFmpJDnlfPyH.jpg",
+              "plot": "Gaius Baltar sets off a debate on religious freedom when he promotes his belief in a single God.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/nJBwyNSk19vUk9zvFmpJDnlfPyH.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Road Less Traveled",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6CJLDslwiap6ucJ7OHdhCwnUUoH.jpg",
+              "plot": "Specialist Tyrol continues to sink into despair after his recent loss. He becomes curious about Gaius Baltar's sermons and the following he has attracted. The crew of the Demetrius grow concerned about Kara's mental stability as an old enemy arrives with a tempting offer.",
+              "duration": 2640,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6CJLDslwiap6ucJ7OHdhCwnUUoH.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Faith",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/eynpmL8URXK38ODNbzp6QEmLMBW.jpg",
+              "plot": "The dying President Roslin and the aggressive Viper pilot Kara Thrace try to accept the new terms of the relationship with the Cylons.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/eynpmL8URXK38ODNbzp6QEmLMBW.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Guess What's Coming to Dinner?",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4MZHKE6cCX6o2LqV5NDNKLetW1p.jpg",
+              "plot": "President Roslin faces challenges as the Colonials plot with Cylon rebels to destroy a Resurrection Hub.",
+              "duration": 2640,
+              "rating": "8.0",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4MZHKE6cCX6o2LqV5NDNKLetW1p.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Sine Qua Non",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jcGOojEe18P4nq1g78PbQuvp9ym.jpg",
+              "plot": "With President Roslin missing along with the cylon base ship a new president must be decided on.  Galactica goes on a search for the missing base ship and the Galactica crew members that were on board.",
+              "duration": 2640,
+              "rating": "7.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jcGOojEe18P4nq1g78PbQuvp9ym.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "The Hub",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/5mopODAJ5TLP1RlxtGiW3UwmSBS.jpg",
+              "plot": "Colonial Viper pilots plan an attack on the Resurrection Hub with their Cylon rebel allies.",
+              "duration": 2640,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/5mopODAJ5TLP1RlxtGiW3UwmSBS.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "Revelations",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lGdJZzVWE6F822gZfhDSotbTo4p.jpg",
+              "plot": "D'Anna holds President Roslin and other Colonials hostage in order to draw out the Final Five from the Colonial fleet. Col. Tigh believes he has the solution to end the standoff.",
+              "duration": 2640,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lGdJZzVWE6F822gZfhDSotbTo4p.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 11,
+            "name": "Sometimes a Great Notion",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9GpIJvaziZPdMy1BOYI7gIe4hzU.jpg",
+              "plot": "Kara struggles with the foreboding prediction of the Cylon Hybrid, while Adama and the Colonial fleet face despair over their shocking discovery.",
+              "duration": 2640,
+              "rating": "8.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9GpIJvaziZPdMy1BOYI7gIe4hzU.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 12,
+            "name": "A Disquiet Follows My Soul",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/s6fuTvDiAIJzP31RYuaTKETdLo.jpg",
+              "plot": "Tigh and Number Six take their first glimpse at their unborn child, Tyrol offers Adama Cylon technology in return for his fellow Cylons properly reintegrated into the fleet, and an attempted coup leads to a costly struggle to maintain civility.",
+              "duration": 2640,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/s6fuTvDiAIJzP31RYuaTKETdLo.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 13,
+            "name": "The Oath",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/bd2QYUaTpRIPR5xu00WQCsDib25.jpg",
+              "plot": "Loyalties are made clear when Gaeta orchestrates a coup d'\u00e9tat of the Adama regime. Both prisoners and lives are taken as many of the fed up people work to take over Galactica.",
+              "duration": 2640,
+              "rating": "8.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/bd2QYUaTpRIPR5xu00WQCsDib25.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 14,
+            "name": "Blood on the Scales",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/wyLvRgwljAKFh2SfR0opE3Rfcms.jpg",
+              "plot": "President Roslin faces off against Tom Zarek and Lt. Gaeta as they try to take control of the Colonial fleet. Both the alliance with the rebel Cylons and Adama's life are at stake.",
+              "duration": 2640,
+              "rating": "8.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/wyLvRgwljAKFh2SfR0opE3Rfcms.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 15,
+            "name": "No Exit",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fRjEAJl5jNYtZJW5JrTaBmGFBes.jpg",
+              "plot": "As Sam Anders recovers from his head injury onboard the Galactica, he begins to remember events from ancient Earth. The Final Cylon struggles with the fallout from the Final Five's former plans. One of the humanoid Cylons vows to get revenge for being created in the image of Man. Tyrol informs Admiral Adama about the extensive structural damage on the Galactica.",
+              "duration": 2640,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fRjEAJl5jNYtZJW5JrTaBmGFBes.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 16,
+            "name": "Deadlock",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/rjQwjUxLfMpdcNX1acMUyQ1rv5j.jpg",
+              "plot": "Ellen escapes from Cavil only to face a momentous choice regarding the 13th Tribe and the Final Five Cylons.",
+              "duration": 2640,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/rjQwjUxLfMpdcNX1acMUyQ1rv5j.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 17,
+            "name": "Someone to Watch Over Me",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/mF6quZjTzd3rwozlrI4yPT3cbgo.jpg",
+              "plot": "Kara feels lost while she struggles to cope with Sam's continued coma, meanwhile Boomer faces charges of treason from the Cylons onboard the base ship who blame her for voting against her model during the civil war causing the deaths of thousands of Cylons.",
+              "duration": 2640,
+              "rating": "7.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/mF6quZjTzd3rwozlrI4yPT3cbgo.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 18,
+            "name": "Islanded in a Stream of Stars",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oA7y1ouXOmJKLcDSZGyUPoKIovJ.jpg",
+              "plot": "The rebel Cylons and the Colonial humans react to Hera's kidnapping while the physical condition of the Galactica continues to deteriorate.",
+              "duration": 2640,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oA7y1ouXOmJKLcDSZGyUPoKIovJ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 19,
+            "name": "Daybreak (1)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9OP9pxSXPXbyGptx5hNrjwNTRdt.jpg",
+              "plot": "With Galactica on the verge of falling apart, Admiral Adama readies the ship for what could be its final mission, as Baltar's Six warns that humanity's final chapter is near.",
+              "duration": 2640,
+              "rating": "7.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9OP9pxSXPXbyGptx5hNrjwNTRdt.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 20,
+            "name": "Daybreak (2)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8kfJTvkPbMl6OqSPLCi8aqF1zFH.jpg",
+              "plot": "Adama and the Galactica crew stake the survival of the human race on their plan to rescue Hera from the Cylon colony in this, the series finale.",
+              "duration": 5520,
+              "rating": "8.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8kfJTvkPbMl6OqSPLCi8aqF1zFH.jpg"
             },
             "video": "",
             "drm": "clearkey",
@@ -175,163 +1094,29 @@
     ]
   },
   {
-    "name": "Chief of War",
-    "category": "\ud83c\udd32",
+    "name": "Battlestar Galactica: The Plan",
+    "category": "\ud83c\udd31",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/8Mckh3qJRTzXTQNZtpb133RHmO4.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/2c3PCbxVgWen5HrYsaukUmfu4J9.jpg",
-      "plot": "With Hawaii's four kingdoms divided by war, the ferocious warrior Ka\u02bbiana embarks on an epic mission to unite his people\u2014as an existential threat approaches their shores.",
-      "rating": "7.3",
-      "genre": [
-        "drama"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/vwtHIRwwASCiX0Ku487DY7YZrag.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/snSFUEA5ftPfrXVb0xphitD2VrP.jpg",
+      "plot": "When the initial Cylon attack against the Twelve Colonies fails to achieve complete extermination of human life as planned, twin Number Ones (Cavils) embedded on Galactica and Caprica must improvise to destroy the human survivors.",
+      "director": [
+        "Edward James Olmos"
       ],
       "cast": [
-        "Jason Momoa",
-        "Luciane Buchanan",
-        "Te Ao o Hinepehinga",
-        "Cliff Curtis",
-        "Kaina Makua"
-      ]
+        "Edward James Olmos",
+        "Dean Stockwell",
+        "Michael Trucco",
+        "Grace Park",
+        "Michael Hogan",
+        "Callum Keith Rennie"
+      ],
+      "trailer": "ZmDtqSyvcc8",
+      "rating": "6.8",
+      "year": "2009"
     },
-    "seasons": [
-      {
-        "season": 1,
-        "info": {
-          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/j9seYZgIWDJ0TpRCokW93G03CH9.jpg",
-          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
-          "plot": "",
-          "year": "2025",
-          "trailer": ""
-        },
-        "episodes": [
-          {
-            "episode": 1,
-            "name": "The Chief of War",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fVy6isuyhhwOpS8vW0keREibEyY.jpg",
-              "plot": "Ka\u02bbiana is summoned back home to Maui where he must decide whether to join King Kahekili in war.",
-              "duration": 3060,
-              "rating": "6.0",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fVy6isuyhhwOpS8vW0keREibEyY.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 2,
-            "name": "Changing Tides",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/oKNCKkpmDra7fgD98GQI3lpAxr7.jpg",
-              "plot": "Fearing for their lives, Ka\u02bbiana and his family flee O\u2018ahu. An ally emerges with a promise of safe passage.",
-              "duration": 2940,
-              "rating": "6.1",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/oKNCKkpmDra7fgD98GQI3lpAxr7.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 3,
-            "name": "City of Flowers",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/1B1dQCzFs3ouuKO8F6RvvMLqXQ2.jpg",
-              "plot": "Ka\u02bbiana arrives in a strange land. Ka\u02bbahumanu takes her place beside Kamehameha.",
-              "duration": 2940,
-              "rating": "5.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/1B1dQCzFs3ouuKO8F6RvvMLqXQ2.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 4,
-            "name": "City of Flowers (2)",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/zcajpBi1H2loRqNA5M3b3kT8dA5.jpg",
-              "plot": "A dangerous power struggle emerges in the Kingdom of Hawai\u02bbi. Kamehameha wrestles with his new responsibility. Ka\u02bbiana searches for Tony.",
-              "duration": 2760,
-              "rating": "5.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/zcajpBi1H2loRqNA5M3b3kT8dA5.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 5,
-            "name": "The Race of the Gods",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/iiMoUJpiifjBe3CuWzLVMBMGp2o.jpg",
-              "plot": "Ka\u02bbiana returns with a warning, and a dangerous competition will determine his fate in Kamehameha's council. Ke\u014dua sends a message.",
-              "duration": 2880,
-              "rating": "5.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/iiMoUJpiifjBe3CuWzLVMBMGp2o.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 6,
-            "name": "The Splintered Paddle",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kbOfZ8fk91B5KV4poTQ3YR1zBlX.jpg",
-              "plot": "K\u016bpuohi tries to keep the hope of peace alive as the drums of war grow louder. Ka\u02bbiana questions Kamehameha's leadership.",
-              "duration": 2580,
-              "rating": "5.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kbOfZ8fk91B5KV4poTQ3YR1zBlX.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 7,
-            "name": "Day of Spilled Brains",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/v1KSTsDFW4e5JgMOJVe0qm9une0.jpg",
-              "plot": "A disagreement erupts about how to deal with the arrival of outsiders.",
-              "duration": 2400,
-              "rating": "6.2",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/v1KSTsDFW4e5JgMOJVe0qm9une0.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 8,
-            "name": "The Sacred Niu Grove",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fBTWFUS70BSq88ZdtPFKiu9Kjli.jpg",
-              "plot": "After his worst fears come true, Ka\u02bbiana suffers a devastating loss. Ke\u014dua's call to war becomes unavoidable for Kamehameha.",
-              "duration": 3300,
-              "rating": "5.9",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fBTWFUS70BSq88ZdtPFKiu9Kjli.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          },
-          {
-            "episode": 9,
-            "name": "The Black Desert",
-            "info": {
-              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qPrXtYc3j3f8qJcmIWcT5VSW1H3.jpg",
-              "plot": "A great battle arrives as Ka\u02bbiana and Kamehameha lead their army against the combined might of Maui and Ke\u014dua.",
-              "duration": 3600,
-              "rating": "6.5",
-              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qPrXtYc3j3f8qJcmIWcT5VSW1H3.jpg"
-            },
-            "video": "",
-            "drm": "clearkey",
-            "drmkey": ""
-          }
-        ]
-      }
-    ]
+    "video": "",
+    "drm": "clearkey",
+    "drmkey": ""
   }
 ]
