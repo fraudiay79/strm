@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2120686/universaltv/streams/sessions/32879823b65a4e9886e6dfcc3aad1268/media/playlist-orig.m3u8/fstl=exp=1782283817~acl=%2Fhls%2Flive%2F2120686%2Funiversaltv%2F%2A~hmac=309f7ccd0a0593e794fd11d05c8bcb07c0efd9bc530bb42fb00be406b479c324/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120686/universaltv/streams/sessions/51cbbccf0b83414db74750c25bafd3e4/media/playlist-orig.m3u8/fstl=exp=1782302354~acl=%2Fhls%2Flive%2F2120686%2Funiversaltv%2F%2A~hmac=ddd989067abe1162a37237dd6753ad2385efe77e7615d4a04112561aaf860bbd/0.m3u8
