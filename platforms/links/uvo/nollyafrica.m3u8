@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/hls/live/2120431/nollyafrica/streams/sessions/f39d5b2cea3a4110893721e4e497dc0e/media/playlist-orig.m3u8/fstl=exp=1782569888~acl=%2Fhls%2Flive%2F2120431%2Fnollyafrica%2F%2A~hmac=140f09f038c1d796bf092857c37eeecc4e52c557db06e1959aa75732e1f4d340/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=24.000
+https://live.uvotv.com/hls/live/2120431/nollyafrica/streams/sessions/2854708deffe40c39be7b63b68ddfa44/media/playlist-orig.m3u8/fstl=exp=1782579585~acl=%2Fhls%2Flive%2F2120431%2Fnollyafrica%2F%2A~hmac=8e0df71fc6420495a38b5e046b8fec03ee5f2ae8a52a0b1f5c1eb3c5a5dcc6a9/0.m3u8
