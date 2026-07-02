@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1152x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121045/samachartoday/streams/sessions/49c3ce436f2f4ce69113fddcaa374ec5/media/playlist-orig.m3u8/fstl=exp=1783060890~acl=%2Fhls%2Flive%2F2121045%2Fsamachartoday%2F%2A~hmac=58736e8ea659abeb431d4d0265f8cdd61e7f39bc1bd39d4de3ff625227663138/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2121045/samachartoday/streams/sessions/ec8384c9b38e48ac9be8492def397727/media/playlist-orig.m3u8/fstl=exp=1783078407~acl=%2Fhls%2Flive%2F2121045%2Fsamachartoday%2F%2A~hmac=f06714380a27364f68c89270d2ba10a49e6a757e90dc55c10b990a8a62b68989/0.m3u8
