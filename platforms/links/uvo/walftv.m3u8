@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120429/walftv/streams/sessions/0bc449083f084edf857af64d2f59eec3/media/playlist-orig.m3u8/fstl=exp=1783192544~acl=%2Fhls%2Flive%2F2120429%2Fwalftv%2F%2A~hmac=abbf28f10a738022909666d60a34ffac80e8be1bfea7dabe904600abaf4529cc/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120429/walftv/streams/sessions/e36b542d426940678c0b1bf7345fdaa6/media/playlist-orig.m3u8/fstl=exp=1783202584~acl=%2Fhls%2Flive%2F2120429%2Fwalftv%2F%2A~hmac=72c60110f0a352d919129f91e5a7200ee6016c003ae5fbdbfb1326c53ccdcc57/0.m3u8
