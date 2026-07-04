@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=660x540,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120430/burkinainfo/streams/sessions/a100bf537f194a8fa8f00abeac61bb61/media/playlist-orig.m3u8/fstl=exp=1783202619~acl=%2Fhls%2Flive%2F2120430%2Fburkinainfo%2F%2A~hmac=1de014bf644cdab17f03ad5f2ef15e20530f4a7bd151cf8121564201443b02ca/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x540,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120430/burkinainfo/streams/sessions/bba5d9e94b4c4e35b3e099102172261f/media/playlist-orig.m3u8/fstl=exp=1783232202~acl=%2Fhls%2Flive%2F2120430%2Fburkinainfo%2F%2A~hmac=84ef257a5ef8a3b57ce89808dcf2854a23961148b03df3722c445aba24477e56/0.m3u8
