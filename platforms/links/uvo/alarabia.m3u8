@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119196/alarabia/streams/sessions/3b34c0a61b4c44aba23b512c62be14c5/media/playlist-orig.m3u8/fstl=exp=1783684537~acl=%2Fhls%2Flive%2F2119196%2Falarabia%2F%2A~hmac=c19c9f4b52f115e26a687fcd73603ab39cf942676ec6d983d4f8d927d613f54d/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119196/alarabia/streams/sessions/755a69772cd34543bc9364b2facb97d7/media/playlist-orig.m3u8/fstl=exp=1783695161~acl=%2Fhls%2Flive%2F2119196%2Falarabia%2F%2A~hmac=11529d12220343c02154fecab435f2df70100ca94e31fcefa806a5cbf007bafd/0.m3u8
