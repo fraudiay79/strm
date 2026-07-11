@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/lifetv/streams/sessions/9dedd66bda144dce91a4d7b0e351dbeb/media/playlist-orig.m3u8/fstl=exp=1783871545~acl=%2F10010%2Fdvr%2Fhls%2Flifetv%2F%2A~hmac=6afe70e80af81b87f5e8f01bfd33c0abdee6125bfeb996fb3f6ff1504d7310c6/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/dvr/hls/lifetv/streams/sessions/9183c1f6679540cab1770f83cc3fdabb/media/playlist-orig.m3u8/fstl=exp=1783882643~acl=%2F10010%2Fdvr%2Fhls%2Flifetv%2F%2A~hmac=1bf48116705e7123e8576ffe078c30d2dff1a0efcbcb798e6012f4433013dc4e/0.m3u8
