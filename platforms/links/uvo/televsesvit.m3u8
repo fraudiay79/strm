@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=59.900
-https://live.uvotv.com/10010/dvr/hls/televsesvit/streams/sessions/24b75cc3ffd54f80875697a7aba409d8/media/playlist-orig.m3u8/fstl=exp=1784662874~acl=%2F10010%2Fdvr%2Fhls%2Ftelevsesvit%2F%2A~hmac=47b8f59658b961d951eeab578fc938fe7f46344933eae385b3a3af8a9220c92b/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/televsesvit/streams/sessions/ba62e07e8a994475a13f2f04258dc9b0/media/playlist-orig.m3u8/fstl=exp=1784671168~acl=%2F10010%2Fdvr%2Fhls%2Ftelevsesvit%2F%2A~hmac=1c21f0d283c9a018d355ddc754eb435f50480dd31b42b7fe25ada5448d5509eb/0.m3u8
