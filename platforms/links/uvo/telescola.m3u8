@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119692/telescola/streams/sessions/aefb4e91164241c5af4068eca10202ad/media/playlist-orig.m3u8/fstl=exp=1784881550~acl=%2Fhls%2Flive%2F2119692%2Ftelescola%2F%2A~hmac=8256b384b4612a3df3e323ba37fc1b2847c2a700bad92a7bb190764c87122149/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/hls/live/2119692/telescola/streams/sessions/0f9710c3720d424aab835d1f0cbf3bf1/media/playlist-orig.m3u8/fstl=exp=1784901018~acl=%2Fhls%2Flive%2F2119692%2Ftelescola%2F%2A~hmac=c63b7985b9f34ba9010c38c233eaef7d40793e3bd6f831f245422f6baf82d67f/0.m3u8
