@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119196/aloula/streams/sessions/036592b9ee694fb2a71e3f7ea42ecc8e/media/playlist-orig.m3u8/fstl=exp=1785081873~acl=%2Fhls%2Flive%2F2119196%2Faloula%2F%2A~hmac=deceef0da30a12b149fcb576cfd3da523e1dd896c43c1c94968f4816958dc5d4/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119196/aloula/streams/sessions/dd7d77db38bc40668dfcddad96b1ad23/media/playlist-orig.m3u8/fstl=exp=1785092637~acl=%2Fhls%2Flive%2F2119196%2Faloula%2F%2A~hmac=b5875fa84f48f85c488fb3eab821d14e7cfcda3ea70fca60df28eb31c94cf5ae/0.m3u8
