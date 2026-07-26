@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2121972/kantipur/streams/sessions/f09b5bb169ac4349a47fb0c2eb8c1214/media/playlist-orig.m3u8/fstl=exp=1785102917~acl=%2Fhls%2Flive%2F2121972%2Fkantipur%2F%2A~hmac=059b54abd24a6ae71fc09bdc8aab2b0b7524c6cd83fd49bf00f779abd2b3a0cd/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=60.000
+https://live.uvotv.com/hls/live/2121972/kantipur/streams/sessions/fc00f55b8eb945779b20b58f33891a8a/media/playlist-orig.m3u8/fstl=exp=1785132080~acl=%2Fhls%2Flive%2F2121972%2Fkantipur%2F%2A~hmac=bd25a9db5325d799b9bacc2f16c3fcd372307873e040de31330d5f95a8b8bc2f/0.m3u8
