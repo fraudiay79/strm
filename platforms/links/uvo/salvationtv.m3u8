@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2120683/salvationtv/streams/sessions/6de104739ee040c18dac9f7fb76411e6/media/playlist-orig.m3u8/fstl=exp=1785220022~acl=%2Fhls%2Flive%2F2120683%2Fsalvationtv%2F%2A~hmac=e18aa0cd24c11880e17ed7ea6167ba0aa2233308784431cb51845d5f413fd493/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2120683/salvationtv/streams/sessions/5c71ab1ec0084d96afa297b7b8ae724d/media/playlist-orig.m3u8/fstl=exp=1785241173~acl=%2Fhls%2Flive%2F2120683%2Fsalvationtv%2F%2A~hmac=4ae60a275b530f8522c4d7dc9dbaf1f0dea6d19c325f876689c55bedf47f1a83/0.m3u8
