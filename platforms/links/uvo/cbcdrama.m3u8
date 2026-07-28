@@ -1,4 +1,4 @@
 #EXTM3U
-#EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120913/cbcdrama/streams/sessions/10fc2dc85f304f18be97a44cb34e632b/media/playlist-orig.m3u8/fstl=exp=1772218316~acl=%2Fhls%2Flive%2F2120913%2Fcbcdrama%2F%2A~hmac=3486428930912a4fbbfed6d3c3d833ba9814b7ce3ce1addb4d6c8f3be60ece52/0.m3u8
+## Generated with Setrix 2.14.0.502 Rev: main d6d6a64b9 (eu-setrix-h334:TR:105:GS)
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,RESOLUTION=1280x720,CODECS="avc1.64001f,mp4a.40.2",FRAME-RATE=25,CLOSED-CAPTIONS=NONE
+https://nyc.streampool.net/10010/dvr/hls/cbcdrama/1280_720_1500_128/spntl=id=+398cH8xD3U-mDftt7ZGn3M~hmac=0d0dd07cc0e63e90375902ab01a81f8f1ee5d2844789163e236d6e2fc02953ec/index_0.m3u8
