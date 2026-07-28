@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/hls/live/2119689/parliamenttv/streams/sessions/ace38c05e1f9416c9ed6c0548628fa51/media/playlist-orig.m3u8/fstl=exp=1785313710~acl=%2Fhls%2Flive%2F2119689%2Fparliamenttv%2F%2A~hmac=6dab62e5218b7c7097cc688ea742503236fa8749d7b4e3c44d76d0ed303eb188/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/hls/live/2119689/parliamenttv/streams/sessions/55be11737391460987b96f968b8e2c78/media/playlist-orig.m3u8/fstl=exp=1785323701~acl=%2Fhls%2Flive%2F2119689%2Fparliamenttv%2F%2A~hmac=8d4a63b110ec68db0af16337dbf8f417e5b7a583987a46707744f2fa1ff184d3/0.m3u8
