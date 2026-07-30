@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119195/livingindia/streams/sessions/72c67bbd5ccc4dca8c7629e1472552e5/media/playlist-orig.m3u8/fstl=exp=1785515157~acl=%2Fhls%2Flive%2F2119195%2Flivingindia%2F%2A~hmac=6bedbd533500efb3b4aebe07ea34ebc07c281734d5299d1c6deaad6f1ed869ab/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/livingindianews/streams/sessions/f8584a7b4f6d4ab3808506e53ccae34f/media/playlist-orig.m3u8/fstl=exp=1785535777~acl=%2F10010%2Flive%2Fhls%2Flivingindianews%2F%2A~hmac=42465849c7a929b8d19b5e139e45094ebc8196dc6308af74f667705c0cce684b/0.m3u8
