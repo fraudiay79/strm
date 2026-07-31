@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119694/tayariwest/streams/sessions/371f847a4ba34c8eafe7cf98c134c8aa/media/playlist-orig.m3u8/fstl=exp=1785583674~acl=%2Fhls%2Flive%2F2119694%2Ftayariwest%2F%2A~hmac=1c575781895fbad1b189826ab29acc782b3f3e8b6f4e4ca4756b1f16c86967f4/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/tayariwest/streams/sessions/bd1360958d8f4f0fa3a3841aa71dd24f/media/playlist-orig.m3u8/fstl=exp=1785592635~acl=%2F10010%2Flive%2Fhls%2Ftayariwest%2F%2A~hmac=d444b0d08459e7f7186ccedaf2e302cd28fca9da656d25e55bf1248efe3e8d51/0.m3u8

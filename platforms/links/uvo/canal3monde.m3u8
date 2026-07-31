@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119695/canal3monde/streams/sessions/9c3eb2f198434046975884c8ed28dfcc/media/playlist-orig.m3u8/fstl=exp=1785583672~acl=%2Fhls%2Flive%2F2119695%2Fcanal3monde%2F%2A~hmac=52da474754aa1850056cdc11a2c5e1f932469dd79aba656f87d6f42e17dc52bf/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/canal3monde/streams/sessions/f239b9e45a934f06a461862e3a7b2e38/media/playlist-orig.m3u8/fstl=exp=1785592632~acl=%2F10010%2Flive%2Fhls%2Fcanal3monde%2F%2A~hmac=9991e88b8249408316315cd4ccbdb20d53cdb712a485e2acd15acf05e63ea515/0.m3u8

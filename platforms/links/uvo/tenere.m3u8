@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119695/tenere/streams/sessions/2cb3e111725b4e379a5a4cc69817227d/media/playlist-orig.m3u8/fstl=exp=1785583657~acl=%2Fhls%2Flive%2F2119695%2Ftenere%2F%2A~hmac=1c031535597f09f89bfb56984bbf11cd2aee7edf2239858ebb5c9e18a0a8e2e7/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/tenere/streams/sessions/cc8ada13b59043d29292486a57ad2d77/media/playlist-orig.m3u8/fstl=exp=1785592614~acl=%2F10010%2Flive%2Fhls%2Ftenere%2F%2A~hmac=b4bbabebda5b10cd93a86c665bd9497918a005b0686d530a37db210cd3a8e1c1/0.m3u8
