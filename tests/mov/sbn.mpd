@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MPD xmlns="urn:mpeg:dash:schema:mpd:2011" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mpeg:dash:schema:mpd:2011 DASH-MPD.xsd" profiles="urn:mpeg:dash:profile:isoff-live:2011" type="dynamic" availabilityStartTime="2015-01-01T00:00:03Z" publishTime="2026-08-06T17:31:48.112851Z" minimumUpdatePeriod="PT2S" minBufferTime="PT10S" timeShiftBufferDepth="PT42S" maxSegmentDuration="PT3S">
+  <Period id="period_344365643000000" start="PT95657H7M23S">
+    <AdaptationSet id="1" group="1" mimeType="audio/mp4" lang="und" contentType="audio" segmentAlignment="true">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+      <SegmentTemplate timescale="10000000" presentationTimeOffset="3443656430000000" initialization="SBN-$RepresentationID$-p=344365643000000-init.mp4" media="SBN-$RepresentationID$-p=344365643000000-$Time$.mp4">
+        <SegmentTimeline>
+          <S t="3659670630199998" d="19839999" />
+          <S d="20053335" />
+          <S d="20053332" />
+          <S d="20053335" />
+          <S d="19839999" />
+          <S d="20053332" />
+          <S d="20053335" />
+          <S d="20053332" />
+          <S d="19840002" />
+          <S d="20053332" />
+          <S d="20053335" />
+          <S d="20053332" />
+          <S d="19839999" />
+          <S d="20053335" />
+          <S d="20053332" />
+          <S d="20053335" />
+          <S d="19839999" />
+          <S d="20053332" />
+          <S d="20053335" />
+          <S d="20053332" />
+          <S d="19840002" />
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="mp4a_256000=11" bandwidth="256000" audioSamplingRate="48000" codecs="mp4a.40.2">
+        <AudioChannelConfiguration schemeIdUri="urn:mpeg:dash:23003:3:audio_channel_configuration:2011" value="2" />
+      </Representation>
+    </AdaptationSet>
+    <AdaptationSet id="2" group="2" frameRate="25" mimeType="video/mp4" startWithSAP="1" contentType="video" par="427:240" minBandwidth="2089200" maxBandwidth="6000000" minWidth="854" maxWidth="1920" minHeight="480" maxHeight="1080" segmentAlignment="true">
+      <Role schemeIdUri="urn:mpeg:dash:role:2011" value="main" />
+      <SegmentTemplate timescale="10000000" presentationTimeOffset="3443656430000000" initialization="SBN-$RepresentationID$-p=344365643000000-init.mp4" media="SBN-$RepresentationID$-p=344365643000000-$Time$.mp4">
+        <SegmentTimeline>
+          <S t="3659670630000000" d="20000000" r="20" />
+        </SegmentTimeline>
+      </SegmentTemplate>
+      <Representation id="avc1_2089200=8" bandwidth="2089200" width="854" height="480" sar="1:1" codecs="avc1.64001f" />
+      <Representation id="avc1_3000000=12" bandwidth="3000000" width="1280" height="720" sar="1:1" codecs="avc1.640028" />
+      <Representation id="avc1_6000000=10" bandwidth="6000000" width="1920" height="1080" sar="1:1" codecs="avc1.640029" />
+    </AdaptationSet>
+  </Period>
+</MPD>
