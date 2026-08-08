@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/tambara/streams/sessions/b0d5575c887c4d94852a2a74ff021169/media/playlist-orig.m3u8/fstl=exp=1786215089~acl=%2F10010%2Flive%2Fhls%2Ftambara%2F%2A~hmac=7e3547bfafa50b502afb9297deb2ad10779ec774f7013aaf0aedf3a73b6860bb/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/tambara/streams/sessions/b087de67769641d5a61fbe8ded58174b/media/playlist-orig.m3u8/fstl=exp=1786248562~acl=%2F10010%2Flive%2Fhls%2Ftambara%2F%2A~hmac=f268e7980ebaa39cb47b7de25cee9e712045958e5b4049591672cee0d4073e04/0.m3u8
