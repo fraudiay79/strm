@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=3128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/discoverpakistan/streams/sessions/9ef2d316fd7c46e6a8a1ab1c0dad32ee/media/playlist-orig.m3u8/fstl=exp=1786893504~acl=%2F10010%2Fdvr%2Fhls%2Fdiscoverpakistan%2F%2A~hmac=17177455a1922106fe01c5a7995501af91fd73865940532c6a6aa8c4056858a6/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.42c01f,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE
+https://live.uvotv.com/10010/live/hls/discoverpakistan/streams/sessions/9adc644d258448faa414ba55561f25a7/media/playlist-orig.m3u8/fstl=exp=1786904626~acl=%2F10010%2Flive%2Fhls%2Fdiscoverpakistan%2F%2A~hmac=57885ede3321a9ffd3f4785ec8ba60124feb086a722fc65e400094b704d87f25/0.m3u8
