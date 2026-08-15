@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2000000,CODECS="avc1.000000,mp4a.40.2",RESOLUTION=48x16,CLOSED-CAPTIONS=NONE,FRAME-RATE=-48300.000
-https://live.uvotv.com/10010/dvr/hls/cosmovision/streams/sessions/fe4616bbea4742239e92be92ad5a9707/media/playlist-orig.m3u8/fstl=exp=1786904623~acl=%2F10010%2Fdvr%2Fhls%2Fcosmovision%2F%2A~hmac=a32caef0b740914eaf247b90ee39c0317afa619f98b036209a54fc3e51885799/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
+https://live.uvotv.com/10010/dvr/hls/cosmovision/streams/sessions/7b3c6b8edcb14800a2f443dbd061392f/media/playlist-orig.m3u8/fstl=exp=1786915156~acl=%2F10010%2Fdvr%2Fhls%2Fcosmovision%2F%2A~hmac=12d5c9192579109e0dc8ae27d86a789ca70910578e72b04e85f8f6ddf27940f7/0.m3u8
