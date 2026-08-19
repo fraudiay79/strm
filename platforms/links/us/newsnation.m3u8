@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-MEDIA:TYPE=CLOSED-CAPTIONS,GROUP-ID="cc",LANGUAGE="en",NAME="English",AUTOSELECT=YES,INSTREAM-ID="CC1"
 #EXT-X-STREAM-INF:BANDWIDTH=3500000,AVERAGE-BANDWIDTH=2800000,CODECS="avc1.64001f, mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS="cc"
-https://dcs-live-ue1.mp.lura.live/server/play/Y0pz536hgQmwhvKj/rendition.m3u8?track=video-1&anvsid=m177618697-n0f91c6e9cc75e1bc7fa5db4b931f1db1&ts=1787146832&anvtrid=c1ea9b1a26ee3c7f920963c3f570eeac
+https://dcs-live-ue4.mp.lura.live/server/play/Y0pz536hgQmwhvKj/rendition.m3u8?track=video-1&anvsid=m177635079-nfc01c0e01bd86d5e2ea5f5e76b3f0e1d&ts=1787149584&anvtrid=15c89c0a40b6e97b8b8d8a91c1cdb896
 #EXT-X-STREAM-INF:BANDWIDTH=875000,AVERAGE-BANDWIDTH=700000,CODECS="avc1.64001f, mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS="cc"
-https://dcs-live-ue1.mp.lura.live/server/play/Y0pz536hgQmwhvKj/rendition.m3u8?track=video-0&anvsid=m177618697-n0f91c6e9cc75e1bc7fa5db4b931f1db1&ts=1787146832&anvtrid=c1ea9b1a26ee3c7f920963c3f570eeac
+https://dcs-live-ue4.mp.lura.live/server/play/Y0pz536hgQmwhvKj/rendition.m3u8?track=video-0&anvsid=m177635079-nfc01c0e01bd86d5e2ea5f5e76b3f0e1d&ts=1787149584&anvtrid=15c89c0a40b6e97b8b8d8a91c1cdb896
