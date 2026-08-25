@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/10010/live/hls/stvnews/streams/sessions/24df7969a6734c74a4bb454c71208042/media/playlist-orig.m3u8/fstl=exp=1787672186~acl=%2F10010%2Flive%2Fhls%2Fstvnews%2F%2A~hmac=d5d3963e922443aed26183d4050bb41fc0b2ebc3d7d003acfb46da9927dec73e/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
+https://live.uvotv.com/10010/live/hls/stvnews/streams/sessions/a32d6a9e237148ecba03e9641ecba00b/media/playlist-orig.m3u8/fstl=exp=1787706233~acl=%2F10010%2Flive%2Fhls%2Fstvnews%2F%2A~hmac=125113ec81aa103bdb7644fc2fcda4ad455a53400e04150bb1d1a628bfd8d7fe/0.m3u8
