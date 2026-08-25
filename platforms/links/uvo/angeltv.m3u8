@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/angeltv/streams/sessions/2b8ae9a13ce2420898c497aeb084f65d/media/playlist-orig.m3u8/fstl=exp=1787477035~acl=%2F10010%2Flive%2Fhls%2Fangeltv%2F%2A~hmac=8bed9d2fbcfff7a1172f8086360f2e21d3f228799e2eeb48122b7e581d2d306b/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/angeltv/streams/sessions/6ea530ba5959460ca5138dff325a056a/media/playlist-orig.m3u8/fstl=exp=1787736734~acl=%2F10010%2Flive%2Fhls%2Fangeltv%2F%2A~hmac=86f6978a25afc5fb8a590293f47cfe70940120e374775cdb3f7aeae1991398bb/0.m3u8
