@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/synagoguetv/streams/sessions/feac3ed5f63c433696e1c67eec58f47d/media/playlist-orig.m3u8/fstl=exp=1787477042~acl=%2F10010%2Flive%2Fhls%2Fsynagoguetv%2F%2A~hmac=bd2ca3fcf1a17d52562976d5eded4ce509dd8cf3da2df905f1a20050c85634ff/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
+https://live.uvotv.com/10010/live/hls/synagoguetv/streams/sessions/ab232875e1ce4f1fa30c37e1040e30d6/media/playlist-orig.m3u8/fstl=exp=1787823428~acl=%2F10010%2Flive%2Fhls%2Fsynagoguetv%2F%2A~hmac=1cd47f2c2630cdb49a461ba04f869ace9c824d0cc518b70e1c95c27c7053db85/0.m3u8
