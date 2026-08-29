@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/10010/live/hls/flametv/streams/sessions/31cf125ac00e4c238e50f2061938ff7a/media/playlist-orig.m3u8/fstl=exp=1788113391~acl=%2F10010%2Flive%2Fhls%2Fflametv%2F%2A~hmac=63f4af5dd84279dcfeeb4bad8e5f7c959d231a20666ddb65dbcd5e683d305e46/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/flametv/streams/sessions/d7ed1083fea3490e93d5edda04d0e782/media/playlist-orig.m3u8/fstl=exp=1788130747~acl=%2F10010%2Flive%2Fhls%2Fflametv%2F%2A~hmac=bc5d74080880f9c09e11d8aac627451a5ba64764eb9bc57895d2ea1ca828feaa/0.m3u8
