@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64002a,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/10010/live/hls/hczambia/streams/sessions/22f56af5d22d4c3b97640000d2cb2559/media/playlist-orig.m3u8/fstl=exp=1788613626~acl=%2F10010%2Flive%2Fhls%2Fhczambia%2F%2A~hmac=aaed260c971b9865290c256c4c886400bedda5a8690b50563bba19724f786650/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/hczambia/streams/sessions/bcdd291f4b5e4ac98d06d1f1a5005b36/media/playlist-orig.m3u8/fstl=exp=1788631354~acl=%2F10010%2Flive%2Fhls%2Fhczambia%2F%2A~hmac=09715be560b488295a4e04ebbb1b4e2444da2ed921e5045ede2164de443203da/0.m3u8
