@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/almalakoot/streams/sessions/708cf814708943cdaff2b95118956291/media/playlist-orig.m3u8/fstl=exp=1789026801~acl=%2F10010%2Flive%2Fhls%2Falmalakoot%2F%2A~hmac=23e6e501a09f01eb7af0f0c0dfa3ac68576c768f5652266fb65851e22f99e2ed/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=1628000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/almalakoot/streams/sessions/51902aed7d8b4a08b0d37c82a6693da5/media/playlist-orig.m3u8/fstl=exp=1789046643~acl=%2F10010%2Flive%2Fhls%2Falmalakoot%2F%2A~hmac=12c6666ffe62e698bf2b844b580bccc8a62ff89fd6b2d70f57a5d63bd8a017ed/0.m3u8

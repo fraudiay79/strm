@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/alhayatcinema/streams/sessions/cdc7534c834547d995f97fdd15eeb2ca/media/playlist-orig.m3u8/fstl=exp=1789026806~acl=%2F10010%2Fdvr%2Fhls%2Falhayatcinema%2F%2A~hmac=39d8ea090ca5775a2a588fe5db37e0a02ce83929d39131f95dec5071ede35021/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/alhayatcinema/streams/sessions/176de6e9e6bb4f97a6e25d09db2f6e80/media/playlist-orig.m3u8/fstl=exp=1789046647~acl=%2F10010%2Fdvr%2Fhls%2Falhayatcinema%2F%2A~hmac=fcb7828a41ae8865bbb99284acb5a1123477a4cef853536c1e9ad9da94323123/0.m3u8

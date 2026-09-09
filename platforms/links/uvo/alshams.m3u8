@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/alshams/streams/sessions/25f603c0744d451f82dfca0f21cb2f1f/media/playlist-orig.m3u8/fstl=exp=1789026794~acl=%2F10010%2Flive%2Fhls%2Falshams%2F%2A~hmac=6fd901a6364ba376afc2fcf445c353407966adf5fa6b5f6fef9f213cfa7be17f/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/alshams/streams/sessions/548b23d071af48c3ac497a7b8818232f/media/playlist-orig.m3u8/fstl=exp=1789046636~acl=%2F10010%2Flive%2Fhls%2Falshams%2F%2A~hmac=e1373818846bb656228de9ce786b1df8d5ed98b955a1fb7b3e254d8a0f51bc49/0.m3u8
