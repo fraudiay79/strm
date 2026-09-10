@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/rotanadrama/streams/sessions/c6ecc15657ef42548e2d84e13c6400fe/media/playlist-orig.m3u8/fstl=exp=1789113198~acl=%2F10010%2Fdvr%2Fhls%2Frotanadrama%2F%2A~hmac=2efd57b748ce96221330640e59f0dd2a20895403de00a86fb3fff01137e4b7d7/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/rotanadrama/streams/sessions/1822010175d24945951b3d5de71a498b/media/playlist-orig.m3u8/fstl=exp=1789132818~acl=%2F10010%2Fdvr%2Fhls%2Frotanadrama%2F%2A~hmac=671148f8afd35a760bae8c10a887f2892acffa68be25969bd850372faad4354c/0.m3u8
