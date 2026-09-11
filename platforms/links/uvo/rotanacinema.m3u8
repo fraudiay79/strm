@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/rotanacinema/streams/sessions/0d859f3095ee409a81fda5f32b91be52/media/playlist-orig.m3u8/fstl=exp=1789218910~acl=%2F10010%2Flive%2Fhls%2Frotanacinema%2F%2A~hmac=e1b8eb648b3d0909cff2dd51e87f67abf19d93406564803cd1f3cda8dc2c1686/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/rotanacinema/streams/sessions/dcb151e7e2c74017bc998bed811b2dc3/media/playlist-orig.m3u8/fstl=exp=1789236620~acl=%2F10010%2Flive%2Fhls%2Frotanacinema%2F%2A~hmac=764d9f5dece6d2317f3e9e859cdaea8904d3eb6fbbf3466e01a2a3d9ddbc580a/0.m3u8

@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/sat7kids/streams/sessions/8245c723f89d4c09b3b9a751113e2884/media/playlist-orig.m3u8/fstl=exp=1789218921~acl=%2F10010%2Flive%2Fhls%2Fsat7kids%2F%2A~hmac=e9d6d0fd80c852c9ca9882519de8eb2d10b7d62e404ed5b5da37a8954e24b114/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/sat7kids/streams/sessions/57af05be145546c785fe7242a7a1f060/media/playlist-orig.m3u8/fstl=exp=1789236626~acl=%2F10010%2Flive%2Fhls%2Fsat7kids%2F%2A~hmac=7c26bf8a929a48a0cfb3cea37ff3274d078576d5ecae20d7e141bdf26e7db376/0.m3u8

@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/dvr/hls/ontvdrama/streams/sessions/1a683725f7a047beb226c616ac3d9c08/media/playlist-orig.m3u8/fstl=exp=1789218912~acl=%2F10010%2Fdvr%2Fhls%2Fontvdrama%2F%2A~hmac=6decd9981b0d35143e0d46e53fbcc495cc00543cb60ee803ea21c9c1c5a8abd3/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/dvr/hls/ontvdrama/streams/sessions/d077096d05034b4f989fcd50bf3392a9/media/playlist-orig.m3u8/fstl=exp=1789236620~acl=%2F10010%2Fdvr%2Fhls%2Fontvdrama%2F%2A~hmac=95e9e01a9f534c57b0ebfcda80264f9ae85716d19c588c0b445ea14a4ee852b6/0.m3u8

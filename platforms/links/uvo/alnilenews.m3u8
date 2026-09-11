@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/alnilenews/streams/sessions/23029725191d40d8a010fab79a788a06/media/playlist-orig.m3u8/fstl=exp=1789218926~acl=%2F10010%2Flive%2Fhls%2Falnilenews%2F%2A~hmac=e055750f389f041e1bd829249e13f04111607a71ffb6cc980cc0d2739da7840a/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/alnilenews/streams/sessions/d6d47f80a7d349e8b9b95e9dde909448/media/playlist-orig.m3u8/fstl=exp=1789236629~acl=%2F10010%2Flive%2Fhls%2Falnilenews%2F%2A~hmac=7ea259dd695fc65d304ef968d2366e98ad031d530abe5aeaa2ec55b0e8be451c/0.m3u8

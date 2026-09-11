@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/sadaalbalad2/streams/sessions/4bddbbdd36c94a028063450db016c03b/media/playlist-orig.m3u8/fstl=exp=1789218906~acl=%2F10010%2Flive%2Fhls%2Fsadaalbalad2%2F%2A~hmac=3a2ac0f397fc9bd8d007225ae5266bb993620fd1843e7fb5fe89eb3f1f539d99/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/sadaalbalad2/streams/sessions/20ecd15da9864592a53a842a3b37968f/media/playlist-orig.m3u8/fstl=exp=1789236617~acl=%2F10010%2Flive%2Fhls%2Fsadaalbalad2%2F%2A~hmac=61d16f188e957f6ba76e6bc08a01ec8dac14173e83eaecb00494df73a27fe3f6/0.m3u8

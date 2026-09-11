@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/christtv/streams/sessions/dc3dfb217bfe4601bae0d46136f02697/media/playlist-orig.m3u8/fstl=exp=1789218836~acl=%2F10010%2Flive%2Fhls%2Fchristtv%2F%2A~hmac=b566a3547a2b87d797a1dcb8aec82ee3873b628fb39a55143a9cb93f28eaf122/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/christtv/streams/sessions/136697cae6094888aa53d885dff4e9ab/media/playlist-orig.m3u8/fstl=exp=1789236573~acl=%2F10010%2Flive%2Fhls%2Fchristtv%2F%2A~hmac=b517b90e84f905be0fbc90b16d4323c0b2ab11200c62816723d8b9d0e89fdee5/0.m3u8

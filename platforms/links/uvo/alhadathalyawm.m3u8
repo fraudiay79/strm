@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=960x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/alhadathalyawm/streams/sessions/26c64031f73240febfe7111b230fe6d3/media/playlist-orig.m3u8/fstl=exp=1789218930~acl=%2F10010%2Flive%2Fhls%2Falhadathalyawm%2F%2A~hmac=ec7db09cb7c414c9b58f3dda154db6ad33f717ff6d88b089ad25918341dd8e60/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/alhadathalyawm/streams/sessions/2f1872431703465d92727ece366e9104/media/playlist-orig.m3u8/fstl=exp=1789236632~acl=%2F10010%2Flive%2Fhls%2Falhadathalyawm%2F%2A~hmac=757c6bad262d8c05eda19fb85c3bcfc4e8163cddf0d9dd3a2ca09e35d4de00e4/0.m3u8
