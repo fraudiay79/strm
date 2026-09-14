@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/10010/live/hls/revivalchannel/streams/sessions/d246cda706984885835ac8693b085e40/media/playlist-orig.m3u8/fstl=exp=1789472535~acl=%2F10010%2Flive%2Fhls%2Frevivalchannel%2F%2A~hmac=e085eaec66f513359ade32bf5af6fc158bf4605a9b584eb15d1c2790861936d2/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/revivalchannel/streams/sessions/6ece9d9a832f45b1bc044e019c029b75/media/playlist-orig.m3u8/fstl=exp=1789493791~acl=%2F10010%2Flive%2Fhls%2Frevivalchannel%2F%2A~hmac=9ea440c13c980736ec1716514a0c49a64902ec9cd17860a8dbdf3fa84298d474/0.m3u8
