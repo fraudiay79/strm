@@ -1,132 +1,613 @@
 [
   {
-    "name": "Friday the 13th Part IV: The Final Chapter",
-    "category": "\ud83c\udd35",
+    "name": "The Borgias",
+    "category": "\ud83c\udd31",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/1J7zudfR3VLPwAf9lK5YPfSu0n6.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/2bbEE2aLu47unsPJwS57UZW0YF4.jpg",
-      "plot": "After his revival in a hospital morgue, Jason fixes his vengeful attention on the Jarvis family and a group of hitherto carefree teenagers.",
-      "director": [
-        "Joseph Zito"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/y6CHDkNDhswuaqwQEC0wgC7MMox.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/mbQi8FC2Gk762plIcZfYCE2Kcmj.jpg",
+      "plot": "Set in 15th century Italy at the height of the Renaissance, The Borgias chronicles the corrupt rise of patriarch Rodrigo Borgia to the papacy, where he proceeds to commit every sin in the book to amass and retain power, influence and enormous wealth for himself and his family.",
+      "rating": "7.6",
+      "genre": [
+        "drama",
+        "crime"
       ],
       "cast": [
-        "Judie Aronson",
-        "Kimberly Beck",
-        "Joan Freeman",
-        "Barbara Howard",
-        "Corey Feldman",
-        "Erich Anderson"
-      ],
-      "trailer": "8zcPf9fuDPg",
-      "rating": "6.1",
-      "year": "1984"
+        "Jeremy Irons",
+        "Fran\u00e7ois Arnaud",
+        "Holliday Grainger",
+        "Sean Harris",
+        "Thure Lindhardt"
+      ]
     },
-    "video": "",
-    "drm": "clearkey",
-    "drmkey": ""
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/bm1i7uTxEnkw7U5efBD3C4o8p6.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Pope Innocent VIII dies. Rodrigo Borgia wins election as Pope Alexander VI by bribing enough of the cardinals to vote for him in conclave. Alexander \"packs\" the College of Cardinals with 13 new members, including his son Cesare. He then tries to contract an alliance with the powerful family of Cardinal Ascanio Sforza, one of his two original rivals for the Papacy. That alliance, ever fragile, breaks after Alexander's other rival, Cardinal Giuliano della Rovere (the future Pope Julius II), contracts his own alliance with the King of France for an invasion of Italy.",
+          "year": "2011",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "The Poisoned Chalice",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/vd77oZ4YItp9z2BamnXkjxlPoQR.jpg",
+              "plot": "Rodrigo successfully bribes and intimidates his way into an election as Pope Alexander VI, making him the new leader of the Catholic Church; powerful Cardinals Della Rovere and Orsini oppose his rise; the Borgias recruit a talented assassin named Micheletto to their cause.",
+              "duration": 3000,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/vd77oZ4YItp9z2BamnXkjxlPoQR.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Assassin",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/lB2vp91dMDP5Z0ymo7j7cyTwdgg.jpg",
+              "plot": "The new Pope wastes no time consolidating power and balancing opposition to him in the College of Cardinals by elevating his children to high office, installing Juan as head of the papal armies and Cesare as a cardinal and his successor, while seeking a politically fortuitous marriage for daughter Lucrezia.",
+              "duration": 3120,
+              "rating": "6.8",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/lB2vp91dMDP5Z0ymo7j7cyTwdgg.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Moor",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/90DSeMCCVZEy7t0j1whMYmXgcyu.jpg",
+              "plot": "His coffers depleted by his expensive rise to power, Rodrigo seeks funds through a profitable marriage for Lucrezia that will ally with him Milan, and charges a fee for safe haven in the Holy City to Jews displaced by the Spanish Inquisition; the Borgias host a charming Turkish prince; Micheletto is ordered to rid his patrons of the ongoing threat posed by Della Rovere.",
+              "duration": 3180,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/90DSeMCCVZEy7t0j1whMYmXgcyu.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Lucrezia's Wedding",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/tn5qixxIAlukw4wc4O2VOOyhnuW.jpg",
+              "plot": "Lucrezia's financially and politically motivated wedding to Milanese nobleman Giovanni Sforza is a disaster thanks to Juan's inappropriately bawdy play in his sister's honor, Cesare's brazen flirting with a married baroness, and the arrival of the Borgia children's illegitimate mother; Della Rovere seeks the aid of the illustrious Medici family and their counselor, Machiavelli.",
+              "duration": 3480,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/tn5qixxIAlukw4wc4O2VOOyhnuW.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Borgias in Love",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6uvSKfE06GSeCoYLhCTTjCbTAAj.jpg",
+              "plot": "Alternately neglected and abused by her cruel husband, Lucrezia has an affair with Paolo, a handsome stable boy; Cesare strikes a bargain with Machiavelli: deny French troops passage across his masters' lands in exchange for suppression of Savonarola, a fiery preacher of anti-Medici sermons; in love with baroness Ursula, Cesare takes drastic action to get rid of her husband.",
+              "duration": 3180,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6uvSKfE06GSeCoYLhCTTjCbTAAj.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "The French King",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hhdApQqKz27B9JiUjK7lDufuVHx.jpg",
+              "plot": "Della Rovere reaches France and strikes a bargain with its ruler to invade Italy and install him on the Papal throne in exchange for control of Naples; Rodrigo attempts to thwart the invasion through an alliance by marrying his youngest son Joffre to Princess Sancia of Naples (guest star Emmannuelle Chriqui), but Juan nearly sabotages the plan by seducing his prospective sister-in-law.",
+              "duration": 3180,
+              "rating": "6.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hhdApQqKz27B9JiUjK7lDufuVHx.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Death, on a Pale Horse",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/fkgWN2mK78wXOlcLCvK58wW9qtq.jpg",
+              "plot": "The invasion by King Charles of France and Della Rovere proceeds with victory seemingly inevitable as the French sack the city of Lucca and the Italian powers flee to their banner, with Lucrezia's husband Giovanni Sforza poised to join them in the name of Milan; inventor Leonardo Da Vinci (guest star John Lynch) shows his drawings and blueprints for war machinery to the invaders.",
+              "duration": 3120,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/fkgWN2mK78wXOlcLCvK58wW9qtq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "The Art of War",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/x4pIa5oxEqIKPeb4n5iZZX22czo.jpg",
+              "plot": "The invaders capture a fleeing and pregnant Lucrezia as they march on Rome, but she charms King Charles and is allowed to persuade her brother Juan to withdraw his hopelessly outmatched defensive troops; Pope Alexander VI awaits to learn of his fate as Charles enters the city and makes his way to the Vatican.",
+              "duration": 3060,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/x4pIa5oxEqIKPeb4n5iZZX22czo.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "Nessuno (Nobody)",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kcV2lXvfZhmlJo0wCxrO9JlHZ42.jpg",
+              "plot": "Abandoned by even his cardinals, Alexander meets King Charles with humility and saves his throne, even eliciting a confession from the conqueror he crowns as the new \"King of France and Naples;\" Della Rovere despairs as Charles abandons him; Lucrezia safely gives birth to a son in a convent as the Borgias secure an annulment of her marriage and plot revenge on their enemies.",
+              "duration": 2880,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kcV2lXvfZhmlJo0wCxrO9JlHZ42.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 2,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/s9P1IPlPKeOstX10hBIR22ZutaX.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Having survived the French invasion with his Papacy intact (just barely), Alexander VI containues to advance his agenda. But the Sforza family continues to thwart him, leading him to make physical war upon them. Nor has Cardinal Giuliano della Rovere given up trying to rid the Vatican of Alexander. Having failed to depose the Pope legally, Cardinal della Rovere plots to assassinate him.",
+          "year": "2012",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "The Borgia Bull",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pA1Ao832Z3mmfTJaNhxzOuv3agV.jpg",
+              "plot": "Pope Alexander VI takes a new lover and throws a grand, pagan fete for the citizens of Rome when a cache of ancient artifacts is discovered; the rivalry between brothers Cesare and Juan spills into the streets; Lucrezia tends to her newborn child; now a pastoral priest once again, Della Rovere narrowly escapes an assassination attempt.",
+              "duration": 3240,
+              "rating": "6.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pA1Ao832Z3mmfTJaNhxzOuv3agV.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "Paolo",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/41rRrBMK3DgsWZ7EGppadm7nWtQ.jpg",
+              "plot": "The stable boy who fathered Lucrezia's child travels to Rome to rendezvous with her but suffers an unfortunate fate at the hands of Juan; the Pope's lovers Giulia and Vittoria take him in disguise on a revelatory tour of Rome's indigent.",
+              "duration": 2880,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/41rRrBMK3DgsWZ7EGppadm7nWtQ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Beautiful Deception",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hJFxWoTFmOUbwB5pSRkg1Je4LNw.jpg",
+              "plot": "Alexander VI refuses to allow a Catholic burial for Paolo, despite his doubts about the stable boy\u2019s suicide, causing Lucrezia to embark on a hunger strike that threatens the life of her infant son; the French army heads back to Rome, allied with Sforza; Della Rovere slips back into the city unnoticed to launch a plot against the Pope\u2019s life.",
+              "duration": 3360,
+              "rating": "6.9",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hJFxWoTFmOUbwB5pSRkg1Je4LNw.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Stray Dogs",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/t8wSJrV1Lbnl4br8xF041wzjNY6.jpg",
+              "plot": "Cesare recruits a band of mercenaries with the help of Micheletto to seek revenge on the retreating French troops for burning the nunnery where his beloved Ursula lived; the Pope forges more strategic alliances and enriches himself in the bargain; Lucrezia joins Giulia's quest to aid Rome's poor.",
+              "duration": 3180,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/t8wSJrV1Lbnl4br8xF041wzjNY6.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Choice",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/gqR3SSEsTIYLWXRrVOYVw8fPKZq.jpg",
+              "plot": "Cesare deals with the cunning Sforzas decisively; Alexander disguises himself and travels to Florence to hear the fiery preacher Savonarola, not realizing that Della Rovere is trying to recruit the rebellious holy man to his cause.",
+              "duration": 3180,
+              "rating": "6.7",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/gqR3SSEsTIYLWXRrVOYVw8fPKZq.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Day of Ashes",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/hw66kthL1Knuvqt0Z27f3PEUCSm.jpg",
+              "plot": "Alexander is convinced that a lightning strike on St. Peter's Basilica during mass was a sign of God's disapproval; Cesare tries to prove his worth as a military commander; the Pope pressures the reluctant Lucrezia to enter another political marriage.",
+              "duration": 3000,
+              "rating": "7.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/hw66kthL1Knuvqt0Z27f3PEUCSm.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "The Siege at Forli",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/190PHy8K3EwEWo7MKZvYR2tH6UQ.jpg",
+              "plot": "Juan's triumphant return from Spain is marred by his unsuccessful siege of the Sforza castle; Lucrezia purposely scuttles a scheme to marry her off to a rich Genovese merchant; Savonarola's forces conduct the infamous \"Bonfire of the Vanities\".",
+              "duration": 3120,
+              "rating": "7.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/190PHy8K3EwEWo7MKZvYR2tH6UQ.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Truth and Lies",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/6uOcvhqoX5FGJRl47TWiPU3A4ql.jpg",
+              "plot": "Juan returns to Rome trying to spin his combat injury as proof of his valor, but Cesare exposes his brother's ignoble behavior; Lucrezia takes a lover in her intended husband's younger brother; Della Rovere has recruited an angel-faced young friar as his suicide assassin, and the young man advances their agenda with a bold move against the Pope's food taster.",
+              "duration": 3000,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/6uOcvhqoX5FGJRl47TWiPU3A4ql.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "World of Wonders",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/81byqQ65gleE4CGWiiI8kD0l54d.jpg",
+              "plot": "It's Easter and Alexander makes plans for a celebration to end his pious fast even as Della Rovere's assassin ascends to the position of the Pope's taster. Lucrezia's lover asks for her hand in marriage but her father dismisses him and his request. Juan's wild behavior threatens the life of Lucrezia's child, forcing Cesare to make a chilling decision about his brother.",
+              "duration": 2940,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/81byqQ65gleE4CGWiiI8kD0l54d.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "The Confession",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/prRyaBSSgSAEyIXFa2bQuSU45DL.jpg",
+              "plot": "Tragic news for the Borgia family is followed by a shocking revelation from Cesare; Lucrezia surprises herself by falling for a new suitor, Alfonso of Aragon, and accepts his proposal of marriage; Cesare tortures the rebel leader Savonarola but can't extract a confession, so he fakes one and burns the heretic; the assassin finally strikes with a poisoned chalice of wine.",
+              "duration": 3480,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/prRyaBSSgSAEyIXFa2bQuSU45DL.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      },
+      {
+        "season": 3,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/n4C2cSowlATq4tHhlktSyQJprOd.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "Alexander VI survives Cardinal Giuliano della Rovere's assassination attempt, because his daughter Lucrezia knows how to treat catarella poisoning. Alexander's war with the Sforza family continues and escalates. Alexander now plots to turn the Papacy into an explicitly hereditary office.",
+          "year": "2013",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "The Face of Death",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/grNfHohHhsKNHNvTo51nwOcMK2y.jpg",
+              "plot": "Pope Alexander fights for his life; the cardinals fight for control of the papacy; Cesare and Micheletto track the assassin; Della Rovere prepares to make his move.",
+              "duration": 3120,
+              "rating": "8.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/grNfHohHhsKNHNvTo51nwOcMK2y.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "The Purge",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xk2AHPzJrnBrEUEr1ket1U6j1qw.jpg",
+              "plot": "Alexander tasks Cardinal Sforza with purging the College of Cardinals, old Roman families conspire against the Pope, and Lucrezia tries to seduce Cesare.",
+              "duration": 3000,
+              "rating": "6.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xk2AHPzJrnBrEUEr1ket1U6j1qw.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "Siblings",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/jnrZlSP3CtITfdwdL1aZI9ec8wF.jpg",
+              "plot": "The King of Naples refuses to accept Lucrzia's child as part of the marriage agreement and pointedly invites Caterins Sforza and other Borgia enemies to the wedding.",
+              "duration": 3060,
+              "rating": "6.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/jnrZlSP3CtITfdwdL1aZI9ec8wF.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "The Banquet of Chestnuts",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/3Sd1I35EE5Hz6FJVaX6OYQEbXo7.jpg",
+              "plot": "Cardinal Farnese exposes the embezzlement of Cardinal Versucci while the King of Naples insists the consummation of Lucrezia's marriage to his cousin be witnessed.",
+              "duration": 3060,
+              "rating": "6.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/3Sd1I35EE5Hz6FJVaX6OYQEbXo7.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "The Wolf and the Lamb",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/qOChZT02Z54lmkFEzUIcYtYVoJ8.jpg",
+              "plot": "Lucrezia and Micheletto plot the death of King Ferdinand when he refuses her her baby as Cesare's promise of an annulment for Louis X!. gain him a wife and army.",
+              "duration": 3000,
+              "rating": "7.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/qOChZT02Z54lmkFEzUIcYtYVoJ8.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "Relics",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/z67sdy7YGlMGd0Oa8X5Bpkqcs6p.jpg",
+              "plot": "Cesare unites the sons of the five Romagna families with his own army against Forli, and the Pope negotiates for a with Constantinople Jews for a holy relic.",
+              "duration": 2880,
+              "rating": "6.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/z67sdy7YGlMGd0Oa8X5Bpkqcs6p.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "Lucrezia's Gambit",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/9evh8Io9WEBXxLn9JzjcFhXzGAj.jpg",
+              "plot": "After the French king occupies a deserted Milan, he tasks Cesare with killing Ludivico, and Lucretia becomes involved in Neapolitan palace intrigue.",
+              "duration": 2880,
+              "rating": "6.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/9evh8Io9WEBXxLn9JzjcFhXzGAj.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Tears of Blood",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/t67E28l36jUjJ7NRNEXalwgpaMk.jpg",
+              "plot": "Micheleto learns his kept lover is a Sforza informant, Caterina Sforza mounts the Shroud of Turin as a rival holy relic, and Alfonso puts Lucrezia under house arrest.",
+              "duration": 3180,
+              "rating": "6.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/t67E28l36jUjJ7NRNEXalwgpaMk.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 9,
+            "name": "The Gunpowder Plot",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aE0B4ySpQgHgoyxL8w4AfF88jA5.jpg",
+              "plot": "Lucrezia escapes with Alfonso and her baby from Naples while the Pope corners the market in sulfur, restricting others from manufacturing gunpowder.",
+              "duration": 2760,
+              "rating": "7.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aE0B4ySpQgHgoyxL8w4AfF88jA5.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 10,
+            "name": "The Prince",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/aVUI3ueE5EXTrPh6s7t8XpzDYTs.jpg",
+              "plot": "Micheletto returns to Cesare briefly to help him destroy the walls of Forli and capture Caterina Sforza and later recruit her assassin Rufio.",
+              "duration": 3360,
+              "rating": "6.4",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/aVUI3ueE5EXTrPh6s7t8XpzDYTs.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
   },
   {
-    "name": "Friday the 13th Part V: A New Beginning",
-    "category": "\ud83c\udd35",
+    "name": "A Gentleman in Moscow",
+    "category": "\ud83c\udd36",
     "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/ewnIs4aCuWnKQ13Eaj8f3ybrQc8.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/pQy1GaR0TLwvb3Bpqk5teovzoDY.jpg",
-      "plot": "Homicidal maniac Jason returns from the grave to cause more bloody mayhem. Young Tommy may have escaped from Crystal Lake, but he\u2019s still haunted by the gruesome events that happened there. When gory murders start happening at the secluded halfway house for troubled teens where he now lives, it seems like his nightmarish nemesis, Jason, is back for more sadistic slaughters.",
-      "director": [
-        "Danny Steinmann"
+      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/aBU2mlyZT5BzvCkXXUewH7wfhkK.jpg",
+      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/lFzmyLYydG4Cp7NTVn8jTNyEVKR.jpg",
+      "plot": "Count Alexander Rostov finds himself going from riches to rags following the Russian revolution. A Soviet tribunal banishes him to the attic room of an opulent hotel, where, oblivious to the world outside, he discovers the true value of friendship, family and love.",
+      "rating": "6.7",
+      "genre": [
+        "drama"
       ],
       "cast": [
-        "John Shepherd",
-        "Tiffany Helm",
-        "John Robert Dixon",
-        "Juliette Cummins",
-        "Melanie Kinnaman",
-        "Richard Young"
-      ],
-      "trailer": "cZ5cMK-3Z_I",
-      "rating": "5.3",
-      "year": "1985"
+        "Ewan McGregor",
+        "Mary Elizabeth Winstead",
+        "Johnny Harris",
+        "Fehinti Balogun",
+        "Alexa Goodall"
+      ]
     },
-    "video": "",
-    "drm": "clearkey",
-    "drmkey": ""
-  },
-  {
-    "name": "Friday the 13th Part VI: Jason Lives",
-    "category": "\ud83c\udd35",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6vdUpHvkspQonXBdWcLWW5ciEPJ.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/93tvkTtV6tQQiYhxhij9tuODNOq.jpg",
-      "plot": "Tommy Jarvis, tormented by the fear that maybe Jason isn't really dead, unwittingly resurrects the mass murderer for another bloody rampage.",
-      "director": [
-        "Tom McLoughlin"
-      ],
-      "cast": [
-        "Thom Mathews",
-        "Jennifer Cooke",
-        "David Kagen",
-        "Ren\u00e9e Jones",
-        "Kerry Noonan",
-        "Darcy DeMoss"
-      ],
-      "trailer": "4ETsQHtUqcs",
-      "rating": "6.3",
-      "year": "1986"
-    },
-    "video": "",
-    "drm": "clearkey",
-    "drmkey": ""
-  },
-  {
-    "name": "Friday the 13th Part VII - The New Blood",
-    "category": "\ud83c\udd35",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/rUzk9Qnyz2FZGxHMBrq6DYIQZkO.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/roHX6N0VkySKBlramHUw1zdMQHB.jpg",
-      "plot": "Tina Shepard, a telekinetic teenage girl, accidentally unchains Jason from his watery grave, allowing him to go on another killing spree in the area.",
-      "director": [
-        "John Carl Buechler"
-      ],
-      "cast": [
-        "Lar Park Lincoln",
-        "Kane Hodder",
-        "Terry Kiser",
-        "Kevin Spirtas",
-        "Susan Jennifer Sullivan",
-        "Debora Kessler"
-      ],
-      "trailer": "7AyRUWJriuY",
-      "rating": "5.5",
-      "year": "1988"
-    },
-    "video": "",
-    "drm": "clearkey",
-    "drmkey": ""
-  },
-  {
-    "name": "Friday the 13th Part VIII: Jason Takes Manhattan",
-    "category": "\ud83c\udd35",
-    "info": {
-      "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/6ezOsZ9UzqGnbDokaatxdOWP6e9.jpg",
-      "bg": "https://image.tmdb.org/t/p/w500_and_h282_face/6U5sEPgkf3nnQC51kUUKcKzNSyR.jpg",
-      "plot": "Jason ships out aboard a teen-filled \"love boat\" bound for New York, which he soon transforms into the ultimate voyage of the damned.",
-      "director": [
-        "Rob Hedden"
-      ],
-      "cast": [
-        "Jensen Daggett",
-        "Sharlene Martin",
-        "Scott Reeves",
-        "Tiffany Paulsen",
-        "Alex Diakun",
-        "Amber Pawlick"
-      ],
-      "trailer": "PkC417SQKao",
-      "rating": "4.9",
-      "year": "1989"
-    },
-    "video": "",
-    "drm": "clearkey",
-    "drmkey": ""
+    "seasons": [
+      {
+        "season": 1,
+        "info": {
+          "poster": "https://image.tmdb.org/t/p/w220_and_h330_face/awIufRN7dWaG813VWQWpKD2ErpP.jpg",
+          "bg": "https://image.tmdb.org/t/p/w500_and_h282_face",
+          "plot": "",
+          "year": "2024",
+          "trailer": ""
+        },
+        "episodes": [
+          {
+            "episode": 1,
+            "name": "A Master of Circumstance",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/uo2Omt5GpPEjnTSNr40LoEHXDJw.jpg",
+              "plot": "Stripped of aristocratic privilege, Count Alexander Rostov is sentenced to life imprisonment at the Metropol Hotel. Contending with allies and foes alike, it\u2019s nine-year-old Nina and her unexpected friendship that changes his life.",
+              "duration": 2880,
+              "rating": "4.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/uo2Omt5GpPEjnTSNr40LoEHXDJw.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 2,
+            "name": "An Invitation",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/kBSavepmrFFWCh2spcU11P5B1bO.jpg",
+              "plot": "The Count reckons with his past when old friend Mishka turns up at the hotel; he meets Anna Urbanova for the first time, embarking on a passionate affair; his friendship with Nina deepens, but their time together may be cut short.",
+              "duration": 3060,
+              "rating": "4.2",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/kBSavepmrFFWCh2spcU11P5B1bO.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 3,
+            "name": "The Last Rostov",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/4zCbUAFBjYC5wXbPNVswzosgXiG.jpg",
+              "plot": "As his old life crumbles, the Count receives some devastating news; blinded by hurt, he embroils his friends in a dangerous plan; his disregard for the state may have consequences; Nina makes a surprise return, as Anna's career takes a turn.",
+              "duration": 2820,
+              "rating": "4.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/4zCbUAFBjYC5wXbPNVswzosgXiG.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 4,
+            "name": "Good Times",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/cPMoOh5zSyjdAVKPxEwo4EQgsdT.jpg",
+              "plot": "The Count must undertake a dangerous political mission to save a friend.",
+              "duration": 3060,
+              "rating": "4.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/cPMoOh5zSyjdAVKPxEwo4EQgsdT.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 5,
+            "name": "An Arrival",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/xYgKK7bwuWbfWMc2hjCVNOAtP0F.jpg",
+              "plot": "The Count's life at the hotel is turned upside down by a startling arrival.",
+              "duration": 3300,
+              "rating": "4.3",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/xYgKK7bwuWbfWMc2hjCVNOAtP0F.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 6,
+            "name": "The Fall",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/8F6klFd6cqbp4HfXJjzu100G6aD.jpg",
+              "plot": "When someone close to him suffers a terrible accident, the Count resolves to save them at any cost, making a decision that endangers his life; as the hotel rallies to protect him, the crisis forces Anna to confront her true feelings about the Count.",
+              "duration": 2520,
+              "rating": "4.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/8F6klFd6cqbp4HfXJjzu100G6aD.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 7,
+            "name": "An Assembly",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/dRjaSiRLeMhP1GVIfVw7kuXjf0g.jpg",
+              "plot": "Russia stands on the brink of change in 1953, as someone close to the Count is granted a major opportunity. But when the return of an old friend makes the Count see clearly, he's confronted with a difficult choice about the future.",
+              "duration": 2520,
+              "rating": "4.5",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/dRjaSiRLeMhP1GVIfVw7kuXjf0g.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          },
+          {
+            "episode": 8,
+            "name": "Adieu",
+            "info": {
+              "poster": "https://image.tmdb.org/t/p/w227_and_h127_bestv2/pA6ySE8i08mAZqWsU9NcYGwGT0f.jpg",
+              "plot": "The Count and Anna devise an elaborate plan, with huge consequences should it fail. However, things quickly start to unravel. An inevitable showdown is set between the Count and an old enemy.",
+              "duration": 2880,
+              "rating": "4.6",
+              "backdrop": "https://image.tmdb.org/t/p/w500_and_h282_face/pA6ySE8i08mAZqWsU9NcYGwGT0f.jpg"
+            },
+            "video": "",
+            "drm": "clearkey",
+            "drmkey": ""
+          }
+        ]
+      }
+    ]
   }
 ]
