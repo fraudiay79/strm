@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/10010/live/hls/atvindia/streams/sessions/0753173fa896441596859b9a25fae471/media/playlist-orig.m3u8/fstl=exp=1790638675~acl=%2F10010%2Flive%2Fhls%2Fatvindia%2F%2A~hmac=197019d8b176f0c1e7c54cb98450622ff415fffbe683e0fa3a131650f984fd63/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/atvindia/streams/sessions/09d32acab140418da2b7a77ed3e56a24/media/playlist-orig.m3u8/fstl=exp=1790686270~acl=%2F10010%2Flive%2Fhls%2Fatvindia%2F%2A~hmac=abe36d68f4c18cb7c1128dcd7bb5f555f97135d54124c7b1d1f7cf6721f32b5a/0.m3u8
