@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640020,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=50.000
-https://live.uvotv.com/10010/live/hls/endtimemessagetv/streams/sessions/516a872b07364342ab32d1be6656a43e/media/playlist-orig.m3u8/fstl=exp=1791418906~acl=%2F10010%2Flive%2Fhls%2Fendtimemessagetv%2F%2A~hmac=7e23bb68457d71f40e7593ed0708dc92ad77abe6894300f986aa71aca79218eb/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/endtimemessagetv/streams/sessions/d907a14fb9234be4901f9b7169a42626/media/playlist-orig.m3u8/fstl=exp=1791452735~acl=%2F10010%2Flive%2Fhls%2Fendtimemessagetv%2F%2A~hmac=4eeb055376c625e4a9344f7eb94ec5d09a7b22c1b37df34d7697feaaf51ac7e6/0.m3u8
