@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=428000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120429/meditv/streams/sessions/1a24e8d22dde4164b708217331ef5ab9/media/playlist-orig.m3u8/fstl=exp=1783861854~acl=%2Fhls%2Flive%2F2120429%2Fmeditv%2F%2A~hmac=4e8f36eb1ccb7efd1eeccc6e83fdaf1cdb68f92a35977a084daab265dbf50856/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2000000,CODECS="avc1.4d4028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/medi1tvmaghreb/streams/sessions/546620841f544b14b9f7ab050e9f032f/media/playlist-orig.m3u8/fstl=exp=1792262187~acl=%2F10010%2Flive%2Fhls%2Fmedi1tvmaghreb%2F%2A~hmac=c892aba6c89beb8c6c470259012c11c8bfd93b9d3775b3203906997a8094b45f/0.m3u8
