@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120681/arradia/streams/sessions/f454b89bf4fd495a973c4c576919401d/media/playlist-orig.m3u8/fstl=exp=1775500785~acl=%2Fhls%2Flive%2F2120681%2Farradia%2F%2A~hmac=6e7c3977b7bc2b421c043624e802fd944cdee223e736725252937bb09c138477/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=704x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/arryadia/streams/sessions/3da30f4acd4446ed9a2dbcc7be559098/media/playlist-orig.m3u8/fstl=exp=1792244616~acl=%2F10010%2Flive%2Fhls%2Farryadia%2F%2A~hmac=146ad8c7d8a1181f7fce4376027033ec9ed762d2fbd167c540501eba38cb4a2d/0.m3u8
