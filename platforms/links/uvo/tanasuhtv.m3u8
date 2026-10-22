@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2000000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/tanasuhtv/streams/sessions/90c92c75bdda48c4875e13084789d4c2/media/playlist-orig.m3u8/fstl=exp=1792724958~acl=%2F10010%2Flive%2Fhls%2Ftanasuhtv%2F%2A~hmac=aa0e38e71e1c556bab35077c69515444e5287092a2c839ae09e5c248a8e22efa/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=720x576,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/tanasuhtv/streams/sessions/45ccb891499440a49508d3658d7cc8a2/media/playlist-orig.m3u8/fstl=exp=1792753699~acl=%2F10010%2Flive%2Fhls%2Ftanasuhtv%2F%2A~hmac=7dd01994cba79327f97a9c872374f6e169f4cb7cfc14f710ffb62241fbded764/0.m3u8
