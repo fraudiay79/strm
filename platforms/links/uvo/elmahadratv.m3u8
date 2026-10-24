@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2120682/elmahadratv/streams/sessions/7fbcbec979084cd28020d930e093259a/media/playlist-orig.m3u8/fstl=exp=1782628089~acl=%2Fhls%2Flive%2F2120682%2Felmahadratv%2F%2A~hmac=23cd3f24b0c6ff991fed075997feaac9fd0e552f934eac1fbdb326a79ecd58fc/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/elmahadratv/streams/sessions/3a35b571b1544f468389f409455c1013/media/playlist-orig.m3u8/fstl=exp=1792923238~acl=%2F10010%2Flive%2Fhls%2Felmahadratv%2F%2A~hmac=85471a72ad5bcb2946fdf0912d425b8fd74792ca2337680df88d4dbdfd3365c1/0.m3u8

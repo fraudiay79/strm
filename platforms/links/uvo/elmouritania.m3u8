@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001f,mp4a.40.2",RESOLUTION=1280x720,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/hls/live/2119051/elmouritania/streams/sessions/3f0ed57cf7f149128b7fa7228901345d/media/playlist-orig.m3u8/fstl=exp=1782628052~acl=%2Fhls%2Flive%2F2119051%2Felmouritania%2F%2A~hmac=11bfd6f474d0faa8fe74c369a35872a3e6c9ea4d153927f4a5b433d00dfbacbb/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1440x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/elmouritaniahd/streams/sessions/4d5a40a6308e49819f6c2faca9537314/media/playlist-orig.m3u8/fstl=exp=1792923190~acl=%2F10010%2Flive%2Fhls%2Felmouritaniahd%2F%2A~hmac=99106b67b0d6fff48bd343d77cde6960719601d714faaeaad595f50c595cf3ad/0.m3u8
