@@ -1,6 +1,6 @@
 #EXTM3U
 #EXT-X-VERSION:6
 #EXT-X-INDEPENDENT-SEGMENTS
-#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="English",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="en",URI="streams/sessions/0f3b0a934e6746efbb3e47fc64cc9cee/media/playlist-orig.m3u8/fstl=exp=1794307916~acl=%2F10010%2Flive%2Fhls%2Felheddaftv%2F%2A~hmac=3bee366652a79d7935b4bb4dbcace6fa2c24eae6bf37aae4b9b67062e721c07c/1.m3u8",CHANNELS="2"
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,AVERAGE-BANDWIDTH=4241929,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
-https://live.uvotv.com/10010/live/hls/elheddaftv/streams/sessions/0f3b0a934e6746efbb3e47fc64cc9cee/media/playlist-orig.m3u8/fstl=exp=1794307916~acl=%2F10010%2Flive%2Fhls%2Felheddaftv%2F%2A~hmac=3bee366652a79d7935b4bb4dbcace6fa2c24eae6bf37aae4b9b67062e721c07c/0.m3u8
+#EXT-X-MEDIA:TYPE=AUDIO,GROUP-ID="audio",NAME="English",DEFAULT=NO,AUTOSELECT=YES,LANGUAGE="en",URI="streams/sessions/787e800c923040d3b7d9a6757abc76e5/media/playlist-orig.m3u8/fstl=exp=1794347645~acl=%2F10010%2Flive%2Fhls%2Felheddaftv%2F%2A~hmac=4c3daf1fa1e24e0ec427421c25625165a642970c60b83cadcf11dd04c0a5c3ba/1.m3u8",CHANNELS="2"
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,AVERAGE-BANDWIDTH=4246437,CODECS="avc1.4d401f,mp4a.40.2",RESOLUTION=1920x1080,AUDIO="audio",CLOSED-CAPTIONS=NONE,FRAME-RATE=25.000
+https://live.uvotv.com/10010/live/hls/elheddaftv/streams/sessions/787e800c923040d3b7d9a6757abc76e5/media/playlist-orig.m3u8/fstl=exp=1794347645~acl=%2F10010%2Flive%2Fhls%2Felheddaftv%2F%2A~hmac=4c3daf1fa1e24e0ec427421c25625165a642970c60b83cadcf11dd04c0a5c3ba/0.m3u8
