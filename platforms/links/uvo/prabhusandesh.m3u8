@@ -1,4 +1,4 @@
 #EXTM3U
 #EXT-X-VERSION:6
-#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.64001e,mp4a.40.2",RESOLUTION=640x360,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
-https://live.uvotv.com/10010/dvr/hls/prabhusandesh/streams/sessions/d6c3628c112d43b798fbb18e1de8ac1d/media/playlist-orig.m3u8/fstl=exp=1795343845~acl=%2F10010%2Fdvr%2Fhls%2Fprabhusandesh%2F%2A~hmac=a5e2d772a870f69a2305e436d3e905406a91eec709eeda82d6842351bf0926cb/0.m3u8
+#EXT-X-STREAM-INF:BANDWIDTH=2128000,CODECS="avc1.640028,mp4a.40.2",RESOLUTION=1920x1080,CLOSED-CAPTIONS=NONE,FRAME-RATE=30.000
+https://live.uvotv.com/10010/dvr/hls/prabhusandesh/streams/sessions/f5520b6a7256493691bf21afe26242dc/media/playlist-orig.m3u8/fstl=exp=1795372807~acl=%2F10010%2Fdvr%2Fhls%2Fprabhusandesh%2F%2A~hmac=bcfa64906187723175ebc04b4744a541fe84ca8ab07fa2c5e5d42ba26b948857/0.m3u8
